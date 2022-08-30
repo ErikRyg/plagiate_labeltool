@@ -1,0 +1,3938 @@
+﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/15,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9","Antwort 10"
+"Salas Lara","Luis Valentin",l.salaslara@tu-berlin.de,Beendet,"28. Mai 2021  12:48","5. Juni 2021  15:23","8 Tage 2 Stunden","14,75","Wäsche muss in den Kleiderschrank.
+; switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}","arr[0] == 0
+arr[1] == 0
+arr[2] == 0
+arr[3] == 3","arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '\0'",if ( -eps < a-b && a-b < eps),double a = (double)(3/4);,"Die main-Funktion hat den Rückgabewert 1.
+
+; Der Zug fährt nicht.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[breite+2][hoehe+2];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <limits.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int findIndexOfMax(int array[], int N){
+
+	int max=array[0];
+	int index=0;
+	for(int i=0; i<N;i++){
+		if(array[i]>max){
+			max=array[i];
+			index=i;
+		}
+	}
+	if(max==INT_MIN){
+		return UINT_MAX;
+	}
+	return index;
+}
+
+int main() {
+
+    int array[5];
+
+
+	printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+	for(int i=0; i<5;i++){
+		scanf(""%d"",&array[i]);
+	}
+	int index=0;
+	for(int i=0; i<5;i++){
+		index=findIndexOfMax(array,5);
+		if(index==UINT_MAX ){
+			break;
+		}
+		printf(""Naechstgroesstes: %d\n"", array[index]);
+		array[index]=INT_MIN;
+	}
+
+	return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	int opt=0;
+	double preis=0;
+	printf(""Ahoi bei Yum Yum Pizza!\n drücken Sie ...\n"");
+	while(opt !=3){
+
+		printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+		scanf(""%d"",&opt);
+		switch (opt)
+		{
+				    case 1:
+				    	printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+				    	preis+=5.5;
+				    	break;
+
+				    case 2:
+				    	printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+				    	preis+=4.3;
+				    	break;
+				    case 3:
+				    	printf(""\ndas wars? ...noch eine Frage:\n"");
+				    	break;
+				    default:
+				    	printf(""\ndas wars? ...noch eine Frage:\n"");
+				}
+
+	}
+	int entf;
+	int pro=0;
+	printf(""Welche Lieferentfernung hat die Bestellung (in km)?\n"");
+	scanf(""%d"",&entf);
+	if(entf<=2){
+		pro+=10;
+	}
+	if(entf>=20){
+			pro+=10;
+		}
+	if(preis>=10){
+				pro+=10;
+			}
+	if(preis>=20){
+				pro+=10;
+				}
+	preis=preis*(1-pro/100.0);
+	printf(""Das sind mit %d %% Rabatt genau %.2f Euro."", pro, preis);
+	return 0;
+}"
+Wang,"Yang Felix",yang.f.wang@campus.tu-berlin.de,Beendet,"28. Mai 2021  19:28","5. Juni 2021  21:56","8 Tage 2 Stunden","14,99",int abgabe_druecken[];,"arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '\0'","Wäsche muss in den Kleiderschrank.
+; switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}","z speichert die Position des größten Wertes im Array.",double a = (double)(3/4);,"Die main-Funktion hat den Rückgabewert 1.
+
+; Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: 5; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[breite+2][hoehe+2];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <limits.h>
+#include <stdio.h>
+
+unsigned int findIndexOfMax(int array[], int length){
+
+	unsigned int maxIndex = 0;
+
+	for(int i = 0; i < length; i++) {
+		if (array[i]> array[maxIndex]) {
+			maxIndex = i;
+		}
+	}
+    
+    if (array[maxIndex] == INT_MIN) {
+        return UINT_MAX;
+    } else {
+	    return maxIndex;
+    }
+}
+
+int main() {
+	int queue[5];
+	printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+	scanf(""%i %i %i %i %i"",&queue[0], &queue[1], &queue[2], &queue[3], &queue[4]);
+	unsigned int maxIndex = findIndexOfMax(queue, 5);
+
+	while (maxIndex != UINT_MAX) {
+		printf(""Naechstgroesstes: %i\n"", queue[maxIndex]);
+		queue[maxIndex] = INT_MIN;
+		maxIndex = findIndexOfMax(queue, 5);
+	}
+}","#include <stdio.h>
+
+int bestellmenue() {
+	
+	printf("" '1' fuer Salami Pizza dazu\n"");
+	printf("" '2' fuer Veggi Pizza dazu\n"");
+	printf("" '3' fuer Bestellung abschliessen\n"");
+	
+	int bestellnummer;
+	scanf(""%i"",&bestellnummer);
+	return bestellnummer;
+
+}
+
+void bestellung() {
+
+	unsigned int preis = 0;
+
+	int bestellnummer = 0;
+	while (bestellnummer != 3){
+		bestellnummer = bestellmenue();
+		if (bestellnummer == 1) {
+			preis += 550;
+			printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+		} else if (bestellnummer == 2) {
+			preis += 430;
+			printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+		} else if (bestellnummer != 3) {
+			printf(""Bitte eine der angegebenen Zahlen eingeben!\n"");
+		}
+	}
+
+	unsigned int entfernung;
+	printf(""\ndas wars? ...noch eine Frage:\n"");
+	printf(""Welche Lieferentfernung hat die Bestellung (in km)?\n"");
+	scanf(""%u"", &entfernung);
+
+	unsigned int rabatt = 0;
+	if ((entfernung >= 20) || (entfernung <=2 )) {
+		rabatt += 10;
+	}
+	if (preis > 1000) {
+		rabatt += 10;
+	}
+	if (preis > 2000) {
+		rabatt += 10;
+	}
+
+	double endpreisInEuro = (100-rabatt)*preis/10000.0;
+	printf(""Das sind mit %u %% Rabatt genau %.2f Euro.\n"",rabatt, endpreisInEuro);
+}
+
+void willkommen() {
+	printf(""Ahoi bei Yum Yum Pizza!\n drücken Sie ...\n"");
+}
+
+int main() {
+	willkommen();
+	bestellung();
+}"
+Bauszus,"Florian Alexander",bauszus@campus.tu-berlin.de,Beendet,"28. Mai 2021  21:04","6. Juni 2021  16:44","8 Tage 19 Stunden","8,63","arr[0] == 0
+arr[1] == 0
+arr[2] == 0
+arr[3] == 3",geca,a - b <= 5.0 && b - a <= 5.0,"Der Zug fährt nicht.",double a = (double)(3/4);,"z zählt, wieviele Iterationen durchgeführt wurden.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: %; Teil 13: %; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[breite+2][hoehe+2];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <limits.h>
+#include <stdlib.h>
+
+int findIndexOfMax(int a[], int *size){
+	int b=a[0],j=*size;
+	for(int i = 0;i<j;i++){
+		if(b<=a[i]){
+			b=a[i];
+			*size=i;
+		}
+	}
+	return *size;
+}
+
+int cmpfunc (const void * a, const void * b) {
+   return ( *(int*)a - *(int*)b );
+}
+
+int main(){
+	int array[5],index=5;
+	printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+	for(int i=0;i<5;i++){
+		scanf(""%d"", &array[i]);
+	}
+	qsort(array, 5, sizeof(int), cmpfunc);
+	for(int i=4;i>=0;i--){
+		printf(""Naechstgroesstes: %i\n"", array[i]);
+	}
+	findIndexOfMax(array,&index);
+	//printf(""Die größte Zahl des Arrays liegt am Index %i und lautet %i\n"", index, array[index]);
+}","#include <stdio.h>
+
+int main(){
+    double prozente=0,gelt=0.00f;
+    int wahl,entfernung,i=0;
+    printf(""Ahoi bei Yum Yum Pizza!\n drücken Sie ...\n"");
+    do
+    {
+        
+        printf("" '1' fuer Salami Pizza dazu\n""
+            "" '2' fuer Veggi Pizza dazu\n""
+            "" '3' fuer Bestellung abschliessen\n"");
+        scanf(""%i"",&wahl);
+        if(wahl == 1){
+            printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+            gelt+=5.50;
+        }else if(wahl == 2){
+            printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+            gelt+=4.30;
+        }else if(wahl == 3){
+            printf(""\ndas wars? ...noch eine Frage:\nWelche Lieferentfernung hat die Bestellung (in km)?"");
+            scanf(""%i"",&entfernung);
+            if(entfernung<=2){
+                prozente+=10;
+            }
+            if(entfernung>=20){
+                prozente+=10;
+            }
+            if(gelt>=10){
+                
+                prozente+=10;
+                if(gelt>=20){
+                    prozente+=10;
+                }
+            }
+            printf(""\nDas sind mit %.0f %% Rabatt genau %.2f Euro."",prozente,gelt*(1-(prozente/100)));
+            i++;
+        }  
+    } while (i==0);
+    return 0;
+}"
+Hendel,"Philipp Caspar",philipp.c.hendel@campus.tu-berlin.de,Beendet,"28. Mai 2021  23:00","6. Juni 2021  23:58","9 Tage","13,74","arr[0] == 0
+arr[1] == 0
+arr[2] == 0
+arr[3] == 3",!(a - b > 5.0 || a - b < -5.0),"Wäsche muss in den Kleiderschrank.
+; switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}","Die main-Funktion hat den Rückgabewert 1.
+
+; Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug",if ( -eps < a-b && a-b < eps),"z speichert die Position des größten Wertes im Array.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 3.6; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: -; Teil 142: -; Teil 143: -","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[8][5];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <limits.h>
+
+int findIndexOfMax(int array[], int size){
+    int max=array[0];
+    int index;
+    for (int i = 0; i < size; i++){
+        if (array[i] >= max){
+            max = array[i];
+            index = i;
+
+        }
+    }
+    if (max == INT_MIN){
+        return UINT_MAX;
+    }
+    else return index;
+}
+
+int main() {
+    int array[5];
+    printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+    for ( int i = 0; i < 5; i++){
+        scanf(""%d"", &array[i]);
+    }
+
+    int index;
+    
+    while(1) {
+        index = findIndexOfMax(array,5);
+        if (index == UINT_MAX) break;
+        printf(""Naechstgroesstes: %d\n"", array[index]);
+        array[findIndexOfMax(array, 5)] = INT_MIN;
+    }
+
+    
+}","#include <stdio.h>
+
+void print_menu(){
+    printf("" \'1\' fuer Salami Pizza dazu\n"");
+    printf("" \'2\' fuer Veggi Pizza dazu\n"");
+    printf("" \'3\' fuer Bestellung abschliessen\n"");
+}
+
+void calculate_sale(int distance, float price){
+    float sale=0;
+    if (distance <= 2 || distance >= 20) sale += 10;
+    if (price > 10) sale += 10;
+    if (price > 20) sale += 10;
+    price *= (1-(sale/100));
+    printf(""Das sind mit %.0f %% Rabatt genau %.2f Euro.\n"", sale, price);
+}
+
+int main(){
+    char order;
+    int distance;
+    float price=0;
+    int ask_menu=1;
+    printf(""Ahoi bei Yum Yum Pizza!\n drücken Sie ...\n"");
+    while(ask_menu){
+        print_menu();
+        scanf(""%s"", &order);
+        switch(order){
+            case '1':
+                printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+                price += 5.50;
+                break;
+            case '2':
+                printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+                price += 4.30;
+                break;
+            case '3':
+                printf(""das wars? ...noch eine Frage:\n"");
+                ask_menu = 0;
+                break;
+
+        }
+    }
+    printf(""Welche Lieferentfernung hat die Bestellung (in km)?\n"");
+    scanf(""%d"", &distance);
+    calculate_sale(distance, price);
+}"
+Scharnreitner,"Philipp Aurel",p.scharnreitner@campus.tu-berlin.de,Beendet,"29. Mai 2021  12:01","6. Juni 2021  18:04","8 Tage 6 Stunden","14,24",int abgabe_druecken[];,"switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}
+; Wäsche muss in den Kleiderschrank.",geca,"Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug
+
+; Die main-Funktion hat den Rückgabewert 1.",if ( -eps > a-b || a-b > eps),"z speichert die Position des größten Wertes im Array.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: -; Teil 102: -; Teil 103: -; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[breite+2][hoehe+2];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <limits.h>
+#include <stdio.h>
+
+int findIndexOfMax(int array[], int length)
+{
+    int indexMAX = 0;
+    for(int i = 0 ; i < length ; i++ )
+    {
+        if(array[i]>array[indexMAX])
+        {
+            indexMAX = i;
+        }
+    }
+    if(array[indexMAX] == INT_MIN)
+    {
+        return UINT_MAX;
+    }
+    return indexMAX;
+}
+
+int main()
+{
+    int index = 0;
+    int array[5] = {0};
+    printf( ""Bitte geben Sie 5 ganze Zahlen ein: "");
+    for(int i = 0 ; i < 5 ; i++ )
+    {
+        scanf( ""%i"", &array[i] );
+        getchar();
+}
+    for(int i = 0 ; i < 5 ; i++ )
+    {
+        index = findIndexOfMax(array, 5);
+        if(index == UINT_MAX)
+        {
+            break;
+        }
+        printf(""Naechstgroesstes: %i \n"", array[index]);
+        array[index] = INT_MIN;
+    }
+}","#include <stdio.h>
+
+int bestellung(int nummer)
+{
+    if(nummer == 1)
+    {
+        printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+        printf("" '1' fuer Salami Pizza dazu\n"");
+        printf("" '2' fuer Veggi Pizza dazu\n"");
+        printf("" '3' fuer Bestellung abschliessen\n"");
+        return 1;
+    }
+    if(nummer == 2)
+    {
+        printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+        printf("" '1' fuer Salami Pizza dazu\n"");
+        printf("" '2' fuer Veggi Pizza dazu\n"");
+        printf("" '3' fuer Bestellung abschliessen\n"");
+        return 2;
+    }
+    if(nummer == 3)
+    {
+        return 3;
+    }
+    
+}
+int main()
+{
+    float Preis = 0;
+    int index = 0;
+    float Entfernung = 0;
+    float Prozent = 0;
+    printf(""Ahoi bei Yum Yum Pizza!\n"");
+    printf("" drücken Sie ...\n"");
+    printf("" '1' fuer Salami Pizza dazu\n"");
+    printf("" '2' fuer Veggi Pizza dazu\n"");
+    printf("" '3' fuer Bestellung abschliessen\n"");
+    scanf( ""%i"", &index );
+    getchar();
+    if(index == 1)
+    {
+        Preis += 5.50;
+    }
+    if(index == 2)
+    {
+        Preis += 4.30;
+    }
+    index = bestellung(index);
+    while(index != 3)
+    {
+        scanf( ""%i"", &index );
+        getchar();
+        index = bestellung(index);
+        if(index == 1)
+        {
+            Preis += 5.50;
+        }
+        if(index == 2)
+        {
+            Preis += 4.30;
+        }
+    }
+    printf(""das wars? ...noch eine Frage:\n"");
+    printf(""Welche Lieferentfernung hat die Bestellung (in km)?\n"");
+    scanf( ""%f"", &Entfernung );
+    getchar();
+    if(Preis > 10)
+    {
+        Prozent += 10;
+    }
+    if(Preis > 20)
+    {
+        Prozent += 10;
+    }
+    if(Entfernung <= 2)
+    {
+        Prozent += 10;
+    }
+    if(Entfernung >= 20)
+    {
+        Prozent += 10;
+    }
+    Preis = Preis *(1 - (Prozent/100));
+    printf(""Das sind mit %.0f %% Rabatt genau %.2f Euro."", Prozent, Preis);
+}"
+Roßmöller-Felz,"Mattis Musashi Martin",mattis.rossmoeller@campus.tu-berlin.de,Beendet,"29. Mai 2021  12:37","6. Juni 2021  23:58","8 Tage 11 Stunden","10,76","arr[0] == 0
+arr[1] == 0
+arr[2] == 0
+arr[3] == 3",-5.0 <= a - b <= 5.0,int abgabe_druecken[];,"Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug
+
+; Die main-Funktion hat den Rückgabewert 0.",if ( -eps < a-b && a-b < eps),double a = 3/(double)4;,"Teil 1: 13; Teil 2: undef; Teil 3: undef; Teil 4: undef; Teil 5: undef; Teil 6: undef; Teil 7: undef; Teil 8: undef; Teil 9: undef; Teil 10: undef; Teil 11: 14; Teil 12: %; Teil 13: %; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 3.6; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: undef; Teil 112: undef; Teil 113: undef; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: undef; Teil 136: undef; Teil 137: undef; Teil 138: undef; Teil 139: undef; Teil 140: undef; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[7][4];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <limits.h>
+
+int findIndexOfMax(int a[], int listsize)
+{
+	for(int i = 0; i < listsize; ++i)
+		{
+		if (i == listsize - 1)
+		{
+			if(a[i] == INT_MIN)
+				return UINT_MAX;
+			else
+				return i;
+			
+		}
+		for(int j = i + 1; j < listsize; ++j)
+			{
+			if(a[i] == INT_MIN)
+			break;
+			if((a[j] == INT_MIN) && (j != listsize -1))
+			++j;
+			if(a[i] < a[j])
+			break;
+			else
+			{
+				if (j == listsize - 1)
+				{
+					if(a[i] == INT_MIN)
+						return UINT_MAX;
+					else
+						return i;
+				}
+			}
+			}
+		}
+}
+
+int main()
+{
+int listsize = 5;
+int nummer[listsize];
+printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+for (int i = 0; i < listsize; ++i)
+{
+scanf(""%i"", &nummer[i]);
+}
+for (int i = 0; i < listsize; ++i)
+{
+int index = findIndexOfMax(nummer, listsize);
+printf(""Naechstgroesstes: %i \n"", nummer[index]);
+if (index == UINT_MAX)
+break;
+nummer[index] = INT_MIN;
+} 
+}","#include <stdio.h>
+
+int main()
+{
+float preis;
+float gesamt;
+int entfernung;
+int rabatt = 0;
+printf(""Ahoi bei Yum Yum Pizza!\n"");
+printf("" drücken Sie ...\n"");
+printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+int eingabe;
+do
+{
+scanf(""%i"", &eingabe);
+switch (eingabe)
+{
+	case 1 : 
+	
+		preis = preis + 5.50;
+		printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+		printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n""); break;
+	
+	case 2 :
+	
+		preis = preis + 4.30;
+		printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+		printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n""); break;
+	
+	case 3 :
+		printf(""\ndas wars? ...noch eine Frage:\nWelche Lieferentfernung hat die Bestellung (in km)?\n""); break;
+}
+}
+while (eingabe != 3);
+scanf(""%i"", &entfernung);
+if (entfernung <= 2)
+	rabatt = rabatt + 10;
+if (entfernung >= 20)
+	rabatt = rabatt + 10;
+if (preis > 10)
+	rabatt = rabatt + 10;
+if (preis > 20)
+	rabatt = rabatt + 10;
+if (rabatt != 0)
+gesamt = (preis * rabatt)/100;
+else
+gesamt = preis;
+printf(""Das sind mit %i %% Rabatt genau %.2f Euro.\n"", rabatt, gesamt);
+}"
+Schwarz,"Jasko Tobias",jasko.t.schwarz@campus.tu-berlin.de,Beendet,"29. Mai 2021  22:10","6. Juni 2021  22:49","8 Tage","10,87","switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}
+; Wäsche muss in den Kleiderschrank.",-5.0 <= a - b <= 5.0,"arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '\0'",if ( -eps < a-b && a-b < eps),"Die main-Funktion hat den Rückgabewert 1.
+
+; Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug",double a = 3/(double)4;,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: -; Teil 103: -; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[breite + 2][hoehe + 2];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <limits.h>
+#include <stdio.h>
+
+void main(){
+    int length = 5;
+    int array[5];
+    printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+    for(int i = 0; i < 5; i++) {
+      printf(""Naechstgroesstes: "");
+      scanf(""%i"", &array[i]);
+      printf(""\n"");
+    }
+    int index = 0;
+    while(index != UINT_MAX) {
+        index = findIndexOfMax(array, 5);
+        if(index == UINT_MAX){
+          break;
+        }
+        else {
+          array[index] = INT_MIN;
+        }
+    }
+}
+
+int findIndexOfMax(int array[], int length){
+    int maxValue = INT_MIN;
+    int indexMaxValue = UINT_MAX;
+    for (int i = 0; i < length; i++) {
+        if (maxValue < array[i]) {
+          maxValue = array[i];
+          indexMaxValue = i;
+        }
+    }
+    return indexMaxValue;
+}","#include <stdio.h>
+
+void main(){
+    int auswahl = 0;
+    float preis = 0;
+    printf(""Ahoi bei Yum Yum Pizza!\ndrücken Sie ...\n"" );
+    while (auswahl != 3) {
+      printf(""'1' fuer Salami Pizza dazu\n'2' fuer Veggi Pizza dazu\n'3' fuer Bestellung abschliessen\n"");
+      scanf(""%i"", &auswahl);
+      preis += getPreis(auswahl);
+    }
+    printf(""das wars? ...noch eine Frage:\nWelche Lieferentfernung hat die Bestellung (in km)?\n"");
+    int entfernung;
+    scanf(""%i"", &entfernung);
+    printRabatt(preis, entfernung);
+}
+
+
+float getPreis(int auswahl){
+    switch (auswahl) {
+      case 1:
+        printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+        return 5.5;
+      case 2:
+        printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+        return 4.30;
+      default:
+        return 0.0;
+    }
+}
+
+int printRabatt(float preis, int lieferentfernung){
+  int reduzierung = 0;
+  if (lieferentfernung <= 2 || lieferentfernung >= 20) {
+    reduzierung = 10;
+  }
+  if (preis > 20.0){
+    reduzierung += 20;
+  }
+  else if (preis > 10.0) {
+    reduzierung += 10;
+  }
+  preis = preis * (1 - (float)reduzierung/100);
+  printf(""Das sind mit %i %% Rabatt genau %.2f Euro.\n"", reduzierung, preis);
+}"
+Alfakir,Mohamad,alfakir.1@campus.tu-berlin.de,Beendet,"30. Mai 2021  04:40","6. Juni 2021  14:38","7 Tage 9 Stunden","13,00","Wäsche muss in den Kleiderschrank.
+; switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}","arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '0'",geca,double a = (double)(3/4);,if ( -eps < a-b && a-b < eps),"Der Zug fährt nicht.
+; Es ist wieder ein Online-Semester. Ich brauche keinen Zug","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 1.5; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 3; Teil 87: 1; Teil 88: 2; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[8][5];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+#include <limits.h>
+
+int findIndexOfMax(int array[], int sizearray){
+int max=array[0];
+int index;
+    for (int i=0; i<sizearray; i++){
+        if (max<=array[i]){
+            max=array[i];
+            index=i;
+        }
+    } if (array[index] ==INT_MIN) {return UINT_MAX;}
+    else return index ;
+}
+
+int main()
+{
+  int sizearray=5;
+  int array[sizearray];
+  int index;
+  printf(""Bitte geben Sie %i ganze Zahlen ein: "",sizearray);
+  for (int i=0; i<sizearray; i++)
+    scanf(""%i"", &array[i]);
+
+  for (int i=0;i<sizearray; i++)
+  {
+    index=findIndexOfMax(array,sizearray);
+    printf(""Naechstgroesstes: %i\n"", array[index]);
+    array[index]=INT_MIN;
+  }
+
+}","#include <stdio.h>
+#include <stdlib.h>
+
+int eingabeEinlesen(){
+int x;
+printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+scanf(""%i"", &x);
+return x;
+}
+
+int  main(){
+        float entfernung=0;
+        int rabbat=0;
+        float summ=0;
+       int eingabe;
+       printf(""Ahoi bei Yum Yum Pizza!\n drücken Sie ...\n"");
+do {
+        eingabe=eingabeEinlesen();
+
+        if (eingabe==1){
+        printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+        summ+=5.50;
+         } else if (eingabe==2){
+        printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+               summ+=4.30;
+         }
+
+         } while (eingabe!=3);
+if (summ==0){
+        printf(""Sie haben nichts bestellt\n"");
+}
+  printf(""\ndas wars? ...noch eine Frage:\nWelche Lieferentfernung hat die Bestellung (in km)?\n"");
+  scanf(""%f"", &entfernung);
+if (summ>10){
+     rabbat=10;
+    }
+
+if (summ>20){
+     rabbat=rabbat+10;
+    
+}
+
+if (entfernung <=2 || entfernung>=20){
+    rabbat=rabbat+10;
+
+ }summ=summ-((rabbat*summ)/100);
+
+  printf(""Das sind mit %i %% Rabatt genau %.2f Euro.\n"", rabbat,  summ);
+}"
+Jacoby,"Maximilian Erich",m.jacoby@campus.tu-berlin.de,Beendet,"30. Mai 2021  11:35","3. Juni 2021  15:22","4 Tage 3 Stunden","14,50",-5.0 <= a - b && a - b <= 5.0,geca,"arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '\0'","z speichert die Position des größten Wertes im Array.",if ( -eps < a-b && a-b < eps),"Die main-Funktion hat den Rückgabewert 1.
+
+; Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array [8] [5];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <limits.h>
+
+int print()
+{
+	printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+	return 0;
+}
+
+int findIndexOfMax(int a[], int hoechste)
+{
+	int in = 0;
+	int i;
+	int m = a[0];
+	
+	for ( i = 0; i < hoechste; i++)
+	{
+		if( m < a[i] )
+		{
+			m = a[i];
+			in = i;
+		}
+	}
+	
+	if(m == INT_MIN)
+		{
+		return UINT_MAX;
+		}
+	return in;
+}
+
+int main()
+{
+	print();
+	int arr[5];
+	int i;
+	for ( i = 0 ; i < 5 ; i++ )
+	{ 
+		scanf(""%i"", &arr[i]);
+	}
+	
+	while(1) {
+		int in;
+		in = findIndexOfMax( arr, 5 );
+		if ( in == UINT_MAX ){
+		break;
+		}
+		printf(""Naechstgroesstes: %i\n"", arr[in]);
+		arr[in] = INT_MIN;
+		}
+}","#include <stdio.h>
+
+int print(){
+	printf(""Ahoi bei Yum Yum Pizza!\n"");
+	printf("" drücken Sie ...\n"");
+	printf("" '1' fuer Salami Pizza dazu\n"");
+	printf("" '2' fuer Veggi Pizza dazu\n"");
+	printf("" '3' fuer Bestellung abschliessen\n"");
+	return 0;
+}
+	
+int print2(){
+	printf("" '1' fuer Salami Pizza dazu\n"");
+	printf("" '2' fuer Veggi Pizza dazu\n"");
+	printf("" '3' fuer Bestellung abschliessen\n"");
+	return 0;
+}
+	
+int print3(){
+	printf(""\ndas wars? ...noch eine Frage:\n"");
+	printf(""Welche Lieferentfernung hat die Bestellung (in km)?\n"");
+	return 0;
+}
+int scan(){
+	int x;
+	scanf(""%i"", &x);
+	return x;
+}	
+	
+int main(){
+	print();
+	int x = scan();
+	float ergebnis = 0;
+	
+	while (x < 3)
+	{
+		if(x == 1)
+		{
+			printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+			ergebnis = ergebnis + 5.50;
+		}
+		else
+		{
+			printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+			ergebnis = ergebnis + 4.30;
+		}
+		
+		print2();
+		x = scan();
+		
+	}
+	if (x == 3)
+	{
+		print3();
+	}
+	else
+	{
+		print3();
+	}
+	
+	
+	int km;
+	int f = 100;
+	scanf(""%i"", &km);
+	if (km <= 2)
+	{
+		f = f - 10;
+	}
+	else if (km >= 20)
+	{
+		f = f - 10;
+	}
+
+	
+	if ((ergebnis >= 10) && (ergebnis < 20))
+	{
+		f = f - 10;
+	}
+	else if (ergebnis > 20)
+	{
+		f = f - 20;
+	}
+	
+	
+	int prozentsatz = 100 - f;
+	float umrechnungsfaktor = f / 100.0f;
+	
+	
+	
+	float genau = ergebnis * umrechnungsfaktor;
+	
+
+	
+	printf(""Das sind mit %i %% Rabatt genau %.2f Euro.\n"", prozentsatz, genau);
+	
+}"
+Gillich,"Franziska Anna-Lena",f.gillich@campus.tu-berlin.de,Beendet,"30. Mai 2021  13:17","6. Juni 2021  18:05","7 Tage 4 Stunden","15,00",geca,"Wäsche muss in den Kleiderschrank.
+; switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}",-5.0 <= a - b <= 5.0,"z speichert die Position des größten Wertes im Array.","Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug
+
+; Die main-Funktion hat den Rückgabewert 1.",double a = (double)(3/4);,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[breite+2][hoehe+2];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <limits.h>
+
+int findIndexOfMax(int array[],int groesse){
+    int index=0;
+    int max=array[0];
+    int test=0;
+    for (int i=0;i<groesse;i++){
+        if (array[i]==INT_MIN){
+            test++;
+        }
+    }
+    if(test!=groesse){
+        for (int i=1;i<groesse;i++){
+            if (array[i]>=max){
+                max=array[i];
+                index=i;
+            }
+        }
+    return index;
+    }
+    else return UINT_MAX;
+}
+
+int main() {
+    int array[5];
+    printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+    for (int i=0;i<=4;i++){
+        scanf(""%i"",&array[i]);
+    }
+    for(int i=0;i<=4;i++){
+        int index=findIndexOfMax(array,5);
+        if(index!=UINT_MAX){
+            printf(""Naechstgroesstes: %i\n"",array[index]);
+            array[index]=INT_MIN;
+        }
+        else break;
+    }
+}","#include <stdio.h>
+
+int main()
+{
+    int wahl=0;
+    float kosten=0.0;
+    printf(""Ahoi bei Yum Yum Pizza!\n drücken Sie ...\n"");
+    while (wahl!=3){
+        printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+        scanf(""%i"",&wahl);
+        if(wahl==1){
+            printf(""Einmal Pizza Salami dazu, fuer %.2f\n"",5.50);
+            kosten=kosten+5.5;
+        }
+        else if(wahl==2){
+            printf(""Einmal Pizza Veggi dazu, fuer %.2f\n"",4.30);
+            kosten=kosten+4.3;
+        }
+        else if(wahl==3){
+            break;
+        }
+        else{
+            printf(""Falsche Eingabe.\n"");
+        }
+    }
+    float distanz=0;
+    int rabatt=0;
+    printf(""das wars? ...noch eine Frage:\nWelche Lieferentfernung hat die Bestellung (in km)?\n"");
+    scanf(""%f"",&distanz);
+    if(distanz<=2 || distanz>=20){
+        rabatt+=10;
+    }
+    if(kosten>10){
+        rabatt+=10;
+    }
+    if(kosten>20){
+        rabatt+=10;
+    }
+    kosten=kosten*((100-(float)rabatt)/100);
+    printf(""Das sind mit %i %% Rabatt genau %.2f Euro."",rabatt,kosten);
+}"
+Miskovic,Matea,matea.miskovic@tu-berlin.de,Beendet,"30. Mai 2021  14:55","3. Juni 2021  19:57","4 Tage 5 Stunden","14,05","arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '\0'",int abgabe_druecken[];,"switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}
+; Wäsche muss in den Kleiderschrank.","Die main-Funktion hat den Rückgabewert 1.
+
+; Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug",if ( -eps > a-b || a-b > eps),"z speichert die Position des größten Wertes im Array.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    
+    char array[breite+2][hoehe+2];
+    
+    for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <limits.h>
+#include <stdlib.h>
+
+int findIndexOfMax(int array[], int n){
+       
+        int IndexOfMax= 0;
+        int pruefer= array[IndexOfMax];
+        int all = 0;
+        for (int i = 0; i < n; i++){
+            if(array[i]== INT_MIN){
+                all++;
+            }
+        }
+        if (all == n){
+           return UINT_MAX ; 
+        }
+        
+        else{
+        for (int i = 0; i<n; i++){
+            if (pruefer <= array[i]){
+                pruefer = array[i];
+                IndexOfMax = i;
+            }
+        }
+        
+        return IndexOfMax;
+        }
+}
+
+int main(){
+    int array[5];    
+    printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+    for(int i=0; i<5; i++){
+        scanf(""%i"",&array[i]);
+    }
+    
+    int IndexOfMax; 
+    while(findIndexOfMax(array, 5)!= UINT_MAX){
+        IndexOfMax = findIndexOfMax(array, 5);
+        printf(""Naechstgroesstes: %i\n"",array[IndexOfMax]);
+        array[IndexOfMax]= INT_MIN;
+    }
+}","#include <stdio.h>
+#include <limits.h>
+#include <stdlib.h>
+ 
+
+int main(){
+
+    printf(""Ahoi bei Yum Yum Pizza!\n  drücken Sie ... \n"");
+
+
+    int BestellungIstAbgeschlossen = 1;
+    float ZuZahlenderBetrag = 0;
+
+    while (BestellungIstAbgeschlossen)
+    {   
+        printf("" '1' fuer Salami Pizza dazu \n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+        char eingabe;
+        eingabe = getchar();
+        getchar();
+        switch (eingabe)
+        {
+        case '1':
+            ZuZahlenderBetrag += 5.50;
+            printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+            break;
+        case '2':
+            ZuZahlenderBetrag += 4.30;
+            printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+            break;
+        case '3':
+            BestellungIstAbgeschlossen = 0;
+            printf(""\n"");
+            break;    
+        default:
+            printf(""Die Eingabe war falsch. Bitte gebe Zhalen von 1-3 ein. Danke"");
+            break;
+        }
+        
+    }
+
+    if(BestellungIstAbgeschlossen == 0){
+
+    printf(""das wars? ...noch eine Frage:\nWelche Lieferentfernung hat die Bestellung (in km)?\n"");
+    
+    int Rabatt=0;
+    int LieferEntfernung = 0;
+    scanf(""%i"",&LieferEntfernung);
+
+
+    int FallAbdeckung1 = 1;
+    int FallAbdeckung2 = 1;
+
+
+    if(((LieferEntfernung <= 2) || (LieferEntfernung >= 20)) && (19.9999 < ZuZahlenderBetrag) ){
+        ZuZahlenderBetrag = ZuZahlenderBetrag * 0.7;
+        Rabatt = 30;
+        FallAbdeckung1 = 0;
+    }
+
+    if( FallAbdeckung1 == 1 && (((LieferEntfernung <= 2) || (LieferEntfernung >= 20)) && (((20.00001 > ZuZahlenderBetrag) && (ZuZahlenderBetrag> 9.9999))))){
+        ZuZahlenderBetrag = ZuZahlenderBetrag * 0.8;
+        Rabatt = 20;
+        FallAbdeckung2 = 0;
+    }
+
+    if(FallAbdeckung1 == 1 && FallAbdeckung2 == 1 && ((LieferEntfernung <= 2 || LieferEntfernung >=20) || ((20.00001 > ZuZahlenderBetrag && ZuZahlenderBetrag > 9.9999))) ){
+        ZuZahlenderBetrag = ZuZahlenderBetrag * 0.9;
+        Rabatt = 10;
+    }
+
+    printf(""Das sind mit %i %% Rabatt genau %.2f Euro.\n"",Rabatt, ZuZahlenderBetrag);
+
+    }
+
+     
+}"
+Schulz,Leon,leon.schulz@campus.tu-berlin.de,Beendet,"30. Mai 2021  16:08","6. Juni 2021  23:49","7 Tage 7 Stunden","8,44","arr[0] == 7
+arr[1] == 8
+arr[2] == 9
+arr[3] == 3",!(a - b > 5.0 || a - b < -5.0),int abgabe_druecken[];,double a = (double)(3/4);,"Der Zug fährt nicht.
+; Die main-Funktion hat den Rückgabewert 0.",if ( -eps < a-b && a-b < eps),"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0.0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[breite + 2][hoehe + 2];
+    for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <limits.h>
+
+
+unsigned int findIndexOfMax(int a[],int i_array_size)
+{
+
+int max_number = INT_MIN;
+int max_index;
+
+	//  Condition counter
+
+int count_2 = 0;
+for(int k = 0; k <= i_array_size - 1; k++)
+	{
+	if(a[k] == INT_MIN) count_2 += 1;
+	}
+
+	// condition executive
+
+if(count_2 == i_array_size) 
+	{
+	return UINT_MAX;
+	}
+
+	//  default executive
+
+else	
+	{
+	for(int j = 0; j <= i_array_size - 1; j++)
+		{
+		if(a[j] >= max_number)
+			{
+			max_number = a[j];
+			max_index = j;
+			}
+		else max_number = max_number;
+		} 
+
+
+
+	return max_index;	
+	}
+}
+
+
+int main()
+{
+int array_size = 5;
+printf(""Bitte geben Sie 5 ganze Zahlen ein:\n"");
+int array[array_size];
+unsigned int dead_switch;
+unsigned int index;
+
+
+	//  Read numbers from user
+
+for(int i = 0; i <= array_size - 1; i++)
+	{
+	printf(""Naechstgroesstes:\t"");
+	scanf(""%i"",&array[i]);
+	}
+
+	//  main loop
+
+do
+	{	 
+	
+	//  Set variables in array to INT_MIN one by one. Starting with the largest ending with the lowest
+	
+	for(int m = 0; m <= array_size - 1; m++)
+		{
+
+		//  function call and reassignment
+	
+
+		index = findIndexOfMax(array, array_size);   
+		
+	
+		//  Display content and index of the recently changed cell
+
+		if(index != UINT_MAX)
+		printf(""\nDie größte Zahl des Arrays liegt am Index %u und lautet %i"", index, array[index]); 
+		array[index] = INT_MIN;
+
+		// shutdown condition
+		
+		dead_switch = index;
+		if(dead_switch == UINT_MAX) m = array_size; 
+	
+		}
+	
+	}
+while(dead_switch != UINT_MAX);
+if(index == UINT_MAX) printf(""\nDer Rückgabewert der Funktion findIndexOfMax bei leerer Liste ist richtig.\n"");
+else printf(""\nDer Rückgabewert der Funktion findIndexOfMax bei leerer Liste ist falsch. Er sollte UINT_MAX = %i sein.\nDeiner ist jedoch %i."", UINT_MAX, index);
+	
+
+} 
+
+// 
+// 
+//
+//",-
+Alexe,"Jeremias Harry",jeremias.h.alexe@campus.tu-berlin.de,Beendet,"30. Mai 2021  17:07","6. Juni 2021  15:32","6 Tage 22 Stunden","13,24","switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}
+; Wäsche muss in den Kleiderschrank.","arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '\0'",fdb,"z zählt, wieviele Iterationen durchgeführt wurden.","Die main-Funktion hat den Rückgabewert 0.
+
+; Der Zug fährt nicht.",double a = (double)(3/4);,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6,49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array [breite + 2][hoehe + 2];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <limits.h>
+#include <stdio.h>
+
+int findIndexOfMax(int a[], int groesse){
+    int max = a[0];
+    int index = 0;
+    for(int i = 1; i < groesse; i++){
+        if( max < a[i]){
+            max = a[i];
+            index = i;
+        }
+    }
+    if(max == INT_MIN){
+       return UINT_MAX;
+    }
+    return index;
+}
+
+int main(){
+    int array[5] = {0,0,0,0,0};
+    printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+    for (int i = 0; i < 5; i++)
+    {
+       scanf(""%i"", &array[i]); 
+        
+    }
+   while(1){
+    int index = findIndexOfMax(array, 5);
+    if(index == UINT_MAX){
+     break;
+   }
+    printf(""Naechstgroesstes: %i\n"", array[index]);
+    array[index] = INT_MIN;
+    }
+}","#include <stdio.h>
+
+int main(){
+  int auswahl = 0; 
+  float preis;
+  printf(""Ahoi bei Yum Yum Pizza!\n drücken Sie ...\n"");
+  for(int i = 0; i>=0; i++){
+  printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+  scanf(""%i"", &auswahl);
+  if(auswahl == 1){
+    printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+    preis+= 5.50;
+  }
+  else if( auswahl == 2){
+       printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+       preis+= 4.30;
+  }
+  
+  else if(auswahl == 3){
+      
+      break;
+  }
+}
+ float strecke;
+ int rabatt = 0;
+ printf(""\ndas wars? ...noch eine Frage:\nWelche Lieferentfernung hat die Bestellung (in km)?\n"");
+ scanf(""%f"", &strecke);
+ if(strecke <= 2 || strecke >= 20 ){
+   rabatt += 10;
+ }
+ if (preis > 10){
+     rabatt += 10; 
+ }
+ if ( preis> 20){
+      rabatt += 10;
+ }
+ preis *=(1 - ((float) rabatt / 100.0));
+ printf(""Das sind mit %i %% Rabatt genau %.2f Euro."", rabatt, preis);
+ }"
+Eckardt,"Jan Hartmut",jan.h.eckardt@campus.tu-berlin.de,Beendet,"30. Mai 2021  19:26","6. Juni 2021  23:59","7 Tage 4 Stunden","7,70",-,-,-,-,double a = 3/(double)4;,"z speichert die Position des größten Wertes im Array.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 18.02; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[8][5];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <limits.h>
+
+int findIndexOfMax(int array[],int arraygroesse){
+int x = -2147483648;
+unsigned int z = 0;
+int zaehler = 0;
+for(int i = 0; i < arraygroesse; i++){
+if(x <= array[i]){
+x = array[i];
+z = i;}}
+for(int i = 0; i < arraygroesse; i++){
+if(array[i]==-2147483648)
+zaehler++;}
+if(zaehler == arraygroesse){
+z=4294967295;}
+return z;
+
+}
+int main (){
+int arraysize = 5;
+int array[arraysize];
+printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+for( int i = 0; i<arraysize; i++){
+scanf(""%i"", &array[i]);}
+unsigned int Index = 0;
+while(Index != 4294967295){
+Index = findIndexOfMax(array, arraysize); 
+if(Index!=4294967295){
+printf(""Naechstgroesstes: %i\n"", array[Index]);
+array[Index] = -2147483648;}}
+
+
+}",-
+Aksoy,Vedia,vedia.aksoy@campus.tu-berlin.de,Beendet,"31. Mai 2021  00:08","6. Juni 2021  23:59","6 Tage 23 Stunden","8,81",int abgabe_druecken[];,"Wäsche muss in die Waschmaschine.
+
+; switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}","arr[0] == 0
+arr[1] == 0
+arr[2] == 0
+arr[3] == 3","z speichert die Position des größten Wertes im Array.",double a = (double)(3/4);,"Die main-Funktion hat den Rückgabewert 0.
+
+; Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug","Teil 1: 13; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: 14; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: 16; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: 17; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: 18; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: 19; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: 20; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: ; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: ; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: ; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: 10(19); Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: ; Teil 112: ; Teil 113: ; Teil 114: 11(19); Teil 115: ; Teil 116: ; Teil 117: ; Teil 118: ; Teil 119: ; Teil 120: ; Teil 121: ; Teil 122: ; Teil 123: ; Teil 124: 12(19); Teil 125: ; Teil 126: ; Teil 127: ; Teil 128: ; Teil 129: ; Teil 130: ; Teil 131: ; Teil 132: ; Teil 133: ; Teil 134: 13(19); Teil 135: ; Teil 136: ; Teil 137: ; Teil 138: ; Teil 139: ; Teil 140: ; Teil 141: ; Teil 142: ; Teil 143:","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[8][5];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <limits.h>
+#include <stdio.h>
+void main ()
+{
+
+    int number[5];
+    int i, j, a, n;
+    n=5;
+    for (i = 0; i < n; ++i)
+        scanf(""%d"", &number[i]);
+
+
+    for (i = 0; i < n; ++i)
+    {
+        for (j = i + 1; j < n; ++j)
+        {
+            if (number[i] < number[j])
+            {
+                a = number[i];
+                number[i] = number[j];
+                number[j] = a;
+            }
+        }
+    }
+
+printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+
+    for (i = 0; i < n; ++i)
+    {
+        printf(""Naechstgroesstes: "");
+        printf(""%d\n"", number[i]);
+    }
+
+int array[4];
+for (i = 0; i < 4; ++i)
+        scanf(""%d"", &number[i]);
+
+}
+
+int findIndexOfMax(arr[],boyut){
+    int enbuyuk=0;
+    for (int i=1,i<boyut,i++){
+        if(arr[i]>arr[i-1]){
+            enbuyuk = i;
+        }
+    }
+    return enbuyuk;
+}","int main()
+{
+int secenek;
+float counter = 0;
+int km;
+int indirim;
+    
+printf(""Ahoi bei Yum Yum Pizza!"");
+printf(""\n drücken Sie ...\n '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen"");
+
+scanf(""%d"",&secenek);
+for (int i = 1; i < 1500; ++i)
+  {
+    if (secenek==1){
+        counter+=5.50;
+        printf(""\nEinmal Pizza Salami dazu, fuer 5.50"");
+        printf(""\n '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen"");
+        scanf(""%d"",&secenek);
+    }
+    
+    else if (secenek==2){
+        counter+=4.30;
+        printf(""\nEinmal Pizza Veggi dazu, fuer 4.30"");
+        printf(""\n '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen"");
+        scanf(""%d"",&secenek);
+    }
+    else{
+        break;
+    }
+  }
+printf(""\n\ndas wars? ...noch eine Frage:\nWelche Lieferentfernung hat die Bestellung (in km)?"");
+scanf(""%d"",&km);
+if (km<=2){
+    if (counter<=10){
+        indirim=10;
+    }
+    if ((counter>10)&&(counter<=20)){
+        indirim=20;
+    }
+    if (counter>20){
+        indirim=30;
+    }
+    
+}
+if (km>=20){
+    if (counter<=10){
+        indirim=10;
+    }
+    if ((counter>10)&&(counter<=20)){
+        indirim=20;
+    }
+    if (counter>20){
+        indirim=30;
+    }
+    
+}
+if ((km>2)&&(km<20)){
+    if (counter<=10){
+        indirim=0;
+    }
+    if ((counter>10)&&(counter<=20)){
+        indirim=10;
+    }
+    if (counter>20){
+        indirim=20;
+    }
+    
+}
+
+printf(""\nDas sind mit %d %% Rabatt genau %.2f Euro."",indirim,(counter*(100-indirim)/100));
+}"
+Franke,Alexander,alexander.franke@campus.tu-berlin.de,Beendet,"31. Mai 2021  13:52","6. Juni 2021  23:34","6 Tage 9 Stunden","7,69",int abgabe_druecken[];,"Wäsche muss in den Kleiderschrank.
+; switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}",geca,"Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug
+
+; Die main-Funktion hat den Rückgabewert 0.",if ( -eps < a-b && a-b < eps),double a = (double)(3/4);,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 3.6; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+char array[8][5];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <limits.h>",-
+Zakusek,"Simon Lorenz",s.zakusek@campus.tu-berlin.de,Beendet,"31. Mai 2021  14:47","6. Juni 2021  23:59","6 Tage 9 Stunden","14,75",geca,-5.0 <= a - b <= 5.0,"arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '\0'","z speichert die Position des größten Wertes im Array.",double a = (double)(3/4);,"Der Zug fährt nicht.
+; Die main-Funktion hat den Rückgabewert 1.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[8][5];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","//Hausaufgabe 7
+//Aufgabe 9
+
+#include <stdio.h>
+#include <limits.h>
+
+int findIndexOfMax(int array[], int length){
+  int a = INT_MIN;
+  int b;
+  for(int i=0; i<length; i++){
+    if (array[i] >= a){
+      a = array[i];
+      b = i;
+    }
+  }
+  if(array[b] == INT_MIN){
+    return UINT_MAX;
+  }else{
+    return b;
+  }
+}
+
+int main(){
+  int array[5];
+  printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+  for(int i=0; i<5; i++){
+    scanf(""%i"", &array[i]);
+  }
+  for(int i=0; i<5; i++){
+    int index = findIndexOfMax(array, 5);
+    if(index == UINT_MAX){
+      break;
+    }else{
+      printf(""Naechstgroesstes: %i\n"", array[index]);
+      array[index] = INT_MIN;
+    }
+  }
+}","#include <stdio.h>
+
+int main(){
+  printf(""Ahoi bei Yum Yum Pizza!\n""
+         "" drücken Sie ...\n"");
+
+  unsigned char eingabe;
+  double preis = 0.0;
+
+  do{
+    printf("" '1' fuer Salami Pizza dazu\n""
+	   "" '2' fuer Veggi Pizza dazu\n""
+	   "" '3' fuer Bestellung abschliessen\n"");
+    scanf(""%hhi"", &eingabe);
+    if(eingabe==1){
+      printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+      preis += 5.5;
+    }else if(eingabe==2){
+      printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+      preis += 4.3;
+    }
+  }while(eingabe!=3);
+
+  printf(""\ndas wars? ...noch eine Frage:\n""
+         ""Welche Lieferentfernung hat die Bestellung (in km)?\n"");
+
+  unsigned char entfernung; //max. Entfernung 255km
+  unsigned char rabatt = 0;
+
+  scanf(""%hhi"", &entfernung);
+  if(entfernung<=2){
+    rabatt += 10;
+  }else if(entfernung>=20){
+    rabatt += 10;
+  }
+  if(preis>20){
+    rabatt += 20;
+  }else if(preis>10){
+    rabatt += 10;
+  }
+  
+  preis -= preis*rabatt/100;
+  
+  printf(""Das sind mit %hhi %% Rabatt genau %.2f Euro."", rabatt, preis);
+}"
+Schwolow,Niklas,niklas.schwolow@campus.tu-berlin.de,Beendet,"31. Mai 2021  17:02","6. Juni 2021  23:59","6 Tage 6 Stunden","9,57",int abgabe_druecken[];,-5.0 <= a - b <= 5.0,"Wäsche muss in den Kleiderschrank.
+; switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}",double a = (double)(3/4);,if ( -eps < a-b && a-b < eps),"Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug
+
+; Die main-Funktion hat den Rückgabewert 0.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 1.5; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 3; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: -; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+    for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <limits.h>","#include <stdio.h>
+
+void Ausgabe()
+{
+printf("" '1' fuer Salami Pizza dazu\n"");
+printf("" '2' fuer Veggi Pizza dazu\n"");
+printf("" '3' fuer Bestellung abschliessen\n"");
+}
+
+int main()
+{
+    int eingabe=0;
+    int entfernung;
+    int p = 0;
+    float letzterPreis;
+    float Preis;
+    printf(""Ahoi bei Yum Yum Pizza!\n"");
+    printf("" drücken Sie ...\n"");
+    while (eingabe < 3)
+        {
+        Ausgabe();
+        scanf(""%d"", &eingabe);
+        switch (eingabe)
+            {
+            case 1:
+                Preis += 5.50;
+                printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+                break;
+            case 2:
+                Preis += 4.30;
+                printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+                break;
+            }
+        }
+    printf(""\ndas wars? ...noch eine Frage:\n"");
+    printf(""Welche Lieferentfernung hat die Bestellung (in km)?\n"");
+    scanf(""%d"", &entfernung);
+    if (entfernung<=2)
+        {
+        p += 1;
+        }
+    if (entfernung>=20)
+        {
+        p += 1;
+        }
+    if (Preis>20)
+        {
+        p += 2;
+        }
+    if (Preis<20)
+        {
+        if (Preis<10)
+            {
+            p = p;
+            }
+        if (Preis>10)
+            {
+            p += 1;
+            }
+        }
+    switch(p)
+    {
+        case 1:
+            letzterPreis = 0.9 * Preis;
+            printf(""Das sind mit 10 %% Rabatt genau %.2f Euro.\n"", letzterPreis);
+            break;
+        case 2:
+            letzterPreis = 0.8 * Preis;
+            printf(""Das sind mit 20 %% Rabatt genau %.2f Euro.\n"", letzterPreis);
+            break;
+        case 3:
+            letzterPreis = 0.7 * Preis;
+            printf(""Das sind mit 30 %% Rabatt genau %.2f Euro.\n"", letzterPreis);
+            break;
+        default:
+            letzterPreis = Preis;
+            printf(""Das sind mit 0 %% Rabatt genau %.2f Euro.\n"", letzterPreis);
+            break;
+    }
+}"
+Platena,Moritz,platena@campus.tu-berlin.de,Beendet,"2. Juni 2021  10:46","5. Juni 2021  13:56","3 Tage 3 Stunden","8,69","arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '\0'","arr[0] == 7
+arr[1] == 8
+arr[2] == 9
+arr[3] == 3",-5.0 <= a - b <= 5.0,double a = (double)(3/4);,if ( -eps < a-b && a-b < eps),"z speichert die Position des größten Wertes im Array.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %%; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array [8][5];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <limits.h>
+
+int findIndexOfMax(int a[], int groesse){
+    int max = a[0];
+    int vergleich[] = {INT_MIN, INT_MIN, INT_MIN, INT_MIN};
+    int ind = 0;
+    
+    for (size_t i = 0; i < groesse; i++)
+    {
+        if (a[i] != vergleich[i]){
+            for (int j = 0; j < groesse; j++){
+        if(a[j] > max){
+            max = a[j];
+            ind = j;
+        }
+       }
+       
+    return ind;
+        }
+        
+    }
+return UINT_MAX;
+    
+    
+}
+
+
+int main(){
+    
+    int array[5];
+    printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+    for(int i = 0; i < 5; i++){
+       
+        scanf(""%i"", &(array[i]));
+    }
+
+
+    int sub[5] = {array[0], array[1], array[2], array[3], array[4]};
+    for(int i = 0; i < 5; i++){
+        
+        int ind = findIndexOfMax(sub, 5);
+        printf(""Naechstgroesstes: %i\n"" , sub[ind]);
+        sub[ind] = INT_MIN;
+    }
+
+}","#include <stdio.h>
+
+int main(){
+    float preis = 0;
+    int choise = 0;
+    int distance = 0;
+    float discount = 1;
+
+    printf(""Ahoi bei Yum Yum Pizza!\n drücken Sie ...\n"");
+    
+    do {
+    printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+        scanf(""%i"", &choise);
+        switch (choise)
+        {
+        case 1:
+            preis += 5.50;
+            printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+            break;
+        case 2:
+            preis += 4.30;
+            printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+            break;
+        case 3:
+            break;
+        default:
+            printf(""Dies ist keine gueltige eingabe\n"");
+            break;
+        }
+    }while (choise != 3);
+   
+
+    
+
+    printf(""\ndas wars? ...noch eine Frage:\nWelche Lieferentfernung hat die Bestellung (in km)?\n"");
+    scanf(""%i"", &distance);
+
+    if (preis > 10){
+        discount -= 0.1;
+    }
+   
+    
+    if (preis > 20){
+        discount -= 0.1;
+    }
+
+    
+    if (distance <= 2){
+        discount -= 0.1;
+    }
+   
+    if (distance >= 20){
+        discount -= 0.1;
+    }
+ 
+
+    float endPreis = preis * discount;
+    int neudicount = discount * 10;
+   
+
+   
+    switch (neudicount)
+    {
+    case 10:
+        printf(""Das sind mit 0 %% Rabatt genau %.2f Euro."", endPreis);
+        break;
+    case 9:
+        printf(""Das sind mit 10 %% Rabatt genau %.2f Euro."", endPreis);
+        break;
+    case 7:
+        printf(""Das sind mit 20 %% Rabatt genau %.2f Euro."", endPreis);
+        break;
+    case 6:
+        printf(""Das sind mit 30 %% Rabatt genau %.2f Euro."", endPreis);
+        break;
+    default:
+        printf(""wo wohnst du?"");
+        break;
+    }
+
+}"
+Horneburg,"Max Richard",m.horneburg@campus.tu-berlin.de,Beendet,"2. Juni 2021  11:00","3. Juni 2021  10:10","23 Stunden 9 Minuten","14,15","switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}
+; Wäsche muss in den Kleiderschrank.",int abgabe_druecken[];,"arr[0] == 0
+arr[1] == 0
+arr[2] == 0
+arr[3] == 3",if ( -eps < a-b && a-b < eps),double a = (double)(3/4);,"z speichert die Position des größten Wertes im Array.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: &; Teil 113: &; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: -; Teil 122: -; Teil 123: -; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[breite+2][hoehe+2];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <limits.h>
+
+int findIndexOfMax(int array[], int size) {
+	int index = UINT_MAX;
+	int value = INT_MIN;
+	for (int i=0; i<size; i++) {
+		if (array[i] > value) {
+			index = i;
+			value = array[i];
+		} 
+	}
+	return index;
+}
+
+
+int main() {
+	int array[5];
+	printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+	for (int i=0; i<5; i++) {
+		scanf(""%d"", &array[i]);
+	}
+	while(1) {
+		int index = findIndexOfMax(array, 5);
+		if (index != UINT_MAX) {
+			printf(""Naechstgroesstes: %d\n"", array[index]);
+			array[index] = INT_MIN;
+		} else {
+			break;
+		}
+	}
+	return 0;
+}","#include <stdio.h>
+
+int main() {
+	float summe = 0;
+	int type;
+	int run = 1;
+	printf(""Ahoi bei Yum Yum Pizza!\n drücken Sie ...\n""); 
+	while(run) {
+		printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+		scanf(""%d"", &type);
+	       switch(type) {
+			case 1:
+		 		printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+				summe += 5.50;
+				break;
+			case 2:
+				printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");		
+				summe += 4.30;
+				break;
+			case 3:
+				printf(""das wars? ...noch eine Frage:\nWelche Lieferentfernung hat die Bestellung (in km)?\n"");
+				float distanz;
+				float rabatt = 0;
+				scanf(""%f"", &distanz);
+				if (distanz <= 2) {
+					rabatt += 0.1;
+				} else if (distanz >= 20) {
+					rabatt += 0.1;
+				}
+				if (summe >= 10) {
+					rabatt += 0.1;
+				}
+				if (summe >= 20) {
+					rabatt += 0.1;
+				}
+				float zu_zahlen = summe * (1.0 - rabatt);
+				printf(""Das sind mit %d %% Rabatt genau %.2f Euro.\n"", (int) (rabatt * 100), zu_zahlen);
+				run = 0;
+				break;
+			default:
+				printf(""Diesen Punkt haben wir leider nicht auf der Karte!\n"");
+				break;
+	       }
+	}
+	return 0;
+}"
+Otto,Klara,klara.otto@campus.tu-berlin.de,Beendet,"2. Juni 2021  13:25","6. Juni 2021  13:51","4 Tage","14,79","Wäsche muss in den Kleiderschrank.
+; switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}",geca,"arr[0] == 0
+arr[1] == 0
+arr[2] == 0
+arr[3] == 3","Die main-Funktion hat den Rückgabewert 1.
+
+; Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug","z speichert die Position des größten Wertes im Array.",if ( -eps < a-b && a-b < eps),"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 2; Teil 63: 3; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: -; Teil 103: -; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: 18.02; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+	char array [breite+2][hoehe+2];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <limits.h>
+
+int findIndexOfMax(int array[],int size){
+	int max = INT_MIN;
+	int index = INT_MIN;
+	for (int i = 0;i < size;i++){
+		if (array[i]>max){
+			max = array[i];
+			index = i;
+		}
+	}
+
+	if (max == INT_MIN) {
+		return UINT_MAX;
+	} else {
+		return index;
+	}
+}
+int main() {
+	printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+	int array[5];
+	for (int i=0;i<5;i++){
+		scanf(""%i"",&(array[i]));
+	}
+	int index = INT_MIN;
+	while((index = findIndexOfMax(array, 5)) != UINT_MAX) {
+		printf(""Naechstgroesstes: %d\n"", array[index]);
+		array[index] = INT_MIN;
+	}
+}","#include<stdio.h>
+
+int mat(float km,float summe){
+if(km <= 2){
+	if(summe <= 10){
+	return 10;
+	}
+	else if(summe >= 20){
+	return 30;
+	}
+	else if(summe >= 10){
+	return 20;
+	}
+	else{
+	return 10;
+	}
+	}
+else if( km >= 20){
+	if(summe <= 10){
+	return 10;
+	}
+	else if(summe >= 20){
+	return 30;
+	}
+	else if(summe >= 10){
+	return 20;
+	}
+	else {
+	return 10;
+	}
+	}
+else {
+ return 0;
+ }
+}
+float Geld(int rabat,float summe){
+float geld = 0;
+geld = ((summe * (100 - rabat))/100);
+return geld;
+}
+
+
+int main(){
+int Zahl = 0;
+float km = 0;
+float summe = 0;
+printf(""Ahoi bei Yum Yum Pizza!\n"");
+printf("" drücken Sie ...\n"");
+printf("" '1' fuer Salami Pizza dazu\n"");
+printf("" '2' fuer Veggi Pizza dazu\n"");
+printf("" '3' fuer Bestellung abschliessen\n"");
+scanf(""%i"",&Zahl);
+do{
+switch(Zahl) {
+	case 1: 
+	printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+	summe += 5.5;
+	break;
+	case 2:
+	printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+	summe += 4.3;
+	break;
+	
+	default: 
+	printf(""Nummer nicht vergeben:\n"");
+	break;
+	}
+printf("" '1' fuer Salami Pizza dazu\n"");
+printf("" '2' fuer Veggi Pizza dazu\n"");
+printf("" '3' fuer Bestellung abschliessen\n"");
+scanf(""%i"",&Zahl);
+	
+}
+while(Zahl != 3);
+printf(""\ndas wars? ...noch eine Frage:\nWelche Lieferentfernung hat die Bestellung (in km)?\n"");
+scanf(""%f"",&km);
+int rabat = mat(km,summe);
+float geld = Geld(rabat,summe);
+printf(""Das sind mit %i %% Rabatt genau %.2f Euro.\n"", rabat, geld);
+}"
+Gerhardt,"Fynn Niklas",f.gerhardt@tu-berlin.de,Beendet,"3. Juni 2021  14:29","3. Juni 2021  17:45","3 Stunden 15 Minuten","14,74","Wäsche muss in den Kleiderschrank.
+; switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}","arr[0] == 0
+arr[1] == 0
+arr[2] == 0
+arr[3] == 3","arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '\0'","z speichert die Position des größten Wertes im Array.",double a = (double)(3/4);,"Die main-Funktion hat den Rückgabewert 1.
+
+; Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 3.6; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array [breite+2][hoehe+2];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <limits.h>
+#include <stdio.h>
+
+int findIndexOfMax(int array[], int laenge){
+	int index = UINT_MAX;
+	int max = INT_MIN;
+	for(int i = 0; i<laenge; ++i){
+		if(array[i] > max){
+			max = array[i];
+			index = i;
+		}
+	}
+	return index;
+}
+
+int main(){
+	int array[5];
+	printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+	scanf(""%d %d %d %d %d"", &array[0], &array[1], &array[2], &array[3], &array[4]);
+	unsigned int index = findIndexOfMax(array, 5);
+	if(index == UINT_MAX){
+		printf(""Die Liste ist leer \n"");
+		return 0;
+	}
+	for(int i = 0; i<5; ++i){
+		int j = findIndexOfMax(array, 5);
+		printf(""Naechstgroesstes: %d \n"", array[j]);
+		array[j] = INT_MIN;
+	}
+}","#include <stdio.h>
+
+int main(){
+	float summe = 0;
+	float discount = 0;
+	int eingabe = 0;
+	float entfernung;
+	printf(""Ahoi bei Yum Yum Pizza!\n drücken Sie ...\n"");
+	while(eingabe != 3){
+		printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+		scanf(""%d"", &eingabe);
+		if(eingabe == 1){
+			printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+			summe += 5.5;
+		}else if(eingabe ==2){
+			printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+			summe += 4.30;
+		}else if(eingabe == 3){
+			printf(""\ndas wars? ...noch eine Frage:\n"");
+			printf(""Welche Lieferentfernung hat die Bestellung (in km)?\n"");
+		}else{
+			printf(""ungültige Eingabe. Bitte erneut versuchen\n"");
+		}
+	}
+	scanf(""%f"", &entfernung);
+	if(entfernung<=2 || entfernung >=20){
+		discount += 0.1;
+	}if(summe >= 10){
+		discount += 0.1;
+	}if(summe >= 20){
+		discount += 0.1;
+	}
+	summe = summe*(1-discount);
+	printf(""Das sind mit %.0f %% Rabatt genau %.2f Euro.\n"", discount*100, summe);
+}"
+Outhwaite,"Jared Louis",jared.l.outhwaite@campus.tu-berlin.de,Beendet,"3. Juni 2021  17:09","6. Juni 2021  23:59","3 Tage 6 Stunden","12,13","Wäsche muss in den Kleiderschrank.
+; switch(TODO){
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+    case 2:
+        printf(""Wäsche muss auf den Wäscheständer.\n"");
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+}",int abgabe_druecken[];,"arr[0] == 0
+arr[1] == 0
+arr[2] == 0
+arr[3] == 0","z zählt, wieviele Iterationen durchgeführt wurden.",if ( -eps < a-b && a-b < eps),double a = (double)(3/4);,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+unsigned char array [8][5];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <limits.h>
+
+int findIndexOfMax(int a[], int n){
+   if(a[0]>a[1]&&a[0]>a[2]&&a[3]<a[0]&&a[4]<a[0]){
+   return 0;}
+   else if(a[1]>a[0]&&a[1]>a[2]&&a[3]<a[1]&&a[4]<a[1]){
+   return 1;}
+   else if(a[2]>a[1]&&a[2]>a[0]&&a[3]<a[2]&&a[4]<a[2]){
+   return 2;}
+   else if(a[3]>a[1]&&a[3]>a[2]&&a[0]<a[3]&&a[4]<a[3]){
+   return 3;}
+   else if(a[4]>a[1]&&a[4]>a[2]&&a[3]<a[4]&&a[0]<a[4]){
+   return 4;}
+   else{ return UINT_MAX;}
+}
+
+
+int main(){
+   int a[5];
+   int us[5];
+   int c[5];
+   printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+   for(int i=0;i<5;i++){
+      
+      scanf(""%i"",&a[i]);
+      c[i] = a[i];
+      }
+   
+   for(int i=0;i<5;i++){
+      us[i] = findIndexOfMax(a,5);
+      printf(""Naechstgroesstes: %i\n"",a[us[i]]);
+            a[us[i]] = INT_MIN;
+      }  
+                  
+      }","#include <stdio.h>
+
+int main(){
+   int a;
+   float sum;
+   float b = 1;
+   int dis;
+   printf(""Ahoi bei Yum Yum Pizza!\n drücken Sie ...\n"");
+   for(int i=0;i<2;i++){
+      printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+      scanf(""%i"",&a);
+      if(a==1){
+         sum += 5.50;
+         i = 0;
+         printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+         }
+      else if(a==2){
+         sum += 4.30;
+         i = 0;
+         printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+         }
+      else if(a==3){
+         i = 3;
+         printf(""\n\n"");
+         }
+      else{
+      i = 0;
+      }
+   }
+   if(20>sum&&sum>=10){
+      b -= 0.1;
+   }
+   if(sum>=20){
+      b -= 0.2;
+   }
+   printf(""das wars? ...noch eine Frage:\nWelche Lieferentfernung hat die Bestellung (in km)?\n"");
+   scanf(""%i"",&dis);
+   if(dis<=2){
+      b -= 0.1;
+      }
+   if(dis>=20){
+      b -= 0.1;
+      }
+   sum = sum*b;
+   printf(""Das sind mit %.0f %% Rabatt genau %.2f Euro.\n"", 100-(b*100), sum);
+}"
+Schmidt,"Tom Alexander",tom.a.schmidt@campus.tu-berlin.de,Beendet,"4. Juni 2021  08:41","6. Juni 2021  19:14","2 Tage 10 Stunden","14,74","arr[0] == 0
+arr[1] == 0
+arr[2] == 0
+arr[3] == 3",geca,"arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '\0'",double a = (double)(3/4);,if ( -eps < a-b && a-b < eps),"z speichert die Position des größten Wertes im Array.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: 4.99; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 3.6; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: -; Teil 103: -; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[8][5];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <limits.h>
+#include <stdio.h>
+
+int findIndexOfMax(int array[], int groesse){
+    int index = UINT_MAX;
+    int hilf = INT_MIN;
+    int leer = 1;
+    for(int i=0; i<groesse; i++){
+        if(array[i]>hilf){
+            index = i;
+            hilf = array[i];
+            leer = 0;
+        }
+    }
+    return index;
+}
+
+int main(){
+    //die nächsten 3 Zeilen sind hauptsächlich zum Testen da!
+        //int array[5] = {1, 7, 21, 6, 5};
+        //int index = findIndexOfMax(array, 5); //Testaufruf erfolgreich!
+        //printf(""Die größte Zahl des Arrays liegt am Index %i und lautet %i\n"", index, array[index]);
+    //hier Array mit länge 5 anlegen; vom Nutzer mit Zahlen füllen lassen
+    int array[5];
+    printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+    for(int i=0; i<5; i++){
+        scanf(""%i"", &array[i]);
+    }
+    //Schleife erstellen, die das Array-Element mit größter Zahl auf INT_MIN setzt und Inhalte ausgibt
+    for(int i=0; i<5; i++){
+        int hilf = findIndexOfMax(array, 5);
+        printf(""Naechstgroesstes: %i\n"", array[hilf]);
+        array[hilf] = INT_MIN;
+    }
+    
+    //noch ein Test
+    //int arrayzwei[4] = {INT_MIN, INT_MIN, INT_MIN, INT_MIN};
+    //int bla = findIndexOfMax(arrayzwei, 4);
+    //if (bla == UINT_MAX) printf(""Tutti Frutti!"");
+    //else printf(""Smerz viel!"");
+    
+    return 0;
+}","#include <stdio.h>
+
+int main() {
+    int mengesalami = 0;
+    int mengeveggie = 0;
+    float distanz = 0;
+    float preis = 0;
+    float rabatt = 0;
+    int eingabe;
+    
+    printf(""Ahoi bei Yum Yum Pizza!\n"");
+    printf("" drücken Sie ...\n"");
+    while(eingabe != 3){
+        printf("" '1' fuer Salami Pizza dazu\n"");
+        printf("" '2' fuer Veggi Pizza dazu\n"");
+        printf("" '3' fuer Bestellung abschliessen\n"");
+        scanf(""%i"", &eingabe);
+        switch(eingabe){
+            case 1: mengesalami += 1; preis +=5.5; printf(""Einmal Pizza Salami dazu, fuer 5.50\n""); break;
+            case 2: mengeveggie += 1; preis +=4.3; printf(""Einmal Pizza Veggi dazu, fuer 4.30\n""); break;
+            case 3: break;
+            default: printf(""Diese Eingabe war leider ungültig.\n"");
+        }
+    }
+    
+    printf(""\ndas wars? ...noch eine Frage:\n"");
+    printf(""Welche Lieferentfernung hat die Bestellung (in km)?\n"");
+    scanf(""%f"", &distanz);
+    if(distanz <= 2){
+        rabatt = 10;
+    }
+    else if(distanz >= 20){
+        rabatt = 10;
+    }
+    
+    if(preis >= 10 && preis < 20){
+        rabatt += 10; 
+    }
+    else if(preis > 20){
+        rabatt += 20;
+    }
+    preis = preis - (preis*(rabatt/100));
+    printf(""Das sind mit %.0f %% Rabatt genau %.2f Euro.\n"", rabatt, preis);
+    
+	return 0;
+}"
+Hansel,"Karsten Siegfried",hansel@campus.tu-berlin.de,Beendet,"4. Juni 2021  14:15","6. Juni 2021  16:23","2 Tage 2 Stunden","11,73","arr[0] == 0
+arr[1] == 0
+arr[2] == 0
+arr[3] == 3",int abgabe_druecken[];,geca,"Der Zug fährt nicht.
+; Die main-Funktion hat den Rückgabewert 0.","z speichert die Position des größten Wertes im Array.",double a = (double)(3/4);,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 5.49; Teil 87: 1; Teil 88: 2; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: -; Teil 142: -; Teil 143: -","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    int array [5][8];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <limits.h>
+
+
+int findIndexOfMax(int a[],int g){
+
+int x = INT_MIN;
+int z ;
+int y = 0;
+for(int i = 0; i <= g; i++){
+if(a[i] >= x) {
+z = i;
+x=a[i];
+}
+
+if(a[i] == INT_MIN) y+=1;
+if(y==5){ return UINT_MAX;}
+
+}
+
+return z;
+
+
+}
+
+
+int main()
+{ 
+int ar[4];
+printf(""Bitte geben Sie 5 ganze Zahlen ein: "" );
+scanf(""%i"",&ar[0]);
+scanf(""%i"",&ar[1]);
+scanf(""%i"",&ar[2]);
+scanf(""%i"",&ar[3]);
+scanf(""%i"",&ar[4]);
+
+for (int i=0; i<5; i++){
+printf(""Naechstgroesstes: %i\n"", ar[findIndexOfMax(ar,4)]);
+ar[findIndexOfMax(ar,4)] = INT_MIN;
+
+
+}
+
+}","#include <stdio.h>
+
+int main()
+{   char eingabe;
+    float summe = 0;
+    int entfernung = 0;
+    int r = 0;
+    printf(""Ahoi bei Yum Yum Pizza!\n""
+           "" drücken Sie ...\n '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+    
+
+  for (summe = summe;eingabe != '3'; summe = summe){
+   scanf(""%c"", &eingabe);
+    if(eingabe ==  '1' ){ printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");summe += 5.50;
+               printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+               }
+
+
+     
+    if (eingabe == '2'){ printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");summe += 4.30;
+                printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");}
+               
+
+
+}
+
+
+   
+  if (eingabe == '3'){    printf(""\ndas wars? ...noch eine Frage:\nWelche Lieferentfernung hat die Bestellung (in km)?\n""); 
+                scanf(""%i"", &entfernung);
+                 if (entfernung <= 2 ) r += 10;
+                 if (entfernung >= 20 ) r += 10;
+                 if (summe > 10) r += 10;
+                 if (summe >20 ) r += 10;
+                 float i = 1 - (r * 0.01); 
+
+                printf(""Das sind mit %i %% Rabatt genau %.2f Euro.\n"",r,summe *= i);}
+                    
+}"
+Sen,"Muzaffer Mert",m.sen@campus.tu-berlin.de,Beendet,"6. Juni 2021  00:56","6. Juni 2021  22:47","21 Stunden 50 Minuten","7,67",geca,int abgabe_druecken[];,"arr[0] == 0
+arr[1] == 0
+arr[2] == 0
+arr[3] == 3","Die main-Funktion hat den Rückgabewert 0.
+
+; Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug",double a = (double)(3/4);,if ( -eps < a-b && a-b < eps),"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: 0; Teil 88: 2; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: -; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[8][5];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <limits.h>",-
+Ngu,"Siaw Tieng",s.ngu@campus.tu-berlin.de,Beendet,"6. Juni 2021  03:59","6. Juni 2021  20:47","16 Stunden 48 Minuten","14,25","arr[0] == 0
+arr[1] == 0
+arr[2] == 0
+arr[3] == 3",-5.0 <= a - b <= 5.0,"arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '\0'","z speichert die Position des kleinsten Wertes im Array.",double a = (double)(3/4);,"Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[breite+2][hoehe+2];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <limits.h>
+#include <stdio.h>
+
+// input: array with number, size of array
+int findIndexOfMax(int arr[], int size) {
+    int x = INT_MIN;
+    int z = 0;
+    int boolean = 0;
+    // all elements in array are INT_MIN, return UINT_MAX
+    for (int i = 0; i < size; ++i) {
+        if (arr[i] != INT_MIN) {
+            boolean = 1;
+        }
+    }
+    
+    // return the index of element with largest number as z
+    // parse the array and find the largest number
+    if (boolean == 1) {
+        for (int i = 0; i < size; ++i) {
+            if (arr[i] != INT_MIN && x <= arr[i]) {
+                x = arr[i];
+                z = i;
+            }
+        }
+        return z;
+    } 
+    
+    else {
+        return UINT_MAX;
+    }
+    
+}
+
+
+int main() {
+    int zahlen[5];
+    // program user fill the array with integer input
+    printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+    for (int i = 0; i < 5; ++i) {
+        // printf(""Naechstgroesstes: "");
+        scanf(""%d"", &zahlen[i]);
+    }
+    
+    // sort the number
+    int a = 0;
+    for (int i = 0; i < 5; ++i) {
+        for (int j = i + 1; j < 5; ++j) {
+            if (zahlen[i] < zahlen[j]) {
+                a =  zahlen[i];
+                zahlen[i] = zahlen[j];
+                zahlen[j] = a;
+            }
+        }
+    }
+    
+    
+    for (int i = 0; i < 5; ++i) {
+        printf(""Naechstgroesstes: %d\n"", zahlen[i]);
+    }
+    
+    
+    
+    // called in a loop and then in each case the element of the returned index is to be set to INT_MIN
+    int x = 0;
+    while (x < 5) {
+        int r = findIndexOfMax(zahlen, 5);
+        if (r == UINT_MAX) {
+            return 0;
+        } else {
+            zahlen[r] = INT_MIN;
+            x++;
+        }
+        
+    }
+    
+    return 0;
+}","#include <stdio.h>
+
+int main () {
+    printf(""Ahoi bei Yum Yum Pizza!\n"");
+    printf("" drücken Sie ...\n"");
+    int order = 0;
+    /*printf(""'1' fuer Salami Pizza dazu\n'2' fuer Veggi Pizza dazu\n'3' fuer Bestellung abschliessen\n"");
+    scanf(""%d"", &order);*/
+    float sum = 0;
+    
+    while (order != 3) {
+        printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+        
+        scanf(""%d"", &order);
+    
+        if (order == 1) {
+            sum = sum + 5.50;
+            printf(""Einmal Pizza Salami dazu, fuer 5.50\n"" );
+        }
+        if (order == 2) {
+            sum = sum + 4.30;
+            printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"" );
+        }
+    }
+    
+    printf(""\n"");
+    printf(""das wars? ...noch eine Frage: \n"");
+    printf(""Welche Lieferentfernung hat die Bestellung (in km)?\n"");
+    float distance = 0;
+    float new_sum = 0;
+    int discount = 100;
+    scanf(""%f"", &distance);
+   
+    if (distance <= 2 || distance >= 20) {
+       discount = discount - 10;
+    }
+    
+    if (sum > 10 && sum <= 20) {
+        discount = discount - 10;
+    }
+    
+    if (sum > 20) {
+        discount = discount - 20;
+    }
+    
+    new_sum = sum * discount / 100;
+    int new_discount = 100 - discount;
+    
+    printf(""Das sind mit %d %% Rabatt genau %.2f Euro.\n"", new_discount, new_sum);
+    
+}"
+Ruschke,Dennis,dennis.ruschke@campus.tu-berlin.de,Beendet,"6. Juni 2021  09:26","6. Juni 2021  23:59","14 Stunden 32 Minuten","8,11",fdb,"Wäsche muss in den Kleiderschrank.
+; switch(TODO){
+    case 1:
+        printf(""Wäsche muss in die Waschmaschine.\n"");
+        break;
+    case 2:
+         printf(""Wäsche muss auf den Wäscheständer.\n"");
+        break;
+    case 3:
+        printf(""Wäsche muss in den Kleiderschrank.\n"");
+        break;
+    default:
+        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
+        break;
+}","arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '\0'",double a = (double)(3/4);,"z speichert die Position des größten Wertes im Array.","Die main-Funktion hat den Rückgabewert 0.
+
+; Der Zug fährt nicht.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: %; Teil 13: %; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array [breite + 1][hoehe + 1];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <limits.h>","#include <stdio.h>
+#include <stdlib.h>
+
+
+    
+int main() {
+   float summe = 0.0;
+    int eingabe;
+    int entfernung;
+    int rabatt=0;
+    int i=0;
+    
+    void addition(float x) {
+    summe = summe + x;
+}
+void printMenue() {
+        printf("" '1' fuer Salami Pizza dazu\n"");
+        printf("" '2' fuer Veggi Pizza dazu\n"");
+        printf("" '3' fuer Bestellung abschliessen\n"");
+    }
+    //Header
+    printf(""Ahoi bei Yum Yum Pizza!\n"");
+    printf("" drücken Sie ...\n"");
+    //Abfrage
+    
+    while (i<1) {
+    printMenue();
+    scanf(""%d"", &eingabe);
+    switch(eingabe) {
+        case 1: printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+                addition(5.50);
+                break;
+        case 2: printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+                addition(4.30);
+                break;
+        case 3: printf(""\n"");
+                printf(""das wars? ...noch eine Frage:\n"");
+                printf(""Welche Lieferentfernung hat die Bestellung (in km)?\n"");
+                scanf(""%d"", &entfernung);
+                i=1;
+                break;
+    }
+    }
+    // Rabattrechnung
+    if (entfernung <= 2) { 
+        rabatt += 10;
+    }
+    if (entfernung >= 20) {
+        rabatt +=10;
+    }
+    if (summe >= 10) {
+        rabatt += 10;
+    }
+    if (summe >= 20) {
+        rabatt += 10;
+    }
+    //Ausgabe
+    float rabattProzent = (100.0-rabatt)/100.0;
+    float s = summe;
+    float r = rabattProzent;
+    float g = s * r;
+    
+    printf(""Das sind mit "");
+    printf(""%d"", rabatt);
+    printf("" "");
+    printf(""%%"");
+    printf("" Rabatt genau "");
+    printf(""%.2f"", g);
+    printf("" Euro."");
+
+    return 0;
+}"
+Durak,Umut,umut.durak@campus.tu-berlin.de,Beendet,"6. Juni 2021  13:03","6. Juni 2021  23:59","10 Stunden 55 Minuten","11,77",int abgabe_druecken[];,"arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '0'",geca,"z zählt, wieviele Iterationen durchgeführt wurden.","Die main-Funktion hat den Rückgabewert 0.
+
+; Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug",double a = (double)(3/4);,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: 0; Teil 88: 2; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: -; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[8][5];
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <limits.h>
+
+
+int findIndexOfMax(int x[], int groesse){
+
+int array[] = {INT_MIN,INT_MIN,INT_MIN,INT_MIN,INT_MIN};
+int index = 0;
+
+	for(int i = 0; i < groesse; i++){
+	if(array[i] > x[i]){
+	array[i] = x[i];
+	index = i;
+		} 
+	} return index;
+}
+
+
+
+
+
+int main() {
+printf(""Bitte geben Sie 5 ganze Zahlen ein:"");
+	int array[5];
+	int temp;
+for(int i = 0; i < 5 ; i++ ){	
+	scanf(""%i"" , &array[i]);
+	}
+for(int i = 0; i<5 ; i++){
+	for(int j=0; j<5 ; j++){
+		if(array[i] > array[j]){
+			temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
+			}
+		}
+	}
+for(int i = 0; i<5 ; i++)	{
+printf("" Naechstgroesstes: %i\n"" , array[i]);
+		}
+	
+
+}","#include <stdio.h>
+#include <math.h> 
+
+
+int main(){
+
+printf(""Ahoi bei Yum Yum Pizza!\n drücken Sie ...\n"");
+printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+
+int auswahl;
+float summe = 0;
+ 
+do {
+scanf(""%i"" , &auswahl);
+switch(auswahl){ case 1 : printf(""Einmal Pizza Salami dazu, fuer 5.50\n"");
+printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+				summe+= 5.50; break;
+		 case 2 : printf(""Einmal Pizza Veggi dazu, fuer 4.30\n"");
+		 printf("" '1' fuer Salami Pizza dazu\n '2' fuer Veggi Pizza dazu\n '3' fuer Bestellung abschliessen\n"");
+				summe += 4.30; break;
+		 default : printf(""das wars? ...noch eine Frage:\nWelche Lieferentfernung hat die Bestellung (in km)?\n"");	break;	
+		 
+		} 
+
+} while (auswahl < 3);
+
+int km ;
+scanf(""%i"" , &km);
+int discount = 0;
+
+if((km <= 2) || (km >= 20)) { discount += 10; };
+if((summe > 10)){  discount +=10; };
+if (summe > 20){discount +=10;} ;
+
+float endpreis = summe - summe*discount/100;
+
+	printf(""Das sind mit %i %% Rabatt genau %.2f Euro.\n "" , discount , endpreis );
+}"
+Gföhler,"Vincent Bruce",v.gfoehler@campus.tu-berlin.de,Beendet,"6. Juni 2021  15:32","6. Juni 2021  23:59","8 Stunden 26 Minuten","13,46",geca,double temp[jahre*365];,"arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '\0'","Der Zug fährt nicht.
+; Die main-Funktion hat den Rückgabewert 0.",if ( -eps < a-b && a-b < eps),double a = (double)(3/4);,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array[8][5];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <stdio.h>
+#include <limits.h>
+
+int findIndexOfMax (int array[], int groese)
+{
+     unsigned int indexOfMax = 0;
+
+    for (int i = 0; i < groese; i++)
+    {
+       if (array[i] > array[indexOfMax] )
+       {
+           indexOfMax = i;
+       }
+    }
+
+    if (array[indexOfMax] == INT_MIN)
+    {
+        indexOfMax = UINT_MAX;
+    }
+    
+     
+
+    return indexOfMax;
+}
+
+int main ()
+{
+    unsigned int index;
+    int array_Groese = 5;
+    int array[array_Groese];
+
+    printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+
+    for (int i = 0; i < array_Groese; i++)
+    {
+        scanf(""%d"",&array[i]);
+    }
+    
+    
+    index = findIndexOfMax(array,array_Groese);
+
+
+    while ( index != UINT_MAX )
+    {
+        printf(""Naechstgroesstes: %d\n"",array[index]);
+        array[index] = INT_MIN;
+        index = findIndexOfMax(array,array_Groese);
+    }
+    
+
+    return 0;
+}","#include <stdio.h>
+
+int menu ()
+{
+    printf(""\n '1' fuer Salami Pizza dazu"");
+    printf(""\n '2' fuer Veggi Pizza dazu"");
+    printf(""\n '3' fuer Bestellung abschliessen"");
+
+    return 0;
+}
+
+int main ()
+{
+    float  summe= 0;
+    int auswahl = 0;
+    float rabatt;
+    int rabattProz;
+    int entfernung;
+
+    printf(""Ahoi bei Yum Yum Pizza!"");
+    printf(""\n drücken Sie ..."");
+
+    while ( auswahl != 3 )
+    {
+        menu();
+        scanf(""%d"",&auswahl);
+
+        switch (auswahl)
+        {
+        case 1:
+            
+            printf(""\nEinmal Pizza Salami dazu, fuer 5.50"");
+            summe += 5.50;
+
+            break;
+        
+        case 2:
+
+            printf(""\nEinmal Pizza Veggi dazu, fuer 4.30"");
+            summe += 4.30;
+
+            break;
+        
+        case 3:
+
+            printf(""\n\ndas wars? ...noch eine Frage:"");
+
+            break;
+
+        default:
+            break;
+        }
+    }
+    
+    printf(""\nWelche Lieferentfernung hat die Bestellung (in km)?"");
+    scanf(""%d"",&entfernung);
+
+    if (( entfernung<=2 ) || ( entfernung >= 20 ))
+    {
+        rabatt = 0.1;
+    }
+    
+    if ( summe > 10 )
+    {
+        rabatt += 0.1;
+    }
+
+    if ( summe > 20 )
+    {
+        rabatt += 0.1;
+    }
+    
+    summe = summe -(summe*rabatt);
+    rabattProz = rabatt*100;
+
+    printf(""\nDas sind mit %d %% Rabatt genau %.2f Euro."",rabattProz,summe);
+
+    return 0;
+}"
+Weber,"Michael Andreas",michael.a.weber@campus.tu-berlin.de,Beendet,"6. Juni 2021  16:52","6. Juni 2021  23:59","7 Stunden 6 Minuten","6,75",geca,-5.0 <= a - b <= 5.0,"arr[0] == 'I'
+arr[1] == 'N'
+arr[2] == 'F'
+arr[3] ==  50
+arr[4] == '\0'","z speichert die Position des größten Wertes im Array.",double a = (double)(3/4);,"Der Zug fährt nicht.
+Es ist wieder ein Online-Semester. Ich brauche keinen Zug","Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: ; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: ; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: ; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: ; Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: ; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117: ; Teil 118: ; Teil 119: ; Teil 120: ; Teil 121: ; Teil 122: ; Teil 123: ; Teil 124: ; Teil 125: ; Teil 126: ; Teil 127: ; Teil 128: ; Teil 129: ; Teil 130: ; Teil 131: ; Teil 132: ; Teil 133: ; Teil 134: ; Teil 135: ; Teil 136: ; Teil 137: ; Teil 138: ; Teil 139: ; Teil 140: ; Teil 141: ; Teil 142: ; Teil 143:","#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int breite = 6;
+    int hoehe = 3;
+    char array [breite+2][hoehe+2];
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+			if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))){
+				printf(""A"");
+				array[j][i] = 'A';
+			} else {
+				printf(""B"");
+				array[j][i] = 'B';
+			}
+		}
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+
+	printf(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	for(int i = 0; i <= (hoehe+1); i++){
+		for(int j = 0; j <= (breite+1); j++){
+            printf(""%c"", array[j][i]);
+        }
+		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
+	}
+	return 0;
+}","#include <limits.h>
+#include <stdio.h>
+
+int main(){
+    int array[5];
+    printf(""Bitte geben Sie 5 ganze Zahlen ein: "");
+    for (int i=0; i<5; i++){ 
+        int n = 0;
+     scanf(""%d"", &array [i]);
+}
+          int findIndexOfMax (int arr[],int laenge){
+              int x = INT_MIN;
+              int z = UINT_MAX;
+              for (int a = 0; a<laenge; ++a){
+                  if (x < arr[a]) {
+                      x = arr[a];
+                      z = a;
+                  }
+              }
+              if (z<UINT_MAX){
+              printf(""Naechstgroesstes: %d \n"", array[z]);
+              arr[z]=INT_MIN;
+              }
+              return z;
+          }
+          while (findIndexOfMax(array,5)<UINT_MAX);  
+          
+       }",-

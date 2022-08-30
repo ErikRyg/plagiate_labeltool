@@ -1,0 +1,111 @@
+html,body {
+    height:100%;
+    overflow: hidden;
+}
+.Select-value-label{
+
+    font-size: 0.9rem;
+}
+
+.container {
+    margin-left: 15px; /* from navbar */
+}
+
+.js-plotly-plot .plotly, .js-plotly-plot .plotly div {
+/*height: 200px; /* we have to set it small, such that it adapts to parent */
+}
+img {
+    background: white;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.sidebar {
+    padding: 1.5rem 1.5rem .375rem;
+    overflow-y: scroll;
+    height: calc(100% - 56px);
+    /*background-color: green;*/
+    font-size: 0.85rem;
+}
+
+.content {
+    padding: 2.5rem 2.5rem 1.5rem;
+    overflow-y: scroll;
+    height: calc(100% - 56px);
+    background-color: white;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.8)
+}
+
+.nav-link:hover {
+    color: rgba(255,255,255,1)
+}
+
+#navbar {
+    position: sticky;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.title_container {
+    text-align: center;
+}
+
+.graph_container{
+    margin-bottom: 20px;
+}
+
+/*
+* < #sidebar {
+    height: 100%;
+}
+
+#sidebar * {
+    height: auto;
+}
+
+#content * {
+    height: auto;
+}*/
+
+
+
+#react-entry-point,
+#react-entry-point > div,
+#_dash-global-error-container,
+#_dash-global-error-container > div,
+#_dash-global-error-container > div > div:last-child,
+#_dash-global-error-container > div > div:last-child > div,
+#_dash-app-content,
+#_dash-app-content > div {
+    height: 100%;
+}
+
+
+
+#page-content > div {
+    height: 100%;
+}
+
+
+@media (max-width: 768px) {
+    #page-content {
+        overflow: scroll;
+    }
+
+    .sidebar {
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    .content {
+        height: auto;
+        overflow-y: hidden;
+    }
+
+}

@@ -1,0 +1,3071 @@
+﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/20,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9","Antwort 10"
+Wang,"Yang Felix",yang.f.wang@campus.tu-berlin.de,Beendet,"12. Juni 2021  14:39","20. Juni 2021  21:40","8 Tage 7 Stunden","16,88",5,"Nichts, da Programm nicht kompiliert.","Ein C-String ist ein Array von char-Variablen.","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}",0,"if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 208; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: 212; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 11; Teil 123: -; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 2(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: 2; Teil 141: 1; Teil 142: 0; Teil 143: 0; Teil 144: 3(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: 200; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 4(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: %; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 5(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: 208; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 3(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: -; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: %; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+	// Your factorization
+	if (resultat == 0 || resultat == 1) {
+		*nummer1 = 1;
+		*nummer2 = resultat;
+	} else {
+		int i = 0;
+		while (resultat % (resultat/2 - i) != 0) {
+			i++;	
+		}
+		*nummer1 = resultat/2 - i;
+		*nummer2 = resultat/(*nummer1);
+	}
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	long resultat, nummer1, nummer2;
+	scanf(""%ld"",&resultat);
+	factorize(resultat, &nummer1, &nummer2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"",resultat, nummer1 , nummer2);
+	return 0;
+}","#include <stdio.h>
+
+int main( int argc, char* argv[] ) 
+{
+    char str1[100];
+    char str2[100];
+    
+    int wordCounter = 0;
+    int str1Index = 0;
+    char* currPointer = argv[1];
+    
+    int letterCounter = 3;
+    int str2Index = 0;
+    
+    while (wordCounter < (argc - 1)) {
+        if (*currPointer == 0) {
+            wordCounter++;
+        } else {
+            char cP = *currPointer;
+            if (cP == 'x' || cP == 'y' || cP == 'q' || cP == 'X' || cP == 'Y' || cP == 'Q') {
+            } else {
+                str1[str1Index] = *currPointer;
+                str1Index++;
+                
+                if (letterCounter == 3) {
+                    str2[str2Index] = *currPointer;
+                    str2Index++;
+                    letterCounter = 0;
+                }
+                    letterCounter++;
+            }
+        }
+        currPointer++;
+    }
+    str1[str1Index] = 0;
+    str2[str2Index] = 0;
+    printf(""x,y,q und X,Y,Q aussortiert: %s\n"", str1);
+    printf(""Der neue String lautet: %s\n"", str2);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	int counter = 0;
+	while ((counter < zahl) && (*dest != '\0') && (*src != '\0')) {
+		*dest = *src;
+		dest++;
+		src++;
+		counter++;
+	}
+}
+
+void umdrehen( char* str )
+{
+	int size = 0;
+	char* strCopy = str;
+	while (*strCopy != '\0') {
+		size++;
+		strCopy++;
+	}
+	for (int i = 0; i<size/2; i++) {
+		char tmp = str[i];
+		str[i] = str[size-1-i];
+		str[size-1-i] = tmp;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Alfakir,Mohamad,alfakir.1@campus.tu-berlin.de,Beendet,"13. Juni 2021  21:26","20. Juni 2021  22:25","7 Tage","6,08",112,-,5,"x == 0 und y == 1","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","INT i = 0; 
+DO {
+    printf(""%d "", i);
+} WHILE (i = (i+1) % 7);","Teil 1: 10; Teil 2: -; Teil 3: 3; Teil 4: 2; Teil 5: 1; Teil 6: 0; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 11; Teil 13: 200; Teil 14: &; Teil 15: &; Teil 16: &; Teil 17: &; Teil 18: &; Teil 19: &; Teil 20: &; Teil 21: &; Teil 22: &; Teil 23: 12; Teil 24: 186; Teil 25: &; Teil 26: &; Teil 27: &; Teil 28: &; Teil 29: &; Teil 30: &; Teil 31: &; Teil 32: &; Teil 33: &; Teil 34: ; Teil 35: &; Teil 36: &; Teil 37: &; Teil 38: &; Teil 39: &; Teil 40: &; Teil 41: &; Teil 42: &; Teil 43: &; Teil 44: &; Teil 45: ; Teil 46: &; Teil 47: &; Teil 48: &; Teil 49: &; Teil 50: &; Teil 51: &; Teil 52: &; Teil 53: &; Teil 54: &; Teil 55: &; Teil 56: ; Teil 57: &; Teil 58: &; Teil 59: &; Teil 60: &; Teil 61: &; Teil 62: &; Teil 63: &; Teil 64: &; Teil 65: &; Teil 66: &; Teil 67: ; Teil 68: &; Teil 69: &; Teil 70: &; Teil 71: &; Teil 72: &; Teil 73: &; Teil 74: &; Teil 75: &; Teil 76: &; Teil 77: &; Teil 78: ; Teil 79: &; Teil 80: &; Teil 81: &; Teil 82: &; Teil 83: &; Teil 84: &; Teil 85: &; Teil 86: &; Teil 87: &; Teil 88: &; Teil 89: ; Teil 90: &; Teil 91: &; Teil 92: &; Teil 93: &; Teil 94: &; Teil 95: &; Teil 96: &; Teil 97: &; Teil 98: &; Teil 99: &; Teil 100: ; Teil 101: &; Teil 102: &; Teil 103: &; Teil 104: &; Teil 105: &; Teil 106: &; Teil 107: &; Teil 108: &; Teil 109: &; Teil 110: &; Teil 111: ; Teil 112: &; Teil 113: &; Teil 114: &; Teil 115: &; Teil 116: &; Teil 117: &; Teil 118: &; Teil 119: &; Teil 120: &; Teil 121: &; Teil 122: ; Teil 123: &; Teil 124: &; Teil 125: &; Teil 126: &; Teil 127: &; Teil 128: &; Teil 129: &; Teil 130: &; Teil 131: &; Teil 132: &; Teil 133: ; Teil 134: &; Teil 135: &; Teil 136: &; Teil 137: &; Teil 138: &; Teil 139: &; Teil 140: &; Teil 141: &; Teil 142: &; Teil 143: &; Teil 144: ; Teil 145: &; Teil 146: &; Teil 147: &; Teil 148: &; Teil 149: &; Teil 150: &; Teil 151: &; Teil 152: &; Teil 153: &; Teil 154: &; Teil 155: ; Teil 156: &; Teil 157: &; Teil 158: &; Teil 159: &; Teil 160: &; Teil 161: &; Teil 162: &; Teil 163: &; Teil 164: &; Teil 165: &; Teil 166: ; Teil 167: &; Teil 168: &; Teil 169: &; Teil 170: &; Teil 171: &; Teil 172: &; Teil 173: &; Teil 174: &; Teil 175: &; Teil 176: &; Teil 177: ; Teil 178: &; Teil 179: &; Teil 180: &; Teil 181: &; Teil 182: &; Teil 183: &; Teil 184: &; Teil 185: ; Teil 186: &; Teil 187: ; Teil 188: ; Teil 189: &; Teil 190: &; Teil 191: &; Teil 192: ; Teil 193: &; Teil 194: &; Teil 195: &; Teil 196: &; Teil 197: &; Teil 198: &; Teil 199: ; Teil 200: &; Teil 201: &; Teil 202: &; Teil 203: &; Teil 204: &; Teil 205: &; Teil 206: &; Teil 207: &; Teil 208: &; Teil 209: &; Teil 210: ; Teil 211: &; Teil 212: &; Teil 213: &; Teil 214: &; Teil 215: &; Teil 216: &; Teil 217: &; Teil 218: &; Teil 219: &; Teil 220: &","#include <stdio.h>
+
+void factorize(long product, long *factor1, long *factor2)
+{
+	int i=2;
+
+
+    if (product==0 || product==1 )
+    {
+        *factor1 = 1;
+        *factor2 = product;
+    }
+    else if (product>2)
+    {
+        for (i=2; i<=product ; i++)
+        {
+            if (product%i==0)
+            {
+                *factor2=i;
+                *factor1=product/i;
+                break;
+            }
+        }
+    }
+}
+
+int main(){
+        long product, factor1, factor2;
+	printf(""Please enter an Integer: "");
+        scanf(""%li"",&product);
+        factorize(product, &factor1, &factor2);
+	printf(""Possible Factors of %li are %li and %li.\n"",product,factor1,factor2);
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Aksoy,Vedia,vedia.aksoy@campus.tu-berlin.de,Beendet,"14. Juni 2021  00:04","20. Juni 2021  23:59","6 Tage 23 Stunden","11,25","Nichts, da Programm nicht kompiliert.","Die Länge eines C-Strings wird automatisch in einer extra int-Variable gespeichert.",zeigefinger--;,"x == 1 und y == 0",True,"INT i = 0; 
+DO {
+    i = (i+1) % 7;
+    printf(""%d "", i);
+} WHILE (i);","Teil 1: 9; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: 10; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: 11; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: 12; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: 13; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: 14; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: 2(; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: 3; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: 3; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: 4; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: ; Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: 3; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117: ; Teil 118: ; Teil 119: ; Teil 120: ; Teil 121: ; Teil 122: 4; Teil 123: ; Teil 124: ; Teil 125: ; Teil 126: ; Teil 127: ; Teil 128: ; Teil 129: ; Teil 130: ; Teil 131: ; Teil 132: ; Teil 133: 3; Teil 134: ; Teil 135: ; Teil 136: ; Teil 137: ; Teil 138: ; Teil 139: ; Teil 140: ; Teil 141: ; Teil 142: ; Teil 143: ; Teil 144: 4; Teil 145: ; Teil 146: ; Teil 147: ; Teil 148: ; Teil 149: ; Teil 150: ; Teil 151: ; Teil 152: ; Teil 153: ; Teil 154: ; Teil 155: 3(14); Teil 156: ; Teil 157: ; Teil 158: ; Teil 159: ; Teil 160: ; Teil 161: ; Teil 162: ; Teil 163: ; Teil 164: ; Teil 165: ; Teil 166: 4; Teil 167: ; Teil 168: ; Teil 169: ; Teil 170: ; Teil 171: ; Teil 172: ; Teil 173: ; Teil 174: ; Teil 175: ; Teil 176: ; Teil 177: 3; Teil 178: ; Teil 179: ; Teil 180: ; Teil 181: ; Teil 182: ; Teil 183: ; Teil 184: ; Teil 185: ; Teil 186: ; Teil 187: ; Teil 188: 5; Teil 189: ; Teil 190: ; Teil 191: ; Teil 192: ; Teil 193: ; Teil 194: ; Teil 195: ; Teil 196: ; Teil 197: ; Teil 198: ; Teil 199: 6; Teil 200: ; Teil 201: ; Teil 202: ; Teil 203: ; Teil 204: ; Teil 205: ; Teil 206: ; Teil 207: ; Teil 208: ; Teil 209: ; Teil 210: 15; Teil 211: ; Teil 212: ; Teil 213: ; Teil 214: ; Teil 215: ; Teil 216: ; Teil 217: ; Teil 218: ; Teil 219: ; Teil 220:","#include <stdio.h>
+
+#include <stdio.h>
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+	for(int i;i<1;i++){
+	    
+	}
+	if(resultat==50){
+	    *nummer1=25;
+	    *nummer2=2;
+	}
+	if(resultat==1){
+	    *nummer1=1;
+	    *nummer2=1;
+	}if(resultat==27){
+	    *nummer1=9;
+	    *nummer2=3;
+	}if(resultat==100){
+	    *nummer1=50;
+	    *nummer2=2;
+	}if(resultat==19){
+	    *nummer1=1;
+	    *nummer2=19;
+	}
+	if(resultat==66){
+	    *nummer1=33;
+	    *nummer2=2;
+	}
+	if(resultat==66){
+	    *nummer1=33;
+	    *nummer2=2;
+	}
+	if(resultat==0){
+	    *nummer1=1;
+	    *nummer2=0;
+	}
+	
+	
+	
+
+	
+}
+
+int main(){
+    long sonuc;
+    printf(""Please enter an Integer: "");
+	scanf(""%ld"",&sonuc);
+	long carpan1,carpan2;
+	factorize(sonuc,&carpan1 , &carpan2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"",sonuc,carpan1,carpan2);
+	return 0;
+}","#include stdio.h
+
+def char* kedi(int sayi, char* isim[]){
+    char array[100];
+   int count=0;
+    for (int i=0;i<sayi;i++){
+    
+    int uzunluk = strlen(isim[i]);
+    for (int j=0;j<uzunluk;j++){
+        if (isim[i][j]==""x""||isim[i][j]||==""y""||isim[i][j]==""q""||isim[i][j]==""X""||isim[i][j]==""Y""||isim[i][j]==""Q""){
+            }
+            else {array[count]=isim[i][j];count++;}
+    }
+    
+}    
+char yeniarray[count];
+for (int i=0;i<=count;i++){
+    yeniarray[i]=array[i];
+}
+
+
+
+char enyeni[count];
+for (int i=0;i<count;i++){
+    enyeni[i]=yeniarray[i];
+}
+
+
+
+return(yeniarray,yeniarray);
+
+}
+
+
+
+
+
+
+
+
+
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""x,y,q und X,Y,Q aussortiert: "" );
+  
+  printf( ""%s \n"", kedi(argc,argv)[0] );
+  printf( ""Der neue String lautet:"" );
+  printf( ""%s \n"", kedi(argc,argv)[1] );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  if(zahl>10){
+      for(int i=0;i<10;i++){
+      dest[i]=src[i];
+  }
+  }
+  else{for(int i=0;i<zahl;i++){
+      dest[i]=src[i];
+  }
+}
+}
+void umdrehen( char* str )
+{
+  char rev[1000];
+  int i, j, count = 0;
+  while (str[count] != '\0')
+  {
+    count++;
+  }
+  j = count - 1;
+
+  for (i = 0; i < count; i++)
+  {
+    rev[i] = str[j];
+    j--;
+  }
+  j = count - 1;
+
+  for (i = 0; i < count; i++)
+  {
+    str[i] = rev[i];
+  }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Franke,Alexander,alexander.franke@campus.tu-berlin.de,Beendet,"14. Juni 2021  00:40","20. Juni 2021  23:43","6 Tage 23 Stunden","6,42","Ein C-String ist ein Array von char-Variablen.","Nichts, da Programm nicht kompiliert.",5,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}",!3,0,"Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 208; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: 212; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 11; Teil 123: -; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 2(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: 200; Teil 141: 204; Teil 142: 208; Teil 143: 212; Teil 144: 3(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: %; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 3(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: %; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 4(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: %; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 5(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: 0; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: -; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: -; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+	// Your factorization
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	printf(""Possible Factors of %ld are %ld and %ld.\n"");
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+"Salas Lara","Luis Valentin",l.salaslara@tu-berlin.de,Beendet,"14. Juni 2021  11:40","17. Juni 2021  17:05","3 Tage 5 Stunden","19,00",5,zeigefinger = (int*)((short*)zeigefinger - 4);,"Nichts, da Programm nicht kompiliert.",!3,"x == 0 und y == 1",0,"Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 208; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: 5; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: 212; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 11; Teil 123: -; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 2(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: 2; Teil 141: 1; Teil 142: 0; Teil 143: 0; Teil 144: 3(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: 200; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 4(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: %; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 5(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: 208; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 3(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: -; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: %; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long produkt, long *faktor1, long *faktor2)
+{
+	if(produkt <=1){
+		*faktor1=1;
+		*faktor2=produkt;
+	}
+	else{
+		long i=2;
+		while (i<=produkt){
+			long temp=produkt % i;
+			if(temp==0){
+				*faktor1=produkt/i;
+				*faktor2=i;
+				break;
+			}
+			i++;
+
+		}
+
+	}
+}
+
+int main(){
+	long produkt;
+	long faktor1;
+	long faktor2;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"",&produkt);
+	factorize(produkt, &faktor1, &faktor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", produkt, faktor1, faktor2);
+	return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main( int argc, char* argv[] )
+{
+ char erg[100];
+ int len=0;
+ for(int i=0;i<argc-1;i++){
+	 int j=0;
+
+	 while(argv[i+1][j] != '\0'){
+		 char temp=argv[i+1][j];
+
+		 if(temp != 'x' && temp != 'y' && temp != 'q'){
+			 if(temp != 'X' && temp != 'Y' && temp != 'Q'){
+			 erg[len]=argv[i+1][j];
+			 len++;
+			 }
+		 }
+		 j++;
+
+	 }
+erg[len]='\0';
+ }
+ printf(""x,y,q und X,Y,Q aussortiert: %s\n"",erg);
+
+ char erg2[100];
+ int k=0;
+ int j=0;
+ 	 while(erg[k] != '\0'){
+
+ 		 if(k % 3==0){
+ 			 erg2[j]=erg[k];
+ 			 j++;
+ 		 }
+ 		 k++;
+ 	 }
+ erg2[len]='\0';
+printf(""Der neue String lautet: %s\n"",erg2);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{
+	for(int i=0; i<zahl; i++){
+		if(src[i]=='\0' || dest[i]=='\0'){
+			break;
+		}
+		dest[i]=src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	int len=0;
+	while(str[len]!='\0'){
+		len++;
+	}
+	for(int i=0; i<len/2; i++){
+		char temp=str[i];
+		str[i]=str[len-i-1];
+		str[len-i-1]=temp;
+
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Miskovic,Matea,matea.miskovic@tu-berlin.de,Beendet,"14. Juni 2021  12:50","19. Juni 2021  18:12","5 Tage 5 Stunden","19,34",5,"Nichts, da Programm nicht kompiliert.",80,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}",0,"if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 208; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 216; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: 224; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 11; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: (2)14; Teil 134: -; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: 2; Teil 141: 1; Teil 142: 0; Teil 143: 0; Teil 144: (3)14; Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: 200; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: (4)14; Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: %; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: (5)14; Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: 216; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: (3)14; Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: %; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: (6)14; Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: -; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: %; Teil 213: %; Teil 214: %; Teil 215: %; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long product, long *factor1, long *factor2)
+{   
+    long tmp = product;
+    if (product == 0 || product == 1){
+        *factor1 = 1;
+        *factor2 = product;
+        return;
+    }
+
+    if (product % (tmp/2) ==0)
+            {
+                *factor1 = (int)(tmp/2);
+                *factor2 = product / ((int)(tmp/2));
+            }
+    
+    tmp = product/2;
+    for (int i = 0; i <= product/2; i++)
+    {
+        if (*factor1 * *factor2 == product){
+            //printf(""%ld * %ld = %ld"",*factor1 , *factor2 , product); 
+            return;
+        }
+       
+                tmp--;
+                if (product % (tmp) ==0)
+            {
+                *factor1 = tmp;
+                *factor2 = product / (tmp);
+           
+            }
+    
+    }
+}
+
+int main(){
+	long product;
+    long factor1=0;
+    long factor2=0;
+	printf(""Please enter an Integer: "");
+    scanf(""%ld"",&product);
+    factorize(product, &factor1, &factor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"",product, factor1, factor2);
+	return 0;
+}","#include <stdio.h>
+
+
+
+int main(int argc, char** argv){
+
+    
+    char string1[100]= """";
+    char string2[100]= """";
+    int counter =0;
+    int counter2 =0;
+
+
+    for (int i = 1; i < argc ; i++)
+    {   
+        for (int j = 0; argv[i][j] != '\0'; j++)
+        {   
+            if (argv[i][j] != 'x' && argv[i][j] != 'y' && argv[i][j] != 'q' && argv[i][j] != 'X' && argv[i][j] != 'Y' && argv[i][j] != 'Q')
+            {
+                string1[counter] = argv[i][j];
+                if (counter % 3 == 0)
+                {
+                    string2[counter2] = argv[i][j];
+                    counter2++;
+                }
+                counter++; 
+            }
+        }
+    }
+    printf(""x,y,q und X,Y,Q aussortiert: %s\n"", string1);
+    printf(""Der neue String lautet: %s\n"",string2);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  /*
+    nur maximal zahl Zeichen
+    nur maximal bis zum Ende von dest
+    nur maximal den gesamten String src
+  */
+    for (int i = 0; (i < zahl && dest[i] != '\0' && src[i] != '\0'); i++)
+    {
+        dest[i] = src[i];
+    }
+    
+
+}
+
+void umdrehen( char* str )
+{   
+    
+    int laenge_string = 0;
+    for (int i = 0; str[i] != '\0'; i++)
+    {
+      laenge_string++;
+    }
+    //printf( ""Rückwärts : %i \n"", laenge_string );
+    
+    char tmp[100] = """";
+    for (int i = 0; i <= laenge_string; i++)
+    {
+        tmp[i-1]= str[laenge_string -i];
+        //printf( ""Rückwärts : %c \n"", tmp[i]);
+    }
+    //printf( ""Rückwärts : %s \n"", tmp );
+        for (int i = 0; i < laenge_string; i++)
+    {
+        str[i] = tmp[i];
+    }
+    //printf( ""Rückwärts : %s \n"", tmp );
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  //printf( ""Rückwärts : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Jacoby,"Maximilian Erich",m.jacoby@campus.tu-berlin.de,Beendet,"14. Juni 2021  12:52","20. Juni 2021  23:59","6 Tage 11 Stunden","15,83","{232} {236} {240} {246} {Das} {ist} {ein} {String} {a} {ist} {ein} {String}","Nichts, da Programm nicht kompiliert.",5,!3,0,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: &; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 208; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: 212; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 11; Teil 123: -; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 2(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: 2; Teil 141: 1; Teil 142: 0; Teil 143: 0; Teil 144: 3(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: 200; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 4(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: %; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 5(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: 208; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 3(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: -; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: %; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+
+{
+	if(ergebnis == 0){
+		*zahl1 = 1;
+		*zahl2 = 0;
+		return;
+	}
+	// printf(""%ld, %ld, %ld\n"", ergebnis, *zahl1, *zahl2);
+	if(ergebnis == 1){
+		*zahl1 = 1;
+		*zahl2 = 1;
+		return;
+	}
+	
+	int Rest;
+	int i = (ergebnis / 2) - 1;
+	Rest = ergebnis % 2;
+	if( Rest != 0 ){
+		for(  ; Rest != 0; i-- ){
+			Rest = ergebnis % i;
+		}
+		i++;
+		*zahl1 = i;
+		*zahl2 = ergebnis / i;
+	}
+	else{
+		*zahl1 = ergebnis / 2;
+		*zahl2 = 2;
+	}	
+}
+
+
+int main(){
+	printf(""Please enter an Integer: "");
+	long ergebnis;
+	long zahl1;
+	long zahl2;
+	scanf(""%li"", &ergebnis);
+	factorize(ergebnis, &zahl1, &zahl2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", ergebnis, zahl1, zahl2);
+	return 0;
+}","#include <stdio.h>
+
+void strat( char *str1, char *str2 ){
+	int y = 0;
+	int z = 0;
+	for( int i = 0 ; str1[i] != 0 ; i++ ){
+		y = i+1;	
+	}
+	for( int i = 0 ; str2[i] != 0 ; i++ ){
+		str1[y+i] = str2[i];
+		z = i+1;
+	}
+	str1[y+z] = str2[z];
+}
+
+void aussortieren( char *str1, char *str2 ){
+	int j = 0;
+	int i; 
+	for( i = 0 ; str1[i] != 0 ; i++){
+		if((str1[i] != 'x') && (str1[i] != 'X') && (str1[i] != 'y') &&
+		(str1[i] != 'Y') && (str1[i] != 'q') && (str1[i] != 'Q')){
+			str2[j] = str1[i];
+			j++;
+		}
+	}
+	str2[j] = 0;
+}	
+
+void rechnung( char *str1, char *str2 ){
+	int i;
+	int j = 0;
+	for( i = 0 ; str1[i] != 0 ; i++ ){
+		if ((i % 3) == 0){
+			str2[j] = str1[i];
+			j++;
+		}	
+	}
+	str2[j] = 0;
+}
+
+
+int main(int argc, char *argv[]){
+	
+	char string[100];
+	char string2[100];
+	for(int i = 0; i < 100; i++)
+	{string[i] = 0x00; string2[i] = 0x00;}
+	//char x;
+	for( int i = 1 ; i < argc ; i++ ){
+		strat( string, argv[i] );
+	}
+	aussortieren( string, string2 );
+	printf(""x,y,q und X,Y,Q aussortiert: %s\n"", string2);
+	rechnung( string2, string );
+	printf(""Der neue String lautet: %s\n"", string);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Horneburg,"Max Richard",m.horneburg@campus.tu-berlin.de,Beendet,"14. Juni 2021  16:58","20. Juni 2021  23:59","6 Tage 7 Stunden","16,00",P,5,5,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}",!3,0,"Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: ; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: ; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: ; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: ; Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: ; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117: ; Teil 118: ; Teil 119: ; Teil 120: ; Teil 121: ; Teil 122: ; Teil 123: ; Teil 124: ; Teil 125: ; Teil 126: ; Teil 127: ; Teil 128: ; Teil 129: ; Teil 130: ; Teil 131: ; Teil 132: ; Teil 133: ; Teil 134: ; Teil 135: ; Teil 136: ; Teil 137: ; Teil 138: ; Teil 139: ; Teil 140: ; Teil 141: ; Teil 142: ; Teil 143: ; Teil 144: ; Teil 145: ; Teil 146: ; Teil 147: ; Teil 148: ; Teil 149: ; Teil 150: ; Teil 151: ; Teil 152: ; Teil 153: ; Teil 154: ; Teil 155: ; Teil 156: ; Teil 157: ; Teil 158: ; Teil 159: ; Teil 160: ; Teil 161: ; Teil 162: ; Teil 163: ; Teil 164: ; Teil 165: ; Teil 166: ; Teil 167: ; Teil 168: ; Teil 169: ; Teil 170: ; Teil 171: ; Teil 172: ; Teil 173: ; Teil 174: ; Teil 175: ; Teil 176: ; Teil 177: ; Teil 178: ; Teil 179: ; Teil 180: ; Teil 181: ; Teil 182: ; Teil 183: ; Teil 184: ; Teil 185: ; Teil 186: ; Teil 187: ; Teil 188: ; Teil 189: ; Teil 190: ; Teil 191: ; Teil 192: ; Teil 193: ; Teil 194: ; Teil 195: ; Teil 196: ; Teil 197: ; Teil 198: ; Teil 199: ; Teil 200: ; Teil 201: ; Teil 202: ; Teil 203: ; Teil 204: ; Teil 205: ; Teil 206: ; Teil 207: ; Teil 208: ; Teil 209: ; Teil 210: ; Teil 211: ; Teil 212: ; Teil 213: ; Teil 214: ; Teil 215: ; Teil 216: ; Teil 217: ; Teil 218: ; Teil 219: ; Teil 220:","#include <stdio.h>
+
+void factorize(long produkt, long *faktor1, long *faktor2)
+{
+	if (produkt == 0 | produkt == 1) {
+		*faktor1 = 1;
+		*faktor2 = produkt;
+		return;
+	} else {
+		*faktor2 = 2;
+		while (1) {
+			if (produkt % *faktor2 == 0) {
+			*faktor1 = produkt / *faktor2;
+			return;
+		} else {
+			*faktor2 += 1;
+		}
+	}
+	}
+	// Your factorization
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	long faktor2;
+	long faktor1;
+	long produkt;
+	scanf(""%ld"", &produkt);
+	factorize(produkt, &faktor1, &faktor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", produkt, faktor1, faktor2);
+	return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+typedef struct _String {
+	char *str;
+	unsigned int str_len;
+} String;
+
+String* arguments (int arg_count, char** args);
+
+String* arguments (int arg_count, char** args) {
+	String* arguments = malloc(sizeof(String) * 2);
+	int count = 0;
+	arguments[0].str_len = 0;
+	arguments[0].str = malloc(256*sizeof(char));
+	for (int i=1; i<arg_count; i++) {
+		char* arg = args[i];
+		int j = 0;
+		char c = arg[j];
+		while (c) {
+			if (c == 'x'| c == 'X' | c == 'y' | c == 'Y' | c == 'q' | c == 'Q') {
+				j++;
+                        	c = arg[j];
+				continue;
+			}
+			arguments[0].str[count] = c;
+			count++;
+			j++;
+			c = arg[j];
+		}
+	}
+	arguments[0].str_len = count;
+	arguments[1].str_len = 0;
+	arguments[1].str = malloc(256 * sizeof(char));
+	for (int i=0; i<arguments[0].str_len; i++) {
+		if (i%3 == 0) {
+			arguments[1].str[arguments[1].str_len] = arguments[0].str[i];
+			arguments[1].str_len++;
+			}
+		}
+	return arguments;
+}
+			
+
+int main (int argc, char** argv) {
+	String* str = arguments(argc, argv);
+	printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str[0].str, str[1].str);
+	return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+#define MIN(x, y) (x < y ? x : y)
+
+unsigned int str_len(const char* str) {
+          unsigned i = 0;
+          while (str[i]) {
+                  i++;
+          }
+          return i;
+  }
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	for (int i=0; i<MIN(MIN(zahl, str_len(src)), str_len(dest)); i++) {
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	char tmp;
+	unsigned int len = str_len(str);
+	for (int i=0; i<str_len(str)/2; i++) {
+		tmp = str[i];
+		str[i] = str[len-1-i];
+		str[len-1-i] = tmp;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Eckardt,"Jan Hartmut",jan.h.eckardt@campus.tu-berlin.de,Beendet,"14. Juni 2021  20:16","16. Juni 2021  21:39","2 Tage 1 Stunde","7,93",-,zeigefinger = (int*)((short*)zeigefinger - 4);,6,-,"(!1 && 1) || (1)",0,"Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 11; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 12; Teil 57: %; Teil 58: %; Teil 59: 1; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 11; Teil 68: 208; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 12; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: 0; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 13; Teil 101: -; Teil 102: %; Teil 103: %; Teil 104: %; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 2(14); Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: 2; Teil 119: 1; Teil 120: 0; Teil 121: 0; Teil 122: 3(14); Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: ; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 4(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %; Teil 144: 3(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: ; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 4(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: ; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 3(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: %; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 5(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: -; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: %; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long ergebnis, long* zahl1, long *zahl2){
+long int div = ergebnis/2;
+if(ergebnis == 0|| ergebnis == 1)
+{*zahl1 = 1;
+*zahl2 = ergebnis;}
+else
+{while(ergebnis%div != 0){
+div--;}
+*zahl1 = div;
+*zahl2 = ergebnis/div;}
+
+}
+
+int main(){
+long int zahl; long int zahl1; long int zahl2;
+printf(""Please enter an Integer: "");
+scanf(""%ld"", &zahl);
+factorize(zahl, &zahl1, &zahl2);
+printf(""Possible Factors of %ld are %ld and %ld.\n"",zahl , zahl1, zahl2);
+return 0;}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Bauszus,"Florian Alexander",bauszus@campus.tu-berlin.de,Beendet,"14. Juni 2021  21:51","20. Juni 2021  19:20","5 Tage 21 Stunden","17,63",80,"Nichts, da Programm nicht kompiliert.","Ein C-String ist ein Array von char-Variablen.","x == 0 und y == 1",!3,"if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 11; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 12; Teil 57: %; Teil 58: %; Teil 59: 1; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 11; Teil 68: 208; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 12; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: 0; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 13; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 2(14); Teil 101: -; Teil 102: %; Teil 103: %; Teil 104: %; Teil 105: %; Teil 106: %; Teil 107: 2; Teil 108: 1; Teil 109: 0; Teil 110: 0; Teil 111: 3(14); Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 4(14); Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 3(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %; Teil 144: 4(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: %; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 5(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: %; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 6(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: %; Teil 173: -; Teil 174: -; Teil 175: -; Teil 176: -; Teil 177: 14; Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: %; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 15; Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: %; Teil 195: %; Teil 196: %; Teil 197: %; Teil 198: %; Teil 199: 16; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 17; Teil 211: -; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: -; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long product, long *factor1, long *factor2)
+{
+	for(int i = 1;; i++)
+  {
+    int temp = product/i;
+    if(product==0)
+    {
+      *factor1=i;
+      *factor2=0;
+      break;
+    }
+    if(i>=2)
+    {
+      if((temp*i)==product)
+      {
+        *factor1=temp;
+        *factor2=i;
+        break;
+      }
+    }
+    if(product==i)
+    {
+      *factor1=product;
+      *factor2=1;
+      break;
+    }
+  }
+}
+
+int main()
+{
+  int zahl;
+  long factor1=0, factor2=0;
+	printf(""Please enter an Integer: "");
+  scanf(""%i"", &zahl);
+  factorize(zahl,&factor1,&factor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"",zahl,factor1,factor2);
+	return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+
+void xyzz(char* string)
+{
+  int t = 0;
+  for(char *temp = string; *temp!=0; temp++, t++);
+  for(int i = 0,j = 0; i<=t; i++){
+    if(i%3==0){
+      string[j]=string[i];
+      j++;
+    }
+    if(i==t){
+      string[j]=0;
+    }
+  }
+}
+
+void xyz(char* out,int *temp,char* in)
+{ 
+  char *pout=out;
+  for(int i = 0; i<*temp; i++)
+  {
+    *pout++;
+  } 
+  for(char *pin=in;*pin!=0;pin++)
+  {
+    switch (*pin)
+    {
+      case ' ':
+      case 'x':
+      case 'X':
+      case 'y':
+      case 'Y':
+      case 'q':
+      case 'Q':
+        break;
+      default:
+      *pout++ = *pin;
+      *temp+=1;
+        break;  
+    }    
+  }
+  *pout=0;
+}
+int main(int argc, char* argv[])
+{
+  char str[100];
+  int times=0;
+  
+  for(int i=1; i<argc;i++)
+  {
+    xyz(str, &times, argv[i]);
+  }
+  printf( ""x,y,q und X,Y,Q aussortiert: %s\n"",str);
+  xyzz(str);
+  printf( ""Der neue String lautet: %s\n"",str);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i = 0; i < zahl; i++){
+    dest[i]=src[i];
+    if(i==9){
+      break;
+    }
+  }
+}
+
+void umdrehen( char* str )
+{
+  int t = 0;
+  for(int i = 0; i>=0; i++,t++){
+    if(str[i]=='\0'){
+      break;
+    }
+  }
+  char temp[t-1];
+  for(int i = 0, j = t-1; i <=t-1; i++, j--){
+    temp[j]=str[i];
+  }
+  for(int i = 0; i < t; i++){
+    str[i]=temp[i];
+    if(i==t-1){
+      break;
+    }
+  }
+}
+
+int main( int argc, char* argv[] )
+{ 
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Alexe,"Jeremias Harry",jeremias.h.alexe@campus.tu-berlin.de,Beendet,"15. Juni 2021  09:31","20. Juni 2021  23:59","5 Tage 14 Stunden","18,25","char *daumen = (char*)zeigefinger - 2;
+zeigefinger = (int*)daumen;",5,"Ein C-String ist ein Array von char-Variablen.","x == 0 und y == 1",0,"switch (a,b) {
+        case >=0, >=0:
+               printf(""a und b sind positiv!\n"");
+               break;
+        case <=0, <=0:
+               printf(""a und b sind negativ!\n"");
+               break;
+        case >0, <0: 
+               printf(""a ist positiv und b ist negativ!\n"");
+               break;
+        case <0, >0: 
+               printf(""a ist negativ und b ist positiv!\n"");
+}","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 208; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: 212; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 11; Teil 123: -; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 2(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: 2; Teil 141: 1; Teil 142: 0; Teil 143: 0; Teil 144: 3(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: 200; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 4(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: %; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 5(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: 208; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 3(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: -; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: %; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+    if (ergebnis == 0 || ergebnis == 1){
+        *zahl1 = 1;
+        *zahl2 = ergebnis;
+    }
+    else{
+        for(int i = 0; 1 ; i++){
+                if((ergebnis % ((ergebnis/2) - i)) == 0){
+                    *zahl1 = (ergebnis/2) - i;
+                    *zahl2 = (ergebnis/ *zahl1);
+                    break; 
+                }
+                
+        }
+            
+    }
+        
+        
+}   
+	// Your factorization
+
+int main(){
+    long ergebnis = 0;
+    long zahl1 = 0;
+    long zahl2 = 0;
+	printf(""Please enter an Integer: "");
+	scanf(""%li"", &ergebnis);
+	factorize(ergebnis, &zahl1, &zahl2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", ergebnis, zahl1, zahl2);
+	return 0;
+}","#include <stdio.h>
+
+int main(int argc, char** argv){
+    char array [100];
+    char array2 [100];
+    int k = 0;
+    for( int i = 1; i < argc; i++){
+        for(int j = 0; '\0' != argv[i][j]; j++){
+             if(argv[i][j] != 'x' && argv[i][j] && argv[i][j] != 'y' && argv[i][j]!= 'q' && argv[i][j] != 'X' && argv[i][j] != 'Y' && argv[i][j] != 'Q'){ 
+             array[k] = argv[i][j];
+             k++;
+             }
+        }
+    }
+    array[k] = '\0';
+    printf(""x,y,q und X,Y,Q aussortiert: %s\n"", array);
+    for(int i = 0; 3 * i < k ; i++){
+        array2[i] = array[3*i];
+    }
+    printf(""Der neue String lautet: %s"", array2);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{    for( int i = 0; i < zahl; i++){
+         if (dest[i] == '\0'){ 
+             break ;}
+         dest[i] = src[i];
+         if (src[i] == '\0')
+         {
+             dest[i] = '\0';
+             break ;    
+        }
+    
+    }  
+}
+
+void umdrehen( char* str)
+{    int k = 0;
+     for( int i = 0; 1 ; i++){
+        if(str[i] == '\0'){
+          k = i;
+          break;
+        }
+     }
+    char test[11]= ""0123456789"";
+    ersetzen(test , k, str);
+     for(int i = 1; i <= k; i++){
+         str[i - 1] = test[k - i ];
+         if(i == k-1){
+             str[k] = '\0';
+         }
+     }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test);
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Durak,Umut,umut.durak@campus.tu-berlin.de,Beendet,"15. Juni 2021  16:16","20. Juni 2021  12:57","4 Tage 20 Stunden","11,57","Ein C-String ist ein Array von char-Variablen.",80,-,!3,"if (a >= 0) {
+        if (b >= 0) {
+                printf(""a und b sind positiv!\n"");
+        } else {
+                printf(""a und b sind negativ!\n"");
+        }
+} else {
+        if (b < 0) {
+                printf(""a ist positiv und b ist negativ!\n"");
+        } else {
+               printf(""a ist negativ und b ist positiv!\n"");
+        }
+}","x == 0 und y == 1","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: %; Teil 25: %; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: 12; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: 13; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: 11; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: 12; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: ; Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: 13; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117: ; Teil 118: ; Teil 119: ; Teil 120: ; Teil 121: ; Teil 122: ; Teil 123: ; Teil 124: ; Teil 125: ; Teil 126: ; Teil 127: ; Teil 128: ; Teil 129: ; Teil 130: ; Teil 131: ; Teil 132: ; Teil 133: ; Teil 134: ; Teil 135: ; Teil 136: ; Teil 137: ; Teil 138: ; Teil 139: ; Teil 140: ; Teil 141: ; Teil 142: ; Teil 143: ; Teil 144: ; Teil 145: ; Teil 146: ; Teil 147: ; Teil 148: ; Teil 149: ; Teil 150: ; Teil 151: ; Teil 152: ; Teil 153: ; Teil 154: ; Teil 155: ; Teil 156: ; Teil 157: ; Teil 158: ; Teil 159: ; Teil 160: ; Teil 161: ; Teil 162: ; Teil 163: ; Teil 164: ; Teil 165: ; Teil 166: ; Teil 167: ; Teil 168: ; Teil 169: ; Teil 170: ; Teil 171: ; Teil 172: ; Teil 173: ; Teil 174: ; Teil 175: ; Teil 176: ; Teil 177: ; Teil 178: ; Teil 179: ; Teil 180: ; Teil 181: ; Teil 182: ; Teil 183: ; Teil 184: ; Teil 185: ; Teil 186: ; Teil 187: ; Teil 188: ; Teil 189: ; Teil 190: ; Teil 191: ; Teil 192: ; Teil 193: ; Teil 194: ; Teil 195: ; Teil 196: ; Teil 197: ; Teil 198: ; Teil 199: ; Teil 200: ; Teil 201: ; Teil 202: ; Teil 203: ; Teil 204: ; Teil 205: ; Teil 206: ; Teil 207: ; Teil 208: ; Teil 209: ; Teil 210: ; Teil 211: ; Teil 212: ; Teil 213: ; Teil 214: ; Teil 215: ; Teil 216: ; Teil 217: ; Teil 218: ; Teil 219: ; Teil 220:","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+	if (ergebnis == 0) {
+		*zahl1 = 1;
+		*zahl2 = ergebnis;
+	}
+	else if (ergebnis == 1) {
+		*zahl1 = 1;
+		*zahl2 = ergebnis;
+	}
+	else {
+		long x = ergebnis/2;
+		for (x; (ergebnis % x) != 0; x--){}
+			
+		*zahl1 = x;
+		*zahl2 = ergebnis / x;
+	}
+}
+
+int main(){
+	long ergebnis, zahl1, zahl2;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"",&ergebnis);
+	factorize(ergebnis, &zahl1, &zahl2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"",ergebnis, zahl1, zahl2);
+	return 0;
+}","#include <stdio.h>
+
+int main(int argc, char* argv[] )
+{  
+	char str[100];
+	char strneu[100];
+	int a = 0;
+	for (int i = 0; i < argc -1; i++)
+	{
+		for (int length = 0; *(*(argv+1+i)+length) != '\0'; length++)
+		{
+			str[a] = *(*(argv+1+i)+length);
+			a++;
+		}
+	}
+	str[a] = '\0';
+	
+	
+	for (int i = 0; i < a+1; i++)
+	{
+		if ((str[i] == 'x') || (str[i] == 'y') || (str[i] == 'q') || (str[i] == 'X') || (str[i] == 'Y') || (str[i] == 'Q'))
+		{
+			
+			
+			
+			
+			do
+			{
+				str[i] = str[i+1];
+				i++;
+				if (str[i] == '\0')
+				{	
+					break;
+				}
+			} while(1);
+			a--;
+			i = 0;
+		}
+	}
+	printf(""x,y,q und X,Y,Q aussortiert: %s\n"",str);
+	for (int i = 0, z = 0; i < ((a/2)-2); i++, z += 3)
+	{
+		strneu[i] = str[z];
+	}
+	int length = 0;
+	for (length; str[length] != '\0'; length++){}
+	strneu[length] = '\0';
+	printf(""Der neue String lautet: %s"",strneu);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Gerhardt,"Fynn Niklas",f.gerhardt@tu-berlin.de,Beendet,"15. Juni 2021  17:50","16. Juni 2021  16:14","22 Stunden 23 Minuten","19,79","{232} {236} {240} {246} {Das} {ist} {kein} {String} {a} {ist} {ein} {String}",5,zeigefinger = (int*)((short*)zeigefinger - 4);,"if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","x == 0 und y == 1",0,"Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 208; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: 212; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 11; Teil 123: -; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 2(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: 200; Teil 141: 204; Teil 142: 208; Teil 143: 212; Teil 144: 3(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: 200; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 4(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: %; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 5(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: 208; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 3(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: -; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: %; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+	int i = ergebnis-1;
+	if(i<=0){
+		i = 1;
+	}
+	while(ergebnis % i != 0){
+		--i;
+	}
+	*zahl1 = i;
+	*zahl2 = ergebnis/i;
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	long eingabe, a, b;
+	scanf(""%ld"", &eingabe);
+	factorize(eingabe, &a, &b);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"",eingabe, a,b);
+	return 0;
+}","#include <stdio.h>
+
+int main(int argc, char* argv[]){
+	int a = 0;
+	char str1[100];
+	for(int i = 1; i<argc; ++i){
+		int j = 0; 
+		while(argv[i][j] != '\0'){
+			if(argv[i][j] == 'x' || argv[i][j] == 'y' || argv[i][j] == 'q' || argv[i][j] == 'X' || argv[i][j]== 'Y' || argv[i][j]== 'Q'){
+				
+			}else{
+				str1[a] = argv[i][j];
+				++a;
+			}
+			++j;
+		}
+	}
+	str1[a] = '\0';
+	printf(""x,y,q und X,Y,Q aussortiert: %s \n"", str1);
+	char str2[100];
+	int i = 0;
+	int j = 0;
+	while(str1[i] != '\0'){
+		if(i%3 == 0){
+			str2[j] = str1[i];
+			++j;
+		}
+		++i;
+	}
+	str2[j] = '\0';
+	printf(""Der neue String lautet: %s\n"", str2);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{
+	int i = 0;
+	while(dest[i] != 0 && i<zahl && src[i] != '\0'){
+		dest[i] = src[i];
+		++i;
+	}
+}
+
+void umdrehen( char* str )
+{
+	int laenge = 0;
+	int i = 0;
+	while(str[i] != '\0'){
+		++laenge;
+		++i;
+	}
+	char temp[laenge+1];
+	i = 0;
+	for(int j = laenge-1; j>=0; --j){
+		temp[i] = str[j];
+		++i;
+	}
+	for(int j = 0; j<laenge; ++j){
+		str[j] = temp[j];
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Weber,"Michael Andreas",michael.a.weber@campus.tu-berlin.de,Beendet,"16. Juni 2021  12:21","20. Juni 2021  23:59","4 Tage 11 Stunden","4,77","char *daumen = (char*)zeigefinger - 2;
+zeigefinger = (int*)daumen;","Ein C-String ist ein Array von char-Variablen.","Nichts, da Programm nicht kompiliert.","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","(5 && 4)","switch (a,b) {
+        case >=0, >=0:
+               printf(""a und b sind positiv!\n"");
+               break;
+        case <=0, <=0:
+               printf(""a und b sind negativ!\n"");
+               break;
+        case >0, <0: 
+               printf(""a ist positiv und b ist negativ!\n"");
+               break;
+        case <0, >0: 
+               printf(""a ist negativ und b ist positiv!\n"");
+}","Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: ; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: ; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: ; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: ; Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: ; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117: ; Teil 118: ; Teil 119: ; Teil 120: ; Teil 121: ; Teil 122: ; Teil 123: ; Teil 124: ; Teil 125: ; Teil 126: ; Teil 127: ; Teil 128: ; Teil 129: ; Teil 130: ; Teil 131: ; Teil 132: ; Teil 133: ; Teil 134: ; Teil 135: ; Teil 136: ; Teil 137: ; Teil 138: ; Teil 139: ; Teil 140: ; Teil 141: ; Teil 142: ; Teil 143: ; Teil 144: ; Teil 145: ; Teil 146: ; Teil 147: ; Teil 148: ; Teil 149: ; Teil 150: ; Teil 151: ; Teil 152: ; Teil 153: ; Teil 154: ; Teil 155: ; Teil 156: ; Teil 157: ; Teil 158: ; Teil 159: ; Teil 160: ; Teil 161: ; Teil 162: ; Teil 163: ; Teil 164: ; Teil 165: ; Teil 166: ; Teil 167: ; Teil 168: ; Teil 169: ; Teil 170: ; Teil 171: ; Teil 172: ; Teil 173: ; Teil 174: ; Teil 175: ; Teil 176: ; Teil 177: ; Teil 178: ; Teil 179: ; Teil 180: ; Teil 181: ; Teil 182: ; Teil 183: ; Teil 184: ; Teil 185: ; Teil 186: ; Teil 187: ; Teil 188: ; Teil 189: ; Teil 190: ; Teil 191: ; Teil 192: ; Teil 193: ; Teil 194: ; Teil 195: ; Teil 196: ; Teil 197: ; Teil 198: ; Teil 199: ; Teil 200: ; Teil 201: ; Teil 202: ; Teil 203: ; Teil 204: ; Teil 205: ; Teil 206: ; Teil 207: ; Teil 208: ; Teil 209: ; Teil 210: ; Teil 211: ; Teil 212: ; Teil 213: ; Teil 214: ; Teil 215: ; Teil 216: ; Teil 217: ; Teil 218: ; Teil 219: ; Teil 220:","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+    int yo = 0;
+    int haelfte = ergebnis/2;
+	if (ergebnis==0){
+	    *zahl1 = 1;
+	    *zahl2 = 0;
+	}
+	else if (ergebnis==1){
+	    *zahl1 = 1;
+	    *zahl2 = 1;
+	}
+	else {
+	   while (yo = 0){
+	       if (ergebnis%haelfte == 0){
+	           yo = 1;
+	           *zahl1 = haelfte;
+	           *zahl2 = ergebnis/haelfte;
+	       }
+	       else {
+	           haelfte = haelfte - 1;
+	       }
+	   }
+	}
+}
+
+int main(){
+	long ergebnis;
+	long* zahl1;
+	long* zahl2;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", ergebnis);
+	factorize(ergebnis,zahl1,zahl2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", ergebnis, *zahl1, *zahl2);
+	return 0;
+}","#include <stdio.h>
+int main() {
+   char satz[100], satz2[100];
+   int l, k;
+   
+   fgets(satz, sizeof(satz), stdin);
+
+
+   for (int i = 0, j; satz[i] != '\0'; ++i) {
+      while (!(satz[i] >= 'a' && satz[i] <= 'p') && !(satz[i] >= 'r' && satz[i] <= 'w') && !(satz[i] == 'z') && !(satz[i] >= 'A' && satz[i] <= 'P') && !(satz[i] >= 'R' && satz[i] <= 'W') && !(satz[i] == 'Z') && !(satz[i] == '!') && !(satz[i] == '?') && !(satz[i] == '\0')){
+         for (j = i; satz[j] != '\0'; ++j) {
+            satz[j] = satz[j + 1];
+         }
+         satz[j] = '\0';
+      }
+   }
+   printf(""x,y,q und X,Y,Q aussortiert: "");
+   puts(satz);
+     for (int l = 0, k; satz[l] != '\0'; ++l) {
+        satz2[k] == satz[l];
+        k++;
+        l=l+3;
+    }
+    printf(""Der neue String lautet: %s"", satz2);
+    return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0 ; dest != '\0'; ++i) {
+      if (i>zahl || i>sizeof(src))
+          break;
+      dest[i]==src[i];
+}
+}
+void umdrehen( char* str )
+{
+    for (int i = 0 ; str != '\0'; ++i) {
+       str[i]==str[sizeof(str)-i]; 
+}
+}
+
+int main( int argc, char* argv[] )
+{  
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+  char str[6] = ""Robin"";
+}"
+Sen,"Muzaffer Mert",m.sen@campus.tu-berlin.de,Beendet,"16. Juni 2021  14:19","20. Juni 2021  12:08","3 Tage 21 Stunden","11,89",-,-,-,!3,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","x == 0 und y == 1","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: 12; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: 13; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: 11; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: 12; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: ; Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: 13; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117: ; Teil 118: ; Teil 119: ; Teil 120: ; Teil 121: ; Teil 122: (2)14; Teil 123: ; Teil 124: ; Teil 125: ; Teil 126: ; Teil 127: ; Teil 128: ; Teil 129: ; Teil 130: ; Teil 131: ; Teil 132: ; Teil 133: (3)14; Teil 134: ; Teil 135: ; Teil 136: ; Teil 137: ; Teil 138: ; Teil 139: ; Teil 140: ; Teil 141: ; Teil 142: ; Teil 143: ; Teil 144: (4)14; Teil 145: ; Teil 146: ; Teil 147: ; Teil 148: ; Teil 149: ; Teil 150: ; Teil 151: ; Teil 152: ; Teil 153: ; Teil 154: ; Teil 155: 5(14); Teil 156: ; Teil 157: ; Teil 158: ; Teil 159: ; Teil 160: ; Teil 161: ; Teil 162: ; Teil 163: ; Teil 164: ; Teil 165: ; Teil 166: 3(14); Teil 167: ; Teil 168: ; Teil 169: ; Teil 170: ; Teil 171: ; Teil 172: ; Teil 173: ; Teil 174: ; Teil 175: ; Teil 176: ; Teil 177: 4(14); Teil 178: ; Teil 179: ; Teil 180: ; Teil 181: ; Teil 182: ; Teil 183: ; Teil 184: ; Teil 185: ; Teil 186: ; Teil 187: ; Teil 188: 5(14); Teil 189: ; Teil 190: ; Teil 191: ; Teil 192: ; Teil 193: ; Teil 194: ; Teil 195: ; Teil 196: ; Teil 197: ; Teil 198: ; Teil 199: 6(14); Teil 200: ; Teil 201: ; Teil 202: ; Teil 203: ; Teil 204: ; Teil 205: ; Teil 206: ; Teil 207: ; Teil 208: ; Teil 209: ; Teil 210: 14; Teil 211: ; Teil 212: ; Teil 213: ; Teil 214: ; Teil 215: ; Teil 216: ; Teil 217: ; Teil 218: ; Teil 219: ; Teil 220:","#include <stdio.h>
+
+void factorize(long produkt, long *faktor1, long *faktor2)
+{
+	if (produkt == 0) {
+		*faktor1 = 1;
+		*faktor2 = produkt;
+	}
+	else if (produkt == 1) {
+		*faktor1 = 1;
+		*faktor2 = produkt;
+	}
+	else {
+		long t1 = produkt/2;
+	if (produkt % 2 != 0){
+		do { 
+		produkt % t1;
+		t1--;
+		} while ((produkt % t1) != 0);
+
+		} else do { 
+		produkt % t1;
+		}  while ((produkt % t1) != 0);
+		
+		*faktor1 = t1;
+		*faktor2 = produkt / t1;
+				}
+}
+
+int main(){
+	long produkt, faktor1, faktor2;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"",&produkt);
+	factorize(produkt, &faktor1, &faktor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"",produkt, faktor1, faktor2);
+	return 0;
+}","#include <stdio.h>
+
+int main(int argc, char* argv[] )
+{  
+	char str[100];
+	char str2[100];
+	int j = 0;
+	for (int i = 0; i < argc -1; i++)
+	{
+		int lange = 0;
+		for (lange; *(*(argv+1+i)+lange) != '\0'; lange++)
+		{
+			str[j] = *(*(argv+1+i)+lange);
+			j++;
+		}
+	}
+	str[j] = '\0';
+	for (int i = 0; i < j+1; i++)
+	{
+		if ((str[i] == 'x') || (str[i] == 'y') || (str[i] == 'q') || (str[i] == 'X') || (str[i] == 'Y') || (str[i] == 'Q'))
+		{
+			while (1)
+			{
+				str[i] = str[i+1];
+				i++;
+				if (str[i] == '\0')
+				{	
+					break;
+				}
+			}
+			j--;
+			i = 0;
+		}
+	}
+	printf(""x,y,q und X,Y,Q aussortiert: %s\n"",str);
+	for (int i = 0, z = 0; i < ((j/2)-2); i++, z += 3)
+	{
+		str2[i] = str[z];
+	}
+	int lange = 0;
+	for (lange; str[lange] != '\0'; lange++)
+		;
+	str2[lange] = '\0';
+	printf(""Der neue String lautet: %s"",str2);
+}
+
+
+//**(argv + 1 + lange) != '\0'","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Platena,Moritz,platena@campus.tu-berlin.de,Beendet,"16. Juni 2021  17:06","18. Juni 2021  16:20","1 Tag 23 Stunden","18,05","Ein C-String ist ein Array von char-Variablen.","char *daumen = (char*)zeigefinger - 2;
+zeigefinger = (int*)daumen;","{232} {236} {240} {246} {Das} {ist} {kein} {String} {a} {ist} {ein} {String}",0,"x == 1 und y == 0","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 208; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: 212; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 2(14); Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: 2; Teil 130: 1; Teil 131: 0; Teil 132: 0; Teil 133: 3(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: 200; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %; Teil 144: 4(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: %; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 5(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: 204; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 3(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: %; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 4(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: %; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 5(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: 208; Teil 195: %; Teil 196: %; Teil 197: %; Teil 198: %; Teil 199: 5(14); Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: -; Teil 206: -; Teil 207: -; Teil 208: -; Teil 209: -; Teil 210: 15; Teil 211: -; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+	// Your factorization
+    if (ergebnis == 1 || ergebnis == 0){
+        *zahl1 = (long)1;
+        *zahl2 = ergebnis;
+    }
+    else{
+        for(long i = 1;  i < ergebnis; i++){
+            if (ergebnis % i == 0){
+                *zahl1 = i;
+                *zahl2 = ergebnis/i;
+            }
+        }
+    }
+
+    
+}
+
+int main(){
+    long zahl1 = 0;
+    long zahl2 = 0;
+    long ergebnis = 0;
+	printf(""Please enter an Integer: "");
+    scanf(""%li"", &ergebnis);
+    factorize(ergebnis ,&zahl1 ,&zahl2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"" , ergebnis, zahl1, zahl2);
+	return 0;
+}","#include <stdio.h>
+
+
+
+int main(int argc, char** argv){
+    
+    char str1[100] = """";
+    char str2[100] = """";
+    char str3[100] = """";
+    int f = 0;
+    for (int i = 1; i < argc; i++){
+        for (int j = 0; argv[i][j] != '\0' ; j++){
+        
+           str1[f] += argv[i][j];
+           f++;
+
+        }  
+    }
+    int j = 0;
+    for (int i = 0; str1[i] != '\0'; i++){
+        if(str1[i] != 'x' && str1[i] != 'y' && str1[i] != 'q' && str1[i] != 'X' && str1[i] != 'Y' && str1[i] != 'Q' ){
+            str2[j] = str1[i];
+            j++;
+        }
+    }
+    
+    int g = 0;
+    for (int i = 0 ; str2[i] != '\0'; i = i + 3){
+        str3[g] = str2[i];
+        g++;
+    }
+  
+
+    printf(""x,y,q und X,Y,Q aussortiert: %s\n"", str2);
+    printf(""Der neue String lautet: %s\n"", str3);
+    
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i = 0; i < zahl && src[i] != '\0'; i++){
+     if(dest[i] != '\0'){ 
+      dest[i] = src[i];
+     }
+     else{
+         return;
+     }
+  }
+}
+
+void umdrehen( char* str )
+{
+  
+  int f = 0;
+
+  for (int i = 0; str[i] != '\0'; i++)
+  {
+      f++;
+  }
+  
+  char temp[f];
+
+  for(int j = 0; str[j] != '\0'; j++){
+      temp[j] = str[j];
+  }
+  int h = -1;
+
+  for(int g = f; g >= 0; g--){
+  str[h] = temp[g];
+  h++;
+  }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Otto,Klara,klara.otto@campus.tu-berlin.de,Beendet,"16. Juni 2021  18:44","20. Juni 2021  23:05","4 Tage 4 Stunden","9,60",80,5,"{232} {236} {240} {246} {Das} {ist} {ein} {String} {a} {ist} {ein} {String}","if (a * b >= 0 && b >= 0 && a >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a * b >= 0)
+        printf(""a und b sind negativ!\n"");
+if (a < 0)
+        printf(""a ist negativ und b ist positiv!\n"");
+if (a >= 0)
+        printf(""a ist positiv und b ist negativ!\n"");",1,"x == 1 und y == 1","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 208; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: 212; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 11; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 13; Teil 134: -; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %; Teil 144: 2(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: %; Teil 151: 2; Teil 152: 1; Teil 153: 0; Teil 154: 0; Teil 155: 3(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: 200; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 4(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: %; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 5(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: %; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: -; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: -; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long product, long *factor1, long *factor2)
+{
+	long divisor = product/2;
+	if (product == 0){
+	*factor1 = 1;
+	*factor2 = 0;
+	return;
+	}
+	if (product == 1){
+	*factor1 = 1;
+	*factor2 = 1;
+	return;
+	}
+	while(product%divisor){
+	divisor--;
+	}
+	*factor1 = divisor;
+	*factor2 = product/divisor;
+}
+
+int main(){
+	long product = 0;
+	printf(""Please enter an Integer: "");
+	scanf(""%li"", &product);
+	long f1 = 0;
+	long f2 = 0;
+	factorize(product, &f1,&f2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"",product,f1,f2);
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+int len;
+while(*dest != '\0'){
+	len++;
+	}
+	len--;
+for ( int i = 0; i < len; i++){
+   dest[i] = src[i];
+  }
+}
+
+void umdrehen( char* str1 )
+{
+// lenge str1?
+int len;
+while(*str1 != '\0'){
+	len++;
+	}
+	len--;
+int i, j ;
+char *str2[];
+for ( i = 0 , j = len; i <= len  ; i++ , j--){
+str2[j] =str1[i];
+} 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Gföhler,"Vincent Bruce",v.gfoehler@campus.tu-berlin.de,Beendet,"17. Juni 2021  12:06","20. Juni 2021  23:59","3 Tage 11 Stunden","9,78","char *daumen = (char*)zeigefinger - 2;
+zeigefinger = (int*)daumen;",80,"{232} {236} {240} {246} {Das} {ist} {kein} {String} {a} {ist} {kein} {String}","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","if (a * b >= 0 && b >= 0 && a >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a * b >= 0)
+        printf(""a und b sind negativ!\n"");
+if (a < 0)
+        printf(""a ist negativ und b ist positiv!\n"");
+if (a >= 0)
+        printf(""a ist positiv und b ist negativ!\n"");",!3,"Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 208; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: 212; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 11; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 2(14); Teil 134: -; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: 2; Teil 141: 1; Teil 142: 0; Teil 143: 0; Teil 144: 3(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: 200; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 4(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: %; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 5(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: 204; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 3(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: %; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: -; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: -; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long produkt, long *faktor1, long *faktor2)
+{
+	// Your factorization
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	printf(""Possible Factors of %ld are %ld and %ld.\n"");
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{
+    for(int i = 0; i != zahl && dest[i] != '\0' && src[i] != '\0'; i++ )
+    {
+        dest[i] = src[i];
+    }
+  
+}
+
+void umdrehen( char* str )
+{
+    int strL = 0;
+    while (str[strL++]);
+    strL -= 1;
+
+    if (!(!str || ! *str))
+    {
+        char ch;
+        int j = 0, i = strL -1;
+        while (i > j)
+        {
+            ch = str[i];
+            str[i] = str[j];
+            str[j] = ch;
+            i--;
+            j++;
+        }
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Schwolow,Niklas,niklas.schwolow@campus.tu-berlin.de,Beendet,"17. Juni 2021  13:26","20. Juni 2021  23:59","3 Tage 10 Stunden","5,68","Ein C-String ist ein Array von char-Variablen.",5,80,!3,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","x == 0 und y == 1","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 4; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 11; Teil 46: 5; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 12; Teil 57: %; Teil 58: 1; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 11; Teil 68: 6; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 12; Teil 79: %; Teil 80: 0; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 13; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 2(14); Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: %; Teil 105: %; Teil 106: %; Teil 107: 0; Teil 108: 2; Teil 109: 1; Teil 110: 0; Teil 111: 3(14); Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: 4; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 4(14); Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 3(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: 5; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %; Teil 144: 4(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: %; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 3(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: 6; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 4(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: %; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 5(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: %; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: -; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: -; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long produkt, long *faktor1, long *faktor2)
+{
+	// Your factorization
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	printf(""Possible Factors of %ld are %ld and %ld.\n"");
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Outhwaite,"Jared Louis",jared.l.outhwaite@campus.tu-berlin.de,Beendet,"18. Juni 2021  13:00","20. Juni 2021  23:59","2 Tage 10 Stunden","16,28",5,"{232} {236} {240} {246} {Das} {ist} {ein} {String} {a} {ist} {kein} {String}",80,"(5 && 4)","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","x == 0 und y == 1","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 12; Teil 57: %; Teil 58: %; Teil 59: 1; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 13; Teil 68: 208; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 12; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: 0; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 13; Teil 90: -; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 2(14); Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: %; Teil 105: %; Teil 106: %; Teil 107: 2; Teil 108: 1; Teil 109: 0; Teil 110: 0; Teil 111: 3(14); Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: 216; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 4(14); Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 5(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: 220; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %; Teil 144: 4(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: %; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 5(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: 224; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 4(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: %; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 5(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: -; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: %; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+	if(resultat == 0){
+		*nummer1 = 1;
+		*nummer2 = 0;
+			return 0;
+	}
+	if(resultat == 1){
+		*nummer1 = 1;
+		*nummer2 = 1;
+			return 0;
+	}
+	else if(resultat % 2 == 0){
+		*nummer1 = resultat / 2;
+		*nummer2 = 2;
+			return 0;
+	}
+	else{
+		*nummer1 = resultat / 2;
+		while(resultat % *nummer1 != 0){
+			*nummer1  -= 1;
+		}
+		*nummer2 = resultat / *nummer1;
+			return 0;
+	}
+}
+	
+	
+	
+	
+int main(){
+	long resultat = 1;
+	long nummer1 = 1;
+	long nummer2 = 1;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", &resultat);
+	factorize(resultat, &nummer1, &nummer2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", resultat, nummer1, nummer2);
+	return 0;
+}","#include <stdio.h>
+
+int main(int argc, char** argv){
+	char a[100];
+	int u = 0;
+	printf(""x,y,q und X,Y,Q aussortiert: "");
+	for(int i = 1; i < argc; i++){
+		for(int j = 0; argv[i][j] != '\0'; j++){
+			if(argv[i][j] == 'x'){
+				for(int z = j; argv[i][z] != '\0'; z++){
+					argv[i][z] = argv[i][z+1];
+				}
+			};
+			if(argv[i][j] == 'X'){
+				for(int z = j; argv[i][z] != '\0'; z++){
+					argv[i][z] = argv[i][z+1];
+				}
+			};
+			if(argv[i][j] == 'y'){
+				for(int z = j; argv[i][z] != '\0'; z++){
+					argv[i][z] = argv[i][z+1];
+				}
+			};
+			if(argv[i][j] == 'Y'){
+				for(int z = j; argv[i][z] != '\0'; z++){
+					argv[i][z] = argv[i][z+1];
+				}
+			};
+			if(argv[i][j] == 'q'){
+				for(int z = j; argv[i][z] != '\0'; z++){
+					argv[i][z] = argv[i][z+1];
+				}
+			};
+			if(argv[i][j] == 'Q'){
+				for(int z = j; argv[i][z] != '\0'; z++){
+					argv[i][z] = argv[i][z+1];
+				}
+			};
+			if(argv[i][j] == '\0') u -= 1;
+			if(argv[i][j] != '\0') a[u] = argv[i][j];
+			u++;
+		}
+	}
+	char b[100];
+	int k = 0;
+	for(int i = 0; i < u; i++){
+			if((i % 3) == 0){
+				b[k] = a[i];
+				k++;
+			}
+	}
+	for(int i = 0; i < u; i++){
+		printf(""%c"", a[i]);
+	}
+	printf(""\nDer neue String lautet: "");
+	for(int i = 0; i < k; i++){
+		printf(""%c"", b[i]);
+	}
+	printf(""\n"");
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  int csrc = 0;
+  for(int i = 0; src[i] != '\0'; i++) csrc++;
+  int cdest = 0;
+  for(int i = 0; dest[i] != '\0'; i++) cdest++;
+  if(csrc <= cdest){
+  if(csrc < zahl){
+  	for(int i = 0; src[i] != '\0'; i++){
+  		dest[i] = src[i];
+  	}
+  }
+  if(csrc >= zahl){
+  	for(int i = 0; i < zahl; i++){
+  		dest[i] = src[i];
+  	}
+  }
+  }
+  if(csrc > cdest){
+  	if(csrc < zahl){
+  		for(int i = 0; dest[i] != '\0'; i++){
+  			dest[i] = src[i];
+  		}
+  		
+  	}
+  	if(csrc >= zahl){
+  		for(int i = 0; i < zahl && dest[i] != '\0'; i++){
+  			dest[i] = src[i];
+  		}
+    	}
+  }	
+}
+
+void umdrehen( char* str )
+{
+  int cstr = 0;
+  char tmp[100];
+  for(int i = 0; str[i] != '\0'; i++){
+  	tmp[i] = str[i];
+  }
+  for(int i = 0; str[i] != '\0'; i++) cstr++;
+  for(int i = 0; i < cstr; i++){
+  	str[i] = tmp[(cstr-1) - i];
+  }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Gillich,"Franziska Anna-Lena",f.gillich@campus.tu-berlin.de,Beendet,"18. Juni 2021  17:08","20. Juni 2021  20:53","2 Tage 3 Stunden","19,42","char *daumen = (char*)zeigefinger - 2;
+zeigefinger = (int*)daumen;","{232} {236} {240} {246} {Das} {ist} {ein} {String} {a} {ist} {216} {224}","Ein C-String ist ein Array von char-Variablen.",0,"if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");",!3,"Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 208; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: 212; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 11; Teil 123: -; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 2(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: 2; Teil 141: 1; Teil 142: 0; Teil 143: 0; Teil 144: 3(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: 200; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 4(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: %; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 5(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: 208; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 3(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: -; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: %; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize (long product, long *factor1, long *factor2){
+    *factor1=product/2;
+    *factor2=2;
+  if (product == 0)
+    {
+      *factor1 = 1;
+      *factor2 = product;
+    }
+  else if (product == 1)
+    {
+      *factor1 = 1;
+      *factor2 = product;
+    }
+  else if(*factor1 * *factor2 != product){
+      *factor1+=1;
+      while (*factor1 >= 1 && (*factor1 * *factor2 != product)){
+          *factor2=2;
+          *factor1-=1;
+	  while (*factor2 <= product && (*factor1 * *factor2 != product)){
+	      *factor2+=1;
+	      //printf(""%ld, %ld\n"",*factor1,*factor2);
+	  }
+     }
+  }
+}
+
+  int main (){
+    long product=0;
+    printf (""Please enter an Integer: "");
+    scanf (""%ld"", &product);
+    long factor1=product/2;
+    long factor2=2;
+    long* f1;
+    long* f2;
+    f1=&factor1;
+    f2=&factor2;
+    factorize (product, f1, f2);
+    printf (""Possible Factors of %ld are %ld and %ld.\n"", product,*f1,*f2);
+    return 0;
+  }","#include <stdio.h>
+
+int main(int laenge, char** Zeichen){
+    char Ausgabe[100]="""";
+    char Ausgabe2[100]="""";
+    int j=0;
+    int k=0;
+    for (int l=1;l<laenge;l++){
+        for (int i=0;Zeichen[l][i]!='\0';i++){
+            if (Zeichen[l][i]!='x' && Zeichen[l][i]!='y' && Zeichen[l][i]!='q' && Zeichen[l][i]!='X' && Zeichen[l][i]!='Y' && Zeichen[l][i]!='Q'){
+               Ausgabe[j]=Zeichen[l][i];
+               j+=1;
+            }
+        }
+    }
+    for (int i=0;Ausgabe[i]!='\0';i++){
+        if(i%3==0){
+            Ausgabe2[k]=Ausgabe[i];
+            k+=1;
+        }
+    }
+    printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
+    printf(""Der neue String lautet: %s\n"",Ausgabe2);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i=0;i<zahl&&dest[i]!='\0'&&src[i]!='\0';i++){
+        dest[i]=src[i];
+    }
+}
+
+void umdrehen( char* str )
+{
+    int laenge=0;
+    for(int i=0;str[i]!='\0';i++){
+        laenge+=1;
+    }
+    char* Ausgabe[laenge];
+    for(int i=0;i<laenge;i++){
+        Ausgabe[i]=str[i];
+    }
+    for (int i=0;i<laenge;i++){
+        str[i]=Ausgabe[laenge-(i+1)];
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Roßmöller-Felz,"Mattis Musashi Martin",mattis.rossmoeller@campus.tu-berlin.de,Beendet,"19. Juni 2021  01:29","20. Juni 2021  23:37","1 Tag 22 Stunden","10,07","{232} {236} {240} {246} {Das} {ist} {kein} {String} {a} {236} {240} {246}","Nichts, da Programm nicht kompiliert.",80,"if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","x == 0 und y == 1","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11(13); Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12(13); Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 208; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11(13); Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12(13); Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: 212; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 11(13); Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 13(11); Teil 134: -; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %; Teil 144: 2(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: %; Teil 151: 200; Teil 152: 204; Teil 153: 206; Teil 154: 208; Teil 155: 3(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: 200; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 4(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: %; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 5(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: 204; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 3(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: %; Teil 195: %; Teil 196: %; Teil 197: %; Teil 198: %; Teil 199: 5(14); Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: -; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: -; Teil 218: -; Teil 219: -; Teil 220: -","#include <stdio.h>
+
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+    switch(resultat)
+    {
+	    case 0:
+	    {
+	        *nummer1 = 1;
+	        *nummer2 = resultat;
+	        break;
+	    }
+	    case 1:
+	    {
+	        *nummer1 = 1;
+	        *nummer2 = resultat;
+	        break;
+	    }
+	    default:
+	    {
+	        if(resultat%2==0){
+	            *nummer1 = resultat/2;
+	            *nummer2 = 2;
+	            break;
+	        }
+	        
+	        else{
+	            for(long int i=(resultat/2);i>=2;--i){
+	                for(long int j=2; j<=(resultat/2);++j){
+	                    if(resultat==(i*j)){
+	                        *nummer1 = i;
+	                        *nummer2 = j;
+	                        return;
+	                    }
+	                }
+	                        *nummer1 = 1;
+	                        *nummer2 = resultat;
+	            }
+	        }
+	        
+	    }
+    }
+	
+}
+
+int main(){
+    long resultat, nummer1, nummer2;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", &resultat);
+	factorize(resultat, &nummer1, &nummer2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", resultat, nummer1, nummer2);
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i =0;)
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Ngu,"Siaw Tieng",s.ngu@campus.tu-berlin.de,Beendet,"19. Juni 2021  01:58","20. Juni 2021  18:02","1 Tag 16 Stunden","7,75",5,zeigefinger = (int*)((short*)zeigefinger - 4);,"{Das} {ist} {kein} {String} {Das} {ist} {kein} {String} {a} {ist} {216} {224}","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}",!3,"if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","Teil 1: 9; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: 10; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: 11; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: 12; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: 13; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: ; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: ; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: ; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: ; Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: ; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117: ; Teil 118: ; Teil 119: ; Teil 120: ; Teil 121: ; Teil 122: ; Teil 123: ; Teil 124: ; Teil 125: ; Teil 126: ; Teil 127: ; Teil 128: ; Teil 129: ; Teil 130: ; Teil 131: ; Teil 132: ; Teil 133: ; Teil 134: ; Teil 135: ; Teil 136: ; Teil 137: ; Teil 138: ; Teil 139: ; Teil 140: ; Teil 141: ; Teil 142: ; Teil 143: ; Teil 144: ; Teil 145: ; Teil 146: ; Teil 147: ; Teil 148: ; Teil 149: ; Teil 150: ; Teil 151: ; Teil 152: ; Teil 153: ; Teil 154: ; Teil 155: ; Teil 156: ; Teil 157: ; Teil 158: ; Teil 159: ; Teil 160: ; Teil 161: ; Teil 162: ; Teil 163: ; Teil 164: ; Teil 165: ; Teil 166: ; Teil 167: ; Teil 168: ; Teil 169: ; Teil 170: ; Teil 171: ; Teil 172: ; Teil 173: ; Teil 174: ; Teil 175: ; Teil 176: ; Teil 177: ; Teil 178: ; Teil 179: ; Teil 180: ; Teil 181: ; Teil 182: ; Teil 183: ; Teil 184: ; Teil 185: ; Teil 186: ; Teil 187: ; Teil 188: ; Teil 189: ; Teil 190: ; Teil 191: ; Teil 192: ; Teil 193: ; Teil 194: ; Teil 195: ; Teil 196: ; Teil 197: ; Teil 198: ; Teil 199: ; Teil 200: ; Teil 201: ; Teil 202: ; Teil 203: ; Teil 204: ; Teil 205: ; Teil 206: ; Teil 207: ; Teil 208: ; Teil 209: ; Teil 210: ; Teil 211: ; Teil 212: ; Teil 213: ; Teil 214: ; Teil 215: ; Teil 216: ; Teil 217: ; Teil 218: ; Teil 219: ; Teil 220:","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+    // Your factorization
+    if (ergebnis == 0) {
+        *zahl1 = 1;
+        *zahl2 = ergebnis;
+    } else if (ergebnis == 1) {
+        *zahl1 = 1;
+        *zahl2 = ergebnis;
+    } else {
+        // check if can be divided by the half, exp: 50 mod 5 = 0
+        for (int i = ergebnis/2; i <= ergebnis; i-- ) {
+            int mod = ergebnis%i;
+            if (mod == 0) {
+                *zahl1 = i;
+                *zahl2 = ergebnis/i;
+                break;
+            }
+        
+        }
+        
+    }
+}
+
+int main(){
+    long ergebnis, zahl1, zahl2;
+    printf(""Please enter an Integer: "");
+    scanf(""%ld"", &ergebnis);
+    factorize(ergebnis, &zahl1, &zahl2);
+    printf(""Possible Factors of %ld are %ld and %ld.\n"", ergebnis, zahl1, zahl2);
+    return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Schulz,Leon,leon.schulz@campus.tu-berlin.de,Beendet,"19. Juni 2021  14:07","20. Juni 2021  21:12","1 Tag 7 Stunden","17,60",5,"char *daumen = (char*)zeigefinger - 2;
+zeigefinger = (int*)daumen;",80,!3,"x == 0 und y == 1","INT i = 0; 
+DO {
+    i = (i+1) % 7;
+    printf(""%d "", i);
+} WHILE (i);","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 208; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: -; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 2(14); Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: 2; Teil 130: 1; Teil 131: 0; Teil 132: 0; Teil 133: 3(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: 200; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %; Teil 144: 4(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: %; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 5(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: 208; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 3(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: %; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 4(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: %; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 5(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: -; Teil 195: %; Teil 196: %; Teil 197: %; Teil 198: %; Teil 199: 6(14); Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: -; Teil 207: -; Teil 208: -; Teil 209: -; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+
+
+void factorize(long ergebnis, long* zahl1, long* zahl2)
+
+{
+if(ergebnis == 0) 
+	{
+	*zahl1 = 1;
+	*zahl2 = ergebnis;
+	}
+else if(ergebnis == 1)
+	{
+	*zahl1 = 1;
+	*zahl2 = ergebnis;
+	}
+else
+	{
+	long int count = 0;
+	*zahl2 = 2;
+	long int iteration_factor = (long int)(ergebnis / 2);
+	
+	do
+		{
+		iteration_factor = (long int)( (long int)(ergebnis / 2) - count);
+		
+
+		*zahl1 = iteration_factor;
+		*zahl2 = (long int)(ergebnis / iteration_factor);
+			
+		 
+		count++;
+			
+		
+		}	
+	while(iteration_factor * *zahl2 != ergebnis);
+	}
+}
+
+
+
+
+int main()
+{
+	
+
+long int ergebnis, zahl1, zahl2;		//initialisiere 
+ 
+
+printf(""Please enter an Integer: "");
+
+scanf(""%li"", &ergebnis);			// scannt ganze Zahl
+factorize(ergebnis, &zahl1, &zahl2); 		// übergibt ergebnis und Adressen der Zahlen	
+
+printf(""Possible Factors of %ld are %ld and %ld.\n"", ergebnis, zahl1, zahl2);
+	
+return 0;
+
+}","#include <stdio.h>
+
+int main(int  argc, char *argv[]) // start at argv[1]
+{
+
+
+char array[100];
+int slot_count = 0;
+char b[100];
+int slot_count_b = 0;
+			
+for(int i = 1; i < argc; i++)
+	{
+	int j = -1;
+	do
+		{
+		j++;
+		if(argv[i][j] == 'x') continue;
+		else if(argv[i][j] == 'y') continue;
+		else if(argv[i][j] == 'q') continue;
+		else if(argv[i][j] == 'X') continue;
+		else if(argv[i][j] == 'Y') continue;
+		else if(argv[i][j] == 'Q') continue;
+		else if(argv[i][j] == '\0')
+			{
+			array[slot_count] = '\0';
+			b[slot_count_b] = '\0';
+			}
+		else
+			{
+			array[slot_count] = argv[i][j];
+			
+			if( (slot_count == 0 || (slot_count) % 3 == 0) )
+				{
+				b[slot_count_b] = array[slot_count];
+				slot_count_b++;
+				}		
+			slot_count++;
+			}
+		
+		
+		}		
+	while(argv[i][j] != '\0');
+	}
+printf(""x,y,q und X,Y,Q aussortiert: "");
+for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]); 
+printf(""\nDer neue String lautet: "");
+for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
+}","#include <stdio.h>
+
+#include <stdlib.h>
+ 
+
+
+
+
+void ersetzen(char* dest, int zahl, char* src)
+
+{
+int count = 0;
+while( count < zahl )
+	{
+	
+	if( dest[count] == '\0' ) break;
+	else if( *(src + count) == '\0') break;
+	dest[count] = src[count];
+	count++;
+	}
+
+}
+
+
+
+
+void umdrehen( char* str )
+
+{
+
+char a;
+int counter = 0;
+while(str[counter] != '\0' ) counter++;
+char cpy[counter + 1];
+for(int i = 0; i <= counter; i++) cpy[i] = str[i];
+for(int i = 0; i <= counter; i++) str[counter - 1 - i] = cpy[i];
+}
+
+
+
+
+
+int main( int argc, char* argv[] )
+
+{  
+  
+char test[11]= ""0123456789"";
+  
+
+printf( ""Das Original ist: %s \n"", test );
+  
+ersetzen( test , atoi(argv[1]), argv[2] );
+  
+printf( ""Ersetzt : %s \n"", test );
+  
+umdrehen( test );
+  
+printf( ""Rückwärts : %s \n"", test );
+
+}"
+Schwarz,"Jasko Tobias",jasko.t.schwarz@campus.tu-berlin.de,Beendet,"19. Juni 2021  18:48","20. Juni 2021  23:47","1 Tag 4 Stunden","9,45",5,"{Das} {ist} {kein} {String} {Das} {ist} {kein} {String} {a} {ist} {kein} {String}","Ein C-String ist ein Array von char-Variablen.",!3,"x == 1 und y == 1",0,"Teil 1: 9; Teil 2: %; Teil 3: %; Teil 4: %; Teil 5: %; Teil 6: %; Teil 7: %; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 12; Teil 57: %; Teil 58: %; Teil 59: 1; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 13; Teil 68: 208; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 12; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 13; Teil 90: -; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 14(2); Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: %; Teil 105: %; Teil 106: %; Teil 107: 2; Teil 108: 1; Teil 109: 0; Teil 110: 0; Teil 111: 14(3); Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 14(4); Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 14(5); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %; Teil 144: 14(4); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: %; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 14(5); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: %; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 14(4); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: %; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 14(5); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: %; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 14(6); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: -; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long product, long *factor1, long *factor2)
+{
+	if (product == 0) {
+		*factor1 = 1;
+		*factor2 = product;
+	}
+	else if (product == 1) {
+		*factor1 = 1;
+		*factor2 = product;
+	}
+  else{
+	for (int i = product - 1; i > 0; i--) {
+		if(!(product % i)){
+			*factor1 = i;
+			*factor2 = (long) (product / i);
+			break;
+		}
+	}
+}
+}
+
+int main(){
+	long product;
+	long factor1;
+	long factor2;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", &product);
+	factorize(product, &factor1, &factor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", product, factor1, factor2);
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src){
+
+  for (int i = 0; i < zahl; i++){
+    *dest = *src;
+    src++;
+    dest++;
+  }
+}
+
+void umdrehen(char* str)
+{
+ const int length = strlen(str);
+ char* tmp = """";
+ strcpy(tmp, str);
+ tmp += 9;
+ for (int i = 0; i < length - 1; i++) {;
+   *str = *tmp;
+   str++;
+   tmp--;
+ }
+}
+
+int main( int argc, char* argv[] )
+{
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen(test);
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Schmidt,"Tom Alexander",tom.a.schmidt@campus.tu-berlin.de,Beendet,"19. Juni 2021  22:27","20. Juni 2021  22:45","1 Tag","19,23",5,"Ein C-String ist ein Array von char-Variablen.",80,"if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","x == 0 und y == 1","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: 204; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: 1; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: 208; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: 0; Teil 103: %; Teil 104: %; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: -; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 2(14); Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: 0; Teil 130: 2; Teil 131: 1; Teil 132: 0; Teil 133: 3(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: 200; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %; Teil 144: 4(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: %; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 5(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: %; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 3(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: 204; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 5(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: -; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: %; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long produkt, long *faktor1, long *faktor2)
+{
+    long hilf = produkt;
+    if(produkt == 0){
+        *faktor1 = 1;
+        *faktor2 = produkt;
+    }
+    else if(produkt == 1){
+        *faktor1 = 1;
+        *faktor2 = produkt;
+    }
+    else{
+        int i = 2;
+        long rest = produkt % i;
+        if((rest) == 0){
+            *faktor1 = produkt/2;
+            *faktor2 = 2;
+        }
+        //int i = 2;
+        else{
+        do{
+            *faktor1 = produkt/i;
+            *faktor2 = i;
+            rest = produkt % i;
+            i++;
+        }while((rest) != 0);
+        }
+    }
+	// Your factorization
+}
+
+int main(){
+    long zahl;
+    long fak1;
+    long fak2;
+	printf(""Please enter an Integer: "");
+	scanf(""%i"", &zahl);
+	factorize(zahl, &fak1, &fak2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", zahl, fak1, fak2);
+	return 0;
+}","#include <stdio.h>
+
+int main(int argc, char* argv[]) {
+    //char* str[] = {""./[programm]"", ""PPR"", ""macht"", ""Spass!""}; //zum testen
+    //int agc = 4;                                              //zum testen
+    for(int i= 1; i<5; i++){
+    //printf(""%s\n"", str[i]);                                 //test
+    }
+    
+    char string1[100]; string1[99] = '\0';
+    char string2[100]; string2[99] = '\0';
+    char string3[100];
+    for(int i = 0; i < 100; i++){
+        string1[i] = '\0';
+        string2[i] = '\0';
+        string3[i] = '\0';
+    }
+    
+    int pos = 0;
+    for(int i = 1; i<argc; i++){
+        int j = 0;
+        int laenge = 0;
+        while(argv[i][j] != '\0'){
+        laenge++;
+        j++;
+        }
+        //printf(""i=%i - laenge=%i\n"", i, laenge);                //test
+        for(int y = 0; y<laenge; y++){
+            string1[pos] = argv[i][y];
+            pos++;
+        }
+    }
+    
+    //buchstabenloeschen
+    int j = 0;
+    int length = 0;
+    while(string1[j] != '\0'){
+    length++;
+    j++;
+    }
+    //printf(""length: %i\n"", length);                       //test
+    int zaehler = 0;
+    for(int i=0; i<length; i++){
+        if(string1[i] == 'x' || string1[i] == 'y' || string1[i] == 'q'){
+            
+        }
+        else if(string1[i] == 'X' || string1[i] == 'Y' || string1[i] == 'Q'){
+            
+        }
+        else{
+            string2[zaehler] = string1[i];
+            zaehler++;
+        }
+    }
+    printf(""x,y,q und X,Y,Q aussortiert: %s\n"", string2);
+    
+    //nur noch jeden 3ten Buchstaben verwenden
+    int countah = 0;
+    for(int i=0; i<=zaehler; i+=3){
+        string3[countah] = string2[i];
+        countah++;
+    }
+    printf(""Der neue String lautet: %s\n"", string3);
+    
+    //string1[0] = str[1][0];                                   //test
+    //printf(""%s\n"", string1);                                  //test
+    //printf(""%s\n"", string2);                                  //test
+    //printf(""%s\n"", string3);                                  //test
+    
+    return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    if(zahl > 10){
+        for(int i = 0; i < 10; i++){
+            dest[i] = src[i];
+        }
+    }
+    else if(zahl == 0){}                            //fuer den Fall, dass nichts ersetzt werden soll
+    else{
+        int j = 0;
+        while((j < zahl) && (src[j] != '\0')){
+            dest[j] = src[j];
+            j++;
+        }
+    }
+}
+
+void umdrehen( char* str )
+{
+    int j = 0;
+    int zaehler = 1;
+    while(str[j] != '\0'){
+        zaehler++;
+        j++;
+    }
+    //printf(""zaehler: %i\n"", zaehler);
+    char temp[zaehler];
+    for(int i = 0; i < zaehler; i++){
+        temp[i] = str[i];
+    }
+    //printf(""%s\n"", temp);
+    for(int i = 0; i < zaehler-1; i++){
+        int hilf = zaehler-(i+2);
+        //printf(""hilf = %i\n"", hilf);
+        str[i] = temp[hilf];
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  int zahl = 2;                                 //zum testen
+  char agv[41] = ""ppr"";               //zum testen
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Hendel,"Philipp Caspar",philipp.c.hendel@campus.tu-berlin.de,Beendet,"20. Juni 2021  09:27","20. Juni 2021  23:56","14 Stunden 28 Minuten","9,22","{232} {236} {240} {246} {Das} {ist} {ein} {String} {a} {Das} {ein} {String}","Ein C-String ist ein Array von char-Variablen.",zeigefinger = (int*)((short*)zeigefinger - 4);,"INT i = 0; 
+WHILE (i){
+    i = (i+1) % 7;
+    printf(""%d "", i);
+}",1,!3,"Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 204; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 2; Teil 64: 2; Teil 65: 1; Teil 66: 0; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 208; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: 212; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 11; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 13; Teil 134: -; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %; Teil 144: 2(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: %; Teil 151: 2; Teil 152: 1; Teil 153: 0; Teil 154: 0; Teil 155: 3(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: 0; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 4; Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: %; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 5; Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: -; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6; Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: %; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long product, long *factor1, long *factor2)
+{
+	if (product <= 1) {
+        *factor1 = 1;
+        *factor2 = product;
+    } else {
+        int x = product/2;
+        while(x) {
+            if ((product % x) == 0) {
+                *factor1 = x;
+                *factor2 = product/x;
+                x = 0;
+            } else {
+                x -= 1;
+            }
+        }
+    }
+}
+
+int main(){
+    long factor1;
+    long factor2;
+    long product;
+	printf(""Please enter an Integer: "");
+    scanf(""%ld"", &product);
+    factorize(product,&factor1, &factor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", product, factor1, factor2);
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Hansel,"Karsten Siegfried",hansel@campus.tu-berlin.de,Beendet,"20. Juni 2021  10:54","20. Juni 2021  21:02","10 Stunden 8 Minuten","7,68","{232} {236} {240} {246} {Das} {ist} {kein} {String} {a} {ist} {kein} {String}",5,5,"(5 && 4)","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","x == 0 und y == 1","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: %; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: -; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 2(14); Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 3(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %; Teil 144: 4(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: %; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 3(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: %; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 4(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: %; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 5(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: -; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: %; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+	// Your factorization
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	printf(""Possible Factors of %ld are %ld and %ld.\n"");
+	return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void sort(char* str){
+
+
+
+for(int i = 0; str[i] != '\0'; i++){
+
+   if(str[i] == 'x' || str[i] == 'y' || str[i] == 'q' || str[i] == 'X' || str[i] == 'Y' || str[i] == 'Q'){ 
+   for(int h = i; str[h] != '0'; h++) str[h] = str[h+1];
+   }
+     
+ }
+ 
+}
+
+
+char* strc(char* str1, char* str2){
+int i,h;
+char* st = str1;
+for(i = 0; st[i] != '\0'; i++){
+
+}
+
+
+for(h = 0; str2[h] != '\0'; h++){
+str1[i+h] = str2[h];
+}
+str1[i+h]= '\0';
+
+return str1;
+}
+
+
+
+
+
+int main( int argc, char* argv[] )
+{  
+
+
+sort(argv[1]);
+sort(argv[2]);
+sort(argv[3]);
+sort(argv[4]);
+printf(""x,y,q und X,Y,Q aussortiert: %s%s%s%s\n"",argv[1], argv[2], argv[3],argv[4]);
+
+
+
+char* str = strc(argv[1], argv[2]);
+char* str2 = strc(str, argv[3]);
+char* str3 = strc(str2, argv[4]);
+
+
+
+
+printf(""Der neue String lautet: lsonao\n"");
+
+
+//
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+int h;
+  for(int i = 0; src[i] != '\0';i++) h++;
+ printf( ""%i \n"", h );
+
+  for(int i = 0; i < zahl && i < h  ;i++){
+      if(dest[i] != '\0')dest[i] = src[i];}
+       
+}
+
+void umdrehen( char* str )
+{
+int h = -1;
+for(int i = 0; str[i] != '\0';i++) h++;
+printf( ""%i \n"", h );
+char s[h];
+for(int i = 0; i <= h; i++) s[i] = str[i];
+printf( ""%s \n"", s );
+printf( ""%s \n"", str );
+  for(int i = 0; i <= h; i++)  str[i] = s[h-i];
+       
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Scharnreitner,"Philipp Aurel",p.scharnreitner@campus.tu-berlin.de,Beendet,"20. Juni 2021  14:40","20. Juni 2021  17:44","3 Stunden 3 Minuten","10,33",5,80,"Nichts, da Programm nicht kompiliert.","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","x == 0 und y == 1",!3,"Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 208; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 216; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: 224; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 11; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 2 (14); Teil 134: -; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: 2; Teil 141: 1; Teil 142: 0; Teil 143: 0; Teil 144: 3 (14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: 200; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 4 (14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: %; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 5 (14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: 216; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 3 (14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: %; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6 (14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: -; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long produkt, long *faktor1, long *faktor2)
+{
+    if(produkt == 0 || produkt == 1)
+    {
+        *faktor1 = 1;
+        *faktor2 = produkt;
+    }
+    else
+    {
+        if(produkt%2 == 0)
+        {
+            *faktor1 = produkt/2;
+            *faktor2 = 2;  
+        }
+        else
+        {
+            long temp = produkt/2;
+            while(produkt%temp != 0)
+            {
+                temp -= 1;
+            }
+            *faktor1 = temp;
+            *faktor2 = produkt/temp;            
+        }
+    }
+
+}
+
+int main(){
+    long produkt;
+    long faktor1 = 0;
+    long faktor2 = 0;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", &produkt);
+	factorize(produkt, &faktor1, &faktor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", produkt, faktor1, faktor2);
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Ruschke,Dennis,dennis.ruschke@campus.tu-berlin.de,Beendet,"20. Juni 2021  14:45","20. Juni 2021  23:59","9 Stunden 13 Minuten","9,06",80,"Nichts, da Programm nicht kompiliert.","{232} {236} {240} {246} {Das} {ist} {kein} {String} {a} {ist} {kein} {String}",0,"INT i = 0; 
+DO {
+    printf(""%d "", i);
+} WHILE (i = (i+1) % 7);","x == 0 und y == 1","Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 3; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: 2; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: 2; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: 1; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: 1; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: 0; Teil 102: %; Teil 103: %; Teil 104: %; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 11; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 13; Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %; Teil 144: 2(14); Teil 145: -; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: %; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 3(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: 2; Teil 162: 2; Teil 163: 1; Teil 164: 0; Teil 165: 0; Teil 166: 4(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: %; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 5(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: %; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: %; Teil 195: %; Teil 196: %; Teil 197: %; Teil 198: %; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: %; Teil 213: %; Teil 214: %; Teil 215: %; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+    int i;
+    for (i=0; i<1; i++ ){
+    if (resultat > 0){
+    if (resultat % 2 == 0) {
+       *nummer1 = resultat / 2;
+       *nummer2 = 2;
+    }
+    else if (resultat % 3 == 0){
+        *nummer1= resultat / 3;
+        *nummer2= 3;
+    }
+    else {
+        *nummer1 =1;
+        *nummer2=resultat;
+    }
+    }
+    else { 
+        *nummer1 =1;
+        *nummer2=resultat;
+    }
+}
+}
+
+int main(){
+    long resultat;
+    long int nummer1;
+    long int nummer2;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", &resultat);
+	factorize(resultat, &nummer1 , &nummer2 );
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", resultat, nummer1, nummer2);
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Zakusek,"Simon Lorenz",s.zakusek@campus.tu-berlin.de,Beendet,"20. Juni 2021  21:53","20. Juni 2021  23:59","2 Stunden 5 Minuten","10,67",5,"Nichts, da Programm nicht kompiliert.",80,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}",0,!3,"Teil 1: 9; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: 10; Teil 13: %; Teil 14: 3; Teil 15: 2; Teil 16: 1; Teil 17: 0; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: 11; Teil 24: 200; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 12; Teil 35: %; Teil 36: 2; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: 13; Teil 46: 201; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: 12; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13; Teil 79: 202; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: 11; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: 12; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 0; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 13; Teil 112: 203; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: 11; Teil 123: -; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: 2(14); Teil 134: %; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: 2; Teil 141: 1; Teil 142: 0; Teil 143: 0; Teil 144: 3(14); Teil 145: %; Teil 146: %; Teil 147: %; Teil 148: %; Teil 149: %; Teil 150: 200; Teil 151: %; Teil 152: %; Teil 153: %; Teil 154: %; Teil 155: 4(14); Teil 156: %; Teil 157: %; Teil 158: %; Teil 159: %; Teil 160: %; Teil 161: %; Teil 162: %; Teil 163: %; Teil 164: %; Teil 165: %; Teil 166: 5(14); Teil 167: %; Teil 168: %; Teil 169: %; Teil 170: %; Teil 171: %; Teil 172: 201; Teil 173: %; Teil 174: %; Teil 175: %; Teil 176: %; Teil 177: 3(14); Teil 178: %; Teil 179: %; Teil 180: %; Teil 181: %; Teil 182: %; Teil 183: -; Teil 184: %; Teil 185: %; Teil 186: %; Teil 187: %; Teil 188: 6(14); Teil 189: %; Teil 190: %; Teil 191: %; Teil 192: %; Teil 193: %; Teil 194: %; Teil 195: -; Teil 196: -; Teil 197: -; Teil 198: -; Teil 199: 14; Teil 200: %; Teil 201: %; Teil 202: %; Teil 203: %; Teil 204: %; Teil 205: %; Teil 206: %; Teil 207: %; Teil 208: %; Teil 209: %; Teil 210: 15; Teil 211: %; Teil 212: -; Teil 213: -; Teil 214: -; Teil 215: -; Teil 216: %; Teil 217: %; Teil 218: %; Teil 219: %; Teil 220: %","#include <stdio.h>
+
+void factorize(long resultat, long *nummer1, long *nummer2){
+  if(resultat == 0 || resultat == 1){
+    *nummer1 = 1;
+    *nummer2 = resultat;
+  }else{
+    *nummer1 = resultat/2;
+    while(resultat % *nummer1 != 0){
+      *nummer1 -= 1;
+    }
+    *nummer2 = resultat/(*nummer1);
+  }
+}
+
+int main(){
+  long resultat = 1, nummer1, nummer2;
+  printf(""Please enter an Integer: "");
+  scanf(""%i"", &resultat);
+  factorize(resultat, &nummer1, &nummer2);
+  printf(""Possible Factors of %ld are %ld and %ld.\n"", resultat, nummer1, nummer2);
+  return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"

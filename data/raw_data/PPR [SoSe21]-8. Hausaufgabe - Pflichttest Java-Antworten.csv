@@ -1,0 +1,2553 @@
+﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/15,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9","Antwort 10"
+Bartsch,"Simon Tobias",s.bartsch@campus.tu-berlin.de,Beendet,"4. Juni 2021  15:02","14. Juni 2021  11:06","9 Tage 20 Stunden","8,71",rose.giessen(50);,"Eine nicht-statische Methode ändert stets den Wert von Attributen","int blumenstraussgroesse = Blume.anzahlBlumen;",2,"Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.","Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: -; Teil 116: -; Teil 117: -","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+
+public class BusTest{
+
+
+public static void main(String[] args){
+
+	Bus eins;
+	Bus zwei;
+	Bus drei;
+	
+	eins = new Bus(""Bahnstrasse"", ""Platzstraasse"");
+	zwei = new Bus(""Alboinstrasse"", ""Ottenstrasse"");
+	drei = new Bus(""Potsdamer Platz"", ""Hauptbahnhof"");
+	
+	eins.fahren(5);
+	zwei.fahren(4);
+	drei.fahren(7);
+	
+	eins.print();
+	zwei.print();
+	drei.print();
+}
+
+}","public class Haustier{
+	
+	String name;
+	int alter;
+	boolean istSaeugetier = false;
+	double gewicht;
+	static int alterGesamt = 0;
+	
+	public  Haustier(String name, int alter){
+		
+		this.name = name;
+		this.alter = alter;
+		alterGesamt += alter;
+		
+	}
+	public int geburtstag(){
+		this.alter++;
+		alterGesamt++; 
+		return alter;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}","//Hier nichts reinschreiben"
+Voßbeck,"Marike Antonia Karoline",m.vossbeck@tu-berlin.de,Beendet,"4. Juni 2021  15:12","13. Juni 2021  18:12","9 Tage 2 Stunden","14,03","Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem parametrisierten Konstruktor der Objektklasse.",rose.giessen(50);,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",5,5,"Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: 3; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: 6; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: 9; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+	
+	public static void main (String[] args) {
+		Bus BusA;
+		Bus BusB;
+		Bus BusC;
+		
+		BusA = new Bus(""Bahnhof"",""Hbf"");
+		BusA.fahren(5);
+		BusA.print();
+		BusB = new Bus(""Bahnhof-Nord"",""Vorort"");
+		BusB.fahren(55);
+		BusB.print();
+		BusC = new Bus(""Bahnhof-Sued"",""Kleinkleckersdorf"");
+		BusC.fahren(555);
+		BusC.print();
+		
+	}
+}","public class Haustier {
+	public String name;
+	public int alter;
+	public double gewicht;
+	public boolean istSaeugetier;
+	public static int alterGesamt =0;
+	
+	public void geburtstag( ){
+		alter++;
+		alterGesamt++;}
+	
+	public Haustier(String s, int a){
+		name = s;
+		alter = a;
+		
+		
+		alterGesamt = alterGesamt+ a;}
+		
+	
+		
+
+	
+	public static void main (String[] args) {
+		
+		
+	}
+}","//Hier nichts reinschreiben"
+Hecker,Henry,h.hecker@campus.tu-berlin.de,Beendet,"4. Juni 2021  15:13","15. Juni 2021  23:59","11 Tage 8 Stunden","13,03",rose.giessen(50);,"Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.",5,5,"int blumenstraussgroesse = Blume.anzahlBlumen;","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: 3; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: 6; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: 9; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+public class BusTest {
+	public static void main (String [] args){
+		Bus busa;
+		Bus busb;
+		Bus busc;
+		
+		busa = new Bus (""Tempelhof"", ""Mehringdamm"");
+			busa.fahren(7);	
+			busa.print();
+			
+		busb = new Bus (""Mitte"", ""Neukoelln"");
+			busb.fahren(12);	
+			busb.print();
+			
+
+		busc = new Bus (""Zivilisation"", ""Gosse"");
+			busc.fahren(18);
+			busc.print();
+	}
+}","public class Haustier {
+		public String name;
+		public int alter;
+		public double gewicht;
+		public boolean istSaeugetier;
+		public static int alterGesamt =0;
+		
+		public void geburtstag(){
+			alter++;
+			alterGesamt++;
+		}
+		
+		public Haustier (String s, int a){
+			name = s;
+			alter = a;
+			alterGesamt = alterGesamt + a;
+		}
+	public static void main (String []args){
+	    
+	}
+}","//Hier nichts reinschreiben"
+Schubert,Tom,tom.schubert@campus.tu-berlin.de,Beendet,"4. Juni 2021  15:46","11. Juni 2021  17:04","7 Tage 1 Stunde","10,34","int blumenstraussgroesse = Blume.anzahlBlumen;","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.",3,rose.giessen(50);,5,"Mit dem parametrisierten Konstruktor der Objektklasse.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: undef; Teil 10: undef; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(12); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(12); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+
+public class BusTest {
+	public static void main (String[]args) {
+		Bus[] b = new Bus[3];
+		b[0] = new Bus(""GrosserRandyFlammenwerfer"" , ""WoIstMeinGeld"" );
+		b[1] = new Bus(""Tu-Strasse"", ""Hund-Strasse"" );
+		b[2] = new Bus(""Butzbach"" , ""Erwachsenenvollzug""  );
+		b[0].fahren(1337);
+		b[1].fahren(31);
+		b[2].fahren(69);
+		b[0].print();
+		b[1].print();
+		b[2].print();
+	}
+	
+	
+	
+
+}","public class Haustier {
+	
+
+		public static int alterGesamt;
+		String name;
+		int alter;
+		double gewicht = 0;
+		boolean istSaeugetier ;
+		public Haustier(String name, int alter){
+			this.name = name;
+			this.alter = alter;
+			alterGesamt+=alter;
+		}
+		public void geburtstag(){
+		alter+=1;
+		alterGesamt+=1;
+		}	
+}","//Hier nichts reinschreiben"
+Ochmann,"Luis Eddie",luis.ochmann@campus.tu-berlin.de,Beendet,"4. Juni 2021  17:29","13. Juni 2021  20:28","9 Tage 2 Stunden","9,50",4,rose.giessen(50);,"Eine nicht-statische Methode ändert stets den Wert von Attributen",5,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","int blumenstraussgroesse = Blume.anzahlBlumen;","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: 0; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: 3; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: 0; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: 9; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+    public static void main (String[] args){
+        Bus a=new Bus(""Louis-Lewin-Str"",""Naumburger-Ring\t"");
+        Bus b=new Bus(""Cottbuser-Platz"",""Blumenberger Damm\t"");
+        Bus c=new Bus(""Zinndorfer Straße"",""Marzahner Promenade\t"");
+        a.fahren(2);
+        b.fahren(5);
+        c.fahren(4);
+        a.print();
+        b.print();
+        c.print();
+    }
+}","public class Haustier {
+    String name;
+    int alter;
+    double gewicht;
+    static int alterGesamt;
+    boolean istSaeugetier = true;
+    public Haustier(String name, int alter) {
+        this.name = name;
+        this.alter = alter;
+        alterGesamt=alter+alterGesamt;
+        if (name == ""Fips"") {
+            istSaeugetier = false;
+        }
+    }
+    public void geburtstag() {
+        alter++;
+        alterGesamt++;
+    }
+}","//Hier nichts reinschreiben"
+Schmidt,Lucca,lucca.schmidt@campus.tu-berlin.de,Beendet,"5. Juni 2021  11:13","11. Juni 2021  11:44","6 Tage","13,62",rose.giessen(50);,2,5,"Eine Methode, die nicht auf Attribute zugreift, muss statisch sein","int blumenstraussgroesse = Blume.anzahlBlumen;","Attribute können wiederum Objekte sein.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest{
+	public static void main(String[] args) {
+		Bus linieeins;
+		Bus liniezwei;
+		Bus liniedrei;
+		linieeins = new Bus(""Hbf"", ""ZOB"");
+		linieeins.fahren(5);
+		linieeins.print();
+
+		liniezwei = new Bus(""Kotti"", ""TU-Berlin"");
+		liniezwei.fahren(10);
+		liniezwei.print();
+
+		liniedrei = new Bus(""LIO"",""Suedkreuz"");
+		liniedrei.fahren(9);
+		liniedrei.print();
+	}
+}","public class Haustier{
+	public String name;
+	public int alter = 0;
+	public double gewicht;
+	public static int alterGesamt = 0;
+	public boolean istSaeugetier; 
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		gewicht = 0d;
+		/*alterGesamt = alter + this.alter;
+		System.out.println(""alterGesamt: "" + alterGesamt + ""\n""+
+							""alter: "" + alter +  ""\n""+
+							""this.alter: "" + this.alter ); */
+		istSaeugetier = false;
+		alterGesamt = alterGesamt + alter;
+	} 
+
+	public void geburtstag(){
+		alter++;
+		alterGesamt++;
+	}
+}","//Hier nichts reinschreiben"
+"Al Hamwi",Nassim,nassim.alhamwi@campus.tu-berlin.de,Beendet,"5. Juni 2021  11:47","12. Juni 2021  13:34","7 Tage 1 Stunde","14,20",rose.giessen(50);,5,"Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parameterlosen Konstruktor der Objektklasse.","int blumenstraussgroesse = Blume.anzahlBlumen;","Eine nicht-statische Methode ändert stets den Wert von Attributen",5,"Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: 0; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: 0; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: -; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+public class BusTest{
+	public static void main(String[] args){
+		Bus bus1= new Bus(""Schlossstraße"", ""Turmstraße"");
+		Bus bus2= new Bus(""Hauptbahnhof"", ""Ostbahnhof"");
+		Bus bus3= new Bus(""Flughafen Schönefeld"", ""Alexanderplatz"");
+		bus1.fahren(6);
+		bus2.fahren(99);
+		bus3.fahren(21);
+		bus1.print();
+		bus2.print();
+		bus3.print();
+	}
+}","public class Haustier{
+	String name;
+	int alter;
+	double gewicht;
+	boolean istSaeugetier;
+	public static int alterGesamt=0;
+	
+	public Haustier(String name, int alter){
+		this.name=name;
+		this.alter=alter;
+		alterGesamt+=alter;
+	}
+	public void geburtstag(){
+		alter++;
+		alterGesamt++;
+	}
+	
+}","//Hier nichts reinschreiben"
+Großgoerge,Corvin,corvin.grossgoerge@campus.tu-berlin.de,Beendet,"5. Juni 2021  12:12","15. Juni 2021  23:59","10 Tage 11 Stunden","9,23","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.","int blumenstraussgroesse = Blume.anzahlBlumen;",-,rose.giessen(50);,5,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können die Eigenschaften eines Objektes verändern.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können wiederum Objekte sein.","Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: undef; Teil 12: -; Teil 13: -; Teil 14: 5(12); Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: ; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: ; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: ; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: ; Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: ; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117:","public class BusTest{
+	public static void main(String[] args) {
+		Bus rubin = new Bus(""Entenhausen"", ""Gotham City"");
+		Bus saphir = new Bus(""Kaer Morhen"", ""Schicksalsberg"");
+		Bus smaragd = new Bus(""Winkelgasse"", ""Tatooine"");
+
+		rubin.fahren(13);
+		saphir.fahren(69);
+		smaragd.fahren(420);
+
+		rubin.print();
+		saphir.print();
+		smaragd.print();
+
+	}
+}","public class Haustier{
+	String name;
+	int alter;
+	double gewicht;
+	static int alterGesamt;
+	boolean istSaeugetier;
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		this.alterGesamt += alter;
+	}
+	void geburtstag(){
+		alter += 1;
+		alterGesamt += 1;
+
+	}
+}","//Hier nichts reinschreiben"
+Hankewitz,David,david.hankewitz@campus.tu-berlin.de,Beendet,"5. Juni 2021  15:19","12. Juni 2021  17:20","7 Tage 2 Stunden","14,19",6,rose.giessen(50);,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",5,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","int blumenstraussgroesse = Blume.anzahlBlumen;","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+    public static void main(String[] args) {
+    Bus bus1 = new Bus();
+    Bus bus2 = new Bus();
+    Bus bus3 = new Bus();
+
+    bus1.Bus(""Ebenrotsteig"", ""Langhansstraße"");
+    bus1.fahren(10);
+    bus1.print();
+    bus2.Bus(""Nerthusweg"", ""Nuthetal"");
+    bus2.fahren(20);
+    bus2.print();
+    bus3.Bus(""S-Bahnhof"", ""U-Bahnhof"");
+    bus3.fahren(5);
+    bus3.print();
+    }
+}","public class Haustier {
+    int alter;
+    String name;
+    double gewicht;
+    static int alterGesamt;
+    boolean istSaeugetier = false;
+
+    public Haustier(String haustierName, int alter){
+        this.name = haustierName;
+        this.alter = alter;
+        alterGesamt += alter;
+    }
+
+    public void geburtstag(){
+        this.alter++;
+        alterGesamt++;
+    }
+    
+}","//Hier nichts reinschreiben"
+Mansfeld,Maurice,maurice.mansfeld@campus.tu-berlin.de,Beendet,"5. Juni 2021  18:06","13. Juni 2021  19:18","8 Tage 1 Stunde","14,29",2,5,"int blumenstraussgroesse = Blume.anzahlBlumen;",rose.giessen(50);,"Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+
+    public static void main (String []args){
+        Bus bus1 = new Bus(""Hamburg"", ""Köln"");
+        Bus bus2 = new Bus (""Köln"",""München"");
+        Bus bus3 = new Bus (""München"",""Rom"");
+
+        bus1.fahren(3);
+        bus2.fahren(4);
+        bus3.fahren(8);
+
+        bus1.print();
+        bus2.print();
+        bus3.print();
+    }
+}","public class Haustier {
+    String name;
+    int alter;
+    double gewicht;
+    static int alterGesamt;
+    boolean istSaeugetier;
+
+    public Haustier (String name, int alter){
+        this.alter = alter;
+        this.name = name;
+        alterGesamt = alter + alterGesamt;
+    }
+
+    public void geburtstag(){
+        this.alter ++ ;
+        alterGesamt ++;
+    }
+}","//Hier nichts reinschreiben"
+Hadhri,"Mehdi Abdelfattah",m.hadhri@campus.tu-berlin.de,Beendet,"5. Juni 2021  18:08","11. Juni 2021  12:28","5 Tage 18 Stunden","6,94",rose.giessen(50);,"int blumenstraussgroesse = Blume.anzahlBlumen;",5,"Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.",4,"Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: 0; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: 0; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest{
+	public static void main(String[] args){
+		Bus bus1= new Bus(""Hauptbahnhof"", ""Zoologischer Garten"");
+		Bus bus2= new Bus(""Tempelhof"", ""Bellevue"");
+		Bus bus3= new Bus(""Friedrichstraße"", ""Flughafen Tegel"");
+		bus1.fahren(8);
+		bus2.fahren(4);
+		bus3.fahren(12);
+		bus1.print();
+		bus2.print();
+		bus3.print();
+	}
+}",-,"//Hier nichts reinschreiben"
+Dukart,Kevin,dukart@campus.tu-berlin.de,Beendet,"5. Juni 2021  18:54","10. Juni 2021  18:57","5 Tage","11,73","int blumenstraussgroesse = Blume.anzahlBlumen;","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.",3,"Eine nicht-statische Methode ändert stets den Wert von Attributen",rose.giessen(50);,"Attribute können wiederum Objekte sein.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.","Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 12; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 13; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 8(14); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: 9(14); Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: %; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %","public class BusTest {
+
+	public static void main(String[] args) {
+		
+		
+		Bus bus1 = new Bus(""Wedding"", ""Leopoldplatz"");
+		Bus bus2 = new Bus(""Alexanderplatz"" , ""Friedrichstraße"");
+		Bus bus3 = new Bus(""Friedrichstraße"", ""Potsdamer Platz"");
+		
+		bus1.fahren(5);
+		bus2.fahren(12);
+		bus3.fahren(3);
+		
+		bus1.print();
+		bus2.print();
+		bus3.print();
+		
+	}
+}","public class Haustier {
+
+	String name;
+	int alter;
+    double gewicht;
+    static int alterGesamt = 0;
+    boolean istSaeugetier;
+
+	public Haustier(String name, int alter) {
+		this.name = name;
+		this.alter = alter;
+		alterGesamt =  alterGesamt + this.alter;
+		
+	    
+		
+			
+		
+	}
+
+
+	public void geburtstag() {
+		alter = alter +1;
+		alterGesamt =  alterGesamt +1;
+		
+	}
+	
+	
+	
+}","//Hier nichts reinschreiben"
+Huang,Chenghao,chenghao.huang@campus.tu-berlin.de,Beendet,"6. Juni 2021  06:04","11. Juni 2021  10:10","5 Tage 4 Stunden","5,80","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem parameterlosen Konstruktor der Objektklasse.",5,"int blumenstraussgroesse = Blume.anzahlBlumen;",rose.giessen(50);,3,"Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 0; Teil 9: undef; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: -; Teil 30: -; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: 3; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: 0; Teil 44: %; Teil 45: undef; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 1; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: -; Teil 65: %; Teil 66: -; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: 6; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: %; Teil 86: 12; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 15; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: true; Teil 104: 16; Teil 105: %; Teil 106: -; Teil 107: -; Teil 108: %; Teil 109: %; Teil 110: -; Teil 111: 17; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %",-,"public class Haustier{
+	  public static int alterGesamt=0;
+	  public String name;
+	  public int alter;
+	  public double gewicht;
+      public int geburtstag() {
+		  return alter++;
+	  }
+	  public Haustier(String n,int a) {
+	  name=n;
+	  alter=a;
+	  alterGesamt=alterGesamt+alter;
+	  }
+	 
+	 boolean istSaeugetier=false;
+	}","//Hier nichts reinschreiben"
+Hecht,Leon,leon.hecht@campus.tu-berlin.de,Beendet,"6. Juni 2021  12:00","7. Juni 2021  11:36","23 Stunden 35 Minuten","14,17",5,rose.giessen(50);,"int blumenstraussgroesse = Blume.anzahlBlumen;","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","Attribute können wiederum Objekte sein.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: -; Teil 116: -; Teil 117: -","public class BusTest {
+
+    public static void main(String[] args) {
+        Bus bus1 = new Bus(""Staaken"", ""Zoologischer Garten"");
+        Bus bus2 = new Bus(""Ruhleben"", ""Pankow"");
+        Bus bus3 = new Bus(""Rathaus Spandau"", ""Rudow"");
+
+        bus1.fahren(4);
+        bus2.fahren(12);
+        bus3.fahren(7);
+
+        bus1.print();
+        bus2.print();
+        bus3.print();
+    }
+}","public class Haustier {
+
+    double gewicht;
+    int alter;
+    String name;
+    static int alterGesamt;
+    boolean istSaeugetier = false;
+
+    public Haustier(String name, int alter){
+        this.name = name;
+        this.alter = alter;
+        alterGesamt += alter;
+    }
+
+    public void geburtstag(){
+        this.alter += 1;
+        alterGesamt += 1;
+    }
+
+}","//Hier nichts reinschreiben"
+Wontorra,Lara,lara.wontorra@campus.tu-berlin.de,Beendet,"6. Juni 2021  22:02","13. Juni 2021  19:57","6 Tage 21 Stunden","10,67",rose.giessen(50);,"Attribute können die Eigenschaften eines Objektes verändern.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","Eine statische Methode muss zwingenderweise mindestens einen Übergabeparameter haben","int blumenstraussgroesse = Blume.anzahlBlumen;",5,5,"Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: 3; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: &; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+    public static void main(String[] args) {
+       
+        Bus bus1 = new Bus(""Wuhletal (S+U)"", 
+                           ""(S) Marzahn (Bln)"");
+        Bus bus2 = new Bus(""(S) Marzahn (Bln)"", 
+                           ""Friedrichsfelde Ost (S)"");
+        Bus bus3 = new Bus(""Friedrichsfelde Ost (S)"", ""Hermannplatz (U)/Karl-Marx-str."");
+        
+        bus1.fahren(14);
+        bus2.fahren(18);
+        bus3.fahren(26);
+        
+        bus1.print();
+        bus2.print();
+        bus3.print();
+    }
+}","public class HaustierVerwaltung {
+	public static int alterGesamt = 0;
+
+    public String name;
+    public int alter; 
+    public boolean istSaeugetier;
+	public double gewicht; 
+	
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		alterGesamt+= alter;
+	}
+	
+	public void geburtstag(){
+		alter++;
+		alterGesamt++;
+		
+	System.out.println(chinchilla.name+"" ist jetzt ""+chinchilla.alter);
+        System.out.println(""Zusammengerechnet sind unsere Haustiere jetzt ""+Haustier.alterGesamt+"" Jahre alt"");
+      
+  	if(chinchilla.istSaeugetier){
+   		System.out.println(""Der Chinchilla ist ein Sauegetier und ist""+chinchilla.alter+"" Jahre alt, heisst ""+chinchilla.name+"". Sie wiegt "" + chinchilla.gewicht + "" kg."");
+  	}
+        System.out.println(""Der Weissbauchigel ist ""+weissbauchigel.alter+"" Jahre alt und heisst ""+weissbauchigel.name+"". Er wiegt "" + weissbauchigel.gewicht + "" kg."");	
+	}
+}","//Hier nichts reinschreiben"
+Tanka,Kostantin,kostandin.tanka@campus.tu-berlin.de,Beendet,"6. Juni 2021  23:03","15. Juni 2021  23:57","9 Tage","10,32",5,"Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.","rose = giessen(50);","Eine Methode, die nicht auf Attribute zugreift, muss statisch sein","int blumenstraussgroesse = 3;","Teil 1: ; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: ; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: ; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: ; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: ; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: ; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: ; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: ; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: ; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: ; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: ; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: ; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: ; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: ; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117:","public class BusTest{
+    
+    public static void main (String[] args) {
+            Bus eins = new Bus(""hier"", ""dort"");
+            
+            Bus zwei = new Bus(""ost"", ""west"");
+            
+            Bus drei = new Bus(""nord"", ""süd"");
+            
+            eins.fahren(8);
+            zwei.fahren(5);
+            drei.fahren(3);
+
+            eins.print();
+            zwei.print();
+            drei.print();
+            
+    }
+}","public class Haustier{
+
+    String name;
+    int alter;
+    double gewicht;
+    public static int alterGesamt;
+    boolean istSaeugetier;
+    
+    public Haustier (String name, int alter) {
+        this.name = name;
+        this.alter = alter;
+        alterGesamt += alter;
+    }   
+        
+    public void geburtstag() {
+        this.alter ++;
+        alterGesamt ++;
+    }
+}","//Hier nichts reinschreiben"
+Doan,Anh-Minh,a.doan@campus.tu-berlin.de,Beendet,"6. Juni 2021  23:15","13. Juni 2021  21:58","6 Tage 22 Stunden","14,61",5,"Attribute können wiederum Objekte sein.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parameterlosen Konstruktor der Objektklasse.","int blumenstraussgroesse = Blume.anzahlBlumen;",rose.giessen(50);,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 0; Teil 9: undef; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: 1; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: undef; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: 2; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: -; Teil 116: %; Teil 117: -","public class BusTest {
+   public static void main(String[] args) {
+       Bus m45 = new Bus(""johannesstift"", ""zoo"");
+       Bus m34 = new Bus (""Hottengrund"", ""Wasserwerk"");
+       Bus x33 = new Bus (""Rathaus"", ""Maerkische"");
+
+       m45.fahren(3);
+       m34.fahren(5);
+       x33.fahren(4);
+
+       m45.print();
+       m34.print();
+       x33.print();
+   }
+}","public class Haustier {
+
+    static int alterGesamt;
+    String name;
+    int alter;
+    double gewicht;
+    boolean istSaeugetier;
+
+    public Haustier(String name, int alter) {
+        this.name = name;
+        this.alter = alter;
+        alterGesamt += alter;
+    }
+
+    public void geburtstag() {
+        alter++;
+        alterGesamt++;
+    }
+}","//Hier nichts reinschreiben"
+Asad,Hamza,hamza.asad@campus.tu-berlin.de,Beendet,"7. Juni 2021  00:05","15. Juni 2021  23:59","8 Tage 23 Stunden","7,77","Eine statische Methode muss zwingenderweise mindestens einen Übergabeparameter haben","Attribute können die Eigenschaften eines Objektes verändern.
+
+; Attribute können wiederum Objekte sein.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.",rose.giessen(50);,"int blumenstraussgroesse = Blume.anzahlBlumen;",7,"Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(12); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: -; Teil 116: -; Teil 117: -",-,"public class Haustier{
+
+    String name;
+    int alter;
+    double gewicht;
+    public static int alterGesamt;
+    boolean istSaeugetier;
+    
+    public Haustier (String name, int alter){
+        this.name = name;
+        this.alter = alter;
+        alterGesamt += alter;
+    }
+    
+    public void geburtstag() {
+        this.alter ++;
+        alterGesamt ++;
+    }
+}","//Hier nichts reinschreiben"
+Dewitz,"Klemens Julian",k.dewitz@campus.tu-berlin.de,Beendet,"7. Juni 2021  10:42","14. Juni 2021  10:16","6 Tage 23 Stunden","9,36","int blumenstraussgroesse = Blume.anzahlBlumen;",3,"Eine Methode, die nicht auf Attribute zugreift, muss statisch sein","Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.","Attribute können wiederum Objekte sein.
+
+; Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.",rose.giessen(50);,"Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: 3; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: 6; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: 9; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+	public static void main (String[] args) {
+		Bus zweihundertsechsundneunzig=new Bus(""S+U Lichtenberg"","" S Karlshorst"");
+		Bus einhundertzweiundneunzig=new Bus(""S Marzahn"","" S Mahlsdorf"");
+		Bus einhundert=new Bus(""S+U Alexanderplatz"","" S+U Zoologischer Platz"");
+		
+		zweihundertsechsundneunzig.fahren(20);
+		einhundertzweiundneunzig.fahren(69);
+		einhundert.fahren(420)
+		
+		zweihundertsechsundneunzig.print();
+		einhundertzweiundneunzig.print();
+		einhundert.print();
+	}
+}","public class Haustier {
+	public String name;
+	public int alter;
+	public double gewicht;
+	public boolean istSaeugetier;
+	static int alterGesamt;
+	
+	public Haustier (String name,int alter) {
+		this.name=name;
+		this.alter=alter;
+		alterGesamt=alter+alterGesamt;
+		if (name==""Fips"") {
+			istSaeugetier=false;
+		}
+		else istSaeugetier=true;
+			
+	}
+	public void geburtstag() {
+		alterGesamt++;
+		alter++;
+	}
+}","//Hier nichts reinschreiben"
+Köster,"Vincenz Georg",v.koester@campus.tu-berlin.de,Beendet,"7. Juni 2021  14:13","15. Juni 2021  23:59","8 Tage 9 Stunden","1,33",5,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",3,Pflanze.giessen(50);,"Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","Mit dem parametrisierten Konstruktor der Objektklasse.","Teil 1: 3; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: 4(13); Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: 5; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: 6; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: 7; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: 14(8); Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: ; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: ; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: ; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: ; Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: ; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117:",-,"public class HaustierVerwaltung {","//Hier nichts reinschreiben"
+Aymergen,Berke,berke.aymergen@campus.tu-berlin.de,Beendet,"7. Juni 2021  14:54","7. Juni 2021  17:32","2 Stunden 38 Minuten","14,35","int blumenstraussgroesse = Blume.anzahlBlumen;","Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.",5,"Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",rose.giessen(50);,"Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+    public static void main(String[] args){
+        Bus b1 = new Bus(""Peterstr."",""Hansstr."");
+        Bus b2 = new Bus(""Mattenstr."",""Hakenstr."");
+        Bus b3 = new Bus(""Petersonstr."",""johastr."");
+        b1.fahren(5);
+        b2.fahren(2);
+        b3.fahren(10);
+        b1.print();
+        b2.print();
+        b3.print();
+    }
+}","public class Haustier {
+    public String name;
+    public int alter;
+    public boolean istSaeugetier;
+    public double gewicht;
+    public static int alterGesamt = 0;
+
+    public Haustier(String name, int alter){
+        this.name = name;
+        this.alter = alter;
+        alterGesamt += alter;
+        this.istSaeugetier = false;
+    }
+    public void geburtstag(){
+        this.alter++;
+        alterGesamt++;
+    }
+}","//Hier nichts reinschreiben"
+Mirrafati,"Nima Lucius",n.mirrafati@campus.tu-berlin.de,Beendet,"7. Juni 2021  18:41","15. Juni 2021  23:59","8 Tage 5 Stunden","13,79",5,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.","int blumenstraussgroesse = Blume.anzahlBlumen;","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",rose.giessen(50);,"Teil 1: 11; Teil 2: 0; Teil 3: undef; Teil 4: undef; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: false; Teil 111: 16; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+	public static void main(String[] args) {
+	
+	Bus Bus1 = new Bus(""staaken"", ""spandau"");
+	Bus Bus2 = new Bus(""finkenkruger"", ""schwimmbad"");
+	Bus Bus3 = new Bus(""isenburger"", ""heidebergplan"");
+	
+	Bus1.fahren(14);
+	Bus2.fahren(4);
+	Bus3.fahren(2);
+	
+	Bus1.print();
+	Bus2.print();
+	Bus3.print();
+	}
+}","public class Haustier {
+	static int alterGesamt = 0;
+	String name;
+	int alter;
+	double gewicht;
+	boolean istSaeugetier = false;
+	
+	public Haustier(String n, int a) {
+	this.name = n;
+	this.alter = a;
+	this.alterGesamt += this.alter;
+	}
+	
+	public void geburtstag(){
+	this.alter++;
+	this.alterGesamt++;
+	}
+}","//Hier nichts reinschreiben"
+Chaudhary,Pradeep,p.chaudhary@campus.tu-berlin.de,Beendet,"7. Juni 2021  20:13","10. Juni 2021  17:23","2 Tage 21 Stunden","13,33",2,rose.giessen(50);,"Eine nicht-statische Methode ändert stets den Wert von Attributen","Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.",5,"Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: 3; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: 6; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+public class BusTest{
+	public static void main(String[] args){
+		Bus bus1 = new Bus(""Spandau"",""Rudow"");
+		Bus bus2 = new Bus(""Potsdam"",""Ahrenfelde"");
+		Bus bus3 = new Bus(""Westkrez"",""Strausberg"");
+		bus1.fahren(2);
+		bus2.fahren(3);
+		bus3.fahren(4);
+		bus1.print();
+		bus2.print();
+		bus3.print();
+		
+		
+	}
+}","public class Haustier{
+	public String name;
+	public int alter;
+	public double gewicht;
+	public boolean istSaeugetier = false;
+	public static int alterGesamt = 0;
+	
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		alterGesamt += alter;
+	}
+	
+	public int geburtstag(){
+		alter++;
+		alterGesamt ++;
+		return alterGesamt;
+	}
+}","//Hier nichts reinschreiben"
+Mondry,Leonard,leonard.mondry@campus.tu-berlin.de,Beendet,"7. Juni 2021  21:05","8. Juni 2021  02:05","4 Stunden 59 Minuten","14,84",5,rose.giessen(50);,"Attribute können wiederum Objekte sein.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",5,"int blumenstraussgroesse = Blume.anzahlBlumen;","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: undef; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: undef; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+	
+	public static void main(String[] args) {
+		
+		Bus bus1 = new Bus(""Station 1"", ""Station 5"");
+		Bus bus2 = new Bus(""Station 3"", ""Station 8"");
+		Bus bus3 = new Bus(""Station 6"", ""Station 11"");
+		
+		bus1.fahren(3);
+		bus2.fahren(4);
+		bus3.fahren(5);
+		
+		bus1.print();
+		bus2.print();
+		bus3.print();
+	}
+}","public class Haustier {
+	public String name;
+	public int alter;
+	public double gewicht;
+	public static int alterGesamt = 0;
+	public boolean istSaeugetier;
+	
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		this.alterGesamt += alter;
+		this.istSaeugetier = false;
+	}
+	
+	public void geburtstag(){
+		this.alter++;
+		this.alterGesamt++;
+	}
+}","//Hier nichts reinschreiben"
+Agung,"Naufal Radhana",n.agung@campus.tu-berlin.de,Beendet,"7. Juni 2021  23:46","15. Juni 2021  23:59","8 Tage","8,35","Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.","Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","Eine Methode, die nicht auf Attribute zugreift, muss statisch sein","int blumenstraussgroesse = sonnenblume.anzahlBlumen();",4,5,"Teil 1: 3(12); Teil 2: 0; Teil 3: undef; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 3(13); Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: -; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: -; Teil 74: %; Teil 75: %; Teil 76: 14; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: 8(14); Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: 6; Teil 89: %; Teil 90: 9(14); Teil 91: %; Teil 92: 9; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 10(14); Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %","public class BusTest{
+  public static void main(String[] args){
+    Bus[] testBus = new Bus[3];
+    testBus[0] = new Bus(""Hauptbahnhof"", ""Messe"");
+    testBus[1] = new Bus(""Zoo"", ""Schloss"");
+    testBus[2] = new Bus(""See"", ""Nordhalle"");
+    testBus[0].fahren(4);
+    testBus[1].fahren(14);
+    testBus[2].fahren(20);
+    testBus[0].print();
+    testBus[1].print();
+    testBus[2].print();
+}
+}","public class Haustier{
+  public String name;
+  public int alter;
+  public double gewicht;
+  public boolean istSaeugetier = false;
+  public static int alterGesamt;
+
+  public Haustier(String n, int a){
+    name = n;
+    alter = a;
+    gewicht = 0;
+    alterGesamt = alterGesamt+a;
+  }
+
+  public void geburtstag(){
+    alter++;
+    alterGesamt++;
+  }
+}","//Hier nichts reinschreiben"
+Schuchardt,"Silas Samuel",schuchardt@tu-berlin.de,Beendet,"8. Juni 2021  11:59","15. Juni 2021  23:59","7 Tage 11 Stunden","9,82",6,"Eine Methode, die nicht auf Attribute zugreift, muss statisch sein",rose.giessen(50);,"int blumenstraussgroesse = Blume.anzahlBlumen;","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest{
+
+	public static void main(String[] args){
+	
+		Bus a = new Bus(""Bebra"", ""Hersfeld"");	
+		Bus b = new Bus(""Kassel"", ""Fulda"");	
+		Bus c = new Bus(""Solz"", ""Berlin"");
+
+		a.fahren(12);
+		b.fahren(69);
+		c.fahren(420);
+		
+			a.print();
+			b.print();
+			c.print();
+	}
+}","public class Haustier{
+
+	String name;
+	int alter;
+	static int alterGesamt;
+	double gewicht;
+	boolean istSaeugetier = false;
+	
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		this.alterGesamt+=alter;
+	}
+	
+	public double Gewicht(double gewicht){
+		this.gewicht = gewicht;
+		return gewicht;
+	}
+	
+	public int geburtstag(){
+		this.alter = this.alter+1;
+		this.alterGesamt = this.alterGesamt+1;
+		return alter;
+	}
+}","//Hier nichts reinschreiben"
+Wolf,"Matilda Sophie",matilda.s.wolf@campus.tu-berlin.de,Beendet,"8. Juni 2021  15:57","10. Juni 2021  15:24","1 Tag 23 Stunden","13,94",rose.giessen(50);,"Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können wiederum Objekte sein.","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.",5,"int blumenstraussgroesse = Blume.anzahlBlumen;","Eine Methode, die nicht auf Attribute zugreift, muss statisch sein","Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: -; Teil 116: -; Teil 117: -","public class BusTest {
+	
+	public static void main (String [] args){
+		Bus a = new Bus (""Sonnenallee"",""Hermannplatz"");
+		Bus b = new Bus (""Gesundbrunnen"",""Wollankstrasse"");
+		Bus c = new Bus (""Zoo"",""Tiergarten"");
+		
+		a.fahren(9);
+		b.fahren(6);
+		c.fahren(5);
+		
+		a.print();
+		b.print();
+		c.print();
+	
+	}
+}","public class Haustier {
+	String name;
+	int alter;
+	double gewicht;
+	boolean istSaeugetier;
+	static int alterGesamt = 0;
+	
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		alterGesamt += alter;
+		istSaeugetier = false;
+	}
+	
+	public void geburtstag (){
+		alter ++;
+		alterGesamt++;
+	}
+	
+}","//Hier nichts reinschreiben"
+Scholz,"Jonas Malte",jonas.scholz.1@campus.tu-berlin.de,Beendet,"9. Juni 2021  09:25","13. Juni 2021  21:44","4 Tage 12 Stunden","13,61",5,rose.giessen(50);,2,"int blumenstraussgroesse = Blume.anzahlBlumen;","Eine statische Methode muss zwingenderweise mindestens einen Übergabeparameter haben","Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: -; Teil 116: -; Teil 117: -","public class BusTest {
+
+    public static void main (String []args){
+        Bus bus0 = new Bus(""Berlin"",""Amsterdam"");
+        Bus bus1 = new Bus (""Potsdam"",""Leipzig"");
+        Bus bus2 = new Bus (""Magdeburg"",""Aachen"");
+
+        bus0.fahren(3);
+        bus1.fahren(4);
+        bus2.fahren(8);
+
+        bus0.print();
+        bus1.print();
+        bus2.print();
+    }
+}","public class Haustier {
+    String name;
+    int alter;
+    double gewicht;
+    static int alterGesamt;
+    boolean istSaeugetier;
+
+    public Haustier (String name, int alter) {
+        this.alter = alter;
+        this.name = name;
+        alterGesamt = alter + alterGesamt;
+    }
+
+    public void geburtstag() {
+        this.alter ++;
+        alterGesamt ++;
+    }
+}","//Hier nichts reinschreiben"
+Gorny,Leonid,l.gorny@campus.tu-berlin.de,Beendet,"9. Juni 2021  13:15","15. Juni 2021  23:59","6 Tage 10 Stunden","9,47",2,"int blumenstraussgroesse = Blume.anzahlBlumen;","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parameterlosen Konstruktor der Objektklasse.",5,"Teil 1: 11; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: 3; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: 4(13); Teil 15: ; Teil 16: ; Teil 17: 6; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: 14; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: ; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: ; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: ; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: ; Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: ; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117:","public class bustest{
+  public static void main (String [] args){
+
+    Bus bus1 = new Bus (""lagos"", ""faro"");
+    Bus bus2 = new Bus (""barca"", ""madrid"");
+    Bus bus3 = new Bus (""porto"", ""lissabon"");
+
+
+    bus1.fahren(5);
+    bus2.fahren(32);
+    bus3.fahren(13);
+
+    bus1.print();
+    bus2.print();
+    bus3.print();
+
+  }
+}","class Haustier {
+    public String name;
+    public int alter;
+    public double gewicht;
+    public boolean istSaeugetier;
+    static int alterGesamt = 0;
+    
+    public Haustier(String name, int alter){
+        this.name = name;
+        this.alter = alter;
+        this.alterGesamt += alter;
+    }
+
+    public void geburtstag(){
+        this.alterGesamt += 1;
+        this.alter += 1;
+       }
+       
+}","//Hier nichts reinschreiben"
+Fenner,Lisa-Marie,l.fenner@campus.tu-berlin.de,Beendet,"9. Juni 2021  14:18","13. Juni 2021  18:43","4 Tage 4 Stunden","9,52",3,"int blumenstraussgroesse = Blume.anzahlBlumen;","Attribute können wiederum Objekte sein.
+
+; Attribute können die Eigenschaften eines Objektes verändern.",rose.giessen(50);,"Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.",5,"Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 0; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: 3; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: 6; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: 12; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+	public static void main(String[] args) {
+	Bus a = new Bus(""Berlin"",""München"");
+	Bus b = new Bus(""Köln"", ""Hamburg"");
+	Bus c = new Bus(""Dresden"",""Paris"");
+	
+	a.fahren(4);
+	b.fahren(7);
+	c.fahren(9);
+	
+	a.print();
+	b.print();
+	c.print();	
+}
+}","public class Haustier {
+	public String name;
+	static int alterGesamt = 0;
+	public double gewicht;
+	public int alter;
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		alterGesamt += alter;
+	}
+	public int geburtstag() {
+		alter += 1;
+		alterGesamt += 1;
+		return alter;
+	}
+	boolean istSaeugetier = false;
+}","//Hier nichts reinschreiben"
+Klingelhöfer,"Sabine Sophie",klingelhoefer@campus.tu-berlin.de,Beendet,"9. Juni 2021  14:24","15. Juni 2021  23:59","6 Tage 9 Stunden","10,19","int blumenstraussgroesse = Blume.anzahlBlumen;",rose.giessen(50);,5,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.",3,"Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 0; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: 3; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: 6; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: 12; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+	 public static void main(String[] args) {
+	Bus a;
+	Bus b;
+	Bus c;
+	 a = new Bus(""London"", ""Berlin"");
+	 b= new Bus(""Paris"", ""Lissabon"");
+	 c = new Bus(""Kopenhagen"", ""Luxemburg"");
+	 a.fahren(4);
+	 b.fahren(5);
+	 c.fahren(6);
+	 
+	 a.print();
+	 b.print();
+	 c.print();
+	 }
+}","public class Haustier {	
+	public static int alterGesamt = 0;
+	public String name;
+	public int alter;
+	public Haustier(String name, int alter){
+	this.alter = alter;
+	this.name = name;
+	alterGesamt += alter;
+	}
+	public double gewicht;
+
+	
+			
+	
+	
+	
+	public int geburtstag() {
+	alter = alter +1;
+	alterGesamt+=1;
+	return alter;
+	}
+boolean istSaeugetier =false;
+}","//Hier nichts reinschreiben"
+Schnabel,Josefina,josefina.schnabel@campus.tu-berlin.de,Beendet,"9. Juni 2021  15:25","15. Juni 2021  00:21","5 Tage 8 Stunden","13,95","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",2,5,"Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.","Attribute können die Eigenschaften eines Objektes verändern.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können wiederum Objekte sein.",rose.giessen(50);,"Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","//Hier darf (public class BusTest {
+
+    public static void main(String[] args) {
+        Bus linie118 = new Bus(""Steinstücken"", ""Zehlendorf"");
+        Bus linie318 = new Bus(""Helmholtz-Zentrum"", ""U Krumme Lanke"");
+        Bus millenniumFalcon = new Bus(""Coruscant"", ""Naboo"");
+
+        linie118.fahren(5);
+        linie118.print();
+
+        linie318.fahren(14);
+        linie318.print();
+
+        millenniumFalcon.fahren(3);
+        millenniumFalcon.print();
+
+    }
+}","public class Haustier {
+
+   public double gewicht;
+   public int alter;
+   public String name;
+   public static int alterGesamt = 0;
+
+   public boolean istSaeugetier;
+
+   public Haustier(String n, int a) {
+       name = n;
+       alter = a;
+       alterGesamt += alter;
+   }
+
+   public void geburtstag() {
+       alter += 1;
+       alterGesamt += 1;
+   }
+   
+}","//Hier nichts reinschreiben"
+Reinartz,"Karl Levin",reinartz@campus.tu-berlin.de,Beendet,"9. Juni 2021  17:19","15. Juni 2021  23:59","6 Tage 6 Stunden","13,62","int blumenstraussgroesse = Blume.anzahlBlumen;",5,rose.giessen(50);,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","Eine statische Methode muss zwingenderweise mindestens einen Übergabeparameter haben",3,"Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+	
+	public static void main(String[] args){
+		Bus b1 = new Bus(""Hauptbanhof"",""Deine Mudda"");
+		Bus PARTY_BUS = new Bus(""Deine Hoffnungen"",""Alkohlvergifftung"");
+		Bus Mein_Leben = new Bus(""Flensburgserstraße.19"", ""Hölle"");
+		b1.fahren(33);
+		PARTY_BUS.fahren(7);
+		Mein_Leben.fahren(23);
+		b1.print();
+		PARTY_BUS.print();
+		Mein_Leben.print();
+	}
+}","public class Haustier{
+	
+	String name;
+	int alter;
+	double gewicht;
+	public static int alterGesamt;
+	boolean istSaeugetier;
+	
+	public Haustier (String name, int alter) {
+		this.name = name;
+		this.alter = alter;
+		alterGesamt += alter;
+	}
+	public void geburtstag() {
+		this.alter++;
+		alterGesamt++;
+	}
+}","//Hier nichts reinschreiben"
+Ranneberg,Thea,t.ranneberg@campus.tu-berlin.de,Beendet,"10. Juni 2021  10:49","15. Juni 2021  23:59","5 Tage 13 Stunden","13,79","Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.","Attribute können wiederum Objekte sein.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.",2,rose.giessen(50);,"int blumenstraussgroesse = Blume.anzahlBlumen;","Eine statische Methode muss zwingenderweise mindestens einen Übergabeparameter haben","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+    public static void main(String[] args) {
+        Bus[] bus = new Bus[3];
+        bus[0] = new Bus(""Bahnhofsstrasse"", ""Schlossstrasse"");
+        bus[1] = new Bus(""Friedrichstrasse"", ""Alexanderplatz"");
+        bus[2] = new Bus(""Tiergarten"", ""Zoologischer Garten"");
+        bus[0].fahren(5);
+        bus[1].fahren(10);
+        bus[1].fahren(10);
+        bus[2].fahren(2);
+        bus[0].print();
+        bus[1].print();
+        bus[2].print();
+    }
+}","public class Haustier {
+
+    String name;
+    int alter;
+    double gewicht;
+    static int alterGesamt;
+    boolean istSaeugetier = false;
+
+
+    public Haustier(String name, int alter) {
+        this.name = name;
+        this.alter = alter;
+        alterGesamt += alter;
+    }
+
+    public void geburtstag() {
+        this.alter++;
+        alterGesamt++;
+    }
+}","//Hier nichts reinschreiben"
+Hake,"Anna Franziska",a.hake@campus.tu-berlin.de,Beendet,"10. Juni 2021  13:33","15. Juni 2021  23:56","5 Tage 10 Stunden","2,40","rose = giessen(50);","Eine nicht-statische Methode ändert stets den Wert von Attributen",4,"int blumenstraussgroesse = Blume.anzahlBlumen;",5,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","Teil 1: 1; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8(12); Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 9(12); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: 10(12); Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11(12); Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 12; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 14; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: 15; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 16; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 17; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 17; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 17; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %",-,"public class Haustier {
+    public int name;
+    public int alter;
+    public float gewicht;
+    
+    public (int name, int alter, int gewicht){
+       this.name = name;
+       this.alter = alter;
+       this.gewicht = gewicht;
+       
+    }
+
+}","//Hier nichts reinschreiben"
+Eckhardt,Henry,henry.eckhardt@campus.tu-berlin.de,Beendet,"10. Juni 2021  14:22","15. Juni 2021  23:59","5 Tage 9 Stunden","8,79",rose.giessen(50);,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können die Eigenschaften eines Objektes verändern.",2,"Eine statische Methode muss zwingenderweise mindestens einen Übergabeparameter haben","Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem parametrisierten Konstruktor der Objektklasse.",5,"Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest{
+
+
+public static void main(String[] args){
+
+	Bus alfa;
+	Bus bravo;
+	Bus charlie;
+	
+	alfa = new Bus(""Hedwigpromenade"", ""Rathenaustr."");
+	bravo = new Bus(""Bernauer Str."", ""Humboldtstr."");
+	charlie = new Bus(""Berliner Str."", ""Viktoriastr."");
+	
+	alfa.fahren(1);
+	bravo.fahren(3);
+	charlie.fahren(7);
+	
+	alfa.print();
+	bravo.print();
+	charlie.print();
+}
+
+}","public class Haustier	{
+
+	String name;
+	int alter;
+	static int alterGesamt;
+	double gewicht;
+	boolean istSaeugetier = false;
+	
+	public Haustier(String name, int alter)	{
+		this.name = name;
+		this.alter = alter;
+		this.alterGesamt+=alter;
+	}
+	
+	public double Gewicht(double gewicht)	{
+		this.gewicht = gewicht;
+		return gewicht;
+	}
+	
+	public int geburtstag()	{
+		this.alter = this.alter+1;
+		this.alterGesamt = this.alterGesamt+1;
+		return alter;
+	}
+}","//Hier nichts reinschreiben"
+Lee,"Woo Jin",lee.16@campus.tu-berlin.de,Beendet,"10. Juni 2021  16:23","15. Juni 2021  23:59","5 Tage 7 Stunden","9,75","int blumenstraussgroesse = Blume.anzahlBlumen;",rose.giessen(50);,"Eine Methode, die nicht auf Attribute zugreift, muss statisch sein","Attribute können die Eigenschaften eines Objektes verändern.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.",3,"Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+    public static void main(String[] args) {
+        Bus bus1 = new Bus(""Berlin"", ""Brandenburg"");
+        Bus bus2 = new Bus(""Deutschland"", ""Polen"");
+        Bus bus3 = new Bus(""Spanien"", ""Frankfreich"");
+        
+        bus1.fahren(2);
+        bus2.fahren(3);
+        bus3.fahren(4);
+        
+        bus1.print();
+        bus2.print();
+        bus3.print();
+    }
+}","public class Haustier {
+	public String name;
+	public int alter;
+	public static int alterGesamt;
+	public double gewicht;
+	public boolean istSaeugetier;
+	
+	public Haustier (String name, int alter) {
+		this.name = name;
+		this.alter = alter;
+		alterGesamt += alter;
+		
+	}
+	
+	public void geburtstag () {
+		this.alter ++;
+		alterGesamt ++;
+	}
+}","//Hier nichts reinschreiben"
+Fulful,"Abd Alrahman",a.fulful@campus.tu-berlin.de,Beendet,"10. Juni 2021  17:18","15. Juni 2021  23:59","5 Tage 6 Stunden","5,08",7,"int blumenstraussgroesse = Blume.anzahlBlumen;","Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem parametrisierten Konstruktor der Objektklasse.",rose.giessen(50);,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",3,"Teil 1: 1; Teil 2: %; Teil 3: %; Teil 4: %; Teil 5: %; Teil 6: %; Teil 7: %; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8(12); Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 9(12); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: 10(12); Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 11(12); Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 12; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 14; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: 15; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 16; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 17; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 2; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 3; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %",-,"public class Haustier {
+    String name;
+int alter;
+double gewicht;
+boolean istSaeugetier;
+static int alterGesamt;
+
+    public Haustier(String name, int alter){
+        this.name = name;
+        this.alter = alter;
+        alterGesamt += this.alter;
+        this.istSaeugetier =false;
+    }
+
+
+    public void geburtstag(){
+        this.alter = this.alter +1;
+        alterGesamt = alterGesamt + 1;
+    }
+}","//Hier nichts reinschreiben"
+Krebs,"Florian Anselm",florian.krebs@campus.tu-berlin.de,Beendet,"10. Juni 2021  21:20","15. Juni 2021  23:59","5 Tage 2 Stunden","13,78",6,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parameterlosen Konstruktor der Objektklasse.","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.",5,"int blumenstraussgroesse = Blume.anzahlBlumen;","Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 15; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: true; Teil 104: 16; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: -; Teil 111: 17; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: %","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+public class BusTest {
+	
+	public static void main (String[]args){
+		Bus eins = new Bus(""Heiligensee"", ""Aubertstr."");
+		eins.fahren(12);
+		Bus zwei = new Bus(""Waidmannslust"", ""Steglitz"");
+		zwei.fahren(2);
+		Bus drei = new Bus(""Titiseestr."", ""Kurt-Schuhmacher-Platz."");
+		drei.fahren(43);
+		eins.print();
+		zwei.print();
+		drei.print();
+	}
+
+}","public class Haustier {
+	
+	public String name;
+	public double gewicht;
+	public int alter;
+	public boolean istSaeugetier = false;
+	public static int alterGesamt = 0;
+	
+	public Haustier (String name, int alter){
+		this.name = name;
+		this.gewicht = gewicht;
+		this.alter = alter;
+		this.alterGesamt += alter;
+	}
+	public void geburtstag (){
+		alter ++;
+		alterGesamt++;
+	}
+}","//Hier nichts reinschreiben"
+"Saa Hinojosa","Paola Carolina",p.saahinojosa@campus.tu-berlin.de,Beendet,"10. Juni 2021  21:21","15. Juni 2021  23:59","5 Tage 2 Stunden","6,17","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","int blumenstraussgroesse = Blume.anzahlBlumen;",3,5,rose.giessen(50);,"Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -",-,"public class Haustier {
+        
+         public String name;
+         public double gewicht;
+         public int alter;
+         public boolean istSaeugetier = true;
+         public static int alterGesamt = 0;
+        
+        public Haustier(String nm, int al) {
+         name = nm;
+         alter = al;
+         alterGesamt = al;
+         istSaeugetier = false;
+      
+   }
+   public void geburtstag() {
+       alter++;
+       alterGesamt++;
+   }
+   
+   
+}","//Hier nichts reinschreiben"
+Weimer,David,d.weimer@campus.tu-berlin.de,Beendet,"10. Juni 2021  23:22","15. Juni 2021  23:59","5 Tage","9,08","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.","int blumenstraussgroesse = Blume.anzahlBlumen;","Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.","Eine nicht-statische Methode ändert stets den Wert von Attributen",rose.giessen(50);,4,"Teil 1: 11; Teil 2: undef; Teil 3: undef; Teil 4: undef; Teil 5: undef; Teil 6: undef; Teil 7: undef; Teil 8: 0; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: 3; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: 6; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: false; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: -; Teil 116: -; Teil 117: -","public class BusTest {
+
+	public static void main(String[] args) {
+
+	Bus chilibeach = new Bus(""Flip-Flop Strasse"", ""Strand der Meere"");
+	Bus darkestofsouls = new Bus(""Cathedral of the Deep"", ""Kiln of the First Flame"");
+	Bus fastestoffurious = new Bus(""1970 Dodge Charger"", ""Lego Lamborghini Sián and Ferrari 812 Superfast Hits 205 MPH on the Autobahn"");
+
+	chilibeach.fahren(45);
+	darkestofsouls.fahren(666);
+	fastestoffurious.fahren(9);
+
+	chilibeach.print();
+	darkestofsouls.print();
+	fastestoffurious.print();
+
+	}	
+}","public class Haustier {
+		
+		static int alterGesamt;
+		String name;
+		public int alter;
+		double gewicht;
+		boolean istSaeugetier;
+
+	public Haustier(String nam, int altr) {
+		
+		name = nam;
+		alter = (int) altr;
+		alterGesamt += alter;
+		if (nam == ""Furry"") {
+		istSaeugetier = true;
+		}
+		else {
+		istSaeugetier = false;
+		}
+	}
+	public void geburtstag() {
+		
+		this.alter += 1;
+		alterGesamt += 1;
+	}
+
+}","//Hier nichts reinschreiben"
+Lisowski,Moritz,lisowski@campus.tu-berlin.de,Beendet,"11. Juni 2021  09:59","15. Juni 2021  19:32","4 Tage 9 Stunden","2,05","Eine statische Methode muss zwingenderweise mindestens einen Übergabeparameter haben",4,"int blumenstraussgroesse = Blume.anzahlBlumen;",6,"Mit dem parametrisierten Konstruktor der Objektklasse.","giessen(rose) = 50;","Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: ; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: ; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: ; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: ; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: ; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: ; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: ; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: ; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: ; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: ; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: ; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: -; Teil 116: -; Teil 117: -",-,-,"//Hier nichts reinschreiben"
+Machleidt,"Felice Josima Lunes Noah",machleidt@campus.tu-berlin.de,Beendet,"11. Juni 2021  10:33","11. Juni 2021  21:20","10 Stunden 46 Minuten","13,04","Eine statische Methode muss zwingenderweise mindestens einen Übergabeparameter haben","int blumenstraussgroesse = Blume.anzahlBlumen;",4,"Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.","Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.",rose.giessen(50);,"Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: undef; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: 3; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: 3; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: undef; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: 6; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: 6; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: undef; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: 6; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: 9; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest{
+    public static void main(String[] args){
+        Bus b1 = new Bus(""Alex"",""Zoo"");
+        Bus b2 = new Bus(""Kudamm"",""Alex"");
+        Bus b3 = new Bus(""Spandau"",""Flughafen"");
+        b1.fahren(5);
+        b2.fahren(6);
+        b3.fahren(7);
+        b1.print();
+        b2.print();
+        b3.print();
+    }
+}","public class Haustier{
+    public String name;
+    public int alter;
+    public double gewicht;
+    public  static int alterGesamt;
+    public boolean istSaeugetier;
+    public int a ;
+    public void  geburtstag(){
+        alter++;
+        alterGesamt++;
+    }
+    public Haustier(String name,int alter){
+        this.name=name;
+        this.alter=alter;
+        Haustier.alterGesamt +=  alter;
+    }
+    
+    public static void main(String[] args) {
+        
+    Haustier chinchilla;
+	Haustier weissbauchigel;
+ 
+    chinchilla = new Haustier(""Fips"", 5);
+	weissbauchigel = new Haustier(""Freddy"", 2);
+	
+	weissbauchigel.gewicht = 0.016;
+	chinchilla.gewicht = 2.4;
+        
+    chinchilla.geburtstag();
+	System.out.println(chinchilla.name+"" ist jetzt ""+chinchilla.alter);
+    System.out.println(""Zusammengerechnet sind unsere Haustiere jetzt ""+Haustier.alterGesamt+"" Jahre alt"");
+	if(chinchilla.istSaeugetier){
+			System.out.println(""Der Chinchilla ist ein Sauegetier und ist""+chinchilla.alter +"" Jahre alt, heisst ""+chinchilla.name+"". Sie wiegt "" + chinchilla.gewicht + "" kg."");
+		}
+    System.out.println(""Der Weissbauchigel ist ""+weissbauchigel.alter+"" Jahre alt und heisst ""+weissbauchigel.name+"". Er wiegt "" + weissbauchigel.gewicht + "" kg."");
+    }
+}","//Hier nichts reinschreiben"
+Bormann,Lisa,lisa.bormann@campus.tu-berlin.de,Beendet,"11. Juni 2021  11:22","15. Juni 2021  23:59","4 Tage 12 Stunden","13,62",5,"Eine statische Methode muss zwingenderweise mindestens einen Übergabeparameter haben",rose.giessen(50);,3,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest{
+	
+	public static void main (String[] args){
+		Bus eins = new Bus(""hier"", ""dort"");
+		
+		Bus zwei = new Bus(""ost"", ""west"");
+		
+		Bus drei = new Bus(""nord"", ""süd"");
+		
+		eins.fahren(8);
+		zwei.fahren(5);
+		drei.fahren(3);
+		
+		eins.print();
+		zwei.print();
+		drei.print();
+	
+	}
+}","public class Haustier{
+	
+	String name;
+	int alter;
+	double gewicht;
+	public static int alterGesamt;
+	boolean istSaeugetier;
+	
+	public Haustier (String name, int alter) {
+		this.name = name;
+		this.alter = alter;
+		alterGesamt += alter;
+	}
+	
+	public void geburtstag() {
+		this.alter ++;
+		alterGesamt ++;
+	}
+}","//Hier nichts reinschreiben"
+Kinschus,Oskar,o.kinschus@campus.tu-berlin.de,Beendet,"11. Juni 2021  11:36","14. Juni 2021  16:43","3 Tage 5 Stunden","8,19",rose.giessen(50);,"Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","int blumenstraussgroesse = Blume.anzahlBlumen;","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",2,"Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 0; Teil 9: undef; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: undef; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: undef; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: 6; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 15; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: true; Teil 104: 16; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 17; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+    Bus e = new Bus();
+    e.start = Han;
+    e.ziel = feld;
+	e.fahren(2);
+	e.print();
+    Bus f = new Bus();
+    f.start = Haned;
+    f.ziel = felden;
+	f.fahren(3);
+	f.print();
+    Bus g = new Bus();
+    g.start = Buxtehude;
+    g.ziel = Punktefelde;   
+	g.fahren(4);
+	g.print();
+	
+	
+}","public class Haustier{
+		String name;		
+		double gewicht;
+		int alter;
+		boolean istSaeugetier;
+	
+		public void Haustier() {
+			this.name = name;
+			this. gewicht = gewicht;
+			this.alter = alter;	
+			this.istSaeugetier = istSaeugetier;
+		}
+		public void geburtstag(){
+			alter++;
+		}
+		public void alterGesamt(int alter){
+			this.alter += alter;
+		}
+		public void istSaeugetier(boolean f){
+			boolean gg;
+			gg = true;
+		}
+			
+}","//Hier nichts reinschreiben"
+Türk,Selin,selin.tuerk@campus.tu-berlin.de,Beendet,"11. Juni 2021  14:37","15. Juni 2021  23:59","4 Tage 9 Stunden","7,06",rose.giessen(50);,"Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.","int blumenstraussgroesse = Blume.anzahlBlumen;","Attribute können wiederum Objekte sein.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","Eine Methode, die nicht auf Attribute zugreift, muss statisch sein",3,"Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: -; Teil 116: -; Teil 117: -","import Bus.java;
+
+public class BusTest {
+	
+	public static void main (String[] args) {
+		Bus bus0 = new Bus (""S Buch"",""U Osloer Strase"");
+		Bus bus1 = new Bus (""S+U Alexanderplatz"",""Volta"");
+		Bus bus2 = new Bus (""Bernauer"",""Brandenburger Tor"");
+		
+		bus0.fahren(3);
+		bus1.fahren(4);
+		bus2.fahren(8);
+		
+		bus0.print();
+		bus1.print();
+		bus2.print();
+	}
+}","public class Haustier {
+	String name;
+	int alter;
+	double gewicht;
+	boolean istSaeugetier;
+	static int alterGesamt = 0;
+	
+	
+	public Haustier (String n, int a) {
+		name = n;
+		alter = a;
+		istSaeugetier = false;
+		alterGesamt = a;
+	}
+	
+	public void geburtstag() {
+		alter ++;
+		alterGesamt ++;
+	}
+}","//Hier nichts reinschreiben"
+Maas,"Lukas Maximilian",lukas.maas@campus.tu-berlin.de,Beendet,"11. Juni 2021  15:47","13. Juni 2021  23:58","2 Tage 8 Stunden","11,43",rose.giessen(50);,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",4,"Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.",5,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können wiederum Objekte sein.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: -; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: -; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: -; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: -",-,"public class Haustier {
+    
+	public int alter;
+	public String name;
+	public double gewicht;
+	public boolean istSaeugetier;
+	public static int alterGesamt;
+	
+	public Haustier(String name, int alter){
+		this.alter= alter;
+		this.name = name;
+		this.alterGesamt += alter; 
+	}
+	public void geburtstag(){
+		this.alter += 1;
+		this.alterGesamt += 1;
+	}
+}","//Hier nichts reinschreiben"
+Kubale,"Felice Pia Sophie",f.kubale@campus.tu-berlin.de,Beendet,"11. Juni 2021  20:52","15. Juni 2021  23:59","4 Tage 3 Stunden","14,17","int blumenstraussgroesse = Blume.anzahlBlumen;","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Attribute können wiederum Objekte sein.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.",rose.giessen(50);,5,3,"Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: undef; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: undef; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+	public static void main(String[] args) {
+		Bus bus1 = new Bus(""Breitenbachplatz"", ""Schlossstrasse"");
+		Bus bus2 = new Bus(""Kufürstendamm"", ""Hohenzollerplatz"");
+		Bus bus3 = new Bus(""Ostbahnhof"", ""Straße der Pariser Commune"");
+		bus1.fahren(7);
+		bus2.fahren(3);
+		bus3.fahren(25);
+		bus1.print();
+		bus2.print();
+		bus3.print();
+	}
+}","public class Haustier {
+	public String name;
+	public int alter;
+	public double gewicht;
+	public boolean istSaeugetier;
+	public static int alterGesamt = 0;
+	public Haustier(String n, int a) {
+		name = n;
+		alter = a;
+		istSaeugetier = false;
+		alterGesamt += a;
+	}
+	public void geburtstag() {
+		alter++;
+		alterGesamt++;
+	}
+}","//Hier nichts reinschreiben"
+Trümpler,Antonia,a.truempler@campus.tu-berlin.de,Beendet,"12. Juni 2021  08:59","13. Juni 2021  22:35","1 Tag 13 Stunden","14,54","int blumenstraussgroesse = Blume.anzahlBlumen;",5,rose.giessen(50);,"Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können wiederum Objekte sein.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: 6; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 12; Teil 86: 12; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: 12; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!public class BusTest{
+	public class BusTest {
+	public static void main(String args[]){
+		Bus b1 = new Bus( ""Berlin"", ""Wien"" );
+		Bus b2 = new Bus( ""Messe"", ""Hbf"" );
+		Bus b3 = new Bus( ""Falkensee"", ""Nauen"" );
+		b1.fahren(4);
+		b2.fahren(3);
+		b3.fahren(7);
+		b1.print();
+		b2.print();
+		b3.print();
+	}
+}","public class Haustier{
+	public String name;
+	public int alter;
+	public double gewicht;
+	public boolean istSaeugetier;
+	
+	public static int alterGesamt = 0;
+	
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		this.alterGesamt += this.alter;
+	}
+
+	public void geburtstag(){
+		this.alter += 1;
+		this.alterGesamt += 1;
+	}
+}","//Hier nichts reinschreiben"
+Ataev,Batyr,ataev@campus.tu-berlin.de,Beendet,"12. Juni 2021  14:17","13. Juni 2021  23:00","1 Tag 8 Stunden","14,69",5,"int blumenstraussgroesse = Blume.anzahlBlumen;",5,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parameterlosen Konstruktor der Objektklasse.","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+	public static void main(String[] args) {
+		Bus m46 = new Bus(""Hertzallee"", ""Britz-Sued"");
+		Bus x10 = new Bus(""Teltow"", ""Hertzallee"");
+		Bus n7 = new Bus(""Rathaus Spandau"", ""BER"");
+		
+		m46.fahren(5);
+		x10.fahren(12);
+		n7.fahren(8);
+		
+		m46.print();
+		x10.print();
+		n7.print();
+	}
+}","public class Haustier {
+	
+	public String name; 
+	public int alter;
+	public static int alterGesamt; 
+	public double gewicht;
+	public boolean istSaeugetier;
+	
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		alterGesamt += alter;
+	}
+	
+	public void geburtstag() {
+		alter++;
+		alterGesamt++;
+	}
+}","class Student{
+	public String name;
+	public int matrikelnummer;
+	
+	public Student(String name, int matrikel) {
+		this.name = name;
+		this.matrikelnummer = matrikel;
+	}
+	
+	public void ausgeben() {
+		System.out.println(""Matrikel Nr.: "" + this.matrikelnummer + "", Name: "" + this.name);
+	}
+}
+
+class Tutorium{
+	public String tutor;
+	public int raumNr;
+	public String fach;
+	public Student[] teilnehmer;
+	
+	public Tutorium(int kapazitaet, int raumNr, String tutor, String fach) {
+		this.tutor = tutor;
+		this.raumNr = raumNr;
+		this.fach = fach;
+		teilnehmer = new Student[kapazitaet];
+		
+		for(int i = 0; i < teilnehmer.length; i++) {
+			teilnehmer[i] = null;
+		}
+	}
+	
+	public void ausgeben() {
+		System.out.println(""Tutorium "" + this.fach + "" bei "" + this.tutor + "" in Raum "" + this.raumNr + "" Teilnehmer:"");
+		
+		for(int i = 0; i < teilnehmer.length; i++) {
+			if(teilnehmer[i] != null) teilnehmer[i].ausgeben();
+		}
+	}
+}
+
+class Sekretariat{
+	
+	public static boolean istVoll(Tutorium t) {
+		for(int i = 0; i<t.teilnehmer.length; i++) {
+			if(t.teilnehmer[i]==null) return false;
+		}
+		
+		return true;
+	}
+	
+	public static boolean studentAufnehmen(Tutorium t, Student st) {
+		if(!istVoll(t)) {
+			for(int i = 0; i<t.teilnehmer.length; i++) {
+				if(t.teilnehmer[i]==null) {
+					t.teilnehmer[i] = new Student(st.name, st.matrikelnummer);
+					return true;
+				}
+			}
+		}
+		
+		return false;
+	}
+}"
+Xu,Lili,l.xu@campus.tu-berlin.de,Beendet,"12. Juni 2021  19:40","15. Juni 2021  20:11","3 Tage","13,58",5,"Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.","int blumenstraussgroesse = Blume.anzahlBlumen;",2,"Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: 9; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+	
+	public static void main(String[] args) {
+		
+		Bus one = new Bus(""berlin"", ""hamburg"");
+		Bus two = new Bus(""neuseeland"", ""australien"");
+		Bus three = new Bus(""peking"", ""shanghai"");
+		
+		one.fahren(3);
+		two.fahren(4);
+		three.fahren(5);
+		
+		one.print();
+		two.print();
+		three.print();
+	}
+}","public class Haustier {
+	
+	String name;
+	int alter;
+	double gewicht;
+	static int alterGesamt;
+	boolean istSaeugetier = false;
+	
+	public Haustier(String namee, int alterr) {
+		name = namee;
+		alter = alterr;
+		
+		alterGesamt += alterr;
+	}
+	
+	public void geburtstag() {
+		alter ++;
+		alterGesamt ++;
+	}
+}","//Hier nichts reinschreiben"
+Ruffo,Max,ruffo@campus.tu-berlin.de,Beendet,"13. Juni 2021  17:55","15. Juni 2021  23:58","2 Tage 6 Stunden","8,92","Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.",5,"Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.",5,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",rose.giessen(50);,"Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: undef; Teil 10: -; Teil 11: 3; Teil 12: -; Teil 13: -; Teil 14: 5; Teil 15: %; Teil 16: 3; Teil 17: -; Teil 18: %; Teil 19: -; Teil 20: -; Teil 21: 6; Teil 22: 1; Teil 23: %; Teil 24: -; Teil 25: %; Teil 26: _; Teil 27: -; Teil 28: 13(6); Teil 29: %; Teil 30: %; Teil 31: -; Teil 32: %; Teil 33: -; Teil 34: -; Teil 35: 4(12); Teil 36: %; Teil 37: %; Teil 38: -; Teil 39: 6; Teil 40: -; Teil 41: -; Teil 42: 5; Teil 43: %; Teil 44: %; Teil 45: 6; Teil 46: %; Teil 47: -; Teil 48: -; Teil 49: 6; Teil 50: 2; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: -; Teil 55: -; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: ; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: ; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: ; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: ; Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: ; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117:","public class BusTest{
+	public static void main(String[] args){
+		Bus testBus = new Bus(""S Buch"", ""Prenzlauer Berg"");
+		testBus.fahren(14);
+		Bus a = new Bus(""Koeln"", ""Berlin"");
+		a.fahren(13);
+		Bus b = new Bus(""Amsterdam"", ""Magdeburg"");
+		b.fahren(14);
+		
+		testBus.print();
+		a.print();
+		b.print();
+	}
+}","public class Haustier{
+	String name;
+	int alter;
+	double gewicht;
+	static int alterGesamt;
+	boolean istSaeugetier;
+	public  Haustier(String name,int alter){
+		this.name=name;
+		this.alter=alter;
+		this.alterGesamt=Haustier.alterGesamt+alter;
+	}
+	public double gewicht(double gewicht){
+		return this.gewicht=gewicht;
+	}
+	public int geburtstag(){
+		Haustier.alterGesamt++;
+		return this.alter++;
+	}
+}","//Hier nichts reinschreiben"
+Lohse,"Clemens Christian",clemens.lohse@campus.tu-berlin.de,Beendet,"13. Juni 2021  18:02","13. Juni 2021  22:37","4 Stunden 34 Minuten","6,80",3,6,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","int blumenstraussgroesse = Blume.anzahlBlumen;","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -",-,"public class Haustier {
+	
+	public static final int alterGesamt = 8;
+	int alter;
+	String name;
+	double gewicht;
+	//public static int aw = 0
+	public int geburtstag() {
+		alter = alter + 1;
+		return alter;
+	}
+	boolean istSaeugetier;
+	
+	public Haustier(String name, int a) {
+		this.alter = a;
+		this.name = name;
+		
+	}
+}","//Hier nichts reinschreiben"
+Heritz,Faris,f.heritz@campus.tu-berlin.de,Beendet,"13. Juni 2021  18:04","15. Juni 2021  18:46","2 Tage","7,18","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.
+
+; Attribute können wiederum Objekte sein.",3,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",rose.giessen(50);,5,"int blumenstraussgroesse = Blume.anzahlBlumen;","Teil 1: 11; Teil 2: 0; Teil 3: undef; Teil 4: undef; Teil 5: undef; Teil 6: undef; Teil 7: undef; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: 3; Teil 38: %; Teil 39: 3; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: 6; Teil 73: 6; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: 9; Teil 100: %; Teil 101: %; Teil 102: 6; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %",-,"public class Haustier {
+		    String name;
+            int alter;
+			double gewicht;
+			boolean istSaeugetier;
+			static int alterGesamt = 8;
+			
+			public Haustier(String n,int a){
+				name = n;
+			    alter = a;
+			    	}
+					
+			public int geburtstag(){
+				alter++;
+				return alter;
+			}
+			
+		
+			}","//Hier nichts reinschreiben"
+Escabache,"Pia Annick",escabache@campus.tu-berlin.de,Beendet,"13. Juni 2021  18:04","13. Juni 2021  23:08","5 Stunden 4 Minuten","9,01","int blumenstraussgroesse = Blume.anzahlBlumen;",5,"Eine Methode, die nicht auf Attribute zugreift, muss statisch sein","Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.",rose.giessen(50);,"Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: undef; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: 3; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!public class BusTest{
+
+	public static void main (String []args){
+		
+		Bus fahrt1 = new Bus (""Ha"",""buh"");
+		fahrt1.fahren(5);
+		fahrt1.print ();
+		
+		Bus fahrt2 = new Bus (""Wolkenstrasse"", ""Regenbogenallee"");
+		fahrt2.fahren(2);
+		fahrt2.print ();
+		
+		Bus fahrt3 = new Bus (""Steinweg"", ""Aussichtspunkt"");
+		fahrt3.fahren(4);
+		fahrt3.print ();
+	}
+}","public class Haustier{
+	
+	String name;
+	int alter;
+	double gewicht;
+	boolean istSaeugetier = false;
+	static int alterGesamt=0;
+	
+	
+	
+	public Haustier(String n, int a ){
+		name = n;
+		alter = a;
+		alterGesamt+=alter;
+	}
+	public void geburtstag(){
+		alter +=1;
+		alterGesamt+=1;
+	}
+	
+
+
+}","//Hier nichts reinschreiben"
+Volkmann,Maximilian,m.volkmann@campus.tu-berlin.de,Beendet,"13. Juni 2021  18:08","15. Juni 2021  23:59","2 Tage 5 Stunden","13,95",rose.giessen(50);,5,"int blumenstraussgroesse = Blume.anzahlBlumen;","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.",2,"Teil 1: 11; Teil 2: 0; Teil 3: undef; Teil 4: undef; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: false; Teil 111: 16; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest{
+  public static void main(String [] args){
+    Bus WL = new Bus(""Warschauer"", ""Loeperplatz"");
+    Bus AH = new Bus(""AlexanderPLatz"", ""Hoennow"");
+    Bus ZO = new Bus(""ZoologischerGarten"", ""Ostkreuz"");
+
+    WL.fahren(6);
+    AH.fahren(18);
+    ZO.fahren(9);
+
+    WL.print();
+    AH.print();
+    ZO.print();
+
+  }
+}
+//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!","public class Haustier{
+  double gewicht;
+  String name;
+  int alter;
+  boolean istSaeugetier = false;
+  static int alterGesamt = 0;
+
+
+  public Haustier(String a, int b){
+    this.name = a;
+    this.alter = b;
+    this.alterGesamt += this.alter;
+  }
+  public void geburtstag(){
+    this.alter++;
+    this.alterGesamt += 1;
+  }
+
+}","//Hier nichts reinschreiben"
+Baumann,"Felix Elmar Gerd",f.baumann@campus.tu-berlin.de,Beendet,"13. Juni 2021  18:12","15. Juni 2021  23:59","2 Tage 5 Stunden","7,19","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","Eine nicht-statische Methode ändert stets den Wert von Attributen","Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.",5,rose.giessen(50);,"int blumenstraussgroesse = Blume.anzahlBlumen;","Teil 1: 11; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: %; Teil 13: %; Teil 14: ; Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: ; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: ; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: ; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: ; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: ; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: ; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: ; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: ; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: ; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: ; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: ; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: ; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: ; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: -; Teil 116: -; Teil 117: -",-,-,"//Hier nichts reinschreiben"
+König,Timon,timon.koenig@campus.tu-berlin.de,Beendet,"13. Juni 2021  18:54","15. Juni 2021  23:59","2 Tage 5 Stunden","14,04","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","int blumenstraussgroesse = Blume.anzahlBlumen;",3,rose.giessen(50);,5,"Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: undef; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: undef; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 16; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 18; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest{
+	
+ 	public static void main(String[] args){
+ 		Bus b1 = new Bus(""Lankwitz Kirche"", ""Steglitz"");
+ 		Bus b2 = new Bus(""Alt-Mariendorf"", ""Lichtenrade"");
+ 		Bus b3 = new Bus(""Mitte"", ""BER-Flughafen"");
+ 		b1.fahren(3);
+ 		b2.fahren(5);
+ 		b3.fahren(7);
+ 		b1.print();
+ 		b2.print();
+ 		b3.print();
+	}
+}","public class Haustier{
+	
+	public String name;
+	public int alter;
+	public double gewicht;
+	public boolean istSaeugetier;
+	public static int alterGesamt = 0;
+
+	public Haustier(String n, int a){
+		name = n;
+		alter = a;
+		istSaeugetier = false;
+		alterGesamt = a + alterGesamt;
+	}
+
+	public void geburtstag(){
+		alter = alter + 1;
+		alterGesamt = alterGesamt + 1;
+	}
+
+}","//Hier nichts reinschreiben"
+Theo,Yovan,yovan.theo@campus.tu-berlin.de,Beendet,"13. Juni 2021  19:21","13. Juni 2021  23:47","4 Stunden 25 Minuten","12,89",4,"Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem parametrisierten Konstruktor der Objektklasse.",5,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",rose.giessen(50);,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: True; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+	public static void main(String[] args) {
+		Bus b1 = new Bus(""S+U Pankow"",""Schillerstraße"");
+		Bus b2 = new Bus(""Alexanderplatz"",""Hakeschermarkt"");
+		Bus b3 = new Bus(""Zoologischer Garten"",""Postdamer Platz"");
+		b1.fahren(5);
+		b2.fahren(2);
+		b3.fahren(4);
+		b1.print();
+		b2.print();
+		b3.print();
+	}
+}","public class Haustier {
+	public String name;
+	public int alter;
+	public double gewicht;
+	public static int alterGesamt;
+	public boolean istSaeugetier;
+	
+	public Haustier (String name, int alter) {
+		this.name = name;
+		this.alter = alter;
+		alterGesamt += alter;
+	}
+	
+	public void geburtstag () {
+		this.alter++;
+		alterGesamt++;
+		this.istSaeugetier = false;
+	}
+}","//Hier nichts reinschreiben"
+Schneider,Felix,felix.schneider@campus.tu-berlin.de,Beendet,"13. Juni 2021  19:21","15. Juni 2021  17:31","1 Tag 22 Stunden","13,81",5,"Attribute können wiederum Objekte sein.
+
+; Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.","Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.",rose.giessen(50);,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",2,"Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: &; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 4; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 4; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 4; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 7; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest{
+	
+	public static void main (String[] args){
+	
+	Bus a = new Bus(""Gross"",""Ost"");
+	Bus b = new Bus(""Oranien"",""West"");
+	Bus c = new Bus(""Rosi"",""Sued"");
+	
+	for ( int i = 0 ; i < 4 ; i++){
+		a.fahren(3);
+		b.fahren(2);
+		c.fahren(1);
+	}
+	
+	a.print();
+	b.print();
+	c.print();
+	
+	}
+
+}","public class Haustier{
+  
+  String name;
+  int alter;
+  static int alterGesamt;
+  double gewicht;
+  boolean istSaeugetier;
+  
+ public Haustier (String name , int alter) {
+    this.name = name;
+    this.alter = alter;
+    alterGesamt += alter;
+    istSaeugetier = false;
+ }
+ 
+ public void geburtstag () {
+    this.alter++;
+    alterGesamt++;
+ }
+}","//Hier nichts reinschreiben"
+"Cabral de Jesus",Francisco,cabraldejesus@campus.tu-berlin.de,Beendet,"13. Juni 2021  19:38","15. Juni 2021  23:59","2 Tage 4 Stunden","5,39","int blumenstraussgroesse = Blume.anzahlBlumen;","Eine Methode, die nicht auf Attribute zugreift, muss statisch sein",5,"Attribute können wiederum Objekte sein.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.","Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.",3,"Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: undef; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: undef; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(4); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -",-,"public class Haustier {
+    public String name;
+    public int alter;
+    public double gewicht;
+    public boolean istSaeugetier;
+    public static int alterGesamt = 0;
+    public Haustier(String n, int a) {
+        name = n;
+        alter = a;
+        istSaeugetier = false;
+        alterGesamt = a;
+    }
+    public void geburtstag () {
+        alter++;
+        alterGesamt++;
+    }
+}","//Hier nichts reinschreiben"
+Czekanski,"Julian Michael",j.czekanski@campus.tu-berlin.de,Beendet,"13. Juni 2021  19:44","13. Juni 2021  22:36","2 Stunden 51 Minuten","14,67","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.
+
+; Attribute können die Eigenschaften eines Objektes verändern.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",rose.giessen(50);,"int blumenstraussgroesse = Blume.anzahlBlumen;",5,5,"Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: undef; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: undef; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+	public static void main (String[] args){
+		Bus bus1 = new Bus(""SwagVille"", ""FlavourTown"");
+		Bus bus2 = new Bus(""HamBurrg"", ""MemeCity"");
+		Bus bussy3 = new Bus(""Nordpol"", ""Ostpol"");
+		
+		bus1.fahren(3);
+		bus2.fahren(10);
+		bussy3.fahren(300);
+		
+		bus1.print();
+		bus2.print();
+		bussy3.print();
+	}
+}","public class Haustier{
+	public String name;
+	public int alter;
+	public double gewicht;
+	public boolean istSaeugetier = false;
+	public static int alterGesamt = 0;
+	
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		this.alterGesamt += alter;
+	}
+	
+	public void geburtstag(){
+		this.alter++;
+		this.alterGesamt++;
+	}
+}","//Hier nichts reinschreiben"
+Khatiwada,Aayush,khatiwada@campus.tu-berlin.de,Beendet,"13. Juni 2021  19:47","14. Juni 2021  00:01","4 Stunden 13 Minuten","7,77",rose.giessen(50);,"Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.",5,"int blumenstraussgroesse = Blume.anzahlBlumen;","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können die Eigenschaften eines Objektes verändern.",4,"Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: ; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: ; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: ; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: ; Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: ; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117:","public class BusTest {
+    public static void main(String[] args) {
+
+        Bus[] buses = new Bus[3];
+        buses[0]  = new Bus(""Coppistraße"", ""Baumschulenweg"");
+        buses[1]  = new Bus(""Frankfuter Alle"", ""Tierpark"");
+        buses[2]   = new Bus(""Coppistraße"", ""TU Berlin"");
+
+        buses[0].fahren(5);
+        buses[2].fahren(10);
+        buses[1].fahren(3);
+
+        for (Bus x: buses) {
+            x.print();
+        }
+    }
+}","public class Haustier {
+    public static int alterGesamt;
+    double gewicht;
+    String name;
+    int alter;
+    boolean istSaeugetier;
+
+    public Haustier(String name, int alter) {
+        this.name = name;
+        this.alter = alter;
+        //this.gewicht = 0;
+        alterGesamt = alterGesamt + alter;
+    }
+
+    public void geburtstag() {
+        this.alter++;
+        alterGesamt++;
+    }
+
+}","//Hier nichts reinschreiben"
+Pürschel,"Kanta Fabian",k.puerschel@campus.tu-berlin.de,Beendet,"13. Juni 2021  19:50","15. Juni 2021  22:21","2 Tage 2 Stunden","13,15",3,"Eine statische Methode muss zwingenderweise mindestens einen Übergabeparameter haben",5,"int blumenstraussgroesse = Blume.anzahlBlumen;","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest {
+  public static void main(String[] args) {
+    Bus m45 = new Bus(""Zoologischer Garten"", ""Spandau Johannesstift"");
+    Bus x10 = new Bus(""Zoologischer Garten"", ""Zehlendorf Andréezeile"");
+    Bus n2 = new Bus(""U Ruhleben"", ""U Pankow"");
+
+    m45.fahren(3);
+    x10.fahren(17);
+    n2.fahren(9);
+    
+    m45.print();
+    x10.print();
+    n2.print();
+  }
+}","public class Haustier {
+  public String name;
+  public int alter;
+  public double gewicht;
+  public static int alterGesamt = 0;
+  public boolean istSaeugetier;
+  public Haustier(String a, int b) {
+    name = a;
+    alter = b;
+    alterGesamt += b;
+  }
+  public void geburtstag() {
+    alter++;
+    alterGesamt++;
+  }
+}","//Hier nichts reinschreiben"
+"Van den Wyenbergh",Timo,vandenwyenbergh@campus.tu-berlin.de,Beendet,"13. Juni 2021  21:22","15. Juni 2021  16:52","1 Tag 19 Stunden","14,33",5,2,"int blumenstraussgroesse = Blume.anzahlBlumen;",rose.giessen(50);,"Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: 0; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: -; Teil 116: -; Teil 117: -","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+public class BusTest {
+
+    public static void main (String[] args){
+        Bus a=new Bus(""s"",""z"");
+        Bus b=new Bus(""s"",""x"");
+        Bus c=new Bus(""s"",""n"");
+        a.fahren(5);
+        b.fahren(54);
+        c.fahren(15);
+        a.print();
+        b.print();
+        c.print();
+
+    }
+
+
+    }","public class Haustier {
+    String name;
+    double gewicht;
+    int alter = 0;
+    boolean istSaeugetier = false;
+    static int alterGesamt=0;
+
+    public void geburtstag() {
+        alter++;
+        alterGesamt++;
+
+    }
+
+
+    public Haustier(String name, int alter) {
+        this.alter = alter;
+        this.name = name;
+        alterGesamt+=alter;
+    }
+}","//Hier nichts reinschreiben"
+Venn,"Arthur Raymond",venn@campus.tu-berlin.de,Beendet,"14. Juni 2021  13:31","15. Juni 2021  23:52","1 Tag 10 Stunden","5,46","Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.","Eine Methode, die nicht auf Attribute zugreift, muss statisch sein","int blumenstraussgroesse = Blume.anzahlBlumen;",3,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können die Eigenschaften eines Objektes verändern.",rose.giessen(50);,"Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: undef; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: undef; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public static void main (String[] args) {
+		Bus[] bus = new Bus[3];
+		bus[0] = new Bus(""Zoo"", ""Hauptbahnhof"", ""7"");
+		bus[1] = new Bus(""BotanischerGarten"", ""Gesundbrunnen"", ""25"");
+		bus[2] = new Bus(""OstKreuz"", ""WestKreuz"", ""19"");
+		System.out.println(liefereZeichenkette(bus));
+	}","public class Haustier {
+    public String name;
+    public int alter;
+    public double gewicht;
+    public boolean istSaeugetier;
+    public static int alterGesamt = 0;
+    public Haustier(String n, int a) {
+        name = n;
+        alter = a;
+        istSaeugetier = false;
+        alterGesamt = a;
+    }
+    public void geburtstag () {
+        alter++;
+        alterGesamt++;
+    }
+}","//Hier nichts reinschreiben"
+Mäding,"Toni Siegfried",t.maeding@campus.tu-berlin.de,Beendet,"14. Juni 2021  14:37","15. Juni 2021  20:17","1 Tag 5 Stunden","13,69","int blumenstraussgroesse = Blume.anzahlBlumen;","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",rose.giessen(50);,3,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.","Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: 3; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: undef; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: undef; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -","public class BusTest{
+    public static void main (String []args){
+        
+    Bus ICE18 = new Bus(""FFM"", ""BRX"");
+    ICE18.fahren(19);
+    ICE18.print;
+    
+    Bus ICE275 = new Bus(""BLN"", ""BAS"");
+    ICE275.fahren(700);
+    ICE275.print;
+    
+    Bus ICE69 = new Bus(""KGN"", ""AMS"");
+    ICE69.fahren(999);
+    ICE69.print;
+    }
+}","public class Haustier {
+    public double gewicht;
+    public String name;
+    public int alter;
+    public static int alterGesamt;
+    public boolean istSaeugetier;
+    
+    public Haustier (String name, int alter){
+        this.name = name;
+        this.alter = alter;
+        this.alterGesamt += alter; 
+          }
+          
+          public void geburtstag(){
+              alter++; alterGesamt++; 
+              
+          }
+    
+}","//Hier nichts reinschreiben"
+Heine,Frederik,f.heine@campus.tu-berlin.de,Beendet,"14. Juni 2021  19:05","15. Juni 2021  23:59","1 Tag 4 Stunden","6,94",7,3,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.","int blumenstraussgroesse = Blume.anzahlBlumen;",Pflanze.giessen(50);,"Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: -; Teil 116: -; Teil 117: -","public class Bustest	{
+	static Bus hundert = new Bus (""Zoo"", ""Hbf"");
+	static Bus zweihundert = new Bus (""Goerlitzer"", ""Anhalter"");
+	static Bus hundertachtzehn = new Bus (""Bundestag"", ""Friedrich"");
+	
+	public static void main (String[] args) {
+		zweihundert.fahren (3);
+		hundert.fahren (5);
+		hundertachtzehn.fahren (6);
+		
+		zweihundert.print ();
+		hundert.print ();
+		hundertachtzehn.print ();
+	}
+}","public class Haustier	{
+	String name;
+	int alter;
+	double gewicht;
+	static int alterGesamt = 0;
+	boolean istSaeugetier;
+	
+	public Haustier (String Namen, int age)	{
+		name = Namen;
+		alter = age;
+		alterGesamt += alter;
+	}
+	
+
+	
+	public void geburtstag()	{
+		alter ++;
+		alterGesamt ++;
+	}
+			
+}","//Hier nichts reinschreiben"
+Ismailoglu,Ece,e.ismailoglu@campus.tu-berlin.de,Beendet,"15. Juni 2021  20:34","15. Juni 2021  23:59","3 Stunden 24 Minuten","4,99",5,"Attribute können die Eigenschaften eines Objektes verändern.
+
+; Attribute können wiederum Objekte sein.","int blumenstraussgroesse = Blume.anzahlBlumen;","Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.",3,"rose = giessen(50);","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: %; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 9; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(14); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: %; Teil 113: -; Teil 114: -; Teil 115: -; Teil 116: -; Teil 117: -",-,"public class Haustier {
+    public String name;
+    public int alter;
+    public double gewicht;
+    public boolean istSaeugetier;
+    public static int alterGesamt = 0;
+    public Haustier(String n, int a) {
+        name = n;
+        alter = a;
+        istSaeugetier = false;
+        alterGesamt = a;
+    }
+    public void geburtstag () {
+        alter++;
+        alterGesamt++;
+    }
+}",-
+Nasralla,"Kerolus Nasser Nagi",k.nasralla@campus.tu-berlin.de,Beendet,"15. Juni 2021  21:38","15. Juni 2021  23:59","2 Stunden 20 Minuten","4,49","Eine Methode, die nicht auf Attribute zugreift, muss statisch sein","Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.",rose.giessen(50);,3,"int blumenstraussgroesse = 3;","Attribute können die Eigenschaften eines Objektes verändern.
+
+; Attribute können wiederum Objekte sein.","Teil 1: 11; Teil 2: 0; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: %; Teil 9: undef; Teil 10: %; Teil 11: 3; Teil 12: %; Teil 13: %; Teil 14: 5(12); Teil 15: %; Teil 16: 3; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 6(12); Teil 22: 1; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 7(12); Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: 12; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: 4(13); Teil 43: %; Teil 44: %; Teil 45: undef; Teil 46: 6; Teil 47: %; Teil 48: %; Teil 49: 5(13); Teil 50: %; Teil 51: %; Teil 52: 6; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: 6(13); Teil 57: 2; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 7(13); Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: 8(14); Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: 6; Teil 82: %; Teil 83: 9(14); Teil 84: %; Teil 85: 4; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: 10(4); Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: -; Teil 96: %; Teil 97: 14; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 15; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: true; Teil 111: 16; Teil 112: -; Teil 113: -; Teil 114: -; Teil 115: %; Teil 116: %; Teil 117: -",-,"public class Haustier {
+    public String name;
+    public int alter;
+    public double gewicht;
+    public boolean istSaeugetier;
+    public static int alterGesamt = 0;
+    public Haustier(String n, int a) {
+        name = n;
+        alter = a;
+        istSaeugetier = false;
+        alterGesamt = a;
+    }
+    public void geburtstag () {
+        alter++;
+        alterGesamt++;
+    }
+}","//Hier nichts reinschreiben
+public class Student {
+
+	String name;
+	int matrikelnummer;
+
+	public Student(String name, int matrikel) {
+		this.name = name;
+		this.matrikelnummer = matrikel;
+	}
+
+	public void ausgeben() {
+		String str = ""Matrikel Nr."" +this.martrikelnummer
+		+""\nName: "" +this.name;
+		return str;
+	}
+
+}
+
+
+public class Tutorium {
+
+	String tutor;
+	int raumNr;
+	String fach;
+	String Teilnehmer;
+
+	public Tutorium(int kapazität, int raumNr, String tutor, String fach) {
+		this.raumNr = raumNr;
+		this.tutor = tutor;
+		this.fach = fach;
+	}
+
+	public void ausgeben() {
+		String str = ""Tutorium: "" +this.fach
+		+""\nbei: "" +this.tutor
+		+""\nin Raum: "" +this.raumNr
+		+""\nTeilnehmer: "" +this.Teilnehmer;
+		return str;
+	}
+
+}"
