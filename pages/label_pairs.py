@@ -11,6 +11,7 @@ import plotly.graph_objs as go
 from datetime import datetime, date
 from sklearn.manifold import MDS
 # import js2py for highlight code, but dont know how to use it
+from json import dumps
 
 import pandas as pd
 import base64
@@ -19,7 +20,7 @@ import numpy as np
 import random
 from src import csv_stuff
 
-#TODO logo funktioniert nicht
+# TODO logo funktioniert nicht
 PLOTLY_LOGO = "./src/logo.png"
 
 GLOBAL_MARGIN = {'l': 60, 'b': 60, 't': 10, 'r': 10}
@@ -33,19 +34,32 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 
 # dash.register_page(__name__)
+semester = 'SoSe21'
+ha = '9'
+# tasks = ['Antwort 9']
+tasks = ['Antwort 8', 'Antwort 9', 'Antwort 10']
+prog_language = 'C'
 last_task = 0
 last_id = -1
 labled_pairs = 0
-all_pairs = csv_stuff.df_labled_len
 data = ["Text1", "Text2", "Text3", "Text4", "Text5"]
 current1 = 0
 current2 = 1
 scores = []
+df_labled, df_labled_len = csv_stuff.create_labled_table_routine(
+    semester, ha, tasks, prog_language)
+all_pairs = df_labled_len
 
 # remove app when using index.py
 # layout = html.Div([
 app.layout = html.Div([
     # content will be rendered in this element
+    # dcc.Store(id='semester'),
+    # dcc.Store(id='ha'),
+    # dcc.Store(id='tasks'),
+    # dcc.Store(id='prog_language'),
+    # dcc.Store(id='df_labled_len'),
+    # dcc.Store(id='df_labled'),
     html.Div([
         dbc.Navbar(
             dbc.Container(
@@ -84,7 +98,7 @@ app.layout = html.Div([
                             dbc.Col(html.H5(
                                 f'{labled_pairs}/{all_pairs} Paaren', id='number_labled'), md=0, className="title_container"),
                         ]),
-                        #TODO use prettify
+                        # TODO use prettify
                         dcc.Textarea(
                             id='textarea1',
                             wrap='<pre>',
@@ -134,6 +148,18 @@ app.layout = html.Div([
 ], className="h-100")
 
 
+# @app.callback(
+#     Output('semester', 'data'),
+#     Output('ha', 'data'),
+#     Output('tasks', 'data'),
+#     Output('prog_language', 'data'),
+#     Output('df_labled_len', 'data'),
+#     Output('df_labled', 'data'))
+# def init_call(semester, ha, tasks, prog_language):
+#     # print('button pressed ' + str(n_clicks))
+#     df_labled, df_labled_len = csv_stuff.create_labled_table_routine(semester, ha, tasks, prog_language)
+#     return dumps(semester), dumps(ha), dumps(tasks), dumps(prog_language), dumps(df_labled_len), df_labled.to_json(date_format='iso', orient='split')
+
 
 @app.callback(
     Output('textarea1', 'value'),
@@ -145,29 +171,31 @@ app.layout = html.Div([
     Input('previous', 'n_clicks'),
     Input('done_next', 'n_clicks'),
     Input('next', 'n_clicks'),
-    Input('score', 'value'))
+    # Input('df_labled', 'data'),
+    Input('score', 'value'))  # , prevent_initial_call=True
 def button_pressed(prev_clicks, done_clicks, next_clicks, label):
     # print('button pressed ' + str(n_clicks))
     ctx = dash.callback_context
     if ctx.triggered_id == None:
-        rt = get_new_pair_routine(csv_stuff.df_labled)
-        return  rt[0], rt[1], rt[2], rt[3], rt[4], dash.no_update
+        rt = get_new_pair_routine(df_labled)
+        return rt[0], rt[1], rt[2], rt[3], rt[4], dash.no_update
     elif ctx.triggered_id == 'done_next':
         # global last_id
         global last_task
         global labled_pairs
         global all_pairs
         print('label_button_pressed ' + str(done_clicks))
-        valid_set, labled_pairs = csv_stuff.set_label(csv_stuff.df_labled, last_id, label, labled_pairs)
+        valid_set, labled_pairs = csv_stuff.set_label(
+            df_labled, last_id, label, labled_pairs)
         if not valid_set:
             raise dash.exceptions.PreventUpdate
-        rt = get_new_pair_routine(csv_stuff.df_labled)
+        rt = get_new_pair_routine(df_labled)
         return rt[0], rt[1], rt[2], rt[3], rt[4], f'{labled_pairs}/{all_pairs} Paaren'
     elif ctx.triggered_id == 'next':
-        rt = get_new_pair_routine(csv_stuff.df_labled)
+        rt = get_new_pair_routine(df_labled)
         return rt[0], rt[1], rt[2], rt[3], rt[4], dash.no_update
     # elif ctx.triggered_id == 'previous':
-    #     return get_new_pair_routine(csv_stuff.df_labled)
+    #     return get_new_pair_routine(df_labled)
     else:
         raise dash.exceptions.PreventUpdate
 
@@ -187,8 +215,7 @@ def get_new_pair_routine(df_labled):
     return next[0], next[1], next[2], next[3], next[4]
 
 
-
-#TODO
+# TODO
 # @app.callback(
 #     Output('textarea1', 'value'),
 #     Output('textarea2', 'value'),
@@ -200,7 +227,7 @@ def get_new_pair_routine(df_labled):
 #     global last_id
 #     global last_task
 #     print('button pressed ' + str(n_clicks))
-#     next = csv_stuff.get_new_pair(csv_stuff.df_labled, last_task, last_id)
+#     next = csv_stuff.get_new_pair(df_labled, last_task, last_id)
 #     if next == None:
 #         return '', '', '', 'Niemandes Code', 'Niemandes Code'
 #     last_id = next[5]
@@ -214,12 +241,11 @@ def get_new_pair_routine(df_labled):
     Output('download-text', 'data'),
     Input('download', 'n_clicks'), prevent_initial_call=True)
 def download_button_pressed(n_clicks):
-    file_name = f'PPR [{csv_stuff.semester}]-{csv_stuff.ha}. Hausaufgabe - Pflichttest {csv_stuff.prog_language}-Antworten_labled.csv'
-    return dcc.send_data_frame(csv_stuff.df_labled.to_csv, file_name)
+    file_name = f'PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten_labled.csv'
+    return dcc.send_data_frame(df_labled.to_csv, file_name)
 
 
-
-#TODO how does the initial start works; every input sensitive callback starts??
+# TODO how does the initial start works; every input sensitive callback starts??
 # --> if clicked == None: raise dash.exceptions.PreventUpdate or
 # --> prevent_initial_call=True
 """
@@ -233,5 +259,5 @@ def download_button_pressed(n_clicks):
 """
 # only needed if running single page dash app instead
 if __name__ == '__main__':
-    # print((csv_stuff.df_labled, type(csv_stuff.df_labled)))
+    # print((df_labled, type(df_labled)))
     app.run_server(debug=True)
