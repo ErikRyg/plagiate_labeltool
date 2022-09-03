@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 2698439  -->
+  <question type="coderunner">
+    <name>
+      <text>Struktur Student (Neu; FERTIG)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Deklariert zunächst eine Struktur <strong>struct student</strong> und damit den Typ <strong>Student</strong> (typedef). Diese soll folgende Elemente enthalten (mit folgenden <em>Variablennamen</em>):<br></p><ul><li>Einen Vornamen von maximal 20 Zeichen Länge (<strong><em>{{ cr_random.vorname }}</em></strong>)<br></li><li>Einen Nachnamen von maximal 20 Zeichen Länge (<strong><em>{{ cr_random.nachname }}</em></strong>)<br></li><li>Einen Array, in welchem die Punkte von 5 Hausaufgabenblättern gespeichert werden können (Nur ganzzahlige Punkte sind erforderlich) (<strong><em>{{ cr_random.punkte}}</em></strong>)<br></li></ul><p><br></p><p>Schreibt eine <strong>main()</strong>-Funktion, welche</p><ul><li>zuerst ein Array mit Platz für <strong>5 Studierende</strong> erstellt (darf statisch sein)</li><li>ruft für jeden Studenten eine (selbst zu schreibende!) Funktion <strong><em>void student_einlesen(Student* p_stud)</em></strong> auf</li><ul><li>welche die Daten vom Nutzer einliest und in die Struktur schreibt</li></ul><li>Wenn alle Daten eingelesen wurden, ruft für jeden Studenten die (selbst zu schreibende...) Funktion <em><strong>void student_ausgeben(</strong><strong>Student* p_stud</strong><strong>)</strong></em> auf</li><ul><li>welche alle Daten der übergebenen Struktur im Terminal ausgibt. Die Übergabe der Struktur soll by-reference, also als <strong>Zeiger </strong>erfolgen</li><li>anstatt der Punkte jedes Aufgabenbogens soll die <strong>Summe aller Punkte</strong> ausgegeben werden.</li></ul></ul><p><span class="" style="background-color: rgb(255, 255, 255); color: rgb(239, 69, 64);">Hinweis:</span> Die Funktionen sutdent_einlesen() und student_ausgeben() besitzen <strong>Ausgaben</strong>, die ihr in eurem Code implementieren müsst. Schaut euch wie immer dafür die Tests an<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>7</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <coderunnertype>c_advanced</coderunnertype>
+    <prototypetype>0</prototypetype>
+    <allornothing>0</allornothing>
+    <penaltyregime>0, 0, 5, 10, 20, ...</penaltyregime>
+    <precheck>0</precheck>
+    <hidecheck>0</hidecheck>
+    <showsource>0</showsource>
+    <answerboxlines>40</answerboxlines>
+    <answerboxcolumns>100</answerboxcolumns>
+    <answerpreload></answerpreload>
+    <globalextra></globalextra>
+    <useace></useace>
+    <resultcolumns></resultcolumns>
+    <template></template>
+    <iscombinatortemplate></iscombinatortemplate>
+    <allowmultiplestdins></allowmultiplestdins>
+    <answer><![CDATA[#include <stdio.h>
+
+typedef struct student{
+    char {{ cr_random.vorname }}[21];
+    char {{ cr_random.nachname }}[21];
+    int {{ cr_random.punkte }}[5];
+} Student;
+
+void student_einlesen(Student* p_stud)
+{
+    printf("\nGebe den Vornamen ein: ");
+    scanf("%s", p_stud->{{ cr_random.vorname }});
+    printf("Gebe nun den Nachnamen ein: ");
+    scanf("%s", p_stud->{{ cr_random.nachname }});
+    printf("Gebe nun nacheinander die 5 Punkte ein:\n");
+    for(int i=0; i<5; i++)
+    {
+        printf("%i: ", i+1);
+        scanf("%i", &(p_stud->{{ cr_random.punkte }}[i]));
+    }
+}
+
+void student_ausgeben(Student* p_stud)
+{
+    int sum = 0;
+    for(int i=0; i<5; i++)
+        sum += p_stud->{{ cr_random.punkte }}[i];
+    printf("\nStudent: %s %s\n", p_stud->{{ cr_random.vorname }}, p_stud->{{ cr_random.nachname }} );
+    printf("Anzahl Punkte: %i\n", sum);
+}
+
+int main()
+{
+    Student st[5];
+    for (int i=0; i<5; i++)
+        student_einlesen(&st[i]);
+    for (int i=0; i<5; i++)
+        student_ausgeben(&st[i]);
+    return 0;
+}
+]]></answer>
+    <validateonsave>1</validateonsave>
+    <testsplitterre></testsplitterre>
+    <language></language>
+    <acelang></acelang>
+    <sandbox></sandbox>
+    <grader></grader>
+    <cputimelimitsecs></cputimelimitsecs>
+    <memlimitmb></memlimitmb>
+    <sandboxparams></sandboxparams>
+    <templateparams><![CDATA[{
+    "cr_studentFileName": "StudentAnswer",
+    {% set pool = [["vorname", "first_name"],
+    ["nachname", "last_name"],
+    ["punkte", "points"]] %}
+    "cr_random_pool": {{ pool|json_encode(constant("JSON_PRETTY_PRINT")) }},
+    {% set random_number = random((pool[0]|length)-1) %}
+    "cr_random": {
+        "vorname": "{{ pool[0][random_number] }}",
+        "nachname": "{{ pool[1][random_number] }}",
+        "punkte": "{{ pool[2][random_number] }}"
+    }
+}]]></templateparams>
+    <hoisttemplateparams>1</hoisttemplateparams>
+    <templateparamslang>twig</templateparamslang>
+    <templateparamsevalpertry>0</templateparamsevalpertry>
+    <templateparamsevald><![CDATA[{"cr_studentFileName":"StudentAnswer","cr_random_pool":[["vorname","first_name"],["nachname","last_name"],["punkte","points"]],"cr_random":{"vorname":"vorname","nachname":"nachname","punkte":"punkte"}}]]></templateparamsevald>
+    <twigall>1</twigall>
+    <uiplugin></uiplugin>
+    <uiparameters></uiparameters>
+    <attachments>0</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <maxfilesize>10240</maxfilesize>
+    <filenamesregex></filenamesregex>
+    <filenamesexplain></filenamesexplain>
+    <displayfeedback>1</displayfeedback>
+    <giveupallowed>0</giveupallowed>
+    <prototypeextra></prototypeextra>
+    <testcases>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[Student erster_Student;
+student_einlesen(&erster_Student);
+printf("\nerster_Student: %s %s\n", erster_Student.{{ cr_random.vorname}}, erster_Student.{{ cr_random.nachname }});
+printf("Punkte -> %i; %i; %i; %i; %i\n", erster_Student.{{ cr_random.punkte }}[0], erster_Student.{{ cr_random.punkte }}[1], erster_Student.{{ cr_random.punkte }}[2], erster_Student.{{ cr_random.punkte }}[3], erster_Student.{{ cr_random.punkte }}[4]);
+]]></text>
+      </testcode>
+      <stdin>
+                <text>Marco
+Wagner
+14
+18
+13
+9
+16</text>
+      </stdin>
+      <expected>
+                <text><![CDATA[Gebe den Vornamen ein: Gebe nun den Nachnamen ein: Gebe nun nacheinander die 5 Punkte ein:
+1: 2: 3: 4: 5:
+erster_Student: Marco Wagner
+Punkte -> 14; 18; 13; 9; 16
+]]></text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>main();</text>
+      </testcode>
+      <stdin>
+                <text>Spongebob
+Schwammkopf
+19
+20
+18
+20
+20
+Patrick
+Star
+5
+6
+3
+20
+5
+Sandy
+Cheeks
+14
+17
+18
+18
+17
+Thaddäus
+Tentakel
+10
+12
+11
+14
+10
+Eugene
+Krabs
+8
+4
+7
+10
+13
+</text>
+      </stdin>
+      <expected>
+                <text>Gebe den Vornamen ein: Gebe nun den Nachnamen ein: Gebe nun nacheinander die 5 Punkte ein:
+1: 2: 3: 4: 5:
+Gebe den Vornamen ein: Gebe nun den Nachnamen ein: Gebe nun nacheinander die 5 Punkte ein:
+1: 2: 3: 4: 5:
+Gebe den Vornamen ein: Gebe nun den Nachnamen ein: Gebe nun nacheinander die 5 Punkte ein:
+1: 2: 3: 4: 5:
+Gebe den Vornamen ein: Gebe nun den Nachnamen ein: Gebe nun nacheinander die 5 Punkte ein:
+1: 2: 3: 4: 5:
+Gebe den Vornamen ein: Gebe nun den Nachnamen ein: Gebe nun nacheinander die 5 Punkte ein:
+1: 2: 3: 4: 5:
+Student: Spongebob Schwammkopf
+Anzahl Punkte: 97
+
+Student: Patrick Star
+Anzahl Punkte: 39
+
+Student: Sandy Cheeks
+Anzahl Punkte: 84
+
+Student: Thaddäus Tentakel
+Anzahl Punkte: 57
+
+Student: Eugene Krabs
+Anzahl Punkte: 42
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>main();</text>
+      </testcode>
+      <stdin>
+                <text>John
+Snow
+20
+14
+16
+17
+19
+Robb
+Stark
+17
+18
+19
+20
+20
+Arya 
+Stark
+3
+5
+9
+12
+10
+Bran
+Stark
+14
+17
+13
+17
+17
+Rickon
+Stark
+5
+4
+3
+7
+9
+</text>
+      </stdin>
+      <expected>
+                <text>Gebe den Vornamen ein: Gebe nun den Nachnamen ein: Gebe nun nacheinander die 5 Punkte ein:
+1: 2: 3: 4: 5:
+Gebe den Vornamen ein: Gebe nun den Nachnamen ein: Gebe nun nacheinander die 5 Punkte ein:
+1: 2: 3: 4: 5:
+Gebe den Vornamen ein: Gebe nun den Nachnamen ein: Gebe nun nacheinander die 5 Punkte ein:
+1: 2: 3: 4: 5:
+Gebe den Vornamen ein: Gebe nun den Nachnamen ein: Gebe nun nacheinander die 5 Punkte ein:
+1: 2: 3: 4: 5:
+Gebe den Vornamen ein: Gebe nun den Nachnamen ein: Gebe nun nacheinander die 5 Punkte ein:
+1: 2: 3: 4: 5:
+Student: John Snow
+Anzahl Punkte: 86
+
+Student: Robb Stark
+Anzahl Punkte: 94
+
+Student: Arya Stark
+Anzahl Punkte: 39
+
+Student: Bran Stark
+Anzahl Punkte: 78
+
+Student: Rickon Stark
+Anzahl Punkte: 28
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[Student erster_Student;
+strcpy(erster_Student.{{ cr_random.vorname}}, "Marco");
+strcpy(erster_Student.{{ cr_random.nachname }}, "Wagner");
+erster_Student.{{ cr_random.punkte }}[0] = 14;
+erster_Student.{{ cr_random.punkte }}[1] = 18;
+erster_Student.{{ cr_random.punkte }}[2] = 13;
+erster_Student.{{ cr_random.punkte }}[3] = 9;
+erster_Student.{{ cr_random.punkte }}[4] = 16;
+student_ausgeben(&erster_Student);]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Student: Marco Wagner
+Anzahl Punkte: 70
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[Student erster_Student;
+student_einlesen(&erster_Student);
+student_ausgeben(&erster_Student);
+]]></text>
+      </testcode>
+      <stdin>
+                <text>Marco
+Wagner
+14
+18
+13
+9
+16</text>
+      </stdin>
+      <expected>
+                <text>Gebe den Vornamen ein: Gebe nun den Nachnamen ein: Gebe nun nacheinander die 5 Punkte ein:
+1: 2: 3: 4: 5:
+Student: Marco Wagner
+Anzahl Punkte: 70
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>// Testet ob Schleifen in den Funktionen student_einlesen, student_ausgeben und main verwendet wurde</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Passt!
+Passt!
+Passt!
+</text>
+      </expected>
+      <extra>
+                <text><![CDATA[main = parse_function_or_method("main", S_A)
+if main == NOT_FOUND: 
+    print("Funktion 'main' wurde nicht gefunden!")
+else:
+    print_if(re.search("while", main) or re.search("for", main))
+
+student_einlesen = parse_function_or_method("student_einlesen", S_A)
+if student_einlesen== NOT_FOUND: 
+    print("Funktion 'student_einlesen' wurde nicht gefunden!")
+else:
+    print_if(re.search("while", student_einlesen) or re.search("for", student_einlesen))
+
+student_ausgeben= parse_function_or_method("student_ausgeben", S_A)
+if student_ausgeben== NOT_FOUND: 
+    print("Funktion 'student_ausgeben' wurde nicht gefunden!")
+else:
+    print_if(re.search("while", student_ausgeben) or re.search("for", student_ausgeben))]]></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>// Testet ob eine Struktur und ein typedef verwendet wurde</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Passt!
+</text>
+      </expected>
+      <extra>
+                <text><![CDATA[S_A = remove_comments(S_A)
+print_if(re.search("struct", S_A) and re.search("typedef", S_A))]]></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+    </testcases>
+  </question>
+
+</quiz>

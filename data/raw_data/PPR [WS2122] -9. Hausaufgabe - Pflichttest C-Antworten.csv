@@ -1,0 +1,3311 @@
+﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/20,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9","Antwort 10"
+Junge,Theodor,t.junge@campus.tu-berlin.de,Beendet,"17. Dezember 2021  10:28","5. Januar 2022  15:09","19 Tage 4 Stunden","17,50",zeigefinger = (int*)((short*)zeigefinger - 4);,p,"Ein C-String ist ein Array von char-Variablen.","INT i = 0; 
+DO {
+    printf(""%d "", i);
+} WHILE (i = (i+1) % 7);","(a && b) || (!(a && b))","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""11"",""204"","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""11"",""208"","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""11"",""212"","""","""","""","""","""","""","""","""",""""],[""13"","""","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""3(14)"","""","""","""","""","""",""208"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""3(14)"","""","""","""","""","""",""216"","""","""","""",""""],[""5(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""","""","""","""","""",""""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""","""","""","""","""","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long produkt, long *faktor1, long *faktor2)
+{
+	if (produkt == 0 || produkt == 1){
+		*faktor1 = 1;
+		*faktor2 = produkt;
+	}
+	else{
+		*faktor1 = produkt / 2;
+		while(produkt % *faktor1 != 0){
+			*faktor1= *faktor1 - 1;
+		}
+		*faktor2=produkt / *faktor1;
+	}
+}
+
+int main(){
+	unsigned long ganzeZahl;
+	long faktor1, faktor2;
+	printf(""Please enter an Integer: "");
+	scanf(""%li"", &ganzeZahl);
+	factorize(ganzeZahl, &faktor1, &faktor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", ganzeZahl, faktor1, faktor2);
+	return 0;
+}","#include <stdio.h>
+
+int student_main(int anzahlWoerter, char* string[]){
+	char neuer_String[99];
+	int n = 0;
+	for (int i = 1; i < anzahlWoerter; i++){
+		for(int j = 0; string[i][j] != '\0'; j++){
+			switch(string[i][j])
+    		{
+       			case 'x' : break;
+        		case 'y' : break;
+        		case 'q' : break;
+        		case 'X' : break;
+        		case 'Y' : break;
+        		case 'Q' : break;
+        		default : neuer_String[n] = string[i][j]; n++; break;
+    		}
+		}
+	}
+	neuer_String[n] = '\0';
+	neuer_String[n+1] = '\0';
+	neuer_String[n+2] = '\0';
+	printf(""x,y,q und X,Y,Q aussortiert: %s\n"", neuer_String);
+	int o = 0;
+	char kurzer_String[99];
+	for(int k = 0; neuer_String[k] != '\0'; k+=3){
+		kurzer_String[o] = neuer_String[k];
+		o++;}
+	kurzer_String[o] = '\0';
+	printf(""Der neue String lautet: %s"", kurzer_String);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0; dest[i]!='\0' && i < zahl && src[i]!='\0'; i++){
+    dest[i]=src[i];
+  }
+}
+
+void umdrehen( char* str )
+{
+  int a = 0;
+  for (int i = 0; str[i] != '\0'; i++)
+    a++;
+  char rueckwaerts[a];
+  for (int i = 0; i<a; i++){
+    rueckwaerts[i] = str[i];
+  }
+  int j = 0;
+  for (int i = a-1; i>=0; i--){
+    str[j] = rueckwaerts[i];
+    j += 1;
+  }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Swiontek,Chantal,c.swiontek@campus.tu-berlin.de,Beendet,"19. Dezember 2021  16:01","9. Januar 2022  23:59","21 Tage 7 Stunden","0,80",-,-,-,-,-,-,-,"#include <stdio.h>
+
+void groesste_gemeinsame_teiler(long resultat, long* nummer1, long* nummer2){
+   
+    while( *nummer1 != *nummer2 ){
+        if ( *nummer1 < *nummer2 )
+        resultat = *nummer2 / *nummer1;
+        else
+        resultat = *nummer1 / *nummer2;
+    }
+}
+
+int main()
+{
+    long nummer1 = 0;
+    long nummer2 = 0; 
+    long* p1 = &nummer1;
+    long* p2 = &nummer2;
+    long int resultat = 0;
+   
+    printf(""Please enter an Integer: "");
+    scanf(""%li"", &resultat);
+    groesste_gemeinsame_teiler(resultat, p1, p2);
+    printf (""Possible Factors of %li are %li and %li.\n"",resultat, *p1, *p2);
+    return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Vu,"Phuong Anh",phuong-anh.vu@campus.tu-berlin.de,Beendet,"20. Dezember 2021  00:00","9. Januar 2022  23:59","20 Tage 23 Stunden","10,92","Nichts, da Programm nicht kompiliert.","{232} {236} {240} {246} {Das} {ist} {kein} {String} {a} {ist} {kein} {String}",zeigefinger = (int*)((short*)zeigefinger - 4);,!3,"if (a >= 0) {
+        if (b >= 0) {
+                printf(""a und b sind positiv!\n"");
+        } else {
+                printf(""a und b sind negativ!\n"");
+        }
+} else {
+        if (b < 0) {
+                printf(""a ist positiv und b ist negativ!\n"");
+        } else {
+               printf(""a ist negativ und b ist positiv!\n"");
+        }
+}","x == 0 und y == 1","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""204"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""",""1"","""","""","""","""","""","""","""",""""],[""13"",""208"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""",""0"","""","""","""","""","""","""","""",""""],[""13"",""212"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""13"",""-"","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""3"",""2"",""1"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""",""2"","""","""",""""],[""5(14)"","""","""","""","""","""",""208"","""","""","""",""""],[""6(14)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+	if (ergebnis == 0 || ergebnis == 1){
+		*zahl1 = 1;
+		*zahl2 = ergebnis;
+		return;
+	}
+
+	for (int i = ergebnis/2; ; i--){
+		if(ergebnis %i == 0){
+			*zahl1 = i;
+			*zahl2 = ergebnis/i;
+			return;
+		}
+	}
+}
+	
+
+int main(){
+	long number = 0;
+	long zahl1 = 0;
+	long zahl2 = 0;
+
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", &number);
+	factorize(number, &zahl1, &zahl2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", number, zahl1, zahl2);
+	return 0;
+}","#include <stdio.h>
+
+int str_len(char input[]){
+
+    int i = 0;
+    while(1 == 1){
+        if(input[i] == '\0'){
+            return i;
+        }
+        i++;
+    }
+
+
+}
+
+
+
+int main(int argc, char** argv[] ){
+    if(argc == 1){ 
+		printf(""False usage:. './[program name][name to test]'\n""); 
+		return 0;
+	}
+    printf(""x,y,q und X,Y,Q aussortiert: "");
+
+
+    char output[255];
+    //Anzahl der WÖRTER (Argumente)
+    for(int i = 0; i < argc; i++){
+        printf(""hallo: %s\n"", argv[i]);
+
+        //BUCHSTABEN (chars)
+        char *arg = argv[i];
+        for(int j = 0; j < str_len(arg); arg++){
+            printf(""%s\n"", arg);
+
+        }
+    }   
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i = 0; src[i]; ++i){
+    dest[i] = src[i];
+    dest[i] = '\0';
+
+    return dest;
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Gülser,Bahar,b.guelser@campus.tu-berlin.de,Beendet,"20. Dezember 2021  00:03","9. Januar 2022  23:59","20 Tage 23 Stunden","9,66","{Das} {ist} {ein} {String} {Das} {ist} {ein} {String} {a} {ist} {ein} {String}",5,"Ein C-String ist ein Array von char-Variablen.",0,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","(a && b) || (!(a && b))","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"",""-"",""3"",""2"",""1"",""0"",""-"",""-"",""-"",""-"",""-""],[""11"",""ray"","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""12"",""p-1"","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""13"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""2(14)"","""","""","""","""","""",""-"",""3"",""2"",""1"",""0""],[""3(14)"","""","""","""","""","""",""ar"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""","""","""","""","""",""""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""]]","#include <stdio.h>
+
+long factorize(long produkt, long *faktor1, long *faktor2)
+{
+	for (long i = 1; i<produkt; ++i){
+	if(produkt % i == 0){
+	
+     *faktor1 = i;
+	*faktor2 = (produkt / i);
+}
+}
+
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	long  num;
+	long faktor1 = 1; 
+	
+	long faktor2 = 0;
+
+	scanf(""%ld"", &num);
+	 factorize(num, &faktor1, &faktor2);
+	printf(""Possible Factors of %li are %li and %li.\n"",num , faktor1, faktor2);
+	return 0;
+}","#include<stdio.h>
+
+int main(int i, char str[])
+{
+   str[100];
+   i=0;
+    int j = 0, chk;
+    scanf(""%s"",str);
+    while(str[i]!='\0')
+    {
+        chk=0;
+        if(str[i]=='x'||str[i]=='y'||str[i]=='q'||str[i]=='X'||str[i]=='Y'||str[i]=='Q')
+        {
+            j=i;
+            while(str[j-1]!='\0')
+            {
+                str[j] = str[j+1];
+                j++;
+            }
+            chk = 1;
+        }
+        if(chk==0)
+            i++;
+    }
+    printf(""x,y,q und X,Y,Q aussortiert: %s"", str);
+   
+    printf(""\nDer neue String lautet: lsonao"");
+   
+    return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{ 
+dest = src;
+
+}
+
+void umdrehen( char* str )
+{
+
+  for(int length=0; str[length] != '\0';length++){
+      
+  for (int i = 0; i < length/2; i++){
+  	char temp = str[i];
+  	str[i] = str[length-i];
+	  str[length-i] = temp;
+	  temp--;
+  }
+}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Franke,Alexander,alexander.franke@campus.tu-berlin.de,Beendet,"20. Dezember 2021  00:05","9. Januar 2022  23:04","20 Tage 22 Stunden","5,00",80,5,"Nichts, da Programm nicht kompiliert.","switch (a,b) {
+        case >=0, >=0:
+               printf(""a und b sind positiv!\n"");
+               break;
+        case <=0, <=0:
+               printf(""a und b sind negativ!\n"");
+               break;
+        case >0, <0: 
+               printf(""a ist positiv und b ist negativ!\n"");
+               break;
+        case <0, >0: 
+               printf(""a ist negativ und b ist positiv!\n"");
+}","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}",0,"[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""204"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""13"",""208"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""13"",""-"","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""208"","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""-"","""","""","""",""""],[""6(14)"","""","""","""","""","""","""",""-"",""-"",""-"",""-""],[""15"","""",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+	// Your factorization
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	printf(""Possible Factors of %ld are %ld and %ld.\n"");
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Ereskovskyi,"Ulrike Anastasia",ereskovskyi@campus.tu-berlin.de,Beendet,"20. Dezember 2021  00:05","9. Januar 2022  23:59","20 Tage 23 Stunden","14,50",80,"{232} {236} {240} {246} {Das} {ist} {ein} {String} {a} {ist} {ein} {String}","Nichts, da Programm nicht kompiliert.","x == 0 und y == 1",!3,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""204"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""13"",""208"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""13"",""212"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""14(2)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""14(3)"","""","""","""","""","""",""200"","""","""","""",""""],[""14(4)"","""","""","""","""","""","""","""","""","""",""""],[""14(5)"","""","""","""","""","""",""208"","""","""","""",""""],[""14(3)"","""","""","""","""","""",""212"","""","""","""",""""],[""14(6)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"",""-"",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long produkt, long *faktor1, long *faktor2)
+{
+	if(produkt == 0 ||  produkt == 1)
+	{
+		*faktor1 = (long int)1;
+		*faktor2 = (long int)produkt;
+	}
+	else
+	{
+		long hp = produkt/2;
+		int found = 0;
+		while(found == 0 && hp > 0)
+		{
+			if(produkt % hp == 0)
+			{
+				*faktor1 = hp;
+				*faktor2 = produkt/hp;
+				found = 1;
+			}
+			else
+			{
+				hp--;
+			}
+		}
+	}
+}
+
+int main(){
+	long produkt, faktor1, faktor2;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", &produkt);
+	factorize(produkt, &faktor1, &faktor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", produkt, faktor1, faktor2);
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+
+int get_str_length(char strch[])
+{
+	int length;;
+	for(length=0; strch[length]!='\0' && strch[length] != NULL; length++);
+	return length;
+}
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{
+
+/*
+Schreiben Sie eine Funktion void ersetzen(char* dest, int zahl, char* src)die den String src in den String dest kopiert (und dabei überschreibt), allerdings 
+
+    nur maximal zahl Zeichen
+    nur maximal bis zum Ende von dest
+    nur maximal den gesamten String src
+*/
+	int src_len = get_str_length(src); //max elements from src
+	int dest_len = get_str_length(dest); //max elements from dest
+	// + maximal zahl zeichen
+	
+	int c = 0;
+	int location = 0;
+	
+	int maxvalues [3] = {src_len, dest_len, zahl};
+	
+	for(int c = 0; c < 3; c++)
+	{
+		if(maxvalues[c] < maxvalues[location])
+		{
+			location = c;
+		}
+	}
+	
+	//this is the smallest int
+	int maxvalue = maxvalues[location];
+	
+	for(int i = 0; i < maxvalue; i++)
+	{
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+
+/*
+Schreiben Sie eine Funktion void umdrehen( char* str ), die die übergebene Zeichenkette umdreht. Die Größe eines Strings ist variable, also müsst ihr diese zuerst ermitteln
+*/
+
+	int l, i;
+    	char *src_str, *dst_str, ch;
+    	
+    	l = get_str_length(str);
+    	
+    	src_str = str;
+    	dst_str = str;
+    	
+    	for (i = 0; i < l - 1; i++)
+    	{
+    		dst_str++;
+    	}
+    	    
+    	for (i = 0; i < l / 2; i++) {
+        	ch = *dst_str;
+        	*dst_str = *src_str;
+        	*src_str = ch;
+        
+        	src_str++;
+        	dst_str--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{
+
+/*
+Legen Sie in main eine Testzeichenkette mit dem Inhalt ""0123456789"" an. Geben Sie diese auf der Konsole aus. Das Programm soll mit zwei Kommandozeilenparametern aufgerufen werden: die maximale Anzahl zu ersetzender Zeichen des Teststrings sowie der String, mit dem der Teststring überschrieben werden soll. Führt dementsprechend die Funktion ersetzen aus, gebt das Ergebnis aus, danach dann umdrehen, und gebt das Ergebnis erneut aus.
+*/
+
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  
+  ersetzen( &test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( &test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Yeboah,"Andrea Kumih",a.yeboah@campus.tu-berlin.de,Beendet,"20. Dezember 2021  02:56","9. Januar 2022  23:59","20 Tage 21 Stunden","11,38","Nichts, da Programm nicht kompiliert.",80,5,0,"if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","x == 0 und y == 1","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"","""","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""2"",""1"",""0""],[""3(14)"","""","""","""","""","""",""0"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"",""201"","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""2"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"",""202"","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""15"",""-"",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+    long f1,f2;
+	//printf(""%ld\n"", ergebnis);
+	if((ergebnis == 0)||(ergebnis == 1))
+	{
+	    f1 = 1;
+	    f2 = ergebnis;
+	}
+    else
+	{
+	    f1 = ergebnis/2;
+        while(ergebnis%f1 != 0 )
+        {
+            //printf(""f1 passt noch nicht : %i\n"",f1);
+            f1 = f1- 1;
+        }
+        f2 = ergebnis/f1;
+	}
+	//printf(""faktoren: %ld, %ld \n"",f1,f2);
+	*zahl1 = f1;
+	*zahl2 = f2;
+}
+
+int main(){
+    long eingabe;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"",&eingabe);
+	
+	long z1,z2;
+	factorize(eingabe,&z1,&z2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"",eingabe,z1,z2);
+	return 0;
+}","#include <stdio.h>
+
+int main() {
+ int argc = 5; // Anzahl der Argumente, das erste ist der Programmname
+    char argv[5][10] = {""programm"",""lasse"", ""roland"", ""max"", ""ivo"" };
+    char r1[100];
+    int ir1 = 0;
+    for (int j = 1; j < argc; j++){
+        //printf(""%i "",j);
+        //printf(argv[j]);
+        //printf(""\n"");
+        int s = 0;
+        while( argv[j][s] != '\0'){
+            char c = argv[j][s];
+            //printf(""%c"",argv[j][s]);
+            if (c != 'x'&& c !='y' && c !='q' && c != 'X' && c != 'Y' && c != 'Q'){
+                r1[ir1++] = argv[j][s]; 
+            } 
+            s = s+1;
+            
+        }
+    }
+    r1[ir1]='\0';
+    printf (""x,y,q und X,Y,Q aussortiert: "");
+    printf(r1);
+
+char *neu;
+  neu = r1;
+  printf(""\n"");
+  printf(""Der neue String lautet: "");
+  printf(""%c"", *neu);    
+  printf(""%c"", *(neu+3));   
+  printf(""%c"", *(neu+6));  
+  printf(""%c"", *(neu+9));
+  printf(""%c"", *(neu+12));
+  printf(""%c"", *(neu+15));
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Eckardt,"Jan Hartmut",jan.h.eckardt@campus.tu-berlin.de,Beendet,"20. Dezember 2021  07:52","9. Januar 2022  23:59","20 Tage 16 Stunden","10,00",-,"Ein C-String ist ein Array von char-Variablen.",zeigefinger = (int*)((short*)zeigefinger - 4);,-,-,-,-,"#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2){
+	if(ergebnis == 0){
+	*zahl1 = 1;
+	*zahl2 = 0;}
+	else if(ergebnis == 1){
+	*zahl1 = 1;
+	*zahl2 = 1;}
+	else{
+	int x = ergebnis/2;
+	while(ergebnis % x != 0) x--;
+	*zahl1 = x;
+	*zahl2 = ergebnis/x;}
+	
+}
+
+int main(){
+	long ergebnis;
+	long zahl1;
+	long zahl2;
+	printf(""Please enter an Integer: "");
+	scanf(""%li"",&ergebnis);
+	factorize(ergebnis,&zahl1,&zahl2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", ergebnis,zahl1,zahl2);
+	return 0;
+}","#include<stdio.h>
+
+int main(int groesse, char** satz){
+char str1[100];
+int x = 0;
+for(int a = 1; a<groesse ; a++){
+	for(int b = 0; satz[a][b] != '\0'; b++){
+	if(satz[a][b] != 'x' && satz[a][b] != 'y' &&satz[a][b] != 'q'&&	satz[a][b] != 'X' &&satz[a][b] != 'Y' &&satz[a][b] != 'Q'){
+	str1[x] = satz[a][b];
+	x++;}}}
+printf(""x,y,q und X,Y,Q aussortiert: %s\n"",str1);
+char str2[100];
+x = 0;
+for(int c = 0; str1[c] !='\0'; c += 3){
+str2[x] = str1[c];
+x++;}
+printf(""Der neue String lautet: %s\n"",str2);}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){
+	for(int i = 0; i<zahl && *dest != '\0' && *src != '\0'; i++){
+	*dest = *src;
+	dest++;
+	src++;}}
+
+void umdrehen( char* str ){
+char tmp[11];
+int a = 10;
+while(*str != '\0'){
+tmp[a] = *str;
+a--;
+str++;}
+str--;
+a = 10;
+while(a>=0){
+*str = tmp[a];
+a--;
+str--;}}	
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Karabalik,Tugce,t.karabalik@campus.tu-berlin.de,Beendet,"20. Dezember 2021  20:14","9. Januar 2022  23:59","20 Tage 3 Stunden","5,08","{232} {236} {240} {246} {Das} {ist} {kein} {String} {a} {236} {240} {246}",80,"Ein C-String ist ein Array von char-Variablen.","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","(a && b) || (!(a && b))",0,"[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"",""1"","""","""","""","""","""","""","""","""",""""],[""13"","""","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"",""201"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"",""202"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""15"",""-"",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long product, long *factor1, long *factor2)
+{
+	// Your factorization
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	printf(""Possible Factors of %ld are %ld and %ld.\n"");
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+ void ersetzen(char* dest, int zahl, char* src);
+ void umdrehen(char* str);
+
+
+void ersetzen(char* dest, int zahl, char* src)
+{   
+   int zahl;
+    
+    char c = *dest;
+    *dest = *src;
+    *src = c;
+   
+   return;
+}
+
+void umdrehen( char* str )
+{ if (!*str) {
+        return;
+    }
+    char* anfang = str;
+
+    char* ende = anfang + char* str - 1;
+
+    while (anfang < ende) {
+        ersetzen(anfang, char* ende);
+        anfang++;
+        ende--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Löffelmann,Lukas,l.loeffelmann@campus.tu-berlin.de,Beendet,"21. Dezember 2021  11:23","9. Januar 2022  22:23","19 Tage 11 Stunden","19,58","{Das} {ist} {ein} {String} {Das} {ist} {ein} {String} {a} {ist} {ein} {String}","Nichts, da Programm nicht kompiliert.",zeigefinger = (int*)((short*)zeigefinger - 4);,!3,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}",0,"[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""204"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""13"",""208"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""13"",""212"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""208"","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"",""-"",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+	if(resultat == 0L || resultat ==  1L){
+		*nummer1 = 1L;
+		*nummer2 = resultat;
+	}
+	else{
+
+		
+		*nummer1 = resultat/2L;
+		*nummer2 = 2L;
+		
+		while(resultat % *nummer1 > 0){
+			(*nummer1)--;
+		}
+		*nummer2 = resultat / *nummer1;
+	}
+}
+
+int main(){
+	
+	long nummer1;
+	long nummer2;
+	long resultat;
+	
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", &resultat);
+	factorize(resultat, &nummer1, &nummer2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", resultat,nummer1, nummer2);
+	return 0;
+}","#include <stdio.h>
+
+
+void anhaengen(char *a, char *b){
+	int e = 0;
+	int c = 0;
+	while(a[e] != '\0'){
+		e++;
+	}
+	while(b[c] != '\0'){
+		if(b[c] != 'X' && b[c] != 'Y' && b[c] != 'Q' && b[c] !='x' && b[c] != 'y' && b[c] != 'q'){
+		a[e++] = b[c];
+		}
+		c++;
+	}
+	
+	a[e++] = '\0';
+} 
+
+void dritte(char *a, char *b){
+	int c = 0;
+	int d = 0;
+	
+	while(b[d] != '\0'){
+		a[c] = b[d];
+		d = d + 3;
+		c++;
+	}
+	a[c++] = '\0';
+}
+
+int main(int argc, char *argv[]){
+	
+char neu[100] = ""\0"";
+char sortiert[100] = ""\0"";
+
+
+	for(int i = 1; i<argc;i++){
+
+	
+	anhaengen(sortiert, argv[i]);
+	
+
+	}
+	dritte(neu, sortiert);
+	printf(""x,y,q und X,Y,Q aussortiert: %s\n"", sortiert);
+	printf(""Der neue String lautet: %s\n"", neu);
+
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	int a = 0;
+	while(dest[a++] != '\0');
+	int c = 0;
+
+	while(*src != '\0' && c < zahl && c < a-1){
+		*dest++ = *src;
+		src++;
+		c++;
+	}
+	dest[a-1] = '\0';
+	
+
+}
+
+void umdrehen( char* str )
+{
+
+	int a = 0;
+	while(str[a++] != '\0');
+	char tmp[a];
+		for( int i = 0; i < a; i++){
+			tmp[i] = str[a-i-2];
+
+		}
+	for(int i = 0; i<a; i++){
+		str[i] = tmp[i];
+	}
+	str[a-1] = '\0';
+
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Pham,"Thanh Nam",thanh.n.pham@campus.tu-berlin.de,Beendet,"21. Dezember 2021  14:26","9. Januar 2022  23:59","19 Tage 9 Stunden","17,25","Ein C-String ist ein Array von char-Variablen.",zeigefinger = (int*)((short*)zeigefinger - 4);,5,"INT i = 0; 
+DO {
+    i = (i+1) % 7;
+    printf(""%d "", i);
+} WHILE (i);","x == 0 und y == 1","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""11"",""204"","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""11"",""208"","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""11"",""212"","""","""","""","""","""","""","""","""",""""],[""13"",""-"","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""3(14"","""","""","""","""","""",""204"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""3(14)"","""","""","""","""","""",""208"","""","""","""",""""],[""5(14)"","""","""","""","""","""",""-"","""","""","""",""""],[""6(14)"","""","""","""","""","""","""",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+    if(ergebnis == 0 || ergebnis == 1){
+        *zahl1 = 1;
+        *zahl2 = ergebnis;
+    }
+    else{
+        *zahl1 = ergebnis / 2;
+        while(ergebnis % *zahl1 != 0){
+            *zahl1 -= 1;
+        }
+        *zahl2 = ergebnis / *zahl1;
+    }
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	long ergebnis;
+	scanf(""%d"", &ergebnis);
+	long zahl1;
+	long zahl2;
+	factorize(ergebnis, &zahl1, &zahl2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", ergebnis, zahl1, zahl2);
+	return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+
+int main( int argc, char* argv[] )
+{
+    char eingabe[100] = """";
+    int stelle = 0;
+
+    for(int i = 1; i < argc; i++){
+        int buchstabe = 0;
+        while(argv[i][buchstabe] != NULL){
+            if(argv[i][buchstabe] != 'x' && argv[i][buchstabe] != 'y' && argv[i][buchstabe] != 'q' && argv[i][buchstabe] != 'X' && argv[i][buchstabe] != 'Y' && argv[i][buchstabe] != 'Q'){
+                eingabe[stelle] = argv[i][buchstabe];
+                stelle++;
+            }
+            buchstabe++;
+        }
+    }
+    printf(""x,y,q und X,Y,Q aussortiert: %s\n"", eingabe);
+
+    char alleDrei[100] = """";
+    stelle = 0;
+    for(int i = 0; i < sizeof(eingabe); i++){
+        if(i % 3 == 0){
+            alleDrei[stelle] = eingabe[i];
+            stelle++;
+        }
+    }
+    printf(""Der neue String lautet: %s\n"", alleDrei);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+  for(int i = 0; i < zahl; i++){
+    if(dest[i] != NULL && src[i] != NULL){
+        dest[i] = src[i];
+    }
+  }
+}
+
+void umdrehen( char* str )
+{
+    int laenge = 0;
+    while(str[laenge] != NULL){
+        laenge++;
+    }
+    char gedreht[laenge];
+    for(int i = 0; i < laenge; i++){
+        gedreht[i] = str[laenge - i - 1];
+    }
+    ersetzen(str, laenge, gedreht);
+}
+
+int main( int argc, char* argv[] )
+{
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Stellwag,Moritz,m.stellwag@campus.tu-berlin.de,Beendet,"23. Dezember 2021  14:36","9. Januar 2022  23:58","17 Tage 9 Stunden","4,40","char *daumen = (char*)zeigefinger - 2;
+zeigefinger = (int*)daumen;","Ein C-String ist ein Array von char-Variablen.",5,"if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}",0,"[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""11(12)"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""11(12)"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""13"","""",""-"","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""undef"",""undef"",""undef"",""""],[""3(14)"","""","""","""","""","""",""undef"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""",""2"","""","""",""""],[""3(4)"","""","""","""","""","""","""","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""",""1"","""",""""],[""3(4)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""","""","""","""","""",""""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""","""","""","""","""","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+	// Your factorization
+}
+
+int main(){
+    long a =0;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", a);
+	printf(""Possible Factors of %ld are 25 and 2.\n"", a);
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+"Von Dobschütz","Henriette Marie",h.von-dobschuetz@campus.tu-berlin.de,Beendet,"27. Dezember 2021  14:06","9. Januar 2022  23:59","13 Tage 9 Stunden","14,00","Ein C-String ist ein Array von char-Variablen.",80,5,"switch (a,b) {
+        case >=0, >=0:
+               printf(""a und b sind positiv!\n"");
+               break;
+        case <=0, <=0:
+               printf(""a und b sind negativ!\n"");
+               break;
+        case >0, <0: 
+               printf(""a ist positiv und b ist negativ!\n"");
+               break;
+        case <0, >0: 
+               printf(""a ist negativ und b ist positiv!\n"");
+}",0,"x == 0 und y == 1","[[""8"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""9"","""","""","""","""","""","""","""","""","""",""""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""204"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""13"",""208"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""13"",""212"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""1(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""2(14)"","""","""","""","""","""","""","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""","""","""","""","""",""""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""","""","""","""","""","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+ int b=ergebnis/2; 
+	if (ergebnis == 0) {
+		 *zahl1=1;
+		 *zahl2=ergebnis;
+		}
+	 else if (ergebnis == 1) {
+		  *zahl1=1;
+		  *zahl2=ergebnis;
+		 }
+     else { 
+  	   while(ergebnis!=(ergebnis/b)*b) {
+		 	 b--;
+		   }
+ 	  *zahl1=b;
+	  *zahl2=ergebnis/b;
+    }
+}
+
+int main(){
+long ergebnis = 0;
+long zahl1=0;
+long zahl2=0;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", &ergebnis);
+  factorize (ergebnis, &zahl1, &zahl2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", ergebnis, zahl1, zahl2);
+	return 0;
+}","#include <stdio.h>
+
+char aussortiercheck(char *stri){
+char aussortiert[6]={""xyqXYQ""};
+ for(int j=0; aussortiert[j]!= 0;j++){
+     if( *stri==aussortiert[j]) return 0;
+}
+return 1;
+}
+
+
+char strex (char *** benutzereingabe, char *strin){
+for(int i=0; benutzereingabe[i]!=(void *)0; i++){
+  if (aussortiercheck(&strin[i])){
+      strin[i]= **benutzereingabe[i];
+       }
+     }
+return *strin;
+}
+
+char jeder3buchstabe (char *str, char *newstring){
+for(int i=0; str[i]!=0; i=+3){
+ newstring[i/3]=str[i];
+  }
+ return 0;
+}
+
+int main(int argc, char** argv){
+
+char string [100];
+
+strex(&argv, string);
+printf(""x,y,q und X,Y,Q aussortiert: %s\n"", string);
+
+char newstring [100];
+jeder3buchstabe (string, newstring);
+printf(""Der neue String lautet: %s\n"", newstring);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for( int i=0; zahl!=0&&i<zahl&&i<10&&src[i]!=0; i++) {
+    dest[i]= src[i];
+   }
+}
+
+void umdrehen( char* str )
+{
+int size=0; 
+for(int i=0; str[i]!=0; i++){
+ size++;
+ }
+char tmp [10]= {""""};
+  for(int i=0; i<size; i++){
+   tmp[i]= str[i];
+  }
+    for(int i=0; i<size; i++) {
+   str[i]=tmp[(size-1)-i];
+  }   
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] ); 
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+"Al Habbal","Abdul Ghani",a.alhabbal@campus.tu-berlin.de,Beendet,"28. Dezember 2021  13:29","9. Januar 2022  23:59","12 Tage 10 Stunden","7,38",zeigefinger = (int*)((short*)zeigefinger - 4);,"{232} {236} {240} {246} {Das} {ist} {ein} {String} {a} {ist} {ein} {String}",80,"if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");",0,"x == 0 und y == 1","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""204"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""13"",""208"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""13"",""-"","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""204"","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""-"","""","""","""",""""],[""6(14)"","""","""","""","""","""","""",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+    for(int i = resultat; ;i++);
+	return resultat;
+}
+
+int main(){
+    long Ergebnis;
+    long Nummer1;
+    long Nummer2;
+    scanf(""%i"", &Ergebnis);
+    factorize(Ergebnis,Nummer1,Nummer2);
+	printf(""Please enter an Integer: "");
+	printf(""Possible Factors of %ld are %ld and %ld.\n"",Ergebnis, Nummer1, Nummer2);
+	return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+    char teststring[] = ""lasse roland max ivo"";
+    char scopy[100];
+    char newstring[100];
+    for(int i = 0; teststring[i] != '\0'; i++)
+        {
+            switch(teststring[i])
+            {
+            case 'x':
+                i++;
+                break;
+            case 'y':
+                i++;
+                break;
+            case 'q':
+                i++;
+                break;
+            case ' ':
+                i++;
+
+            case 'X':
+                i++;
+                break;
+            case 'Y':
+                i++;
+                break;
+            case 'Q':
+                i++;
+                break;
+            default :
+                scopy[i] = teststring[i];
+                break;
+            }
+        }
+    printf(""x,y,q und X,Y,Q aussortiert: %s"",scopy);
+
+    for(int i = 0; scopy[i] != '\0'; i++)
+        {
+            for(int j = 0; ;j++)
+                {
+                    if(i = 0 || i % 3 == 0)
+                        {
+                            strcpy(newstring[j],scopy[i]);
+                                j += 1;
+                        }
+                }
+        }
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Yilmaz,Cem,cem.yilmaz.1@campus.tu-berlin.de,Beendet,"2. Januar 2022  12:34","9. Januar 2022  23:59","7 Tage 11 Stunden","1,50",5,5,"Ein C-String ist ein Array von char-Variablen.","if (a * b >= 0 && b >= 0 && a >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a * b >= 0)
+        printf(""a und b sind negativ!\n"");
+if (a < 0)
+        printf(""a ist negativ und b ist positiv!\n"");
+if (a >= 0)
+        printf(""a ist positiv und b ist negativ!\n"");","x == 0 und y == 1",False,"[[""9"","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+	// Your factorization
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	printf(""Possible Factors of %ld are %ld and %ld.\n"");
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Hahnen,"Leo Ole",l.hahnen@campus.tu-berlin.de,Beendet,"2. Januar 2022  18:01","9. Januar 2022  22:22","7 Tage 4 Stunden","9,50",5,80,"Ein C-String ist ein Array von char-Variablen.",0,"x == 0 und y == 1","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""","""","""","""","""","""","""",""""],[""13"","""","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""","""","""","""","""","""","""",""""],[""13"","""","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""","""","""","""","""","""","""",""""],[""13"","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""""]]","#include <stdio.h>
+
+void factorize(long product, long *factor1, long *factor2)
+{
+  if (product == 0 || product == 1)
+  {
+    (*factor1) = 1;
+    (*factor2) = product;
+    return;
+  }
+  else
+  {
+    long int half = product / 2;
+    (*factor1) = half;
+    (*factor2) = 2;
+
+    while ((*factor1) * (*factor2) != product)
+    {
+      (*factor1) = half;
+      (*factor2)++;
+
+      for (int counter = 0; counter < product / 2; ++counter)
+      {
+        (*factor1)--;
+
+        if ((*factor1) * (*factor2) == product)
+        {
+          return;
+        }
+      }
+    }
+
+    return;
+  }
+}
+
+int main() {
+  long int user_input = 0;
+  long int factor1 = 0;
+  long int factor2 = 0;
+
+  long int *ptr_factor1 = &factor1;
+  long int *ptr_factor2 = &factor2;
+
+  printf(""Please enter an Integer: "");
+  scanf(""%ld"", &user_input);
+
+  factorize(user_input, ptr_factor1, ptr_factor2);
+
+  printf(""Possible Factors of %ld are %ld and %ld.\n"", user_input, factor1, factor2);
+
+  return 0;
+}","#include <stdio.h>
+
+
+int main( int argc, char* argv[] )
+{
+  for ( int i = 0; i < argc; i++ )
+  {
+    printf(""%d. String in argv: %s\n"", i +1, argv[i]);
+    }
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Gross,"Nevio Noah Chaim",n.gross.1@campus.tu-berlin.de,Beendet,"3. Januar 2022  00:47","9. Januar 2022  23:59","6 Tage 23 Stunden","7,35",5,*zeigefinger = leute;,"Nichts, da Programm nicht kompiliert.","x == 0 und y == 1","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}",0,"[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"",""-"",""3"",""2"",""1"",""0"",""-"",""-"",""-"",""-"",""-""],[""11"",""3"","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""12(11)"",""2"","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""13(11)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""11"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""12(11)"",""1"","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""13(11)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""11"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""12(11)"",""0"","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""13"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""2(14)"","""","""","""","""","""",""-"",""3"",""2"",""1"",""0""],[""3(14)"","""","""","""","""","""",""3"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""]]","#include <stdio.h>
+
+
+void factorize(long product, long *factor1, long *factor2)
+{
+	// Your factorization
+	if(product == 0 || product == 1){
+		*factor1 = 1;
+		*factor2 = product;
+	}
+	else{
+		for(long i=product/2; i>0; i--)
+		{
+			if(product%i == 0){
+				*factor1 = i;
+				*factor2 = product/i;
+				break;
+			}
+		}
+
+	}
+}
+
+int main(){
+	long product;
+	long factor1;
+	long factor2;
+	printf(""Please enter an Integer: "");
+	scanf(""%d"", &product);
+
+	factorize(product, &factor1, &factor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", product, factor1, factor2);
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Lange,"Etienne Georgi",e.lange.1@campus.tu-berlin.de,Beendet,"3. Januar 2022  16:56","9. Januar 2022  23:59","6 Tage 7 Stunden","0,00",-,-,-,-,-,-,-,"#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+	// Your factorization
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	printf(""Possible Factors of %ld are %ld and %ld.\n"");
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Yilmaz,"Saffet Sercan",s.yilmaz.1@campus.tu-berlin.de,Beendet,"3. Januar 2022  16:56","9. Januar 2022  16:43","5 Tage 23 Stunden","8,50",5,"{232} {236} {240} {246} {Das} {ist} {ein} {String} {a} {ist} {ein} {String}","Ein C-String ist ein Array von char-Variablen.","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","x == 0 und y == 1","(5 && 4)","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""204"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""13"",""208"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""13"",""-"","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""204"","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""-"","""","""","""",""""],[""6(14)"","""","""","""","""","""","""",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+	int a 
+	int b 
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	printf(""Possible Factors of %ld are %ld and %ld.\n"");
+	return 0;
+}","int main (){
+    
+    
+    
+    
+    
+    
+    
+    
+}","#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+
+  char* pointer = dest;
+  for(int i=0; i=zahl; i++){
+        *dest=*src;
+    dest++;
+    src++;
+
+  }
+
+  return pointer;
+}
+
+void umdrehen( char* str ){
+
+   int counter = 0;
+    for(;str[counter] != '\0';counter++){
+    }
+// zweite Laufvariable
+
+
+
+    // swapie ding
+for (int i = 0; i < counter/2 ; i++){
+
+        int l = counter - i - 1;
+
+    char temp = str[i];
+    str[i] = str[l];
+
+    str[l] = temp;
+  }
+
+
+    }
+
+
+
+int main( int argc, char* argv[] )
+{
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Webb,"Alexandra Virginia",webb@campus.tu-berlin.de,Beendet,"4. Januar 2022  09:58","9. Januar 2022  22:05","5 Tage 12 Stunden","2,83","Nichts, da Programm nicht kompiliert.",5,"{232} {236} {240} {246} {Das} {ist} {kein} {String} {a} {236} {236} {240}","INT i = 0; 
+DO {
+    printf(""%d "", i);
+} WHILE (i = (i+1) % 7);","x == 0 und y == 0","switch (a,b) {
+        case >=0, >=0:
+               printf(""a und b sind positiv!\n"");
+               break;
+        case <=0, <=0:
+               printf(""a und b sind negativ!\n"");
+               break;
+        case >0, <0: 
+               printf(""a ist positiv und b ist negativ!\n"");
+               break;
+        case <0, >0: 
+               printf(""a ist negativ und b ist positiv!\n"");
+}","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"",""1"",""0"","""","""","""","""","""",""""],[""13"",""-"","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""","""","""","""",""""],[""3(14)"","""","""","""","""","""",""200"",""2"",""1"",""0"",""0""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""",""-"",""-"",""-"",""-"","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+	// Your factorization
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	printf(""Possible Factors of %ld are %ld and %ld.\n"");
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Dippold,"Veit Wilfried",v.dippold@campus.tu-berlin.de,Beendet,"4. Januar 2022  14:05","7. Januar 2022  10:14","2 Tage 20 Stunden","19,25","Ein C-String ist ein Array von char-Variablen.","{232} {236} {240} {246} {Das} {ist} {ein} {String} {a} {ist} {ein} {String}",80,"(5 && 4)","x == 0 und y == 1","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""208"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""13"",""216"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""13"",""224"","""","""","""","""","""","""","""","""",""""],[""11"",""-"","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""216"","""","""","""",""""],[""3(14)"","""","""","""","""","""",""-"","""","""","""",""""],[""6(14)"","""","""","""","""","""","""",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+	if (resultat == 0){
+		*nummer1 = 1;
+		*nummer2 = resultat;
+	}		
+	else if (resultat == 1){
+		*nummer1 = 1;
+		*nummer2 = resultat;
+	}
+	else {
+		if (resultat % 2 == 0){
+			*nummer1 = resultat/2;
+			*nummer2 = 2;
+		}
+		else{			
+			int i = resultat / 2 - 1;
+			while (resultat % i !=0) i--;
+			*nummer1 = i;
+			*nummer2 = resultat / i;
+		} 
+	}
+}
+
+int main(){
+ 	long resultat = 0;
+	long n1 = 0;
+ 	long n2 = 0;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", &resultat);
+	factorize (resultat, &n1, &n2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", resultat, n1, n2);
+	return 0;
+}","#include <stdio.h>
+
+int main (int argc, char** argv){
+	char str[100] = """";
+	char krz[100] = """";	
+	int j = 0;
+	int z = 1;
+	for (int i = 1; i < argc; i++){ 
+		for (int x = 0; argv[i][x] != '\0'; x++){
+			if (argv[i][x] != 'x' && argv[i][x] != 'y' && argv[i][x] != 'q' && argv[i][x] != 'X' && argv[i][x] != 'Y' && argv[i][x] != 'Q'){
+				str[j]= argv[i][x];
+				j++;
+			}
+		}
+	}
+	krz[0] = str[0]; 	
+	for (int i = 1; i < 100; i++){		
+		if (i % 3 == 0){
+			krz[z] = str [i];
+			z++;
+		}
+	}
+	printf(""x,y,q und X,Y,Q aussortiert: %s\n"", str);
+	printf(""Der neue String lautet: %s\n"", krz);
+}","#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{ 
+  int groesse = 0;
+  for (int i = 0; dest[i] != '\0'; i++) groesse++; 
+  if (zahl <= groesse){ 
+    for (int i = 0; i < zahl; i++){
+      if (src[i] == '\0') break;
+      dest[i] = src[i];
+    }
+  }
+  else{
+    for (int i = 0; i < zahl; i++){ 
+      if (dest[i] == '\0') break;
+      if (src[i] == '\0') break;
+      dest[i] = src[i];
+    }
+  }
+}
+
+void umdrehen( char* str )
+{
+  int groesse = 0;
+  char zwp[11] = """";
+  for (int i = 0; str[i] != '\0'; i++) groesse++;
+  for (int i = 0; i < groesse; i++) zwp[i] = str[i];
+  for (int i = 0; i < groesse; i++) str[i] = zwp[groesse -1 -i]; 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Krech,"Fabian Jonathan",f.krech@campus.tu-berlin.de,Beendet,"5. Januar 2022  13:19","9. Januar 2022  23:59","4 Tage 10 Stunden","10,46","Nichts, da Programm nicht kompiliert.","{232} {236} {240} {246} {Das} {ist} {kein} {String} {a} {236} {208} {224}",zeigefinger = (int*)((short*)zeigefinger - 4);,!3,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"",""-"",""3"",""2"",""1"",""0"",""-"",""-"",""-"",""-"",""-""],[""11"",""200"","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""12"","""",""2"","""","""","""",""-"",""-"",""-"",""-"",""-""],[""13"",""201"","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""11"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""12"","""","""",""1"","""","""",""-"",""-"",""-"",""-"",""-""],[""13"",""202"","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""11"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""12"","""","""","""",""0"","""",""-"",""-"",""-"",""-"",""-""],[""13"",""203"","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""11"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"",""-"","""","""","""","""",""-"",""2"",""1"",""0"",""0""],[""2(14)"",""-"","""","""","""","""",""-"","""","""","""",""""],[""3"",""-"","""","""","""","""",""200"","""","""","""",""""],[""4"",""-"","""","""","""","""","""","""","""","""",""""],[""5"",""-"","""","""","""","""",""201"","""","""","""",""""],[""3"",""-"","""","""","""","""","""","""","""","""",""""],[""6"",""-"","""","""","""","""","""","""","""","""",""""],[""15(6)"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""]]","#include <stdio.h>
+
+void factorize(long product, long *factor1, long *factor2)
+{
+    int primeQ = 1;
+	for(long i = 2; i < product; i++){
+        if(product%i==0){
+            *factor2 = i;
+            *factor1 = (long)(product/i);
+            i = product;
+            primeQ = 0;
+        }
+    }
+    if(primeQ==1){
+        *factor2 = product;
+        *factor1 = 1;
+    }
+
+}
+
+int main(){
+    long zahl;
+	printf(""Please enter an Integer: "");
+    scanf(""%ld"",&zahl);
+    long factor1;
+    long factor2;
+    factorize(zahl,&factor1,&factor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"",zahl,factor1,factor2);
+	return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+
+void aussortieren(char* eingabe,char* ausgabe,int* ausgabeLaenge){
+    int j = 0;
+    for(int i = 0; eingabe[i] != '*'; i++){
+        if((eingabe[i]!='x')&&(eingabe[i]!='y')&&(eingabe[i]!='q')&&(eingabe[i]!='X')&&(eingabe[i]!='Y')&&(eingabe[i]!='Q')&&(eingabe[i]!=' '))
+        {
+            ausgabe[j]=eingabe[i];
+            j++;
+        }
+    }
+    *ausgabeLaenge = j;
+
+}
+
+void neuer_string(char* ausgabe,char* neuerString,int* neuerStringLaenge){
+    int j = 0;
+    for(int i = 0; ausgabe[i] != '\0'; i++){
+        if((i+3)%3==0){
+            neuerString[i/3] = ausgabe[i];
+            j++;
+        }
+    }
+    *neuerStringLaenge = j;
+}
+
+int main(int argc, char* argv[]){
+    char eingabe[50] = """";
+    char ausgabe[50] = """";
+    char neuerString[50] = """";
+
+    int ausgabeLaenge = 0;
+    int neuerStringLaenge = 0;
+
+    int z = 0;
+    for(int i = 1; i < argc; i++){
+        for(int j = 0; argv[i][j] != '\0'; j++){
+            eingabe[z] = argv[i][j];
+            z++;    
+        }
+    }
+    eingabe[z] = '*';
+
+    aussortieren(eingabe,ausgabe,&ausgabeLaenge);
+    neuer_string(ausgabe,neuerString,&neuerStringLaenge);
+
+    // endgültige ""Ausgabe"" und ""neuer String"" wird mit der korrekten Array-Länge erzeugt.
+    char* ausgabeAngepasst =  malloc(ausgabeLaenge);
+    char* neuerStringAngepasst = malloc(neuerStringLaenge);
+
+    for(int i = 0; i < ausgabeLaenge; i++){
+        ausgabeAngepasst[i] = ausgabe[i];
+    }
+    for(int i = 0; i < neuerStringLaenge; i++){
+        neuerStringAngepasst[i] = neuerString[i];
+    }
+
+    printf(""x,y,q und X,Y,Q aussortiert: "");
+    for(int i = 0; i < ausgabeLaenge; i++){
+        printf(""%c"",ausgabe[i]);
+    }
+    printf(""\nDer neue String lautet: "");
+    for(int i = 0; i < neuerStringLaenge; i++){
+        printf(""%c"",neuerString[i]);
+    }
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Zell,Martha,m.zell@campus.tu-berlin.de,Beendet,"6. Januar 2022  13:48","9. Januar 2022  21:12","3 Tage 7 Stunden","18,75","Ein C-String ist ein Array von char-Variablen.",5,zeigefinger = (int*)((short*)zeigefinger - 4);,!3,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""204"","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""13"",""208"","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""13"",""-"","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""204"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long product, long *factor1, long *factor2)
+{
+    int teiler = product;
+    if (product == 0 || product == 1)
+    {
+        *factor1 = 1;
+        *factor2 = product;
+        return;
+    }
+    teiler /= 2;
+    while (1)
+    {
+        if (product % teiler == 0)
+        {
+            *factor1 = teiler;
+            *factor2 = product / teiler;
+            return;
+        }
+        teiler--;
+    }
+}
+
+int main()
+{
+    long product, factor1, factor2;
+    printf(""Please enter an Integer: "");
+    scanf(""%ld"", &product);
+    factorize(product, &factor1, &factor2);
+    printf(""Possible Factors of %ld are %ld and %ld.\n"", product, factor1, factor2);
+    return 0;
+}","#include <stdio.h>
+
+// zusammenhängen
+// xyq aussortierne
+// ausgeben
+// neuner string mit jedem 3. Zeihchen
+// ausgeben
+
+// aaaa bbbb cccc
+// string1: aaaabbbbcccc
+
+char *kopieren_und_aussortieren(const char *von, char *nach)
+{
+    while (*von != 0)
+    {
+        switch (*von)
+        {
+        case 'x':
+        case 'y':
+        case 'q':
+        case 'X':
+        case 'Y':
+        case 'Q':
+            break;
+        default:
+            *nach = *von;
+            nach++;
+        }
+        von++;
+    }
+    return nach;
+}
+
+int main(int argc, char const *argv[])
+{
+    char string1[100];
+    char string2[100];
+
+    char *p1 = string1;
+
+    for (int i = 1; i < argc; i++)
+    {
+        p1 = kopieren_und_aussortieren(argv[i], p1);
+    }
+    *p1 = '\0';
+    printf(""x,y,q und X,Y,Q aussortiert: %s\n"", string1);
+
+    p1 = string1;
+    char *p2 = string2;
+    int i = 0;
+    while (*p1)
+    {
+        if (i % 3 == 0)
+        {
+            *p2++ = *p1;
+        }
+        i++;
+        p1++;
+    }
+    *p2 = '\0';
+
+    printf(""Der neue String lautet: %s\n"", string2);
+    /* code */
+    return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char *dest, int zahl, char *src)
+{
+    int i = 0;
+    // bis zum Ende von src
+    while (*src && i < zahl)
+    {
+        // bis zum Ende von dest
+        if (*dest == 0)
+            break;
+        *dest++ = *src++;
+        i++;
+    }
+}
+
+void umdrehen(char *str)
+{
+    int c = 0;
+    char *p = str;
+
+    // Länge
+    while (*p != 0)
+    {
+        c++;
+        p++;
+    }
+
+    for (int i = 0; i < c / 2; i++)
+    {
+        char b = *(str + i);
+        *(str + i) = *(str + c - 1 - i);
+        *(str + c - 1 - i) = b;
+    }
+}
+
+int main(int argc, char *argv[])
+{
+    char test[11] = ""0123456789"";
+    printf(""Das Original ist: %s \n"", test);
+    ersetzen(test, atoi(argv[1]), argv[2]);
+    printf(""Ersetzt : %s \n"", test);
+    umdrehen(test);
+    printf(""Rückwärts : %s \n"", test);
+}"
+Schneider,"Mark Daniel",mark.schneider@campus.tu-berlin.de,Beendet,"6. Januar 2022  14:22","9. Januar 2022  21:07","3 Tage 6 Stunden","8,00","Ein C-String ist ein Array von char-Variablen.",zeigefinger = (int*)((short*)zeigefinger - 4);,4,"(a && b) || (!(a && b))",1,"if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""201"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""13"",""202"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""13"",""203"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""0"","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""","""","""","""","""",""""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""]]","#include <stdio.h>
+
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+	if(resultat == 0){
+		*nummer1 = 1;
+		*nummer2 = resultat;
+	}
+	else if(resultat == 1){
+		*nummer1 = 1;
+		*nummer2 = resultat;
+	}
+	else if(resultat%2 == 0){
+		*nummer1 = resultat/2;
+		*nummer2 = 2;
+	}
+	else if(resultat%2 != 0){
+		
+		long newresultat = resultat/2;
+		
+			do{
+			
+				newresultat = newresultat - 1;
+				
+			}while(resultat % newresultat != 0);
+			
+			*nummer1 = newresultat;
+			*nummer2 = resultat/newresultat;
+	}
+}
+
+int main(){
+	long resultat, nummer1, nummer2;
+	printf(""Please enter an Integer: "");
+	scanf(""%li"",&resultat);
+	factorize(resultat,&nummer1,&nummer2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", resultat, nummer1, nummer2);
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Krause,"Lennart Andreas",lennart.krause@campus.tu-berlin.de,Beendet,"7. Januar 2022  09:44","9. Januar 2022  21:23","2 Tage 11 Stunden","19,25",80,5,"Ein C-String ist ein Array von char-Variablen.","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","x == 0 und y == 1","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""204"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""13"",""208"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""13"",""212"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""208"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""216"","""","""","""",""""],[""6(14)"","""","""","""","""","""","""","""","""","""",""""],[""15"","""","""","""","""","""","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long product, long *factor1, long *factor2)
+{
+	if (product == 0){
+		*factor1 = 1;
+		*factor2 = product;
+		return;
+	}
+	
+	if (product == 1) {
+		*factor1 = 1;
+		*factor2 = product;
+		return;
+	}
+
+
+    long divider = 2;
+    int done = 0;
+    while ((divider < product) && !done) {
+    	if ((product % divider) == 0) {
+    		*factor1 = product / divider;
+    		*factor2 = divider;
+    		done = 1;
+    	}
+    	else {
+    		++divider;
+    		if (divider == product) {
+    			*factor1 = product;
+    			*factor2 = 1;
+    			done = 1;
+    		}
+    	}
+    }
+}
+
+int main(){
+	long product;
+	long factor1, factor2;
+	printf(""Please enter an Integer: "");
+	scanf(""%li"", &product);
+	getchar();
+	factorize(product, &factor1, &factor2);
+	if(product == factor1){
+		long temp = factor1;
+		factor1 = factor2;
+		factor2 = temp;
+	}
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", product, factor1, factor2);
+	return 0;
+}","#include <stdio.h>
+
+void clmem(char* tmp){
+	for(int i=0; i<100; i++){
+		tmp[i] = 0;
+	}
+}
+
+void sv3rd(char* zk2, char* zk3){
+	int j=0;
+	for(int i=0; zk2[i] != '\0'; i+=3){
+		zk3[j] = zk2[i];
+		j++;
+	}
+}
+
+void rmxyq(char* zk1, char* zk2){
+	int j=0;
+	for(int i=0; zk1[i] != '\0'; i++){
+		if((zk1[i] !='x') && (zk1[i] !='y') && (zk1[i] !='q') &&
+		   (zk1[i] !='X') && (zk1[i] !='Y') && (zk1[i] !='Q')){
+			zk2[j] = zk1[i];
+			j++;
+		}
+	}
+}
+
+int main(int argc, char** argv){
+	char zk1[100];
+	clmem(zk1);
+	char zk2[100];
+	clmem(zk2);
+	char zk3[100];
+	clmem(zk3);
+	char eingang;
+	int src_idx = 0;
+	int dst_idx = 0;
+	for(int i=1; i<argc; i++){
+		src_idx = 0;
+		while((eingang = argv[i][src_idx])){
+			zk1[dst_idx] = eingang;
+			dst_idx++;
+			src_idx++;
+		}
+	}
+	// printf(""zk1 = %s.\n"", zk1);
+	rmxyq(zk1, zk2);
+	// printf(""zk2 = %s.\n"", zk2);
+	sv3rd(zk2, zk3);
+	printf(""x,y,q und X,Y,Q aussortiert: %s\n"", zk2);
+	printf(""Der neue String lautet: %s\n"", zk3);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	int count = zahl;
+	int src_idx = 0;
+	int dest_idx = 0;
+	while((dest[dest_idx] != 0) && (src[src_idx] != 0) && (count > 0)){
+		dest[dest_idx] = src[src_idx];
+		src_idx++;
+		dest_idx++;
+		count--;
+	}
+}
+
+void umdrehen( char* str )
+{
+	int len = 0;
+	while((str[len] != 0)) len++;
+	char tmp[100];
+	int index = len;
+	for(int i=0; i<len; i++){
+		tmp[index-1] = str[i];
+		index--;
+	}
+	for(int i=0; i<len; i++){
+		str[i] = tmp[i];
+	}
+	
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Jenik,Isabell,i.jenik@campus.tu-berlin.de,Beendet,"7. Januar 2022  15:14","9. Januar 2022  23:16","2 Tage 8 Stunden","4,90",80,"Ein C-String ist ein Array von char-Variablen.","Nichts, da Programm nicht kompiliert.","x == 0 und y == 1","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","(5 && 4)","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""3,2,1,0"","""","""","""","""","""","""","""","""",""""],[""12"",""3,2,0,0"","""","""",""0"","""","""","""","""","""",""""],[""13"",""3,2,1,0"","""","""",""1"","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""3"",""2"",""0"",""0""],[""3(14)"","""","""","""","""","""",""3,2,0,0"","""","""","""",""""],[""4(14)"","""","""","""","""","""",""0"","""","""","""",""""],[""5(14)"","""","""","""","""","""",""3,2,0"","""","""","""",""-""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""4(14)"","""","""","""","""","""",""0"","""","""",""-"",""""],[""5(14)"","""","""","""","""","""",""3,2"","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""4(14)"","""","""","""","""","""",""2"","""","""","""",""""],[""5(14)"","""","""","""","""","""","""","""","""","""",""""],[""3(14)"","""","""","""","""","""","""",""-"","""","""",""""],[""6(14)"","""","""","""","""","""",""-"","""",""-"","""",""""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"",""-"",""-"",""-"",""-"",""-"","""",""-"",""-"",""-"",""-""]]","#include <stdio.h>
+
+void factorize(long product, long *factor1, long *factor2)
+{
+   product / factor1 = factor2;
+}
+
+int main(){
+    long product = 0;
+    long factor1 = 1;
+    long factor2 = product;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", product);
+	product = factorize;
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", product, factor1, factor2);
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Steinkrauß,Timo,timo.steinkrauss@campus.tu-berlin.de,Beendet,"8. Januar 2022  09:53","9. Januar 2022  23:59","1 Tag 14 Stunden","2,55","{Das} {ist} {kein} {String} {Das} {ist} {kein} {String} {a} {ist} {kein} {String}",3,"Nichts, da Programm nicht kompiliert.",1,!3,"INT i = 0; 
+DO {
+    printf(""%d "", i);
+} WHILE (i = (i+1) % 7);","[[""1"",""-"",""-"",""-"",""-"",""-"",""-"",""undef"",""undef"",""undef"",""undef""],[""2"","""","""","""","""","""","""","""","""","""",""""],[""3"","""","""","""","""","""",""undef"","""","""","""",""""],[""4"","""","""","""","""","""","""","""","""","""",""""],[""5"","""","""","""","""","""","""","""","""","""",""""],[""6"","""","""","""","""","""","""","""","""","""",""""],[""7"","""","""","""","""","""","""","""","""","""",""""],[""8"","""","""","""","""","""","""","""","""","""",""""],[""9"","""","""","""","""","""","""","""","""","""",""""],[""10"","""","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""","""","""","""","""","""","""",""""],[""13"","""","""","""","""","""","""","""","""","""",""""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long produkt, long *faktor1, long *faktor2)
+{
+    if(produkt == 1){
+        *faktor1 = 1;
+        *faktor2 = produkt;
+    }
+    else if((produkt % 2) != 0){
+        for(int i = produkt / 2; (produkt % i) != 0; i--){
+            *faktor1 = i-1;
+        }
+        *faktor2 = (produkt / faktor1);
+    }
+    else{
+        *faktor2 = 2;
+        *faktor1 = (produkt / 2);
+    }
+}
+
+int main(){
+    long int faktor1 = 0;
+    long int faktor2 = 0;
+    long int produkt;
+	printf(""Please enter an Integer: "");
+	scanf(""%li"", &produkt);
+	factorize(produkt, &faktor1, &faktor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", produkt, faktor1, faktor2);
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Sule,"Tanmay Amit",t.sule@campus.tu-berlin.de,Beendet,"8. Januar 2022  12:22","9. Januar 2022  21:20","1 Tag 8 Stunden","10,25","Nichts, da Programm nicht kompiliert.",*zeigefinger = leute;,5,"x == 0 und y == 1","if (a * b >= 0 && b >= 0 && a >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a * b >= 0)
+        printf(""a und b sind negativ!\n"");
+if (a < 0)
+        printf(""a ist negativ und b ist positiv!\n"");
+if (a >= 0)
+        printf(""a ist positiv und b ist negativ!\n"");","INT i = 0; 
+DO {
+    printf(""%d "", i);
+} WHILE (i = (i+1) % 7);","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""","""","""","""","""","""","""",""""],[""13"",""204"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""","""","""","""","""","""","""",""""],[""13"",""208"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""","""","""","""","""","""","""",""""],[""13"",""212"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""2(14)"",""-"","""","""","""","""","""",""3"",""2"",""1"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""208"","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""",""-"","""","""","""",""""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""","""","""","""","""","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+	if (resultat == 0 || resultat == 1){
+		*nummer1 = 1;
+		*nummer2 = resultat;
+	}
+	else{
+		
+		for(long i = resultat/2; i>0; i--){
+			if (resultat % i == 0){
+				*nummer1 = i;
+				break;
+			}
+		}
+		*nummer2 = resultat/ *nummer1; 
+	}
+}
+
+int main(){
+	long resultat;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", &resultat);
+	long nummer1;
+	long nummer2;
+	factorize(resultat,&nummer1,&nummer2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", resultat, nummer1, nummer2);
+	return 0;
+}","#include <stdio.h>
+
+void changing(char* string[100]){
+	int length;
+	for (int i = 0; *string[i] != '\0'; ++i){
+		length = i;
+	}
+	for(int j = 0; j < length; j++){
+		if ((*string[j] == 'x') || (*string[j] == 'X') || (*string[j] == 'y') || (*string[j] == 'Y') || (*string[j] == 'q') || (*string[j] == 'Q' )){
+			for(int k = j; k < length; k++){
+				*string[k] = *string[k + 1];
+			}
+			length = length - 1;
+			j = j - 1;	
+		}
+	}
+	printf(""x,y,q und X,Y,Q aussortiert: %s \n"",*string);
+	int lennew;
+	for (int i = 0; *string[i] != '\0'; ++i){
+		lennew = i;
+	}
+	printf(""Der neue String lautet: "");
+	for(int i = 0; i<lennew; i = i+3){
+		printf(""%s"" , string[i]);
+	} 
+}
+
+int main(){
+	char* str[100];
+
+	scanf(""%p"", str);
+
+	int i = 0;
+	int j = 0;
+	while(*str[i]){
+		if (*str[i] != ' ')
+			*str[j++] = *str[i];
+		i = i + 1;
+	}
+	*str[j] = '\0';
+	changing(str);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Vaidya,"Rudra Rakesh",rudra.vaidya@campus.tu-berlin.de,Beendet,"8. Januar 2022  13:27","9. Januar 2022  21:13","1 Tag 7 Stunden","8,75",80,"Ein C-String ist ein Array von char-Variablen.","Nichts, da Programm nicht kompiliert.",!3,"if (a * b >= 0 && b >= 0 && a >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a * b >= 0)
+        printf(""a und b sind negativ!\n"");
+if (a < 0)
+        printf(""a ist negativ und b ist positiv!\n"");
+if (a >= 0)
+        printf(""a ist positiv und b ist negativ!\n"");","x == 0 und y == 1","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""","""","""","""","""","""","""",""""],[""13"",""204"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""","""","""","""","""","""","""",""""],[""13"",""208"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""","""","""","""","""","""","""",""""],[""13"",""212"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""2(14)"",""-"","""","""","""","""","""",""3"",""2"",""1"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""208"","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""",""-"","""","""","""",""""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""","""","""","""","""","""","""","""","""",""""]]","#include <stdio.h>
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+if   (resultat != 0 && resultat != 1)
+{
+    int divided = resultat/2;
+    int divisor;
+for (int i = divided; i>0; i--)
+{
+if (resultat % i == 0)
+{
+ divisor = i;
+ break;
+}
+}
+*nummer1 = divisor;
+*nummer2 = resultat/ divisor;
+}
+else
+{
+*nummer1 = 1;
+*nummer2 = resultat;
+}
+}
+
+int main()
+{
+    printf(""Please enter an Integer: "");
+    long integer;
+    scanf(""%ld"", &integer);
+    long n1;
+    long n2;
+    factorize(integer, &n1, &n2);
+    printf(""Possible Factors of %ld are %ld and %ld.\n"", integer, n1 ,n2);
+    return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Smith,"Alexander Mechielsen",a.smith@campus.tu-berlin.de,Beendet,"8. Januar 2022  14:18","9. Januar 2022  18:00","1 Tag 3 Stunden","19,00","Nichts, da Programm nicht kompiliert.","Ein C-String ist ein Array von char-Variablen.",80,!3,"x == 0 und y == 1","switch (a,b) {
+        case >=0, >=0:
+               printf(""a und b sind positiv!\n"");
+               break;
+        case <=0, <=0:
+               printf(""a und b sind negativ!\n"");
+               break;
+        case >0, <0: 
+               printf(""a ist positiv und b ist negativ!\n"");
+               break;
+        case <0, >0: 
+               printf(""a ist negativ und b ist positiv!\n"");
+}","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""201"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""13"",""202"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""13"",""203"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""13"",""-"","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""2"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""3"","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""15"","""",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long product, long *factor1, long *factor2)
+{
+    for (int i = 2; i <= product; i++) {
+        if (product % i == 0) {
+            *factor2 = i;
+            *factor1 = product / i;
+            break;
+        }
+	}
+	if (*factor2 > product) {
+	    *factor1 = 1;
+	    *factor2 = product;
+	} 
+}
+
+int main(){
+	long product, factor1, factor2;
+	printf(""Please enter an Integer: "");
+    scanf(""%ld"", &product);
+    factorize(product, &factor1, &factor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", product, factor1, factor2);
+	return 0;
+}","#include<stdio.h>
+
+void sort (char** words, int numberOfArguments) {
+    char result1[100], result2[100];
+    int result1marker = 0;
+    int result2marker = 0;
+    for (int i = 1; i < numberOfArguments; i++) {
+        for (int j = 0; words[i][j] != '\0'; j++) {
+            if (words[i][j] != 'x' && words[i][j] != 'y' && words[i][j] != 'q' && words[i][j] != 'X' && words[i][j] != 'Y' && words[i][j] != 'Q') {
+                result1[result1marker] = words[i][j];
+                result1marker++;
+            }
+        }
+    }
+    result1[result1marker] = '\0';
+    printf(""x,y,q und X,Y,Q aussortiert: %s\n"", result1);
+    for (int i = 0; result1[i] != '\0'; i++) {
+        if (i % 3 == 0) {
+            result2[result2marker]=result1[i];
+            result2marker++;
+        }
+    }
+    result2[result2marker] = '\0';
+    printf(""Der neue String lautet: %s"", result2);
+}
+
+int main (int argc, char** argv) {
+    sort(argv, argc);
+    return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+
+int mystrlen(char* str) {
+    int result = 0;
+    for (int i = 0; str[i] != '\0'; i++) {
+        result++;
+    }
+    return result;
+}
+ 
+void ersetzen(char* dest, int zahl, char* src) {
+    if (zahl > 0) {
+        for (int i = 0; i < zahl && dest[i] != '\0' && src[i] != '\0' && i < mystrlen(src); i++) {
+            dest[i] = src[i];
+        }
+    }   
+}
+
+void umdrehen(char* str) {
+    int stringlength = mystrlen(str);
+    char reverse[stringlength+1];
+    int j = stringlength;
+    int i = 0;
+    for (; i < stringlength; i++) {
+        reverse[j] = str[i];
+        j--;
+        }
+    for (; j < stringlength; j++) {
+        str[j] = reverse[j+1];
+    }
+}
+
+int main(int argc, char* argv[]) {  
+    char test[11] = ""0123456789"";
+    printf(""Das Original ist: %s \n"", test);
+    ersetzen(test, atoi(argv[1]), argv[2]);
+    printf(""Ersetzt : %s \n"", test);
+    umdrehen(test);
+    printf(""Rückwärts : %s \n"", test);
+}"
+Wang,Jiawei,jiawei.wang.2@campus.tu-berlin.de,Beendet,"9. Januar 2022  09:53","9. Januar 2022  23:55","14 Stunden 1 Minute","12,92",80,"{232} {236} {240} {246} {Das} {ist} {kein} {String} {a} {ist} {kein} {String}",5,"x == 0 und y == 1",0,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""204"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""13"",""208"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""13"",""212"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""208"","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"",""-"",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long resultat, long *nummer1, long *nummer2)
+{
+    long p;
+if (resultat == 0){
+*nummer1 = 1;
+*nummer2 = 0;
+}
+else if (resultat == 1){
+    *nummer1 = 1;
+    *nummer2 = 1;
+}
+ else {
+   p = 2;
+   while(p<=resultat){
+        if( resultat % p == 0){
+            *nummer2= p;
+            *nummer1 = resultat / p;
+            p = resultat+1;
+        }
+        p=p+1;
+   }
+    }
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	long res;
+	long res_final;
+	int a;
+	int b;
+	long* num1 = &a;
+	long* num2 = &b;
+	scanf(""%ld"",&res);
+	res_final = res;
+	factorize (res,num1,num2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"",res_final,a,b);
+	return 0;
+}","#include <stdio.h>
+
+int main( int argc, char *argv[] )
+{
+char str_1[100];
+char str_2[100];
+int i = 0;
+int n = 0;
+int m = 0;
+int x = 0;
+for (n=0;n<argc;n++){
+    for(i=0;argv[n][i]!='\0';i++){
+    str_1[m] = argv[n][i];
+    m++;
+    }
+}
+    str_1[m]='\0';
+       for(i=0;str_1[i]!='\0';i++){
+       str_1[i]=str_1[i+12];
+  }
+
+for(m=0;str_1[m]!='\0';m++){
+    if(str_1[m]=='x'||str_1[m]=='y'||str_1[m]=='q'||str_1[m]=='X'||str_1[m]=='Y'||str_1[m]=='Q'){
+        for(i=m;str_1[i]!='\0';i++){
+            str_1[i]=str_1[i+1];
+        }
+    }
+}
+printf(""x,y,q und X,Y,Q aussortiert: %s\n"", str_1);
+
+for (m=0;str_1[m]!='\0';m++){
+    if (m==0||m%3==0){
+    str_2[x]=str_1[m];
+    x++;
+}
+}
+str_2[x]='\0';
+printf(""Der neue String lautet: %s\n"", str_2);
+return 0;
+
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Pflantz,"Dennis Patrick",d.pflantz@campus.tu-berlin.de,Beendet,"9. Januar 2022  12:13","9. Januar 2022  23:59","11 Stunden 45 Minuten","6,80",80,5,"{232} {236} {240} {246} {Das} {ist} {ein} {String} {a} {ist} {ein} {String}","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","x == 0 und y == 1","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""204"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""13"",""208"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""13"",""-"","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""204"","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""-"","""","""","""",""""],[""6(14)"","""","""","""","""","""","""","""","""","""",""""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+#include <string.h>
+
+    int product;
+    int factor1;
+    int factor2;
+
+ void factorize(long product, long *factor1, long *factor2){
+    //factorization
+
+    for( int i = 0; i < 2 ; i++){
+    factor1 = 2;//die ganzzahlige Vielfache vom Produkt
+    factor2 = product/2; //das Produkt / die ganzzahlige Vielfache vom Produkt;
+    }
+ }
+
+int main(){
+    printf(""Please enter an Integer: "");
+    scanf(""%li "", &product);
+    printf(""Possible Factors of %ld are %ld and %ld.\n"", product, factor1, factor2);
+
+
+    return 0;
+}","int static str[100];
+int main(){
+    for (int i = 0; i < str; i++);
+char* str[i] = {""./[programm]"", ""lasse"", ""roland"", ""max"", ""ivo""};
+student_main(5, str);
+
+// 2. Test (./[programm] PPR macht Spass!)
+char* str[i] = {""./[programm]"", ""PPR"", ""macht"", ""Spass!""};
+student_main(4, str);
+}
+printf(""Der neue String lautet: %c"", str);","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+ char* str[] = {""./[programm]"", ""40"", ""pprMachtSpassss""};
+student_main(2, str);
+char str[6] = ""Robin"";
+printf(""%s\n"", str);
+}
+
+void umdrehen( char* str )
+{
+  printf(""%s\n"", str);
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Schroeter,"Robert Daniel Berndt Leonard",r.schroeter@campus.tu-berlin.de,Beendet,"9. Januar 2022  13:11","9. Januar 2022  18:52","5 Stunden 40 Minuten","7,13",6,"{232} {236} {240} {246} {Das} {ist} {ein} {String} {a} {236} {216} {224}","Ein C-String ist ein Array von char-Variablen.","INT i = 0; 
+WHILE (i){
+    i = (i+1) % 7;
+    printf(""%d "", i);
+}","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","(a && b) || (!(a && b))","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"",""199"","""","""","""","""","""","""","""","""",""""],[""13"","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],["""","""","""","""","""","""","""","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"",""-"",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long produkt, long *faktor1, long *faktor2)
+{
+    *faktor1 = 1;
+    *faktor2 = 0;
+	if(produkt==1)
+	{
+	    *faktor1 = 1;
+	    *faktor2 = 1;
+	}
+	else if(produkt>=2)
+	{
+	    *faktor1=0;
+	    *faktor2=2;
+	    while(produkt % *faktor2 != 0)
+	    {
+	        (*faktor2)++;
+	    }
+    	*faktor1 = produkt / *faktor2;
+	}
+}
+
+int main(){
+    long int faktor1;
+    long int faktor2 = 2;
+    long int produkt;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"",&produkt);
+	factorize(produkt, &faktor1, &faktor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", produkt, faktor1, faktor2 );
+	return 0;
+}","#include<stdio.h>
+
+int main()
+{
+    
+
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Krappe,"Jakob Thomas",j.krappe@campus.tu-berlin.de,Beendet,"9. Januar 2022  13:14","9. Januar 2022  17:38","4 Stunden 23 Minuten","9,50",zeigefinger = (int*)((short*)zeigefinger - 4);,80,5,!3,0,"x == 0 und y == 1","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""204"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""13"",""208"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""13"",""212"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""13"",""-"","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long product, long *factor1, long *factor2){
+	if(product == 0 || product == 1){
+	    *factor1 = 1;
+	    *factor2 = product;
+	}
+	else if((product % 2) != 0){
+	    for(int i = product / 2; (product % i) != 0; i--){
+	        *factor1 = i-1;
+	    }
+	    *factor2 = (product / *factor1);
+	}
+	else{
+	    *factor2 = 2;
+	    *factor1 = (product / 2);
+	}
+}
+
+int main(){
+    long int factor1 = 0;
+    long int factor2 = 0;
+    long int product;
+	printf(""Please enter an Integer: "");
+	scanf(""%li"", &product);
+	factorize(product, &factor1, &factor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", product, factor1, factor2);
+	return 0;
+}","#include <stdio.h>
+
+int main(int argc, char* argv[]){
+    char str[100] = """";
+    char strnew[100] = """";
+    for(int i = 1; i <= argc; i++){
+        int e = 0;
+        while(str[e] != '\0') e++;
+        for(int j = 0; argv[i][j] != '\0'; j++){
+            if(argv[i][j] != 'x' && argv[i][j] != 'y' && argv[i][j] != 'q' && argv[i][j] != 'X' && argv[i][j] != 'Y' && argv[i][j] != 'Q'){
+                str[e] = argv[i][j];
+                e++;
+            }
+        }
+    }
+    printf(""x,y,q und X,Y,Q aussortiert: %s\n"", str);
+    int o = 0;
+    int c = 0;
+    while(o == 0){
+        for(int i = 0; i <= 2; i++){
+            if(str[c] == '\0'){
+                o = 1;
+                break;
+            }
+            strnew[c] = str[c];
+            c++;
+        }
+    }
+    printf(""Der neue String lautet: %s\n"", strnew);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Küster,"Lars Kilian",lars-kilian.kuester@campus.tu-berlin.de,Beendet,"9. Januar 2022  13:58","9. Januar 2022  23:54","9 Stunden 56 Minuten","9,37","Ein C-String ist ein Array von char-Variablen.",5,"Nichts, da Programm nicht kompiliert.","INT i = 0; 
+DO {
+    printf(""%d "", i);
+} WHILE (i = (i+1) % 7);","x == 0 und y == 1","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""11"",""202"","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""11"",""204"","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""11"",""206"","""","""","""","""","""","""","""","""",""""],[""13"",""-"","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""3(14)"","""","""","""","""","""",""202"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""3(14)"","""","""","""","""","""",""204"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""-"","""","""","""",""""],[""6(14)"","""","""","""","""","""","""",""-"",""-"",""-"",""-""],[""15"","""",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long produkt, long *faktor1, long *faktor2){
+    int i = 2;
+    if(produkt == 1){
+        i = 1;
+    }
+    else if(produkt % 2 == 0){
+        i = 2;
+    } else if(produkt%i != 0 && i < produkt){
+        while( produkt%i != 0 && i < produkt){
+        i++;
+        }
+    } else {
+        i = 1;
+    }
+    *faktor1 = produkt / i;
+    *faktor2 = i;
+	// Your factorization
+}
+
+int main(){
+    long produkt = 1, faktor1, faktor2;
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", &produkt);
+	factorize(produkt, &faktor1, &faktor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", produkt, faktor1, faktor2);
+	return 0;
+}","#include <stdio.h>
+
+int Zusammen(char* str1, char* str2 )
+    int i, l = 0
+    for (i = 0, str1[i] != '\0', i++){
+        l++;
+    }
+    for (i = 0, str2[i] != '\0', i++){
+        str1[l+i] = str2[i]
+    }
+    str1[l+i] = '\0'
+
+int main(int argc, char** argv[100] ){
+// argv[1] = lasse
+
+// argv[2] = roland
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){
+    int i = 0;
+    for(i = 0; i + 1 <= zahl && dest[i] != '\0' && src[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+    return dest;
+}
+
+void umdrehen( char* str ){
+    int counter = 0;
+    int a;
+    int j;
+    int b;
+    char str2[100];
+    for(a = 0; str[a] != '\0'; a++){
+        counter++;
+    }
+    for( int i = counter - 1, j = 0; i >=0; i--, j++){
+        str[j] = str2[i];        
+    }
+    str[counter]='\0';
+    return str;
+}
+
+int main( int argc, char** argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Hartmann,"Kaspar Lorenz",kaspar.l.hartmann@campus.tu-berlin.de,Beendet,"9. Januar 2022  14:29","9. Januar 2022  17:21","2 Stunden 51 Minuten","4,90",P,5,"Ein C-String ist ein Array von char-Variablen.","(5 && 4)","INT i = 0; 
+WHILE (i){
+    i = (i+1) % 7;
+    printf(""%d "", i);
+}","x == 0 und y == 0","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""11"",""204"","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""11"",""208"","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""11"",""212"","""","""","""","""","""","""","""","""",""""],[""13"",""-"","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""200"",""204"",""208"",""212""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""3(14)"","""","""","""","""","""",""204"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""3(14)"","""","""","""","""","""",""208"","""","""","""",""""],[""5(14)"","""","""","""","""","""",""-"","""","""","""",""""],[""6(14)"","""","""","""","""","""","""",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+	if( ergebnis % 2 = !0){
+	    *zahl2 = 2;
+	    *zahl1 = ergebnis / 2;
+	}
+	else( ergebnis % 3 = !0 ){
+	    *zahl2 = 3;
+	    *zahl1 = ergebnis / 3;
+	}
+	else(){
+	    *zahl2 = 1;
+	    *zahl1 = ergebnis;
+	}
+}
+
+int main(){
+    long ergebnis;
+    long zahl1;
+    long zahl2;
+	printf(""Please enter an Integer: "");
+	scanf( ""%ld"" , &ergebnis );
+	factorize(ergebnis, &zahl1 , &zahl2 );
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", ergebnis, zahl1, zahl2);
+	return 0;
+}","#include <stdio.h>
+
+void strCmp(char* str1, char* str2){
+    for(int i = 0; str1[i] != '\0'; i++){
+        if (str1[i] != 'X' != 'Y' != 'Q' != 'x' != 'y' != 'q'){
+            str2[i]= str1[i];
+        }
+        
+    }
+}
+
+
+int main(int argc; char* argv[]){
+    char kette[100];
+    strCmp(argv, kette);
+    for(int i = 0;str ; i++)
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Schaefer,Anton,anton.schaefer@campus.tu-berlin.de,Beendet,"9. Januar 2022  14:29","9. Januar 2022  21:08","6 Stunden 39 Minuten","8,85","Ein C-String ist ein Array von char-Variablen.","Nichts, da Programm nicht kompiliert.","char *daumen = (char*)zeigefinger - 2;
+zeigefinger = (int*)daumen;","x == 0 und y == 1",0,!3,"[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""201"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""13"",""202"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""13"",""203"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""-1"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""0"","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"",""-"",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+	if (ergebnis == 0){
+	        *zahl2 = 0;
+	        *zahl1 = 0;
+	        }
+	else if (ergebnis%2 == 0){
+	        *zahl2 = 2;
+	        *zahl1 = ergebnis/2;
+	        }
+	else if (ergebnis%2 != 0) {
+	   if (ergebnis == 1){
+	        *zahl2 = 1;
+	        *zahl1 = 1;
+	        }
+	        else {
+	           for (int i = 3; ; i+=2){
+	            if (ergebnis%i == 0){
+	            *zahl2 = i;
+	            *zahl1 = ergebnis/i;
+	            break;
+	    }
+	} 
+	        }
+	}
+}
+
+int main(){
+    long ergebnis = 0, zahl1, zahl2;
+	printf(""Please enter an Integer: "");
+	scanf(""%li"",&ergebnis);
+	factorize(ergebnis, &zahl1, &zahl2);
+	printf(""Possible Factors of %li are %li and %li.\n"", ergebnis, zahl1, zahl2);
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Paterson,"Moritz Alexander",m.paterson@campus.tu-berlin.de,Beendet,"9. Januar 2022  14:35","9. Januar 2022  23:59","9 Stunden 23 Minuten","12,17","{232} {236} {240} {246} {Das} {ist} {kein} {String} {a} {ist} {kein} {String}",5,"Ein C-String ist ein Array von char-Variablen.",0,"INT i = 0; 
+DO {
+    printf(""%d "", i);
+} WHILE (i = (i+1) % 7);","switch (a,b) {
+        case >=0, >=0:
+               printf(""a und b sind positiv!\n"");
+               break;
+        case <=0, <=0:
+               printf(""a und b sind negativ!\n"");
+               break;
+        case >0, <0: 
+               printf(""a ist positiv und b ist negativ!\n"");
+               break;
+        case <0, >0: 
+               printf(""a ist negativ und b ist positiv!\n"");
+}","[[""8"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"",""-"",""3"",""2"",""1"",""0"",""-"",""-"",""-"",""-"",""-""],[""11"",""3"","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""12"",""2"",""2"","""","""","""",""-"",""-"",""-"",""-"",""-""],[""13"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""11"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""12"",""1"","""",""1"","""","""",""-"",""-"",""-"",""-"",""-""],[""13"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""11"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""12"",""0"","""","""",""0"","""",""-"",""-"",""-"",""-"",""-""],[""13"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""11"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""2(14"","""","""","""","""","""",""-"",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""2"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""",""undef"",""undef"",""undef"",""undef"",""undef""],[""15"","""","""","""","""","""","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long produkt, long *faktor1, long *faktor2)
+{
+	// Your factorization
+    if (produkt==0){
+        *faktor1=1;
+        *faktor2=produkt;
+        return;
+    }
+    else{
+    if (produkt==1){
+        *faktor1=1;
+        *faktor2=1;
+        return;;
+    }
+    else{
+    for (int i= (int)produkt - 1;i>1;i--){
+
+        if (produkt%i==0){
+            *faktor1=i;
+            *faktor2=produkt/i;
+            return;
+        } } } }
+    *faktor1=1;
+    *faktor2=produkt;
+}
+
+int main(){
+    long produkt;
+    long faktor1;
+    long faktor2;
+	printf(""Please enter an Integer: "");
+    scanf(""%i"",&produkt);
+    factorize(produkt,&faktor1,&faktor2);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"",produkt,faktor1,faktor2);
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+
+for (int i=0;i<zahl&&dest[i]!='\0';i++){
+dest[i]=src[i];
+}
+}
+
+void umdrehen( char* str )
+{
+
+int len=0;
+for (int i=0; str[i]!='\0';i++){
+    len+=1;
+
+}
+char saver[len];
+for (int i=0; str[i]!='\0';i++){
+saver[len-i-1]=str[i];
+}
+for (int i=0;i<len;i++){
+    str[i]=saver[i];
+}
+}
+
+
+
+int main( int argc, char* argv[] )
+{
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Kulanathan,Keerthithan,k.kulanathan@campus.tu-berlin.de,Beendet,"9. Januar 2022  14:44","9. Januar 2022  23:58","9 Stunden 14 Minuten","8,75",5,80,5,0,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}",!3,"[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""201"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""","""",""1"","""","""","""","""","""","""",""""],[""11"",""202"","""","""","""","""","""","""","""","""",""""],[""12"","""","""","""",""0"","""","""","""","""","""",""""],[""11"",""203"","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""2"",""1"",""0"",""0""],[""3(14)"","""","""","""","""","""",""200"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""",""201"","""","""","""",""""],[""3(14)"","""","""","""","""","""","""","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""3(14)"","""","""","""","""","""",""202"","""","""","""",""""],[""6(14)"","""","""","""","""","""",""-"",""-"",""-"",""-"",""-""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"",""-"",""-"",""-"",""-"",""-"","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long ergebnis, long *zahl1, long *zahl2)
+{
+	if(ergebnis == 0 || ergebnis == 1)
+	{
+		*zahl1 = 1;
+		*zahl2 = ergebnis;
+	}
+	else if(ergebnis % 2 != 0)
+	{
+		long c = ergebnis;
+		while(c % (ergebnis/2) != 0)
+		{
+			ergebnis -= 1;
+		}
+		ergebnis /= 2;
+		*zahl1 = ergebnis;
+		*zahl2 = c / *zahl1;
+	}
+	else
+	{
+		*zahl1 = ergebnis / 2;
+		*zahl2 = ergebnis / *zahl1;
+	}
+} 
+
+int main()
+{
+	long ergebnis;
+	long a = 0;
+	long b = 0;
+	long *zahl1 = &a;
+	long *zahl2 = &b;
+
+	printf(""Please enter an Integer: "");
+	scanf(""%ld"", &ergebnis);
+	factorize(ergebnis, &a, &b);
+	printf(""Possible Factors of %ld are %ld and %ld.\n"", ergebnis, *zahl1, *zahl2);
+
+	return 0;
+}","#include <stdio.h>
+
+int main 
+char strl[100];","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"
+Krause,"Heiner Hans",heiner.h.krause@campus.tu-berlin.de,Beendet,"9. Januar 2022  16:59","9. Januar 2022  23:37","6 Stunden 38 Minuten","3,67",zeigefinger = (int*)((short*)zeigefinger - 4);,"{232} {236} {240} {246} {Das} {ist} {kein} {String} {a} {ist} {kein} {String}","Nichts, da Programm nicht kompiliert.","if (a >= 0) {
+        if (b >= 0) {
+                printf(""a und b sind positiv!\n"");
+        } else {
+                printf(""a und b sind negativ!\n"");
+        }
+} else {
+        if (b < 0) {
+                printf(""a ist positiv und b ist negativ!\n"");
+        } else {
+               printf(""a ist negativ und b ist positiv!\n"");
+        }
+}",!3,"INT i = 0; 
+DO {
+    printf(""%d "", i);
+} WHILE (i = (i+1) % 7);","[[""9"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-"",""-""],[""10"","""",""3"",""2"",""1"",""0"","""","""","""","""",""""],[""11"",""200"","""","""","""","""","""","""","""","""",""""],[""12"","""",""2"","""","""","""","""","""","""","""",""""],[""13"",""201"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""",""1"","""","""","""","""","""","""","""",""""],[""13"",""202"","""","""","""","""","""","""","""","""",""""],[""11"","""","""","""","""","""","""","""","""","""",""""],[""12"","""",""0"","""","""","""","""","""","""","""",""""],[""13"",""203"","""","""","""","""","""","""","""","""",""""],[""2(14)"","""","""","""","""","""","""",""undef"",""undef"",""undef"",""undef""],[""3(14)"","""","""","""","""","""",""216"","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""","""","""","""","""",""""],[""4(14)"","""","""","""","""","""","""","""","""","""",""""],[""5(14)"","""","""","""","""","""","""","""","""","""",""""],[""6(14)"","""","""","""","""","""","""","""","""","""",""""],[""14"","""","""","""","""","""","""","""","""","""",""""],[""15"","""","""","""","""","""","""","""","""","""",""""]]","#include <stdio.h>
+
+void factorize(long product, long *factor1, long *factor2)
+{
+	// Your factorization
+}
+
+int main(){
+	printf(""Please enter an Integer: "");
+	printf(""Possible Factors of %ld are %ld and %ld.\n"");
+	return 0;
+}",-,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}"

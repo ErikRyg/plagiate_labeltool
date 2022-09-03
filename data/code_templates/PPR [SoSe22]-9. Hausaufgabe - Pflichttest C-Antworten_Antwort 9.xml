@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 3420492  -->
+  <question type="coderunner">
+    <name>
+      <text>Ohne Worte (String kopieren) (Neu; FERTIG)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<ol>
+    <li>Schreiben Sie eine Funktion&nbsp;<strong><tt>void ersetzen(char* dest, int zahl, char* src)</tt></strong>die den String <strong><tt>src</tt> </strong>in den String <strong><tt>dest</tt> </strong>kopiert (und dabei überschreibt), allerdings&nbsp;</li>
+    <li>
+        <ul>
+            <li>nur <strong>maximal </strong><strong><tt>zahl</tt> </strong>Zeichen<br></li>
+            <li>nur <strong>maximal </strong>bis zum <strong>Ende </strong>von <strong><tt>dest</tt></strong><br></li>
+            <li>nur <strong>maximal </strong>den gesamten String <strong><tt>src</tt></strong><br></li>
+        </ul>
+    </li>
+    <li>Schreiben Sie eine Funktion <strong><tt>void umdrehen( char* str )</tt></strong>, die die übergebene Zeichenkette umdreht. Die <strong>Größe </strong>eines Strings ist <strong>variable</strong>, also müsst ihr diese zuerst ermitteln<br></li>
+
+    <li>Legen Sie in <strong><tt>main</tt> </strong>eine Testzeichenkette mit dem Inhalt "0123456789" an. Geben Sie diese auf der Konsole aus. Das Programm soll mit zwei Kommandozeilenparametern aufgerufen werden: die maximale <strong>Anzahl </strong>zu ersetzender Zeichen des Teststrings sowie
+        der <strong>String</strong>, mit dem der Teststring überschrieben werden soll. Führt dementsprechend die Funktion <strong><tt>ersetzen</tt> </strong>aus, gebt das Ergebnis <strong>aus</strong>, danach dann <strong><tt>umdrehen</tt></strong>, und gebt das Ergebnis erneut <strong>aus</strong>.</li>
+</ol>
+Verwenden Sie keine Funktionen aus <tt>string.h&nbsp;</tt>!&nbsp; Sonst gibt es <strong>keine Punkte </strong>auf die Aufgabe.
+<strong>Freiwillige Recherche (ohne Punkte):</strong> Welche Funktionen aus <tt>string.h</tt> wären hier nützlich gewesen und warum?
+<br>
+<br>
+<i>Schaut euch die Beispielausgabe an:</i><br>
+<br>
+<pre>your_name@your_computer_name:~$ ./ohneWorte 0 ppr
+Das Original ist: 0123456789&nbsp;
+Ersetzt : 0123456789&nbsp;
+Rückwärts : 9876543210&nbsp;
+your_name@your_computer_name:~$ ./ohneWorte 2 ppr
+Das Original ist: 0123456789&nbsp;
+Ersetzt : pp23456789&nbsp;
+Rückwärts : 98765432pp&nbsp;
+your_name@your_computer_name:~$ ./ohneWorte 3 ppr
+Das Original ist: 0123456789&nbsp;
+Ersetzt : ppr3456789&nbsp;
+Rückwärts : 9876543rpp&nbsp;
+your_name@your_computer_name:~$ ./ohneWorte 4 ppr
+Das Original ist: 0123456789&nbsp;
+Ersetzt : ppr3456789&nbsp;
+Rückwärts : 9876543rpp&nbsp;
+your_name@your_computer_name:~$ ./ohneWorte 40 pprMachtSpass
+Das Original ist: 0123456789&nbsp;
+Ersetzt : pprMachtSp&nbsp;
+Rückwärts : pSthcaMrpp&nbsp;
+</pre>
+<br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>3</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <coderunnertype>c_advanced</coderunnertype>
+    <prototypetype>0</prototypetype>
+    <allornothing>0</allornothing>
+    <penaltyregime>0, 0, 5, 10, 20, ...</penaltyregime>
+    <precheck>0</precheck>
+    <hidecheck>0</hidecheck>
+    <showsource>0</showsource>
+    <answerboxlines>25</answerboxlines>
+    <answerboxcolumns>100</answerboxcolumns>
+    <answerpreload><![CDATA[#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  
+}
+
+void umdrehen( char* str )
+{
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= "0123456789";
+  printf( "Das Original ist: %s \n", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( "Ersetzt : %s \n", test );
+  umdrehen( test );
+  printf( "Rückwärts : %s \n", test );
+}]]></answerpreload>
+    <globalextra></globalextra>
+    <useace></useace>
+    <resultcolumns></resultcolumns>
+    <template></template>
+    <iscombinatortemplate></iscombinatortemplate>
+    <allowmultiplestdins></allowmultiplestdins>
+    <answer><![CDATA[#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for ( int i = 0; i < zahl; i++ )
+  {
+    if ( dest[i] == '\0' || src[i] == '\0' )  break;
+    dest[i] = src[i];
+  } 
+}
+
+void umdrehen( char* str )
+{
+  char tmp = 0; 
+  int strLen = 0;
+  for ( ; str[strLen] != '\0'; strLen++ );
+  for ( int i = 0; i < strLen / 2 ; i++ )
+  {
+    tmp = str[i];
+    str[i] = str[strLen-i-1];
+    str[strLen-i-1] = tmp;
+  }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= "0123456789";
+  printf( "Das Original ist: %s \n", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( "Ersetzt : %s \n", test );
+  umdrehen( test );
+  printf( "Rückwärts : %s \n", test );
+}]]></answer>
+    <validateonsave>1</validateonsave>
+    <testsplitterre></testsplitterre>
+    <language></language>
+    <acelang></acelang>
+    <sandbox></sandbox>
+    <grader></grader>
+    <cputimelimitsecs></cputimelimitsecs>
+    <memlimitmb></memlimitmb>
+    <sandboxparams></sandboxparams>
+    <templateparams><![CDATA[{
+    "cr_input_as_commando": "True"
+}]]></templateparams>
+    <hoisttemplateparams>1</hoisttemplateparams>
+    <templateparamslang>twig</templateparamslang>
+    <templateparamsevalpertry>0</templateparamsevalpertry>
+    <templateparamsevald><![CDATA[{"cr_input_as_commando":"True"}]]></templateparamsevald>
+    <twigall>0</twigall>
+    <uiplugin></uiplugin>
+    <uiparameters></uiparameters>
+    <attachments>0</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <maxfilesize>10240</maxfilesize>
+    <filenamesregex></filenamesregex>
+    <filenamesexplain></filenamesexplain>
+    <displayfeedback>1</displayfeedback>
+    <giveupallowed>0</giveupallowed>
+    <prototypeextra></prototypeextra>
+    <testcases>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char* str[] = {"./[programm]", "0", "ppr"};
+student_main(2, str);]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Das Original ist: 0123456789
+Ersetzt : 0123456789
+Rückwärts : 9876543210
+</text>
+      </expected>
+      <extra>
+                <text><![CDATA[print_if(list_of_globals(S_A) == [], "", "Nicht erlaubt: Folgende globale Variablen wurden definiert:\n" + "\n".join(list_of_globals(S_A)) + "\n\n")]]></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char* str[] = {"./[programm]", "40", "pprMachtSpassss"};
+student_main(2, str);]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Das Original ist: 0123456789
+Ersetzt : pprMachtSp
+Rückwärts : pSthcaMrpp
+</text>
+      </expected>
+      <extra>
+                <text><![CDATA[print_if(list_of_globals(S_A) == [], "", "Nicht erlaubt: Folgende globale Variablen wurden definiert:\n" + "\n".join(list_of_globals(S_A)) + "\n\n")]]></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char str[6] = "Robin";
+printf("%s\n", str);
+umdrehen(str);
+printf("%s\n", str);]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Robin
+niboR
+</text>
+      </expected>
+      <extra>
+                <text><![CDATA[print_if(list_of_globals(S_A) == [], "", "Nicht erlaubt: Folgende globale Variablen wurden definiert:\n" + "\n".join(list_of_globals(S_A)) + "\n\n")]]></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[char str[11] = "0123456789";
+printf("%s\n", str);
+umdrehen(str);
+printf("%s\n", str);]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>0123456789
+9876543210
+</text>
+      </expected>
+      <extra>
+                <text><![CDATA[print_if(list_of_globals(S_A) == [], "", "Nicht erlaubt: Folgende globale Variablen wurden definiert:\n" + "\n".join(list_of_globals(S_A)) + "\n\n")]]></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>// Testet ob der Code Schleifen enthält</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Passt!</text>
+      </expected>
+      <extra>
+                <text><![CDATA[S_A = remove_comments(S_A)
+print_if(re.search("for", S_A) or re.search("while", S_A))]]></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+    </testcases>
+  </question>
+
+</quiz>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 2675728  -->
+  <question type="coderunner">
+    <name>
+      <text>for/while (leicht) (Neu; FERTIG)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Implementieren Sie ein Programm HelloLoop, das 10-mal <span class="" style="color: rgb(152, 202, 62);">Hello Loop!</span> auf der Konsole <span class="" style="color: rgb(152, 202, 62);">ausgibt.</span> Verwenden Sie für die ersten fünf Ausgaben eine for-Schleife und für die zweiten fünf Ausgaben eine while-Schleife.<br><br><br><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <coderunnertype>c_advanced</coderunnertype>
+    <prototypetype>0</prototypetype>
+    <allornothing>0</allornothing>
+    <penaltyregime>0, 0, 5, 10, 20, ...</penaltyregime>
+    <precheck>0</precheck>
+    <hidecheck>0</hidecheck>
+    <showsource>0</showsource>
+    <answerboxlines>18</answerboxlines>
+    <answerboxcolumns>100</answerboxcolumns>
+    <answerpreload>int main(){
+    
+}</answerpreload>
+    <globalextra></globalextra>
+    <useace></useace>
+    <resultcolumns></resultcolumns>
+    <template></template>
+    <iscombinatortemplate></iscombinatortemplate>
+    <allowmultiplestdins></allowmultiplestdins>
+    <answer><![CDATA[#include <stdio.h>
+
+int main(){
+    // for−Schleife
+    for(int i = 0; i < 5; ++i) {
+        printf("Hello Loop!\n");
+    }
+    //while−Schleife
+    int i = 0;
+    while(i < 5) {
+        printf("Hello Loop!\n");
+        ++i;
+    }
+}]]></answer>
+    <validateonsave>1</validateonsave>
+    <testsplitterre></testsplitterre>
+    <language></language>
+    <acelang></acelang>
+    <sandbox></sandbox>
+    <grader></grader>
+    <cputimelimitsecs></cputimelimitsecs>
+    <memlimitmb></memlimitmb>
+    <sandboxparams></sandboxparams>
+    <templateparams></templateparams>
+    <hoisttemplateparams>1</hoisttemplateparams>
+    <templateparamslang>twig</templateparamslang>
+    <templateparamsevalpertry>0</templateparamsevalpertry>
+    <templateparamsevald>{}</templateparamsevald>
+    <twigall>0</twigall>
+    <uiplugin></uiplugin>
+    <uiparameters></uiparameters>
+    <attachments>0</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <maxfilesize>10240</maxfilesize>
+    <filenamesregex></filenamesregex>
+    <filenamesexplain></filenamesexplain>
+    <displayfeedback>1</displayfeedback>
+    <giveupallowed>0</giveupallowed>
+    <prototypeextra></prototypeextra>
+    <testcases>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="5.0000000" >
+      <testcode>
+                <text>main();</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Hello Loop!
+Hello Loop!
+Hello Loop!
+Hello Loop!
+Hello Loop!
+Hello Loop!
+Hello Loop!
+Hello Loop!
+Hello Loop!
+Hello Loop!
+</text>
+      </expected>
+      <extra>
+                <text><![CDATA[print_if(list_of_globals(S_A) == [], "", "Nicht erlaubt: Folgende globale Variablen wurden definiert:\n" + "\n".join(list_of_globals(S_A)) + "\n\n")]]></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="2.0000000" >
+      <testcode>
+                <text>// Tested ob for in der Lösung verwendet wurde</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Passt!
+</text>
+      </expected>
+      <extra>
+                <text><![CDATA[S_A = remove_comments(S_A)
+print_if(re.search("for\\s*\(", S_A))]]></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="2.0000000" >
+      <testcode>
+                <text>// Tested ob while in der Lösung verwendet wurde</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Passt!</text>
+      </expected>
+      <extra>
+                <text><![CDATA[print_if(re.search("while\\s*\(", S_A))]]></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[// Testet ob "Hello" in der Lösung enthalten ist]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Passt!</text>
+      </expected>
+      <extra>
+                <text><![CDATA[print_if(re.search("Hello", S_A))]]></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[// Testet ob "Loop" in der Lösung enthalten ist]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Passt!
+</text>
+      </expected>
+      <extra>
+                <text><![CDATA[print_if(re.search("Loop", S_A))]]></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>// Testet ob '!' in der Lösung enthalten ist</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Passt!</text>
+      </expected>
+      <extra>
+                <text><![CDATA[print_if(re.search("!", S_A))]]></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="3.0000000" >
+      <testcode>
+                <text>// Testet ob zuerst for und danach while verwendet wurde</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Passt!
+</text>
+      </expected>
+      <extra>
+                <text><![CDATA[S_A = remove_comments(S_A)
+index_of_for = S_A.find("for")
+#index_of_while = S_A.find("while", index_of_for)
+count_while = S_A.count("while", index_of_for)
+print_if(count_while != 0)
+]]></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+    </testcases>
+  </question>
+
+</quiz>

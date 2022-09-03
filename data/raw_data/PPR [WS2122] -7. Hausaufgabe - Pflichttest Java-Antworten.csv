@@ -1,0 +1,5194 @@
+﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/15,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9","Antwort 10"
+Wieseke,"Jan Malte",wieseke@campus.tu-berlin.de,Beendet,"3. Dezember 2021  16:06","10. Dezember 2021  16:30","7 Tage","13,25",int[],3,"0, 1, 2",3,new,"zahlen = new int[3];","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""undef"",""undef"",""undef"","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""undef""],[""5(8)"","""","""","""","""","""",""""],[""5(9)"","""","""","""","""",""2"",""""],[""5(10)"","""","""",""a[1]+a[0]"","""","""",""""],[""5(9)"","""","""","""","""",""3"",""""],[""5(10)"","""","""","""",""a[2]+a[1]"","""",""""],[""5(11)"","""","""","""","""",""-"",""""],[""5(12)"","""","""","""","""","""",""""],[""5(13)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""],[""14"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+       char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+
+	public static void main(String[] args) {
+		int[] array = Terminal.askIntArray(""Queue:\n"");
+		while (indexOfMax(array) != -1) {
+			int index = indexOfMax(array);
+			Terminal.println(array[index]);
+			array[index] = Integer.MIN_VALUE;
+
+		}
+
+	}
+
+	public static int indexOfMax(int[] a) {
+		int grösster_wert = a[0];
+		for (int i : a) {
+			if (grösster_wert < i) {
+				grösster_wert = i;
+			}
+		}
+
+		int index = 0;
+		for (int gesuchter_wert : a) {
+			if (gesuchter_wert == grösster_wert) {
+				break;
+			} else {
+				index++;
+			}
+
+		}
+		boolean nicht_null = false;
+		for (int e : a) {
+			if (e != Integer.MIN_VALUE) {
+				nicht_null = true;
+			}
+		}
+		if (nicht_null == false) {
+			return -1;
+		}
+		return index;
+
+	}
+}","public class Pizza {
+
+	public static void main(String[] args) {
+		Terminal.println(""Willkommen! Bestellung:"");
+		int antwort = 0;
+		float preis = 0;
+		while (antwort != 3) {
+			antwort = Terminal.askInt(""\r\n"" + ""'1' Salami Pizza 5.50Euro\r\n"" + ""'2' Veggi Pizza 4.30Euro\r\n"" + ""'3' Ende\r\n"");
+			if (antwort == 1) {
+				preis = (float) (preis + 5.50);
+				Terminal.print(""Salami Pizza hinzugefuegt.\r\n"");
+			} else if (antwort == 2) {
+				preis = (float) (preis + 4.30);
+				Terminal.print(""Veggi Pizza hinzugefuegt.\r\n"");
+
+			} else if (antwort == 3) {
+
+				int entfernung = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+				int rabatt = rabatte(preis, entfernung);
+				Terminal.print(""Rabatt: "" + rabatt + ""%\n"");
+				float endpreis = (float) (preis - (preis * (rabatt / 100.0)));
+				Terminal.print(""Endpreis: "" + endpreis + ""Euro"");
+			}
+		}
+	}
+
+	public static int rabatte(float preis, int entfernung) {
+		int rabatt = 0;
+		if (entfernung <= 2 || entfernung >= 20) {
+			rabatt = 10;
+		}
+
+		if (preis > 10) {
+			rabatt = rabatt + 10;
+
+		}
+
+		if (preis > 20) {
+
+			rabatt = rabatt + 10;
+
+		}
+
+		return rabatt;
+	}
+
+}"
+Wolf,"Amelie Rose",amelie.r.wolf@campus.tu-berlin.de,Beendet,"5. Dezember 2021  12:00","7. Dezember 2021  11:39","1 Tag 23 Stunden","13,75","1, 1, 2",int[],geca,"den gleichen Datentyp.",-3.5,n-1,"[[""1"",""-"",""-"",""-"",""-"",""-"",""-""],[""2"","""","""","""","""","""",""""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""",""-"",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""],[""14"","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];//Hier soll das Array deklariert und initialisiert werden!
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    public static void main(String[] args){
+        int[] array=Terminal.askIntArray(""Queue:\n"");
+        int index=0;
+        //System.out.println(""Queue:"");
+        /*while(index!=-1){
+            index=indexOfMax(array);
+            //System.out.println(max);
+            array[index]=Integer.MIN_VALUE;
+        }*/
+        do{
+            index=indexOfMax(array);
+            if(index!=-1){
+                System.out.println(array[index]);
+                array[index]=Integer.MIN_VALUE;
+            }
+        }while(index!=-1);
+    }
+    public static int indexOfMax(int[] b){
+        int max=b[0];
+        int index=0;
+        for(int i=1;i<b.length;i++){
+            if (b[i]>max){
+                max=b[i];
+                index=i;
+            }
+        }
+        if (max==Integer.MIN_VALUE){
+            return -1;
+        }
+        //System.out.println(max);
+        return index;
+
+    }
+}","public class Pizza {
+
+    public static void main(String[] args){
+        Terminal.println(""Willkommen! Bestellung:""+""\n"");
+        float preis=0;
+        boolean Ende=false;
+        while(Ende==false){
+            Terminal.println(""'1' Salami Pizza 5.50Euro"");
+            Terminal.println(""'2' Veggi Pizza 4.30Euro"");
+            Terminal.println(""'3' Ende"");
+            int antwort=Terminal.askInt("""");
+            if(antwort==1){
+                    Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+                    preis+=5.50;
+            }
+            if(antwort==2){
+                Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+                preis+=4.30;
+            }
+            if(antwort==3){
+                preis=berechnung(preis);
+                Terminal.print(""Endpreis: ""+preis+""Euro"");
+                Ende=true;
+            }
+        }
+    }
+    public static float berechnung(float p){
+        float rabatt=0;
+        int km=Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+        if((km<=2)||(km>=20)){
+            rabatt+=10.0;
+        }
+        if(p>=10.0){
+            rabatt+=10.0;
+            if(p>=20.0){
+                rabatt+=10.0;
+            }
+        }
+        Terminal.println(""Rabatt: ""+(int) rabatt+""%"");
+        p=(float)(p-(p/100.0*rabatt));
+        return p;
+    }
+
+}"
+Nguemning,"Jienou Tchuente",j.nguemning@campus.tu-berlin.de,Beendet,"5. Dezember 2021  15:18","12. Dezember 2021  23:59","7 Tage 8 Stunden","14,50",n-1,3,"den gleichen Datentyp.",boolean if;,new,"1, 1, 2","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""",""1"","""","""",""""],[""11(5)"","""","""","""","""",""3"",""""],[""9(5)"","""","""","""","""","""",""""],[""10(5)"","""","""","""",""2"","""",""""],[""11(5)"","""","""","""","""",""4"",""""],[""9(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""-"",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+     public static int indexOfMax(int[] numbers){
+        int max = Integer.MIN_VALUE;
+        int index = -1;
+        for(int i = 0; i < numbers.length; i++){
+            if (max < numbers[i]){ 
+                max = numbers[i];
+                index = i;
+            }
+        }
+        return index;
+    }
+    
+    public static void main(String [] args){
+        int[] numbers = Terminal.askIntArray(""Queue:\n"");
+        
+        for(int maxIdx = indexOfMax(numbers); maxIdx > -1; maxIdx = indexOfMax(numbers)) {
+            Terminal.println(numbers[maxIdx]);
+            numbers[maxIdx] = Integer.MIN_VALUE;
+        }
+    }
+
+}","public class Pizza {
+     public static void main(String [] args) {
+        float gesamtpreis = 0;
+        int auswahl = 0;
+        Terminal.println(""Willkommen! Bestellung:\n"");
+        while(auswahl != 3){
+            auswahl = Terminal.askInt(""'1' Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende\n"");
+            switch (auswahl){
+                case 1: 
+                    Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+                    gesamtpreis += 5.5;
+                    break;
+                case 2: 
+                    System.out.println(""Veggi Pizza hinzugefuegt.\n"");
+                    gesamtpreis += 4.3;
+                    break;
+            }
+        }
+        int entfernung = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+        int rabatt_prozent = 0;
+        if(entfernung <= 2) rabatt_prozent += 10;
+        if(entfernung >= 20) rabatt_prozent += 10;
+        if (gesamtpreis > 10) rabatt_prozent += 10;
+        if (gesamtpreis > 20) rabatt_prozent += 10;
+        gesamtpreis -= gesamtpreis * (rabatt_prozent/100.0);
+        Terminal.println(""Rabatt: "" + rabatt_prozent + ""%\nEndpreis: "" + gesamtpreis + ""Euro"" );
+    }
+}"
+Ibraimi,Ibraim,ibraimi@campus.tu-berlin.de,Beendet,"5. Dezember 2021  17:07","12. Dezember 2021  23:22","7 Tage 6 Stunden","2,00",int null;,3,n-1,"den gleichen Datentyp.",geca,array,-,"public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[] array = {'A'} //Hier soll das Array deklariert und initialisiert werden!
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+    private String name;
+    private double preis; 
+    private double Lieferentfernung;
+  public static int askInt(java.lang.String prompt)
+  
+}"
+Rode,Eric,eric.rode@campus.tu-berlin.de,Beendet,"5. Dezember 2021  18:07","12. Dezember 2021  17:00","6 Tage 22 Stunden","11,05",array,geca,"den gleichen Datentyp.",int[],char string;,3,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""undef""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""",""1"","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""",""2"","""",""""],[""12(5)"","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2.0""],[""6"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    
+    public static void main(String[] args) {
+        int[] array = Terminal.askIntArray(""Queue:\n"");
+        int indexOfMax;
+        for (int i = 0; i < array.length; i++) {
+            indexOfMax = indexOfMax_(array);
+            System.out.println(array[indexOfMax]);
+            array[indexOfMax] = Integer.MIN_VALUE;
+        }
+    }
+
+    public static int indexOfMax_(int[] array){
+        int indexOfMax = 0;
+        for (int i = 1; i < array.length; i++) {
+            if (array[indexOfMax] < array[i]){
+                indexOfMax = i;
+            }
+        }
+        return indexOfMax;
+    }
+}","import java.util.ArrayList;
+import java.util.List;
+
+public class Pizza {
+
+    public static void main(String[] args) {
+        List<Integer> bestellung = new ArrayList<Integer>();
+        boolean ende = false;
+        System.out.println(""Willkommen! Bestellung:\n"");
+        while (!ende) {
+            bestellung.add(Terminal.askInt(""'1' Salami Pizza 5.50Euro\n"" +
+                    ""'2' Veggi Pizza 4.30Euro\n"" +
+                    ""'3' Ende\n""));
+            switch (bestellung.get(bestellung.size() - 1)) {
+                case 1: System.out.println(""Salami Pizza hinzugefuegt.\n"");
+                break;
+                case 2: System.out.println(""Veggi Pizza hinzugefuegt.\n"");
+                break;
+                case 3: ende = true;
+                break;
+            }
+        }
+        //Berechnung Endpreis
+        float pizzaPreis = 0;
+        for (Integer integer : bestellung) {
+            if (integer == 1) {
+                pizzaPreis += 5.50;
+            }
+            if (integer == 2) {
+                pizzaPreis += 4.30;
+            }
+        }
+        //Lieferentfernung
+        int entfernung = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+        double rabatt = 0;
+        int rabattInProzent = 0;
+        if (entfernung <= 2 || entfernung >= 20){
+            rabatt += 0.1;
+            rabattInProzent += 10;
+        }
+        //Rabatte Bestellwert
+        if (pizzaPreis > 10){
+            rabatt += 0.1;
+            rabattInProzent += 10;
+        }
+        if (pizzaPreis > 20){
+            rabatt += 0.1;
+            rabattInProzent += 10;
+        }
+        System.out.println(""Rabatt: "" + rabattInProzent + ""%"");
+        //Berechnunng Endpreis
+        float endpreis = (float) (pizzaPreis - pizzaPreis * rabatt);
+        System.out.println(""Endpreis: "" + endpreis + ""Euro"");
+    }
+}"
+Chahrour,Rima,rima.chahrour@campus.tu-berlin.de,Beendet,"6. Dezember 2021  00:00","12. Dezember 2021  23:59","6 Tage 23 Stunden","2,00",new,3,int[],-,-,geca,"[[""2"","""","""","""","""","""",""""],[""3"","""","""","""","""","""",""""],[""4"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    public static void main(String[] args){
+        frame();}
+    
+    public static void frame() {
+        //Hier soll das Array deklariert und initialisiert werden!
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+    
+}"
+Song,Minji,minji.song@campus.tu-berlin.de,Beendet,"6. Dezember 2021  00:02","12. Dezember 2021  23:42","6 Tage 23 Stunden","6,97",geca,int[],3,"1, 1, 2","zahlen = new int[3];",new,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""undef"",""undef"",""undef"","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""""],[""6"","""","""","""","""","""",""""],[""8"","""","""","""","""","""",""""],[""9"","""","""","""","""",""2"",""""],[""10"","""","""","""","""","""",""""],[""9"","""","""","""","""","""",""""],[""10"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char [breite][hoehe];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+
+	public static void main(String[] args){
+        int auswahl = 0;
+        float Preis = 0.00F;
+        int Rabatt = 0;
+        Terminal.println(""Willkommen! Bestellung:\n"");
+        while (auswahl != 3){
+            auswahl = Terminal.askInt(""'1' Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende\n"");
+
+            if (auswahl == 1){
+                Preis = Preis + 5.50F;
+                Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+            }
+            else if (auswahl == 2){
+                Preis = Preis + 4.30F;
+                Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+            }
+            else if (auswahl == 3){
+                Rabatt = LieferentfernungAbfragen(Preis);
+                Ausgabe(Preis, Rabatt);
+            }
+            else{
+
+            }
+
+        }
+
+    }
+    public static void Ausgabe(float p, int r){
+        p = (p / 100) * (100 - r);
+        Terminal.println(""Rabatt: "" + r + ""%"");
+        Terminal.println(""Endpreis: "" + p + ""Euro"");
+    }
+
+    public static int LieferentfernungAbfragen(float wert){
+        int Entfernung = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+        int E = Entfernung;
+        int rabatt = 0;
+        if(E<=2){
+            rabatt = rabatt + 10;
+        }
+        else if(E>=20){
+            rabatt = rabatt+ 10;
+        }
+
+        if(wert >= 10){
+            rabatt = rabatt+ 10;
+        }
+        if(wert>=20){
+            rabatt = rabatt + 10;
+        }
+        return rabatt;
+    }
+}"
+Hobein,"Bashira Noura",b.hobein@campus.tu-berlin.de,Beendet,"6. Dezember 2021  00:05","12. Dezember 2021  23:50","6 Tage 23 Stunden","3,75",3,geca,"1, 1, 2",int[],new,"den gleichen Wert.","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"","""","""","""","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""1""],[""6"",""-"",""-"","""","""","""",""-""],[""7"","""","""","""","""","""",""""],[""8"",""-"",""-"",""-"",""-"",""-"",""-""],[""9"","""","""","""","""",""2"",""""],[""10"","""","""","""","""","""",""""],[""11 "","""","""","""","""",""-"",""""],[""12"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        int [][] arr = new int [6][3];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+    	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(""Willkommen! Bestellung: "");
+		Terminal.askInt(""'1' Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende\n"");
+		
+	int auswahl = 0;
+		if (auswahl ==1) {
+			float Preis = (float) 5.50f;
+			Terminal.println(""Salami Pizza"");
+		}
+		else if (auswahl ==2) {
+			float Preis = (float) 4.30f;
+			Terminal.println(""Veggie Pizza"");
+			
+		}
+		else if (auswahl == 3){
+			Terminal.println(""Ende"");
+			
+		}
+		
+		
+		
+		
+	
+		
+}"
+Glowacki,"Robin Gregor",glowacki@campus.tu-berlin.de,Beendet,"6. Dezember 2021  00:14","12. Dezember 2021  23:58","6 Tage 23 Stunden","6,50",new,n-1,"den gleichen Datentyp.","1, 1, 2","zahlen = new int[3];",int,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""",""1"","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""",""2"","""",""""],[""9(5)"","""","""","""","""",""4"",""""],[""12(5)"","""","""","""","""","""",""""],[""13"","""","""",""-"",""-"",""-"",""""],[""5"","""","""",""0"",""0"","""",""2""],[""6"",""-"",""-"",""-"",""-"","""",""-""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+  public static void main (String[] args){
+	int[] a = new int[5];
+	a = Terminal.askIntArray(""Queue:\n"");
+	}
+	public static int indexOfMax (int[] b){
+		int max = 0;
+		for(int i = 0; i == b.length; i++){
+			if (max <= b[i]){
+				max = b[i];
+			}	
+			else{
+				max = max;
+			}
+		}	
+		return max;
+	}
+    
+}","public class Pizza {
+    
+}"
+Shehata,Shady,shady.shehata@campus.tu-berlin.de,Beendet,"6. Dezember 2021  04:41","12. Dezember 2021  23:59","6 Tage 19 Stunden","0,00",-,-,-,-,-,-,-,"public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        //Hier soll das Array deklariert und initialisiert werden!
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}",-
+Nguyen,"Hoang Le",h.nguyen.3@campus.tu-berlin.de,Beendet,"6. Dezember 2021  08:40","12. Dezember 2021  23:47","6 Tage 15 Stunden","7,25",3,int null;,int[],"zahlen = new int[3];","den gleichen Datentyp.",-3.5,"[[""1\n\n\n"",""-"",""-"",""-"",""-"",""-"",""-""],[""2"","""","""","""","""","""",""""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""undef""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""-"",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""],[""14(6)"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        //Hier soll das Array deklariert und initialisiert werden!
+        int[][] array= new int[8][5];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    public static void main(String[] args) {
+        int[] array = getArray();
+
+        for(int i = 1; i < array.length+1; i++){
+            if(indexOfMax(array) ==-1){
+
+                break;
+            }else {
+                System.out.println( array[indexOfMax(array)]);
+                array[indexOfMax(array)] = Integer.MIN_VALUE;
+            }
+        }
+    }
+
+   public static int[] getArray(){
+       return Terminal.askIntArray(""Queue:\n"");
+
+   };
+
+    public static int indexOfMax(int[] input){
+        int max = input[0];
+        int output= 0;
+        int min_val_count = 0;
+        for(int i = 0; i < input.length; i++){
+            if(input[i] == Integer.MIN_VALUE)
+                min_val_count++;
+            if(max < input[i]){
+                max = input[i];
+                output = i;
+            }
+        }
+        if(min_val_count == input.length){
+            return -1;
+        }
+
+        return output;
+    }
+
+
+}","public class Pizza {
+    
+	public static void main(String[] args){
+		Terminal.println(""Willkommen! Bestellung:\n"");
+		float price = 0.00f;
+		int input = 0;
+		while(input !=3){
+			input = Terminal.askInt(""'1' Salami Pizza 5.50Euro\n"" +
+									""'2' Veggie Pizza 4.30Euro\n"" +
+									""'3' Ende"" +
+									""\n"");
+			switch(input){
+				case 1: price += 5.50f;
+				Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+				break;
+				case 2: price += 4.30f;
+				Terminal.println(""Veggie Pizza hinzugefuegt.\n"");
+				break;
+			}
+		}
+	
+		int distance = Terminal.askInt(""Bitte Lieferentfernung eingeben [km]:\n "");
+		float discount = 0.00f;
+		int rabatt = 0;
+		if(distance <= 2){
+			discount += 0.10f;
+			rabatt += 10;
+			}
+			else if(distance > 20){
+				discount += 0.10f;
+				rabatt += 10;
+			}
+		if((price > 10.00f) && (price < 20.00f)){
+			discount += 0.10f;
+			rabatt += 10.00f;
+		}
+		else if(price > 20.00f){
+			discount += 0.20f;
+			rabatt += 20;
+		}
+		
+		price *= (1 - discount);	
+		System.out.println(""Rabatt: ""+ rabatt +""%"");
+		System.out.printf(""Endpreis: %.2f Euro."",price );
+	
+	}
+}"
+Balasus,Jakob,balasus@campus.tu-berlin.de,Beendet,"6. Dezember 2021  08:56","10. Dezember 2021  15:58","4 Tage 7 Stunden","14,50",new,-3.5,"den gleichen Datentyp.",int[],n-1,geca,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""",""1"","""","""",""""],[""11(5)"","""","""","""","""",""3"",""""],[""9(5)"","""","""","""","""","""",""""],[""10(5)"","""","""","""",""2"","""",""""],[""11(5)"","""","""","""","""",""4"",""""],[""9(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""",""-"",""""],[""13(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[2+breite][2+hoehe];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+    public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] q = Terminal.askIntArray(""Queue:\n"");
+		int result = indexOfMax(q);
+		
+		
+		int loops2do = q.length;
+		while(loops2do > 0) {
+			int maxIndex = indexOfMax(q);
+			System.out.println(q[maxIndex]);
+			q[maxIndex] = Integer.MIN_VALUE;
+			loops2do--;
+		}
+		
+
+	}
+	
+	public static int indexOfMax(int[] q) {
+		//finde index des größten Element
+		int curMax = -1;
+		int curMaxIndex = -1;
+		for(int i = 0; i < q.length; i++) {
+			if(q[i] > curMax) {
+				curMaxIndex = i;
+				curMax = q[i];
+			}
+			
+		}	
+		if(curMax == Integer.MIN_VALUE) {return -1;}
+		return curMaxIndex;
+	}
+    
+}","public class Pizza {
+    public static void main(String[] args) {
+	Terminal.println(""Willkommen! Bestellung:"");
+	float kostenSumme = 0f;
+	
+
+	// Get Bestellung
+	int befehl = 0;
+	String s1 = ""'1' Salami Pizza 5.50Euro"";
+	String s2 = ""'2' Veggi Pizza 4.30Euro"";
+	String s3 = ""'3' Ende"";
+	while (befehl != 3) {
+		befehl = Terminal.askInt(""\n""+ s1 +""\n""+ s2 +""\n""+ s3 +""\n"");
+
+		switch (befehl) {
+		case 1:
+			kostenSumme += 5.50f;
+			Terminal.println(""Salami Pizza hinzugefuegt."");
+			break;
+
+		case 2:
+			kostenSumme += 4.30f;
+			Terminal.println(""Veggi Pizza hinzugefuegt."");
+			break;
+
+		default:
+			befehl = 3;
+			break;
+
+		}
+
+	}
+
+	// get Entfernung berrechne Rabatt
+	float realRabatt = 0f;
+	int entfernung = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+	int rabatt = 0;
+	if (entfernung <= 2 || entfernung >= 20) {
+		rabatt += 10;
+		realRabatt += 0.1f;
+	}
+	if (kostenSumme > 10) {
+		rabatt += 10;
+		realRabatt += 0.1f;
+	}
+	if (kostenSumme > 20) {
+		rabatt += 10;
+		realRabatt += 0.1f;
+	}
+
+	Terminal.println(""Rabatt: "" + rabatt + ""%"");
+	if(rabatt != 0) {
+		Float zuZahlen = (1f - realRabatt) * kostenSumme;
+		System.out.printf(""Endpreis: %5.2fEuro"", zuZahlen);
+	}else {
+		System.out.print(""Endpreis: "" + kostenSumme +""Euro"");
+	}
+	
+	
+
+}
+
+    
+}"
+Bender,Emma,emma.bender@campus.tu-berlin.de,Beendet,"6. Dezember 2021  09:07","11. Dezember 2021  11:52","5 Tage 2 Stunden","12,92",char string;,"den gleichen Datentyp.","0, 1, 2",-3.5,geca,"zahlen = new int[3];","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""undef"",""undef"",""undef"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""4"",""""],[""11(5)"","""","""","""","""",""-"",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+       char[][] array= new char[(breite+2)][(hoehe+2)];//Hier soll das Array deklariert und initialisiert werden!
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] ='B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+public static void main(String[] args){
+		int[] array = Terminal.askIntArray(""Queue:\n"");
+		for (int j=indexOfMax(array); j!=-1;j=indexOfMax(array)){
+			Terminal.println(array[j]);
+			array[j]=Integer.MIN_VALUE;
+		}
+	}
+	public static int indexOfMax (int[] arr){
+		int j=0;
+		for (int i=0; i<arr.length; i++){
+			if (arr[j]<arr[i]){
+				j=i;
+			}
+		}
+		if(arr[j]!=Integer.MIN_VALUE){
+			return j;
+		}
+		else{
+			return -1;
+		}
+		
+	}
+    
+}","public class Pizza {
+    	public static void main(String[] args){
+		Terminal.println(""Willkommen! Bestellung:\n"");
+		float preis= preis();
+		int rabatt= rabatt (preis);
+		Terminal.println(""Rabatt: ""+rabatt+""%\n"");
+		rabatt= 100-rabatt;
+		float endpreis= (rabatt*preis)/100;
+		Terminal.println(""Endpreis: ""+endpreis+""Euro"");
+		
+	}
+	public static float preis(){
+		float preis= 0;
+		float salami=5.5f;
+		float veggi=4.3f;
+		for (int i=0; i!=3; i=Terminal.askInt(""'1' Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende\n"")){
+			if (i==1){
+				Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+				preis+=salami;
+			}
+			if (i==2) {
+				Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+				preis+=veggi;
+			}
+		}
+		return preis;
+	}
+	public static int rabatt(float preis){
+		int km = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+		int rabatt=0;
+		if (2>=km||km>=20){
+			rabatt+=10;
+		}
+		if (preis>10.00){
+			rabatt+=10;
+		}
+		if (preis>20.00){
+			rabatt+=10;
+		}
+		return rabatt;
+	}
+}"
+Engelbrecht,Philip,philip.engelbrecht@campus.tu-berlin.de,Beendet,"6. Dezember 2021  10:00","12. Dezember 2021  23:59","6 Tage 13 Stunden","14,00",3,new,"zahlen = new int[3];",int null;,int[],"den gleichen Datentyp.","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""undef""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""3"",""""],[""9(5)"","""","""","""","""","""",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""4"",""""],[""9(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""",""-"",""""],[""5"","""","""","""","""","""",""2""],[""6"",""-"",""-"",""-"",""-"","""",""-""],[""14"","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char [breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+	public static int min = Integer.MIN_VALUE;
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+	
+	public static void main (String[] args){
+		int index = 0;
+		
+		
+		int [] array = Terminal.askIntArray(""Queue:\n"");
+		while ((index = indexOfMax(array)) != -1) {
+			System.out.println(array[index]);
+			array[index] = min;
+		}
+		
+	}
+	
+	public static int indexOfMax (int array[]){
+		int max = min, i = 0, index = -2;
+		while (i < array.length) {
+			if (array[i] > max) {
+				max = array[i];
+				index = i;
+				i++;
+			} else 
+				i++;
+			
+		}
+		if (max != min) 
+			return index;
+		else 
+			return -1;
+	}
+
+}","public class Pizza {
+	public static float Preis = 0;
+    
+	public static void main (String[] args){
+		char hilfe = 'a';
+		int Rabatt = 0;
+		
+		String Frage = ""'1' Salami Pizza 5.50Euro\n"" + ""'2' Veggi Pizza 4.30Euro\n"" + ""'3' Ende\n"";
+		
+		System.out.println(""Willkommen! Bestellung:\n"");
+		
+		do {
+			char opperator = Terminal.askChar(Frage);
+			hilfe = Auswahl(opperator);
+		} while (hilfe != '3');
+		
+		int Entfernung = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+		if (Entfernung <= 2 || Entfernung >= 20 ) {
+			Rabatt += 10; 
+		} 
+		if (Preis > 20){
+			Rabatt += 20;
+		} else if (Preis > 10) {
+			Rabatt += 10;
+		}
+		System.out.println(""Rabatt: "" + Rabatt +""%\n"");
+		
+		Preis = Preis - Preis* Rabatt/100;
+		
+		System.out.println(""Endpreis: "" + Preis + ""Euro"");
+	
+	}	
+	
+
+
+
+	public static char Auswahl (char opperator){
+		switch (opperator) {
+			case '1':
+				System.out.println(""Salami Pizza hinzugefuegt.\n"");
+				Preis+= 5.50;
+				return '1';
+
+			case '2':
+				System.out.println(""Veggi Pizza hinzugefuegt.\n"");
+				Preis+= 4.30;
+				return '2';
+			
+			case '3':
+				return '3';
+
+			}
+		return opperator;
+	}		
+		
+	
+}"
+Severin,"Simon Lukas",s.severin@campus.tu-berlin.de,Beendet,"6. Dezember 2021  10:00","12. Dezember 2021  19:09","6 Tage 9 Stunden","4,97","0, 1, 2",fdb,2,char string;,8.5,int,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"","""","""","""","""","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""fib(a)""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""4"",""""],[""10(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""5"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""""],[""13"",""-"",""-"",""-"",""-"",""-"",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        //Hier soll das Array deklariert und initialisiert werden!
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+	public static float geld = 0.0f;
+	public static byte rabatt = 0;
+	public static byte wahl = 0;
+	
+	public static void main(String[] args) {
+		Terminal.println(""Willkommen! Bestellung:\n"");
+		System.out.print(""'1' Salami Pizza 5.50Euro\n"" +
+						 ""'2' Veggi Pizza 4.30Euro\n"" +
+						 ""'3' Ende\n"");
+		do {
+			
+					
+		byte wahl = Terminal.readByte();
+		switch(wahl) {
+		case 1:
+			geld = geld + 5.50f;
+			Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+			System.out.print(""'1' Salami Pizza 5.50Euro\n"" +
+							""'2' Veggi Pizza 4.30Euro\n"" +
+							""'3' Ende\n"");
+							 
+			break;	
+		case 2:
+			geld = geld + 4.30f;
+			Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+			System.out.print(""'1' Salami Pizza 5.50Euro\n"" +
+							""'2' Veggi Pizza 4.30Euro\n"" +
+							""'3' Ende\n"");
+			
+			break;	
+			
+		case 3:
+			
+			byte entfernung = Terminal.askByte(""Bitte Lieferentfernung [km] eingeben:\n"");
+			
+			if(entfernung <= 2 || entfernung >= 20) {
+				rabatt += 10;
+			}
+			if(geld >= 10.0f && geld < 20.0f){
+				rabatt += 10;
+			}
+			if(geld >= 20.0f){
+				rabatt += 20;
+			}
+			
+		
+			geld = (geld / 100) * (100 - rabatt);
+			
+			System.out.print(""Rabatt: ""+rabatt+""%\n"");
+			System.out.print(""Endpreis: ""+geld+""Euro"");
+			System.exit(0);
+			
+		}
+		}while(wahl <3);
+	}
+}"
+Abele,Sophie,s.abele@campus.tu-berlin.de,Beendet,"6. Dezember 2021  10:19","12. Dezember 2021  22:48","6 Tage 12 Stunden","6,50",n-1,char string;,3,"den gleichen Datentyp.",3,"zahlen = new int[3];","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""undef"",""undef"",""undef"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""4"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2""],[""6"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char [][] array = new char [breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+public static void main (String[] args){
+	int n = Terminal.askInt(""Länge"");
+	int [] schlange = new int [n];
+	int eintrag = 0;
+	for(int i=0; i<n; i++){
+		schlange[i]=Terminal.askInt(""Zahlen eingeben"");
+		eintrag += schlange[i]/n;
+}
+	int max = schlange[0];
+	Terminal.println(indexOfMax(Terminal.askIntArray("""")));
+}
+public static int indexOfMax(int schlange [] ){
+	int max = schlange[0];
+	int i = schlange.length;
+	if(schlange[i]>max){
+		max = schlange[i];
+	}
+	return max;
+}
+}","public class Pizza {
+public static void main (String[] args){
+	float Salami = (float) 5.5;
+	float Veggi = (float) 4.3;
+
+	    Terminal.print(""Willkommen! Beststellung\n:"");
+	    System.out.println(""'1' Salami Pizza 5.50Euro"");
+	    System.out.println(""'2' Veggi Pizza 4.30Euro"");
+	    System.out.println(""'3' Ende"");
+	    
+	    int choice = 0;
+         float preis;
+	    while (choice<3){
+	    choice = Terminal.askInt(""\n"");
+	 	System.out.println(""'1' Salami Pizza 5.50Euro"");
+	    System.out.println(""'2' Veggi Pizza 4.30Euro"");
+	    System.out.println(""'3' Ende"");
+
+        switch (choice) {
+            case 1: 
+            	System.out.println(""Salami Pizza hinzugefuegt.\n""); 
+	   			break;
+            case 2: 
+            	System.out.println(""Veggi Pizza hinzugefuegt.\n"");
+                 break;
+        }  
+                if (choice == 1){
+            preis = 0;
+            preis = preis + Salami;
+            if(choice == 2){
+                preis = preis + Veggi;
+            }
+        }
+        }
+        
+        int entfernung = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:"");
+        if(entfernung>=20 || entfernung <=2){
+           float Endsumme = (float)preis*(float)0.9;
+            Terminal.println(Endsumme);
+        }
+}
+}"
+Alder,Tim,tim.alder@campus.tu-berlin.de,Beendet,"6. Dezember 2021  10:28","12. Dezember 2021  16:34","6 Tage 6 Stunden","13,30",new,n-1,geca,int[],"0, 1, 2",-3.5,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""4"",""""],[""11(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""",""-"",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+   public static void main(String[] args) {
+    int[] userinput = Terminal.askIntArray(""Queue:\n"");
+    //Terminal.println(userinput);
+    for (int i=userinput.length; i >0; i--){
+        int biggestvalue = indexOfMax(userinput);
+        Terminal.println(userinput[biggestvalue]);
+        userinput[biggestvalue] = Integer.MIN_VALUE;
+    }
+    //Terminal.println(""Danke Ende"");
+   } 
+
+   public static int indexOfMax(int[] b){
+    int starter = 0;
+    int index = 0;
+
+    for (int i=0; i<b.length; i++){
+        if (b[i]> starter){
+            starter = b[i];
+            index = i;
+        } 
+    }
+/*
+    if(b.length>=0){
+        //Terminal.println(index + "" Abgearbeitet"");
+        return index; //return Array space of biggest value 
+    }else{
+        
+    }
+*/
+    if (b.length==0){
+        Terminal.println(""Er schreibt -1"");
+        return -1; //alle Arrayelemente abgearbeitet
+    } else {
+        return index; //return Array space of biggest value
+    }
+}
+}","public class Pizza {
+    public static void main(String[] args) {
+        float preis = 0;
+        Terminal.println(""Willkommen! Bestellung: \n"");
+        for(int input = askUser(); input <3; input = askUser()) {
+            //Terminal.println(""bin im loop"");
+            preis = calculatePrice(input, preis);
+        }
+
+        int entf = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben: \n"");
+        int rabatt = 0;
+
+        if ((entf <= 2) || (entf >= 20)){
+            rabatt= 10;
+            //Terminal.println(rabatt + ""Entferhnung"");
+        }
+
+        if (preis >20){
+            rabatt += 20;
+            //Terminal.println(rabatt + "" preis >20"");
+        }
+        else if (preis >10){
+            rabatt += 10;
+            //Terminal.println(rabatt + "" preis >10"");
+        }
+
+
+
+        float endpreis =  calcEndPreis(rabatt, preis);
+        Terminal.println(""Rabatt: "" + rabatt  + ""%"");
+        Terminal.println(""Endpreis: "" + endpreis +""Euro"");
+    }
+
+    public static int askUser() {
+        return Terminal.askInt(""'1' Salami Pizza 5.50Euro \n'2' Veggi Pizza 4.30Euro \n'3' Ende \n"");
+      
+    }
+
+    public static float calculatePrice(int i, float b) {
+        if (i == 1){
+            b += 5.50;
+            Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+
+        }
+        else if (i== 2){
+            b += 4.30;
+            Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+        }
+        //Terminal.println(b);
+        return b;
+    }
+
+    public static float calcEndPreis(int rab, float prei){
+        float endpr = 0;
+        endpr = prei;
+        //Terminal.println(""hier ist der übergebene Preis in der rabattfunkt: "" + endpr);
+        endpr -= ((prei/100)*rab);
+
+        return endpr;
+    }
+
+    
+}"
+Streese,"Lennart Soeren",l.streese@campus.tu-berlin.de,Beendet,"6. Dezember 2021  11:00","12. Dezember 2021  21:14","6 Tage 10 Stunden","6,50",-3.5,"zahlen = new int[3];",2,n-1,"1, 1, 2","den gleichen Datentyp.","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""undef"",""undef"",""undef"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""-"",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""-"",""""],[""5"","""","""","""","""","""",""1.5""],[""6"",""-"",""-"",""-"",""-"","""",""-""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2]; //Hier soll das Array deklariert und initialisiert werden!
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+   	public static void main(String[] args) {
+        int summe = pizzaBerechnung(0);
+        System.out.println(summe);
+    }
+    
+    public static int pizzaBerechnung(int total) {
+        int scannerZahl = 0; 
+        
+        if(scannerZahl == 1) {
+            total += 5;
+            pizzaBerechnung(total);
+        }
+        else if(scannerZahl == 3) {
+            return total;
+        }
+        
+        return total; 
+}
+}"
+Özmen,"Fevzi Alperen",f.oezmen@campus.tu-berlin.de,Beendet,"6. Dezember 2021  13:32","11. Dezember 2021  21:15","5 Tage 7 Stunden","9,30","zahlen = new int[3];",3,3,"1, 1, 2",new,int,"[[""3"",""0"",""0"",""0"",""0"",""-"",""-""],[""4"",""0"",""1"",""0"",""0"",""-"",""-""],[""5"",""0"",""1"",""0"",""0"",""-"",""undef""],[""9"",""0"",""1"",""0"",""0"",""2"",""undef""],[""10"",""0"",""1"",""1"",""0"",""2"",""undef""],[""9"",""0"",""1"",""1"",""0"",""3"",""undef""],[""10"",""0"",""1"",""1"",""2"",""3"",""undef""],[""5"",""0"",""1"",""1"",""2"",""3"",""2.0""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        //Hier soll das Array deklariert und initialisiert werden!
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","import java.util.Scanner;
+
+public class Pizza {
+    
+    public static void main(String[] args){
+        
+        int helper = 0;
+        double preis = 0;
+        int rabatt = 0;
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println(""Willkommen! Bestellung:\n"");
+        
+        do{
+            System.out.println(""\n'1' Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende"");
+            
+            String string = scanner.nextLine();
+            int menu = Integer.parseInt(string);
+            helper=menu;
+            
+            if(menu==1){
+              preis=preis+5.50;  
+              System.out.println(""Salami Pizza hinzugefuegt."");
+            }
+            
+            if(menu==2){
+              preis=preis+4.30;  
+              System.out.println(""Veggi Pizza hinzugefuegt."");
+            }
+            
+        }while(helper!=3); 
+        
+        System.out.println(""Bitte Lieferentfernung [km] eingeben:"");
+        
+        String string1 = scanner.nextLine();
+        int kilometer = Integer.parseInt(string1);
+        
+        if(kilometer<=2)
+        rabatt= rabatt+10;
+        
+        if(kilometer>=20)
+        rabatt= rabatt+10;
+        
+        if(preis>=10)
+        rabatt= rabatt+10;
+        
+        if(preis>=20)
+        rabatt= rabatt+10;
+        
+        
+        double preisRabatt = (preis/100)*(100-rabatt);
+        preisRabatt = Math.round(preisRabatt*100)/100.0;;
+        
+        System.out.println(""Rabatt: ""+rabatt+""%"");
+        System.out.println(""Endpreis: "" + preisRabatt + ""Euro"");
+    }
+    
+    
+}"
+Hafez,"Laila Hazem Ahmed Hamdy",l.hafez@campus.tu-berlin.de,Beendet,"6. Dezember 2021  13:41","12. Dezember 2021  21:59","6 Tage 8 Stunden","3,50",3,"den gleichen Datentyp.",-3.5,int[],char string;,"0, 1, 2","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"","""","""","""","""","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""undef""],[""6"","""","""","""","""","""",""""],[""8"","""","""","""","""","""",""""],[""9"","""","""","""","""",""2"",""""],[""10"","""","""","""","""","""",""""],[""11"","""","""","""","""","""",""""],[""12"","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""",""-"",""-"",""-"",""-"",""-"",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        int [] [] array;
+        array = new int
+	    for (int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    public static int indexOfMax (int max);
+    int min = Terminal.askIntArray (""Queue:\n"");
+    return math.max (min);
+    System.out.println (""-1"");
+}
+public static void main (String[] args){
+    int min (Queue) = Integer.MIN_VALUE ;}","public class Pizza {
+     public static void main(String[] args) {
+        System.out.println(""Willkommen! Bestellung:"");
+        System.out.println(""1: Salami Pizza 5.50 €"");
+        System.out.println(""2: Veggi Pizza 4.30 €"");
+        System.out.println(""3: Ende"");
+        float o = Terminal.askFloatArray (""Queue:\n"");
+        float sum;
+        do {
+         if (o == 1) {
+                sum += 5.50f;
+                System.out.println (""Salami Pizza hinzugefuegt"");
+            }
+            if (o == 2) {
+                sum += 4.30f;
+                System.out.println (""Veggi Pizza hinzugefuegt"");
+            }}
+            while (o != 3);
+    if (o == 3) {
+    int e =Terminal.askIntArray(""Queue:\n"");
+    System.out.println (""Bitte Lieferentfernung [km] eingeben:"");
+    if (e <= 2 || e>= 20) {
+     System.out.println (""Rabatt: 10%"");   
+    sum -= (sum/100)*10;
+     }
+    if (sum > 10) {
+    sum-= (sum/100)*10;
+     System.out.println (""Rabatt: 10%"");   
+    }
+    if (sum >= 20) {
+    sum -=(sum/100)*20;
+    System.out.println (""Rabatt: 20%"");   
+     }
+    System.out.println (""Endpreis"" + sum );  
+        
+        
+        
+    }}
+
+}"
+Leonardo,"Louie Alessandre De",louie.ad.leonardo@campus.tu-berlin.de,Beendet,"6. Dezember 2021  15:48","7. Dezember 2021  12:41","20 Stunden 53 Minuten","14,30","zahlen = new int[3];",char string;,geca,"1, 1, 2",3,"den gleichen Datentyp.","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"",""\n\n\n\n"","""",""1"","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""",""2"","""",""""],[""11(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""",""-"",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""],[""14"","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+
+    public static void frame() {
+           //Hier soll das Array deklariert und initialisiert werden!
+        char[][] array = new char[breite+2][hoehe+2];
+        for(int i = 0; i <= (hoehe+1); i++) {
+            for(int j = 0; j <= (breite+1); j++) {
+                if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+                    System.out.print(""A"");
+                    array[j][i] = 'A';
+                }
+                else {
+                    System.out.print(""B"");
+                    array[j][i] = 'B';
+                }
+            }
+            System.out.print(""\n"");
+        }
+
+        System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+        for(int i = 0; i <= (hoehe+1); i++){
+            for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+            System.out.print(""\n"");
+        }
+    }
+    public static void main(String[] args){
+        frame();
+    }
+}","public class Queue {
+    public static int min = Integer.MIN_VALUE;
+    public static void main(String[] args) {
+        int[] x =  Terminal.askIntArray(""Queue:\n"");
+        for(int i = 0; i< x.length; i++){
+            Terminal.println(x[indexOfMax(x)]);
+            x[indexOfMax(x)] = min;
+        }
+    }
+    public static int indexOfMax(int[] x){
+        int a = 0;
+        int max = x[0];
+        int maxIndex = 0;
+        for(int i = 1; i < x.length; i++){
+            if(x[i]>max){
+                maxIndex = i;
+                max = x[i];
+                }
+            }
+        for(int i = 0; i < x.length; i++){
+            if(x[i] ==min){
+                a += 1;
+            }
+        }
+        if( a == x.length){
+            maxIndex = -1;
+        }
+        return maxIndex;
+        }
+
+}","public class Pizza {
+    public static void main(String[] args) {
+        boolean bestellen = true;
+        float Preis = 0.f;
+        Terminal.println(""Willkommen! Bestellung:\n"");
+        do {
+            menu();
+            int option = Terminal.askInt("""");
+            if (option == 1) {
+                Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+                Preis += 5.5;
+            }
+            else if (option == 2) {
+                Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+                Preis += 4.3;
+            }
+            else if (option == 3) {
+                bestellen = false;
+                int e = discount(Preis);
+                Terminal.println(""Rabatt: ""+e+""%"");
+                Terminal.println(""Endpreis: ""+calc(Preis,e)+""Euro"");
+            }
+            else {
+                Terminal.println(""Bitte richtige Angabe eingeben!"");
+            }
+
+        }
+        while (bestellen);
+    }
+
+    public static void menu(){
+        Terminal.println(""'1'"" +
+                "" Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende"");
+    }
+    public static int discount(float c){
+        int a = 0;
+        int e = 0;
+        float b = Terminal.askFloat(""Bitte Lieferentfernung [km] eingeben:\n"");
+        if(b >= 0 && b <= 2 || b >= 20) {
+            a = 10;
+        }
+        if(c > 10 && 20 >= c){
+            e = 10;
+        }
+        else if (c > 20){
+            e = 20;
+        }
+        return a+e;
+    }
+    public static double calc(float g, int f){
+        float h = (g/100)*(100-f);
+        return Math.round(h * 100.0) / 100.0;
+    }
+
+}"
+Döring,Oliver,o.doering@campus.tu-berlin.de,Beendet,"6. Dezember 2021  16:41","12. Dezember 2021  22:58","6 Tage 6 Stunden","9,00",geca,char string;,3,2,new,"zahlen[0] = 1;","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""undef"",""undef"",""undef"","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""undef""],[""8(5)"","""","""","""","""","""",""""],[""9"","""","""","""","""",""2"",""""],[""10"","""","""","""","""","""",""""],[""11"","""","""","""","""","""",""""],[""5(11)"","""","""","""","""","""",""""],[""6"","""","""","""","""","""",""""],[""7"","""","""","""","""","""",""""],[""8"","""","""","""","""","""",""""],[""9"","""","""","""","""","""",""""],[""12(9)"","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char [][] array = new char [breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+    public static void main (String[]args)
+    {
+        float preis = 0;
+        int weg;
+        float rabatt1 = 0;
+        float rabatt2 = 0;
+        float rabattGES;
+        int eingabe;
+        Terminal.println (""Willkommen! Bestellung: "");
+        
+        do {
+            Terminal.println("""");
+            Terminal.println(""'1' Salami Pizza 5.50Euro"");
+            Terminal.println(""'2' Veggi Pizza 4.30Euro"");
+            Terminal.println(""'3' Ende"");
+            eingabe = Terminal.readInt();
+            if (eingabe == 1)
+            {
+                preis = preis + 5.50f;
+                Terminal.println(""Salami Pizza hinzugefuegt."");
+            }
+            else if (eingabe == 2)
+            {
+                preis = preis + 4.30f;
+                Terminal.println(""Veggi Pizza hinzugefuegt."");
+            }
+        }
+        while (eingabe != 3);
+        if (preis > 10&& preis < 20)
+        {
+            rabatt1 = 0.1f;
+        }
+        else if (preis > 20)
+        {
+            rabatt1 = 0.2f;
+        }
+        Terminal.println(""Bitte Lieferentfernung [km] eingeben:"");
+        weg = Terminal.readInt();
+        if (weg <= 2)
+        {
+            rabatt2 = 0.1f;
+        }
+        else if (weg >= 20)
+        {
+            rabatt2 = 0.1f;
+        }
+        rabattGES = rabatt1 + rabatt2;
+        preis = preis - (preis * rabattGES);
+        rabattGES = rabattGES*100;
+        Terminal.println(""Rabatt: "" +(int)rabattGES+ ""%"");
+        Terminal.println(""Endpreis: "" +preis+ ""Euro"");
+    }
+    
+}"
+Dilmaghani,Ardeshir,dilmaghani@campus.tu-berlin.de,Beendet,"6. Dezember 2021  18:11","12. Dezember 2021  23:59","6 Tage 5 Stunden","10,74",int[],"den gleichen Datentyp.",-3.5,geca,new,char string;,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""undef"",""undef"",""undef"","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""""],[""8"","""","""","""","""","""",""""],[""9"","""","""","""","""",""2"",""""],[""10"","""","""","""","""","""",""""],[""11"","""","""","""","""",""3"",""""],[""9"","""","""","""","""","""",""""],[""10"","""","""","""","""","""",""""],[""11"","""","""","""","""",""4"",""""],[""12"","""","""","""","""","""",""2.0""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        int[][] array = new int[8][5];
+
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Terminal Datei für Int Arrays aus:
+    // Terminal.askIntArray(""Queue:\n"");
+
+    public static void main(String[] args) {
+        int[] queue = Terminal.askIntArray(""Queue:\n"");
+        while (true) {
+            int maxIndex = indexOfMax(queue);
+            if (maxIndex < 0) {
+                break;
+            }
+            int maxValue = queue[maxIndex];
+            Terminal.println(maxValue);
+            queue[maxIndex] = Integer.MIN_VALUE;
+        }
+    }
+
+    public static int indexOfMax(int[] queue) {
+        int maxIndex = -1;
+        for (int i = 0; i < queue.length; i++) {
+            if (queue[i] == Integer.MIN_VALUE) {
+                continue;
+            }
+            if (maxIndex == -1 || queue[i] > queue[maxIndex]) {
+                maxIndex = i;
+            }
+        }
+        return maxIndex;
+    }
+}","public class Pizza{
+    
+    public static void main(String[] args) {
+        double preis = 0;
+        int bestellung = Terminal.askInt(""Willkommen! Bestellung:"" + ""\n"" + ""\n"" +
+                 ""'1' Salami Pizza 5.50Euro"" + ""\n"" + ""'2' Veggi Pizza 4.30Euro"" +""\n""  +
+                ""'3' Ende"" +""\n"");
+        while(bestellung != 3){
+            if(bestellung == 1){
+                System.out.println(""Salami Pizza hinzugefuegt."" +""\n"");
+                bestellung = Terminal.askInt(""'1' Salami Pizza 5.50Euro"" + ""\n"" + ""'2' Veggi Pizza 4.30Euro"" +""\n""  +
+                ""'3' Ende"" +""\n"");
+                preis = preis + 5.5;
+            }
+            if(bestellung == 2){
+                System.out.println(""Veggi Pizza hinzugefuegt."" +""\n"");
+                bestellung = Terminal.askInt(""'1' Salami Pizza 5.50Euro"" + ""\n"" + ""'2' Veggi Pizza 4.30Euro"" +""\n""  +
+                ""'3' Ende""+ ""\n"");
+                preis = preis + 4.3;
+
+        }
+    
+
+    }
+        int lieferentfernung = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben: "" +""\n"");
+        int rabatt = 0;
+        if(lieferentfernung <= 2){
+            rabatt = rabatt + 10;
+        }
+        else if (lieferentfernung >= 20){
+            rabatt = rabatt + 10;
+        }
+        if(preis > 10){
+            rabatt = rabatt + 10;
+        }
+        if (preis > 20){
+            rabatt = rabatt + 10;
+        }
+        
+        
+        double endpreis =preis - preis * rabatt / 100;
+        
+        Terminal.println(""Rabatt: ""+rabatt +""%""+""\n"" +""Endpreis: "" + endpreis+""Euro"");
+
+        
+
+        
+}
+}"
+Korth,Benjamin,b.korth@campus.tu-berlin.de,Beendet,"7. Dezember 2021  12:47","10. Dezember 2021  13:39","3 Tage","11,50","zahlen = new int[3];",3,"den gleichen Datentyp.","1, 1, 2",n-1,new,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""",""1"","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""",""2"","""",""""],[""11(5)"","""","""","""","""",""-"",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+       char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+	
+	public static void main (String[] args) {
+		float preisSalami = 0f;
+		float preisVeggie = 0f;
+		float preisG = 0f;
+		System.out.println(""Willkommen! Bestellung:\n"");
+		menu();
+	
+		for (char auswahl = Terminal.readChar(); auswahl != '3'; auswahl = Terminal.readChar() ) {
+		
+			switch (auswahl) {
+				case '1': 
+				preisSalami = 5.50f;
+				preisG += preisSalami;
+				System.out.println(""Salami Pizza hinzugefuegt."");
+				menu();
+				break;
+				case '2':
+				preisVeggie = 4.30f;
+				preisG += preisVeggie;
+				System.out.println(""Veggi Pizza hinzugefuegt."");
+				menu();
+				break;
+			}
+		}
+	int entfernung = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+	float Rabatt = 0f;
+	if (entfernung <= 2) {
+		Rabatt += 10f; 
+	}
+	if (entfernung >= 20) {
+		Rabatt += 10f; 	
+	}
+	if (preisG > 10f) {
+		Rabatt += 10f; 
+	}
+	if (preisG > 20f) {
+		Rabatt += 10f;
+	}
+	 preisG =  (preisG - (preisG*(Rabatt/100f)));
+	System.out.println(""Rabatt: "" + (int)Rabatt + ""%"");
+	System.out.println(""Endpreis: "" + preisG + ""Euro"");
+	
+	}
+	public static void menu() {
+		System.out.println( 
+							""'1' Salami Pizza 5.50Euro\n"" +
+							""'2' Veggi Pizza 4.30Euro\n"" +
+							""'3' Ende"");
+	}
+}"
+Fischer,"Niklas Alexander Tiberius",fischer.12@campus.tu-berlin.de,Beendet,"7. Dezember 2021  13:09","12. Dezember 2021  19:31","5 Tage 6 Stunden","9,00","{1,2}",new,"0, 1, 1",8.5,int,"zahlen = new int[3];","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""undef"",""undef"",""undef"","""",""""],[""4"","""",""1"","""","""","""",""""],[""5(8)"","""","""","""","""","""",""""],[""5(9)"","""","""","""","""",""2"",""""],[""5(10)"",""0"",""1"",""1"",""0"","""",""""],[""5(8)"","""","""","""","""","""",""""],[""5(9)"","""","""","""","""",""3"",""""],[""5(10)"",""0"",""1"",""1"",""2"","""",""""],[""5(11)"","""","""","""","""",""-"",""""],[""5(12)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""],[""13"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        //Hier soll das Array deklariert und initialisiert werden!
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza{
+	
+	public static void main (String[] args){
+		
+		System.out.println(""Willkommen! Bestellung:\n"");
+		
+		float pizzasumme=0.000f;
+		
+		for(int i=0;i<1000;i++){
+			int welchepizza=Terminal.askInt(""'1' Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende\n"");
+			
+			if (welchepizza==1){
+				System.out.println(""Salami Pizza hinzugefuegt.\n"");
+				pizzasumme+=5.500f;
+			}
+			else if (welchepizza==2){
+				System.out.println(""Veggi Pizza hinzugefuegt.\n"");
+				pizzasumme+=4.300f;
+			}
+			else if (welchepizza==3){
+				break;
+			}
+			else {
+				System.out.println(""Diese Option steht nicht zur Wahl"");
+			}
+		}
+		
+		int entfernung=Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+		float endpreis=0.00f;
+		int rabatt=0;
+		
+		if(entfernung<=2&&pizzasumme>=20.0){
+			endpreis=pizzasumme-((pizzasumme/100.00f)*30.00f);
+			rabatt+=30;
+		}
+		else if(entfernung<=2&&pizzasumme>=10&&pizzasumme<20){
+			endpreis=pizzasumme-((pizzasumme/100.00f)*20.00f);
+			rabatt+=20;
+		}
+		else if(entfernung<=2){
+			endpreis=pizzasumme-((pizzasumme/100.00f)*10.00f);
+			rabatt+=10;
+		}
+		else if(entfernung>=20&&pizzasumme>=20.0){
+			endpreis=pizzasumme-((pizzasumme/100.00f)*30.00f);
+			rabatt+=30;
+		}
+		else if(entfernung>=20&&pizzasumme>=10&&pizzasumme<20){
+			endpreis=pizzasumme-((pizzasumme/100.00f)*20.00f);
+			rabatt+=20;
+		}
+		else if(entfernung>=20){
+			endpreis=pizzasumme-((pizzasumme/100.00f)*10.00f);
+			rabatt+=10;
+		}
+		else if(pizzasumme>=10&&pizzasumme<20){
+			endpreis=pizzasumme-((pizzasumme/100.00f)*10.00f);
+			rabatt+=10;
+		}
+		else if(pizzasumme>=20.0){
+			endpreis=pizzasumme-((pizzasumme/100.00f)*20.00f);
+			rabatt+=20;
+		}
+		else{
+			endpreis=pizzasumme;
+		}
+		
+		System.out.println(""Rabatt: ""+rabatt+""%\nEndpreis: ""+endpreis+""Euro"");
+			
+	}		
+}"
+Schulz,Justin,justin.schulz@campus.tu-berlin.de,Beendet,"7. Dezember 2021  14:16","12. Dezember 2021  20:00","5 Tage 5 Stunden","13,75",-3.5,geca,new,"1, 1, 2",n-1,"zahlen = new int[3];","[[""2"",""-"",""-"",""-"",""-"",""undef"",""-""],[""3"",""undef"",""undef"",""undef"",""undef"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""",""-"",""""],[""5"","""","""","""","""","""",""""],[""6"",""-"",""-"",""-"",""-"","""",""-""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+	public static void main(String[] args){
+	int[] array = Terminal.askIntArray(""Queue:\n"");
+	for(int i = 0; i < array.length; i++){
+	System.out.println( array[indexOfMax(array)] );
+	array[indexOfMax(array)] = 0;
+	}
+	}
+	
+	
+	public static int indexOfMax(int[] array){
+		int max=Integer.MIN_VALUE;
+		int index=0;
+		int i;
+		for(i = 0; i < array.length; i++){
+			
+			if(max < array[i]){
+				max = array[i];
+				index = i;
+			}
+		}
+		if(max > Integer.MIN_VALUE){
+		return index;
+		}else{
+			return -1;
+			
+		}
+	}
+    
+    
+}","public class Pizza {static float preis;
+	public static void main(String[] args){
+		
+		int eingabe;
+		int entfernung;
+System.out.println(""Willkommen! Bestellung:\n"");
+
+do{
+
+
+eingabe = Terminal.askInt(""\'1\' Salami Pizza 5.50Euro\n\'2\' Veggi Pizza 4.30Euro\n\'3\' Ende\n"");
+switch (eingabe){
+case 1:
+System.out.println(""Salami Pizza hinzugefuegt.\n"");
+preis += 5.50;
+break;
+case 2:
+System.out.println(""Veggi Pizza hinzugefuegt.\n"");
+preis += 4.30;
+break;
+case 3:
+entfernung = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+System.out.println(""Rabatt: ""+(int)((1-rabatt(preis, entfernung))*100) + ""%"");
+float endpreis = (preis * rabatt(preis, entfernung))*100; 
+
+System.out.println(""Endpreis: ""+(float)Math.round(endpreis)/100+""Euro"");
+break;
+default:
+eingabe=Terminal.askInt(""Eingabe ungültig"");
+}}while(eingabe != 3);
+}
+	public static float rabatt(float kosten, int entfernung){
+		float spar = 1;
+		if(kosten > 10){
+			spar -= 0.1;
+			
+			if(kosten > 20){
+				spar -= 0.1;
+			}	
+		}
+		if(entfernung <= 2 || entfernung >= 20){
+			spar -= 0.1;
+		} return spar;
+	}
+}"
+Panagiotidis,Sokratis,sokratis.panagiotidis@campus.tu-berlin.de,Beendet,"7. Dezember 2021  15:02","12. Dezember 2021  11:16","4 Tage 20 Stunden","10,75",geca,char string;,int[],n-1,"den gleichen Datentyp.","1, 1, 2","[[""2"",""-"",""-"",""undef"",""undef"",""-"",""-""],[""3"","""","""","""","""","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""-"",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+    public static void main(String[] args) {
+		float sa = 5.50f;
+		float ve = 4.30f;
+		float summe = 0.00f;
+		float rabatt1 = 0.00f;
+		float rabatt2 = 0.00f;
+		
+		Terminal.println(""Willkommen! Bestellung: \n""+""\n"" + ""'1' Salami Pizza 5.50Euro\n""+""'2' Veggi Pizza 4.30Euro \n""+""'3' Ende"" +""\n"");
+		
+		for(int i = Terminal.askInt(""\n"");i==1 || i==2;i = Terminal.askInt(""\n"")) {
+			if(i==1) {
+				Terminal.println(""Salami Pizza hinzugefuegt. \n"");
+				summe = summe + sa;
+				Terminal.println(""\n"" + ""'1' Salami Pizza 5.50Euro\n""+""'2' Veggi Pizza 4.30Euro \n""+""'3' Ende"");
+			}
+			if(i==2) {
+				Terminal.print(""Veggi Pizza hinzugefuegt. \n"");
+				summe = summe + ve;
+				Terminal.print(""'1' Salami Pizza 5.50Euro\n""+""'2' Veggi Pizza 4.30Euro \n""+""'3' Ende"");
+			}
+			if(summe >10 && summe>20) {
+				rabatt2 = 0.20f;
+			} else if(summe>10 && summe<20) {
+				rabatt2 = 0.10f;
+			} else if(summe<10) {
+				rabatt2 = 0.00f;
+			}
+		}
+		int e = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben: \n"");
+		if(e<=2 || e >= 20) {
+			rabatt1 = 0.10f;
+		} else {
+			rabatt1 = 0.00f;
+		}
+		int rabatt = (int) ((rabatt1+rabatt2)*100);
+		Terminal.println(""Rabatt: ""+rabatt+""%"");
+		summe = summe - summe * (rabatt1+rabatt2);
+		Terminal.println(""Endpreis: ""+summe+""Euro"");
+	}
+}"
+Hother,"Julika Anais",j.hother@campus.tu-berlin.de,Beendet,"7. Dezember 2021  15:15","12. Dezember 2021  22:24","5 Tage 7 Stunden","12,75",geca,3,"0, 1, 2",-3.5,new,"den gleichen Datentyp.","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""undef"",""undef"",""undef"","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""undef""],[""8(5)"","""","""","""","""","""",""""],[""9"","""","""","""","""",""2"",""""],[""10"","""","""","""","""","""",""""],[""11"","""","""","""","""","""",""""],[""9(11)"","""","""","""","""",""3"",""""],[""10"","""","""","""","""","""",""""],[""11"","""","""","""","""","""",""""],[""9(11)"","""","""","""","""",""4"",""""],[""12"","""","""","""","""","""",""2.0""],[""13"","""","""","""","""","""",""""],[""5(13)"","""","""","""","""","""",""""],[""6"","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite + 2][hoehe + 2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    public static void main(String[] args) {
+        int[] benutzerInnenEingabe = Terminal.askIntArray(""Queue:\n"");
+        for(int i = 0; i < benutzerInnenEingabe.length; i++){
+            int maxWertIndex = indexOfMax(benutzerInnenEingabe);
+            int ausgabe = benutzerInnenEingabe[maxWertIndex];
+            System.out.println(ausgabe);
+            benutzerInnenEingabe[maxWertIndex] = Integer.MIN_VALUE;
+        }
+        
+    }
+    
+    public static int indexOfMax(int[] arr){
+        int max = arr[0];
+        int index = 0;
+        for(int i = 1; i< arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+                index = i;
+            }
+        }
+        if(max < 0){
+            return -1;
+        }else{
+            return index;
+            
+        }
+    }
+    
+}","public class Pizza {
+     public static void main(String[] args) {
+        char eingabe = '0';
+        float preis = 0.0f;
+
+        System.out.print(""Willkommen! Bestellung:\n\n"");
+			            
+        while (eingabe != '3') {
+             System.out.print(""'1' Salami Pizza 5.50Euro\n"" +
+			             ""'2' Veggi Pizza 4.30Euro\n"" +
+			             ""'3' Ende\n"");
+        
+        eingabe = Terminal.readChar();
+        preis += bestellungBerechnen(eingabe);
+        }
+
+        int entfernung = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+
+        float rabattFaktor = rabattBerechnung(entfernung,preis);
+        float endpreis = preis * rabattFaktor;
+        endpreis = (float) Math.round(endpreis * 100.0f) /100.0f;
+
+        System.out.print(""Endpreis: ""+endpreis+""Euro"");
+
+    }
+
+    public static float bestellungBerechnen(char x){
+       
+        if(x=='1'){
+			Terminal.println(""Salami Pizza hinzugefuegt.\n""); 
+            return 5.5f;
+        }		
+        else if(x=='2'){
+		    Terminal.println(""Veggi Pizza hinzugefuegt.\n""); 
+            return 4.3f;
+        }	
+        return 0.0f;	
+	}
+
+    public static float rabattBerechnung(int entfernung, float preis) {
+        int rabatt = 0;
+        float rabattFaktor = 1.0f;
+        if(entfernung <=2 || entfernung >=20 ){
+        rabatt += 10;
+        rabattFaktor -= 0.1f;
+        }
+
+        if(preis >= 10){
+        rabatt += 10;
+        rabattFaktor -= 0.1f;
+        }
+
+        if(preis >= 20){
+        rabatt += 10;
+        rabattFaktor -= 0.1f;
+        }
+
+        System.out.print (""Rabatt: ""+rabatt+""%\n"");
+        return rabattFaktor;
+}
+}"
+Hock,"Katharina Maria",hock@campus.tu-berlin.de,Beendet,"7. Dezember 2021  16:43","12. Dezember 2021  23:57","5 Tage 7 Stunden","12,42","zahlen = new int[3];",new,3,hfdb,n+1,"1, 1, 2","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""",""1"","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""",""2"","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""4"",""""],[""11(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""",""-"",""""],[""5"","""","""","""","""","""",""2""],[""6"",""-"",""-"",""-"",""-"",""-"",""-""]]","public class Framed {
+public static int breite = 6;
+    public static int hoehe = 3;
+	
+	public static void main(String args[]){
+		frame();
+	}
+	
+    
+    public static void frame() {
+		int[][] array = new int[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+              if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+
+
+	
+}","public class Queue {
+   public static void main(String args[]){
+		int[] A = Terminal.askIntArray(""Queue:\n"");
+		for(int i = 0; i < A.length; i++){
+			int position = indexOfMax(A);
+			System.out.println(A[position]);
+			A[position] = Integer.MIN_VALUE;
+	}
+	}
+	
+	
+	public static int indexOfMax(int A[]){
+	int position = 0;
+	int m = A[0];
+	if(A.length == 0){
+		return -1;
+	}
+	for(int i = 0; i<A.length; i++){
+		if(m < A[i]){
+			position = i;
+			m = A[i];
+			
+			} 
+		
+	} return position;
+	} 
+	
+	
+	
+}","public class Pizza {
+   public static void main(String args[]){
+		float preis = 0.00F;
+		float rabatt = 0;
+		System.out.println(""Willkommen! Bestellung:\n"");
+		System.out.println(""'1' Salami Pizza 5.50Euro\n"" +""'2' Veggi Pizza 4.30Euro \n"" + ""'3' Ende"" );
+		int auswahl = Terminal.askInt("""");
+		while((auswahl != 3) == true){
+		if(auswahl == 1){
+			System.out.println(""Salami Pizza hinzugefuegt.\n"");
+			preis = preis + 5.50F;
+		System.out.println(""'1' Salami Pizza 5.50Euro\n"" +""'2' Veggi Pizza 4.30Euro \n"" + ""'3' Ende"" );
+			auswahl = Terminal.askInt("""");
+			} else {
+				System.out.println(""Veggi Pizza hinzugefuegt.\n"");
+				preis = preis + 4.30F;
+		System.out.println(""'1' Salami Pizza 5.50Euro\n"" +""'2' Veggi Pizza 4.30Euro \n"" + ""'3' Ende"" );
+				auswahl = Terminal.askInt("""");
+			}
+		}
+		int entfernung = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+		if(entfernung <= 2 || entfernung >= 20){
+			rabatt = rabatt + (float)10.0;
+			}
+		if(preis > 10){
+			rabatt = rabatt + (float)10.0;
+		}	
+		if(preis > 20){
+			rabatt = rabatt + (float)10.0;
+		}
+		System.out.println(""Rabatt: "" +(int)rabatt + ""%"");
+		System.out.println(""Endpreis: "" + (preis-(rabatt/100*preis)) + ""Euro"");
+	}
+}"
+Grochla,Patrick,p.grochla@campus.tu-berlin.de,Beendet,"7. Dezember 2021  17:13","12. Dezember 2021  23:23","5 Tage 6 Stunden","14,00","zahlen = new int[3];","den gleichen Datentyp.",geca,char string;,-3.5,3,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""4"",""""],[""11(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""",""-"",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+	public static void main (String[] args) {
+		int[] x = Terminal.askIntArray(""Queue:\n"");
+		for(int i = 0; i < x.length; i++) {
+			int indexMax = indexOfMax(x);
+		Terminal.println(x[indexMax]);
+		x[indexMax] = Integer.MIN_VALUE;
+		}
+
+	}
+	public static int indexOfMax (int[] array) {
+		int max = 0;
+		int indexMax = 0;
+        for(int i = 0; i < array.length; i++) {
+            if(array[i] > max) { 
+            	max = array[i];
+            	indexMax = i;
+            }
+		}
+		return indexMax;
+
+	}
+}","public class Pizza {
+	public static void main(String[] args) {
+		Terminal.println(""Willkommen! Bestellung:\n"");
+		float x = 0;
+		for(int i = Terminal.askInt(""'1' Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende\n""); i < 3; i= Terminal.askInt(""'1' Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende\n"")) {
+
+		switch(i) {
+			case 1:
+				Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+				x += 5.5;
+				break;
+			case 2:
+				Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+				x += 4.3;
+				break;
+			}
+				
+		}
+		int y = rabatt(x);
+		float endpreis = x-((x/100)* y);
+		Terminal.println(""Endpreis: ""+endpreis+""Euro"");
+	}
+
+
+
+
+	public static int rabatt(float x) {
+		int y = 0;
+		int entfernung = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+		if (entfernung <= 2) y= 10;
+		else if (entfernung > 2 && entfernung < 19) y= 0;
+		else if(entfernung >= 20) y= 10;
+				
+
+		if(x>10 && x< 20) y += 10;
+		else if (x> 20) y += 20;
+		
+		Terminal.println(""Rabatt: ""+y+""%\n"");
+		
+		return y;
+		
+	}
+	
+}"
+Fortwengel,Louisa,louisa.fortwengel@campus.tu-berlin.de,Beendet,"7. Dezember 2021  20:57","12. Dezember 2021  23:55","5 Tage 2 Stunden","12,00",fdb,n-1,-3.5,"1, 1, 2","den gleichen Datentyp.",new,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"","""","""","""","""","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    public static void main(String[] args){
+        int queue[] = Terminal.askIntArray(""Queue:\n"");
+        for(int i = 0; i < queue.length; i++) {
+            int x = indexOfMax(queue);
+            Terminal.println(queue[x]);
+            queue[x] = Integer.MIN_VALUE;
+        }
+    }
+    public static int indexOfMax(int[] queue){
+        int max;
+        int index;
+        index = 0;
+        max = queue[index];
+        for(int i = 0; i < queue.length; i++) {
+            if(queue[i] > max) {
+                max = queue[i];
+                index = i;
+            }
+        }
+        if(max == 0){
+            return -1;
+        }
+        else{
+            return index;
+        }
+    }
+}","public class Pizza {
+    public static void main (String[] args){
+
+        System.out.println(""Willkommen! Bestellung:\n"");
+        float preis = 0.00f;
+        for(;;){
+            int auswahl = auswahl();
+            if(auswahl == 1){
+                preis = preis + 5.50f;
+                System.out.println(""Salami Pizza hinzugefuegt.\n"");
+            }
+            if(auswahl == 2){
+                preis = preis + 4.30f;
+                System.out.println(""Veggi Pizza hinzugefuegt.\n"");
+            }
+            if(auswahl == 3){
+                System.out.print(""Bitte Lieferentfernung [km] eingeben:\n"");
+                float entfernung = Terminal.readFloat();
+                int rabatt = 0;
+                if(entfernung <= 2) {
+                    rabatt = rabatt + 10;
+                }
+                if(entfernung >= 20) {
+                    rabatt = rabatt + 10;
+                }
+                if(preis <10) {
+                    rabatt = rabatt + 0;
+                }
+                if ((preis >= 10) && (preis <20)){
+                    rabatt = rabatt + 10;
+                }
+                if (preis >= 20){
+                    rabatt = rabatt + 20;
+                }
+                System.out.print(""Rabatt: "" + rabatt + ""%\n"");
+                float endpreis = (preis - ((preis/100)*rabatt));
+                System.out.print(""Endpreis: "" + endpreis + ""Euro"");
+                return;
+            }
+            if (auswahl > 2 || auswahl < 1){
+                return;
+            }
+        }
+    }
+
+    public static int auswahl() {
+        return Terminal.askInt(
+            ""'1' Salami Pizza 5.50Euro\n"" +
+            ""'2' Veggi Pizza 4.30Euro\n"" +
+            ""'3' Ende\n"");
+    }
+}"
+Soliman,Dunya,dunya.soliman@campus.tu-berlin.de,Beendet,"8. Dezember 2021  09:07","12. Dezember 2021  23:13","4 Tage 14 Stunden","2,92","zahlen[0] = 1;",boolean if;,"{1,2,3}","{1,2}",8.5,new,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""","""","""","""","""",""""],[""8"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""4"",""""],[""11(5)"","""","""","""","""",""-"",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+1][hoehe+1];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+    public static void main(String[] args) {
+}","public class Pizza {
+public static void main(String [] args){
+       
+        float preisSalamiPizza = 5.50f;
+        flaot preisVeggyPizza = 4.30f;
+        
+        System.out.println(""Willkommen! Bestellung:"");
+        System.out.println("""");
+        
+        System.out,println(""1. Salami Pizza 5,50 Euro"");
+        System.out.println(""2. Veggi Pizza 4,30 Euro"");
+        System.out.println(""3.Ende!"");
+        
+        System.out.println(""\nBitte Lieferentfernung [km] eingeben:"");
+        
+        float rabatt = 0f;
+        
+        if (eingabe <= 2 || eingabe >=20) {
+            rabatt += 10;
+           
+        if (preisGesamt >= 10 && preisGesamt < 20 ) {
+            rabatt += 10;
+        } else if (preisGesamt >= 20) {
+            rabatt += 20;
+        }
+        }
+}
+}"
+Hermanns,Paul-Henri,p.hermanns@campus.tu-berlin.de,Beendet,"8. Dezember 2021  13:42","12. Dezember 2021  22:25","4 Tage 8 Stunden","5,67",3,new,fdb,2,"1, 1, 2",int[],"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""3"",""""],[""9(5)"","""","""","""","""","""",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""4"",""""],[""9(5)"","""","""","""","""","""",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""-"",""""],[""12"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+	
+    
+    public static void frame() {
+        char[][] array = new char[8][8];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+    
+}"
+Heinrich,"Maximilian Valentino",maximilian.valentino.heinrich@campus.tu-berlin.de,Beendet,"8. Dezember 2021  15:04","12. Dezember 2021  23:59","4 Tage 8 Stunden","8,83",-3.5,int[],geca,"zahlen = new int[3];",boolean if;,"1, 1, 2","[[""1"",""-"",""-"",""-"",""-"",""-"",""-""],[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""-"",""-"",""-"",""-"",""-"",""-""],[""4"",""-"",""1"",""-"",""-"",""-"",""-""],[""5"",""-"","""",""-"",""-"",""-"",""fib(a)""],[""8(5)"",""-"","""",""-"",""-"",""-"",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""",""3"",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        
+        array = new char
+	[breite+6]
+	[hoehe+3];
+	
+    char[][] array;
+    array = new char
+    [breite+2]
+    [hoehe+2];
+    
+        //Hier soll das Array deklariert und initialisiert werden!
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+
+
+
+    public static void main(String[] args) {
+
+
+
+        float preis_Salami = 5.5f;
+
+       	float preis_Veggi = 4.3f;
+
+
+
+        Terminal.println(""Willkommen! Bestellung:\n"");
+
+
+
+        boolean ende = false;
+
+        int eingabe;
+
+        float preisGesamt = 0f;
+
+
+
+        while (!ende) {
+
+            Terminal.println(""'1' Salami Pizza "" + preis_Salami + ""0Euro"");
+
+            Terminal.println(""'2' Veggi Pizza "" + preis_Veggi + ""0Euro"");
+
+            Terminal.println(""'3' Ende"");
+
+            eingabe = Terminal.readInt();
+
+
+
+	switch (eingabe) {
+
+	    case 1: Terminal.println(""Salami Pizza hinzugefuegt.\n""); preisGesamt += preis_Salami; break;
+
+            
+
+            case 2: Terminal.println(""Veggi Pizza hinzugefuegt.\n""); preisGesamt += preis_Veggi; break;
+
+            
+
+            case 3: ende = true; break;
+
+            } 
+
+        }
+
+
+
+        Terminal.println(""Bitte Lieferentfernung [km] eingeben:"");
+
+
+
+        int rabatt = 0;
+
+        eingabe = Terminal.readInt();
+
+        
+
+	if (eingabe <= 2 || eingabe >= 20) {
+
+	rabatt = rabatt +10;}
+
+       
+
+        if (preisGesamt >= 10 ) {
+
+	rabatt = rabatt +10;
+
+       	}
+
+        
+
+        if (preisGesamt >= 20) {
+
+        rabatt = rabatt +10;
+
+        }
+
+	
+
+
+
+        Terminal.println(""Rabatt: "" + rabatt + ""%"");
+
+        Terminal.println(""Endpreis: "" + (preisGesamt -= (preisGesamt / 100 * rabatt)) + ""Euro"");
+
+    }
+
+}"
+Panchanathan,Arrsana,a.panchanathan@campus.tu-berlin.de,Beendet,"8. Dezember 2021  20:21","12. Dezember 2021  23:54","4 Tage 3 Stunden","7,08",geca,char string;,"den gleichen Datentyp.","zahlen = new int[3];",3,n-1,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"","""","""","""","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""",""1"","""",""1"",""""],[""11(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""",""2"",""2"",""""],[""11(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2.0""],[""6"","""","""","""","""","""",""""],[""13"",""-"",""-"",""-"",""-"",""-"",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char [][] array = new char [breite+6] [hoehe+3];//Hier soll das Array deklariert und initialisiert werden!
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+  public static void main(String[] args) {
+   int [] array = Terminal.askIntArray(""Queue:\n"");//So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+                                                   //Terminal.askIntArray(""Queue:\n"");
+   indexOfMax(array);
+    for(int i=0;i<array.length;i++) {
+    System.out.println(array[i]);
+  }
+	}
+    public static int[] indexOfMax(int[]array) {
+		int indexOfMax=0;
+        for(int i=0;i<array.length;i++) {
+	
+	        for(int j=1;j<array.length-i;j++) {
+			
+               if(array[j]>array[j-1]) {
+	           indexOfMax=array[j-1];
+	           array[j-1]=array[j];
+	           array[j]=indexOfMax;
+   }
+	    }
+            }		
+		return array;
+	           }
+
+    
+}","public class Pizza {
+   
+}"
+Schellin,Kolja,kolja.schellin@campus.tu-berlin.de,Beendet,"8. Dezember 2021  20:42","12. Dezember 2021  23:59","4 Tage 3 Stunden","10,00",8.5,char string;,int[],n-1,3,"zahlen[0] = 1;","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""undef"",""undef"",""undef"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""4"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""",""-"",""""],[""13(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""1.5""],[""6"",""-"",""-"",""-"",""-"","""",""-""],[""14"","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];//Hier soll das Array deklariert und initialisiert werden!
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+
+	public static void main(String[] args){
+		
+		float s = (float)5.50;
+		float v = (float)4.30;
+		float zp = 0;
+		int r = 0;
+		System.out.println(""Willkommen! Bestellung:\n"");
+		
+		
+		char eingabe = getEingabe(); 
+		while (eingabe != '3'){	
+			if (eingabe == '1'){
+				Terminal.println(""Salami Pizza hinzugefuegt.\n""); 					zp += s;
+				eingabe = getEingabe();				
+			}if (eingabe == '2'){
+				Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+				zp += v;
+				eingabe = getEingabe();
+			}
+		}
+			if (eingabe == '3'){
+				System.out.println(""Bitte Lieferentfernung [km] eingeben: "");
+				int km = Terminal.readInt();
+					if(km >= 20){
+					r += 10;  				
+					}if(km <= 2){
+					r += 10;
+					}
+			}
+				
+		if(zp >= 10){
+			r += 10;
+		if(zp >= 20)
+			r += 10;
+		}		
+		System.out.println(""Rabatt: ""+r+""%"");
+		float endpreis = zp - (zp / 100 * r);
+		System.out.println(""Endpreis: ""+endpreis+""Euro"");
+	}		 
+	
+		
+	public static char getEingabe(){ 
+	char eingabe = Terminal.askChar(""'1' Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende\n"");
+		
+	return eingabe;
+	}
+
+}"
+Fenscky,Ben-Luca,b.fenscky@campus.tu-berlin.de,Beendet,"9. Dezember 2021  14:01","12. Dezember 2021  19:05","3 Tage 5 Stunden","12,75","1, 1, 2","zahlen = new int[3];",-3.5,int[],char string;,"den gleichen Datentyp.","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""undef"",""undef"",""undef"","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""undef""],[""8(5)"","""","""","""","""","""",""""],[""9"","""","""","""","""",""2"",""""],[""10"","""","""","""","""","""",""""],[""9"","""","""","""","""",""3"",""""],[""10"","""","""","""","""","""",""""],[""9"","""","""","""","""",""4"",""""],[""10"","""","""","""","""","""",""""],[""12"","""","""","""","""","""",""""],[""5(12)"","""","""","""","""","""",""1.5""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+		char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","import java.util.Arrays;
+
+public class Queue {
+	
+public static void main(String[] args) {
+	
+	int[] eingabe = Terminal.askIntArray(""Queue:\n"");
+	for (int i = eingabe.length-1; i >= 0; i--) {
+		
+		indexOfMax(eingabe);
+		Arrays.sort(eingabe);
+		Terminal.println(eingabe[i]);
+		}
+}
+
+public static int indexOfMax(int array[]) {
+    int max = array[0];
+    int position = 0;
+			
+    for(int i=1; i<array.length; i++) {
+        if (max < array[i]) {
+            position = i;
+            max = array[i];
+		}
+		
+    }
+    return position;
+}
+	
+}","import java.lang.*;
+ 
+ 
+public class Pizza {
+ 
+	public static void main (String[] args) {
+	   int wahl = 0;
+	   int km = 0;
+	   double preis = 0.0;
+		   
+	   printWelcome();
+
+	   while (wahl != 3) {
+		printMenu();		   
+		wahl = Terminal.askInt("""");
+			
+		switch (wahl) {
+			case 1:
+				Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+				preis = preis + 5.50;
+				break;
+			case 2:
+				Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+				preis = preis + 4.30;
+			break;
+		}	
+	   }
+	   km = Entfernung();
+	   berechneEndpreis(preis,km);
+
+    }
+	   
+   public static void printMenu() {
+	   Terminal.println(""'1' Salami Pizza 5.50Euro"");
+	   Terminal.println(""'2' Veggi Pizza 4.30Euro"");
+	   Terminal.println(""'3' Ende"");
+	   }
+	   
+	   public static void printWelcome() {
+			Terminal.println(""Willkommen! Bestellung:\n"");
+	   }
+	   
+	   public static int Entfernung() {
+		   return Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+	   }
+
+
+		public static double berechneEndpreis(double preis, int km) {
+			int rabatt = 0;
+			double zwischenpreis = 00.00;
+			double endpreis = 00.00;
+			
+			//10
+			if ((km <= 2) || (km >= 20)) rabatt = 10;
+			
+			if (preis > 10) rabatt = rabatt +10;
+			if (preis > 20) rabatt = rabatt +10;
+			
+			endpreis = preis - preis * rabatt / 100;
+
+			Terminal.println(""Rabatt: "" + rabatt + ""%"");
+			endpreis = Math.round(endpreis*100.0)/100.0;
+			Terminal.println(""Endpreis: "" + endpreis + ""Euro"");
+			return endpreis;
+		}
+}"
+Holz,"Maximilian Torsten",m.holz@campus.tu-berlin.de,Beendet,"9. Dezember 2021  17:23","12. Dezember 2021  15:48","2 Tage 22 Stunden","12,00",new,char string;,hfdb,"den gleichen Datentyp.",3,"{1,2}","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"","""","""","""","""",""%"",""%""],[""4"",""%"",""1"",""%"",""%"",""%"",""%""],["""",""%"",""%"",""%"",""%"",""%"",""%""],["""",""%"",""%"",""%"",""%"","""",""%""],["""",""%"",""%"","""",""%"","""",""%""],["""",""%"",""%"",""%"",""%"","""",""%""],["""",""%"",""%"",""%"",""%"",""%"",""%""],["""",""%"",""%"",""%"","""",""%"",""%""],["""",""%"",""%"",""%"",""%"","""",""%""],["""",""%"",""%"",""%"",""%"",""%"",""%""],["""",""%"",""%"",""%"",""%"","""",""%""],["""",""%"",""%"",""%"",""%"",""%"",""%""],["""",""%"",""%"",""%"",""%"",""%"",""%""],["""",""%"",""%"",""%"",""%"",""%"",""""],["""",""-"",""-"",""-"",""-"",""%"",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    
+    public static int indexOfMax(int[] numbers){
+        int max = Integer.MIN_VALUE;
+        int index = -1;
+        for(int i = 0; i < numbers.length; i++){
+           if (max < numbers[i]){
+                max = numbers[i];
+                index = i;
+           
+        }
+    }
+    return index;
+    }
+    
+    public static void main(String[] args){
+        int[] numbers = Terminal.askIntArray(""Queue:\n"");
+        
+        for(int maxIdx = indexOfMax(numbers); maxIdx > -1; maxIdx = indexOfMax(numbers)) {
+            Terminal.println(numbers[maxIdx]);
+            numbers[maxIdx] = Integer.MIN_VALUE;
+        }
+    }
+}","public class Pizza {
+
+    public static int choice = 0;
+    public static float prize = 0;
+    public static int distance = 0;
+    public static int discount = 0;
+    public static float inTotal = 0;
+    
+    public static void main(String[] args) {
+        
+        Terminal.println(""Willkommen! Bestellung:\n"");
+        
+        do{
+        Terminal.println(""'1' Salami Pizza 5.50Euro"");
+        Terminal.println(""'2' Veggi Pizza 4.30Euro"");
+        Terminal.println(""'3' Ende"");
+        choice = Terminal.askInt("""");
+        
+            if (choice == 1) {
+                Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+                prize = prize + 5.5f;
+            }
+            
+            else if(choice == 2) {
+                Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+                prize = prize + 4.3f;
+            }
+            
+        }
+        
+        while(choice != 3);
+        
+        distance = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+        
+        if(distance >= 20) {
+            discount = discount + 10;
+        }
+        
+        else if(distance <= 2) {
+            discount = discount + 10;
+        }
+        
+        if(prize > 20) {
+            discount = discount + 20;
+        }
+        
+        if(prize > 10 && prize < 20) {
+            discount = discount + 10;
+        }
+        
+        Terminal.println(""Rabatt: "" + discount +""%"");
+        
+        inTotal = prize * (100 - discount) / 100;
+        
+        Terminal.println(""Endpreis: "" + inTotal +""Euro"");
+        
+    }
+    
+}"
+"Gutiérrez de la Vega","Anamaria de los Angeles",gutierrez-de-la-vega@campus.tu-berlin.de,Beendet,"9. Dezember 2021  18:51","12. Dezember 2021  23:42","3 Tage 4 Stunden","12,85","den gleichen Datentyp.",3,-3.5,"zahlen = new int[3];",n-1,"1, 1, 2","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""undef"",""undef"",""undef"","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""undef""],[""6"","""","""","""","""","""",""""],[""8"","""","""","""","""","""",""""],[""9"","""","""","""","""",""2"",""""],[""10"","""","""","""","""",""3"",""""],[""9"","""","""","""","""","""",""""],[""10"","""","""","""","""",""4"",""""],[""9"","""","""","""","""","""",""""],[""10"","""","""","""","""","""",""""],[""9"","""","""","""","""","""",""""],[""11"","""","""","""","""","""",""""],[""12"","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+
+    public static void main(String[] args){
+        int[] zahlen = Terminal.askIntArray(""Queue:\n"");
+        for(int i = 0; i<zahlen.length; i++){
+            int a = indexOfMax(zahlen);
+            Terminal.println(zahlen[a]);
+            zahlen[a] = Integer.MIN_VALUE;
+        }
+        indexOfMax(zahlen);
+    }
+
+    public static int indexOfMax(int[] x){
+        int max = 0;
+        int index = 0;
+        for(int i = 0; i< x.length; i++){
+            if(max < x[i]){
+                max = x[i];
+                index = i;
+            }
+        }
+        if(max == 0){
+           // Terminal.println(""Richtig"");
+           return -1;
+
+        }
+        else{
+            return index;
+        }
+
+    }
+}","public class Pizza {
+    
+    public static void main(String[] args){
+        double salami = 5.50;
+        double veggie = 4.30;
+        double preis = 0;
+
+        Terminal.println(""Willkommen! Bestellung:\n"");
+        for(int wahl = Terminal.askInt(""'1' Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende\n""); wahl < 3; wahl = Terminal.askInt(""'1' Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende\n"")){
+            switch(wahl){
+                case 1:
+                    Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+                    preis += salami;
+                    break;
+
+                case 2:
+                    Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+                    preis += veggie;
+                    break;
+
+                default:
+                    break;
+
+    
+            }
+        }
+
+        int km = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+        /* 10 Prozent, wenn die Entfernung maximal 2km beträgt, weil der Lieferbote dann laufen kann
+        10 Prozent, wenn die Entfernung mindestens 20km beträgt, weil die Pizza dann kalt ankommt
+        zusätzlich 10 Prozent, wenn die Bestellung einen Wert von 10Euro überschreitet
+        und zusätzlich 10 Prozent, wenn die Bestellung einen Wert von 20Euro überschreitet (zusätzlich also 20% Rabatt bei Bestellungen über 20€)*/
+
+        int rabatt = 0;
+        if(km <= 2){
+            rabatt += 10;
+        }
+        else if(km >= 20){
+            rabatt += 10;
+        }
+        if(preis >= 10 && preis < 20){
+            rabatt += 10;
+        }
+        else if(preis >= 20){
+            rabatt += 20;
+        }
+
+        preis = preis-((preis/100)*rabatt);
+    
+        Terminal.println(""Rabatt: ""+rabatt+""%"");
+
+        Terminal.println(""Endpreis: ""+preis+""Euro"");
+
+
+    }
+        
+}"
+Khatiwada,Aayush,khatiwada@campus.tu-berlin.de,Beendet,"9. Dezember 2021  20:50","12. Dezember 2021  23:53","3 Tage 3 Stunden","13,10",int[],"den gleichen Datentyp.","1, 1, 2",3,new,8.5,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""",""1"","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""",""2"","""",""""],[""12(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    public static int indexOfMax(int[] queue) {
+        int max = 0;
+        for (int i = 0; i < queue.length;i++) {
+            if (queue[max] < queue[i]) {
+                max = i;
+            }
+        }
+        if (queue[max] == Integer.MIN_VALUE) return -1;
+        return max;
+    }
+    public static void main(String[] args) {
+        int[] queue = Terminal.askIntArray(""Queue:\n"");
+        for (int i = 0; i < queue.length;i++) {
+            int max = indexOfMax(queue);
+            System.out.println(queue[max]);
+            queue[max] = Integer.MIN_VALUE;
+        }
+    }
+
+}","public class Pizza {
+    public static void main(String[] args) {
+        float totalSum = 0;
+        float discount = 0;
+        System.out.println(""Willkommen! Bestellung:"");
+        while(true) {
+            System.out.println();
+            System.out.println(""'1' Salami Pizza 5.50Euro\n"" +
+                    ""'2' Veggi Pizza 4.30Euro\n"" +
+                    ""'3' Ende"");
+
+            float preis_salami = 5.50F;
+            float preis_veggi = 4.30F;
+
+            int choice = Terminal.askInt("""");
+            if (choice == 1) {
+                totalSum = totalSum + preis_salami;
+                System.out.println(""Salami Pizza hinzugefuegt."");
+            }
+            else if (choice == 2) {
+                totalSum = totalSum + preis_veggi;
+                System.out.println(""Veggi Pizza hinzugefuegt."");
+            }
+            else if (choice == 3) {
+                break;
+            }
+        }
+
+        double distance = Terminal.askDouble(""Bitte Lieferentfernung [km] eingeben:\n"");
+
+        if (distance <= 2 || distance >=20) {
+            discount =discount+ (float) 10.0;
+        }
+        if (totalSum > 10) {
+            discount = discount+(float) 10.0;
+        }
+        if (totalSum > 20) {
+            discount = discount+(float) 10.0;
+        }
+        System.out.println(""Rabatt: "" +(int)discount+""%"");
+        System.out.println(""Endpreis: "" + (totalSum-(discount/100*totalSum))+""Euro"");
+    }
+}"
+Frahat,Ramy,ramy.frahat@campus.tu-berlin.de,Beendet,"9. Dezember 2021  23:10","12. Dezember 2021  22:01","2 Tage 22 Stunden","13,42",int[],boolean if;,"den gleichen Datentyp.",3,3,geca,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""-""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""4"",""""],[""11(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""",""-"",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+
+	public static void main(String[] args){
+		int[] ziffern = Terminal.askIntArray(""Queue:\n"");
+         for(int i = 0; i<ziffern.length; i++){
+        int j = indexOfMax(ziffern);
+        Terminal.println(ziffern[j]);
+        ziffern[j] = Integer.MIN_VALUE;
+    
+        }
+        indexOfMax(ziffern);
+    }
+
+     public static int indexOfMax(int[] x){ 
+     	int max = 0;
+      int index = 0;
+      for(int i = 0; i < x.length; i++){ 
+       	    if(max < x[i]){ 
+       	    	 max = x[i];
+       	    	index = i;
+       	    }
+	    }
+         if(max == 0){ 
+            // Terminal.println(""Richtig"");
+          return -1;
+
+	    }
+        else{ 
+            return index;
+        }
+
+  }
+}","public class Pizza {
+    public static void main(String[] args) {
+        
+        double salamipizza = 5.50;
+        double veggiepizza = 4.30;
+        double pizzapreis = 0.0;
+        
+        System.out.println(""Willkommen! Bestellung:\n"");
+        
+        for(int bestellung =Terminal.askInt(""'1' Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende\n""); bestellung < 3; bestellung = Terminal.askInt(""'1' Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende\n"")){
+
+          if(bestellung == 1){
+          Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+          pizzapreis += salamipizza;
+
+        }
+
+          else if(bestellung ==2){
+          Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+          pizzapreis += veggiepizza;
+        }
+
+
+            
+
+        }
+        
+
+
+
+        int distanz = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+        //""10 Prozent, wenn die Entfernung maximal 2km beträgt, weil der Lieferbote dann laufen kann
+        //10 Prozent, wenn die Entfernung mindestens 20km beträgt, weil die Pizza dann kalt ankommt
+       //zusätzlich 10 Prozent, wenn die Bestellung einen Wert von 10Euro überschreitet
+       //und zusätzlich 10 Prozent, wenn die Bestellung einen Wert von 20Euro überschreitet (zusätzlich also 20% Rabatt bei Bestellungen über 20€)
+
+
+
+
+
+         int rabatt = 0;
+         if(distanz <= 2){
+            rabatt += 10;
+         }
+         else if(distanz>= 20){
+              rabatt += 10;
+        }
+        if(pizzapreis >= 10 && pizzapreis < 20){
+           rabatt += 10;
+        }
+        else if(pizzapreis >= 20){
+             rabatt += 20;
+
+        }
+
+        pizzapreis = pizzapreis-((pizzapreis/100)*rabatt);
+
+        Terminal.println(""Rabatt: "" +rabatt+ ""%"");
+        Terminal.println(""Endpreis: "" +pizzapreis+ ""Euro"");
+
+
+    }
+
+ }"
+Erlemann,Tom-Julien,tom-julien.erlemann@campus.tu-berlin.de,Beendet,"10. Dezember 2021  11:40","12. Dezember 2021  19:56","2 Tage 8 Stunden","11,33","den gleichen Datentyp.",char string;,3,new,"0, 1, 1",n-1,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"","""","""","""","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9"","""","""","""","""",""2"",""""],[""10"","""","""",""1"","""","""",""""],[""11"","""","""","""","""","""",""""],[""9(11)"","""","""","""","""",""3"",""""],[""10"","""","""","""",""2"","""",""""],[""11"","""","""","""","""",""-"",""""],[""12"","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],[""5(13)"","""","""","""","""","""",""2.0""],[""6"","""","""","""","""","""",""""],[""14(6)"","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char [][]array=new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+
+    public static void main(String[] args){
+        int min=Integer.MIN_VALUE;
+        int array[]=Terminal.askIntArray(""Queue:\n"");
+        for(int i=0;i<array.length;i++) {
+            int k=indexOfMax(array);
+            System.out.println(array[k]);
+            min=indexOfMax(array);
+        }
+    }
+
+    public static int indexOfMax(int [] array){
+        if ( array == null || array.length == 0 ) return -1;
+        int largest = 0;
+        for ( int i = 1; i < array.length; i++ )
+        {
+            if ( array[i] > array[largest] )
+                largest = i;
+        }
+
+        return largest;
+    }
+
+}","public class Pizza {
+
+    public static void main(String[] args){
+        boolean bestellung=true;
+        float salamiPrice= 5.5F;
+        float veggiePrice= 4.3F;
+        float summe=0F;
+        int rabatt=0;
+        System.out.println(""Willkommen! Bestellung:\n"");
+        while(bestellung) {
+            int eingabe=Terminal.askInt(""'1' Salami Pizza 5.50Euro\n"" + ""'2' Veggi Pizza 4.30Euro\n"" + ""'3' Ende\n"");
+            switch(eingabe){
+
+                case 1:
+                    summe+=salamiPrice;
+                    System.out.println(""Salami Pizza hinzugefuegt.\n"");
+                    break;
+
+                case 2:
+
+                    summe+=veggiePrice;
+                    System.out.println(""Veggi Pizza hinzugefuegt.\n"");
+                    break;
+
+                case 3:
+
+                    double entfernung=Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+                    if(entfernung<=2) {
+                        rabatt=10;
+                        if(summe>10){
+                            rabatt=20;
+                            if(summe>20){
+                                rabatt=30;
+                            }
+                        }
+                    }
+                    else if(entfernung>=20){
+                        rabatt=10;
+                        if(summe>10){
+                            rabatt=20;
+                            if(summe>20){
+                                rabatt=30;
+                            }
+                        }
+                    }
+                    else{
+                        if(summe>10){
+                            rabatt=10;
+                            if(summe>20){
+                                rabatt=20;
+                            }
+                        }
+                    }
+
+                    System.out.println(""Rabatt: ""+rabatt+""%"");
+                    float discount= (float) rabatt/100;
+                    float preis= (summe-(summe*discount));
+                    System.out.println(""Endpreis: ""+preis+""Euro"");
+                    bestellung=false;
+                    break;
+            }
+        }
+    }
+
+}"
+Brück,"Nicole Kristin Svenja Maria",n.brueck@campus.tu-berlin.de,Beendet,"10. Dezember 2021  13:03","12. Dezember 2021  19:20","2 Tage 6 Stunden","10,92",-3.5,geca,"1, 1, 2",new,"den gleichen Datentyp.",char string;,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""undef"",""undef"",""undef"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""",""1"","""","""",""""],[""11(5)"","""","""","""","""",""3"",""""],[""9(5)"","""","""","""","""","""",""""],[""10(5)"","""","""","""",""2"","""",""""],[""11(5)"","""","""","""","""",""4"",""""],[""9(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""-"",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[10][10];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+    public static float salami = 5.50f;
+    public static float veggi = 4.30f;
+    public static float counterS=0.00f;
+    public static float counterV=0.00f;
+
+    public static void main(String[] args) {
+        System.out.println(""Willkommen! Bestellung: \n"");
+        getPizza();
+        float zwischensumme = (salami * counterS) + (veggi * counterV);
+        float endpreis = 0.00f;
+        int zwei = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben: \n"");
+        if (zwei<=2 || zwei>=20) {
+            int rabatt = 10;
+            if (zwischensumme > 10.0 && zwischensumme < 20) {
+                rabatt += 10;
+                System.out.println(""Rabatt: "" + rabatt + ""%"");
+                endpreis = zwischensumme-(zwischensumme*rabatt/100);
+                System.out.println(""Endpreis: ""+endpreis+""Euro"");
+
+            }else if(zwischensumme > 20.0){
+                rabatt+=20;
+                System.out.println(""Rabatt: "" + rabatt + ""%"");
+                endpreis = zwischensumme-(zwischensumme*rabatt/100);
+                System.out.println(""Endpreis: ""+endpreis+""Euro"");
+
+            }else{
+                System.out.println(""Rabatt: "" + rabatt + ""%"");
+                endpreis = zwischensumme-(zwischensumme*rabatt/100);
+                System.out.println(""Endpreis: ""+endpreis+""Euro"");
+
+            }
+
+        }else{
+            int rabatt =0;
+            if (zwischensumme > 10 && zwischensumme < 20) {
+                rabatt += 10;
+                System.out.println(""Rabatt: "" + rabatt + ""%"");
+                endpreis = zwischensumme-(zwischensumme*rabatt/100);
+                System.out.println(""Endpreis: ""+endpreis+""Euro"");
+
+            }else if(zwischensumme > 20) {
+                rabatt += 20;
+                System.out.println(""Rabatt: "" + rabatt + ""%"");
+                endpreis = zwischensumme-(zwischensumme*rabatt/100);
+                System.out.println(""Endpreis: ""+endpreis+""Euro"");
+
+            }else{
+                System.out.println(""Rabatt: "" + rabatt + ""%"");
+                endpreis = zwischensumme;
+                System.out.println(""Endpreis: ""+endpreis+""Euro"");
+            }
+        }
+    }
+
+    public static float getPizza() {
+        int eins = Terminal.askInt(""'1' Salami Pizza 5.50Euro \n'2' Veggi Pizza 4.30Euro \n'3' Ende \n"");
+
+        int i=0;
+        while(i==0){
+            if (eins == 1) {
+                System.out.println(""Salami Pizza hinzugefuegt.\n"");
+                counterS++;
+                getPizza();
+            }
+            if (eins == 2) {
+                System.out.println(""Veggi Pizza hinzugefuegt.\n"");
+                counterV++;
+                getPizza();
+            }
+            if (eins == 3) {
+                break;
+            }
+            break;
+        }
+        return eins;
+    }
+
+}"
+Hake,"Anna Franziska",a.hake@campus.tu-berlin.de,Beendet,"10. Dezember 2021  19:40","12. Dezember 2021  23:12","2 Tage 3 Stunden","5,75","1, 1, 2",3,"den gleichen Datentyp.",geca,array,char string;,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""undef"",""undef"",""undef"","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""""],[""8(5)"","""","""","""","""",""undef"",""""],[""9(5)"","""","""",""b"","""","""",""""],[""10(5)"","""","""","""","""",""2"",""""],[""11(5)"","""","""","""","""","""",""""],[""8(5)"","""","""","""",""3"","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""4"",""""],[""4"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""""],[""12"","""","""","""","""","""",""3""],[""13"",""-"",""-"",""-"",""-"",""-"",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+       char[][] array = new char[breite+2][hoehe+2]; //Hier soll das Array deklariert und initialisiert werden!
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+    
+}"
+Fung,"Wendy Poju",w.fung@campus.tu-berlin.de,Beendet,"10. Dezember 2021  21:50","12. Dezember 2021  01:03","1 Tag 3 Stunden","14,75",n-1,"zahlen = new int[3];",new,char string;,int[],geca,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""3"",""""],[""9(5)"","""","""","""","""","""",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""4"",""""],[""9(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""-"",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+      public static void main(String[] args) {
+        int[] eingabe = Terminal.askIntArray(""Queue:\n"");
+
+        for (int i = 0; eingabe.length > i; i++) {
+            int max = indexOfMax(eingabe);
+            System.out.println(eingabe[max]);
+            eingabe[max] = Integer.MIN_VALUE;
+        }
+
+
+    }
+
+    public static int indexOfMax(int[] arr) {
+        int m = -1;
+        int e = -1;
+
+        for (int i=0; arr.length > i; i++) {
+            int v = arr[i];
+            if (m<v) {
+                m = v;
+                e = i;
+            }
+
+        }
+        return e;
+    }
+
+}","public class Pizza {
+         public static void main(String[] args) {
+        System.out.println(""Willkommen! Bestellung:\n"");
+        float i = 0;
+        while (true){
+            int x = Terminal.askInt(""'1' Salami Pizza 5.50Euro\n"" +
+                    ""'2' Veggi Pizza 4.30Euro\n"" +
+                    ""'3' Ende\n"");
+            switch (x) {
+                case 1:
+                    i = i + (float) 5.5;
+                    System.out.println(""Salami Pizza hinzugefuegt.\n"");
+                    break;
+                case 2:
+                    i = i + (float) 4.3;
+                    System.out.println(""Veggi Pizza hinzugefuegt.\n"");
+                    break;
+                case 3:
+                    int km = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+                    int pro = 0;
+                    if (km<3){
+                        pro = pro + 10;
+                    }
+                    if (km>19) {
+                        pro = pro + 10;
+                    }
+                    if (i>10){
+                        pro = pro + 10;
+                    }
+                    if (i>20){
+                        pro = pro + 10;
+                    }
+                    System.out.println(""Rabatt: "" + pro + ""%"");
+                    i = (100.0f - (float)pro) / 100.0f * i;
+
+                    String priceString = String.format(""%.2f"", i);
+                    priceString = priceString.replace(',', '.');
+                    priceString = priceString.substring(priceString.length() - 1).equals(""0"") ? priceString.substring(0, priceString.length() - 1) : priceString;
+                    System.out.println(""Endpreis: "" + priceString + ""Euro"");
+                    return;
+
+            }
+        }
+    }
+}"
+Kuka,Elda,elda.kuka@campus.tu-berlin.de,Beendet,"11. Dezember 2021  03:16","12. Dezember 2021  23:38","1 Tag 20 Stunden","11,08",3,int null;,-3.5,new,n-1,"zahlen = new int[3];","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""",""1"","""","""",""""],[""11(3)"","""","""","""","""",""3"",""""],[""9(3)"","""","""","""","""","""",""""],[""10(3)"","""","""","""",""2"","""",""""],[""11(3)"","""","""","""","""",""4"",""""],[""9(3)"","""","""","""","""","""",""""],[""11(3)"","""","""","""","""",""-"",""""],[""12(3)"","""","""","""","""","""",""""],[""13(3)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void main (String [] args){ //main Methode in class frame
+	frame();
+	}
+	
+    public static void frame() {
+        //Hier soll das Array deklariert und initialisiert werden!
+        char[][] array= new char [breite+2][hoehe+2];
+        
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+    
+	public static void main(String [] args){
+		Terminal.println(""Willkommen! Bestellung:\n"");
+		
+		float preis=0;
+		int wahl=0;
+		while (wahl!=3){
+			wahl=Terminal.askInt(""'1' Salami Pizza 5.50Euro \n'2' Veggi Pizza 4.30Euro \n'3' Ende\n"");
+		if(wahl==1){
+				Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+				preis+=5.5;
+		}
+		
+		else if(wahl==2){
+				Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+				preis+=4.3;
+		}
+		
+		
+	}
+	double entfernung = Terminal.askDouble(""Bitte Lieferentfernung [km] eingeben:\n"");
+	int rabatt=0;
+	
+	
+	if (entfernung <=2)
+		rabatt+=10;
+	if(entfernung >=20)
+		rabatt+=10;
+	if (preis>10)
+		rabatt+=10;
+	if(preis>20)
+		rabatt+=10;
+	preis -=preis * (rabatt/100.0);
+	Terminal.println(""Rabatt: "" + rabatt + ""% \nEndpreis: "" + preis + ""Euro"");	
+
+	}	
+	
+}"
+Thomas,"Fabian Alexander",f.thomas@campus.tu-berlin.de,Beendet,"11. Dezember 2021  12:23","12. Dezember 2021  23:59","1 Tag 11 Stunden","11,30",int[],"1, 2, 3",3,char string;,"zahlen = new int[3];",8.5,"[[""2"",""_"",""_"",""_"",""_"",""_"",""_""],[""3"","""","""","""","""","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+
+	public static void main(String[] args) {
+		
+		int[] i = Terminal.askIntArray(""Queue:\n"");
+		for (int x = indexOfMax(i); x > -1; x = indexOfMax(i)) {
+			Terminal.println(i[x]);
+			i[x] = Integer.MIN_VALUE;
+		}
+	}
+	
+	public static int indexOfMax(int[] array){
+		
+        int biggestNumber = Integer.MIN_VALUE;
+        int index = -1;
+        for (int i = 0; i < array.length; i++)
+        {
+            if (array[i] > biggestNumber)
+            {
+                biggestNumber = array[i];
+                index = i;
+            } 
+        }
+        return index;
+	}
+}","public class Pizza {
+
+	public static int auswahl = 0;
+	public static float preis = 0;
+	public static int weg = 0;
+	public static int rabatt = 0;
+	public static float endpreis = 0;
+	
+	public static void main(String[] args) {
+		
+		Terminal.println(""Willkommen! Bestellung:\n"");
+		
+		do{
+		Terminal.println(""'1' Salami Pizza 5.50Euro"");
+		Terminal.println(""'2' Veggi Pizza 4.30Euro"");
+		Terminal.println(""'3' Ende"");
+		auswahl = Terminal.askInt("""");
+		
+			if (auswahl == 1) {
+				Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+				preis = preis + 5.5f;
+			}
+			
+			else if(auswahl == 2) {
+				Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+				preis = preis + 4.3f;
+			}
+			
+		}
+		
+		while(auswahl != 3);
+		
+		weg = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+		
+		if(weg <= 2) {
+			rabatt = rabatt + 10;
+		}
+		
+		else if(weg >= 20) {
+			rabatt = rabatt + 10;
+		}
+		
+		if(preis > 10 && preis < 20) {
+			rabatt = rabatt + 10;
+		}
+		if(preis > 20) {
+			rabatt = rabatt + 20;
+		}
+		
+		Terminal.println(""Rabatt: "" + rabatt +""%"");
+		
+		endpreis = preis * (100 - rabatt) / 100;
+		
+		Terminal.println(""Endpreis: "" + endpreis +""Euro"");
+		
+	}
+	
+}"
+Weisleder,"Lennart Hans",lennart.h.weisleder@campus.tu-berlin.de,Beendet,"11. Dezember 2021  12:52","12. Dezember 2021  22:08","1 Tag 9 Stunden","11,10","zahlen = new int[3];",new,geca,-3.5,n-1,char string;,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""undef"",""undef"",""undef "","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""",""1"","""","""",""""],[""11(5)"","""","""","""","""",""3 "",""""],[""9(5)"","""","""","""","""","""",""""],[""10(5)"","""","""","""",""2"","""",""""],[""11(5)"","""","""","""","""",""4"",""""],[""9(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""",""-"",""""],[""5"","""","""","""","""","""",""2""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char [] [] array = new char [breite+2] [hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    public static void main (String[] args) { 
+	   int [] wartezeiten = Terminal.askIntArray(""Queue:\n""); 
+          
+	     while (indexOfMax (wartezeiten) != -1) 
+		 {indexOfMax (wartezeiten);}
+	}
+    
+   
+    
+	public static int indexOfMax (int [] a){  
+        int maxW ; 
+		int maxI; 
+	  for (int i=0; i < a.length; i++) 
+	       { 
+	         if (a[i] >= a[i-1]) {  
+			    maxI = i; 
+			    maxW = a[i]; 		    
+		    } 
+		    } 
+              if (maxW >=0) {  			
+			  Terminal.println (maxW);		   
+			  a[maxI] = Integer.MIN_VALUE; 
+			  return maxI;
+			} 
+		      else return -1; 
+	} 
+	           
+			   
+			  
+}","public class Pizza {
+    public static void main (String[] args) { 
+	    double Bestellung =0.0; 
+		double Endpreis = 0.0;
+		int Auswahl =0;
+		int Rabatt =0; 
+		Terminal.println(""Willkommen! Bestellung:\n"");
+		while (Auswahl != 3) 
+        {			
+		Terminal.println (""'1' Salami Pizza 5.50Euro\n"" +
+			             ""'2' Veggi Pizza 4.30Euro\n"" +
+			             ""'3' Ende"");
+		Auswahl = Terminal.readInt(); 	 		
+		switch (Auswahl){
+		case(1): 
+			Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+		    Bestellung += 5.50;
+			break; 
+		case(2): 
+		    Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+			Bestellung += 4.30; 
+			break; 
+		case(3):
+		    break; 
+			
+		default: 
+			Terminal.println(""Bitte 1, 2 oder 3 auswaehlen"");
+		}
+	}
+        Terminal.println (""Bitte Lieferentfernung [km] eingeben:""); 
+        int Entfernung = Terminal.readInt(); 
+        if (Entfernung<=2 && Entfernung >= 0)  {  
+		    Rabatt += 10;   
+			}
+		 if (Entfernung>=20) { 
+		    Rabatt += 10; 
+		    }
+		
+	    if (Bestellung >10) { 
+		Rabatt +=10; 
+		} 
+		if (Bestellung >20) { 
+		Rabatt +=10; 
+		} 
+		Terminal.println (""Rabatt: ""+Rabatt+""%""); 
+		Endpreis= Bestellung - ((Bestellung/100)*Rabatt); 
+		Terminal.println (""Endpreis: ""+Endpreis+""Euro"");
+    }
+}"
+Basin,Yannic,yannic.basin@campus.tu-berlin.de,Beendet,"11. Dezember 2021  14:07","12. Dezember 2021  23:59","1 Tag 9 Stunden","7,33",-3.5,"den gleichen Datentyp.","1, 1, 2",new,"zahlen = new int[3];",geca,-,"public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[100][100];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    public static void main(String[] args) {
+		int[] arr = Terminal.askIntArray(""Queue:\n"");
+		
+		int temp = indexOfMax(arr);
+		while (temp != -1) {
+			System.out.println(arr[temp]);
+			arr[temp] = Integer.MIN_VALUE;
+			temp = indexOfMax(arr);
+		}
+	}
+	public static int indexOfMax(int[] arr) {
+		int index = 0;
+		boolean fin = true;
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] != Integer.MIN_VALUE) {
+				fin = false;
+				if (arr[i] > arr[index]) index = i;
+			}
+		}
+		
+		if (fin) {
+			return -1;
+		}
+		return index;
+	}
+}",-
+Lohse,"Clemens Christian",clemens.lohse@campus.tu-berlin.de,Beendet,"11. Dezember 2021  16:19","12. Dezember 2021  23:09","1 Tag 6 Stunden","8,75",char string;,fdb,"den gleichen Datentyp.",Compilerfehler,n-1,-3.5,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""undef""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""","""",""""],[""5"","""","""",""1"","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""",""-"",""""],[""5"","""","""","""",""2"","""",""""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char [][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    public static void main(String[] args){
+        int[] array = Terminal.askIntArray(""Queue:\n"");
+        //Terminal.println(indexOfMax(arr));
+        
+        int min = Integer.MIN_VALUE;
+        
+        for (int i = 0; i < array.length; i++) {
+        	for (int j = 0; j < array.length; j++) {
+            		if (array[i] >= array[j]) {
+                		int x = array[i];
+                		array[i] = array[j];
+                		array[j] = x;
+            		}
+        	}
+    	}
+    	for (int i = 0; i < array.length; i++){
+    		Terminal.print(""\n"" + array[i]);
+    	}
+    }
+    
+    public static int indexOfMax(int[] array){
+        int max = array[0];
+        int index = 0;
+        
+        for(int i = 0; i < array.length; i++) {
+            if(array[i] > max){
+            max = array[i];
+            index = i;
+            }
+        }
+        return index;
+    }
+}","public class Pizza {
+    
+}"
+Sezen,Alper,sezen@campus.tu-berlin.de,Beendet,"11. Dezember 2021  16:33","12. Dezember 2021  23:17","1 Tag 6 Stunden","4,75",-3.5,3,geca,int[],"zahlen = new int[3];",n-1,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"","""","""","""","""","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""",""1"","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""",""2"","""",""""],[""9(5)"","""","""","""","""",""4"",""""],[""11(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2""],[""6"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        array = int[j][i];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queu {
+	
+    public static void main(String[] args) {
+	
+	    int [] a = Terminal.askIntArray(""Queue:\n"");
+	    int i = 0;
+	    while (a[i] < x.length) {
+		    if (a[i] > a[i+1]) {
+		    for(i=0; (a[i] > a[i+1]);i++){
+			
+			    return a
+			
+			
+		}
+			
+		
+		
+		}
+	}
+	
+	
+}
+    
+}","public class Pizza {
+    public static void main(String[] args) {
+        System.out.println(""Willkommen! Bestellung:\n"");
+		System.out.println(""'1' Salami Pizza 5.50Euro"");
+		System.out.println(""'2' Veggi Pizza 4.30Euro"");
+		System.out.println(""'3' Ende"");
+		
+		double betrag = 0
+		int option = 0
+		while (option != 3) {
+			int option = Terminal.askInt(""ihre Bestellung"");
+			if option == 1{
+				System.out.println(""Salami Pizza hinzugefuegt."");
+				betrag = betrag + 5.50;
+				return betrag;
+			}
+			else if option == 2 {
+				System.out.println(""Veggie Pizza hinzugefuegt."");
+				bertrag = betrag + 4.30;
+			}
+			else if option == 3{
+				lieferentfernung = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben: "");
+				if (lieferentfernung <= 2) {
+					if (betrag <= 10){
+						System.out.println(""Rabatt: 20%"");
+					}
+					else if (betrag >=20) {
+						System.out.println(""Rabatt: 30%"");
+					}
+					else{
+						System.out.println(""Fehler"");
+					}
+				else if (lieferentfernung >= 20){
+					if (betrag <= 10){
+						System.out.println(""Rabatt: 20%"");
+					}
+					else if (betrag >=20) {
+						System.out.println(""Rabatt: 30%"");
+					}
+					else{
+						System.out.println(""Fehler"");
+				}
+				}
+			}
+			else{
+				System.out.println(""Fehler"");
+			}
+		}
+	}
+}"
+"Ben Hassine",Lydia,lydia.benhassine@campus.tu-berlin.de,Beendet,"11. Dezember 2021  17:24","12. Dezember 2021  23:46","1 Tag 6 Stunden","5,75",-3.5,"1, 1, 2",boolean if;,"den gleichen Datentyp.","System.out.println("" Eins Zwei Drei "");",int[],"[[""3"","""","""","""",""4"","""",""""],[""4"","""",""1"","""","""","""",""""],[""5"","""","""","""","""","""",""fib(a)""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],[""9"","""","""","""","""",""2"",""""],[""10"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+   public static void main(String[] args){
+        Terminal.println(indexOfMax(getArr()));       
+    }       
+    
+		public static int indexOfMax(int array[]) {
+		if (array.length == 0) {
+			return -1; // array contains no elements
+		}
+		int max = array[0];
+		int pos = 0;
+
+		for(int i=1; i<array.length; i++) {
+			if (max < array[i]) {
+				pos = i;
+				max = array[i];
+			}
+		}
+		return pos;
+		}
+    public static int [] getArr(){
+        return Terminal.askIntArray(""Queue:\n"");
+    }
+}","import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class PizzaBestellung {
+
+    public static void main(String[] args) {
+
+         float PREIS_SALAMI_PIZZA = 5.50f;
+         float PREIS_VEGGI_PIZZA = 4.30f;
+
+        System.out.println(""Willkommen! Bestellung:"");
+        
+
+        DecimalFormat df = new DecimalFormat(""0.00"");
+        Scanner scanner = new Scanner(System.in);
+        float preisGesamt = 0f;
+        int eingabe;
+        boolean ende = false;
+
+        while (!ende) {
+            System.out.println(""'1' Salami Pizza "" + df.format(PREIS_SALAMI_PIZZA)+ ""Euro"");
+            System.out.println(""'2' Veggi Pizza "" + df.format(PREIS_VEGGI_PIZZA)+ ""Euro"");
+            System.out.println(""'3' Ende!"");
+            System.out.println("""");
+            eingabe = scanner.nextInt();
+
+            if (eingabe == 1) {
+				System.out.println(""Salami Pizza hinzugefuegt. "");
+            }
+            if (eingabe == 2) {
+				System.out.println(""Veggi Pizza hinzugefuegt."");
+               
+            }
+            if (eingabe == 3) {
+                ende = true;
+            }
+            
+			System.out.println(""Bitte Lieferentfernung [km] eingeben:"");
+
+			eingabe = scanner.nextInt();
+			float rabatt = 0f;
+
+			if (eingabe <= 2 || eingabe >= 20) {
+				rabatt += 10;
+			}
+			if (preisGesamt >= 10) {
+				rabatt += 10;
+			}
+			if (preisGesamt >= 20) {
+				rabatt += 10;
+			}
+
+			System.out.println(""Preis: "" + df.format(preisGesamt) + ""Euro"");
+			System.out.println(""Rabatt: "" + df.format(rabatt) + "" %"");
+			System.out.println(""Endpreis: "" + df.format(preisGesamt -= (preisGesamt / 100 * rabatt)) + ""Euro"");
+		}
+        }
+
+       
+        
+}"
+Gündüz,Seren,guenduez@campus.tu-berlin.de,Beendet,"12. Dezember 2021  13:07","12. Dezember 2021  16:53","3 Stunden 45 Minuten","4,58",int[],double void;,new,geca,n-1,3,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""undef"",""-"",""-"",""-"",""%"",""%""],[""4"",""%"",""1"",""%"",""%"",""%"",""%""],[""5"",""%"",""%"",""%"",""%"",""%"",""undef""],[""6(5)"",""%"",""%"",""%"",""%"",""undef"",""%""],[""7(5)"",""%"",""%"",""undef"",""%"",""-"",""%""],[""8(5)"",""%"",""%"",""%"",""%"",""undef"",""%""],[""9(5)"",""%"",""%"",""%"",""%"",""%"",""%""],[""10(5)"",""%"",""%"",""%"",""undef"",""%"",""%""],[""11(5)"",""%"",""%"",""%"",""%"",""4"",""%""],[""12"",""%"",""%"",""%"",""%"",""undef"",""%""],[""12(5)"",""%"",""%"",""%"",""%"",""-"",""%""],[""13(5)"",""%"",""%"",""%"",""%"",""%"",""2.0""],[""14(5)"",""%"",""undef"",""%"",""%"",""%"",""undef""],[""13"",""%"",""%"",""%"",""%"",""%"",""%""],[""13(5)"",""-"",""-"",""-"",""-"",""%"",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+      char array [][] = new char [breite+2][hoehe+2]  
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n""); if ((i == (hoehe+1 || j == (breite+1))) {
+	    }
+
+	    System.out.print
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+
+  public static void main(String[] args){
+      
+      
+      
+      
+         int [] testarray = Terminal.askIntArray(""Queue:/n"");
+         
+         
+    while(true){
+        int index = indexOfMax(testarray);
+        if(index ==-1){
+            System.exit(0);
+        }
+        System.out.printIn(testarray[index]);
+        testarry[index]=in integer.MIN_VALUE;
+        
+        }
+    
+  
+}","public class Pizza {
+    
+}"
+Diao,Yiwei,yiwei.diao@campus.tu-berlin.de,Beendet,"12. Dezember 2021  13:56","12. Dezember 2021  17:07","3 Stunden 11 Minuten","13,05",n-1,geca,int null;,int[],"den gleichen Datentyp.",-3.5,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""3"",""""],[""9(5)"","""","""","""","""","""",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""4"",""""],[""9(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""",""-"",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        //Hier soll das Array deklariert und initialisiert werden!
+	char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+	public static void main(String[] args) {
+		int[] array = Terminal.askIntArray(""Queue:\n"");
+		int[] result = new int[array.length];
+		int c;
+		for(int x=0; x < array.length; x++) {
+			c = indexOfMax(array);
+			result[x] = array[c];
+			array[c] = Integer.MIN_VALUE;
+		}
+		for(int y=0; y < result.length; y++) {
+			Terminal.println(result[y]);
+		}
+	}
+
+	public static int indexOfMax(int[] a) {
+		int b = a[0];
+		int d = 0;
+		for(int i=1; i < a.length; i++) {
+			if(a[i] > b) {
+				b = a[i];
+				d = i;
+			}
+		}
+		if(b != Integer.MIN_VALUE)
+			return d;
+		else
+			return -1;
+	}
+    
+}","public class Pizza {
+	public static void main(String[] args) {
+		Terminal.println(""Willkommen! Bestellung:\n"");
+		int i;
+		float r = 1;
+		float preis = 0;
+		do{
+			i = Terminal.askInt(""'1' Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende\n"");
+			if(i == 1) {
+				Terminal.println(""Salami Pizza hinzugefuegt.\n"");
+				preis += 5.5;
+			}
+			else if(i ==2) {
+				Terminal.println(""Veggi Pizza hinzugefuegt.\n"");
+				preis += 4.3;
+			}
+		} while(i == 1 || i == 2);
+		int k = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+		if(k <= 2 || k >= 20)
+			r -= 0.1;
+		if(preis >= 10 && preis < 20)
+			r-= 0.1;
+		if(preis >= 20)
+			r-= 0.2;
+		preis = preis * r;
+		int a = (int)((1-r)*100);
+		Terminal.println(""Rabatt: ""+a+""%\nEndpreis: ""+preis+""Euro"");
+	}
+}"
+Klein,Johannes,j.klein.3@campus.tu-berlin.de,Beendet,"12. Dezember 2021  14:05","12. Dezember 2021  23:29","9 Stunden 24 Minuten","9,92",3,char string;,"1, 1, 2","zahlen = new int[3];",int[],"den gleichen Datentyp.","[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""",""1"","""","""",""""],[""11(5)"","""","""","""","""",""3"",""""],[""9(5)"","""","""","""","""","""",""""],[""10(5)"","""","""","""",""2"","""",""""],[""11(5)"","""","""","""","""",""4"",""""],[""9(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""-"",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""1""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        int[][] array = new int[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    int[][] array1 = new int[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array1[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array1[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue{
+
+    public static void main(String[] args) {
+
+        int[] waitingNum = Terminal.askIntArray(""Queue:\n"");
+
+        int index = indexOfMax(waitingNum);
+        while (index != -1){
+            System.out.println(waitingNum[index]);
+            waitingNum[index] = Integer.MIN_VALUE;
+            index = indexOfMax(waitingNum);
+        }
+
+    }
+
+    public static int indexOfMax(int[] a) {
+
+       int maxIndex = 0;
+       for (int i = 0; i < a.length; i++) {
+            maxIndex = a[i] > a[maxIndex] ? i : maxIndex;
+       }
+       if (a[maxIndex] == Integer.MIN_VALUE) {
+           return -1;
+       }
+       return maxIndex;
+    }
+
+}","public class Pizza {
+    
+}"
+Werther,"Jasper Cornelis",j.werther@campus.tu-berlin.de,Beendet,"12. Dezember 2021  15:23","12. Dezember 2021  23:57","8 Stunden 34 Minuten","8,40",char string;,geca,3,-3.5,new,3,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""3"",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""","""",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""",""-"",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""],["""","""","""","""","""","""",""""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char [breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","import java.util.Arrays;
+
+public class Queue {
+
+	public static void main(String[] args) {
+		int [] Zahlen = Terminal.askIntArray(""Queue:\n"");
+		Arrays.sort(Zahlen);
+		int x=Zahlen.length-1;
+		for ( int i=x; i>=0;i-- ) {
+		System.out.println(Zahlen[i]);
+	}
+
+}
+private static int indexOfMax(int[] askIntArray) {
+		int [] MAX = Terminal.askIntArray("""");
+		if ( MAX == null || MAX.length == 0 ) return -1;
+int largeboi = 0;
+for (int i = 0; i < MAX.length; i++) {
+	if (MAX[i]>MAX[largeboi]) largeboi = i;		
+	}
+return largeboi;
+}
+}","public class Pizza {
+    
+}"
+Schmid,Maximilian,maximilian.schmid@campus.tu-berlin.de,Beendet,"12. Dezember 2021  18:32","12. Dezember 2021  21:01","2 Stunden 29 Minuten","13,70",new,3,char string;,-3.5,n-1,int[],"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""3"",""0"",""0"",""0"",""0"","""",""""],[""4"","""",""1"","""","""","""",""""],[""8(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""2"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""3"",""""],[""10(5)"","""","""","""","""","""",""""],[""11(5)"","""","""","""","""","""",""""],[""9(5)"","""","""","""","""",""4"",""""],[""11(5)"","""","""","""","""",""-"",""""],[""12(5)"","""","""","""","""","""",""""],[""13(5)"","""","""","""","""","""",""""],[""5"","""","""","""","""","""",""2.0""],[""6"",""-"",""-"",""-"",""-"","""",""-""]]","public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        char[][] array = new char[breite+2][hoehe+2];
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+	public static void main(String[] args){
+		int[] queue_in = Terminal.askIntArray(""Queue:\n"");
+		int ind_max;
+		while (true){
+			ind_max = indexOfMax(queue_in);
+			
+			if (ind_max == -1){
+				break;
+			}
+			Terminal.println(queue_in[ind_max]);
+			queue_in[ind_max] = Integer.MIN_VALUE;
+		}
+		
+		
+	}
+	
+	public static int indexOfMax(int[] array_in){
+		int max_out = 0;
+		for (int i = 0; i < array_in.length; i++) {
+			max_out = array_in[i] > array_in[max_out] ? i : max_out;
+		}
+		
+		for (int i = 0; i < array_in.length; i++) {
+			if (array_in[max_out] != Integer.MIN_VALUE){
+				return max_out;
+			}
+		}
+		return -1;
+		
+	}
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}","public class Pizza {
+    public static void main(String[] args){
+		int user_in;
+		float sum_order = 0;
+		int rabatt = 0;
+		int entfernung;
+		float endpreis = 0;
+		Terminal.println(""Willkommen! Bestellung:"");
+		while (true){
+			user_in = Terminal.askInt(""\n'1' Salami Pizza 5.50Euro\n'2' Veggi Pizza 4.30Euro\n'3' Ende\n"");
+			if (user_in == 1){
+				// Salami
+				Terminal.println(""Salami Pizza hinzugefuegt."");
+				sum_order += 5.5;
+			} else if (user_in == 2){
+				// Veggi
+				Terminal.println(""Veggi Pizza hinzugefuegt."");
+				sum_order += 4.3;
+			} else if (user_in == 3){
+				// Ende
+				entfernung = Terminal.askInt(""Bitte Lieferentfernung [km] eingeben:\n"");
+				if (entfernung <= 2){
+					rabatt += 10;
+				} else if (entfernung >= 20){
+					rabatt += 10;
+				}
+				
+				if (sum_order > 20){
+					rabatt += 20;
+				} else if (sum_order > 10){
+					rabatt += 10;
+				}
+				
+				Terminal.println(""Rabatt: "" + rabatt + ""%"");
+				endpreis = sum_order * (1-((float)rabatt/100));
+				if (endpreis % 0.1 == 0){
+					System.out.printf(""Endpreis: %.1fEuro"", endpreis);
+				} else {
+					System.out.printf(""Endpreis: %.2fEuro"", endpreis);
+				}
+				break;
+			}
+		}
+	}
+}"
+Sturm,"Bjarne Karl-Heinz",b.sturm@campus.tu-berlin.de,Beendet,"12. Dezember 2021  18:45","12. Dezember 2021  23:59","5 Stunden 13 Minuten","1,00",fdb,int,int null;,"den gleichen Datentyp.","zahlen[0] = 1;",new,-,"public class Framed {
+    public static int breite = 6;
+    public static int hoehe = 3;
+    
+    public static void frame() {
+        //Hier soll das Array deklariert und initialisiert werden!
+	    for(int i = 0; i <= (hoehe+1); i++) {
+		    for(int j = 0; j <= (breite+1); j++) {
+			    if((i == 0 || j == 0) || ( i == (hoehe+1) || j == (breite+1))) {
+				    System.out.print(""A"");
+				    array[j][i] = 'A'; 
+			    } 
+				else {
+				    System.out.print(""B"");
+				    array[j][i] = 'B';
+			    }
+		    }
+		    System.out.print(""\n"");
+	    }
+
+	    System.out.print(""\n---Und hier jetzt nochmal das Viereck aus dem Array---\n\n"");
+
+	    for(int i = 0; i <= (hoehe+1); i++){
+		    for(int j = 0; j <= (breite+1); j++){
+                System.out.print(array[j][i]);
+            }
+		    System.out.print(""\n"");
+	    }
+    }
+}","public class Queue {
+    //So sieht der Aufruf der Teminal Datei für Int Arrays aus:
+    //Terminal.askIntArray(""Queue:\n"");
+    
+}",-

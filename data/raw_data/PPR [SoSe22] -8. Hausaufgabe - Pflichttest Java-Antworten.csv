@@ -1,0 +1,1943 @@
+﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/15,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9","Antwort 10"
+Özmen,"Fevzi Alperen",f.oezmen@campus.tu-berlin.de,Beendet,"11. Juni 2022  12:36","19. Juni 2022  13:27","8 Tage","11,75","Attribute können wiederum Objekte sein.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.","int blumenstraussgroesse = Blume.anzahlBlumen;","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",3,5,"[[""3(11)"","""","""","""","""","""",""""],[""4(12)"","""","""","""",""undef"","""",""""],[""5(12)"","""",""undef"","""","""","""",""""],[""6(12)"","""","""","""",""undef"","""",""""],[""7(12)"","""","""","""","""","""",""""],["""","""","""",""undef"","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""undef""],[""11"","""","""","""","""","""",""""],[""12"","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class BusTest {
+
+    public static void main (String[] args){
+        Bus bus1 = new Bus(""Teststation 1"",""Teststation 2"");
+        Bus bus2 = new Bus(""Teststation 3"",""Teststation 4"");
+        Bus bus3 = new Bus(""Teststation 5"",""Teststation 6"");
+
+        bus1.fahren(2);
+        bus2.fahren(5);
+        bus3.fahren(7);
+
+        bus1.print();
+        bus2.print();
+        bus3.print();
+    }
+}","public class Haustier {
+
+    String name;
+    int alter;
+    double gewicht;
+    static int alterGesamt = 0;
+    boolean istSaeugetier;
+
+    public Haustier(String name, int alter){
+        this.name = name;
+        this.alter = alter;
+        alterGesamt = alterGesamt + alter;
+        istSaeugetier = false;
+    }
+
+    public void geburtstag(){
+        alter = alter + 1;
+        alterGesamt = alterGesamt + 1;
+    }
+}","//Hier nichts reinschreiben"
+Bachmann,Alois,alois.bachmann@campus.tu-berlin.de,Beendet,"11. Juni 2022  13:47","19. Juni 2022  23:59","8 Tage 10 Stunden","13,92",rose.giessen(50);,"Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","int blumenstraussgroesse = Blume.anzahlBlumen;","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können die Eigenschaften eines Objektes verändern.",5,5,"[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"",""-"",""-"",""-""]]","public class BusTest{
+
+    public static void main(String[] args){
+        Bus b1 = new Bus(""123"", ""321"");
+        Bus b2 = new Bus(""124"", ""421"");
+        Bus b3 = new Bus(""125"", ""521"");
+
+        b1.fahren(3);
+        b2.fahren(5);
+        b3.fahren(8);
+
+        b1.print();
+        b2.print();
+        b3.print();
+    }
+}","public class Haustier {
+    public String name;
+    public int alter;
+    public double gewicht;
+    public static int alterGesamt;
+    public boolean istSaeugetier = false;
+
+    public Haustier(String nm, int age){
+        name = nm;
+        alter = age;
+        alterGesamt += age;
+    }
+ 
+    public void geburtstag(){
+        alter++;
+        alterGesamt++;
+    }
+}","//Hier nichts reinschreiben"
+Neumann,Christopher,christopher.neumann@campus.tu-berlin.de,Beendet,"11. Juni 2022  14:56","16. Juni 2022  21:24","5 Tage 6 Stunden","10,24","int blumenstraussgroesse = Blume.anzahlBlumen;",3,"Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.",rose.giessen(50);,"Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem parametrisierten Konstruktor der Objektklasse.",5,"[[""11"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""","""","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""","""","""",""""],[""12"","""",""3"","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""","""","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""","""","""",""""],[""13"","""","""",""6"","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""","""","""","""","""",""""],[""10(14)"","""","""","""","""","""",""""],[""14"","""",""8"","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"",""-"",""-"",""-""]]","public class BusTest{
+	
+	public static void main( String args[] ){
+		Bus Bus1 = new Bus(""Wittenau"", ""Paracelsus Bad"");
+		Bus Bus2 = new Bus(""Erst Reuter Platz"", ""Zoologischer Garten"");
+		Bus Bus3 = new Bus(""Kurt Schuhmacher Platz"", ""Humboldt Str."");
+		
+		Bus1.fahren(9);
+		Bus2.fahren(1);
+		Bus3.fahren(4);
+		
+		Bus1.print();
+		Bus2.print();
+		Bus3.print();
+		
+	}
+}","public class Haustier{
+	public String name;
+	public int alter;
+	public double gewicht;
+	static int alterGesamt = 8;
+	public boolean istSaeugetier;
+	
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		
+	}
+	
+	public void gewicht(double gewicht){
+		this.gewicht = gewicht;
+	}
+	
+	public void geburtstag(){
+		alter = alter + 1;
+	}
+	
+	
+	
+	public void istSaeugetier(){
+		istSaeugetier = true;
+	}
+}","//Hier nichts reinschreiben"
+Gottschalk,"Moritz Jaap-Vincent",m.gottschalk@campus.tu-berlin.de,Beendet,"11. Juni 2022  16:06","14. Juni 2022  21:20","3 Tage 5 Stunden","13,33","int blumenstraussgroesse = Blume.anzahlBlumen;","Attribute können wiederum Objekte sein.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.",rose.giessen(50);,7,4,"Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""",""undef"","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""",""undef"",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"","""","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"","""","""",""-""]]","public class BusTest{
+	
+	public static void main (String[] args){
+		
+		Bus linie_a = new Bus(""Berlin"", ""Muenchen"");
+		Bus linie_b = new Bus(""Berlin"", ""Bremen"");
+		Bus linie_c = new Bus(""Berlin"", ""Hamburg"");
+		
+		linie_a.fahren(1);
+		linie_b.fahren(2);
+		linie_c.fahren(3);
+		
+		linie_a.print();
+		linie_b.print();
+		linie_c.print();
+
+	}
+}","public class Haustier{
+	
+	public String name;
+	public int alter;
+	public double gewicht;
+	public static int alterGesamt;
+	public boolean istSaeugetier = false;
+	
+	public Haustier(String n, int a){
+		name = n;
+		alter = a;
+		alterGesamt += a;
+	}
+	
+	public void geburtstag(){
+		alter ++;
+		alterGesamt ++;
+	}
+}","//Hier nichts reinschreiben"
+Reckermann,Hauke,hauke.reckermann@campus.tu-berlin.de,Beendet,"11. Juni 2022  20:54","16. Juni 2022  09:41","4 Tage 12 Stunden","14,58","Attribute können wiederum Objekte sein.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.",5,5,"Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",rose.giessen(50);,"[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""","""","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""",""3"","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""","""","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""",""6"","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""","""","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""",""9"","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"","""","""",""-""]]","public class BusTest{
+	
+	public static void main(String[] args){
+		
+		//Busse erstellen
+		Bus busEins = new Bus(""Spandau"", ""Hauptbahnhof"");
+		Bus busZwei = new Bus(""Hauptbahnhof"", ""Ernst-Reuter-Platz"");
+		Bus busDrei = new Bus(""Erkner"", ""Oranienburg"");
+		
+		//Busfahren
+		busEins.fahren(3);
+		busZwei.fahren(7);
+		busDrei.fahren(5);
+		
+		//Busse ausgeben
+		busEins.print();
+		busZwei.print();
+		busDrei.print();
+		
+	}
+	
+}//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!","public class Haustier{
+	
+	public static int alterGesamt = 0;
+	
+	public String name;
+	public int alter;
+	public double gewicht = 0;
+	public boolean istSaeugetier = false;
+	
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		
+		alterGesamt += alter;
+	}
+	
+	public void geburtstag(){
+		this.alter++;
+		alterGesamt++;
+	}
+	
+}","//Hier nichts reinschreiben"
+Baba,Yaser,yaser.baba@campus.tu-berlin.de,Beendet,"12. Juni 2022  01:29","19. Juni 2022  21:48","7 Tage 20 Stunden","10,17",5,2,rose.giessen(50);,"int blumenstraussgroesse = Blume.anzahlBlumen;","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.","[[""11"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""","""","""",""""],[""5(12)"","""","""","""","""","""",""""],[""2(12)"","""",""undef"","""","""","""",""""],[""3(12)"",""0"","""","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""12"","""",""3"","""","""","""",""""],[""4(13)"","""","""","""","""","""",""""],[""5(13)"","""","""","""","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""13"","""","""",""6"","""","""",""""],[""14(8)"","""","""","""","""","""",""""],[""14(9)"","""","""","""","""","""",""""],[""14"","""",""9"","""","""","""",""""],[""15"","""","""","""","""","""",""4.5""],[""16"",""-"",""-"",""-"","""","""",""-""],["""","""","""","""",""-"",""-"",""""]]","class BusTest {
+
+	public static void main (String[]args) {
+	
+		Bus speeder1 = new Bus(""A"", ""B"");
+		speeder1.fahren(0);
+		speeder1.fahren(0);
+		
+		Bus speeder2 = new Bus(""C"", ""D"");
+		speeder2.fahren(5);
+		speeder2.fahren(2);
+		
+		Bus speeder3 = new Bus(""E"", ""F"");
+		speeder3.fahren(3);
+		speeder3.fahren(4);
+	
+		printBus(speeder1);
+		printBus(speeder2);
+		printBus(speeder3);
+		
+	}
+	
+	public static void printBus(Bus speeder) {
+	
+	System.out.println(""Startpunkt: "" + speeder.getStart());
+	System.out.println(""Endstation: "" + speeder.getZiel());
+	System.out.println(""Gefahren Stationen: "" + speeder.gefahreneStationen());
+	
+	}
+	
+}",-,"//Hier nichts reinschreiben"
+Kötschau,"Johann Magnus",johann-magnus.koetschau@campus.tu-berlin.de,Beendet,"12. Juni 2022  13:18","17. Juni 2022  11:39","4 Tage 22 Stunden","13,17",rose.giessen(50);,"Attribute können wiederum Objekte sein.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.",5,"Eine Methode, die nicht auf Attribute zugreift, muss statisch sein","int blumenstraussgroesse = Blume.anzahlBlumen;",3,"[[""11"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""","""","""",""""],[""12"","""","""","""",""-"","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""","""","""",""""],[""13"","""","""","""",""-"","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""","""",""""],[""14"","""","""","""","""",""-"",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"","""","""",""-""]]","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+public class BusTest{
+  public static void main( String [] args){
+    Bus Bus1=new Bus(""Bahnhof"",""Botanischer Garten"");
+    Bus Bus2=new Bus(""Zoo"",""Krankenhaus"");
+    Bus Bus3=new Bus(""Kino"", ""Museum"");
+    
+    Bus1.fahren(10);
+    Bus2.fahren(3);
+    Bus3.fahren(7);
+    Bus1.print();
+    Bus2.print();
+    Bus3.print();
+    
+    
+    
+    
+    }
+  
+  
+  
+  
+  }","public class Haustier{
+  public String name;
+  public double gewicht;
+  public int alter;
+  public static int alterGesamt;
+  public boolean istSaeugetier;
+  
+  public Haustier(String name, int alter){
+    this.name=name;
+    this.alter=alter;
+    this.istSaeugetier=false;
+    alterGesamt=alterGesamt+alter;
+    
+    
+    
+    }
+  public void geburtstag() {
+    this.alter=this.alter+1;
+    alterGesamt++;
+  }
+  
+  
+  
+  
+  
+  
+  }","//Hier nichts reinschreiben"
+Puder,"Carolin-Antonia Heike",puder@campus.tu-berlin.de,Beendet,"12. Juni 2022  20:58","19. Juni 2022  16:44","6 Tage 19 Stunden","10,24","int blumenstraussgroesse = Blume.anzahlBlumen;","Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können die Eigenschaften eines Objektes verändern.
+
+; Attribute können wiederum Objekte sein.",5,"Eine statische Methode muss zwingenderweise mindestens einen Übergabeparameter haben",rose.giessen(50);,"Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","[[""11"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""",""3"","""",""az"","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7"","""","""","""","""","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"",""az"","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7"","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"","""","""",""-"",""-"",""-""]]","public class BusTest {
+	
+	public static void main(String[] args){
+	Bus b1 = new Bus(""Schulstraße"", ""Hauptbahnhof"");
+	b1.fahren(3);
+	
+	Bus b2 = new Bus(""Dorfstraße"", ""Bahnhofstraße"");
+	b2.fahren(5);
+	
+	Bus b3 = new Bus(""Seestraße"", ""Moorstraße""); 
+	b3.fahren(13);
+	
+	System.out.println(b1.print());
+	System.out.println(b2.print());
+	System.out.println(b3.print());
+	}
+}","public class Haustier {
+
+	public double gewicht;
+	public int alter = 0;
+	public String name;
+	public boolean istSaeugetier;
+
+	public static int alterGesamt;
+	
+	public boolean istSaeugetier(double w) {
+		this.gewicht = w;
+		if(this.gewicht < 2)
+			return true;
+		return false;
+	}
+	
+	public Haustier(String name, double gewicht) {
+		this.name = name;
+		this.gewicht = gewicht;
+	}
+	
+	public Haustier(String name, int alter) {
+		this.name = name;
+		this.alter = alter;
+	}
+	
+	public void geburtstag() {
+		alter++;
+	}
+	
+
+}","//Hier nichts reinschreiben"
+Bosner,Celina,c.bosner@campus.tu-berlin.de,Beendet,"13. Juni 2022  00:02","19. Juni 2022  23:23","6 Tage 23 Stunden","11,08",rose.giessen(50);,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",6,"Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","int blumenstraussgroesse = 3;",2,"[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"",""-"",""-"",""-""]]",-,"public class Haustier {
+    static int alterGesamt = 0;
+    
+    boolean istSaeugetier = false;
+    double gewicht;
+    String name;
+    int alter;
+
+    Haustier(String name, int alter) {
+        this.name = name;
+        this.alter = alter;
+        Haustier.alterGesamt += this.alter;
+    }
+
+    public void geburtstag() {
+        this.alter++;
+        Haustier.alterGesamt++;
+    }
+}","//Hier nichts reinschreiben"
+Asad,Hamza,hamza.asad@campus.tu-berlin.de,Beendet,"13. Juni 2022  00:04","19. Juni 2022  23:59","6 Tage 23 Stunden","8,64",rose.giessen(50);,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.
+
+; Attribute können die Eigenschaften eines Objektes verändern.",5,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.",5,"[[""11"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"",""0"","""","""","""","""",""""],[""5(12)"","""","""","""",""az"","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"",""-"","""","""",""-"","""",""""],[""8(12)"","""","""","""","""","""",""""],[""9(12)"","""","""","""","""",""az"",""""],[""10(12)"","""","""","""",""-"",""-"",""""],[""11(12)"","""","""","""","""","""",""""],[""12"","""",""3"","""","""","""",""""],[""13"","""","""",""6"","""","""",""""],[""2(14)"","""","""","""","""","""",""""],[""3(14)"",""0"","""","""","""","""",""""],[""7(14)"",""-"","""","""","""","""",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""",""-"",""-"",""0""],[""16"",""-"",""-"",""-"","""","""",""-""]]","public class BusTest{
+
+	public static void main (String [] args){
+
+		Bus[] bus1 = new Bus[3];
+		bus1[0] = new Bus(""Bombay"", ""Delhi"", 10);
+		bus1[1] = new Bus(""Wunderland"", ""Nimmerland"", 3);
+		bus1[2] = new Bus(""Moskau"", ""Stalingrad"", 7);
+
+	}
+
+	public static void printBus(Bus bus){
+
+		String output = ""Es gibt : ""+ bus.length+"" Busse. Folgende Busse sind enthalten : \n"";	
+
+	}
+
+}","public class Haustier{
+
+    String name;
+    int alter;
+    double gewicht;
+    public static int alterGesamt;
+    boolean istSaegetier;
+    
+    public Haustier (String name, int alter){
+        this.name = name;
+        this.alter = alter;
+        alterGesamt += alter;
+    }
+    
+    public void geburtstag() {
+        this.alter ++;
+        alterGesamt ++;
+    }
+}","//Hier nichts reinschreiben"
+Böning,"Felix Gabriel",f.boening@campus.tu-berlin.de,Beendet,"13. Juni 2022  00:05","19. Juni 2022  23:59","6 Tage 23 Stunden","13,83","Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.",rose.giessen(50);,5,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",5,"int blumenstraussgroesse = Blume.anzahlBlumen;","[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""",""undef"",""undef"",""3"","""",""""],[""5"","""",""3"","""","""","""",""""],[""6"",""1"","""","""","""","""",""""],[""7"","""","""","""","""","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5"","""","""",""6"","""","""",""""],[""6"",""2"","""","""","""","""",""""],[""7"","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9"","""",""9"","""","""","""",""""],[""10"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""false""],[""16"",""-"",""-"",""—"",""-"",""-"",""-""]]","public class BusTest{
+	public static void main (String [] args){
+		Bus b1 = new Bus(""Bahnhof Zoo"", ""Adenauer Str"");
+		Bus b2 = new Bus (""Nollendorfplz"", ""Bellevue"");
+		Bus b3 = new Bus (""Breitscheidplz"", ""Bundestag"");
+		b1.fahren(3);
+		b2.fahren(6);
+		b3.fahren(1);
+		b1.print();
+		b2.print();
+		b3.print();
+	}
+}","public class Haustier{
+	public String name;
+	public int alter;
+	public double gewicht;
+	public static boolean istSaeugetier = false;
+	public static int alterGesamt = 0;
+	
+	public Haustier(String n, int a){
+		name = n;
+		alter = a;
+		alterGesamt += a;
+	} 
+	public void geburtstag(){
+		this.alter++;
+		alterGesamt++;
+	}
+}","//Hier nichts reinschreiben"
+Krüger,"Finn Johann",finn.johann.krueger@campus.tu-berlin.de,Beendet,"13. Juni 2022  08:13","19. Juni 2022  20:31","6 Tage 12 Stunden","13,75",5,"Attribute können wiederum Objekte sein.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",2,"Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.",rose.giessen(50);,"[[""11"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"",""0"",""undef"","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"","""","""",""-""]]","public class BusTest {
+  public static void main(String[] args) {
+
+    Bus bus_1 = new Bus(""Bülowstraße"", ""Nollendorfplatz"");
+    bus_1.fahren(3);
+    bus_1.print();
+    Bus bus_2 = new Bus(""Mehringdamm"", ""Hermannplatz"");
+    bus_2.fahren(4);
+    bus_2.print();
+    Bus bus_3 = new Bus(""Samariterstraße"", ""Weberwiese"");
+    bus_3.fahren(5);
+    bus_3.print();
+
+  }
+}","public class Haustier {
+
+  public  String name;
+  public  int alter;
+  public  double gewicht;
+  public  boolean istSaeugetier;
+  public static int alterGesamt;
+
+  Haustier(String name, int alter) {
+
+    this.name = name;
+    this.alter = alter;
+    alterGesamt += alter;
+    
+
+  }
+
+  public  void geburtstag() {
+    alter += 1;
+    alterGesamt += 1;
+  }
+
+
+
+
+}","//Hier nichts reinschreiben"
+Yilmaz,Cem,cem.yilmaz.1@campus.tu-berlin.de,Beendet,"13. Juni 2022  11:26","19. Juni 2022  23:59","6 Tage 12 Stunden","10,05","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",3,5,"Attribute können wiederum Objekte sein.
+
+; Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.","int blumenstraussgroesse = Blume.anzahlBlumen;","Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.","[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""",""undef"","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""","""","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""","""",""12"","""","""",""""],[""10(14)"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"",""-"",""-"",""-""]]","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+public class BusTest{
+	
+	
+	public static void main(String[] args){
+		
+		Bus Bus1= new Bus(""Anfangsstation"",""Endstation"");
+		Bus Bus2= new Bus(""Mittelstation"",""Vorderstation"");
+		Bus Bus3= new Bus(""Hinterestation"",""Unterestation"");
+		Bus1.fahren(5);
+		Bus2.fahren(2);
+		Bus3.fahren(8);
+		Bus1.print();
+		Bus2.print();
+		Bus3.print();
+		
+		
+	}
+	
+	
+	
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}","class Haustier{
+
+public static String chinchilla;
+public static String weissbauchigel;
+public String name; 
+public int alter;
+public double gewicht;
+public boolean istSaeugetier;
+public static int alterGesamt;
+
+
+public Haustier(String name, int alter){
+	
+	this.alter=alter;
+	this.name=name;
+	this.alterGesamt=alterGesamt+alter;
+	
+}
+
+public int geburtstag(){
+	alterGesamt++;
+	return alter=alter+1;
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+}","//Hier nichts reinschreiben"
+Macht,Isabella,i.macht@campus.tu-berlin.de,Beendet,"13. Juni 2022  13:48","19. Juni 2022  20:43","6 Tage 6 Stunden","7,00","Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können wiederum Objekte sein.
+
+; Attribute können die Eigenschaften eines Objektes verändern.","Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.",3,5,"int blumenstraussgroesse = Blume.anzahlBlumen;","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","[[""11"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"",""3"","""","""","""","""",""""],[""6(12)"",""2"","""","""",""6"","""",""""],[""7(12)"","""","""","""","""","""",""""],[""12"","""",""3"","""","""","""",""""],[""4(13)"","""","""","""","""","""",""""],[""5(13)"","""","""","""","""","""",""""],[""6(13)"","""","""","""","""","""",""""],[""7(13)"","""","""","""","""","""",""""],[""13"","""","""",""6"","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""","""","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""",""9"","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"",""-"","""",""-""]]","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+public class BusTest {
+
+    public static void main(String[] args) {
+        Bus[] bus = new Bus[3];
+        bus[0] = new Bus(""Franklinstrasse"", ""Turmstrasse"", 4);
+        bus[1] = new Bus(""Charlottenhof"", ""Hauptbahnhof"", 7);
+        bus[2] = new Bus(""Pappelallee"", ""Lindenstrasse"", 2);
+
+        bus[0].fahren(3);
+        bus[1].fahren(5);
+        bus[2].fahren(1);
+
+        String output = bus[0].print();
+        System.out.println(output);
+        output = bus[1].print();
+        System.out.println(output);
+        output = bus[2].print();
+        System.out.println(output);
+    }
+}","public class Haustier {
+    public static int alterGesamt;
+    public boolean istSaeugetier;
+    String name;
+    int alter;
+    double gewicht;
+
+    public Haustier(String name, int alter) {
+        this.name = name;
+        this.alter = alter;
+    }
+
+    public void geburtstag() {
+        alter += 1;
+    }
+
+    public int alterGesamt() {
+        alterGesamt = 8;
+        return alterGesamt;
+    }
+}","//Hier nichts reinschreiben"
+Matheson,Piers,piers.matheson@campus.tu-berlin.de,Beendet,"13. Juni 2022  14:13","19. Juni 2022  19:05","6 Tage 4 Stunden","5,17",2,"Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.",Pflanze.giessen(50);,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","int blumenstraussgroesse = Blume.anzahlBlumen;","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parameterlosen Konstruktor der Objektklasse.","[["""","""","""","""","""","""",""""],[""4(12)"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class BusTest {
+    public static void main(String[] args){
+
+    Bus b1 = new Bus(""eins"", ""vier"", 0);
+
+        Bus.fahren(3);
+        System.out.println(""Der Bus hat "" +b1.gefahreneStationen + "" Stationen zurueckgelegt."");
+        System.out.println(b1.start);
+        System.out.println(b1.ziel);
+
+
+    Bus b2 = new Bus(""zwei"", ""vier"", 0);
+
+        Bus.fahren(2);
+        System.out.println(""Der Bus hat "" +b2.gefahreneStationen + "" Stationen zurueckgelegt."");
+        System.out.println(b2.start);
+        System.out.println(b2.ziel);
+
+    Bus b3 = new Bus(""drei"", ""acht"", 0);
+
+        Bus.fahren(5);
+        System.out.println(""Der Bus hat "" +b3.gefahreneStationen + "" Stationen zurueckgelegt."");
+        System.out.println(b3.start);
+        System.out.println(b3.ziel);
+
+
+
+    System.out.println();
+
+
+
+    }
+
+}","public class Haustier {
+    public String name;
+    public int alter;
+    public double gewicht;
+    public static int alterGesamt = 0;
+    public boolean istSaeugetier;
+
+    public Haustier(String n, int a){
+        name = n;
+        alter = a;
+        alterGesamt = alterGesamt+a;
+    }
+
+    public void geburtstag(){
+        this.alter++;
+        alterGesamt++;
+
+    }
+
+}","//Hier nichts reinschreiben"
+Fujiya,Tsuzuru,tsuzuru.fujiya@campus.tu-berlin.de,Beendet,"13. Juni 2022  15:45","19. Juni 2022  23:59","6 Tage 8 Stunden","3,75","int blumenstraussgroesse = Blume.anzahlBlumen;",6,3,"Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.",rose.giessen(50);,"Eine nicht-statische Methode ändert stets den Wert von Attributen","[[""11"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"",""0"","""","""",""undef"","""",""""],[""5(12)"","""",""undef"",""undef"","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""","""","""",""""],[""8(12)"","""","""","""","""",""undef"",""""],[""9(12)"","""","""","""","""","""",""""],[""10(12)"","""","""","""","""","""",""""],[""11(12)"","""","""","""","""","""",""""],[""12"",""4"",""3"","""","""","""",""""],[""13"",""7"","""",""6"","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""false""],[""16"","""","""","""","""","""",""""]]","public class BusTest{
+    String start;
+    String ziel;
+    int gefahreneStationen;
+    
+    public Bus(String a, String b){
+        start=a;
+        ziel=b;
+        gefahreneStationen=0;
+    }
+    public void fahren(int n){
+        gefahreneStationen += n;
+        
+    }
+    public void print(){
+        System.out.println(start+"" ""+ziel+"" ""+gefahreneStationen);
+        
+    }
+}","public class HaustierVerwaltung{
+    //PPR 
+    public static void main(String[] args){
+        // deklariere zwei Variablen vom Typ Haustier
+        Haustier chinchilla;
+        Haustier weissbauchigel;
+        // erzeuge zwei Objekte der Klasse Haustier
+        chinchilla=new Haustier(""Flips"", 5);
+        weissbauchigel =new
+        Haustier(""Freddy"", 2);
+        """"weise einigen Attributen der zwei Objekte Werte zu
+        weissbauchigel.gewicht=0.016;
+        chinchilla.gewicht=2.4;
+        // chinchilla wird ein Jahr aelter 
+        chinchilla.geburtstag();
+        System.out.println(chinchilla.name+"" ist jetzt ""+chinchilla.alter);
+        System.out.println(""Zusammengerechnet sind unsere Haustiere jetzt ""+Haustier.alterGesamt + "" Jahre alt"");
+        // Ausgabe der Attributwerte der Objekte
+        if(chinchilla.istSaeugetier){
+            System.out.println(""Der Chinchilla ist ein Saeugetier und ist ""+chinchilla.alter+"" Jahre alt, heisst ""+chinchilla.name+"". Sie wiegt ""+chinchilla.gewicht +"" kg."");
+        }
+        System.out.println(""Der Weissbauchigel ist ""+weissbauchigel.alter+"" Jahre alt und heisst ""+weissbauchigel.name+"". Er wiegt ""+weissbauchigel.gewicht+"" kg."");
+        
+    } 
+}","//Hier nichts reinschreiben"
+Mengi,Berna,berna.mengi@campus.tu-berlin.de,Beendet,"13. Juni 2022  15:49","19. Juni 2022  07:34","5 Tage 15 Stunden","12,08","int blumenstraussgroesse = Blume.anzahlBlumen;","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",5,"Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.",rose.giessen(50);,6,"[[""2"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""",""-"",""-"",""-"",""-"",""-"",""-""]]","public class BusTest {
+  public static void main(String[] args) {
+    // Buslinien (Objekte) erzeugen
+    Bus linie1 = new Bus(""Südstadt"", ""Provinzdorf"");
+    Bus linie2 = new Bus(""Zentrum"", ""Hauptbahnhof"");
+    Bus linie3 = new Bus(""Rathausplatz"", ""Ponyhof"");
+
+    // Verschiedene Buslinien fahren lassen
+    linie1.fahren(8);
+    linie2.fahren(2);
+    linie3.fahren(5);
+
+    // Ausgabe
+    linie1.print();
+    linie2.print();
+    linie3.print();
+  }
+}","public class Haustier {
+  public String name;
+  public double gewicht;
+  public int alter;
+  public static int alterGesamt;
+  public boolean istSaeugetier;
+
+  public Haustier(String name, int alter) {
+    this.name = name;
+    this.alter = alter;
+    this.alterGesamt += alter;
+  }
+
+  public void geburtstag() {
+    alter += 1;
+    alterGesamt += 1;
+  }
+}","//Hier nichts reinschreiben"
+"Alonso Pardo","Laura Christina",l.alonsopardo@tu-berlin.de,Beendet,"13. Juni 2022  19:12","15. Juni 2022  21:58","2 Tage 2 Stunden","13,42",3,"int blumenstraussgroesse = Blume.anzahlBlumen;","Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem parametrisierten Konstruktor der Objektklasse.",5,rose.giessen(50);,"Eine statische Methode muss zwingenderweise mindestens einen Übergabeparameter haben","[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"","""","""",""-""]]","public class BusTest{
+	public static void main(String[] args){
+		Bus bus1 = new Bus(""Alexanderplatz"", ""Zoologischer Garten"");
+		Bus bus2 = new Bus(""Alt-Tegel"", ""Alt Mariendorf"");
+		Bus bus3 = new Bus(""Friedrichstrasse"", ""Hallesches Tor"");
+		bus1.fahren(3);
+		bus2.fahren(5);
+		bus3.fahren(2);
+		bus1.print();
+		bus2.print();
+		bus3.print();
+	}
+}","public class Haustier{
+	public String name;
+	public int alter;
+	public double gewicht;
+	public boolean istSaeugetier = false;
+	public static int alterGesamt = 0;
+
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+
+		this.alterGesamt += this.alter;
+	}
+
+	public void geburtstag(){
+		this.alter ++;
+		Haustier.alterGesamt ++;
+	}
+
+}","//Hier nichts reinschreiben"
+Paluch,"Maurice Jonathan Justin",m.paluch@campus.tu-berlin.de,Beendet,"13. Juni 2022  20:03","18. Juni 2022  15:18","4 Tage 19 Stunden","14,08","Attribute können wiederum Objekte sein.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.",rose.giessen(50);,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",4,5,"int blumenstraussgroesse = Blume.anzahlBlumen;","[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""",""3"","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""",""6"","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"","""","""",""-""]]","public class BusTest {
+	public static void main(String[] args) {
+		Bus A = new Bus(""Station01"",""Station02"");
+		Bus B = new Bus(""Station03"",""Station04"");
+		Bus C = new Bus(""Station05"",""Station06"");
+		A.fahren(3);
+		A.print();
+		B.fahren(5);
+		B.print();
+		C.fahren(7);
+		C.print();
+	}
+}","public class Haustier {
+	public String name;
+	public int alter;
+	public double gewicht;
+	public int geburtstag;
+	public static int alterGesamt;
+	public boolean istSaeugetier;
+	
+	public Haustier(String name, int alter) {
+		this.name = name;
+		this.alter = alter;
+		this.istSaeugetier = Saeugetier(name);
+		this.alterGesamt+=alter;
+	}
+	public void geburtstag() {
+		alter++;
+		alterGesamt++;
+	}			
+	public boolean Saeugetier(String n) {
+		name=n;
+		if(this.name.equals(n));
+			return false;
+	}
+}","//Hier nichts reinschreiben"
+"Saa Hinojosa","Paola Carolina",p.saahinojosa@campus.tu-berlin.de,Beendet,"13. Juni 2022  20:13","19. Juni 2022  23:59","6 Tage 3 Stunden","5,45","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.",5,"Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können wiederum Objekte sein.","Eine Methode, die nicht auf Attribute zugreift, muss statisch sein",2,"int blumenstraussgroesse = Blume.anzahlBlumen;","[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""",""undef "","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""",""undef "",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(4)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"","""","""",""-""]]",-,"public class Haustier {
+      public String name;
+      public int alter;
+      public double gewicht;
+      public boolean istSaeugetier;
+      public static int alterGesamt = 0;
+      public Haustier(String n, int a) {
+          name = n;
+          alter = a;
+          istSaeugetier = false;
+          alterGesamt = a;
+
+      }
+      public void geburtstag() {
+          alter++;
+          alterGesamt++;
+          
+      } 
+      
+      
+}","//Hier nichts reinschreiben"
+Türk,Gökcenur,g.tuerk@campus.tu-berlin.de,Beendet,"13. Juni 2022  20:50","19. Juni 2022  22:20","6 Tage 1 Stunde","11,33","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.",6,"int blumenstraussgroesse = Blume.anzahlBlumen;","Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.",rose.giessen(50);,"[[""2"","""","""","""","""","""",""""],[""4(12)"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class BusTest {
+  public static void main(String[] args) {
+    // Buslinien (Objekte) erzeugen
+    Bus linie1 = new Bus(""Südstadt"", ""Provinzdorf"");
+    Bus linie2 = new Bus(""Zentrum"", ""Hauptbahnhof"");
+    Bus linie3 = new Bus(""Rathausplatz"", ""Ponyhof"");
+
+    // Verschiedene Buslinien fahren lassen
+    linie1.fahren(8);
+    linie2.fahren(2);
+    linie3.fahren(5);
+
+    // Ausgabe
+    linie1.print();
+    linie2.print();
+    linie3.print();
+  }
+}","public class Haustier {
+  public String name;
+  public double gewicht;
+  public int alter;
+  public static int alterGesamt;
+  public boolean istSaeugetier;
+
+  public Haustier(String name, int alter) {
+    this.name = name;
+    this.alter = alter;
+    this.alterGesamt += alter;
+  }
+
+  public void geburtstag() {
+    alter += 1;
+    alterGesamt += 1;
+  }
+}","//Hier nichts reinschreiben"
+Lemanczyk,"Maksymilian Karol",m.lemanczyk@campus.tu-berlin.de,Beendet,"14. Juni 2022  08:18","18. Juni 2022  15:09","4 Tage 6 Stunden","13,83","int blumenstraussgroesse = Blume.anzahlBlumen;","Attribute können wiederum Objekte sein.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.",rose.giessen(50);,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",3,"[[""11"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"",""0"",""undef"","""",""3"","""",""""],[""5(12)"",""\t"",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""",""\t"",""""],[""4(13)"","""","""",""undef"",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"","""","""",""-""]]","public class BusTest {
+	public static void main (String[]args) {
+		Bus L277 = new Bus (""Stadtrandsiedlung"",""S+U Hermannstr."");
+		Bus M76 = new Bus (""S Lichtenrade"",""U Walther-Schreiber-Pl."");
+		Bus X76 = new Bus (""Naharyiastr."",""U Alt-Mariendorf"");
+		
+		L277.fahren(35);
+		M76.fahren(30);
+		X76.fahren(15);
+		
+		
+		L277.print();
+		M76.print();
+		X76.print();
+		
+	}
+}","public class Haustier {
+	public String name;
+	public int alter;
+	public double gewicht;
+	public boolean istSaeugetier;
+	public static int alterGesamt;
+	
+	
+	public Haustier (String n , int a) {
+		name=n;
+		alter=a;
+		this.gewicht=0;
+		istSaeugetier=false;
+		alterGesamt+=alter;
+	}
+	
+	public void geburtstag() {
+		alter+=1;
+		alterGesamt+=1;
+	}
+
+	
+}","//Hier nichts reinschreiben"
+Kahl,"Patrick Paul Tobias",p.kahl@campus.tu-berlin.de,Beendet,"14. Juni 2022  10:07","19. Juni 2022  23:56","5 Tage 13 Stunden","6,58","Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.","int blumenstraussgroesse = Blume.anzahlBlumen;","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können wiederum Objekte sein.",rose.giessen(50);,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",4,"[[""11"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"",""0"","""","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"","""","""",""-""]]","public class BusTest{
+	public static void main (String args[]){
+		Bus one = new Bus(""a"",""b"");
+		Bus two = new Bus(""d"",""e"");
+		Bus three = new Bus(""h"",""j"");
+		one.fahren(3);
+		two.fahren(4);
+		three.fahren(5);
+		one.print();
+		two.print();
+		three.print();
+	}
+	
+}//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!","public class HaustierVerwaltung {
+    public static void main(String[] args) {
+        // deklariere zwei Variablen vom Typ Haustier
+        String Haustier chinchilla;
+		String Haustier weissbauchigel;
+        
+        // erzeuge zwei Objekte der Klasse Haustier
+        chinchilla = new Haustier(""Fips"", 5);
+		weissbauchigel = new Haustier(""Freddy"", 2);
+		
+        
+        // weise einigen Attributen der zwei Objekte Werte zu
+		weissbauchigel.gewicht = 0.016;
+		chinchilla.gewicht = 2.4;
+        
+        // chinchilla wird ein Jahr aelter
+        chinchilla.geburtstag();
+		System.out.println(chinchilla.name+"" ist jetzt ""+chinchilla.alter);
+        System.out.println(""Zusammengerechnet sind unsere Haustiere jetzt ""+Haustier.alterGesamt+"" Jahre alt"");
+        // Ausgabe der Attributwerte der Objekte
+		if(chinchilla.istSaeugetier){
+			System.out.println(""Der Chinchilla ist ein Sauegetier und ist""+chinchilla.alter +"" Jahre alt, heisst ""+chinchilla.name+"". Sie wiegt "" + chinchilla.gewicht + "" kg."");
+		}
+        System.out.println(""Der Weissbauchigel ist ""+weissbauchigel.alter+"" Jahre alt und heisst ""+weissbauchigel.name+"". Er wiegt "" + weissbauchigel.gewicht + "" kg."");
+    }
+}","//Hier nichts reinschreiben"
+Dorn,"Anton Fridolin",a.dorn@campus.tu-berlin.de,Beendet,"14. Juni 2022  10:58","19. Juni 2022  21:29","5 Tage 10 Stunden","10,60","int blumenstraussgroesse = Blume.anzahlBlumen;",4,7,rose.giessen(50);,"Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.","Attribute können die Eigenschaften eines Objektes verändern.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.","[[""11"",""0"","""","""",""-"",""-"",""-""],[""4(12)"","""",""undef"","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""",""undef"",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"","""","""",""-""]]","public class BusTest{
+
+	public static void main(String[] args){
+		Bus volvo = new Bus(""Baustelle"", ""Lager"");
+		Bus mercedes = new Bus(""Berlin"", ""Warschau"");
+		Bus man = new Bus(""Spandau"", ""Erkner"");
+
+		volvo.fahren(3);
+		mercedes.fahren(8);
+		man.fahren(33);
+
+		volvo.print();
+		mercedes.print();
+		man.print();
+	}
+}","public class Haustier{
+
+	public String name;
+	public double gewicht;
+	public int alter;
+	public boolean istSaeugetier = false;
+	public static int alterGesamt;
+
+	//parametrisierter Konstruktor
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		alterGesamt += alter;
+	}
+	
+	//Methode Geburtstag
+	public void geburtstag(){
+		this.alter++;
+		alterGesamt ++;
+	}
+}","//Hier nichts reinschreiben"
+"Ben Hassine",Lydia,lydia.benhassine@campus.tu-berlin.de,Beendet,"14. Juni 2022  11:15","19. Juni 2022  23:20","5 Tage 12 Stunden","2,33","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Attribute können wiederum Objekte sein.
+
+; Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.","int blumenstraussgroesse = Blume.anzahlBlumen;","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.",2,"giessen(rose) = 50;","[["""","""","""","""","""","""",""""],[""4(12)"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+class BusTest{
+
+	public static void main (String[]args){
+	
+	Bus a=new Bus(""Station a"" , ""Station b"");
+	a.fahren(4);
+	Bus b=new Bus(""Station c"" , ""Station d"");
+	b.fahren(3);
+	Bus c=new Bus(""Station e"" , ""Station f"");
+	c.fahren(7);
+	
+	printBus(a);
+	printBus(b);
+	printBus(c);
+	}
+	public static void printBus(Bus bus){ // methode
+	
+	System.out.println(""Start: "" + bus.getStart());
+	System.out.println(""Ziel: "" + bus.getZiel());
+	System.out.println(""Stationen gefahren: "" + bus.gefahreneStationen());
+	
+	}
+}","public class Haustier{
+    public String name;
+    public int alter;
+    public double gewicht;
+    public boolean istSaeugetier;
+   
+}","//Hier nichts reinschreiben"
+Penner,Valeria,valeria.penner@campus.tu-berlin.de,Beendet,"14. Juni 2022  12:18","19. Juni 2022  23:35","5 Tage 11 Stunden","4,17","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","int blumenstraussgroesse = Blume.anzahlBlumen;",5,"giessen(rose) = 50;","Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.",4,"[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""undef"","""",""""],[""5(12)"","""",""a"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""","""","""",""""],[""12"","""",""3"","""",""3"","""",""""],[""4(13)"","""","""","""","""","""",""""],[""5(13)"","""","""",""a"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""","""","""",""""],[""13"","""","""",""6"",""6"","""",""""],[""8(14)"","""",""9"","""","""","""",""""],[""9(14)"","""","""","""","""","""",""""],[""10(14)"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"","""","""","""","""","""",""""]]","public class BusTest {
+
+public static void main (String [] args) {
+	Bus bus1 = new Bus();
+	bus1.start = ""Wedding"";
+	bus1.ziel = ""Tiergarten"";
+	bus1.gefahreneStationen = 5;
+	bus1.fahren++;
+	bus1.print;
+	
+	System.out.println(bus1);
+
+Bus bus2 = new Bus();
+	bus2.start = ""Zehlendorf"";
+	bus2.ziel = ""Mehringdamm"";
+	bus2.gefahreneStationen = 13;
+	bus2.fahren++;
+	bus2.print;
+	
+	System.out.println(bus2);
+	
+
+	Bus bus3 = new Bus();
+	bus3.start = ""Steglitz"";
+	bus3.ziel = ""Kottbusser Tor"";
+	bus3.gefahreneStationen = 8;
+	bus3.fahren++;
+	bus3.print;
+
+
+
+}}","public class Haustier {
+
+ public String name;
+ public int alter;
+ public double gewicht;
+ public boolean Saeugetier;
+ 
+  // parametrisierter Konstruktor 
+	  public Haustier(String name, int alter, double gewicht, boolean Saeugetier){
+		  this.name =name; //bei gleichen Namen this nötig
+		  this.alter = alter; 
+		  this.gewicht= gewicht;
+		  this.Saeugetier= Saeugetier;
+	  }
+
+	
+	  public static int Haustier.alterGesamt (int Haustier.alter ) {
+		
+		  return alterGesamt; 
+	  }
+ public void geburtstag() {
+		  this.alter++;
+ }
+	
+	  
+
+}","//Hier nichts reinschreiben"
+Grafelmann,"Tjorven Björn",grafelmann@campus.tu-berlin.de,Beendet,"14. Juni 2022  13:31","14. Juni 2022  21:26","7 Stunden 54 Minuten","13,75",rose.giessen(50);,"Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parameterlosen Konstruktor der Objektklasse.","int blumenstraussgroesse = Blume.anzahlBlumen;",7,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",4,"[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""",""undef"","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""",""undef"",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"","""","""",""-""]]","public class BusTest {
+	
+	public static void main (String[] args) {
+		Bus b1 = new Bus (""Berlin"", ""Hamburg"");
+		Bus b2 = new Bus (""Hamburg"", ""Bremen"");
+		Bus b3 = new Bus (""Bremen"", ""Berlin"");
+		
+		b1.fahren(3);
+		b2.fahren(5);
+		b3.fahren(7);
+		
+		b1.print();
+		b2.print();
+		b3.print();
+	}
+	
+}","public class Haustier {
+	
+	public String name;
+	public int alter;
+	public double gewicht;
+	public boolean istSaeugetier = false;
+	public static int alterGesamt = 0;
+	
+	public Haustier (String name, int alter) {
+		this.name=name;
+		this.alter=alter;
+		alterGesamt+=alter;
+	}
+	
+	public void geburtstag() {
+		this.alter++;
+		alterGesamt++;
+	}
+	
+}","//Hier nichts reinschreiben"
+Hake,"Anna Franziska",a.hake@campus.tu-berlin.de,Beendet,"14. Juni 2022  13:32","19. Juni 2022  23:59","5 Tage 10 Stunden","4,58","Eine nicht-statische Methode ändert stets den Wert von Attributen","int blumenstraussgroesse = Blume.anzahlBlumen;","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.",5,rose.giessen(50);,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","[[""11"",""undef"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""undef"","""",""""],[""5(12)"","""","""","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""1"","""",""""],[""12"","""",""3"","""","""","""",""""],[""4(13)"","""","""","""",""-"","""",""""],[""5(13)"","""","""","""","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""",""6"","""","""",""""],[""13"","""",""4"","""","""","""",""""],[""4(14)"","""","""","""","""",""1"",""""],[""5(14)"","""",""5"","""","""","""",""""],[""6(14)"","""","""","""","""",""-"",""""],[""7(14)"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"","""","""",""-""]]",-,"public class Haustier {
+   public stativ int alterGesamt = 0;
+   
+  public String name;
+  public int alter;
+  public double gewicht;
+  public boolean istSaeugetier;
+  
+  public void geburtstag(){
+        alter++;
+        alterGesamt++;
+        
+    }
+  
+    
+  public Haustier (String name; int alter){
+    this.name = name;
+    this.alter = alter;
+    alterGesamt += alter;
+    
+    
+         }
+  }","//Hier nichts reinschreiben"
+Duryn,"Jonas Manuel",jonas.duryn@campus.tu-berlin.de,Beendet,"14. Juni 2022  13:59","14. Juni 2022  15:57","1 Stunde 57 Minuten","14,33",rose.giessen(50);,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.",5,"Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.",5,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"","""",""-"",""-"","""","""",""-""]]","public class BusTest{
+	
+	public static void main(String[] args){
+		Bus m249 = new Bus(""Zoo"", ""Pariserstraße"");
+		Bus m101 = new Bus(""Zoo"", ""Pariserstraße"");
+		Bus m29 = new Bus(""Zoo"", ""Pariserstraße"");
+		
+		m249.fahren(10);
+		m101.fahren(10);
+		m29.fahren(10);
+		
+		m249.print();
+		m101.print();
+		m29.print();
+	}
+	
+}","public class Haustier {
+    public String name;
+    public int alter;
+    public double gewicht;
+    public static int alterGesamt = 0;
+    public boolean istSaeugetier;
+
+    public Haustier(String name, int alter){
+        this.name = name;
+        this.alter = alter;
+        this.alterGesamt += alter;
+        this.istSaeugetier = false;
+    }
+
+    public void geburtstag(){
+        this.alter++;
+        this.alterGesamt++;
+    }
+}","//Hier nichts reinschreiben"
+Gasch,Niclas,n.gasch@campus.tu-berlin.de,Beendet,"14. Juni 2022  15:15","19. Juni 2022  23:59","5 Tage 8 Stunden","13,83","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.",5,"int blumenstraussgroesse = Blume.anzahlBlumen;","Mit dem parametrisierten Konstruktor der Objektklasse.",5,rose.giessen(50);,"[[""11"",""0"",""-"",""-"",""-"",""-"",""""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""""],[""16"",""-"",""-"",""-"","""","""",""""]]","public class BusTest{
+	public static void main(String[] args){
+		Bus b1 = new Bus(""Mainz"", ""Halle"");
+		Bus b2 = new Bus(""Werder"", ""Bremen"");
+		Bus b3 = new Bus(""Hamburg"", ""Berlin"");
+		
+		b1.fahren(3);
+		b2.fahren(15);
+		b3.fahren(6);
+		
+		b1.print();
+		b2.print();
+		b3.print();
+	}
+}
+	
+	public void print(){
+		System.out.println(""Startpunkt: ""+start+""\nEndstation: ""+ziel+""\nAnzahl an zurueckgelegten Stationen: ""+gefahreneStationen+""\n"");
+	}
+}","public class Haustier {
+	public static int alterGesamt = 0;
+	public String name, rasse;
+	public int alter;
+	public double gewicht;
+	public boolean istSaeugetier = false;
+	
+	public Haustier(String n, int a) {
+		name = n;
+		alter = a;
+		alterGesamt += a;
+	}
+	
+	public void geburtstag() {
+		alter ++;
+		alterGesamt ++;
+	}
+}","//Hier nichts reinschreiben"
+Richter,"Serdal Kemâl",richter.3@campus.tu-berlin.de,Beendet,"15. Juni 2022  10:57","19. Juni 2022  22:24","4 Tage 11 Stunden","14,75",5,"Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem parametrisierten Konstruktor der Objektklasse.",rose.giessen(50);,5,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","int blumenstraussgroesse = Blume.anzahlBlumen;","[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""",""undef"","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""",""undef"",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"",""-"",""-"",""-""]]","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+public class BusTest {
+	public static void main(String[] args) {
+		Bus b1 = new Bus(""Anfang"", ""Ende"");
+		Bus b2 = new Bus(""Beginn"", ""Schluss"");
+		Bus b3 = new Bus(""Ausgangspunkt"", ""Endpunkt"");
+		
+		b1.fahren(3);
+		b2.fahren(5);
+		b3.fahren(7);
+		
+		b1.print();
+		b2.print();
+		b3.print();
+	}
+}","public class Haustier {
+	static int alterGesamt = 0;
+	boolean istSaeugetier = false;
+	String name;
+	double gewicht;
+	int alter;
+	
+	
+	
+	public Haustier(String name, int alter) {
+		this.name = name;
+		this.alter = alter;
+		alterGesamt += this.alter;
+	}
+	
+	public void geburtstag() {
+		this.alter += 1;
+		Haustier.alterGesamt += 1;
+	}
+}","//Hier nichts reinschreiben"
+Hänsel,"Tilo Kurt",t.haensel@campus.tu-berlin.de,Beendet,"15. Juni 2022  11:50","19. Juni 2022  23:59","4 Tage 12 Stunden","6,50",6,rose.giessen(50);,3,"int blumenstraussgroesse = Blume.anzahlBlumen;","Eine nicht-statische Methode ändert stets den Wert von Attributen","Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.","[["""","""","""","""","""","""",""""],[""4(12)"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+public class BusTest{
+	public static void main(String[] args){
+		Bus humpfheimer = new Bus(""Humpfheim"", ""Boffham-City"");
+		Bus koerner = new Bus(""Koerner"", ""Dittmann"");
+		Bus boff = new Bus(""Keller"", ""Maulwurfsgrotte"");
+		humpfheimer.fahren(7);
+		koerner.fahren(2);
+		boff.fahren(327);
+		humpfheimer.print();
+		koerner.print();
+		boff.print();
+		
+		
+	}
+		
+}","public class Haustier{
+	public static int gesamtZahl = 0;
+	public static int alterGesamt = 0;
+	public String name;
+	public int alter;
+	public double gewicht;
+	boolean istSaeugetier = false;
+	
+	public void geburtstag(){
+		alter++;
+		alterGesamt++;
+	}
+	
+	public void gewicht(double m){
+		gewicht = m;
+	}
+	
+	public Haustier(String n, int a){
+		name = n;
+		alter = a;
+		gesamtZahl++;
+		alterGesamt = alterGesamt + a;
+	}
+	
+}","//Hier nichts reinschreiben"
+Lewandowski,"Constantin Dietmar",c.lewandowski@campus.tu-berlin.de,Beendet,"15. Juni 2022  12:14","19. Juni 2022  12:24","4 Tage","14,00","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parameterlosen Konstruktor der Objektklasse.",5,rose.giessen(50);,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",5,"int blumenstraussgroesse = Blume.anzahlBlumen;","[[""12"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""","""","""",""""],[""12"","""","""","""",""-"","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""","""","""",""""],[""13"","""","""","""",""-"","""",""""],[""14"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""","""",""""],[""14"","""","""","""","""",""-"",""""],[""15"","""","""","""","""","""",""true""]]","public class BusTest {
+    public static void main(String[] args) {
+        Bus bus1 = new Bus(""Station 1"", ""Station 3"");
+        Bus bus2 = new Bus(""Station 4"", ""Station 2"");
+        Bus bus3 = new Bus(""Station 1"", ""Station 7"");
+        
+        bus1.fahren(2);
+        bus2.fahren(-2);
+        bus3.fahren(6);
+        
+        bus1.print();
+        bus2.print();
+        bus3.print();
+    }
+}","public class Haustier {
+    public String name;
+    public int alter;
+    public double gewicht;
+    public boolean istSaeugetier;
+    public static int alterGesamt;
+    
+    public Haustier(String name, int alter) {
+        this.name = name;
+        this.alter = alter;
+        alterGesamt += alter;
+    }
+    
+    public void geburtstag() {
+        alter++;
+        alterGesamt++;
+    }
+
+}","//Hier nichts reinschreiben"
+Nguyen,"Cong Huan",cong.h.nguyen@campus.tu-berlin.de,Beendet,"15. Juni 2022  16:21","19. Juni 2022  22:04","4 Tage 5 Stunden","14,58","int blumenstraussgroesse = Blume.anzahlBlumen;",5,"Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.","Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.",5,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","[[""11"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"",""0"",""undef"","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""",""undef"",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"","""","""",""-""]]","public class BusTest {
+    public static void main(String[] args){
+        Bus bus1 = new Bus(""Hier"", ""Da"");
+        Bus bus2 = new Bus(""Hin"", ""Her"");
+        Bus bus3 = new Bus(""Wo"", ""Zoo"");
+        bus1.fahren(3);
+        bus2.fahren(4);
+        bus3.fahren(5);
+        bus1.print();
+        bus2.print();
+        bus3.print();
+    }
+}","public class Haustier {
+    static int alterGesamt = 0;
+    String name;
+    int alter;
+    double gewicht;
+    boolean istSaeugetier;
+
+    public Haustier(String name, int alter){
+        this.name = name;
+        this.alter = alter;
+        alterGesamt += alter;
+    }
+
+    public void geburtstag(){
+        this.alter++;
+        alterGesamt++;
+    }
+}","//Hier nichts reinschreiben"
+Schäfer,"Julia Désirée",julia.d.schaefer@campus.tu-berlin.de,Beendet,"16. Juni 2022  15:33","19. Juni 2022  12:59","2 Tage 21 Stunden","9,43","Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.",Pflanze.giessen(50);,"int blumenstraussgroesse = Blume.anzahlBlumen;",6,"[[""11"",""0"","""",""-"","""",""-"",""-""],[""4(12)"","""",""0"","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""."","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""",""0"",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"","""",""-"",""-"","""","""",""-""]]","public class BusTest {
+
+  public static void main (String[] args) {
+    Bus schulbus = new Bus();
+    schulbus.start = ""Spandau"";
+    schulbus.ziel = ""Kurfuerstendamm"";
+    Bus linienbus = new Bus();
+    linienbus.start = ""Potsdamer Platz"";
+    linienbus.ziel = ""Yorckstrasse"";
+    Bus reisebus = new Bus();
+    reisebus.start = ""Hauptbahnhof"";
+    reisebus.ziel = ""Ostseekueste"";
+    schulbus.fahren(7);
+    linienbus.fahren(3);
+    reisebus.fahren(5);
+    schulbus.print();
+    linienbus.print();
+    reisebus.print();
+  }
+}","public class Haustier {
+
+  String name;
+  int alter;
+  double gewicht;
+  boolean istSaeugetier = false;
+  public static int alterGesamt = 0;
+
+  public Haustier(String name, int alter) {
+    this.name = name;
+    alterGesamt += alter;
+    this.alter = alter;
+    double g = gewicht;
+  }
+
+  public void geburtstag() {
+    alter += 1;
+    alterGesamt += 1;
+  }
+}","//Hier nichts reinschreiben"
+Will,Kai,k.will@campus.tu-berlin.de,Beendet,"16. Juni 2022  16:07","18. Juni 2022  20:11","2 Tage 4 Stunden","14,42","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.",rose.giessen(50);,"int blumenstraussgroesse = Blume.anzahlBlumen;",5,"Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""","""","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""",""3"","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""","""","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""",""6"","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"","""",""-"",""-"","""","""",""-""]]","public class BusTest{
+  public static void main(String[] args){
+    Bus linie1=new Bus(""Starthaltestelle"", ""Endhaltestelle"");
+    Bus linie2=new Bus(""Hbf"", ""Flughafen"");
+    Bus linie3=new Bus(""Markt"", ""am Hafen"");
+    linie1.fahren(4);
+    linie2.fahren(2);
+    linie3.fahren(7);
+    System.out.println(linie1.print());
+    System.out.println(linie2.print());
+    System.out.println(linie3.print());
+  }
+
+}","public class Haustier{
+
+  static int alterGesamt;
+
+
+  double gewicht;
+  String name;
+  int alter;
+  boolean istSaeugetier;
+
+  public Haustier(String name, int alter){
+    this.name=name;
+    this.alter=alter;
+    alterGesamt+=alter;
+  }
+  public int geburtstag(){
+    alter++;
+    alterGesamt++;
+    return alter;
+  }
+
+}","//Hier nichts reinschreiben"
+Matthes,Felix,felix.matthes@campus.tu-berlin.de,Beendet,"16. Juni 2022  16:24","19. Juni 2022  23:59","3 Tage 7 Stunden","7,17","int blumenstraussgroesse = Blume.anzahlBlumen;","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.",5,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem parametrisierten Konstruktor der Objektklasse.",rose.giessen(50);,"[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""","""","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""","""","""",""""],[""12"","""",""3"","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""","""","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""","""","""",""""],[""13"","""","""",""6"","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""","""","""","""","""",""""],[""10(14)"","""","""","""","""","""",""""],[""14"","""",""9"","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"",""-"",""-"",""-""]]","class BusTest
+{
+	public static void main(String[] args)
+	{
+		Bus bus1 = new Bus(""The Shire"", ""Rivendell"");
+		bus1.fahren(5);
+		bus1.print();
+		
+		Bus bus2 = new Bus(""East Farthing"", ""The Green Dragon"");
+		bus2.fahren(12);
+		bus2.print();
+		
+		Bus bus3 = new Bus(""Dimrill Dale"", ""Amon Din"");
+		bus3.fahren(7);
+		bus3.print();
+	}
+}",-,"//Hier nichts reinschreiben"
+Schramm,Steffen,steffen.schramm@campus.tu-berlin.de,Beendet,"16. Juni 2022  21:52","19. Juni 2022  20:16","2 Tage 22 Stunden","8,27",5,"Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.",rose.giessen(50);,"int blumenstraussgroesse = Blume.anzahlBlumen;","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.",3,"[[""11"",""undef"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""","""","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""undef"","""",""""],[""12"","""",""3"","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""","""","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""undef"","""",""""],[""13"","""","""",""6"","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""8"","""","""","""",""""],[""10(14)"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""",""-"",""true""],[""16"",""-"",""-"",""-"",""-"","""",""""]]","public class BusTest{
+
+	public static void main( String args[] ) {
+			Bus Bus1 = new Bus(""Calauer Str."",""S+U Wittenau"");
+			Bus Bus2 = new Bus(""Senftenberger Ring Nord"",""Märkische Zeile"");
+			Bus Bus3 = new Bus(""U Paracelsus-Bad"",""Reinickendorfer Str."");
+			
+			Bus1.fahren(5);
+			Bus2.fahren(3);
+			Bus3.fahren(14);
+			
+			Bus1.print();
+			Bus2.print();
+			Bus3.print();
+			
+	}
+}","public class Haustier {
+	public String name;
+	public int alter;
+	public double gewicht;
+	public boolean istSaeugetier;
+	static int AlsterGesamt = 8;
+	
+	public Tier(String name, int alter) {
+		this.name = name;
+		this.alter = alter;
+	}
+	
+	public void gewicht(double gewicht) {
+		this.gewicht = gewicht;
+	}
+	
+	Public void geburtstag() {
+		alter = alter + 1;
+	}
+	
+	public void istSaeugetier() {
+		istSaeugetier = true;
+	}
+}","//Hier nichts reinschreiben"
+Roza,"Jan Philip",roza@campus.tu-berlin.de,Beendet,"17. Juni 2022  12:57","18. Juni 2022  00:32","11 Stunden 35 Minuten","14,00","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","int blumenstraussgroesse = Blume.anzahlBlumen;",rose.giessen(50);,"Attribute können wiederum Objekte sein.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.",5,"Mit dem parameterlosen Konstruktor der Objektklasse.","[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""false""],[""16"","""",""-"",""-"","""","""",""-""]]","public class BusTest {
+    public static void main(String [] args) {
+        Bus bus1 = new Bus(""Hackescher"", ""Wedding"");
+        Bus bus2 = new Bus(""Neukoelln"", ""Erkner"");
+        Bus bus3 = new Bus(""Westend"", ""Eastend"");
+        bus1.fahren(20);
+        bus2.fahren(4);
+        bus3.fahren(6);
+        bus1.print();
+        bus2.print();
+        bus3.print();
+    }
+}","public class Haustier {
+    static int alterGesamt = 0;
+    String name;
+    int alter;
+    double gewicht;
+
+    boolean istSaeugetier = true;
+
+
+    public Haustier(String name, int alter){
+        this.name = name;
+        this.alter = alter;
+        alterGesamt += alter;
+        if(name==""Fips""){
+            istSaeugetier=false;
+        }
+
+
+    }
+    public void geburtstag(){
+        alter++;
+        alterGesamt++;
+
+    }
+
+}","//Hier nichts reinschreiben"
+Schümer,Paolo,paolo.schuemer@campus.tu-berlin.de,Beendet,"17. Juni 2022  13:39","19. Juni 2022  23:59","2 Tage 10 Stunden","3,33","int blumenstraussgroesse = Blume.anzahlBlumen;",5,Pflanze.giessen(50);,"Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute können wiederum Objekte sein.","Eine nicht-statische Methode ändert stets den Wert von Attributen",5,"[[""11"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""",""3"","""","""","""",""""],[""5"","""","""","""",""az"","""",""""],[""6"",""a++"","""","""","""","""",""""],[""7"","""","""","""","""","""",""""],[""8"","""","""","""","""","""",""""],[""9"","""","""","""","""",""undef"",""""],[""10"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],[""13"","""","""",""6"","""","""",""""],[""14(aw/"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden
+public class BusTest{
+
+	public static void main (String [] args){
+
+		Bus[] bus1 = new Bus[3];
+		bus1[0] = new Bus(""Happyland"", ""Hilfe"", 10);
+		bus1[1] = new Bus(""wannCry"", ""Nimmerland"", 3);
+		bus1[2] = new Bus(""Berlin"", ""Zürich"", 7);
+
+	}
+
+	public static void printBus(Bus bus){
+
+		String output = ""Es gibt : ""+ bus.length+"" Busse. Folgende Busse sind enthalten : \n"";	
+
+	}
+
+}","public class HaustierVerwaltung {
+    public static void main(String[] args) {
+        // deklariere zwei Variablen vom Typ Haustier
+        Haustier chinchilla;
+		Haustier weissbauchigel;
+		String name;
+		int alter;
+		String Sauegetier;
+		
+        
+        // erzeuge zwei Objekte der Klasse Haustier
+        chinchilla = new Haustier(""Fips"", 5);
+		weissbauchigel = new Haustier(""Freddy"", 2);
+		
+        
+        // weise einigen Attributen der zwei Objekte Werte zu
+		chinchilla.name = ""Fibs"";
+		weissbauchigel.name = ""Freddy"";
+		weissbauchigel.gewicht = 0.016;
+		chinchilla.gewicht = 2.4;
+		chinchilla.alter = 6;
+		weissbauchigel.alter  = 2;
+		//chinchilla.Sauegetier = istSaeugetier 
+        Haustier.alterGesamt = (chinchilla.alter+weissbauchigel.alter);
+		
+		//caculate(chinchilla.alter* weissbauchigel.alter)
+		
+        // chinchilla wird ein Jahr aelter
+        chinchilla.geburtstag();
+		System.out.println(chinchilla.name+"" ist jetzt ""+chinchilla.alter);
+        System.out.println(""Zusammengerechnet sind unsere Haustiere jetzt ""+Haustier.alterGesamt+"" Jahre alt"");
+        // Ausgabe der Attributwerte der Objekte
+		if(chinchilla.istSaeugetier){
+			System.out.println(""Der Chinchilla ist ein Sauegetier und ist""+chinchilla.alter +"" Jahre alt, heisst ""+chinchilla.name+"". Sie wiegt "" + chinchilla.gewicht + "" kg."");
+		}
+        System.out.println(""Der Weissbauchigel ist ""+weissbauchigel.alter+"" Jahre alt und heisst ""+weissbauchigel.name+"". Er wiegt "" + weissbauchigel.gewicht + "" kg."");
+    }
+}","//Hier nichts reinschreiben"
+Shehata,Shady,shady.shehata@campus.tu-berlin.de,Beendet,"17. Juni 2022  21:28","19. Juni 2022  23:59","2 Tage 2 Stunden","7,77",6,"Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","int blumenstraussgroesse = Blume.anzahlBlumen;","giessen(rose) = 50;","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",2,"[[""11"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"",""0"","""","""","""","""",""""],[""5(12)"","""",""a"","""","""","""",""""],[""8(6)"","""","""","""","""","""",""""],[""9(6)"","""","""","""","""","""",""""],[""10(6)"","""","""","""","""","""",""""],[""8(6)"","""","""","""","""","""",""""],[""9(6)"","""","""","""","""","""",""""],[""10(6)"","""","""","""","""","""",""""],[""7(12)"","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],[""4(13)"","""","""","""","""","""",""""],[""5(13)"","""","""","""","""","""",""""],[""6(13)"","""","""","""","""","""",""""],[""7(13)"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""""]]","public class BusTest{
+	public static void main (String [] args){
+		Bus[] TestBus = new Bus[3];
+		TestBus[0] = new Bus(testBus.start, testBus.ziel, testBus.gefahreneStationen);
+		TestBus[1] = new Bus(testBus.start, testBus.ziel, testBus.gefahreneStationen);
+		TestBus[2] = new Bus(testBus.start, testBus.ziel, testBus.gefahreneStationen);
+	}
+	public int testBus.fahren(int n){
+			for(int i=0;i<n;i++){ 
+			this.testBus.gefahreneStationen++;
+			}
+		return this.testBus.gefahreneStationen; 
+	}
+	public int gettestBus.gefahreneStationen(){
+		return this.testBus.gefahreneStationen;
+		} 
+	public static void printtestBus.Bus(Bus TestBus){
+		String output = ""Der Bus von "" + testBus.start + "" nach "" + testBus.ziel + "" hat "" + testBus.gefahreneStationen + "" Stationen zurueckgelegt."";	
+	}
+}","public class Haustier {
+    public int name;
+    public int aelter;
+    public float gewicht;
+    
+}","//Hier nichts reinschreiben"
+Dobbelaere,"Sebastien Frederic",s.dobbelaere@campus.tu-berlin.de,Beendet,"18. Juni 2022  02:34","19. Juni 2022  23:46","1 Tag 21 Stunden","3,08","Mit dem parameterlosen Konstruktor der Objektklasse.","int blumenstraussgroesse = Blume.anzahlBlumen;",4,"In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.",6,rose.giessen(50);,"[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""undef"","""",""""],[""5(12)"","""","""","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""","""","""",""""],[""12"","""",""3"","""",""3"","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""","""",""9"","""","""",""""],[""10(14)"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"","""","""","""","""","""",""""],[""17"","""","""","""","""","""",""""]]",-,"public static void main(Haustier)","//Hier nichts reinschreiben"
+Janiel,"Jan Tadeus",j.janiel@campus.tu-berlin.de,Beendet,"18. Juni 2022  11:04","19. Juni 2022  23:16","1 Tag 12 Stunden","7,63",rose.giessen(50);,"int blumenstraussgroesse = Blume.anzahlBlumen;","Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können wiederum Objekte sein.",3,"Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","[[""3"","""","""","""","""","""",""""],[""4(12)"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""],["""","""","""","""","""","""",""""]]","public class BusTest {
+
+    public static void main(String[] args){
+
+        Bus bus1 = new Bus(""Berlin"", ""Potsdam"");
+        Bus bus2 = new Bus(""Hannover"", ""Dortmund"");
+        Bus bus3 = new Bus(""München"",""Rostock"");
+    
+        bus1.fahren(3);
+        bus2.fahren(2);
+        bus3.fahren(6);
+        
+        Bus.print(bus1);
+        Bus.print(bus2);
+        Bus.print(bus3);
+    }
+
+}","public class Haustier {
+
+    public static int alterGesamt;
+    public double gewicht;
+    public String name;
+    public int alter;
+    public boolean istSaeugetier;
+
+    public Haustier(String name, int alter) {
+        this.name = name;
+        this.alter = alter;
+        alterGesamt += this.alter;
+    }
+
+    public void geburtstag(){
+        this.alter += 1;
+        alterGesamt +=1;
+    }
+
+}","//Hier nichts reinschreiben"
+Hinrichs,"Sandra Maria",s.hinrichs@campus.tu-berlin.de,Beendet,"18. Juni 2022  12:07","19. Juni 2022  15:37","1 Tag 3 Stunden","7,39","int blumenstraussgroesse = Blume.anzahlBlumen;",6,3,"Mit dem parametrisierten Konstruktor der Objektklasse.","Eine statische Methode muss zwingenderweise mindestens einen Übergabeparameter haben","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.","[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""","""","""",""""],[""12"","""",""undef"","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""","""","""",""""],[""13"","""","""",""undef"","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"","""","""","""","""","""",""""]]","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+public class BusTest{
+	public static void main (String[] args){
+		Bus b1 = new Bus(""Hermmanplatz"", ""Alexanderplatz"");
+		Bus b2 = new Bus(""Hasenheide"", ""Hufelandstrasse"");
+		Bus b3 = new Bus(""Ernst-Reuter-Platz"", ""Hauptbahnhof"");
+		
+		b1.fahren(3);
+		b2.fahren(5);
+		b3.fahren(7);
+	b1.print();
+	b2.print();
+	b3.print();
+	}
+	
+	
+	
+}","public class Haustier{
+	public String name;
+	public  int alter;
+	public double gewicht;
+	public static int alterGesamt;
+	public boolean istSaeugetier;
+	
+	public Haustier (String name, int alter){
+	
+	this.name = name;
+	this.alter = alter;
+	gewicht = 0;
+	alterGesamt = alter;
+	istSaeugetier = false;
+	
+	
+}
+	public void geburtstag(){
+		alter++;
+		alterGesamt = alterGesamt + alter;
+	}
+	
+	
+}","//Hier nichts reinschreiben"
+Yang,Fan,fan.yang.2@campus.tu-berlin.de,Beendet,"18. Juni 2022  13:37","19. Juni 2022  23:12","1 Tag 9 Stunden","14,75","Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.","int blumenstraussgroesse = Blume.anzahlBlumen;",rose.giessen(50);,"Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",5,5,"[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""",""undef"","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""",""undef"",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""",""-"","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""","""","""","""",""-"",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"","""","""",""-""]]","public class BusTest{
+    public static void main(String[] args){
+        Bus bus1 = new Bus(""Strasse 1"" , ""Strasse 5"");
+        Bus bus2 = new Bus(""Strasse 6"" , ""Strasse 10"");
+        Bus bus3 = new Bus(""Strasse 11"" , ""Strasse 20"");
+
+        bus1.fahren(4);
+        bus2.fahren(4);
+        bus3.fahren(9);
+
+        bus1.print();
+        bus2.print();
+        bus3.print();
+
+    }
+}","public class Haustier{
+    public String name;
+    public int alter;
+    public double gewicht;
+    public boolean istSaeugetier;
+    public static int alterGesamt = 0;
+
+    public Haustier(String n, int a){
+        name = n;
+        alter = a;
+        alterGesamt += alter;
+    }
+
+    public void geburtstag(){
+        alter ++;
+        alterGesamt ++;
+    }
+
+}","//Hier nichts reinschreiben"
+Kocak,Soner,soner.kocak@campus.tu-berlin.de,Beendet,"19. Juni 2022  04:39","19. Juni 2022  21:54","17 Stunden 14 Minuten","8,92","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein","Attribute können wiederum Objekte sein.
+
+; Attribute können die Eigenschaften eines Objektes verändern.
+
+; In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.",3,"int blumenstraussgroesse = Blume.anzahlBlumen;","Mit dem parametrisierten Konstruktor der Objektklasse.
+; Mit dem parameterlosen Konstruktor der Objektklasse.
+; Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.","giessen(rose) = 50;","[[""11"",""0"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""",""undef"","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""","""","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""","""",""9"","""","""",""""],[""10(14)"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""false""],[""16"",""-"",""-"",""-"",""-"",""-"",""-""]]","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+public class BusTest{
+	
+	
+	public static void main(String[] args){
+		
+		Bus Bus1= new Bus(""Anfangsstation"",""Endstation"");
+		Bus Bus2= new Bus(""Mittelstation"",""Vorderstation"");
+		Bus Bus3= new Bus(""Hinterestation"",""Unterestation"");
+		Bus1.fahren(5);
+		Bus2.fahren(2);
+		Bus3.fahren(8);
+		Bus1.print();
+		Bus2.print();
+		Bus3.print();
+		
+		
+	}
+}","class Haustier{
+
+public static String chinchilla;
+public static String weissbauchigel;
+public String name; 
+public int alter;
+public double gewicht;
+public boolean istSaeugetier;
+public static int alterGesamt;
+
+
+public Haustier(String name, int alter){
+	
+	this.alter=alter;
+	this.name=name;
+	this.alterGesamt=alterGesamt+alter;
+	
+}
+
+public int geburtstag(){
+	alterGesamt++;
+	return alter=alter+1;
+	
+	
+}
+
+}","//Hier nichts reinschreiben"
+Jakobs,"Chiara Sophie Elisa",c.jakobs@campus.tu-berlin.de,Beendet,"19. Juni 2022  14:05","19. Juni 2022  23:55","9 Stunden 49 Minuten","12,78",rose.giessen(50);,"Mit dem default Konstruktor, während in der Objektklasse keine Konstruktoren explizit vorhanden sind.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","int blumenstraussgroesse = Blume.anzahlBlumen;",5,"Eine statische Methode muss zwingenderweise mindestens einen Übergabeparameter haben","In Attributen können je nach Bauplan (Klasse) die Eigenschaften von Instanzen dieser Klasse eingespeichert werden.
+
+; Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.
+
+; Attribute können wiederum Objekte sein.","[[""11"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""","""","""","""","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""","""","""","""",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""","""",""12"","""","""",""""],[""10(14)"","""","""","""","""","""",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"",""-"",""-"",""-"",""-"",""-"",""-""]]","public class BusTest {
+ 
+    public static void main (String[] args){
+
+       Bus bus1 = new Bus(""Zoo"", ""Westkreuz"");
+       int n = Terminal.askInt(""Wie viele Stationen fährt Bus 1: "");
+       bus1.fahren(n);
+       bus1.print();
+
+       Bus bus2 = new Bus(""Waldstadt"", ""Hbf"");
+       n = Terminal.askInt(""Wie viele Stationen fährt Bus 2: "");
+       bus2.fahren(n);
+       bus2.print();
+
+       Bus bus3 = new Bus(""Feuerbachstr."", ""Sanssouci"");
+       n = Terminal.askInt(""Wie viele Stationen fährt Bus 3: "");
+       bus3.fahren(n);
+       bus3.print();
+    }
+}","public class Haustier {
+
+    public String name;
+    public int alter;
+    public double gewicht = 0;
+    public static boolean istSaeugetier = false;
+    public static int alterGesamt = 0;
+    
+    public Haustier(String n, int age) {
+        name = n; 
+        alter = age;
+        alterGesamt += alter;
+    }
+
+    public void geburtstag() {
+        this.alter += 1;
+        alterGesamt += 1; 
+    }
+}","//Hier nichts reinschreiben"
+Qin,Yushu,qin.1@campus.tu-berlin.de,Beendet,"19. Juni 2022  16:39","19. Juni 2022  23:59","7 Stunden 19 Minuten","8,42",2,"Mit dem default Konstruktor, während in der Objektklasse einen parametrisierter Konstruktor definiert ist.
+; Mit dem parametrisierten Konstruktor der Objektklasse.","Eine Methode, die auf nicht-statische Attribute zugreift, darf nicht statisch sein",6,"Attribute sind ab Deklaration in der gesamten Klasse definiert, also auch in inneren Blöcken.",rose.giessen(50);,"[[""11"",""-"",""-"",""-"",""-"",""-"",""-""],[""4(12)"","""","""","""",""3"","""",""""],[""5(12)"","""",""3"","""","""","""",""""],[""6(12)"",""1"","""","""","""","""",""""],[""7(12)"","""",""-"","""",""-"","""",""""],[""12"","""","""","""","""","""",""""],[""4(13)"","""","""","""",""6"","""",""""],[""5(13)"","""","""",""6"","""","""",""""],[""6(13)"",""2"","""","""","""","""",""""],[""7(13)"","""","""",""-"","""",""-"",""""],[""13"","""","""","""","""","""",""""],[""8(14)"","""","""","""","""",""6"",""""],[""9(14)"","""",""9"","""","""","""",""""],[""10(14)"","""",""-"","""","""","""",""""],[""14"","""","""","""","""","""",""""],[""15"","""","""","""","""","""",""true""],[""16"","""","""","""","""","""",""-""]]","//Hier darf (und muss) nur die Klasse BusTest stehen, die Klasse Bus.java muss hochgeladen werden!
+public class BusTest{
+	public static void main(String[] args){
+		Bus[] bus = new Bus[3];
+		bus[0] = new Bus(""zoo"",""alexander"");
+		bus[0].fahren(3);
+		bus[1] = new Bus(""lands"",""storkower"");
+		bus[1].fahren(8);
+		bus[2] = new Bus(""ost"",""west"");
+		bus[2].fahren(16);
+		bus[0].print();
+		bus[1].print();
+		bus[2].print();
+		
+	}
+}","public class Haustier{
+	String name;
+	int alter=0;
+    double gewicht;
+	static int alterGesamt;
+	boolean istSaeugetier=false;
+	
+	public Haustier(String name, int alter){
+		this.name = name;
+		this.alter = alter;
+		alterGesamt = alterGesamt+this.alter;
+		
+	}
+	public void geburtstag(){
+		this.alter = this.alter + 1;
+		alterGesamt = alterGesamt+1;
+	}
+}","//Hier nichts reinschreiben"

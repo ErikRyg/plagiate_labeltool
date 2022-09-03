@@ -1,0 +1,4206 @@
+﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/15,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9","Antwort 10","Antwort 11"
+Reckermann,Hauke,hauke.reckermann@campus.tu-berlin.de,Beendet,"26. Mai 2022  18:00","2. Juni 2022  18:53","7 Tage","13,25","gar nicht","Sie zählt bis 3.",6,"Anweisung 2","kein Wert führt zur Ausgabe von ""!""","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""11"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		
+		switch(eingabe){
+		
+			case 't':
+				Terminal.println(""Wir moegen dich auch."");
+				break;
+			
+			case 's': 
+				Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+				break;
+			
+			case 'l':
+				Terminal.println(""Giovanni, lernst du Programmieren?"");
+				break;
+			
+			default:
+				Terminal.println(""Das stand gar nicht zur Auswahl."");
+		
+		}
+		
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        
+		int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        //int i = 1;
+        
+		for(int i = 1; i <= height; i++){
+		
+			for(int j = 0; j < height-i; j++){
+			Terminal.print("" "");
+			}
+		
+			for(int j = 0; j < i*2; j++){
+			Terminal.print(""*"");
+			}
+			
+			Terminal.print(""\n"");
+			
+		}
+		
+    }
+}","public class LeapYear {
+     
+	public static void main(String[] args){
+	
+		int jahr = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+	
+		if ((jahr % 400)==0 || ((jahr % 4)==0 && (jahr % 100)!=0)){
+		Terminal.println(""Das Jahr ""+jahr+"" ist ein Schaltjahr."");
+		}else{
+		Terminal.println(""Das Jahr ""+jahr+"" ist kein Schaltjahr."");
+		}
+	
+	}
+	 
+}","public class Loops {
+    
+    public static void main(String[] args) {
+		
+		for (int c = getCount(); c > 0; c = getCount()){
+		countdown(c);
+		}
+		
+    }
+    
+    public static void countdown(int c) {
+		while(c>0){
+		Terminal.println(c);
+		c--;
+		}
+		Terminal.println(""Start!"");
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Gottschalk,"Moritz Jaap-Vincent",m.gottschalk@campus.tu-berlin.de,Beendet,"27. Mai 2022  12:50","31. Mai 2022  22:46","4 Tage 9 Stunden","13,75","Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.","Gar nicht",15,"0 1 2 3 4 5 6 7 8 9","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		
+		switch(eingabe){
+		case 't':
+			Terminal.println(""Wir moegen dich auch."");
+			break;
+		case 's':
+		    Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+			break;
+		case 'l':
+			Terminal.println(""Giovanni, lernst du Programmieren?"");
+			break;
+		default:
+			Terminal.println(""Das stand gar nicht zur Auswahl."");
+			break;
+		}
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+		for(int i=1;i<=height;i++){
+            
+			for(int j = 0; j < height-i; j++){
+                Terminal.print("" "");
+            }
+			
+            for(int j = 0; j < i * 2; j++){
+                Terminal.print(""*"");
+            }
+            Terminal.print(""\n"");
+        }
+    }
+}","public class LeapYear {
+	public static void main(String[] args) {
+		int year = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		boolean result;
+		
+		if(year % 400 == 0){
+			result = true;
+		} else {
+			if(year % 4 == 0 && year % 100 != 0){
+				result = true;
+		} else {
+			result = false;
+			}
+		}
+		
+		if (result){
+			Terminal.print(""Das Jahr ""+ year + "" ist ein Schaltjahr."");
+		} else {
+			Terminal.print(""Das Jahr ""+ year + "" ist kein Schaltjahr."");
+		}
+	}
+}","public class Loops {
+    
+    public static void main(String[] args) { //for-Schleife gefordert, Minuswerte müssen ignoriert werden
+		for (;;){
+			int check = getCount();
+			if(check > 0){
+				countdown(check);
+			} else {
+			break;
+			}
+		}
+    }
+    
+    public static void countdown(int c) { // while-Schleife gefordert
+		while (c > 0){
+			Terminal.println(c);
+			c--;
+		}
+		Terminal.println(""Start!"");
+	}
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Nguyen,"Cong Huan",cong.h.nguyen@campus.tu-berlin.de,Beendet,"27. Mai 2022  23:16","2. Juni 2022  22:33","5 Tage 23 Stunden","14,00",15,4,"Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Gar nicht","Anweisung 2",8,"[[""1"",""-"",""-"",""-""],[""2"","""","""",""""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""-""],[""17"","""","""",""""]]","public class Menu {
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch (eingabe) {
+			case 't':
+				Terminal.println(""Wir moegen dich auch."");
+				break;
+			case 's':
+				Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+				break;
+			case 'l':
+				Terminal.println(""Giovanni, lernst du Programmieren?"");
+				break;
+			default:
+				Terminal.println(""Das stand gar nicht zur Auswahl."");
+				break;
+		}
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+    	int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+    	for (int i=1 ; i<=height ; i++) {
+    		for (int j=0 ; j<height-i ; j++) {
+    			Terminal.print("" "");
+    		}
+    		for (int j=0 ; j<i*2 ; j++) {
+    			Terminal.print(""*"");
+    		}
+    		Terminal.print(""\n"");
+    	}
+    }
+}","public class LeapYear {
+	public static void main(String[] args) {
+		int input = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		if (input % 400 == 0 || (input % 4 == 0 && input % 100 != 0) ) {
+			Terminal.print(""Das Jahr "" + input + "" ist ein Schaltjahr."");
+		} else {
+			Terminal.print(""Das Jahr "" + input + "" ist kein Schaltjahr."");
+		}
+	}
+}","public class Loops {
+    
+    public static void main(String[] args) {
+    	for (int input = getCount(); input > 0 ; input = getCount() ){
+    		countdown(input);
+    	}
+    }
+    
+    public static void countdown(int c) {
+    	while(c>0) {
+    		Terminal.println(c--);
+    	}
+    	Terminal.println(""Start!"");
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Kötschau,"Johann Magnus",johann-magnus.koetschau@campus.tu-berlin.de,Beendet,"28. Mai 2022  10:33","4. Juni 2022  10:49","7 Tage","13,75","Unendlich oft","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.",8,"4 Mal","0 1 2 3 4 5 6 7 8 9","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""11"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""-""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+	switch(eingabe){
+      
+      case 't':
+        Terminal.println(""Wir moegen dich auch."");
+        break;
+    
+      case 's': 
+        Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+        break;
+      case 'l':
+        
+        Terminal.println(""Giovanni, lernst du Programmieren?"");
+        break;
+      default:
+      Terminal.println(""Das stand gar nicht zur Auswahl."");
+      break;
+    }
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+          for(int i=1;i<=height;i++) {
+           
+            for(int j=0;j<height-i;j++) {
+                Terminal.print("" "");
+               
+            }
+            
+            for(int j=0;j<i*2;j++) {
+                Terminal.print(""*"");
+                
+            }
+            Terminal.print(""\n"");
+          
+        }
+    }
+    
+}","public class LeapYear {
+      public static void main (String [] args){
+    
+    int Jahreszahl=Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+    if(Jahreszahl % 400==0){
+    
+      Terminal.println(""Das Jahr "" + Jahreszahl +"" ist ein Schaltjahr."");
+    }   
+    else if (Jahreszahl % 4==0) {
+       if (Jahreszahl % 100==0) {
+        Terminal.println(""Das Jahr "" + Jahreszahl +"" ist kein Schaltjahr."");    
+       } 
+       else {
+       Terminal.println(""Das Jahr "" + Jahreszahl +"" ist ein Schaltjahr."");  
+       } 
+          
+    }
+    else {
+      
+       Terminal.println(""Das Jahr "" + Jahreszahl +"" ist kein Schaltjahr."");
+      }
+  
+  }  
+}","public class Loops {
+    
+    public static void main(String[] args) {
+       for(int Eingabe=getCount();Eingabe>0;){
+      countdown(Eingabe);
+      Eingabe=getCount();
+      
+      }  
+        
+        
+    }
+    
+    public static void countdown(int c) {
+         while (c>0) { 
+      Terminal.println(c);
+      c--;
+    } 
+    Terminal.println(""Start!"");
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Hinrichs,"Sandra Maria",s.hinrichs@campus.tu-berlin.de,Beendet,"29. Mai 2022  15:53","1. Juni 2022  12:43","2 Tage 20 Stunden","13,75","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Sie zählt unendlich.","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","Anweisung 2","4 Mal","gar nicht","[[""1"",""-"",""-"",""-""],[""2"","""","""",""""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""-""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe){
+			case 't':
+			Terminal.println(""Wir moegen dich auch."");
+			break;
+			case 's':
+			Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+			break;
+			case 'l':
+			Terminal.println(""Giovanni, lernst du Programmieren?"");
+			break;
+			default:
+			Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+		
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        
+		for(int i = 1;i <= height;i++){
+			 for(int j = 0;j < height-i;j++){
+				 Terminal.print("" "");
+			 }
+			 for(int j = 0;j < i*2;j++){
+			 Terminal.print(""*"");
+			 }
+			 Terminal.print(""\n"");
+		}
+			
+		
+		
+		
+        
+        
+    }
+}","public class LeapYear {
+	
+	
+	public static void main (String[] args) {
+		
+	int jahr =	Terminal.askInt (""Bitte Jahreszahl eingeben. "");
+	
+	if (schaltjahr(jahr)){
+		
+	Terminal.println (""Das Jahr "" + jahr + "" ist ein Schaltjahr."");
+	}
+	else {
+		Terminal.println (""Das Jahr "" + jahr + "" ist kein Schaltjahr."");
+	}
+	}
+		public static boolean schaltjahr(int jahr){
+			if (jahr % 400 == 0){
+
+				return true;
+			}
+			
+			if (jahr %4==0 && jahr% 100 !=0) {
+				return true;
+			}	
+			
+			return false;
+			
+			
+			}
+
+			
+		}","public class Loops {
+    
+    public static void main(String[] args) {
+		for (int c = getCount();c>0;c=getCount()){
+			countdown(c);
+		}
+    }
+    public static void countdown(int c) {
+		
+		while(c >0){ 
+		Terminal.println(c);
+		c--;
+		}
+		Terminal.println(""Start!"");
+		}
+    
+    public static int getCount() {
+		
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Macht,Isabella,i.macht@campus.tu-berlin.de,Beendet,"29. Mai 2022  18:38","5. Juni 2022  20:58","7 Tage 2 Stunden","10,50","Anweisung 2","0 1 2 3 4 5 6 7 8 9",15,"Sie zählt unendlich.","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }",4,"[[""1"",""-"",""-"",""-""],[""2"",""undef"","""",""""],[""3"","""",""false"",""""],[""4"","""","""",""""],[""5"",""Terminal.askInt(\""Welche Zahl auf Primzahl testen? \"")"","""",""""],[""6"","""","""",""""],["""","""","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"",""-"",""-"",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch (eingabe) {
+            case 't':
+                Terminal.println(""Wir moegen dich auch."");
+                break;
+            case 's':
+                Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+                break;
+            case 'l':
+                Terminal.println(""Giovanni, lernst du Programmieren?"");
+                break;
+            default:
+                Terminal.println(""Das stand gar nicht zur Auswahl."");
+        }
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        for (int i = 1; i <= height;) {
+            for (int j = 0; j < height-i; j++) {
+                Terminal.print("" "");
+            }
+            for (int j = 0; j < i*2; j++) {
+                Terminal.print(""*"");
+            }
+            Terminal.print(""\n"");
+            i++;
+        }
+    }
+}","public class LeapYear {
+     public static void main(String [] args) {
+        int jahr;
+
+        jahr = Terminal.askInt(""Bitte Jahreszahl eingeben."");
+        if (jahr % 4 == 0 && (jahr % 100 != 0 || jahr % 400 == 0)) {
+            System.out.println("" Das Jahr "" + jahr + "" ist ein Schaltjahr."");
+        } else {
+            System.out.println("" Das Jahr "" + jahr + "" ist kein Schaltjahr."");
+        }
+     }
+}","public class Loops {
+    
+    public static void main(String[] args) {
+    }
+    
+    public static void countdown(int c) {
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Krüger,"Finn Johann",finn.johann.krueger@campus.tu-berlin.de,Beendet,"29. Mai 2022  21:22","5. Juni 2022  20:16","6 Tage 22 Stunden","14,25","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","gar nicht","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","Unendlich oft","Sie zählt unendlich.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+
+    switch (eingabe) {
+
+      case 't':
+        Terminal.println(""Wir moegen dich auch."");
+        break;
+
+      case 's':
+        Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+        break;
+
+      case 'l':
+        	Terminal.println(""Giovanni, lernst du Programmieren?"");
+          break;
+
+      default:
+          Terminal.println(""Das stand gar nicht zur Auswahl."");
+    }
+	}
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        //int i = 1;
+        for(int i = 1; i <= height; i++) {
+
+            for(int j = 0; j < height-i; j++) {
+
+                Terminal.print("" "");
+            }
+
+            for(int j = 0; j < i*2; j++) {
+
+                Terminal.print(""*"");
+            }
+
+            Terminal.print(""\n"");
+        }
+    }
+}","public class LeapYear {
+  public static void main(String[] args) {
+
+    int jahreszahl = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+    if (jahreszahl%400 == 0 || jahreszahl%4 == 0 && jahreszahl%100 != 0) {
+      Terminal.print(""Das Jahr "" + jahreszahl + "" ist ein Schaltjahr."");
+
+
+    }
+    else {
+      Terminal.print(""Das Jahr "" + jahreszahl + "" ist kein Schaltjahr."");
+    }
+
+
+  }
+}","public class Loops {
+
+    public static void main(String[] args) {
+        
+      for (int j = getCount(); j>0 ; j=getCount()){
+      countdown(j);
+      }
+      
+    }
+
+    public static void countdown(int c) {
+      int i = c;
+      while (i>0) {
+        Terminal.println(i);
+        i--;
+      }
+      
+      Terminal.println(""Start!"");
+    }
+
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+
+}"
+Baba,Yaser,yaser.baba@campus.tu-berlin.de,Beendet,"29. Mai 2022  23:34","5. Juni 2022  14:05","6 Tage 14 Stunden","11,75","0 1 2 3 4 5 6 7 8 9","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)",4,"Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.",15,"gar nicht","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""7(6)"","""","""",""""],[""8(6)"","""","""",""""],[""9(6)"","""","""",""""],[""6"","""","""",""""],[""10"",""-"",""-"",""""],[""10"",""-"",""-"",""""],["""","""","""",""""],[""12"","""","""",""""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","import java.util.Scanner;
+    public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		Scanner reader = new Scanner(System.in);				 
+		char eingabe = reader.next().charAt(0);
+		
+		switch(eingabe) {
+		case 't': System.out.println(""Wir moegen dich auch.""); break;
+		
+		case 's': System.out.println(""Hauptsache wir stinken geruchstechnisch nicht.""); break;
+		
+		case 'l': System.out.println(""Giovanni, lernst du Programmieren?""); break;
+		
+		default: System.out.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+}","import java.util.Scanner;
+public class ReLoop {
+    public static void main(String[] args) {
+		Scanner reader = new Scanner(System.in);
+	    System.out.println(""Pyramidenhoehe:\n"");
+		int height = reader.nextInt();
+		for(int i = 1; i <= height; i++) {
+		for(int j = 0; j < height-i; j++) {
+        System.out.print("" "");
+		}
+		for(int j = 0; j < i*2; j++)
+        System.out.print(""*"");
+        }
+		System.out.print(""\n"");
+	}
+}","import java.util.Scanner;
+	public class LeapYear {
+	public static void main(String[] args) {
+		Scanner reader = new Scanner(System.in);
+		System.out.print(""Bitte Jahreszahl eingeben. "");
+		int x = reader.nextInt();
+		if (((x % 4 == 0) && (x % 100 != 0)) || (x % 400 == 0)) 
+		System.out.println(""Das Jahr ""+x+"" ist ein Schaltjahr."");
+		else 
+		System.out.println(""Das Jahr ""+x+"" ist kein Schaltjahr."");
+	}
+}","import java.util.Scanner;
+	public class Loops {
+    public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		for(int c = getCount(scan); c > 0; c = getCount(scan)) {
+		countdown(c);	
+    }
+	}
+	public static void countdown(int c) {
+		while(c > 0) {
+		System.out.println(c);
+		c = c-1;
+	}
+		System.out.println(""Start!"");
+	}
+	public static int getCount(Scanner scan) {
+		System.out.println(""Countdown:\n"");
+		return scan.nextInt();
+    }
+}"
+Bosner,Celina,c.bosner@campus.tu-berlin.de,Beendet,"30. Mai 2022  00:12","5. Juni 2022  22:21","6 Tage 22 Stunden","8,25","gar keine","Sie zählt unendlich.","Gar nicht","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.","eine Ausgabe","[[""2"",""-"",""-"",""-""],[""3"","""","""",""""],[""14(4)"","""","""",""""],[""15(4)"","""","""",""""],[""16(4)"","""","""",""""],[""4"","""",""false"",""""],[""5"","""","""",""""],[""6"","""","""",""2""],[""7(12)"",""zahl % i==0"","""",""i==0""],[""8(12)"","""",""true"",""""],[""9(12)"",""-"",""-"",""-""],[""12"","""","""",""""],[""13"","""","""",""""],[""10(17)"","""","""",""""],[""17"",""-"",""-"",""-""]]","public class Menu {
+	
+	public static void main(String [] args) {
+		System.out.println(""Bitte auswaehlen...\n""+
+						   ""\tPPR ist [t]oll\n""+
+						   ""\tPPR [s]tinkt mir\n""+
+						   ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe){
+		case 't':
+			Terminal.println(""Wir moegen dich auch."");
+			break;
+		case 's':
+			Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+			break;
+		case 'l':
+			Terminal.println(""Giovanni, lernst du Programmieren?"");
+			break;
+
+		default:
+			Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+}","public class ReLoop {
+	public static void main(String[] args) {
+		int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+		for (int i= 1; i<=height;) {
+			for (int j=0;j<=height-i;) {
+				Terminal.print("" "");
+				j++;
+			}
+		for (int j=0;j<i*2;) {
+				Terminal.print('*');
+				j++;
+			}
+				Terminal.print(""\n""); 
+				i++;		
+		}		
+	}
+}","public class LeapYear {
+	public static void main (String []args) {
+		int jahreszahl = Terminal.askInt("""");
+		if(jahreszahl%400==0 || jahreszahl%4==0 && jahreszahl%100!=0){
+			Terminal.println(""Bitte Jahreszahl eingeben. Das Jahr "" +jahreszahl+ "" ist ein Schaltjahr. "");
+		}else{
+			Terminal.println(""Bitte Jahreszahl eingeben. Das Jahr "" +jahreszahl+ "" ist kein Schaltjahr. "");
+		}
+	}
+}","public class Loops {
+    
+    public static void main(String[] args) {
+        Terminal.askInt(""Countdown:\n"");
+        for (int c=getCount(); c<0;c=getCount()) {
+        }    
+    }
+    public static void countdown(int c) {
+        while (c > 0) {
+            Terminal.askInt("""");
+
+            if (c==0);
+            Terminal.print(""Start!"");
+            if (c>0);
+            Terminal.print(""c"");
+        }    
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+
+    }     
+}"
+Asad,Hamza,hamza.asad@campus.tu-berlin.de,Beendet,"30. Mai 2022  00:41","5. Juni 2022  23:59","6 Tage 23 Stunden","12,50","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","gar nicht","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","0 1 2 3 4 5 6 7 8 9","4 Mal","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""7(6)"","""","""",""0""],[""8(6)"","""",""true"",""""],[""9(6)"","""","""",""-""],[""6"","""","""",""2""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe){
+		    case 't':
+		        Terminal.println(""Wir moegen dich auch."");
+		        break;
+		    case 's': 
+		        Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+		        break;
+		    case 'l':
+		        Terminal.println(""Giovanni, lernst du Programmieren?"");
+		        break;
+		    default: 
+		        Terminal.println(""Das stand gar nicht zur Auswahl.""); 
+		}
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        for (int i = 1; i <= height;) {
+            for (int j = 0; j < height-i; j++) {
+                Terminal.print("" "");
+            }
+            for (int j = 0; j < i*2; j++) {
+                Terminal.print(""*"");
+            }
+            Terminal.print(""\n"");
+            i++;
+        }
+    }
+}","class LeapYear {
+    public static void main(String[] args) {
+        int year;
+    	year = Terminal.askInt("""");
+        boolean isLeap = false;
+
+        if(year % 4 == 0)
+        {
+            if( year % 100 == 0)
+            {
+                if ( year % 400 == 0)
+                    isLeap = true;
+                else
+                    isLeap = false;
+            }
+            else
+                isLeap = true;
+        }
+        else {
+            isLeap = false;
+        }
+
+        if(isLeap==true)
+            System.out.println(""Bitte Jahreszahl eingeben. Das Jahr "" + year + "" ist ein Schaltjahr."");
+        else
+            System.out.println(""Bitte Jahreszahl eingeben. Das Jahr "" + year + "" ist kein Schaltjahr."");
+    }
+}","public class Loops {
+    
+    public static void main(String[] args) {
+        int c = Terminal.askInt(getCount());
+        for (;c >= 0;){
+            countdown(c);
+        }
+            Terminal.askInt(""Countdown:\n"");
+    }
+    
+    public static void countdown(int c) {
+        while (c>0){
+            Terminal.print(c);
+            c--;
+        }
+        if (c==0){
+            Terminal.print(""Start!"");
+        }
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Özmen,"Fevzi Alperen",f.oezmen@campus.tu-berlin.de,Beendet,"30. Mai 2022  09:03","3. Juni 2022  15:25","4 Tage 6 Stunden","12,25","Anweisung 2",4,"Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Gar nicht",15,"Ersteres nennt man implizites Casten, beim Casten vom kleinerem (float) zum größerem Datentyp (double) muss das explizit geschehen.","[["""","""","""",""""],[""2"","""","""",""undef""],[""2"","""","""",""""],[""3"","""","""",""""],[""3"","""",""undef"",""""],[""4"","""","""",""""],[""5"","""","""",""""],[""6"","""","""",""""],[""9"",""undef"","""",""""],[""10"","""","""",""""],[""11"","""","""",""""],[""12"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""]]","public class Menu {
+
+    public static void main(String[] args) {
+        System.out.print(""Bitte auswaehlen...\n"" +
+                ""\tPPR ist [t]oll\n"" +
+                ""\tPPR [s]tinkt mir\n"" +
+                ""\tPPR, Flasche [l]eer.\n\n"");
+        char eingabe = Terminal.readChar();
+
+        switch(eingabe){
+            case 't':
+                Terminal.println(""Wir moegen dich auch."");
+                break;
+            case 's':
+                Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+                break;
+            case 'l':
+                Terminal.println(""Giovanni, lernst du Programmieren?"");
+                break;
+            default:
+                Terminal.println(""Das stand gar nicht zur Auswahl."");
+                break;
+        }
+
+    }
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        int i = 1;
+        
+        for(; i<=height; i++){
+            int j = 0;
+
+            for(; j<height-i; j++){
+                Terminal.print("" "");
+            }
+            j = 0;
+            
+            for(; j<i*2; j++){
+                Terminal.print(""*"");
+            }
+            Terminal.print(""\n"");
+        }
+    }
+}","public class LeapYear {
+
+    public static void main (String[] args){
+
+        int input = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+
+        if(input%400==0 || (input%4==0 && input%100!=0)){
+            System.out.print(""Das Jahr "" + input + "" ist ein Schaltjahr."");
+        }else{
+            System.out.print(""Das Jahr "" + input + "" ist kein Schaltjahr."");
+        }
+    }
+}","public class Loops {
+
+    public static void main(String[] args) {
+
+        for(;true;){
+            int c = getCount();
+            if (c <=0){
+                System.exit(0);
+            }
+            countdown(c);
+        }
+    }
+    public static void countdown(int c) {
+
+        if(c>0) {
+            while (c > 0) {
+                System.out.println(c);
+                c = c - 1;
+            }
+            System.out.println(""Start!"");
+        }
+    }
+
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+
+}"
+Fujiya,Tsuzuru,tsuzuru.fujiya@campus.tu-berlin.de,Beendet,"30. Mai 2022  10:54","5. Juni 2022  15:46","6 Tage 4 Stunden","4,75",4,"for(int i=0;i<10;i=i+2){
+
+   System.out.println(i);
+
+   i--;
+
+ }",15,"Anweisung1 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung2 wahr sind. (Anweisung2, Anweisung3 und Anweisung4 werden nicht ausgeführt)","Unendlich oft",8,"[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""7(6)"","""","""",""""],[""8(6)"","""",""true"",""""],[""9(6)"","""","""",""""],[""6"","""","""",""3""],[""7(12)"","""","""",""""],[""8(12)"","""",""true"",""""],[""9(12)"","""","""",""""],[""12"","""",""-"",""-""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+			             int = Terminal.asklnt(eingabe);
+		switch (eingabe) {
+		case t: 
+			System.out.println(""Wir moegen dich auch."");
+			break;
+		
+		case s:
+		    System.out.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+		    break;
+		case l:
+			System.out.println(""Giovanni, lernst du Programmieren?"");
+			break;
+		case (!l; !s; !t):
+			System.out.println(""Das stand gar nicht zur Auswahl."");
+			break;
+		}
+	}
+
+}
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height =Terminal.askInt(""Pyramidenhoehe: \n"");
+        if (height=0){
+            return;
+        } else {
+        for(i=1; i<height; i++){
+            b=""** \n"";
+            a=""**"";
+            System.out.println(a * (int i)+b);
+        }
+        }
+    }","public class LeapYear {
+    public static void schaltjahr(String[] args){
+        int jahr=Terminal.askInt(""Bitte Jahreszahl eingeben. "")
+        if (jahr % 4 != 0) {
+            System.outprintln(""Das Jahr "" + jahr + "" ist kein Schaltjahr."");
+            break; 
+        } else {
+            if (jahr % 100 == 0 && jahr % 400 != 0) {
+                System.outprintln(""Das Jahr ""+ jahr + "" ist kein Schaltjahr."")
+                break;
+            } else {
+                System.out.println(""Das Jahr "" + jahr + ""ist ein Schaltjahr."")
+                break;
+}
+}
+}","public class Loops {
+    
+    public static void main(String[] args) {
+        int eingabe=Terminal.askInt(""Countdown:\n"");
+        for(i=1; i<=eingabe; i--){
+        if (eingabe < 1){
+            return eingabe;
+        } else {
+            System.out.println(i);
+            return eingabe;
+        }
+        }
+    }
+    
+    public static void countdown(int c) {
+       int c =Terminal.askInt ;
+       if (c < 0){
+           System.out.println(""Start!"");
+       } else {
+           while (c<100){
+               System.out.println(c);
+               c--;
+               if (c < 1) {
+                   break;
+               }
+               }
+           } System.out.println(""Start!"");
+       }
+       }
+       }
+        while (1 < c < 60) {
+        System.out.println(c);
+        c--;
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+    
+}"
+Neumann,Christopher,christopher.neumann@campus.tu-berlin.de,Beendet,"30. Mai 2022  11:27","31. Mai 2022  17:55","1 Tag 6 Stunden","14,25","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.",4,"Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","gar nicht","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""-""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe){
+			case('t'):
+				Terminal.println(""Wir moegen dich auch."");
+				break;
+			case('s'):
+				Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+				break;
+			case('l'):
+				Terminal.println(""Giovanni, lernst du Programmieren?"");
+				break;
+			default:
+				Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        for(int i = 1;i <= height;) {
+            int j = 0;
+            for(j = 0;j < height - i; j++) {
+                Terminal.print("" "");
+            }
+            for(j = 0;j < i*2;j++) {
+                Terminal.print(""*"");
+            }
+            Terminal.print(""\n"");
+            i++;
+        }
+    }
+}","public class LeapYear{
+	
+	public static void main(String args[]){
+		int jahr = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		if(jahr % 4 != 0){
+			Terminal.println(""Das Jahr "" + jahr + "" ist kein Schaltjahr."");
+		}else{
+		if(jahr % 100 == 0 && jahr % 400 !=0){
+			Terminal.println(""Das Jahr "" + jahr + "" ist kein Schaltjahr."");
+		}else{
+		Terminal.println(""Das Jahr "" + jahr + "" ist ein Schaltjahr."");
+		}
+		}
+	}	
+}","public class Loops {
+    
+    public static void main(String[] args) {
+		for(int zahl = 1; zahl > 0;){
+			int Count = getCount();
+			zahl = Count;
+			if(Count > 0){
+			countdown(Count);	
+			}
+		}
+    }
+    
+    public static void countdown(int c) {
+		while(c > 0){
+			if( c > 0){
+				Terminal.println(c);
+				c--;
+			}	
+		}
+		if(c == 0){		
+		Terminal.println(""Start!"");	
+		}
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+}"
+Duryn,"Jonas Manuel",jonas.duryn@campus.tu-berlin.de,Beendet,"30. Mai 2022  12:04","30. Mai 2022  14:44","2 Stunden 40 Minuten","14,00","Gar nicht","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.",15,"gar nicht","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""9"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""-""],[""13"","""","""",""""],[""16"","""","""",""""],[""17"",""-"",""-"",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe){
+			case 't':
+				Terminal.println(""Wir moegen dich auch."");
+				break;
+			case 's':
+				Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+				break;
+			case 'l':
+				Terminal.println(""Giovanni, lernst du Programmieren?"");
+				break;
+			default:
+				Terminal.println(""Das stand gar nicht zur Auswahl."");
+			
+		}
+		
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+       
+        for(int i=0; i<=height;i++) {
+           
+           for(int j=0; j < height-i;j++) {
+                Terminal.print("" "");
+             
+            }
+           
+			for(int j =0; j < i*2; j++) {
+                Terminal.print(""*"");
+                
+            }
+            Terminal.print(""\n"");
+          
+        }
+    }
+}","public class LeapYear {
+	public static void main(String [] args) { 
+		int jahr = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		if(jahr%400==0){
+			Terminal.println(""Das Jahr ""+jahr+"" ist ein Schaltjahr."");
+		} else if(jahr%4==0 && jahr%1000!=0){
+			Terminal.println(""Das Jahr ""+jahr+"" ist ein Schaltjahr."");
+		} else Terminal.println(""Das Jahr ""+jahr+"" ist kein Schaltjahr."");
+	}
+}","public class Loops {
+    
+    public static void main(String[] args) {
+		int count =getCount();
+		for(;count>0;){
+			countdown(count);
+			count=getCount();
+		}
+		
+    }
+    
+    public static void countdown(int c)	{
+
+		while (c>=1){
+			Terminal.println(c);
+			c--;
+		}
+			Terminal.println(""Start!"");
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Roza,"Jan Philip",roza@campus.tu-berlin.de,Beendet,"30. Mai 2022  12:04","3. Juni 2022  19:52","4 Tage 7 Stunden","13,75","gar nicht","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.",5,"0 1 2 3 4 5 6 7 8 9","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""-""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""",""false"",""-""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+
+    public static void main(String [] args) {
+        System.out.print(""Bitte auswaehlen...\n"" +
+                ""\tPPR ist [t]oll\n"" +
+                ""\tPPR [s]tinkt mir\n"" +
+                ""\tPPR, Flasche [l]eer.\n\n"");
+        char c = Terminal.readChar();
+        switch(c) {
+            case 't':
+                Terminal.println(""Wir moegen dich auch."");
+                break;
+            case 's':
+                Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+                break;
+            case 'l':
+                Terminal.println(""Giovanni, lernst du Programmieren?"");
+                break;
+            default: Terminal.println(""Das stand gar nicht zur Auswahl."");
+                break;
+        }
+    }
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        int i = 1;
+        for(i=1; i <= height; i++){
+            for(int j=0; j < height-i; j++){
+                Terminal.print("" "");
+            }
+
+            for(int j=0; j < i*2; j++){
+                Terminal.print(""*"");
+            }
+            Terminal.print(""\n"");
+        }
+    }
+}","public class LeapYear {
+
+    public static void main(String[] args) {
+        int jahr = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+        boolean b=schaltjahr(jahr);
+        if (b) {
+           Terminal.println(""Das Jahr "" + jahr + "" ist ein Schaltjahr."");
+        } else {
+            Terminal.println(""Das Jahr "" + jahr + "" ist kein Schaltjahr."");
+        }
+
+    }
+
+    public static boolean schaltjahr(int jahr) {
+        if (jahr % 4 == 0) {
+            if (jahr % 100 == 0 && jahr % 400 != 0) {
+                return false;
+            } else {
+                return true;
+            }
+        } else {
+            return false;
+        }
+    }
+}","public class Loops {
+
+    public static void main(String[] args) {
+        for(int c=getCount();c>0; c=getCount()){
+            countdown(c);
+        }
+
+    }
+
+    public static void countdown(int c) {
+        while(c>=1){
+            Terminal.println(c);
+                    c--;
+        }
+        Terminal.println(""Start!"");
+    }
+
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+
+}"
+Penner,Valeria,valeria.penner@campus.tu-berlin.de,Beendet,"30. Mai 2022  15:05","5. Juni 2022  23:59","6 Tage 8 Stunden","8,25",8,"4 Mal","Anweisung 2","Sie zählt unendlich.","0 1 2 3 4 5 6 7 8 9",4,"[[""16"",""9"",""false"",""4""],[""17"","""","""",""""],[""1"",""-"",""-"",""-""],[""2"","""","""",""""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""4""],[""7"","""","""",""""],[""8"","""","""",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		String m = ""menu""; 
+		
+	char eingabe = Terminal.readChar();
+			switch (eingabe) {
+				case 't':
+				System.out.println(""Wir moegen dich auch."");
+				break;
+				case 's':
+				System.out.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+				break;
+				case 'l':
+				System.out.println(""Giovanni, lernst du Programmieren?"");
+				break;
+				default:
+				System.out.println(""Das stand gar nicht zur Auswahl."");
+				break;
+	
+			}
+		}
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        for(int i = 1; i <= height; i++ ) {
+            
+            for(int j = 0; j < height - i; j++) {
+                Terminal.print("" "");
+               
+            }
+           
+            for(int j = 0;j < i*2; j++) {
+                Terminal.print(""*"");
+               
+            }
+            for (int j = 0; j < i; j++) {
+			Terminal.print(""\n"");
+            
+        }
+    }
+}}","public class LeapYear {
+public static void main (String [] args){
+
+boolean LeapYear; 
+int jahr;
+if (jahr % 4 != 0) {
+return false;
+}
+if (jahr % 100 == 0 && jahr % 400 != 0) {
+return false;
+}
+return true;
+}}","public class Loops {
+    
+    public static void main(String[] args) {
+    }
+    
+    public static void countdown(int c) {
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Matheson,Piers,piers.matheson@campus.tu-berlin.de,Beendet,"30. Mai 2022  21:09","5. Juni 2022  21:05","5 Tage 23 Stunden","7,00",8,"for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","4 Mal","gar nicht","Gar nicht","[["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""6"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""12"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch (eingabe){
+			case 't':
+				Terminal.println(""Wir moegen dich auch."");
+				break;
+			case 's':
+				Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+				break;
+			case 'l':
+				Terminal.println(""Giovanni, lernst du Programmieren?"");
+				break;
+			default:
+				Terminal.println(""Das stand gar nicht zur Auswahl."");
+		
+		}
+	}
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        int i = 1;
+        while(i <= height) {
+            int j = 0;
+            while(j < height-i) {
+                Terminal.print("" "");
+                j++;
+            }
+            j = 0;
+            while(j < i*2) {
+                Terminal.print(""*"");
+                j++;
+            }
+            Terminal.print(""\n"");
+            i++;
+        }
+    }
+}","public class LeapYear{
+	public static void main(String[] args){
+		
+		int a = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		
+			if(a%4 == 0 && (a%100 !=0 || a%400 == 0)) {
+				System.out.print(""Das Jahr ""+a+"" ist ein Schaltjahr."");
+			}else System.out.print(""Das Jahr ""+a+"" ist kein Schaltjahr."");
+			
+							
+	}
+}","public class Loops {
+    
+    public static void main(String[] args) {
+		boolean b = true;
+		while(b = true){
+		int i = Terminal.askInt(""Countdown:\n"");
+		for( ;i >= 1; i--){
+			System.out.println(i);
+		}
+		if(i <= 0){
+			b = false;
+		}
+		if(i <= 0){
+			System.out.println(""Start!"");	
+		
+		}
+		
+		}
+			
+		
+		
+    }
+	
+    
+    public static void countdown(int c) {
+	    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Schümer,Paolo,paolo.schuemer@campus.tu-berlin.de,Beendet,"30. Mai 2022  22:31","5. Juni 2022  23:59","6 Tage 1 Stunde","10,90","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","gar nicht","4 Mal","gar keine","0 1 2 3 4 5 6 7 8 9","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""-""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""13"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+    
+    public static void main(String [] args) {
+        System.out.print(""Bitte auswaehlen...\n"" +
+                         ""\tPPR ist [t]oll\n"" +
+                         ""\tPPR [s]tinkt mir\n"" +
+                         ""\tPPR, Flasche [l]eer.\n\n"");
+        char eingabe = Terminal.readChar();
+        switch(eingabe) {
+            case 't':
+            Terminal.println(""Wir moegen dich auch."");
+            break;
+        case's':
+            Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+            break;
+        case'l':
+            Terminal.println(""Giovanni, lernst du Programmieren?"");
+            break;
+        default:
+            Terminal.println(""Das stand gar nicht zur Auswahl."");
+        }
+    }
+}","import java.util.Scanner;
+
+public class ReLoop {
+    public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print(""Pyramidenhoehe:\n"");
+        int height = sc.nextInt();
+		for (int i = 1; i <= height; i++){
+            for(int j = 0;j < height-i; j++) {
+                System.out.print("" "");
+            }
+            for(int j = 0;j < i*2; j++) {
+                System.out.print(""*"");
+            }
+            System.out.print(""\n"");
+        }
+    }
+}","import java.util.Scanner;
+
+public class LeapYear {
+    public static void main(String[] args){
+    Scanner sc = new Scanner (System.in);
+    System.out.print(""Bitte Jahreszahl eingeben. "");
+    int jahr = sc.nextInt();
+    boolean schaltjahr = (jahr%4 == 0 && jahr%100 != 0)||(jahr%100 == 0 && jahr%400 == 0);
+    if(schaltjahr == true){
+        System.out.println(""Das Jahr "" + jahr + "" ist ein Schaltjahr."");
+    }
+    else{
+        System.out.println(""Das Jahr "" + jahr + "" ist kein Schaltjahr."");
+    }
+    }
+}","public class Loops {
+    
+    public static void main(String[] args) {
+    }
+    
+    public static void countdown(int c) {
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+"Alonso Pardo","Laura Christina",l.alonsopardo@tu-berlin.de,Beendet,"31. Mai 2022  02:21","3. Juni 2022  20:11","3 Tage 17 Stunden","13,00","Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.","Sie zählt unendlich.","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","Anweisung 2","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","3 Mal","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7(6)"","""","""",""""],[""10(6)"","""","""",""""],[""6"","""","""",""3""],[""7(6)"","""","""",""""],[""8(6)"","""",""true"",""""],[""11"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""-""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe){
+			case 't':
+				Terminal.println(""Wir moegen dich auch."");
+				break;
+			case 's':
+		    	Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+		    	break;
+		    case 'l':
+				Terminal.println(""Giovanni, lernst du Programmieren?"");
+				break;
+			default:
+			Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+		
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        int i = 1;
+        for(i=1; i <= height; i++){
+            int j=0;
+            for(j=0; j < height-i; j++){
+                Terminal.print("" "");
+            }
+            for(j=0; j < i*2; j++){
+                Terminal.print(""*"");
+            }
+                Terminal.print(""\n"");
+        }
+    }
+}","public class LeapYear {
+    public static void main(String [] args){
+        int jahr = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+        if(jahr%400 == 0){
+            Terminal.print(""Das Jahr ""+jahr+"" ist ein Schaltjahr."");  
+        }
+        else{
+            if(jahr%100 != 0 && jahr%4 == 0){
+                Terminal.print(""Das Jahr ""+jahr+"" ist ein Schaltjahr."");
+            }
+            else{
+                Terminal.print(""Das Jahr ""+jahr+"" ist kein Schaltjahr."");
+            }
+        }
+    }
+}","public class Loops {
+    
+    public static void main(String[] args) {
+        int num = getCount();
+        for(;num>0; num=getCount()){
+            countdown(num);
+        }
+    }
+    
+    public static void countdown(int c) {
+        do{
+            Terminal.print(c+""\n"");
+            c--;
+        }while(c>0);
+        Terminal.print(""Start!\n"");
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Matthes,Felix,felix.matthes@campus.tu-berlin.de,Beendet,"31. Mai 2022  09:56","5. Juni 2022  17:55","5 Tage 7 Stunden","12,50",4,"Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Gar nicht","4 Mal","Anweisung 2","Sie zählt unendlich.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe){
+			case 't':
+				Terminal.println(""Wir moegen dich auch."");
+				break;
+			case 's':
+				Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+				break;
+			case 'l':
+				Terminal.println(""Giovanni, lernst du Programmieren?"");
+				break;
+			default:
+				Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        int i = 1;
+        for(i = 1; i <= height; i++) {
+            int j = 0;
+            for(j = 0; j < height-i; j++) {
+                Terminal.print("" "");
+            }
+            j = 0;
+            for(j = 0; j < i*2; j++) {
+                Terminal.print(""*"");
+            }
+            Terminal.print(""\n"");
+        }
+    }
+}","public class LeapYear {
+    public static void main(String[] args) {
+		System.out.print(""Bitte Jahreszahl eingeben. "");
+		int eingabe = Terminal.readInt();
+		if(eingabe % 400 == 0){
+			Terminal.println(""Das Jahr "" + eingabe + "" ist ein Schaltjahr."");
+		}else if(eingabe % 4 == 0 && eingabe % 100 != 0){
+			Terminal.println(""Das Jahr "" + eingabe + "" ist ein Schaltjahr."");
+		}else{
+			Terminal.println(""Das Jahr "" + eingabe + "" ist kein Schaltjahr."");
+		}
+	}
+}","public class Loops {
+    
+    public static void main(String[] args) {
+		int d = getCount();
+		if (d > 0){
+			countdown(d);
+		}
+		for(j = 0; j>0; j++){
+		    
+		}
+    }
+    
+    public static void countdown(int c) {
+		int i = c - 1;
+		while(i > 0){
+			Terminal.println("""" + i);
+			i--;
+		}
+		Terminal.println(""Start!"");
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Schäfer,"Julia Désirée",julia.d.schaefer@campus.tu-berlin.de,Beendet,"31. Mai 2022  10:58","1. Juni 2022  12:54","1 Tag 1 Stunde","12,00",4,"Sie zählt bis 3 in Zweier-Schritten.",Einmal,"4 Mal","0 1 2 3 4 5 6 7 8 9",15,"[[""1"",""-"",""-"",""-""],[""2"","""","""",""""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""6"","""","""",""""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","public class Menu {
+
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch (eingabe) {
+      case 't':
+        Terminal.println(""Wir moegen dich auch."");
+        break;
+      case 's':
+        Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+        break;
+      case 'l':
+        Terminal.println(""Giovanni, lernst du Programmieren?"");
+        break;
+      default:
+        Terminal.println(""Das stand gar nicht zur Auswahl."");
+      }
+    }
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        for(int i = 1; i <= height; i++) {
+          for (int j = 0; j < height-i; j++) {
+            Terminal.print("" "");
+          }
+          for (int j = 0; j < i*2; j++) {
+            Terminal.print(""*"");
+          }
+          Terminal.print(""\n"");
+        }
+      }
+    }","public class LeapYear {
+  public static void main (String [] args) {
+    int Jahreszahl = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+    if (Jahreszahl % 400 == 0 || Jahreszahl % 4 ==0 && Jahreszahl % 100 != 0) {
+      Terminal.print(""Das Jahr ""+Jahreszahl+"" ist ein Schaltjahr."");
+    }
+      else {
+        Terminal.print(""Das Jahr ""+Jahreszahl+"" ist kein Schaltjahr."");
+      }
+  }
+}","public class Loops {
+  public static void main(String[] args) {
+    for(int c = getCount(); c > 0; c = getCount()) {
+      countdown(c);
+      Terminal.print(""Start! \n"");
+      }
+    }
+
+    public static void countdown(int c) {
+      int i = 0;
+      while (i < c) {
+        System.out.println(c - i);
+        ++i;
+      }
+    }
+
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+}"
+Kahl,"Patrick Paul Tobias",p.kahl@campus.tu-berlin.de,Beendet,"31. Mai 2022  12:08","5. Juni 2022  23:36","5 Tage 11 Stunden","14,25","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)",8,"for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","Sie zählt unendlich.","0 1 2 3 4 5 6 7 8 9","Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch (eingabe){
+			case't':
+				Terminal.println(""Wir moegen dich auch."");
+				break;
+				
+			case 's':
+				Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+				break;
+				
+			case 'l':
+				Terminal.println(""Giovanni, lernst du Programmieren?"");
+				break;
+			
+			default:
+			Terminal.println(""Das stand gar nicht zur Auswahl."");
+			
+		}
+		
+	
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        for(int i = 1;i <= height;i++) {
+            for(int j = 0;j < height-i;j++) {
+                Terminal.print("" "");
+            }
+            for(int j = 0;j < i*2;j++) {
+                Terminal.print(""*""); 
+            }
+            Terminal.print(""\n"");
+        }
+    }
+}","public class LeapYear {
+ public static void main(String [] args) {
+	 int a  = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+	 if (sjahr(a) == true)
+		 System.out.println(""Das Jahr "" +a+"" ist ein Schaltjahr."");
+	 else
+		 System.out.println(""Das Jahr ""+a+"" ist kein Schaltjahr."");
+ }
+ public static boolean sjahr(int a) {
+	 if (a%400 == 0){
+		 return true;
+	 }else{ 
+		if (a%4 == 0 && a % 100 != 0){
+			return true;
+		}else{
+			return false;
+		}
+ } 
+ }
+}","public class Loops {
+    
+    public static void main(String[] args) {
+		int a = getCount();
+		for(;a>0;){
+			countdown(a);
+			a = getCount();
+			
+		}
+    }
+    
+    public static void countdown(int c) {
+		while (c>0){
+			System.out.println(c);
+			c--;
+		}
+		System.out.println(""Start!"");
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+"Ben Hassine",Lydia,lydia.benhassine@campus.tu-berlin.de,Beendet,"31. Mai 2022  13:26","5. Juni 2022  23:59","5 Tage 10 Stunden","8,50","4 Mal","gar keine","Sie zählt unendlich.","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Gar nicht","gar nicht","[["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""6"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""12"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+	    switch(eingabe) {
+	        case 't': Terminal.println(""Wir moegen dich auch."");
+	        break;
+	
+			case 's': Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+			break;
+		
+			case 'l': Terminal.println(""Giovanni, lernst du Programmieren?"");
+			break;
+			case 'k': Terminal.println(""Das stand gar nicht zur Auswahl."");
+			break;
+		}
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        
+		for(int i=1; i<= height;i++){
+            for(int j=0;j< height-i;j++) {
+			
+				
+			    Terminal.print("" "");
+				
+            }
+            
+            for(int j=0;j< i*2; j++) {
+                Terminal.print(""*"");
+                
+            }
+            Terminal.print(""\n"");
+            
+		}
+        
+    }
+}","public class LeapYear {
+    public static void main(String[] args) {
+
+    	int jahr;
+    	System.out.print(""Bitte Jahreszahl eingeben. "");
+    	 jahr = Terminal.readInt();
+        boolean isLeap = false;
+
+        if(jahr % 4 == 0)
+        {
+            if(jahr % 100 == 0)
+            {
+                if (jahr % 400 == 0)
+                    isLeap = true;
+                else
+                    isLeap = false;
+            }
+            else
+                isLeap = true;
+        }
+        else {
+            isLeap = false;
+        }
+
+        if(isLeap==true)
+            System.out.println(""Das Jahr ""+ jahr + "" ist ein Schaltjahr."");
+        else
+            System.out.println(""Das Jahr ""+ jahr + "" ist kein Schaltjahr."");
+    }
+}","public class Loops {
+    
+       public static void main(String[] args) {
+		  for(int zahl = getCount(); zahl>0; countdown(zahl)){
+		  }
+
+    }
+    
+    public static void countdown(int c) {
+		 while (c>0)
+    {
+     System.out.println(c);
+     c= c-1; 
+	 
+	 
+    }
+    System.out.println(""start!""); 
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Gasch,Niclas,n.gasch@campus.tu-berlin.de,Beendet,"31. Mai 2022  13:59","5. Juni 2022  23:59","5 Tage 9 Stunden","14,00",4,8,"Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","gar nicht","Anweisung 2","Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+	public static void main(String[] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+	             ""\tPPR ist [t]oll\n"" +
+	             ""\tPPR [s]tinkt mir\n"" +
+	             ""\tPPR, Flasche [l]eer.\n\n"");
+		
+		char eingabe = Terminal.readChar();
+		
+		switch(eingabe)
+		{
+		case 't': System.out.println(""Wir moegen dich auch."");
+		break;
+		case 's' : System.out.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+		break;
+		case 'l' : System.out.println(""Giovanni, lernst du Programmieren?"");
+		break;
+		
+		default : System.out.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        int i = 1;
+       
+        for(i = 1; i<=height; i++) {
+        	int j = 0;
+        	
+        	for(j=0; j<height-i; j++) {
+        		Terminal.print("" "");
+        	}
+        	for(j=0; j<2*i; j++) {
+        		Terminal.print(""*"");
+        	}
+        	Terminal.print(""\n"");
+        }
+    }
+}","public class LeapYear {
+	public static void main(String[] args) {
+		int zahl = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		boolean istSchaltjahr = false;
+		
+		if(zahl % 400 == 0) {
+			istSchaltjahr = true;
+		}
+		else {
+			if(zahl%4 == 0 && zahl%100 != 0) {
+					istSchaltjahr = true;
+			}
+		}
+		
+		if(istSchaltjahr) {
+			Terminal.println(""Das Jahr ""+zahl+"" ist ein Schaltjahr."");
+		}
+		else {
+			Terminal.println(""Das Jahr ""+zahl+"" ist kein Schaltjahr."");
+		}
+	}
+
+}","public class Loops {
+    
+    public static void main(String[] args) {
+    	for(int i=1; i>0;) {
+    		int c = getCount();
+    		countdown(c);
+    		i = c;
+    	}
+    }
+    
+    public static void countdown(int c) {
+    	if(c>0) {
+    		while(c>0) {
+    		Terminal.println(c);
+    		c--;
+    		}
+    		Terminal.println(""Start!"");
+    	}
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+}"
+Janiel,"Jan Tadeus",j.janiel@campus.tu-berlin.de,Beendet,"31. Mai 2022  14:31","5. Juni 2022  01:29","4 Tage 10 Stunden","13,00","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","0 1 2 3 4 5 6 7 8 9","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Anweisung 3",15,"4 Mal","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""6"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""4""],[""12"","""","""",""-""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","import java.util.Scanner;
+
+public class Menu {
+
+    public static void main(String [] args) {
+
+        Scanner sc= new Scanner(System.in);
+
+        System.out.print(""Bitte auswaehlen...\n"" +
+                ""\tPPR ist [t]oll\n"" +
+                ""\tPPR [s]tinkt mir\n"" +
+                ""\tPPR, Flasche [l]eer.\n\n"");
+
+        char eingabe = sc.next().charAt(0);;
+
+        switch(eingabe){
+
+            case 't':
+                System.out.println(""Wir moegen dich auch."");
+                break;
+
+            case 's':
+                System.out.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+                break;
+
+            case 'l':
+                System.out.println(""Giovanni, lernst du Programmieren?"");
+                break;
+
+            default:
+                System.out.println(""Das stand gar nicht zur Auswahl."");
+        }
+    }
+}","import java.util.Scanner;
+
+public class ReLoop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(""Pyramidenhoehe: "");
+        int height = sc.nextInt();
+        System.out.println("""");
+
+        for(int i = 1;i <= height;i++) {
+
+            for(int j = 0;j < height-i;j++) {
+                System.out.print("" "");
+
+            }
+
+            for( int j = 0;j < i*2; j++) {
+                System.out.print(""*"");
+
+            }
+            System.out.println("""");
+        }
+    }
+}","import java.util.Scanner;
+
+public class LeapYear {
+
+    public static void main(String[] args) {
+       int year = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+       
+        if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+            System.out.print(""Das Jahr "" + year + "" ist ein Schaltjahr."");
+        else
+            System.out.print(""Das Jahr "" + year + "" ist kein Schaltjahr."");
+    }
+}","import java.util.Scanner;
+
+public class Loops {
+
+    public static void main(String[] args) {
+        for(int i = 1; true;) {
+            i = getCount();
+            if(i <= 0){
+                break;
+            }
+            countdown(i);
+
+        }
+    }
+
+    public static void countdown(int c) {
+
+        while(c >= 0){
+            if( c== 0){
+                System.out.println(""Start!"");
+                break;
+            }
+            System.out.println(c);
+            c = c-1;
+
+        }
+    }
+
+    public static int getCount() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(""Countdown: "");
+        
+        return sc.nextInt();
+       
+
+}"
+Grafelmann,"Tjorven Björn",grafelmann@campus.tu-berlin.de,Beendet,"31. Mai 2022  14:44","5. Juni 2022  23:18","5 Tage 8 Stunden","13,75","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Sie zählt unendlich.","Anweisung 2","gar nicht",15,Einmal,"[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe) {
+		    case 't':
+			    Terminal.println(""Wir moegen dich auch."");
+			    break;
+			case 's':
+			    Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+			    break;
+		    case 'l':
+		        Terminal.println(""Giovanni, lernst du Programmieren?"");
+		        break;
+		    default:
+			Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+		int i = 0;
+		int j = 0;
+        for(i = 1;i <= height;i++) {
+            for(j = 0;j < height-i;j++) {
+                Terminal.print("" "");
+            }           
+            for(j = 0;j < i*2;j++) {
+                Terminal.print(""*"");
+            }
+            Terminal.print(""\n"");
+        }
+    }
+}","public class LeapYear {
+    
+      public static void main(String[] args) {
+            int year = Terminal.askInt(""Bitte Jahreszahl eingeben."");
+            if (schaltjahr(year) == true){
+                System.out.println("" Das Jahr "" + year + "" ist ein Schaltjahr."");
+            }else{
+                System.out.println("" Das Jahr "" + year + "" ist kein Schaltjahr."");
+            }
+      }
+      
+      public static boolean schaltjahr(int jahr) {
+            if (jahr % 4 != 0) {
+            return false;
+            } else {
+            if (jahr % 100 == 0 && jahr % 400 != 0) {
+            return false;
+            } else {
+            return true;
+            }
+         }
+        }
+}","public class Loops {
+    
+    public static void main(String[] args) {
+		int eingabe=getCount();
+		for (;eingabe>0;){
+			countdown(eingabe);
+			eingabe=getCount();
+		}
+    }
+    
+    public static void countdown(int c) {
+        while (c>0){
+            System.out.println(c);
+            c--;
+        }
+        System.out.println(""Start!"");
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Mengi,Berna,berna.mengi@campus.tu-berlin.de,Beendet,"31. Mai 2022  16:20","5. Juni 2022  23:24","5 Tage 7 Stunden","13,25","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","0 1 2 3 4 5 6 7 8 9","Sie zählt unendlich.","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.",2,8,"[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""13"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe) {
+			case 't':
+			Terminal.println(""Wir moegen dich auch."");
+			break;
+		case's':
+		    Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+			break;
+		case'l':
+			Terminal.println(""Giovanni, lernst du Programmieren?"");
+			break;
+		default:
+			Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+}","import java.util.Scanner;
+
+public class ReLoop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(""Pyramidenhoehe:\n"");
+        int height = sc.nextInt();
+        for (int i = 1; i <= height; i++){
+            for(int j = 0;j < height-i; j++) {
+                System.out.print("" "");
+            }
+            for(int j = 0;j < i*2; j++) {
+                System.out.print(""*"");
+            }
+            System.out.print(""\n"");
+        }
+    }
+}","import java.util.Scanner;
+
+public class LeapYear {
+	public static void main(String[] args){
+	Scanner sc = new Scanner (System.in);
+	System.out.print(""Bitte Jahreszahl eingeben. "");
+	int jahr = sc.nextInt();
+	boolean schaltjahr = (jahr%4 == 0 && jahr%100 != 0)||(jahr%100 == 0 && jahr%400 == 0);
+	if(schaltjahr == true){
+		System.out.println(""Das Jahr "" + jahr + "" ist ein Schaltjahr."");
+	}
+	else{
+		System.out.println(""Das Jahr "" + jahr + "" ist kein Schaltjahr."");
+	}
+	}
+}","import java.util.Scanner;
+
+public class Loops{
+
+public static void countdown(int c){
+	int n = c;
+	while(n>=1){
+	System.out.println(n);
+	n--;}
+	if(c >=1){
+	System.out.println(""Start!"");
+	}
+}
+
+public static int getCount(){
+	int c;
+	Scanner sc = new Scanner (System.in);
+	System.out.print(""Countdown:"");
+	c = sc.nextInt();
+	return c;
+}
+
+public static void main(String[] args){
+	for (int c = 1 ; c >=1;){
+	c = getCount();
+	countdown(c);
+	}
+}
+
+}"
+Türk,Gökcenur,g.tuerk@campus.tu-berlin.de,Beendet,"31. Mai 2022  16:21","5. Juni 2022  23:02","5 Tage 6 Stunden","13,00",15,"gar nicht","0 1 2 3 4 5 6 7 8 9",4,8,"Anweisung 2","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""13"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe) {
+			case 't':
+			Terminal.println(""Wir moegen dich auch."");
+			break;
+		case's':
+		    Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+			break;
+		case'l':
+			Terminal.println(""Giovanni, lernst du Programmieren?"");
+			break;
+		default:
+			Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+}","import java.util.Scanner;
+
+public class ReLoop {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(""Pyramidenhoehe:\n"");
+        int height = sc.nextInt();
+        for (int i = 1; i <= height; i++){
+            for(int j = 0;j < height-i; j++) {
+                System.out.print("" "");
+            }
+            for(int j = 0;j < i*2; j++) {
+                System.out.print(""*"");
+            }
+            System.out.print(""\n"");
+        }
+    }
+}","import java.util.Scanner;
+
+public class LeapYear {
+	public static void main(String[] args){
+	Scanner sc = new Scanner (System.in);
+	System.out.print(""Bitte Jahreszahl eingeben. "");
+	int jahr = sc.nextInt();
+	boolean schaltjahr = (jahr%4 == 0 && jahr%100 != 0)||(jahr%100 == 0 && jahr%400 == 0);
+	if(schaltjahr == true){
+		System.out.println(""Das Jahr "" + jahr + "" ist ein Schaltjahr."");
+	}
+	else{
+		System.out.println(""Das Jahr "" + jahr + "" ist kein Schaltjahr."");
+	}
+	}
+}","import java.util.Scanner;
+
+public class Loops{
+
+public static void countdown(int c){
+	int n = c;
+	while(n>=1){
+	System.out.println(n);
+	n--;
+	}
+}
+
+public static int getCount(){
+	int c;
+	Scanner sc = new Scanner (System.in);
+	System.out.print(""Countdown: "");
+	c = sc.nextInt();
+	return c;
+}
+
+public static void main(String[] args){
+	for (int c = 1 ; c >=1;){
+	c = getCount();
+	countdown(c);
+	if(c >=1){
+	System.out.println(""Start!"");
+	}
+	}
+}
+
+}"
+Kocak,Soner,soner.kocak@campus.tu-berlin.de,Beendet,"1. Juni 2022  09:57","5. Juni 2022  15:22","4 Tage 5 Stunden","11,15",15,4,"Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","4 Mal",8,"0 1 2 3 4 5 6 7 8 9","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""-""],[""6"","""","""",""""],[""7"","""","""",""3""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"",""-"",""-"",""""],[""16"","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch (eingabe){
+		    case 't': Terminal.println(""Wir moegen dich auch.""); break;
+		    case 's': Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht.""); break;
+		    case 'l': Terminal.println(""Giovanni, lernst du Programmieren?""); break;
+		    default:  Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        
+        for (int i = 1; i <= height; i++){
+            
+            for (int j = 0; j < height-i; j++){
+                Terminal.print("" "");
+            }
+            for (int j = 0; j < i*2; j++){
+                  Terminal.print(""*"");
+            }
+            Terminal.print(""\n"");
+        }
+    }
+}","public class LeapYear {
+	
+	
+	public static void main(String[] args){
+		
+		
+		int Jahr=Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		
+		if(Jahr%4==0){
+			
+			Terminal.print(""Das Jahr ""+Jahr+"" ist ein Schaltjahr."");
+			
+		}
+		else if(Jahr%400==0){
+			
+			Terminal.print(""Das Jahr ""+Jahr+"" ist ein Schaltjahr."");
+			
+		}
+		else if(Jahr%100 ==0){
+			
+			
+			Terminal.print(""Das Jahr ""+Jahr+"" ist kein Schaltjahr."");
+			
+		}
+		else{
+			
+			Terminal.print(""Das Jahr ""+Jahr+"" ist kein Schaltjahr."");
+			
+		}
+		
+		
+		
+		
+		
+	}
+	
+      
+}","public class Loops {
+    int timer;
+    public static void main (String[]args){
+        int zahler = 10;
+    }
+    public static void countdown(int c) {
+    }
+    public static void int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+}"
+Schramm,Steffen,steffen.schramm@campus.tu-berlin.de,Beendet,"1. Juni 2022  10:50","5. Juni 2022  12:52","4 Tage 2 Stunden","12,75","gar nicht","Anweisung 2",5,15,"Sie zählt bis 3.","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","[[""2"",""-"",""-"",""-""],[""3"",""9"","""",""""],[""4"","""",""false"",""""],[""5"","""","""",""""],[""10"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"",""-"","""",""-""],[""12"","""","""",""""],[""13"","""","""",""""],[""16"","""",""-"",""""],[""17"","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe) {
+			case('t'):
+				Terminal.println(""Wir moegen dich auch."");
+				break;
+			case('s'):
+				Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+				break;
+			case('l'):
+				Terminal.println(""Giovanni, lernst du Programmieren?"");
+				break;
+			default:
+				Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        for(int i = 1; i <= height; i = i + 0) {
+            for(int j = 0; j < height-i; j = j + 0) {
+                Terminal.print("" "");
+                j++;
+            }
+            for(int j=0; j < i*2; j = j + 0) {
+                Terminal.print(""*"");
+                j++;
+            }
+            Terminal.print(""\n"");
+            i++;
+        }
+    }
+}","public class LeapYear {
+	public static void main(String[] args) {
+		int year = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		if ( year % 4 != 0) {
+			Terminal.println(""Das Jahr "" + year + "" ist kein Schaltjahr."");
+		}
+		else {
+		if (year % 100 == 0 && year % 400 != 0){
+			Terminal.println(""Das Jahr "" + year + "" ist kein Schaltjahr."");
+		}
+		else {
+			Terminal.println(""Das Jahr "" + year + "" ist ein Schaltjahr."");
+		}
+		}
+	}
+}","public class Loops {
+	public static void main(String[] args) {
+		for(int number = 1; number > 0;) {
+			int Counter = getCounter();
+			number = Counter;
+			if(Counter > 0){
+			countdown(Counter);
+			}
+		}
+	}
+	public static void countdown(int c) {
+		while(c > 0) {
+			if(c > 0) {
+				Terminal.println(c);
+				c--;
+			}
+		}
+		if (c == 0) {
+			Terminal.println(""Start!"");
+		}
+	}
+	public static int getCounter() {
+		return Terminal.askInt(""Countdown:\n"");
+	}
+}"
+Lemanczyk,"Maksymilian Karol",m.lemanczyk@campus.tu-berlin.de,Beendet,"1. Juni 2022  10:52","3. Juni 2022  14:17","2 Tage 3 Stunden","13,50",4,Einmal,"4 Mal","gar nicht","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","0 2 4 6 8","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch (eingabe) {
+		case ('t'):
+			System.out.println(""Wir moegen dich auch."");
+			break;
+		case('s'):
+			System.out.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+			break;
+		case ('l'):
+			System.out.println(""Giovanni, lernst du Programmieren?"");
+			break;
+		default:
+			System.out.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+}","public class ReLoop {
+    public static void main(String[] args) {
+    	int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+    	for (int i = 0 ; i<=height ; i++ ) {
+    		for (int j = 0; j < height-i ; j++) {
+    			System.out.print("" "");
+    		}
+    		for (int j = 0 ; j<i*2 ; j++) {
+    			System.out.print(""*"");
+    		}
+    		System.out.print(""\n"");
+    	}
+    }   
+}","public class LeapYear {
+	public static void main (String [] args) {
+		int j = Terminal.askInt (""Bitte Jahreszahl eingeben. "");
+		if ( (j%400)==0||(j%4)==0&&(j%100)!=0 ) {
+			System.out.println(""Das Jahr ""+j+"" ist ein Schaltjahr."");
+		}else {
+			System.out.println(""Das Jahr ""+j+"" ist kein Schaltjahr."");
+		}
+	}
+}","public class Loops {
+    public static void main(String[] args) {
+    	for (int w = getCount(); w>0;  w = getCount() ) {
+    	countdown(w);
+    	}
+    }
+    public static void countdown(int c) {
+    	while (c>0) {
+    	System.out.println(c);
+    	c--;
+    	}
+    System.out.println(""Start!"");
+    }
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }  
+}"
+Yilmaz,Cem,cem.yilmaz.1@campus.tu-berlin.de,Beendet,"1. Juni 2022  11:30","5. Juni 2022  23:59","4 Tage 12 Stunden","11,00",4,"4 Mal",8,"Anweisung 2","0 1 2 3 4 5 6 7 8 9","Anweisung4 kann nie ausgeführt werden.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""-""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe){
+			case 't': Terminal.println(""Wir moegen dich auch.""); break;
+			case 's': Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht.""); break;
+			case 'l': Terminal.println(""Giovanni, lernst du Programmieren?""); break;
+			default: Terminal.println(""Das stand gar nicht zur Auswahl."");
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+		
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+		
+		
+		for( int i=1; i <= height; i++){
+			
+			
+			
+			
+			for(int j=0 ;j < height-i; j++ ){
+				
+				
+				Terminal.print("" "");
+				
+				
+			}
+			
+				for( int j=1; j<= i*2; j++){
+					
+					
+					Terminal.print(""*"");
+						
+				}
+			
+			Terminal.print(""\n"");
+			
+			
+		}
+		
+		
+		
+        
+    }
+}","public class LeapYear {
+	
+	
+	public static void main(String[] args){
+		
+		
+		int Jahr=Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		
+		if(Jahr%4==0){
+			
+			Terminal.print(""Das Jahr ""+Jahr+"" ist ein Schaltjahr."");
+			
+		}
+		else if(Jahr%400==0){
+			
+			Terminal.print(""Das Jahr ""+Jahr+"" ist ein Schaltjahr."");
+			
+		}
+		else if(Jahr%100 ==0){
+			
+			
+			Terminal.print(""Das Jahr ""+Jahr+"" ist kein Schaltjahr."");
+			
+		}
+		else{
+			
+			Terminal.print(""Das Jahr ""+Jahr+"" ist kein Schaltjahr."");
+			
+		}
+		
+		
+		
+		
+		
+	}
+	
+      
+}","public class Loops {
+    
+    public static void main(String[] args) {
+    }
+    
+    public static void countdown(int c) {
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Bachmann,Alois,alois.bachmann@campus.tu-berlin.de,Beendet,"1. Juni 2022  12:21","3. Juni 2022  13:24","2 Tage 1 Stunde","14,50","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }",8,15,"Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Gar nicht","4 Mal","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""13"","""","""",""""],[""16"",""-"",""-"",""""],["""","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+        switch(eingabe) {
+            case 't':
+                Terminal.println(""Wir moegen dich auch."");
+                break;
+            case 's':
+                Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+                break;
+            case 'l':
+                Terminal.println(""Giovanni, lernst du Programmieren?"");
+                break;
+            default:
+                Terminal.println(""Das stand gar nicht zur Auswahl."");
+        }
+
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        int i = 1;
+        for(;i <= height;) {
+            int j = 0;
+            for(;j < height-i;) {
+                Terminal.print("" "");
+                j++;
+            }
+            j = 0;
+            for(;j < i*2;) {
+                Terminal.print(""*"");
+                j++;
+            }
+            Terminal.print(""\n"");
+            i++;
+        }
+    }
+}","public class LeapYear {
+    public static void main(String[] args) {
+        int JahresZahl = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+        if(JahresZahl % 400 == 0 || JahresZahl % 4 == 0 && JahresZahl % 100 != 0)
+            Terminal.println(""Das Jahr "" + JahresZahl + "" ist ein Schaltjahr."");
+        else
+            Terminal.println(""Das Jahr "" + JahresZahl + "" ist kein Schaltjahr."");
+    }
+}","public class Loops {
+    
+    public static void main(String[] args) {
+        int cd = 1;
+        boolean r = true;
+        for(;cd > 0 ;) {
+            if (r == false)
+                break;
+            else
+                cd = getCount();
+            if (cd <= 0)
+                r = false;
+            if (r == false)
+                break;
+            else
+                countdown(cd);
+        }
+
+    }
+    
+    public static void countdown(int c) {
+        int i = 0;
+        while(i < c) {
+            Terminal.println(c - i);
+            i++;
+        }
+        Terminal.println(""Start!"");
+        
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Paluch,"Maurice Jonathan Justin",m.paluch@campus.tu-berlin.de,Beendet,"1. Juni 2022  14:08","3. Juni 2022  17:13","2 Tage 3 Stunden","14,25","4 Mal","gar nicht","Sie zählt unendlich.",15,"Anweisung 2","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""",""-"",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+			System.out.print(""Bitte auswaehlen...\n"" +
+				             ""\tPPR ist [t]oll\n"" +
+				             ""\tPPR [s]tinkt mir\n"" +
+				             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe) {
+		 case 't':
+			 Terminal.println(""Wir moegen dich auch."");
+			 break;
+		 case 's':
+			 Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+			 break;
+		 case 'l':
+			 Terminal.println(""Giovanni, lernst du Programmieren?"");
+			 break;
+		 default:
+			 Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+}","public class ReLoop {
+	 public static void main(String[] args) {
+	        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+	        for(int i=0; i<=height; i++) {
+	        	for(int j=0; j < height-i; j++) {
+	        	Terminal.print("" "");
+	        	}
+	        	for(int j=0; j<i*2; j++) { 
+	        		Terminal.print(""*"");
+	        	}
+	        	 Terminal.print(""\n"");
+            
+	        }
+	 }
+}","public class LeapYear {
+	public static void main(String[] args) {
+		int year = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		if(year % 4 !=0) {
+			System.out.println(""Das Jahr ""+year+"" ist kein Schaltjahr."");
+		}else{
+			if(year % 100 ==0 && year % 400 != 0) {
+				System.out.println(""Das Jahr ""+year+"" ist kein Schaltjahr."");
+			}else{
+				System.out.println(""Das Jahr ""+year+"" ist ein Schaltjahr."");
+			}
+		}
+	}
+}","public class Loops {
+	    public static void main(String[] args) {
+	    	for(int c = getCount(); c>0; c = getCount()) {
+	    		countdown(c);
+	    			
+	    	}
+	    }
+	    
+	    public static void countdown(int c) {
+	    	while(c>0) {
+	    		System.out.println((c--));
+	     	}
+	    	System.out.println(""Start!"");
+	    }
+	    
+	    public static int getCount() {
+	        return Terminal.askInt(""Countdown:\n"");
+	    }
+	    
+}"
+Dorn,"Anton Fridolin",a.dorn@campus.tu-berlin.de,Beendet,"1. Juni 2022  17:52","4. Juni 2022  19:57","3 Tage 2 Stunden","13,00","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Sie zählt unendlich.","0 1 2 3 4 5 6 7 8 9","gar nicht","Mit einer for-Schleife kann man jede Funktionalität erreichen, die man auch mit einer While-Schleife erreichen könnte.","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","[[""2"",""-"",""-"",""-""],[""3"","""","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""-""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		
+		switch(eingabe){
+		case 't':
+            Terminal.println(""Wir moegen dich auch."");
+            break;
+        
+        case 's':
+            Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+            break;
+        
+        case 'l':
+            Terminal.println(""Giovanni, lernst du Programmieren?"");
+            break;
+        
+        default:
+            Terminal.println(""Das stand gar nicht zur Auswahl."");
+            break; 
+		}
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        
+        for(int i = 1; i <= height; i++) {
+            
+            int j = 0;
+            for(; j < height-i; j++){
+                Terminal.print("" "");
+                
+            }
+            
+            for(j = 0; j < i*2; j++) {
+                Terminal.print(""*"");
+                
+            }
+            Terminal.print(""\n"");
+            
+        }
+    }
+}","public class LeapYear {
+        public static void main(String[] args){
+    	int jahr = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+    	boolean leap = schaltjahr(jahr);
+    	
+        if (leap) 
+            Terminal.println(""Das Jahr "" + jahr + "" ist ein Schaltjahr."");
+        else 
+            System.out.println(""Das Jahr "" + jahr + "" ist kein Schaltjahr."");
+        
+    }
+
+    public static boolean schaltjahr(int sjahr){
+		return (sjahr % 4 == 0) && (sjahr % 400 == 0 || sjahr % 100 != 0);
+	}
+}","public class Loops {
+    public static void main(String[] args) {
+        
+        for (int i = getCount();i > 0;){
+            countdown(i);
+            break;
+        }
+    }
+    public static void countdown(int c) {
+        
+        while(c >= 0){
+            Terminal.println(c);            
+            c--;
+            if(c == 0){
+                Terminal.println(""Start!"");
+                break;
+            }            
+        }
+    }    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+}"
+"Gomez Rueda",Nicolas,gomez.rueda@campus.tu-berlin.de,Beendet,"1. Juni 2022  19:39","5. Juni 2022  23:59","4 Tage 4 Stunden","11,64","4 Mal","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","gar nicht","0 2 4 6 8","Gar nicht",6,"[[""1"",""-"",""-"",""-""],[""2"","""","""",""""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""15"","""","""",""""],[""16"","""","""",""""],[""17"","""","""",""""]]","public class Menu {
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		loop();
+	}
+		public static void loop() {
+			char eingabe = Terminal.readChar();
+				while (eingabe != 't'){
+					while(eingabe != 's'){
+						while(eingabe != 'l'){
+							Terminal.println(""Das stand gar nicht zur Auswahl."");
+							System.exit(0);
+						}
+						Terminal.println(""Giovanni, lernst du Programmieren?"");
+						System.exit(0);
+					}
+					Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+					System.exit(0);
+				}
+				Terminal.println(""Wir moegen dich auch."");
+				System.exit(0);
+		}
+
+}","public class ReLoop {
+  public static void main(String[] args) {
+    int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+    for(int i = 1; i <= height;) {
+      for(int j=0; j < height-i; j++) {
+        Terminal.print("" "");
+      }
+      for(int j = 0; j < i*2; j++) {
+        Terminal.print(""*"");
+      }
+      Terminal.print(""\n"");
+      i++;
+    }
+  }
+}","public class LeapYear{
+  public static void main (String[] args){
+    int y = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+    if(y % 4 == 0){
+      Terminal.print(""Das Jahr "" + y + "" ist ein Schaltjahr."");
+    }else{
+    Terminal.print(""Das Jahr "" + y + "" ist kein Schaltjahr."");
+    }
+  }
+}","public class Loops {
+
+    public static void main(String[] args) {
+      countdown(getCount());
+      main(null);
+    }
+
+    public static void countdown(int c) {
+      if (c>0){
+        while (c>0){
+          Terminal.print(c + ""\n"");
+          c-=1;
+          if (c==0){
+            Terminal.print(""Start!\n"");
+          }
+        }
+      }else{
+      System.exit(0);
+      }
+    }
+
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+
+}"
+"Saa Hinojosa","Paola Carolina",p.saahinojosa@campus.tu-berlin.de,Beendet,"1. Juni 2022  22:49","5. Juni 2022  23:59","4 Tage 1 Stunde","13,40",Einmal,4,"0 1 2 3 4 5 6 7 8 9","gar nicht","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }",8,"[[""2"",""-"",""-"",""-""],[""3"",""undef "","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""6"","""","""",""3""],[""6"","""","""",""4""],[""6"","""","""",""5""],[""7"","""","""",""""],[""8"","""","""",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+	switch(eingabe) {
+			case 't':
+			Terminal.println(""Wir moegen dich auch."");
+			break;
+			
+			case 's':
+			Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+			break;
+			
+			case 'l':
+			Terminal.println(""Giovanni, lernst du Programmieren?"");
+			break;
+			
+		    default:
+			Terminal.println(""Das stand gar nicht zur Auswahl."");
+			}
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        for (int i=1; i<=height; i++){
+            for(int j=0; j<height-i; j++){
+                Terminal.print("" "");
+            }
+            for(int j=0; j<i*2; j++){
+                Terminal.print(""*"");
+            }
+        Terminal.print(""\n"");
+	}
+        
+        
+    }
+}","public class LeapYear {
+    public static void main(String[] args){
+        int jahr = Terminal.askInt(""Bitte Jahreszahl eingeben."");
+        
+        if(jahr % 4 != 0){
+            Terminal.print("" Das Jahr ""+jahr+"" ist kein Schaltjahr."");
+            
+        }else{
+            if(jahr % 100 ==0 && jahr % 400 !=0){
+                Terminal.print("" Das Jahr ""+jahr+"" ist kein Schaltjahr."");
+            }else{
+                Terminal.print("" Das Jahr ""+jahr+"" ist ein Schaltjahr."");
+            }
+        }
+    }
+      
+}","public class Loops {
+    
+    public static void main(String[] args) {
+		for (int c = getCount(); c>0; c=getCount()){
+			countdown(c);
+		}
+    }
+    
+    public static void countdown(int c) {
+		int i = c;
+		while (i > 0){
+		Terminal.print(i+""\n"");
+		i--;
+		}
+		Terminal.print(""Start!\n"");
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Shehata,Shady,shady.shehata@campus.tu-berlin.de,Beendet,"2. Juni 2022  02:00","5. Juni 2022  23:59","3 Tage 21 Stunden","9,15","Gar nicht","Anweisung 2","Sie zählt bis 3 in Zweier-Schritten.","gar nicht","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.",15,"[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""11"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		if(eingabe == 't') {
+			Terminal.println(""Wir moegen dich auch."");
+		}
+		else if(eingabe == 's') {
+		    Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+		}
+		else if(eingabe == 'l') {
+			Terminal.println(""Giovanni, lernst du Programmieren?"");
+		}
+		else {
+			Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        for (int i = 1; i <= height; i++) {
+            for (int j = 0; j < height-i; j++) {
+                Terminal.print("" "");
+            }
+            for (int j = 0; j < i*2; j++) {
+                Terminal.print(""*"");
+            }
+            Terminal.print(""\n"");
+            
+        }
+    }
+}","public class LeapYear {
+	public static void main(String[] args){
+		int jahr=Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		if ( jahr % 400 == 0) {
+			Terminal.println(""Das Jahr ""+jahr+"" ist ein Schaltjahr."");	
+		}
+		else if (( jahr % 4 == 0) && (!( jahr % 100==0))) {
+			Terminal.println(""Das Jahr ""+jahr+"" ist ein Schaltjahr."");
+		}
+		else {
+			Terminal.println(""Das Jahr ""+jahr+"" ist kein Schaltjahr."");
+		}
+	}
+}","public class Loops {
+    
+    public static void main(String[] args) {
+    }
+    
+    public static void countdown(int c) {
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Will,Kai,k.will@campus.tu-berlin.de,Beendet,"2. Juni 2022  12:49","5. Juni 2022  22:13","3 Tage 9 Stunden","11,00",6,Einmal,"gar nicht","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","0 2 4 6 8",15,"[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""3""],[""8"","""","""",""""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe){
+			case 't':
+			Terminal.println(""Wir moegen dich auch."");
+			break;
+			case 's':
+			Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+			break;
+			case 'l':
+			Terminal.println(""Giovanni, lernst du Programmieren?"");
+			break;
+			default:
+			Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        for(int i=1; i<= height; i++) {
+          for(int j=0; j<height-i; j++) {
+            Terminal.print("" "");
+          }
+          for(int j=0; j<i*2; j++) {
+            Terminal.print(""*"");
+          }
+          Terminal.print(""\n"");
+        }
+
+    }
+}","public class LeapYear {
+  public static void main(String[] args){
+
+    Terminal.print(""Bitte Jahreszahl eingeben. "");
+    int jahr = Terminal.readInt();
+    if (jahr %4 !=0) {
+      System.out.print(""\r""+""Das Jahr ""+jahr+"" ist kein Schaltjahr."");
+    } else {
+      if (jahr%100 == 0&& jahr %400!=0) {
+        System.out.print(""\r""+""Das Jahr ""+jahr+"" ist kein Schaltjahr."");
+      } else {
+        System.out.print(""\r""+""Das Jahr ""+jahr+"" ist ein Schaltjahr."");
+      }
+    }
+  }
+}","public class Loops {
+
+    public static void main(String[] args) {
+      int c=getCount();
+      int i=0;
+      for (int j=c; j>0;j=i){
+        countdown(j);
+        i= getCount();
+        if (i<=0){
+          break;
+        }
+      }
+      }
+
+    public static void countdown(int c) {
+      int i=c;
+      while (i>0) {
+      Terminal.print(i+""\n"");
+      i--;
+      }
+      Terminal.print(""Start!\n"");
+    }
+
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+
+}"
+Hake,"Anna Franziska",a.hake@campus.tu-berlin.de,Beendet,"2. Juni 2022  16:24","5. Juni 2022  23:59","3 Tage 7 Stunden","8,25","Sie zählt bis 3.","Gar nicht","0 1 2 3 4 5 6 7 8 9",8,15,"Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""XX"","""",""""],[""6"","""","""",""XX""],[""7"","""","""",""""],[""nicht 8"","""","""",""XX""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""XX"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""nicht 13"","""","""",""""],[""11??"","""","""",""""],[""16??"",""XX"",""XXX"",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch (eingabe){
+		case 't': 
+			Terminal.println(""Wir moegen dich auch."");
+			break;
+		case 's':
+		    Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+			break;
+		case 'l':
+			Terminal.println(""Giovanni, lernst du Programmieren?"");
+			break;
+		default:
+			Terminal.println(""Das stand gar nicht zur Auswahl."");	
+		}
+	}
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        for (int i = 1; i <= height; i++)
+         {
+            for (int j = 0; j < height-i; j++){
+                Terminal.print("" "");   
+            }
+            for (int j = 0; j < i*2; j++) {
+                Terminal.print(""*"");
+            }
+            Terminal.print(""\n"");
+            
+        }
+    }
+}","public class LeapYear {
+      
+}","public class Loops {
+    
+    public static void main(String[] args) {
+    }
+    
+    public static void countdown(int c) {
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Göhre,Josephine,josephine.gohre@campus.tu-berlin.de,Beendet,"2. Juni 2022  18:40","3. Juni 2022  19:36","1 Tag","4,75","fünf Ausgaben",5,"0 1 2 3 4 5 6 7 8 9","Anweisung 2",15,"Unendlich oft","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""Welche Zahl auf Primzahl testen?"",""undef"",""""],[""3(5)"",""9"","""",""""],[""4(5)"","""","""",""""],[""5(5)"","""","""",""""],[""6"","""","""",""=2;<=Zahl/2;i++""],[""7"","""",""true"",""zahl % i==0""],[""8"","""",""false"",""1""],[""9"","""","""",""""],[""12"","""","""",""""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch
+                {case (eingabe == 't') {
+			Terminal.println(""Wir moegen dich auch."");
+                        break;
+		}
+		case(eingabe == 's') {
+		    Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+                    break;
+		}
+		case(eingabe == 'l') {
+			Terminal.println(""Giovanni, lernst du Programmieren?"");
+                        break;
+		}
+		case{
+			Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        int i = 1;
+        for(i <= height) {
+            int j = 0;
+            for(j < height-i) {
+                Terminal.print("" "");
+                j++;
+            }
+            j = 0;
+            for(j < i*2) {
+                Terminal.print(""*"");
+                j++;
+            }
+            Terminal.print(""\n"");
+            i++;
+        }
+    }
+}","public class LeapYear {
+        public static void main(String[] args) {
+            int Schaltjahr=0;
+            Terminal.askInt(""Bitte Jahreszahl eingeben:"" +Schaltjahr);
+            
+            if (Schaltjahr%400==0);{
+                System.out.println(""Das Jahr"" +Schaltjahr+ ""ist ein Schaltjahr."");
+            }
+            else if (Schaltjahr%4==0);{
+                System.out.println(""Das Jahr"" +Schaltjahr+ ""ist ein Schaltjahr."");
+            }
+            else{
+                System.out.println(""Das Jahr"" + Schaltjahr+ ""ist kein Schaltjahr."");
+            }
+        }
+}","public class Loops {
+    
+    public static void main(String[] args) {
+        for(counter=0; counter>=0; counter++){
+            int = counter Terminal.askInt(""Countdown!:"" +counter);
+            for(counter-1; counter=0 ));
+            return 
+            counter=0;
+            System.out.printLn(""Start!"")
+        return counter;
+        }
+    }
+    
+    public static void countdown(int c) {
+        while (c <=0){
+            Terminal.askInt(""Eingabe:"" +c);
+            c-1;
+            c=0;
+            System.out.println(""Start!"")
+        }
+        
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Lausch,Johannes,j.lausch@campus.tu-berlin.de,Beendet,"2. Juni 2022  22:01","5. Juni 2022  23:35","3 Tage 1 Stunde","13,00","Anweisung 2",6,5,"for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }",15,"Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","[[""1"",""-"",""-"",""-""],[""2"",""-"",""-"",""-""],[""3"",""undef"",""-"",""-""],[""4"","""",""false"",""-""],[""5"",""9"","""",""-""],[""6"","""","""",""2""],[""7"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14(12)"","""","""",""""],[""15"","""","""",""""],["""","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();	
+		switch(eingabe) {
+			case 't':
+				Terminal.println(""Wir moegen dich auch."");
+				break;
+			case 's':
+				Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+				break;
+			case 'l':
+				Terminal.println(""Giovanni, lernst du Programmieren?"");
+				break;
+			default:
+				Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+		
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+		for(int i=1;i <= height;i++) {
+			for(int j=0;j < height-i;j++){
+				Terminal.print("" "");
+				
+			}
+			for(int j=0;j < i*2;j++) {
+				Terminal.print(""*"");
+				
+			}
+			Terminal.print(""\n"");
+		}
+    }
+}","public class LeapYear {
+	public static void main (String[] args) {
+		int eingabe = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		if(eingabe % 400==0){
+			Terminal.print(""Das Jahr ""+eingabe+"" ist ein Schaltjahr."");
+		} else if(eingabe % 4==0 && eingabe % 100>0){
+				Terminal.print(""Das Jahr ""+eingabe+"" ist ein Schaltjahr."");
+		} else {
+			Terminal.print(""Das Jahr ""+eingabe+"" ist kein Schaltjahr."");
+		}	
+	}
+}","public class Loops {
+    
+    public static void main(String[] args) {
+		
+		int eingabe = getCount();
+		for(int i=0; eingabe > 0; i++) {			
+			countdown(eingabe);
+			eingabe = getCount();
+		} 
+    }
+    
+    public static void countdown(int c) {
+		while(c > 0){
+			Terminal.println(c);
+			c--;			
+		}
+		Terminal.println(""Start!"");
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Puder,"Carolin-Antonia Heike",puder@campus.tu-berlin.de,Beendet,"4. Juni 2022  12:23","5. Juni 2022  20:55","1 Tag 8 Stunden","10,75","for(int i=0;i<10;i=i+2){
+
+   System.out.println(i);
+
+   i--;
+
+ }","Sie zählt bis 3.",5,"Unendlich oft","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Anweisung 2","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""","""",""""],[""9"","""",""true"",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""-""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe) {
+			case 't':
+				Terminal.println(""Wir moegen dich auch."");
+				break;
+			case 's':
+				Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+				break;
+			case 'l':
+				Terminal.println(""Giovanni, lernst du Programmieren?"");
+				break;
+			default:
+				Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        for(int i = 1; i <= height; i++) {
+        	Terminal.print(""\n"");
+        	for(int j = 0; j < height-i; j++) {
+         		Terminal.print("" "");
+         		}
+       		 for(int j = 0; j < i*2; j++) {
+        		Terminal.print(""*"");
+        		}
+       	}
+    }
+}","public class LeapYear {
+
+	public static void main(String[] args) {
+		int jahr = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		if(jahr % 400 == 0 || jahr % 4 == 0 && jahr % 100 != 0) {
+			Terminal.println(""Das Jahr ""+jahr+"" ist ein Schaltjahr."");
+		}else {
+			Terminal.println(""Das Jahr ""+jahr+"" ist kein Schaltjahr."");;
+			}
+	}
+}","public class Loops {
+    
+    public static void main(String[] args) {
+    	for(int c = getCount(); c > 0 ; getCount()){
+    		if(c > 0) {
+    			countdown(c);
+    		}
+    		if(c <= 0) {
+    		break;
+    		}
+    		}
+    	}
+    
+    public static void countdown(int c) {
+    	while(c > 0) {
+    		c--;	
+    		Terminal.println(c);
+   	}
+   	if(c == 0) {
+    		Terminal.println(""Start!"");
+    		 }
+    	countdown(getCount());
+    } 
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+        }
+ 
+}"
+Böning,"Felix Gabriel",f.boening@campus.tu-berlin.de,Beendet,"4. Juni 2022  16:54","5. Juni 2022  23:59","1 Tag 7 Stunden","8,08","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","0 1 2 3 4 5 6 7 8 9","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Sie zählt unendlich.","4 Mal","for(int i = 9;i>=0;){
+
+   System.out.println(9-i);
+
+   i=i-1;
+
+ }","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch (eingabe){
+		case 't':
+		Terminal.println(""Wir moegen dich auch."");
+		break;
+		case 's':
+		Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+		break;
+		case 'l':
+		Terminal.println(""Giovanni, lernst du Programmieren?"");
+		break;
+		default:
+		Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        for (int i = 1; i <= height; i++ ) {
+            for ( int j = 0; j < height- i; j++){
+                Terminal.println("" "");
+            }
+            for (int j =0; j < i*2; j++) {
+                Terminal.println(""*"");
+            }
+            Terminal.println(""\n"")
+        }
+    }
+}","public class LeapYear {
+      public static void main (String [] args) {
+		  int year = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		  boolean leapyear = isleapyear (year);
+		   if (leapyear = true)	
+			  Terminal.println(""Das Jahr ""+year+"" ist ein Schaltjahr."");
+		  if (leapyear = false)
+			Terminal.println (""Das Jahr ""+year+"" ist kein Schaltjahr."");  
+		  }
+		  public static boolean isleapyear (int year) 
+		  {
+			  if (year % 4 !=0){
+				  return false;
+			  }
+			  if (year % 100 ==0 && year % 400 != 0){
+				  return false;
+			  }
+			  else {
+				  return true;
+			  }
+}
+}","public class Loops {
+    
+    public static void main(String[] args) {
+    }
+    
+    public static void countdown(int c) {
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Hänsel,"Tilo Kurt",t.haensel@campus.tu-berlin.de,Beendet,"4. Juni 2022  17:26","4. Juni 2022  19:15","1 Stunde 48 Minuten","14,25","Gar nicht","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)",8,"for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","0 1 2 3 4 5 6 7 8 9","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"","""","""",""""]]","public class Menu {
+	
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe) {
+		case 't': {
+			Terminal.println(""Wir moegen dich auch."");
+			break;
+		}
+		case 's': {
+		    Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+			break;
+		}
+		case 'l': {
+			Terminal.println(""Giovanni, lernst du Programmieren?"");
+			break;
+		}
+		default: {
+			Terminal.println(""Das stand gar nicht zur Auswahl."");
+			break;
+		}
+	}
+
+}
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+       for (int i=1; i<=height; i++) {
+	for (int j=0; j<height-i; j++) {
+		Terminal.print("" "");
+	}
+	for (int j=0; j<i*2; j++) {
+		Terminal.print(""*"");
+	}
+	Terminal.print(""\n"");
+}
+    }
+}","public class LeapYear {
+     public static void main(String[] args) {
+        int jahr = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		
+		if (jahr % 400 == 0) {
+			Terminal.println(""Das Jahr ""+jahr+"" ist ein Schaltjahr."");
+		}
+		else if(jahr % 100 == 0) {
+			Terminal.println(""Das Jahr ""+jahr+"" ist kein Schaltjahr."");
+		}
+		else if(jahr % 4 == 0) {
+			Terminal.println(""Das Jahr ""+jahr+"" ist ein Schaltjahr."");
+		}
+		else {
+			Terminal.println(""Das Jahr ""+jahr+"" ist kein Schaltjahr."");
+		}
+	}     
+}","public class Loops {
+    
+    public static void main(String[] args) {
+		for (int i=getCount(); i>0; i=getCount()) {
+			countdown(i);
+		}
+    }
+    
+    public static void countdown(int c) {
+        while (c>0) {
+			Terminal.println(c);
+			c--;
+		}
+		Terminal.println(""Start!"");
+		
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Dobbelaere,"Sebastien Frederic",s.dobbelaere@campus.tu-berlin.de,Beendet,"5. Juni 2022  01:10","5. Juni 2022  23:59","22 Stunden 48 Minuten","5,50","Gar nicht","gar nicht","Sie zählt bis 3.","0 2 4 6 8","for(int i=0;i<10;i=i+2){
+
+   System.out.println(i);
+
+   i--;
+
+ }","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""undef"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe) {
+			case 't':
+			System.out.println(""Wir moegen dich auch."");
+		 break;
+		case 's':
+		 System.out.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+		 break;
+		case 'l':
+		 System.out.println(""Giovanni, lernst du Programmieren?"");
+		 break;
+		default:
+		 System.out.println(""Das stand gar nicht zur Auswahl."");
+		
+	}
+	}
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        int i = 1;
+        while(i <= height) {
+            int j = 0;
+            while(j < height-i) {
+                Terminal.print("" "");
+                j++;
+            }
+            j = 0;
+            while(j < i*2) {
+                Terminal.print(""*"");
+                j++;
+            }
+            Terminal.print(""\n"");
+            i++;
+        }
+    }
+}","public class LeapYear {
+      
+}","public class Loops {
+    
+    public static void main(String[] args) {
+    }
+    
+    public static void countdown(int c) {
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Yang,Fan,fan.yang.2@campus.tu-berlin.de,Beendet,"5. Juni 2022  11:36","5. Juni 2022  23:43","12 Stunden 6 Minuten","14,00","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","Sie zählt unendlich.","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","4 Mal",Einmal,"gar nicht","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+
+  public static void main(String[] args) {
+    System.out.print(
+      ""Bitte auswaehlen...\n"" +
+      ""\tPPR ist [t]oll\n"" +
+      ""\tPPR [s]tinkt mir\n"" +
+      ""\tPPR, Flasche [l]eer.\n\n""
+    );
+    char eingabe = Terminal.readChar();
+    switch (eingabe) {
+      case 't':
+        Terminal.println(""Wir moegen dich auch."");
+        break;
+      case 's':
+        Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+        break;
+      case 'l':
+        Terminal.println(""Giovanni, lernst du Programmieren?"");
+        break;
+      default:
+        Terminal.println(""Das stand gar nicht zur Auswahl."");
+    }
+  }
+}","public class ReLoop {
+
+  public static void main(String[] args) {
+    int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+    for(int i = 1; i <= height; i++){
+        for(int j = 0; j < height - i; j++){
+            Terminal.print("" "");
+        }
+        for(int j = 0; j < i * 2; j++){
+            Terminal.print(""*"");
+        }
+        Terminal.print(""\n"");
+    }
+  }
+}","public class LeapYear {
+
+  public static void main(String[] args) {
+    int jahr = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+    if (jahr % 400 == 0) {
+      System.out.println(""Das Jahr "" + jahr + "" ist ein Schaltjahr."");
+    } else {
+      if (jahr % 4 == 0 && jahr % 100 != 0) {
+        System.out.println(""Das Jahr "" + jahr + "" ist ein Schaltjahr."");
+      } else {
+        System.out.println(""Das Jahr "" + jahr + "" ist kein Schaltjahr."");
+      }
+    }
+  }
+}","public class Loops {
+
+  public static void main(String[] args) {
+    for(int c = getCount(); c >= 1; c = getCount()){
+        countdown(c);
+    }
+  }
+
+  public static void countdown(int c) {
+    while (c >= 1) {
+      System.out.println(c);
+      c--;
+    }
+    System.out.println(""Start!"");
+  }
+
+  public static int getCount() {
+    return Terminal.askInt(""Countdown:\n"");
+  }
+}"
+Lewandowski,"Constantin Dietmar",c.lewandowski@campus.tu-berlin.de,Beendet,"5. Juni 2022  11:55","5. Juni 2022  13:44","1 Stunde 49 Minuten","15,00",15,"Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","0 1 2 3 4 5 6 7 8 9","4 Mal",4,"for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""11"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe) {
+		    case 't':
+		        Terminal.println(""Wir moegen dich auch."");
+		        break;
+		    case 's':
+		        Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+		        break;
+		    case 'l':
+		        Terminal.println(""Giovanni, lernst du Programmieren?"");
+		        break;
+		    default:
+		        Terminal.println(""Das stand gar nicht zur Auswahl."");
+	    }
+	}
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        for(int i = 1; i <= height; i++) {
+            for(int j = 0; j < height-i; j++) {
+                Terminal.print("" "");
+            }
+            for(int j = 0; j < i*2; j++) {
+                Terminal.print(""*"");
+            }
+            Terminal.print(""\n"");
+        }
+    }
+}","public class LeapYear {
+    public static void main(String[] args) {
+        int e = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+        if (e % 400 == 0) {
+            Terminal.print(""Das Jahr "" + e + "" ist ein Schaltjahr."");
+        } 
+        else if (e % 4 == 0 && e % 100 != 0) {
+            Terminal.print(""Das Jahr "" + e + "" ist ein Schaltjahr."");
+        }
+        else {
+            Terminal.print(""Das Jahr "" + e + "" ist kein Schaltjahr."");
+        }
+    }
+}","public class Loops {
+    
+    public static void main(String[] args) {
+        for (; ;) {
+            int c = getCount();
+            if (c > 0)
+                countdown(c);
+            else    
+                break;
+        }
+    }
+    
+    public static void countdown(int c) {
+        while (c > 0) {
+            Terminal.println(c);
+            c--;
+        }
+        Terminal.println(""Start!"");
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Qin,Yushu,qin.1@campus.tu-berlin.de,Beendet,"5. Juni 2022  14:43","5. Juni 2022  18:41","3 Stunden 57 Minuten","13,25","Sie zählt bis 3.",4,"Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","4 Mal",15,"[[""1"",""-"",""-"",""-""],[""2"","""","""",""""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"",""-"",""-"",""""],[""16"","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		switch(eingabe){
+			case 't':
+			    Terminal.println(""Wir moegen dich auch."");
+				break;
+			case 's':
+			    Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+				break;
+			case 'l':
+			    Terminal.println(""Giovanni, lernst du Programmieren?"");
+				break;
+			default:
+			    Terminal.println(""Das stand gar nicht zur Auswahl."");
+		}
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+		for(int i=1; i<=height;i++){
+			for( int j=0; j < height-i; j++){
+				Terminal.print("" "");
+			}
+			for( int j=0; j < i*2; j++){
+				Terminal.print(""*"");
+			}
+			Terminal.print(""\n"");
+		}
+      
+    }
+}","public class LeapYear {
+    public static void main(String[] args) {
+		int x = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		if (x%400==0 || (x%4==0 && x%100!=0)){
+			Terminal.println(""Das Jahr "" + x + "" ist ein Schaltjahr."");
+		}
+		else{
+			Terminal.println(""Das Jahr "" + x + "" ist kein Schaltjahr."");
+		}
+     
+      
+    }
+      
+}","public class Loops {
+    
+   public static void main(String[] args) {
+		for(int x = 1; x>0; ){
+			x = getCount();
+			if(x>0){
+				countdown(x);
+			}
+			
+		}
+		
+    }
+    
+    public static void countdown(int c) {
+		while(c>=0){
+			
+			if(c!=0){
+				Terminal.println(c);
+			}
+			else{
+				Terminal.println(""Start!"");
+			}
+			c--;
+		}
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Richter,"Serdal Kemâl",richter.3@campus.tu-berlin.de,Beendet,"5. Juni 2022  19:00","5. Juni 2022  23:50","4 Stunden 50 Minuten","13,63",15,"4 Mal","0 1 2 3 4 5 6 7 8 9","for( i=0;i<10;){
+
+   i++;
+
+   System.out.println(i);
+
+ }",4,"Unendlich oft","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""6"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14(12)"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		
+		switch (eingabe){
+			case 't':
+				Terminal.println(""Wir moegen dich auch."");
+				break;
+			case 's':
+				Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+				break;
+			case 'l':
+				Terminal.println(""Giovanni, lernst du Programmieren?"");
+				break;
+			default:
+				Terminal.println(""Das stand gar nicht zur Auswahl."");	
+		}
+
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        int i = 1;
+		for (i = 1; i <= height; i++) {
+			int j = 0;
+			for (j = 0; j < height-i; ++j) {
+				Terminal.print("" "");
+			}
+			j = 0;
+			for (j = 0; j < i*2; j++) {
+				Terminal.print(""*"");
+			}
+			Terminal.print(""\n"");
+		}
+    }
+}","public class LeapYear{
+	
+	public static void main(String [] args){
+		
+		int jahr = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+		boolean sj_ergebnis = sj(jahr);
+		
+		if (sj_ergebnis) {
+			Terminal.println(""Das Jahr "" + jahr + "" ist ein Schaltjahr."");
+		} else {
+			Terminal.println(""Das Jahr "" + jahr + "" ist kein Schaltjahr."");
+		}
+		
+	}
+	
+	public static boolean sj(int zahl) {
+		
+		int jahr = zahl;
+		
+		if (jahr % 400 == 0) {
+			return true;
+		} else if (jahr % 100 == 0) {
+			return false;
+		} else if (jahr % 4 == 0) {
+			return true;
+		} else {
+			return false;
+		}
+
+		}
+
+	}","public class Loops {
+    
+    public static void main(String[] args) {
+	
+	int k = 1;
+	
+	for (k = 1; k > 0;) {
+		k = getCount();
+		countdown(k);
+	}
+	
+	
+		
+    }
+    
+    public static void countdown(int c) {
+		
+		while (c >= 0) {
+			if (c == 0) {
+				Terminal.println(""Start!"");
+				c--;
+			} else {
+				Terminal.println(c);
+				c--;
+			}
+		}
+    }
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"
+Jakobs,"Chiara Sophie Elisa",c.jakobs@campus.tu-berlin.de,Beendet,"5. Juni 2022  19:41","5. Juni 2022  23:57","4 Stunden 15 Minuten","11,33",4,8,"Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","gar nicht","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Gar nicht","[[""1"",""-"",""-"",""-""],[""2"","""","""",""""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"","""","""",""""]]","public class Menu {
+		
+	public static void main(String [] args) {
+		System.out.print(""Bitte auswaehlen...\n"" +
+			             ""\tPPR ist [t]oll\n"" +
+			             ""\tPPR [s]tinkt mir\n"" +
+			             ""\tPPR, Flasche [l]eer.\n\n"");
+		char eingabe = Terminal.readChar();
+		 switch (eingabe) {
+            case 't':
+			    Terminal.println(""Wir moegen dich auch."");
+                break;
+		
+		    case 's':
+		        Terminal.println(""Hauptsache wir stinken geruchstechnisch nicht."");
+                break;
+		
+		    case 'l':
+			    Terminal.println(""Giovanni, lernst du Programmieren?"");
+                break;
+		
+		    default:
+			    Terminal.println(""Das stand gar nicht zur Auswahl."");
+                break;
+        }
+	}
+
+}","public class ReLoop {
+    public static void main(String[] args) {
+        int height = Terminal.askInt(""Pyramidenhoehe:\n"");
+        for(int i = 1; i <= height; i++) {
+            for(int j = 0; j < height-i; j++) {
+                Terminal.print("" "");
+            }
+            for(int j = 0; j < i*2; j++) {
+                Terminal.print(""*"");
+            }
+            Terminal.print(""\n"");
+        }
+    }
+}","public class LeapYear {
+     public static void main(String[] args) {
+        int jahr = Terminal.askInt(""Bitte Jahreszahl eingeben. "");
+        boolean x;
+        if(jahr % 4 == 0) {
+            x = false;
+        }
+        if(jahr % 100 == 0 && jahr % 400 !=0);{
+            x = false;
+        }
+        if(x == false) {
+            System.out.println(""Das Jahr "" +jahr+ "" ist ein Schaltjahr."");
+        } else {
+            System.out.println(""Das Jahr "" +jahr+ "" ist kein Schaltjahr."");
+        }
+    }
+}","public class Loops {
+    
+    public static void main(String[] args) {
+        for(int i = Terminal.askInt(""Wert:\n""); i <= 0; i--) {
+            System.out.println(i)
+            
+        }
+    }
+    
+    public static void countdown(int c) {
+        while
+    }
+    
+    public static int getCount() {
+        return Terminal.askInt(""Countdown:\n"");
+    }
+    
+}"

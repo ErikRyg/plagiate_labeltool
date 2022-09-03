@@ -8,12 +8,9 @@ import plotly.graph_objects as go
 
 import plotly.graph_objs as go
 
-# from helper import *
-# from data import Data
-
 from datetime import datetime, date
 from sklearn.manifold import MDS
-import dash_table as dt
+# import js2py for highlight code, but dont know how to use it
 
 import pandas as pd
 import base64
@@ -36,103 +33,10 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 
 # dash.register_page(__name__)
-
-code1 = """#include <stdio.h>
-
-void factorize(long product, long *factor1, long *factor2)
-{
-	int i=2;
-
-
-    if (product==0 || product==1 )
-    {
-        *factor1 = 1;
-        *factor2 = product;
-    }
-    else if (product>2)
-    {
-        for (i=2; i<=product ; i++)
-        {
-            if (product%i==0)
-            {
-                *factor2=i;
-                *factor1=product/i;
-                break;
-            }
-        }
-    }
-}
-
-int main(){
-        long product, factor1, factor2;
-	printf("Please enter an Integer: ");
-        scanf("%li",&product);
-        factorize(product, &factor1, &factor2);
-	printf("Possible Factors of %li are %li and %li.\n",product,factor1,factor2);
-	return 0;
-}"""
-code2 = """#include <stdio.h>
-
-void factorize(long produkt, long *faktor1, long *faktor2)
-{
-	if(produkt <=1){
-		*faktor1=1;
-		*faktor2=produkt;
-	}
-	else{
-		long i=2;
-		while (i<=produkt){
-			long temp=produkt % i;
-			if(temp==0){
-				*faktor1=produkt/i;
-				*faktor2=i;
-				break;
-			}
-			i++;
-
-		}
-
-	}
-}
-
-int main(){
-	long produkt;
-	long faktor1;
-	long faktor2;
-	printf("Please enter an Integer: ");
-	scanf("%ld",&produkt);
-	factorize(produkt, &faktor1, &faktor2);
-	printf("Possible Factors of %ld are %ld and %ld.\n", produkt, faktor1, faktor2);
-	return 0;
-}"""
-vorgabe = """<pre><code>#include <stdio.h>
-
-void factorize (long resultat, long *nummer1, long *nummer2)
-{
-	// Your factorization
-	if (resultat == 0 || resultat == 1) {
-		*nummer1 = 1;
-		*nummer2 = resultat;
-	} else {
-		int i = 0;
-		while (resultat % (resultat/2 - i) != 0) {
-			i++;
-		}
-		*nummer1 = resultat/2 - i;
-		*nummer2 = resultat/(*nummer1);
-	}
-}
-
-int main(){
-	printf("Please enter an Integer: ");
-	long resultat, nummer1, nummer2;
-	scanf("%ld",&resultat);
-	factorize(resultat, &nummer1, &nummer2);
-	printf("Possible Factors of %ld are %ld and %ld.\n",resultat, nummer1 , nummer2);
-	return 0;
-}</code></pre>"""
-labled_pairs = 1
-all_pairs = 2
+last_task = 0
+last_id = -1
+labled_pairs = 0
+all_pairs = csv_stuff.df_labled_len
 data = ["Text1", "Text2", "Text3", "Text4", "Text5"]
 current1 = 0
 current2 = 1
@@ -171,29 +75,28 @@ app.layout = html.Div([
             [
                 dbc.Col(html.Div([
                         dbc.Row([
-                            dbc.Col(html.H5('Code 1'), md=4,
+                            dbc.Col(html.H5('Code 1', id='caption1'), md=4,
                                     className="title_container"),
-                            dbc.Col(html.H5('Code 2'), md=4,
+                            dbc.Col(html.H5('Code 2', id='caption2'), md=4,
                                     className="title_container"),
                             dbc.Col(html.H5('Vorgabe'), md=3,
                                     className="title_container"),
                             dbc.Col(html.H5(
-                                f'{labled_pairs}/{all_pairs} Paaren'), md=0, className="title_container"),
+                                f'{labled_pairs}/{all_pairs} Paaren', id='number_labled'), md=0, className="title_container"),
                         ]),
+                        #TODO use prettify
                         dcc.Textarea(
                             id='textarea1',
-                            value=code1,
+                            wrap='<pre>',
                             style={'width': '33%', 'height': 700},
                         ),
                         dcc.Textarea(
                             id='textarea2',
-                            value=code2,
                             style={'width': '33%', 'height': 700},
                             className="code",
                         ),
                         dcc.Textarea(
                             id='textarea3',
-                            value=vorgabe,
                             style={'width': '33%', 'height': 700},
                         ),
                         dbc.Row([
@@ -219,7 +122,7 @@ app.layout = html.Div([
                                 'bewerten und weiter', id='done_next', n_clicks=0), md=4, className="button"),
                             dbc.Col(html.Button('überspringen', id='next',
                                     n_clicks=0), md=2, className="button"),
-                            dbc.Col(html.Button('Download', id='download',
+                            dbc.Col(html.Button('Download [...]_labled.csv', id='download',
                                     n_clicks=0), md=0, className="button_do"),
                             dcc.Download(id="download-text")
                         ]),
@@ -230,56 +133,95 @@ app.layout = html.Div([
     ),
 ], className="h-100")
 
+
+
+@app.callback(
+    Output('textarea1', 'value'),
+    Output('textarea2', 'value'),
+    Output('textarea3', 'value'),
+    Output('caption1', 'children'),
+    Output('caption2', 'children'),
+    Output('number_labled', 'children'),
+    Input('previous', 'n_clicks'),
+    Input('done_next', 'n_clicks'),
+    Input('next', 'n_clicks'),
+    Input('score', 'value'))
+def button_pressed(prev_clicks, done_clicks, next_clicks, label):
+    # print('button pressed ' + str(n_clicks))
+    ctx = dash.callback_context
+    if ctx.triggered_id == None:
+        rt = get_new_pair_routine(csv_stuff.df_labled)
+        return  rt[0], rt[1], rt[2], rt[3], rt[4], dash.no_update
+    elif ctx.triggered_id == 'done_next':
+        # global last_id
+        global last_task
+        global labled_pairs
+        global all_pairs
+        print('label_button_pressed ' + str(done_clicks))
+        valid_set, labled_pairs = csv_stuff.set_label(csv_stuff.df_labled, last_id, label, labled_pairs)
+        if not valid_set:
+            raise dash.exceptions.PreventUpdate
+        rt = get_new_pair_routine(csv_stuff.df_labled)
+        return rt[0], rt[1], rt[2], rt[3], rt[4], f'{labled_pairs}/{all_pairs} Paaren'
+    elif ctx.triggered_id == 'next':
+        rt = get_new_pair_routine(csv_stuff.df_labled)
+        return rt[0], rt[1], rt[2], rt[3], rt[4], dash.no_update
+    # elif ctx.triggered_id == 'previous':
+    #     return get_new_pair_routine(csv_stuff.df_labled)
+    else:
+        raise dash.exceptions.PreventUpdate
+
+
+def get_new_pair_routine(df_labled):
+    global last_id
+    global last_task
+    # print(f'last id in get_new_pair_routine: {last_id}')
+    next = csv_stuff.get_new_pair(df_labled, last_task, last_id)
+    print(f'last id in get_new_pair_routine: {last_id}')
+    if next == None:
+        return '', '', '', 'Niemandes Code', 'Niemandes Code'
+    last_id = next[5]
+    if next[2] == None:
+        return next[0], next[1], dash.no_update, next[3], next[4]
+    last_task = next[6]
+    return next[0], next[1], next[2], next[3], next[4]
+
+
+
+#TODO
 # @app.callback(
-#     Output("page-content", "children"),
-#     Input("start", "n_clicks"))
-# def start_labeling(clicks):
-#     if(clicks > 1):
-#         return     else:
-#         return None
+#     Output('textarea1', 'value'),
+#     Output('textarea2', 'value'),
+#     Output('textarea3', 'value'),
+#     Output('caption1', 'children'),
+#     Output('caption2', 'children'),
+#     Input('previous', 'n_clicks'), prevent_initial_call=True)
+# def prev_button_pressed(n_clicks, value):
+#     global last_id
+#     global last_task
+#     print('button pressed ' + str(n_clicks))
+#     next = csv_stuff.get_new_pair(csv_stuff.df_labled, last_task, last_id)
+#     if next == None:
+#         return '', '', '', 'Niemandes Code', 'Niemandes Code'
+#     last_id = next[5]
+#     if next[2] == None:
+#         return next[0], next[1], dash.no_update, next[3], next[4]
+#     last_task = next[6]
+#     return next[0], next[1], next[2], next[3], next[4]
 
 
-def find_new_samples():
-    return random.randint(0, len(data)-1), random.randint(0, len(data)-1)
+@app.callback(
+    Output('download-text', 'data'),
+    Input('download', 'n_clicks'), prevent_initial_call=True)
+def download_button_pressed(n_clicks):
+    file_name = f'PPR [{csv_stuff.semester}]-{csv_stuff.ha}. Hausaufgabe - Pflichttest {csv_stuff.prog_language}-Antworten_labled.csv'
+    return dcc.send_data_frame(csv_stuff.df_labled.to_csv, file_name)
 
 
-# @app.callback(
-#     [
-#         Output('answer_1', 'children'),
-#         Output('answer_2', 'children'),
-#     ],
-#     [
-#         Input('done_next', 'n_clicks'),
-#     ],
-#     [
-#         State('score', 'value')]
-#     )
-# def update_dropdown(done_clicks, score):
-#     if done_clicks == 0:
-#         return no_update, no_update
-#     else:
-#         global current1
-#         global current2
-#         scores.append([current1, current2, score])
-#         print(scores)
-#         current1, current2 = find_new_samples()
-#         return  data[current1], data[current2]
 
-
-# @app.callback(
-#     Output("download-text", "data"),
-#     [Input('download', 'n_clicks')])
-# def update_dropdown(n_clicks):
-#     if n_clicks >= 1:
-#         global scores
-#         # save file (ask user where to save ...)
-#         filecontet = f"{scores}"
-#         scores = []
-#         return dict(content=filecontet, filename="output.csv")
-#     else:
-#         return no_update
-
-
+#TODO how does the initial start works; every input sensitive callback starts??
+# --> if clicked == None: raise dash.exceptions.PreventUpdate or
+# --> prevent_initial_call=True
 """
 - download text in csv umwandeln
 - globale variablen ersetzen, da gefährlich (https://dash.plotly.com/sharing-data-between-callbacks)
@@ -291,4 +233,5 @@ def find_new_samples():
 """
 # only needed if running single page dash app instead
 if __name__ == '__main__':
+    # print((csv_stuff.df_labled, type(csv_stuff.df_labled)))
     app.run_server(debug=True)

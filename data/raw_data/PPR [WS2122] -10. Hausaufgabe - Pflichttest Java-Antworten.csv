@@ -1,0 +1,3404 @@
+﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/20,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9"
+Wolf,"Amelie Rose",amelie.r.wolf@campus.tu-berlin.de,Beendet,"7. Januar 2022  09:37","15. Januar 2022  12:09","8 Tage 2 Stunden","10,84",Object,"Es wird die Methode der Super-Klasse aufgerufen",super,"die Klasse Hund erbt von der Klasse Tier","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+// Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
+
+public class TestMannschaft{
+  public static void main(String[] args){
+    Fussballspieler[] deutschland={new Torwart(""Lisa"",34,2.11),new Abwehrspieler(""Snaese"",19,1.8),
+                                  new Abwehrspieler(""Moerch"",19,0.45),new Abwehrspieler(""Snudel"",54,1.8),
+                                  new Mittelfeldspieler(""Martha"",23,78.98),new Mittelfeldspieler(""Jakob"",11,111.11),
+                                  new Mittelfeldspieler(""Freddo"",14,52.9),new Sturmspieler(""Jutta"",70,5.34),
+                                  new Sturmspieler(""Juergen"",24,2.1),new Sturmspieler(""Paul"",28,1.1),
+                                  new Sturmspieler(""Sascha"",18,3.33)}; // Arrays definieren
+    Fussballspieler[] marsland={new Torwart(""emil"",32,4.22),new Abwehrspieler(""Karl"",12,1.89),
+                                new Abwehrspieler(""Amoon"",3,4.2),new Abwehrspieler(""Tufanch"",1,0.01),
+                                new Mittelfeldspieler(""Hugo"",4,62.89),new Mittelfeldspieler(""Theo"",6,12.3),
+                                new Mittelfeldspieler(""Olga"",1,100.00),new Sturmspieler(""Ella"",19,20.34),
+                                new Sturmspieler(""Moehui"",19,0.12),new Sturmspieler(""Linda"",45,6.61),
+                                new Sturmspieler(""Johanna"",21,40.23)};
+    //Werte einfügen
+
+    ((Sturmspieler)marsland[8]).geburtstagFeiern();
+
+
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+    System.out.println();
+    ausgeben(marsland);
+    System.out.println();
+    fussballspielen(marsland,deutschland);
+  }
+
+  public static double roteKartenZaehlen(Fussballspieler[] array){
+    double roteKartenGesamt=0;
+    for (int i=0;i<array.length;i++){
+      if(array[i] instanceof Abwehrspieler){
+        roteKartenGesamt=roteKartenGesamt+((Abwehrspieler)array[i]).getanzahlRoteKartenJeSpiel();
+      }
+    }
+    return roteKartenGesamt;
+  }
+
+  public static void ausgeben(Fussballspieler[] array){
+    for (int i=0;i<array.length;i++){
+      System.out.println(array[i].toString());
+    }
+  }
+
+  public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+    int GesamtAlterMannschaft1=0;
+    double gegentoreMannschaft1=0;
+    double paesseMannschaft1=0;
+    double toreMannschaft1=0;
+    double r1=roteKartenZaehlen(mannschaft1);
+    for (int i=0;i<mannschaft1.length;i++){
+      if(mannschaft1[i] instanceof Mittelfeldspieler){
+        paesseMannschaft1=paesseMannschaft1+((Mittelfeldspieler)mannschaft1[i]).getpaesseJeSpiel();
+      }
+      if(mannschaft1[i] instanceof Sturmspieler){
+        toreMannschaft1=toreMannschaft1+((Sturmspieler)mannschaft1[i]).gettoreJeSpiel();
+      }
+      if(mannschaft1[i] instanceof Torwart){
+        gegentoreMannschaft1=gegentoreMannschaft1+((Torwart)mannschaft1[i]).getgegentoreJeSpiel();
+      }
+        GesamtAlterMannschaft1=GesamtAlterMannschaft1+mannschaft1[i].getalter();
+    }
+    int GesamtAlterMannschaft2=0;
+    double gegentoreMannschaft2=0;
+    double paesseMannschaft2=0;
+    double toreMannschaft2=0;
+    double r2=roteKartenZaehlen(mannschaft2);
+    for (int i=0;i<mannschaft1.length;i++){
+      if(mannschaft2[i] instanceof Mittelfeldspieler){
+        paesseMannschaft2=paesseMannschaft2+((Mittelfeldspieler)mannschaft2[i]).getpaesseJeSpiel();
+      }
+      if(mannschaft2[i] instanceof Sturmspieler){
+        toreMannschaft2=toreMannschaft2+((Sturmspieler)mannschaft2[i]).gettoreJeSpiel();
+      }
+      if(mannschaft2[i] instanceof Torwart){
+        gegentoreMannschaft2=gegentoreMannschaft2+((Torwart)mannschaft2[i]).getgegentoreJeSpiel();
+      }
+      GesamtAlterMannschaft2=GesamtAlterMannschaft2+mannschaft2[i].getalter();
+    }
+
+    double punkteMannschaft1=(toreMannschaft1-gegentoreMannschaft1)+((paesseMannschaft1/100)/GesamtAlterMannschaft1)-r1;
+    //System.out.println(""Punkte1: ""+punkteMannschaft1+"" gegentore: ""+gegentoreMannschaft1+"" paesse: ""+paesseMannschaft1+"" tore: ""+toreMannschaft1+"" roteKarten: ""+r1+"" gesamtalter: ""+GesamtAlterMannschaft1);
+    double punkteMannschaft2=(toreMannschaft2-gegentoreMannschaft2)+((paesseMannschaft2/100)/GesamtAlterMannschaft2)-r2;
+    //System.out.println(""Punkte2: ""+punkteMannschaft2+"" gegentore: ""+gegentoreMannschaft2+"" paesse: ""+paesseMannschaft2+"" tore: ""+toreMannschaft2+"" roteKarten: ""+r2+"" gesamtalter: ""+GesamtAlterMannschaft2);
+
+    if (punkteMannschaft1>punkteMannschaft2){
+      System.out.println(""Mannschaft 1 gewinnt!"");
+    }
+    if (punkteMannschaft1==punkteMannschaft2){
+      System.out.println(""Unentschieden"");
+    }
+    if (punkteMannschaft1<punkteMannschaft2){
+      System.out.println(""Mannschaft 2 gewinnt!"");
+    }
+  }
+}",//
+Rode,Eric,eric.rode@campus.tu-berlin.de,Beendet,"7. Januar 2022  09:53","16. Januar 2022  17:30","9 Tage 7 Stunden","15,81","Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Zeile 1 : Klasse A hat keinen Konstruktor",super,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+
+    public static void main(String[] args) {
+        String[] namenBayern = {""Sven Ulreich"", ""Niklas Suele"", ""Joshua Kimmich"", ""Benjamin Pavard"", ""Marcel Sabitzer"", ""Jamal Musiala"", ""Marc Roca"", ""Serge Gnabry"", ""Thomas Müller"", ""Malik Tillmann"", ""Robert Lewandowski""};
+        String[] namenGladbach = {""Yann Sommer"", ""Matthias Ginter"", ""Nico Elvedi"", ""Tony Jantschke"", ""Steve Lainer"", ""Christoph Kramer"", ""Kone"", ""Luca Netz"", ""Florian Neuhaus"", ""Lars Stindl"", ""Breel Donald Embolo""};
+        Fussballspieler[] FcBayernMuenchen = new Fussballspieler[11];
+        Fussballspieler[] BorussiaMoenchengladbach = new Fussballspieler[11];
+        FcBayernMuenchen[0] = new Torwart(namenBayern[0], 31, 0.878);
+        BorussiaMoenchengladbach[0] = new Torwart(namenGladbach[0], 29, 1.89);
+        for (int i = 1; i < 4; i++) {
+            FcBayernMuenchen[i] = new Abwehrspieler(namenBayern[i], 20+i, (double) 1/i);
+            BorussiaMoenchengladbach[i] = new Abwehrspieler(namenGladbach[i], 20+i, (double) 1/i);
+        }
+        for (int i = 4; i < 10; i++) {
+            FcBayernMuenchen[i] = new Mittelfeldspieler(namenBayern[i], 20+i, (double) 1/i);
+            BorussiaMoenchengladbach[i] = new Mittelfeldspieler(namenGladbach[i], 20+i, (double) 1/i);
+        }
+        for (int i = 10; i < 11; i++) {
+            FcBayernMuenchen[i] = new Sturmspieler(namenBayern[i], 20+i, (double) 33/18);
+            BorussiaMoenchengladbach[i] = new Sturmspieler(namenGladbach[i], 20+i, (double) 1/i);
+        }
+        FcBayernMuenchen[10].geburtstagFeiern();
+
+        System.out.println(roteKartenZaehlen(FcBayernMuenchen));
+        fussballspielen(FcBayernMuenchen, BorussiaMoenchengladbach);
+        ausgeben(BorussiaMoenchengladbach);
+    }
+
+    public static double roteKartenZaehlen(Fussballspieler[] mannschaft){
+        double roteKartenJeSpiel = 0;
+        for (Fussballspieler fussballspieler : mannschaft) {
+            if (fussballspieler instanceof Abwehrspieler) {
+                roteKartenJeSpiel += ((Abwehrspieler) fussballspieler).anzahlRoteKartenJeSpiel;
+            }
+        }
+        return roteKartenJeSpiel;
+    }
+
+    public static void ausgeben(Fussballspieler[] mannschaft){
+        for (Fussballspieler fussballspieler: mannschaft) {
+            System.out.println(fussballspieler.toString());
+        }
+    }
+
+    public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+        if (toreZaehlen(mannschaft1) + gegentoreZaehlen(mannschaft2) ==
+            toreZaehlen(mannschaft2) + gegentoreZaehlen(mannschaft1)){
+            System.out.println(""Unentschieden!"");
+        }else if (toreZaehlen(mannschaft1) + gegentoreZaehlen(mannschaft2) >
+                toreZaehlen(mannschaft2) + gegentoreZaehlen(mannschaft1)){
+            System.out.println(""Mannschaft 1 gewinnt!"");
+        }else{
+        System.out.println(""Mannschaft 2 gewinnt!"");
+        }
+    }
+
+    public static double toreZaehlen(Fussballspieler[] mannschaft){
+        double toreJeSpiel = 0;
+        for (Fussballspieler fussballspieler : mannschaft) {
+            if (fussballspieler instanceof Sturmspieler) {
+                toreJeSpiel += ((Sturmspieler) fussballspieler).toreJeSpiel;
+            }
+        }
+        return toreJeSpiel;
+    }
+
+    public static double gegentoreZaehlen(Fussballspieler[] mannschaft){
+        double gegentoreJeSpiel = 0;
+        for (Fussballspieler fussballspieler : mannschaft) {
+            if (fussballspieler instanceof Torwart) {
+                gegentoreJeSpiel += ((Torwart) fussballspieler).gegentoreJeSpiel;
+            }
+        }
+        return gegentoreJeSpiel;
+    }
+}",//
+Balasus,Jakob,balasus@campus.tu-berlin.de,Beendet,"9. Januar 2022  19:41","16. Januar 2022  18:37","6 Tage 22 Stunden","20,00","die Klasse Hund erbt von der Klasse Tier",super,"Es wird die Methode der Sub-Klasse aufgerufen","Zeile 6,7 : super(); müsste vor x=0; stehen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+// Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
+
+public class TestMannschaft {
+	
+	//Antwort zu Aufgabe 4 als kommentar in den Funktionen roteKartenZaehlen und ausgeben
+	public static void main(String[] args){
+	      
+	     // Arrays definieren
+		Fussballspieler[] union = new Fussballspieler[11];
+		Fussballspieler[] losc = new Fussballspieler[11];
+		
+		union[0] = new Torwart(""Unioner0"", 34, 0.4);
+		losc[0] = new Torwart(""loscer0"", 39, 0.2);
+//		
+//		union[1] = new Abwehrspieler (""Unioner2"", 34, 0.4);
+//		losc[1] = new Abwehrspieler(""loscer2"", 39, 1.5);
+//		union[2] = new Abwehrspieler (""Unioner3"", 34, 0.4);
+//		losc[2] = new Abwehrspieler(""loscer3"", 39, 1.5);
+//		union[3] = new Abwehrspieler (""Unioner4"", 34, 0.4);
+//		losc[3] = new Abwehrspieler(""loscer4"", 39, 1.5);
+//		
+//		union[4] = new Mittelfeldspieler (""Unioner5"", 34, 0.4);
+//		losc[4] = new Mittelfeldspieler(""loscer5"", 39, 1.5);
+		
+		for(int i = 1; i < 11; i++) { 
+			if(i < 4) {
+				union[i] = new Abwehrspieler(""unioner"" + i, 20+i, i);//1+(i/10.0));
+				losc[i] = new Abwehrspieler(""loscer"" + i, 20+i, i);//1+(i/10.0));
+			} else
+			if(4 <= i && i < 9) {
+				union[i] = new Mittelfeldspieler(""unioner"" + i, 20+i, i); //1+(i/10.0));
+				losc[i] = new Mittelfeldspieler(""loscer"" + i, 20+i, i);//1+(i/10.0));
+			} else
+				if(9 <= i ) {
+					union[i] = new Mittelfeldspieler(""unioner"" + i, 20+i, i);//1+(i/10.0));
+					losc[i] = new Mittelfeldspieler(""loscer"" + i, 20+i, i);//1+(i/10.0));
+				}
+		}
+		
+		
+		//Lassen sie einen beliebigen Spieler Geburtstag feiern.
+		union[6].geburtstagFeiern();
+		
+	     
+	     
+	    //Werte einfügen
+
+	    System.out.println(""Rote Karten: "" + roteKartenZaehlen(union));
+	    System.out.println();
+	    ausgeben(union);
+	    System.out.println();
+	    fussballspielen(losc, union);
+	  }
+
+	  public static double roteKartenZaehlen(Fussballspieler[] team){
+		  //Da die Mathode getAnzahlRoteKartenJeSpiel() nur für Abwehrspieler definiert ist,
+		  //wird hier ohne zweifel die richtige Methode aufgerufen. Polymorphie ist hier nur insoweit interessant, dass 
+		  //Abwehrspieler auch Fussballspieler sind also davon erben können.
+		  double sumRot = 0;
+		  
+		  for(int i = 0; i < team.length; i++) {
+			  if(team[i] instanceof Abwehrspieler) {
+				  Abwehrspieler a = (Abwehrspieler) team[i];
+				  sumRot += a.getAnzahlRoteKartenJeSpiel();
+			  }
+		  }
+		  return sumRot;
+	  }
+	  
+	  public static void ausgeben(Fussballspieler[] team){
+		  //hier greift Polymorphie im klassischen Sinne, da sowohl
+		  //die Klasse Fussballspieler als auch die Unterklassen über eine 
+		  //toString Methode verfügen. In Java wird hier hierarchisch überschrieben. (hätte auch mit @override gekennzeichnet werden können) 
+		  for(int i = 0; i < team.length; i++) {
+			  System.out.println(team[i].toString());
+		  }
+		  
+	  }
+	  
+	  
+	  public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+		  double ergebnis = 0;
+		  
+		  for(int i = 0; i< mannschaft1.length; i++) {
+			  Fussballspieler cur = mannschaft1[i];
+			  if(cur instanceof Torwart) {
+				  Torwart t = (Torwart) cur;
+				  ergebnis -= t.getGegentoreJeSpiel();
+			  }else if(cur instanceof Abwehrspieler) {
+				  Abwehrspieler t = (Abwehrspieler) cur;
+				  ergebnis -= t.getAnzahlRoteKartenJeSpiel();
+			  }else if(cur instanceof Mittelfeldspieler) {
+				  Mittelfeldspieler t = (Mittelfeldspieler) cur;
+				  ergebnis += t.getPaesseJeSpiel();
+			  }else if(cur instanceof Sturmspieler) {
+				  Sturmspieler t = (Sturmspieler) cur;
+				  ergebnis += t.getToreJeSpiel();
+			  }
+		  }
+		  
+		  for(int i = 0; i< mannschaft2.length; i++) {
+			  Fussballspieler cur = mannschaft2[i];
+			  if(cur instanceof Torwart) {
+				  Torwart t = (Torwart) cur;
+				  ergebnis += t.getGegentoreJeSpiel();
+			  }else if(cur instanceof Abwehrspieler) {
+				  Abwehrspieler t = (Abwehrspieler) cur;
+				  ergebnis += t.getAnzahlRoteKartenJeSpiel();
+			  }else if(cur instanceof Mittelfeldspieler) {
+				  Mittelfeldspieler t = (Mittelfeldspieler) cur;
+				  ergebnis -= t.getPaesseJeSpiel();
+			  }else if(cur instanceof Sturmspieler) {
+				  Sturmspieler t = (Sturmspieler) cur;
+				  ergebnis -= t.getToreJeSpiel();
+			  }
+		  }
+		  
+		  if(ergebnis > 0) {
+			  System.out.println(""Mannschaft 1 gewinnt!"");
+		  }
+		  if(ergebnis == 0) {
+			  System.out.println(""Unentschieden!"");
+		  }
+		  if(ergebnis < 0) {
+			  System.out.println(""Mannschaft 2 gewinnt!"");
+		  }
+		  
+	  }
+
+}",//
+Özmen,"Fevzi Alperen",f.oezmen@campus.tu-berlin.de,Beendet,"9. Januar 2022  20:42","16. Januar 2022  23:59","7 Tage 3 Stunden","5,36","Es wird die Methode der Super-Klasse aufgerufen","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
+Hobein,"Bashira Noura",b.hobein@campus.tu-berlin.de,Beendet,"10. Januar 2022  00:00","16. Januar 2022  23:58","6 Tage 23 Stunden","4,23","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".",super,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Es wird die Methode der Sub-Klasse aufgerufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {11. Vogel} Dropzone 7 -> {13. <sub>spannweite:} Dropzone 8 -> {4. <sub>double} Dropzone 9 -> {14. Papagei} Dropzone 10 -> {12. <sub>schnabelfarbe:} Dropzone 11 -> {3. <sub>String} Dropzone 12 -> {5. Saeugetier} Dropzone 13 -> {7. <sub>fellfarbe:} Dropzone 14 -> {8. Elefant} Dropzone 15 -> {15. <sub>kannSprechen:} Dropzone 16 -> {16. <sub>boolean} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {9. <sub>ruessellaenge:} Dropzone 19 -> {10. <sub>int} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
+Song,Minji,minji.song@campus.tu-berlin.de,Beendet,"10. Januar 2022  00:10","16. Januar 2022  23:59","6 Tage 23 Stunden","6,83","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {11. Vogel} Dropzone 7 -> {13. <sub>spannweite:} Dropzone 8 -> {4. <sub>double} Dropzone 9 -> {14. Papagei} Dropzone 10 -> {12. <sub>schnabelfarbe:} Dropzone 11 -> {3. <sub>String} Dropzone 12 -> {5. Saeugetier} Dropzone 13 -> {7. <sub>fellfarbe:} Dropzone 14 -> {8. Elefant} Dropzone 15 -> {15. <sub>kannSprechen:} Dropzone 16 -> {16. <sub>boolean} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {9. <sub>ruessellaenge:} Dropzone 19 -> {10. <sub>int} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+    public static void main(String[] args){
+        
+       // Arrays definieren
+
+       Fussballspieler[] spielerteam1 = new Fussballspieler[11];
+       Fussballspieler[] spielerteam2 = new Fussballspieler[11];
+
+       
+      spielerteam1[0] = new Torwart(""Klaus"", 20, 0.00);
+      spielerteam1[1] = new Sturmspieler(""Hans"", 24, 0.00);
+      spielerteam1[2] = new Sturmspieler(""Peter"", 23, 0.00);
+      spielerteam1[3] = new Sturmspieler(""Frank"", 26, 0.00);
+      spielerteam1[4] = new Abwehrspieler(""Gustav"", 28, 0.00);
+      spielerteam1[5] = new Abwehrspieler(""Heinz"", 32, 0.00);
+      spielerteam1[6] = new Abwehrspieler(""Dieter"", 23, 0.00);
+      spielerteam1[7] = new Mittelfeldspieler(""Heinrich"", 22, 0.00);
+      spielerteam1[8] = new Mittelfeldspieler(""Holger"", 32, 0.00);
+      spielerteam1[9] = new Mittelfeldspieler(""Friedrich"", 22, 0.00);
+      spielerteam1[10] = new Mittelfeldspieler(""Bernd"", 28, 0.00);
+
+      spielerteam2[0] = new Torwart(""Friedhelm"", 20, 0.00);
+      spielerteam2[1] = new Sturmspieler(""Uwe"", 24, 0.00);
+      spielerteam2[2] = new Sturmspieler(""Franz"", 23, 0.00);
+      spielerteam2[3] = new Sturmspieler(""Wilhelm"", 26, 0.00);
+      spielerteam2[4] = new Abwehrspieler(""Olaf"", 28, 0.00);
+      spielerteam2[5] = new Abwehrspieler(""Otto"", 32, 0.00);
+      spielerteam2[6] = new Abwehrspieler(""Andreas"", 23, 0.00);
+      spielerteam2[7] = new Mittelfeldspieler(""Kevin"", 22, 0.00);
+      spielerteam2[8] = new Mittelfeldspieler(""Walter"", 32, 0.00);
+      spielerteam2[9] = new Mittelfeldspieler(""Stefan"", 22, 0.00);
+      spielerteam2[10] = new Mittelfeldspieler(""Michael"", 28, 0.00);
+
+
+      for(int i = 0; i < spielerteam1.length; i++){
+          if(spielerteam1[i].getname() == ""Peter""){
+              spielerteam1[i].geburtstagFeiern();
+          }
+      }
+
+
+  
+      System.out.println(""Rote Karten: "" + roteKartenZaehlen((Fussballspieler[])spielerteam1));
+      System.out.println();
+      ausgeben(spielerteam1);
+      System.out.println();
+      fussballspielen(spielerteam1, spielerteam2);
+    }
+  
+    public static double roteKartenZaehlen(Fussballspieler[] g){
+
+        Fussballspieler[] f = (Fussballspieler[])g;
+        double s = 0.00;
+
+        for(int i = 0; i < f.length; i++){
+
+            if(f[i] instanceof Abwehrspieler)
+            {
+                s+= f[i].getanzahlRoteKartenJeSpiel();
+            }
+        }
+
+        return s;
+        
+    }
+    public static void ausgeben(Fussballspieler[] f){
+      
+     /* bitte implementieren */
+        for(int i = 0; i < f.length; i++){
+             f[i].toString();
+        }
+
+    }
+    public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+      
+     /* bitte implementieren */
+        double rote1 = 0.00;
+        double gegentore1 = 0.00;
+        double tore1 = 0.00;
+        double paesse1 = 0.00;
+
+        for(int i = 0; i < mannschaft1.length; i++){
+
+            if(mannschaft1[i] instanceof Torwart){
+                gegentore1 += mannschaft1[i].getgegentoreJeSpiel();
+            }
+            if(mannschaft1[i] instanceof Sturmspieler){
+                tore1 += mannschaft1[i].gettoreJeSpiel();
+            }
+            if(mannschaft1[i] instanceof Mittelfeldspieler){
+                paesse1 += mannschaft1[i].getpaesseJeSpiel();;
+            }
+            if(mannschaft1[i] instanceof Abwehrspieler){
+                rote1 += mannschaft1[i].getroteKartenJeSpiel();
+            }
+
+        } 
+
+        double rote2 = 0.00;
+        double gegentore2 = 0.00;
+        double tore2 = 0.00;
+        double paesse2 = 0.00;
+
+        for(int i = 0; i < mannschaft2.length; i++){
+
+            if(mannschaft2[i] instanceof Torwart){
+                gegentore2 += mannschaft2[i].getgegentoreJeSpiel();
+            }
+            if(mannschaft2[i] instanceof Sturmspieler){
+                tore2 += mannschaft2[i].gettoreJeSpiel();
+            }
+            if(mannschaft2[i] instanceof Mittelfeldspieler){
+                paesse2 += mannschaft2[i].getpaesseJeSpiel();;
+            }
+            if(mannschaft2[i] instanceof Abwehrspieler){
+                rote2 += mannschaft2[i].getroteKartenJeSpiel();
+            }
+
+        } 
+
+        int teampunkte1 = 0;
+        int teampunkte2 = 0;
+
+        if(tore1 > tore2){
+            teampunkte1++;
+        }
+        else if(tore1 < tore2)
+        {
+            teampunkte2++;
+        }
+        else{
+            //keiner
+        }
+
+        if(gegentore1 > gegentore2){
+            teampunkte2++;
+        }
+        else if(gegentore1 < gegentore2)
+        {
+            teampunkte1++;
+        }
+        else{
+            //keiner
+        }
+
+        if(rote1 > rote2){
+            teampunkte2++;
+        }
+        else if(rote1 < rote2)
+        {
+            teampunkte1++;
+        }
+        else{
+            //keiner
+        }
+
+        if(paesse1 > paesse2){
+            teampunkte1++;
+        }
+        else if(paesse1 < paesse2)
+        {
+            teampunkte2++;
+        }
+        else{
+            //keiner
+        }
+
+        if(teampunkte1 > teampunkte2){
+            System.out.println(""Mannschaft 1 gewinnt!"");
+        }
+        else if(teampunkte1 < teampunkte2){
+            System.out.println(""Mannschaft 2 gewinnt!"");
+        }
+        else{
+            System.out.println(""Unentschieden!"");
+        }
+    }
+  }",//
+Abele,Sophie,s.abele@campus.tu-berlin.de,Beendet,"10. Januar 2022  01:19","16. Januar 2022  23:59","6 Tage 22 Stunden","9,31","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.",Object,"die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+
+public static void main(String[] args){
+	//Erstellen der Mannschaften
+		Fussballspieler[] deutschland = new Fussballspieler[] {
+			new Torwart (""Manuel Neuer"",35,1.0), 
+			new Abwehrspieler (""Ridle Baku"", 23,3.0), 
+			new Abwehrspieler (""Matthias Ginter"", 27,2.0), 
+			new Abwehrspieler (""Christian Günter"",28,8.0), 
+			new Sturmspieler (""Maximilian Arnold"", 27,7.0), 
+			new Sturmspieler (""Julian Brandt"", 25,5.0), 
+			new Sturmspieler (""Leon Goretzka"",26,6.0), 
+			new Mittelfeldspieler (""Kai Havertz"",22,4.0), 
+			new Mittelfeldspieler (""Thomas Müller"", 32,3.0), 
+			new Mittelfeldspieler (""Florian Neuhaus"",24,2.0), 
+			new Mittelfeldspieler (""Lucas Nmecha"", 23,1.0)};
+
+	Fussballspieler[] italien = new Fussballspieler[] {
+		new Torwart (""Gianluigi Donnarumma"",22,0.0),
+		new Abwehrspieler (""Gianluca Mancini"", 25,0.0),
+		new Abwehrspieler (""Gian Marco Ferrari"", 29,0.5),
+		new Abwehrspieler (""Leonardo Bonucci"",34,4.0),
+		new Sturmspieler (""Giacomo Raspadori"", 21,4.0),
+		new Sturmspieler (""Domenico Berardi"", 27,1.40),
+		new Sturmspieler (""Gianluca Scamacca"", 23,2.40),
+		new Mittelfeldspieler (""Manuel Locatelli"",24,4.40),
+		new Mittelfeldspieler (""Sandro Tonali"", 21,1.04),
+		new Mittelfeldspieler (""Danilo Cataldi"", 27,2.60),
+		new Mittelfeldspieler (""Nicolò Barella"", 24,1.6)
+		};
+		
+ // Torwart aus Mannschaft 1 feiert Geburtstag
+ 		deutschland[0].geburtstagFeiern();
+ 
+ //Testen der drei Methoden
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+    System.out.println();
+    ausgeben(deutschland);
+    System.out.println();
+    fussballspielen(deutschland, italien);
+ }
+ 	
+//Methode zum Zählen der roten Karten je Spiel
+public static double roteKartenZaehlen(Fussballspieler[] team){
+  	double roteKarten = 0;
+  	for (int i = 0; i<team.length; i++){
+  		if(team[i] instanceof Abwehrspieler){
+  			Abwehrspieler a = (Abwehrspieler)team[i];
+  			roteKarten += a.getKarte();
+  		}
+  	}
+  	return roteKarten;
+ }
+  	
+ //Gibt die Informationen der Fussballspieler aus
+public static void ausgeben(Fussballspieler[] team){
+	for (int i = 0; i < team.length; i++) { 
+		System.out.println(team[i].toString());
+		}
+}
+
+//Ermittelt, welche Mannschaft gewinnt.
+  public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+  	double score = 0; //Im folgenden werden die einzelnen Spielerttypen der beiden Mannschaften miteinander verglichen, wobei das jeweils besser Team im Score Punkte sammelt (positive Werte für Team 1 und negative Werte Team 2)
+  	
+  	double torwartscore1 = 0;
+   	double torwartscore2 = 0; 	
+   	double abwehrscore1 = 0;
+  	double abwehrscore2 = 0;
+  	double sturmscore1 = 0;
+  	double sturmscore2 = 0;
+  	double mittelfeldscore1 = 0;
+   	double mittelfeldscore2 = 0;
+   	
+	//Torwartvergleich (viele Gegentore negativ)
+	for( int i = 0; i<mannschaft1.length; i++){
+		if(mannschaft1[i] instanceof Torwart){
+			Torwart t = (Torwart)mannschaft1[i];
+			torwartscore1 = t.getGegenTore();
+		}
+	}
+  	for( int i = 0; i<mannschaft2.length; i++){
+		if(mannschaft2[i] instanceof Torwart){
+			Torwart t = (Torwart)mannschaft2[i];
+			torwartscore2 = t.getGegenTore();
+		}
+	}
+	if (torwartscore1 > torwartscore2){
+		score = score-1;
+	}
+	else if (torwartscore1 < torwartscore2){
+		score = score+1;
+	}
+	
+	//Abwehspielervergleich (viele rote Karten sind negativ)
+	abwehrscore1 = roteKartenZaehlen(mannschaft1);
+	abwehrscore2 = roteKartenZaehlen(mannschaft2);
+	
+	if (abwehrscore1 > abwehrscore2){
+		score = score-1;
+	}
+	else if (torwartscore1 < torwartscore2){
+		score = score+1;
+	}
+	
+	//Sturmspielervergleich (viele Tore sind positiv)
+	for( int i = 0; i<mannschaft1.length; i++){
+		if(mannschaft1[i] instanceof Sturmspieler){
+			Sturmspieler s = (Sturmspieler)mannschaft1[i];
+			sturmscore1 = s.getTore();
+		}
+	}
+  	for( int i = 0; i<mannschaft2.length; i++){
+		if(mannschaft2[i] instanceof Sturmspieler){
+			Sturmspieler s = (Sturmspieler)mannschaft2[i];
+			sturmscore2 = s.getTore();
+		}
+	}
+	if (sturmscore1 > sturmscore2){
+		score = score+1;
+	}
+	else if (sturmscore1 < sturmscore2){
+		score = score-1;
+	}
+	
+//Mittelfeldspielervergleich (viele Paesse sind positiv)
+	for( int i = 0; i<mannschaft1.length; i++){
+		if(mannschaft1[i] instanceof Mittelfeldspieler){
+			Mittelfeldspieler m = (Mittelfeldspieler)mannschaft1[i];
+			mittelfeldscore1 = m.getPaesse();
+		}
+	}
+  	for( int i = 0; i<mannschaft2.length; i++){
+		if(mannschaft2[i] instanceof Mittelfeldspieler){
+			Mittelfeldspieler m = (Mittelfeldspieler)mannschaft2[i];
+			mittelfeldscore2 = m.getPaesse();
+		}
+	}
+	if (mittelfeldscore1 > mittelfeldscore2){
+		score = score+1;
+	}
+	else if (mittelfeldscore1 < mittelfeldscore2){
+		score = score-1;
+	}
+	if (score == 0){
+		System.out.println(""Unentschieden!"");
+	}
+	else if (score < 0){
+		System.out.println(""Mannschaft 2 gewinnt!"");
+	}
+	else if (score > 0){
+		System.out.println(""Mannschaft 1 gewinnt!"");
+	}
+}
+
+}
+
+// Während der Laufzeit wird entschieden, welche der Methode ausgeführt wird. Die Methode der Klasse Fussballspieler (Elternklasse) wird von der Mehode der jeweiligen Spielerklasse überschrieben (Kindklasse), dadurch wid bei ""ausgeben"" immer der richtige Spielertyp ausgewählt. Dies ist analog dem Überladen von Funktionen, das ist statische Polymorphie. Bei der Methode ""roteKartenZaehlen"" wird das komplette Array der Fussballspieler untersucht und geprüft, ob es sich bei den Objekten der Fussballspieler noch konkreter um Objekte der Klasse Abwehrspieler handelt, die von der Klasse Fussballspieler erben.",-
+Bender,Emma,emma.bender@campus.tu-berlin.de,Beendet,"10. Januar 2022  08:36","15. Januar 2022  11:57","5 Tage 3 Stunden","19,36",Object,"Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".",extends,"die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+// Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
+
+public class TestMannschaft{
+  public static void main(String[] args){
+     // Arrays definieren
+     Fussballspieler[] deutschland= new Fussballspieler[11];
+     Fussballspieler[] crisnlwa= new Fussballspieler[11];
+    //Werte einfügen
+	deutschland[0]= new Torwart(""Mario Schienbein"", 5, 2.1);
+	deutschland[1]=new Sturmspieler(""Erich B"", 81, 5.0);
+	deutschland[2]=new Sturmspieler(""Wladimir Wirbelwind"",24,1.1);
+	deutschland[3]=new Sturmspieler(""Ben Bender"", 13, 0.001);
+	deutschland[4]=new Mittelfeldspieler(""Markus Meier"", 34, 0.7);
+	deutschland[5]=new Mittelfeldspieler(""Schebastian Schulz"", 58, 14.2);
+	deutschland[6]=new Mittelfeldspieler(""Muerk Mueller"", 8, 6.6);
+	deutschland[7]=new Abwehrspieler(""Simon Smidt"", 47, 3);
+	deutschland[8]=new Abwehrspieler(""Reinhard Reinhardt"", 18, 0.04);
+	deutschland[9]=new Abwehrspieler(""Robin Roland"", 102, 0.1);
+	deutschland[10]=new Mittelfeldspieler(""Axel Axt"", 34, 0.12);
+	
+	crisnlwa[0]=new Torwart(""Dsennor Sruios"", 3, 1.9);
+	crisnlwa[1]=new Sturmspieler(""Dsri Yrusf"", 45, 0.6);
+	crisnlwa[2]=new Sturmspieler(""Bdrsai Pxitnv"", 42, 0.2);
+	crisnlwa[3]=new Sturmspieler(""Vvien Grixve"", 21, 0.4);
+	crisnlwa[4]=new Sturmspieler(""Qdeme Bestawlek"", 19, 0.1);
+	crisnlwa[5]=new Sturmspieler(""Hsedir Ejohsn"", 71, 0.5);
+	crisnlwa[6]=new Sturmspieler(""Beonhid Zelvisnl"",13, 0.1);
+	crisnlwa[7]=new Sturmspieler(""Tdeovms Krisvt"", 17, 0.1);
+	crisnlwa[8]=new Mittelfeldspieler(""Rpylgm Lengusm"", 89, 6);
+	crisnlwa[9]=new Abwehrspieler(""Gaein Bedks"", 44, 0.2);
+	crisnlwa[10]=new Abwehrspieler(""Heumsang Peendk"", 24, 0.01);
+
+	deutschland[1].geburtstagFeiern();
+	
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+    System.out.println();
+    ausgeben(crisnlwa);
+    System.out.println();
+    fussballspielen(deutschland, crisnlwa);
+  }
+
+  public static double roteKartenZaehlen(Fussballspieler[] mannschaft){
+	  double roteKarten=0;
+    for (int i= 0; i<mannschaft.length; i++){
+		if(mannschaft[i] instanceof Abwehrspieler){
+			roteKarten+= mannschaft[i].getAnzahlRoteKartenJeSpiel();
+		}
+	}
+	return roteKarten;
+  }
+  /*Kommentar roteKartenZaehlen: Die Klasse ruft die richtige Methode auf, 
+  weil zunächst die Abwehrspieler heraussortiert werden, und nur für sie die Methode getAnzahlRoteKartenJeSpiel aufgerufenwird.
+   In der Klasse Abwehrspieler befindet sich eine Methode getAnzahlRoteKartenJeSpiel, die die Methode aus der Superklasse überschreibt. 
+   */
+  
+  public static void ausgeben(Fussballspieler[] mannschaft){
+    for (int i=0; i<mannschaft.length; i++){
+		System.out.println(mannschaft[i].toString()+""\n"");
+	}
+  }
+  /*Kommentar ausgeben: Die Klasse Fussballspieler und jede ihrer Unterklassen hat eine eigene toString-Methode. Wird das Programm ausgeführt und festgestellt, dass 
+  an einer Fussballspieler-Objektvariablen ein Objekt einer Unterklasse hängt, wird die toString-Methode der Unterklasse ausgeführt, denn die toString-Variable der
+  Superklasse wird überschrieben.*/
+  
+  public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+    double staerke1=(paesseZaehlen(mannschaft1)*toreZaehlen(mannschaft1)-gegentoreZaehlen(mannschaft1))/roteKartenZaehlen(mannschaft1);
+	double staerke2=(paesseZaehlen(mannschaft2)*toreZaehlen(mannschaft2)-gegentoreZaehlen(mannschaft2))/roteKartenZaehlen(mannschaft2);
+	if (staerke1<staerke2){
+		System.out.println(""Mannschaft 1 gewinnt!"");
+		}else{
+			if (staerke1==staerke2){
+				System.out.println(""Unentschieden!"");
+				}else{
+					System.out.println(""Mannschaft 2 gewinnt!"");
+					}
+		}
+ } 
+  
+  
+  public static double toreZaehlen(Fussballspieler[] mannschaft){
+	double tore=0;
+	for (int i=0; i<mannschaft.length; i++){
+		if(mannschaft[i]instanceof Sturmspieler){
+			tore+=mannschaft[i].getToreJeSpiel();
+		}
+	}
+	return tore;
+  }
+  
+  public static double paesseZaehlen(Fussballspieler[] mannschaft){
+	double paesse=0;
+	  	for (int i=0; i<mannschaft.length; i++){
+			if(mannschaft[i] instanceof Mittelfeldspieler){
+			paesse+=mannschaft[i].getPaesseJeSpiel();
+			}
+		}
+	return paesse;
+  }
+  
+  public static double gegentoreZaehlen(Fussballspieler[] mannschaft){
+	  double gegentore=0;
+	for (int i=0; i<mannschaft.length; i++){
+		if(mannschaft[i]instanceof Torwart){
+		gegentore+=mannschaft[i].getGegentoreJeSpiel();
+		}
+	}
+	return gegentore;
+  }
+}",//
+Engelbrecht,Philip,philip.engelbrecht@campus.tu-berlin.de,Beendet,"10. Januar 2022  10:28","16. Januar 2022  23:59","6 Tage 13 Stunden","17,75","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
+_""__Tell your children not to walk my way""_
+ausgegeben.","Es wird die Methode der Sub-Klasse aufgerufen",Object,"Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","die Klasse Hund erbt von der Klasse Tier",extends,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {13. <sub>spannweite:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {12. <sub>schnabelfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {4. <sub>double} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+// Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
+
+public class TestMannschaft{
+
+	
+	
+  public static void main(String[] args){
+    Fussballspieler [] deutschland = new Fussballspieler[11];
+	Fussballspieler [] italien = new Fussballspieler[11];
+	
+    // Arrays definieren
+	
+
+	Fussballspieler a = new Abwehrspieler (""a"", 21, 6.5);
+	Fussballspieler b = new Abwehrspieler (""b"", 22, 2.5);
+	Fussballspieler c = new Abwehrspieler (""c"", 23, 5.3);
+	Fussballspieler d = new Mittelfeldspieler (""d"", 24, 34.2);
+	Fussballspieler e = new Mittelfeldspieler (""e"", 25, 6.8);
+	Fussballspieler f = new Mittelfeldspieler (""f"", 26, 54.3);
+	Fussballspieler g = new Mittelfeldspieler (""g"", 27, 33.0);
+	Fussballspieler h = new Sturmspieler (""h"", 28, 0.2);
+	Fussballspieler i = new Sturmspieler (""i"", 29, 1.5);
+	Fussballspieler j = new Sturmspieler (""j"", 18, 3.7);
+	Fussballspieler k = new Torwart (""k"", 25, 2.4);
+	
+	Fussballspieler m = new Abwehrspieler (""m"", 31, 5.5);
+	Fussballspieler n = new Abwehrspieler (""n"", 32, 5.1);
+	Fussballspieler o = new Abwehrspieler (""o"", 35, 3.3);
+	Fussballspieler p = new Mittelfeldspieler (""p"", 41, 12.2);
+	Fussballspieler q = new Mittelfeldspieler (""q"", 26, 43.8);
+	Fussballspieler r = new Mittelfeldspieler (""r"", 19, 16.3);
+	Fussballspieler s = new Mittelfeldspieler (""s"", 35, 27.0);
+	Fussballspieler t = new Sturmspieler (""t"", 36, 2.4);
+	Fussballspieler u = new Sturmspieler (""u"", 27, 2.5);
+	Fussballspieler v = new Sturmspieler (""v"", 22, 0.9);
+	Fussballspieler w = new Torwart (""w"", 17, 3.4);
+	
+	
+	//Werte einfügen
+	
+	deutschland[0] = a;
+	deutschland[1] = b;
+	deutschland[2] = c;
+	deutschland[3] = d;
+	deutschland[4] = e;
+	deutschland[5] = f;
+	deutschland[6] = g;
+	deutschland[7] = h;
+	deutschland[8] = i;
+	deutschland[9] = j;
+	deutschland[10] = k;
+	
+	italien[0] = m;
+	italien[1] = n;
+	italien[2] = o;
+	italien[3] = p;
+	italien[4] = q;
+	italien[5] = r;
+	italien[6] = s;
+	italien[7] = t;
+	italien[8] = u;
+	italien[9] = v;
+	italien[10] = w;
+	
+    d.geburtstagFeiern();
+
+
+
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+    System.out.println();
+    ausgeben(deutschland);
+    System.out.println();
+    fussballspielen(deutschland, italien);
+  }
+
+  public static double roteKartenZaehlen(Fussballspieler[] Mannschaft){
+	double anzahl = 0;
+    for (int i = 0; i<(Mannschaft.length); i++) {
+		if (Mannschaft[i] instanceof Abwehrspieler) {
+			anzahl += ((Abwehrspieler)Mannschaft[i]).getAnzahlRoteKartenJeSpiel();
+		}
+	}
+	return anzahl;
+	/*
+	Bei roteKartenZaehlen spielt Polymorphie ebenfalls eine entscheidene Rolle. In Zeile 81 nutzte ich die Möglichkeit explizit anzugeben, das der Befehl aus der Klasse ""Abwehrspieler"" kommen soll.
+	Dadurch wusste der Compiler, das der Befehl in ""Abwehrspieler"" steht und nicht in Fussballspieler.	
+	*/
+  }
+  
+  
+  public static void ausgeben(Fussballspieler[] Mannschaft){
+    for (int i = 0; i < Mannschaft.length; i++) {
+		System.out.println(Mannschaft[i]);		
+	}
+	/*
+	Bei ""ausgeben"" spielt Polymorphie eine große Rolle, da der indirekt genutzte ""toString"" Befehl, sowohl in den Subklassen als auch der Superklasse implementiert ist. 
+	Ich nutze hier die Meschanik des überschreibens einer Methode und greife damit auf die Methode der Subklasse zu. 	
+	*/
+  }
+  public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+	double bilanzA = 0, bilanzB = 0;
+	for (int i = 0; i < mannschaft1.length; i++){
+		if (mannschaft1[i] instanceof Abwehrspieler) {
+			bilanzA -= ((Abwehrspieler)mannschaft1[i]).getAnzahlRoteKartenJeSpiel();
+		} else if (mannschaft1[i] instanceof Mittelfeldspieler) {
+			bilanzA += (((Mittelfeldspieler)mannschaft1[i]).getPaesseJeSpiel());
+		} else if (mannschaft1[i] instanceof Sturmspieler) {
+			bilanzA += ((Sturmspieler)mannschaft1[i]).getToreJeSpiel();
+		} else if (mannschaft1[i] instanceof Torwart) {
+			bilanzA -= (((Torwart)mannschaft1[i]).getGegentoreJeSpiel());
+		}
+	}
+	
+		for (int i = 0; i < mannschaft2.length; i++){
+		if (mannschaft2[i] instanceof Abwehrspieler) {
+			bilanzB -= ((Abwehrspieler)mannschaft2[i]).getAnzahlRoteKartenJeSpiel();
+		} else if (mannschaft2[i] instanceof Mittelfeldspieler) {
+			bilanzB += (((Mittelfeldspieler)mannschaft2[i]).getPaesseJeSpiel());
+		} else if (mannschaft2[i] instanceof Sturmspieler) {
+			bilanzB += ((Sturmspieler)mannschaft2[i]).getToreJeSpiel();
+		} else if (mannschaft2[i] instanceof Torwart) {
+			bilanzB -= (((Torwart)mannschaft2[i]).getGegentoreJeSpiel());
+		}
+	}
+
+	
+	if (bilanzA > bilanzB) {
+		System.out.println(""Mannschaft 1 gewinnt!"");
+	} else if (bilanzA < bilanzB) {
+		System.out.println(""Mannschaft 2 gewinnt!"");
+	} else {
+		System.out.println(""Unentschieden!"");
+	}
+  }
+}",//
+Thomas,"Fabian Alexander",f.thomas@campus.tu-berlin.de,Beendet,"10. Januar 2022  11:19","16. Januar 2022  23:59","6 Tage 12 Stunden","11,84","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Zeile 6,7 : super(); müsste vor x=0; stehen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Father
+__Do you wanna bang heads with me?""_
+ausgegeben.",extends,"die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {8. Elefant} Dropzone 7 -> {9. <sub>ruessellaenge:} Dropzone 8 -> {4. <sub>double} Dropzone 9 -> {5. Saeugetier} Dropzone 10 -> {7. <sub>fellfarbe:} Dropzone 11 -> {3. <sub>String} Dropzone 12 -> {14. Papagei} Dropzone 13 -> {15. <sub>kannSprechen:} Dropzone 14 -> {11. Vogel} Dropzone 15 -> {12. <sub>schnabelfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {16. <sub>boolean} Dropzone 18 -> {13. <sub>spannweite:} Dropzone 19 -> {4. <sub>double} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft 
+{
+	
+	public static void main(String[] args) 
+	{
+		
+		Fussballspieler[] delirium = new Fussballspieler[11];
+		
+		Fussballspieler[] delarium = new Fussballspieler[11];
+
+		delirium[0] = new Torwart(""Schulle"", 23, 0.7);
+		
+		delirium[1] = new Abwehrspieler(""Becks"", 28, 2.0);
+		
+		delirium[2] = new Abwehrspieler(""Jever"", 21, 0.8);
+		
+		delirium[3] = new Abwehrspieler(""Augustiner"", 26, 0.3);
+		
+		delirium[4] = new Abwehrspieler(""Insel"", 22, 0.5);
+		
+		delirium[5] = new Mittelfeldspieler(""Wein"", 35, 18);
+		
+		delirium[6] = new Mittelfeldspieler(""Stephan"", 26, 0.35);
+		
+		delirium[7] = new Mittelfeldspieler(""Faxe"", 29, 0.86);
+		
+		delirium[8] = new Sturmspieler(""KöPi"", 23, 0.66);
+		
+		delirium[9] = new Sturmspieler(""Flens"", 26, 0.13);
+		
+		delirium[10] = new Sturmspieler(""Duckstein"", 28, 0.9);
+
+		delarium[0] = new Torwart(""IronMaiden"", 22, 666);
+		
+		delarium[1] = new Abwehrspieler(""Metallica"", 34, 0.8);
+		
+		delarium[2] = new Abwehrspieler(""Glenfiddich"", 23, 0.93);
+		
+		delarium[3] = new Abwehrspieler(""Laphraig"", 13, 0.23);
+		
+		delarium[4] = new Mittelfeldspieler(""Jameson"", 12, 0.05);
+		
+		delarium[5] = new Mittelfeldspieler(""Gorbaschow"", 34, 0.9);
+		
+		delarium[6] = new Mittelfeldspieler(""Kindl"", 22, 34);
+		
+		delarium[7] = new Mittelfeldspieler(""Danzig"", 26, 45);
+		
+		delarium[8] = new Mittelfeldspieler(""BlackSabbath"", 29, 66);
+		
+		delarium[9] = new Sturmspieler(""Slayer"", 24, 2.5);
+		
+		delarium[10] = new Sturmspieler(""Death"", 21, 3.0);
+
+		delarium[10].geburtstagFeiern();
+
+		System.out.println(""Rote Karten: "" + roteKartenZaehlen(delirium));
+		
+		System.out.println();
+		
+		ausgeben(delirium);
+		
+		System.out.println();
+		
+		fussballspielen(delirium, delarium);
+	}
+
+	public static double roteKartenZaehlen(Fussballspieler[] delarium) 
+	{
+		double roteKarten = 0.0;
+		
+		for (Fussballspieler x : delarium) 
+		{
+			
+			if (x instanceof Abwehrspieler) 
+			{
+				roteKarten += ((Abwehrspieler)x).getAnzahlRoteKartenJeSpiel();
+			}
+		}
+		return roteKarten;
+
+	}
+
+	public static void ausgeben(Fussballspieler[] delarium) 
+	{
+		for (int i = 0; i < delarium.length; i++) {
+			
+			System.out.println(delarium[i]);
+		}
+	}
+
+	public static void fussballspielen(Fussballspieler[] delirium, Fussballspieler[] delarium) 
+	{
+		double spielstaerke1 = 0.0;
+		
+		for (Fussballspieler x : delirium) 
+		{
+			if (x instanceof Torwart)
+				spielstaerke1 -= ((Torwart) x).getGegentoreJeSpiel();
+			
+			else if (x instanceof Abwehrspieler)
+				spielstaerke1 -= 4 * ((Abwehrspieler) x).getAnzahlRoteKartenJeSpiel();
+			
+			else if (x instanceof Mittelfeldspieler)
+				spielstaerke1 += 0.1 * ((Mittelfeldspieler) x).getPaesseJeSpiel();
+			
+			else if (x instanceof Sturmspieler)
+				spielstaerke1 += 0.8 * ((Sturmspieler) x).getToreJeSpiel();
+		}
+		
+		double spielstaerke2 = 0.0;
+		
+		for (Fussballspieler x : delarium) 
+		{
+			if (x instanceof Torwart)
+				spielstaerke2 -= ((Torwart) x).getGegentoreJeSpiel();
+			
+			else if (x instanceof Abwehrspieler)
+				spielstaerke2 -= 4 * ((Abwehrspieler) x).getAnzahlRoteKartenJeSpiel();
+			
+			else if (x instanceof Mittelfeldspieler)
+				spielstaerke2 += 0.1 * ((Mittelfeldspieler) x).getPaesseJeSpiel();
+			
+			else if (x instanceof Sturmspieler)
+				spielstaerke2 += 0.8 * ((Sturmspieler) x).getToreJeSpiel();
+			
+		}
+
+		if (spielstaerke1 < spielstaerke2)
+			System.out.println(""Mannschaft 1 gewinnt!"");
+		
+		else if (spielstaerke1 == spielstaerke2)
+			System.out.println(""Unentschieden!"");
+		
+		else
+			System.out.println(""Mannschaft 2 gewinnt!"");
+		
+	}
+
+	
+}",//
+Erlemann,Tom-Julien,tom-julien.erlemann@campus.tu-berlin.de,Beendet,"10. Januar 2022  16:46","16. Januar 2022  22:22","6 Tage 5 Stunden","8,68","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",extends,Object,"Zeile 1 : Klasse A hat keinen Konstruktor","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+    public static void main(String[] args) {
+
+        //Arrays
+
+        Fussballspieler deutschland[] = new Fussballspieler[11];
+        Fussballspieler argentinien[] = new Fussballspieler[11];
+
+        //Objects
+
+        Torwart kahn = new Torwart(""oliver Kahn"",45,  1.6);
+        Torwart kepa = new Torwart(""Kepa"",22,  2.6);
+        Abwehrspieler diaz = new Abwehrspieler(""Diaz"",23,  0.3);
+        Abwehrspieler rüdiger = new Abwehrspieler(""Rüdiger"",22,  0.2);
+        Abwehrspieler bense = new Abwehrspieler(""Bense"",30,  2.3);
+        Abwehrspieler varane = new Abwehrspieler(""Varane"",23,  0.1);
+        Abwehrspieler lahm = new Abwehrspieler(""Lahm"",39,  0.1);
+        Abwehrspieler hernandez = new Abwehrspieler(""Hernandez"",27,  0.5);
+        Abwehrspieler kimmich = new Abwehrspieler(""Joshi"",27,  0.2);
+        Abwehrspieler cancelo = new Abwehrspieler(""Cancelo"",23,  0.9);
+        Mittelfeldspieler tom = new Mittelfeldspieler(""Tom"",22,  23.5);
+        Mittelfeldspieler gusi = new Mittelfeldspieler(""Gusi"",32,  21.5);
+        Mittelfeldspieler debruyne = new Mittelfeldspieler(""De Bruyne"",29,  45.5);
+        Mittelfeldspieler gore = new Mittelfeldspieler(""Goretzka"",27,  20.5);
+        Mittelfeldspieler michels = new Mittelfeldspieler(""Michels"",21,  8.5);
+        Mittelfeldspieler rolf = new Mittelfeldspieler(""Rolf"",22,  1.5);
+        Mittelfeldspieler silva = new Mittelfeldspieler(""Tom"",33,  50.2);
+        Mittelfeldspieler mueller = new Mittelfeldspieler(""Tom"",22,  34.2);
+        Sturmspieler lewa = new Sturmspieler(""Lewandoski"",31,  2.2);
+        Sturmspieler messi = new Sturmspieler(""Messi"",31,  3.2);
+        Sturmspieler ronaldo = new Sturmspieler(""Ronaldo"",31,  3.0);
+        Sturmspieler gordi = new Sturmspieler(""Teichert"",31,  0.2);
+
+        deutschland[0] = kahn;
+        deutschland[1] = rüdiger;
+        deutschland[2] = diaz;
+        deutschland[3] = lahm;
+        deutschland[4] = hernandez;
+        deutschland[5] = tom;
+        deutschland[6] = gusi;
+        deutschland[7] = debruyne;
+        deutschland[8] = michels;
+        deutschland[9] = gordi;
+        deutschland[10] = messi;
+
+        argentinien[0] = kepa;
+        argentinien[1] = bense;
+        argentinien[2] = varane;
+        argentinien[3] = kimmich;
+        argentinien[4] = cancelo;
+        argentinien[5] = gore;
+        argentinien[6] = rolf;
+        argentinien[7] = silva;
+        argentinien[8] = mueller;
+        argentinien[9] = lewa;
+        argentinien[10] = ronaldo;
+
+        //Tests
+        gordi.geburtstagFeiern();
+        System.out.println(""Rote Karten: "" + roteKartenZaehlen(argentinien));
+
+        System.out.println();
+        ausgeben(deutschland);
+        System.out.println();
+        fussballspielen(deutschland,argentinien);
+    }
+
+    public static double roteKartenZaehlen(Fussballspieler[] deutschland) {
+        double roteKarten = 0d;
+        for (int i = 0; i < deutschland.length; i++) {
+            if (deutschland[i] instanceof Abwehrspieler) {
+                roteKarten += ((Abwehrspieler) deutschland[i]).getanzahlRoteKartenJeSpiel();
+            } else {
+
+            }
+
+        }
+        return roteKarten;
+    }
+    public static void ausgeben(Fussballspieler[] deutschland) {
+        for (int i = 0; i < deutschland.length; i++) {
+            if (deutschland[i] instanceof Abwehrspieler) {
+                System.out.println(deutschland[i].toString());
+            } else if (deutschland[i] instanceof Mittelfeldspieler) {
+                System.out.println(deutschland[i].toString());
+            } else if (deutschland[i] instanceof Torwart) {
+                System.out.println(deutschland[i].toString());
+            } else if (deutschland[i] instanceof Sturmspieler) {
+                System.out.println(deutschland[i].toString());
+            }
+        }
+    }
+    public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+        double roteKarten1=0d;
+        double paesse1=0d;
+        double tore1=0d;
+        double gegenTore1=0d;
+
+        for (int i = 0; i < mannschaft1.length; i++) {
+
+
+            if (mannschaft1[i] instanceof Abwehrspieler) {
+                roteKarten1 += ((Abwehrspieler) mannschaft1[i]).getanzahlRoteKartenJeSpiel();
+            } else if (mannschaft1[i] instanceof Mittelfeldspieler) {
+                paesse1 += ((Mittelfeldspieler) mannschaft1[i]).getpaesseJeSpiel();
+            } else if (mannschaft1[i] instanceof Torwart) {
+                gegenTore1 += ((Torwart) mannschaft1[i]).getGegentoreJeSpiel();
+            } else if (mannschaft1[i] instanceof Sturmspieler) {
+                tore1 += ((Sturmspieler) mannschaft1[i]).gettoreJeSpiel();
+            }
+            else if(i==10){
+                double win=(20*tore1)-(20*gegenTore1)-5*roteKarten1+paesse1;
+            }
+        }
+        double roteKarten2=0d;
+        double paesse2=0d;
+        double tore2=0d;
+        double gegenTore2=0d;
+
+        for (int i = 0; i < mannschaft2.length; i++) {
+
+
+            if (mannschaft1[i] instanceof Abwehrspieler) {
+                roteKarten2 += ((Abwehrspieler) mannschaft2[i]).getanzahlRoteKartenJeSpiel();
+            } else if (mannschaft2[i] instanceof Mittelfeldspieler) {
+                paesse2 += ((Mittelfeldspieler) mannschaft2[i]).getpaesseJeSpiel();
+            } else if (mannschaft2[i] instanceof Torwart) {
+                gegenTore2 += ((Torwart) mannschaft2[i]).getGegentoreJeSpiel();
+            } else if (mannschaft2[i] instanceof Sturmspieler) {
+                tore2 += ((Sturmspieler) mannschaft2[i]).gettoreJeSpiel();
+            }
+        }
+        //Berechnungsformel
+        double man1=(20*tore1)-(20*gegenTore1)-(5*roteKarten1)+paesse1;
+        double man2=(20*tore2)-(20*gegenTore2)-(5*roteKarten2)+paesse2;
+
+        if(man1>man2){
+            System.out.println(""Mannschaft 1 gewinnt!"");
+        }
+        else if(man1==man2){
+            System.out.println(""Unentschieden!"");
+        }
+        else if(man1<man2){
+            System.out.println(""Mannschaft 2 gewinnt!"");
+        }
+
+    }
+
+}",//
+Nguyen,"Hoang Le",h.nguyen.3@campus.tu-berlin.de,Beendet,"10. Januar 2022  19:07","16. Januar 2022  23:43","6 Tage 4 Stunden","10,38","Es wird die Methode der Sub-Klasse aufgerufen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Java,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
+_""__Tell your children not to walk my way""_
+ausgegeben.",super,"Zeile 1 : Klasse A hat keinen Konstruktor","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+// Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
+
+public class TestMannschaft{
+  public static void main(String[] args){
+      
+     // Arrays definieren
+     
+     
+    //Werte einfügen
+
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+    System.out.println();
+    ausgeben(......);
+    System.out.println();
+    fussballspielen(................);
+  }
+
+  public static double roteKartenZaehlen(.................){
+    
+   /* bitte implementieren */
+  }
+  public static void ausgeben(...){
+    
+   /* bitte implementieren */
+  }
+  public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+    
+   /* bitte implementieren */
+  }
+}",//
+Panchanathan,Arrsana,a.panchanathan@campus.tu-berlin.de,Beendet,"10. Januar 2022  20:47","16. Januar 2022  22:32","6 Tage 1 Stunde","19,86","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+
+	public static void main(String args[]) {
+		
+		Fussballspieler[] deutschland = {
+			     new Torwart(""Neuer"",1,2),
+			     new Abwehrspieler(""Rüdiger"",0,3),
+			     new Abwehrspieler(""Süle"",8,4),
+			     new Abwehrspieler(""Davies"",0,5),
+			     new Abwehrspieler(""Meuinier"",20,5),
+			     new Mittelfeldspieler(""Reus"",5,6),
+			     new Mittelfeldspieler(""Kimmich"",2,6),
+			     new Mittelfeldspieler(""Müller"",4,7),
+			     new Sturmspieler(""Ronaldo"",4,7),
+			     new Sturmspieler(""Mbappe"",0,8),
+			     new Sturmspieler(""Haaland"",2,8)
+		};	
+		
+				
+				
+		
+		Fussballspieler[] mannschaft2 = {
+				new Torwart(""Mendy"",6,6),
+				new Abwehrspieler(""Alba"",2,6),
+				new Abwehrspieler(""Pique"",1,6),
+				new Abwehrspieler(""Marquihnos"",20,6),
+				new Abwehrspieler(""Hakimi"",0,6),
+				new Mittelfeldspieler(""Xavi"",3,6),
+				new Mittelfeldspieler(""Iniesta"",3,6),
+				new Mittelfeldspieler(""Busquets"",0,6),
+				new Sturmspieler(""Neymar"",0,6),
+				new Sturmspieler(""Suarez"",1,6),
+				new Sturmspieler(""Messi"",0,6)
+		};
+		
+		mannschaft2[0].geburtstagFeiern();
+		System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+		System.out.println();
+		ausgeben(mannschaft2);
+		System.out.println();
+		fussballspielen(deutschland, mannschaft2);
+		
+		
+	}
+	
+	public static double roteKartenZaehlen(Fussballspieler[] mannschaft1) {
+		double anzahlRoteKartenJeSpiel = 0;
+		for(int i = 0; i<mannschaft1.length; i++){
+            if (mannschaft1[i] instanceof Abwehrspieler) {
+            	anzahlRoteKartenJeSpiel += ((Abwehrspieler)mannschaft1[i]).getAnzahlRoteKartenJeSpiel();
+		    } 
+		}
+		return anzahlRoteKartenJeSpiel;
+	}
+	public static void ausgeben (Fussballspieler[] mannschaft1) {
+		for(int i = 0; i<mannschaft1.length; i++){
+		   System.out.println( mannschaft1[i].toString());
+		} 
+	}
+	public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+		double spielstaerkemannschaft1 = 0;
+		double spielstaerkemannschaft2 = 0;
+		
+		for(int i = 0; i<mannschaft1.length; i++){
+            if (mannschaft1[i] instanceof Torwart) {
+            	spielstaerkemannschaft1 -= ((Torwart)mannschaft1[i]).getGegentoreJeSpiel();
+            } else if (mannschaft1[i] instanceof Mittelfeldspieler) {
+            	spielstaerkemannschaft1 += ((Mittelfeldspieler)mannschaft1[i]).getPaesseJeSpiel();
+            }else if (mannschaft1[i] instanceof Abwehrspieler) {
+            	spielstaerkemannschaft1 -= ((Abwehrspieler)mannschaft1[i]).getAnzahlRoteKartenJeSpiel();
+		    } else if (mannschaft1[i] instanceof Sturmspieler) {
+        	    spielstaerkemannschaft1 += ((Sturmspieler)mannschaft1[i]).getToreJeSpiel();
+		    } 
+		}
+            for(int i = 0; i<mannschaft2.length; i++){
+                if (mannschaft2[i] instanceof Torwart) {
+                	spielstaerkemannschaft2 -= ((Torwart)mannschaft2[i]).getGegentoreJeSpiel();
+                } else if (mannschaft2[i] instanceof Mittelfeldspieler) {
+                	spielstaerkemannschaft2 += ((Mittelfeldspieler)mannschaft2[i]).getPaesseJeSpiel();
+                }else if (mannschaft2[i] instanceof Abwehrspieler) {
+                	spielstaerkemannschaft2 -= ((Abwehrspieler)mannschaft2[i]).getAnzahlRoteKartenJeSpiel();
+    		    } else if (mannschaft2[i] instanceof Sturmspieler) {
+            	    spielstaerkemannschaft2 += ((Sturmspieler)mannschaft2[i]).getToreJeSpiel();
+    		}
+         }
+		
+		if (spielstaerkemannschaft1>spielstaerkemannschaft2 ) {
+			System.out.println(""Mannschaft 1 gewinnt!"");
+		}
+		else if (spielstaerkemannschaft1 == spielstaerkemannschaft2) {
+			System.out.println(""Unentschieden!"");
+		}
+		else if (spielstaerkemannschaft1 < spielstaerkemannschaft2)
+			System.out.println(""Mannschaft 2 gewinnt!"");
+	}
+	
+}",//
+Schmid,Maximilian,maximilian.schmid@campus.tu-berlin.de,Beendet,"10. Januar 2022  21:34","16. Januar 2022  23:33","6 Tage 1 Stunde","20,00","die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen",super,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.",Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+// Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
+
+public class TestMannschaft{
+	public static void main(String[] args){
+	  
+		// Arrays definieren
+		Fussballspieler[] deutschland = new Fussballspieler[11];
+		Fussballspieler[] ausland = new Fussballspieler[11];
+		
+		deutschland[0] = new Torwart(""Mann1"",21,11);
+		deutschland[1] = new Mittelfeldspieler(""Mann2"",22,12);
+		deutschland[2] = new Mittelfeldspieler(""Mann3"",23,13);
+		deutschland[3] = new Mittelfeldspieler(""Mann4"",24,14);
+		deutschland[4] = new Abwehrspieler(""Mann5"",25,15.5);
+		deutschland[5] = new Abwehrspieler(""Mann6"",26,16.02);
+		deutschland[6] = new Abwehrspieler(""Mann7"",27,17);
+		deutschland[7] = new Sturmspieler(""Mann8"",28,18);
+		deutschland[8] = new Sturmspieler(""Mann9"",29,19);
+		deutschland[9] = new Sturmspieler(""Mann10"",30,20);
+		deutschland[10] = new Sturmspieler(""Mann11"",31,21);
+		
+		ausland[0] = new Torwart(""Frau1"",21,12);
+		ausland[1] = new Mittelfeldspieler(""Frau2"",22,12);
+		ausland[2] = new Mittelfeldspieler(""Frau3"",23,13);
+		ausland[3] = new Mittelfeldspieler(""Frau4"",24,14);
+		ausland[4] = new Abwehrspieler(""Frau5"",25,15);
+		ausland[5] = new Abwehrspieler(""Frau6"",26,16);
+		ausland[6] = new Abwehrspieler(""Frau7"",27,17);
+		ausland[7] = new Sturmspieler(""Frau8"",28,18);
+		ausland[8] = new Sturmspieler(""Frau9"",29,19);
+		ausland[9] = new Sturmspieler(""Frau10"",30,20);
+		ausland[10] = new Sturmspieler(""Frau11"",31,21);
+		
+		deutschland[0].geburtstagFeiern();
+
+		System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+		System.out.println();
+		ausgeben(deutschland);
+		System.out.println();
+		fussballspielen(deutschland, ausland);
+	}
+
+	public static double roteKartenZaehlen(Fussballspieler[] mannschaft){
+		// Polymorphie: Typumwandlung erforderlich, da Spieler nicht vom Typ Abwehrspieler, 
+		// sondern der Oberklasse Fussballpieler ist
+		double roteKarten = 0;
+		for(int i = 0; i<mannschaft.length; i++){
+			if (mannschaft[i] instanceof Abwehrspieler){
+				roteKarten += ((Abwehrspieler)mannschaft[i]).getAnzahlRoteKartenJeSpiel();
+			}
+		}
+		return roteKarten;
+	}
+	public static void ausgeben(Fussballspieler[] mannschaft){
+		// Polymorphie: Hier wird die Methode der Unterklasse aufgerufen, aber nicht die der originalen Klasse Object
+		// da diese von Fussballspieler und den Unterklassen überschrieben wurde
+		for(int i = 0; i<mannschaft.length; i++){
+			System.out.println(mannschaft[i].toString());
+		}
+	}
+	public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+		double gegentore1 = 0;
+		double gegentore2 = 0;
+		double tore1 = 0;
+		double tore2 = 0;
+		double roteKarten1 = 0;
+		double roteKarten2 = 0;
+		double paesse1 = 0;
+		double paesse2 = 0;
+		
+		
+		for(int i = 0; i<mannschaft1.length; i++){
+			if (mannschaft1[i] instanceof Torwart){
+				gegentore1 += ((Torwart)mannschaft1[i]).getGegentoreJeSpiel();
+			} else if (mannschaft1[i] instanceof Sturmspieler){
+				tore1 += ((Sturmspieler)mannschaft1[i]).getToreJeSpiel();
+			} else if (mannschaft1[i] instanceof Mittelfeldspieler){
+				paesse1 += ((Mittelfeldspieler)mannschaft1[i]).getPaesseJeSpiel();
+			} else if (mannschaft1[i] instanceof Abwehrspieler){
+				roteKarten1 += ((Abwehrspieler)mannschaft1[i]).getAnzahlRoteKartenJeSpiel();
+			}
+		}
+		
+		for(int i = 0; i<mannschaft2.length; i++){
+			if (mannschaft2[i] instanceof Torwart){
+				gegentore2 += ((Torwart)mannschaft2[i]).getGegentoreJeSpiel();
+			} else if (mannschaft2[i] instanceof Sturmspieler){
+				tore2 += ((Sturmspieler)mannschaft2[i]).getToreJeSpiel();
+			} else if (mannschaft2[i] instanceof Mittelfeldspieler){
+				paesse2 += ((Mittelfeldspieler)mannschaft2[i]).getPaesseJeSpiel();
+			} else if (mannschaft2[i] instanceof Abwehrspieler){
+				roteKarten2 += ((Abwehrspieler)mannschaft2[i]).getAnzahlRoteKartenJeSpiel();
+			}
+		}
+		
+		if (tore1+paesse1-gegentore1-roteKarten1 > tore2+paesse2-gegentore2-roteKarten2){
+			System.out.println(""Mannschaft 1 gewinnt!"");
+		} else if (tore1-gegentore1 < tore2-gegentore2){
+			System.out.println(""Mannschaft 2 gewinnt!"");
+		} else {
+			System.out.println(""Unentschieden!"");
+		}
+	}
+}",//
+Schulz,Justin,justin.schulz@campus.tu-berlin.de,Beendet,"11. Januar 2022  19:09","13. Januar 2022  23:05","2 Tage 3 Stunden","11,65","Zeile 6,7 : super(); müsste vor x=0; stehen",Object,"die Klasse Hund erbt von der Klasse Tier",super,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Father
+__Do you wanna bang heads with me?""_
+ausgegeben.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+  public static void main(String[] args){
+      
+     // Arrays definieren
+     String[] Namen = {""Meyer"", ""Mueller"",""Gerdes"",""Eilers"",""Janssen"",""Schroeder"",""Ahlers"",""Bruns"",""Behrens"",""Schmidt"",""Welscher""};
+	 Fussballspieler[] deutschland = new Fussballspieler[11]; 
+	 Fussballspieler[] Fussballspieler2 = new Fussballspieler[11];
+	 
+	 for(int i=0; i < 10; i++){
+		 if(i <= 2){
+		 deutschland[i] = new Abwehrspieler(Namen[i], (int)(Math.random()*32+18), Math.random()*1);
+		 Fussballspieler2[i] = new Abwehrspieler(Namen[10-i], (int)(Math.random()*32+18), Math.random()*1);
+		 }
+		 if(i <= 5 && i > 2){
+		 deutschland[i] = new Mittelfeldspieler(Namen[i], (int)(Math.random()*32+18), Math.random()*200);
+		 Fussballspieler2[i] = new Mittelfeldspieler(Namen[10-i], (int)(Math.random()*32+18), Math.random()*250); 
+		 }
+		 if(i > 5){
+		 deutschland[i] = new Sturmspieler(Namen[i], (int)(Math.random()*32+18), Math.random()*2);
+		 Fussballspieler2[i] = new Sturmspieler(Namen[10-i], (int)(Math.random()*32+18), Math.random()*1); 
+		}
+	 }
+	 deutschland[10] = new Torwart(Namen[9], 25, 1.34);
+	 Fussballspieler2[10] = new Torwart(Namen[0],20, 2.2);
+	 
+     deutschland[2].geburtstagFeiern();
+		 
+     
+    //Werte einfügen
+
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+    System.out.println();
+    ausgeben(deutschland);
+    System.out.println();
+    fussballspielen(deutschland, Fussballspieler2);
+  }
+
+  public static double roteKartenZaehlen(Fussballspieler[] Fussballspieler){
+    double summe=0;
+	for(int i = 0; i < Fussballspieler.length; i++){
+		if(Fussballspieler[i] instanceof Abwehrspieler){
+			
+			summe += Fussballspieler[i].getAnzahlRoteKartenJeSpiel();
+			
+		}
+	}return summe;
+   //Solange es ein Abwehrspieler ist wird der wert =/= 0 zurückgegeben.
+}
+  public static void ausgeben(Fussballspieler[] Fussballspieler){
+    for(int i = 0; i < Fussballspieler.length; i++){
+		System.out.println(Fussballspieler[i].toString());
+		
+	}
+   //weil unterschiedliche sachen ausgegeben je nachdem welche klasse es ist.
+  }
+  public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+    double winrate = Math.random();
+	if(winrate < 0.3){
+		System.out.println(""Mannschaft 1 gewinnt!"");
+  } else if(winrate < 0.6){
+		System.out.println(""Mannschaft 2 gewinnt!"");
+  }
+	else{ System.out.println(""Unentschieden!"");
+	}
+	
+}}",-
+Streese,"Lennart Soeren",l.streese@campus.tu-berlin.de,Beendet,"12. Januar 2022  14:35","16. Januar 2022  21:16","4 Tage 6 Stunden","12,50","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können",super,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,//
+Fenscky,Ben-Luca,b.fenscky@campus.tu-berlin.de,Beendet,"12. Januar 2022  16:45","16. Januar 2022  20:54","4 Tage 4 Stunden","14,84","die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen",Object,"Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+  public static void main(String[] args){
+
+    // Arrays definieren 
+	Fussballspieler[] deutschland = new Fussballspieler[11];
+	Fussballspieler[] england = new Fussballspieler[11];
+	
+    //Werte einfügen
+	deutschland[0] = new Torwart(""dTorwart"",31,0);
+	deutschland[1] = new Sturmspieler(""dSturm1"",31,3);
+	deutschland[2] = new Sturmspieler(""dSturm2"",31,2);
+	deutschland[3] = new Sturmspieler(""dSturm3"",31,1);
+	deutschland[4] = new Mittelfeldspieler(""dMittel1"",31,4);
+	deutschland[5] = new Mittelfeldspieler(""dMittel2"",31,3);
+	deutschland[6] = new Mittelfeldspieler(""dMittel3"",31,3);
+	deutschland[7] = new Mittelfeldspieler(""dMittel4"",31,1);
+	deutschland[8] = new Abwehrspieler(""dAbwehr1"",31,3);
+	deutschland[9] = new Abwehrspieler(""dAbwehr2"",31,2);
+	deutschland[10] = new Abwehrspieler(""dAbwehr3"",31,1);
+
+	england[0] = new Torwart(""eTorwart"",31,0);
+	england[1] = new Sturmspieler(""eSturm1"",31,3);
+	england[2] = new Sturmspieler(""eSturm2"",31,2);
+	england[3] = new Sturmspieler(""eSturm3"",31,1);
+	england[4] = new Mittelfeldspieler(""eMittel1"",31,4);
+	england[5] = new Mittelfeldspieler(""eMittel2"",31,3);
+	england[6] = new Mittelfeldspieler(""eMittel3"",31,3);
+	england[7] = new Mittelfeldspieler(""eMittel4"",31,1);
+	england[8] = new Abwehrspieler(""eAbwehr1"",31,3);
+	england[9] = new Abwehrspieler(""eAbwehr2"",31,2);
+	england[10] = new Abwehrspieler(""eAbwehr3"",31,1);
+
+
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+    System.out.println();
+    ausgeben(deutschland);
+    System.out.println();
+    fussballspielen(deutschland,england);
+	
+  }
+
+/*
+* statischer Polymorphismus: zur Kompilierungszeit durch Überladen
+* dynamischer Polymorphismus: zur Laufzeit durch Überschreiben
+*/
+
+  // Polymorphismus, dadurch wird durch dynamische Methodensuche die zum Typ des konkreten Objekts passende Methodenimplementierung aufgerufen
+  public static double roteKartenZaehlen(Fussballspieler[] mannschaft){
+   double erg = 0.0;
+   for (int i=0; i<mannschaft.length; i++) {
+	   erg += mannschaft[i].getRoteKarten();
+   }
+   return erg;
+  }
+  
+  public static void ausgeben(Fussballspieler[] mannschaft){  
+   	for (int i=0; i<mannschaft.length; i++) {
+		System.out.println(mannschaft[i].toString());
+	}
+  }
+  
+  public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+	int tore=0;
+	int gegentore=0;
+
+	for (int i=0; i<mannschaft1.length; i++){
+	tore += mannschaft1[0].getTore();
+	}
+	for (int i=0; i<mannschaft1.length; i++){
+	gegentore += mannschaft1[0].getGegentore();
+	}
+	double staerke1 = tore - gegentore;
+
+	for (int i=0; i<mannschaft2.length; i++){
+	tore += mannschaft2[0].getTore();
+	}
+	for (int i=0; i<mannschaft2.length; i++){
+	gegentore += mannschaft2[0].getGegentore();
+	}
+	double staerke2 = tore - gegentore;
+
+	if (staerke1 > staerke2) System.out.println(""Mannschaft 1 gewinnt!"");
+	else if (staerke1 < staerke2) System.out.println(""Mannschaft 2 gewinnt!"");
+	else if (staerke1 == staerke2) System.out.println(""Unentschieden!"");
+  }
+   
+}",//
+Schellin,Kolja,kolja.schellin@campus.tu-berlin.de,Beendet,"13. Januar 2022  11:50","16. Januar 2022  23:59","3 Tage 12 Stunden","12,86",super,"die Klasse Hund erbt von der Klasse Tier","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,//
+Korth,Benjamin,b.korth@campus.tu-berlin.de,Beendet,"13. Januar 2022  13:27","16. Januar 2022  03:34","2 Tage 14 Stunden","17,99","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.",Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen","Es wird die Methode der Sub-Klasse aufgerufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+  public static void main(String[] args){
+      
+    Fussballspieler[] team1 = {
+	new Torwart( ""Neuer"", 34, 0.5),
+	new Abwehrspieler(""Jochen"", 23, 2),
+	new Abwehrspieler(""FairPlayer"", 21, 0.1),
+	new Abwehrspieler(""Walter"", 45, 1.3),
+	new Abwehrspieler(""Bastian"", 33, 0.6),
+	new Mittelfeldspieler(""Passmeister"", 23, 300),
+	new Mittelfeldspieler(""Lahm"", 29, 56),
+	new Mittelfeldspieler(""Kedira"", 27, 79),
+	new Mittelfeldspieler(""Goretzka"", 23, 150),
+	new Sturmspieler(""Klose"", 27, 3),
+	new Sturmspieler(""Werner"", 24, 1)
+	};
+
+	Fussballspieler[] team2 = {
+	new Torwart(""Kahn"", 35, 0.8),
+	new Abwehrspieler(""Frosch"", 45, 2),
+	new Abwehrspieler(""Boateng"", 31, 0.2),
+	new Abwehrspieler(""Dieter"", 24, 0.4),
+	new Abwehrspieler(""Sven"", 25, 0.1),
+	new Mittelfeldspieler(""Messi"", 36, 47),
+	new Mittelfeldspieler(""Schweini"", 47,9),
+	new Mittelfeldspieler(""Hummels"", 33, 200),
+	new Sturmspieler(""Ronaldo"", 34, 1),
+	new Sturmspieler(""Mbappe"", 22, 0.6),
+	new Sturmspieler(""Griezmann"", 28, 2)
+	};
+	team2[4].geburtstagFeiern();
+     
+     
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(team1));
+    System.out.println();
+    ausgeben(team2);
+    System.out.println();
+    fussballspielen(team1, team2);
+  }
+
+  public static double roteKartenZaehlen(Fussballspieler[] mannschaftX){
+  double anzahlRoteKartenJeSpiel = 0;
+   for (int i= 0; i< mannschaftX.length; i++) {
+		if (mannschaftX[i] instanceof Abwehrspieler) {
+		
+			anzahlRoteKartenJeSpiel += ((Abwehrspieler)mannschaftX[i]).getAnzahlRoteKartenJeSpiel();
+		}
+   }
+   return anzahlRoteKartenJeSpiel;
+
+  }
+  // das Programm weiß, welche toString - Methode verwendet werden soll, da hier das Array von Objekten der Klasse Fussballspieler verwendet wird, 
+  //also wird die toString method der Class Fussballspieler ausgeführt (polymorphie)
+  public static void ausgeben(Fussballspieler[] mannschaftY){
+   for (int i = 0; i< mannschaftY.length; i++) {
+		System.out.println(mannschaftY[i].toString());
+   }
+ 
+  }
+  public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+    double gRot1 = 0;
+	double gPaesse1 = 0;
+	double gGegentore1 = 0;
+	double gTore1 = 0;
+	int gAlter1 = 0;
+	
+	for (int i= 0; i< mannschaft1.length; i++) {
+		gAlter1 += mannschaft1[i].getAlter();
+		if (mannschaft1[i] instanceof Abwehrspieler) {
+		gRot1 += ((Abwehrspieler)mannschaft1[i]).getAnzahlRoteKartenJeSpiel();
+		}
+		if (mannschaft1[i] instanceof Torwart) {
+			gGegentore1 += ((Torwart)(mannschaft1[i])).getGegentoreJeSpiel();
+		}
+		if (mannschaft1[i] instanceof Sturmspieler) {
+			gTore1 += ((Sturmspieler)mannschaft1[i]).getToreJeSpiel();
+		}
+		if (mannschaft1[i] instanceof Mittelfeldspieler) {
+			gPaesse1 += ((Mittelfeldspieler)mannschaft1[i]).getPaesseJeSpiel();
+		}
+	}
+	
+	double gRot2 = 0;
+	double gPaesse2 = 0;
+	double gGegentore2 = 0;
+	double gTore2 = 0;
+	int gAlter2 = 0;
+	
+	for (int i= 0; i< mannschaft2.length; i++) {
+		gAlter2 += mannschaft2[i].getAlter();
+		if (mannschaft2[i] instanceof Abwehrspieler) {
+		gRot2 += ((Abwehrspieler)mannschaft2[i]).getAnzahlRoteKartenJeSpiel();
+		}
+		if (mannschaft2[i] instanceof Torwart) {
+			gGegentore2 += ((Torwart)mannschaft2[i]).getGegentoreJeSpiel();
+		}
+		if (mannschaft2[i] instanceof Sturmspieler) {
+			gTore2 += ((Sturmspieler)mannschaft2[i]).getToreJeSpiel();
+		}
+		if (mannschaft2[i] instanceof Mittelfeldspieler) {
+			gPaesse2 += ((Mittelfeldspieler)mannschaft2[i]).getPaesseJeSpiel();
+		}
+	}
+	
+	double staerke1 =((gPaesse1+gTore1) - (gGegentore1+gRot1+(double)gAlter1/100));
+	double staerke2 =((gPaesse2+gTore2) - (gGegentore2+gRot2+(double)gAlter2/100));
+	
+	if (staerke1 > staerke2) { System.out.println(""Mannschaft 1 gewinnt!""); }
+	if (staerke1 == staerke2) { System.out.println(""Unentschieden!""); }
+	if (staerke1 < staerke2) { System.out.println(""Mannschaft 2 gewinnt!"");}
+  }
+}",//
+Holz,"Maximilian Torsten",m.holz@campus.tu-berlin.de,Beendet,"13. Januar 2022  14:02","16. Januar 2022  23:22","3 Tage 9 Stunden","14,11","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier",Object,extends,"Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+    public static void main(String[] args) {
+        
+        Fussballspieler[] deutschland = new Fussballspieler[11];
+        Fussballspieler[] italien = new Fussballspieler[11];
+        
+        deutschland[0] = new Torwart(""Ter Stegen"", 29, 0.9);
+        deutschland[1] = new Abwehrspieler(""Passlack"", 23, 0.02);
+        deutschland[2] = new Abwehrspieler(""Ruediger"", 28, 0.1);
+        deutschland[3] = new Abwehrspieler(""Schlotterbeck"", 22, 0.05);
+        deutschland[4] = new Abwehrspieler(""Guenter"", 28, 0.04);
+        deutschland[5] = new Mittelfeldspieler(""Guendogan"", 31, 70);
+        deutschland[6] = new Mittelfeldspieler(""Goretzka"", 26, 55);
+        deutschland[7] = new Mittelfeldspieler(""Dahoud"", 26, 76);
+        deutschland[8] = new Sturmspieler(""Gnabry"", 26, 0.55);
+        deutschland[9] = new Sturmspieler(""Baku"", 23, 0.29);
+        deutschland[10] = new Sturmspieler(""Nmecha"", 23, 0.6);
+        
+        italien[0] = new Torwart(""Donnarumma"", 22, 0.8);
+        italien[1] = new Abwehrspieler(""Bastoni"", 22, 0.04);
+        italien[2] = new Abwehrspieler(""Mancini"", 25, 0.06);
+        italien[3] = new Abwehrspieler(""Romagnoli"", 27, 0.07);
+        italien[4] = new Mittelfeldspieler(""De Sciglio"", 29, 40);
+        italien[5] = new Mittelfeldspieler(""Locatelli"", 24, 68);
+        italien[6] = new Mittelfeldspieler(""Barella"", 24, 79);
+        italien[7] = new Mittelfeldspieler(""Pellegrini"", 25, 61);
+        italien[8] = new Mittelfeldspieler(""Spinazzola"", 28, 52);
+        italien[9] = new Sturmspieler(""Immobile"", 31, 1.05);
+        italien[10] = new Sturmspieler(""Chiesa"", 24, 0.87);
+        
+        italien[10].geburtstagFeiern();
+        
+        System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+        System.out.println();
+        ausgeben(deutschland);
+        System.out.println();
+        fussballspielen(deutschland, italien);
+    }
+    public static double roteKartenZaehlen(Fussballspieler[] italien) {
+        double roteKarten = 0.0;
+        for (Fussballspieler f : italien) {
+            if (f instanceof Abwehrspieler) {
+                roteKarten += ((Abwehrspieler) f).getAnzahlRoteKartenJeSpiel();
+            }
+        }
+        return roteKarten;
+    }
+    public static void ausgeben(Fussballspieler[] italien) {
+        for (int i = 0; i < italien.length; i++) {
+            System.out.println(italien[i]);
+        }
+    }
+    public static void fussballspielen(Fussballspieler[] deutschland, Fussballspieler[] italien) {
+        double spielstaerke1 = 0.0;
+        for (Fussballspieler f : deutschland) {
+            if (f instanceof Torwart) spielstaerke1 -= ((Torwart) f).getGegentoreJeSpiel();
+            else if (f instanceof Abwehrspieler) spielstaerke1 -= 4 * ((Abwehrspieler) f).getAnzahlRoteKartenJeSpiel();
+            else if (f instanceof Mittelfeldspieler) spielstaerke1 += 0.1 * ((Mittelfeldspieler) f).getPaesseJeSpiel();
+            else if (f instanceof Sturmspieler) spielstaerke1 += 0.8 * ((Sturmspieler) f).getToreJeSpiel();
+        }
+        double spielstaerke2 = 0.0;
+        for (Fussballspieler f : italien) {
+            if (f instanceof Torwart) spielstaerke2 -= ((Torwart) f).getGegentoreJeSpiel();
+            else if (f instanceof Abwehrspieler) spielstaerke2 -= 4 * ((Abwehrspieler) f).getAnzahlRoteKartenJeSpiel();
+            else if (f instanceof Mittelfeldspieler) spielstaerke2 += 0.1 * ((Mittelfeldspieler) f).getPaesseJeSpiel();
+            else if (f instanceof Sturmspieler) spielstaerke2 += 0.8 * ((Sturmspieler) f).getToreJeSpiel();
+        }
+        if (spielstaerke1 < spielstaerke2) System.out.println(""Mannschaft 1 gewinnt!"");
+        else if (spielstaerke1 == spielstaerke2) System.out.println(""Unentschieden!"");
+        else System.out.println(""Mannschaft 2 gewinnt!"");
+    }
+}",//
+"Gutiérrez de la Vega","Anamaria de los Angeles",gutierrez-de-la-vega@campus.tu-berlin.de,Beendet,"13. Januar 2022  17:46","16. Januar 2022  23:59","3 Tage 6 Stunden","5,50","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Zeile 1 : Klasse A hat keinen Konstruktor","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
+Heinrich,"Maximilian Valentino",maximilian.valentino.heinrich@campus.tu-berlin.de,Beendet,"14. Januar 2022  09:31","16. Januar 2022  23:59","2 Tage 14 Stunden","10,20","Zeile 6,7 : super(); müsste vor x=0; stehen",Object,"Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {13. <sub>spannweite:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {12. <sub>schnabelfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {10. <sub>int} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,//
+Alder,Tim,tim.alder@campus.tu-berlin.de,Beendet,"14. Januar 2022  12:07","16. Januar 2022  18:42","2 Tage 6 Stunden","18,31","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es wird die Methode der Sub-Klasse aufgerufen",super,"Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+// Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
+
+public class TestMannschaft{
+    public static void main(String[] args){
+        
+       // Arrays definieren
+       Fussballspieler[] deutschland = new Fussballspieler[11];
+       Fussballspieler[] italien = new Fussballspieler[11];
+       
+      //Werte einfügen
+      for(int i = 0; i < italien.length; i++){
+          if (i<1) {
+            italien[i]= new Torwart(""Torio"", 20+i, 5.5);
+          } else if (i<4){
+            italien[i]= new Abwehrspieler((""Abwerio""+i), 20+i, 3.5+i);
+          } else if (i<9){
+            italien[i]= new Mittelfeldspieler((""Mittelio""+i), 20+i, 1.1+i);
+          } else if (i<12){
+            italien[i]= new Sturmspieler((""Sturmio""+i), 20+i, 5.6+i);
+          }
+      }
+      
+      for(int i =0; i< deutschland.length; i++){
+        if (i<1) {
+            deutschland[i]= new Torwart(""Torer"", 20+i, 5.5);
+        } else if (i<4){
+            deutschland[i]= new Abwehrspieler((""Abwera""+i), 20+i, 3.5+i);
+        } else if (i<9){
+            deutschland[i]= new Mittelfeldspieler((""Mittler""+i), 20+i, 1.1+i);
+        } else if (i<12){
+            deutschland[i]= new Sturmspieler((""Sturmer""+i), 20+i, 5.6+i);
+        }
+    }
+    
+
+   deutschland[10].geburtstagFeiern();
+  
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(italien));
+    ausgeben(deutschland);
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(italien));
+    fussballspielen(deutschland, italien);
+    }
+  
+    public static double roteKartenZaehlen(Fussballspieler[] fs){
+        double anzahlRoteKartenJeSpielSum = 0;
+        for(int i = 0; i<fs.length; i++){
+            if(fs[i] instanceof Abwehrspieler){
+                anzahlRoteKartenJeSpielSum += ((Abwehrspieler)fs[i]).getAnzahlRoteKarten();
+              }
+        }
+        return anzahlRoteKartenJeSpielSum;
+    }
+     /* bitte implementieren */
+   
+    public static void ausgeben(Fussballspieler[] fs){
+        for(int i = 0; i<fs.length; i++){
+                String a = fs[i].toString();
+                System.out.println(a);
+              }
+        }
+      
+     /* bitte implementieren */
+    
+    public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+        int torMan1 =0;
+        int torMan2 =0;
+        /*
+        Diese Methode vergleicht die Attribute der verschiedenen Spieler-Arten und 
+        gibt immer den besseren der jeweiligen Kategorie ein Tor.
+        */
+        //Tor für den Torwart der weniger Gegentore kassiert hat
+        double man1gegetor=0;
+        double man2gegetor=0;
+        for(int i = 0; i<mannschaft1.length; i++){
+            if (mannschaft1[i] instanceof Torwart){
+                 man1gegetor = ((Torwart)mannschaft1[i]).getGegentoreJeSpiel();
+              }
+              if (mannschaft2[i] instanceof Torwart){
+                 man2gegetor = ((Torwart)mannschaft2[i]).getGegentoreJeSpiel();
+              }
+        }
+        if (man1gegetor < man2gegetor){
+            torMan1++;
+        } else {
+            torMan2++;
+        }
+        //Tor für die Manschaft mit weniger roten Karten der Abwehspieler 
+        double man1rotKart= roteKartenZaehlen(mannschaft1);
+        double man2rotKart= roteKartenZaehlen(mannschaft2);
+        if (man1rotKart < man2rotKart){
+            torMan1++;
+        } else {
+            torMan2++;
+        }
+
+        //Tor für die Manschaft mit mehr Pässen der Mittelfeldspieler 
+        double man1pass= 0;
+        double man2pass= 0;
+        for(int i = 0; i<mannschaft1.length; i++){
+            if (mannschaft1[i] instanceof Mittelfeldspieler){
+                man1pass = ((Mittelfeldspieler)mannschaft1[i]).getPaesseJeSpiel();
+              }
+              if (mannschaft2[i] instanceof Mittelfeldspieler){
+                man2pass = ((Mittelfeldspieler)mannschaft2[i]).getPaesseJeSpiel();
+              }
+        }
+        if (man1pass > man2pass){
+            torMan1++;
+        } else {
+            torMan2++;
+        }
+        
+        //Tor für die Manschaft mit mehr Toren der Sturmspielern 
+        double man1tor= 0;
+        double man2tor= 0;
+        for(int i = 0; i<mannschaft1.length; i++){
+            if (mannschaft1[i] instanceof Sturmspieler){
+                man1tor = ((Sturmspieler)mannschaft1[i]).getToreJeSpiel();
+              }
+              if (mannschaft2[i] instanceof Sturmspieler){
+                man2tor = ((Sturmspieler)mannschaft2[i]).getToreJeSpiel();
+              }
+        }
+        if (man1tor > man2tor){
+            torMan1++;
+        } else {
+            torMan2++;
+        }
+
+        if (torMan1>torMan2){
+            System.out.println(""Mannschaft 1 gewinnt!"");
+        } else if(torMan1<torMan2){
+            System.out.println(""Mannschaft 2 gewinnt!"");
+        } else {
+            System.out.println(""Unentschieden!"");
+        }        
+      
+     /* bitte implementieren */
+    }
+
+
+
+  }",//
+Wieseke,"Jan Malte",wieseke@campus.tu-berlin.de,Beendet,"14. Januar 2022  14:56","14. Januar 2022  18:51","3 Stunden 55 Minuten","17,66",extends,"Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier",Object,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+
+	public static void main(String args[]) {
+		Fussballspieler[] team1 = new Fussballspieler[11];
+		Fussballspieler[] team2 = new Fussballspieler[11];
+		team1[0] = new Torwart(""Ronaldo"", 12, 1.2);
+		team1[1] = new Abwehrspieler(""Antoine"", 4, 0.05);
+		team1[2] = new Abwehrspieler(""Olaf"", 69, 0.02);
+		team1[3] = new Sturmspieler(""Ehrenmann"", 77, 0.9);
+		team1[4] = new Sturmspieler(""Knecht Rubrecht"", 18, 0.1);
+		team1[5] = new Sturmspieler(""Kevin"", 44, 2);
+		team1[6] = new Sturmspieler(""Chanti"", 5, 0.6);
+		team1[7] = new Mittelfeldspieler(""Bubatz"", 420, 2);
+		team1[8] = new Mittelfeldspieler(""Kollegah"", 3, 1);
+		team1[9] = new Mittelfeldspieler(""Tobias"", 23, 3);
+		team1[10] = new Mittelfeldspieler(""Tornado"", 17, 2);
+
+		team2[0] = new Torwart(""Rainer Zufall"", 50, 3);
+		team2[1] = new Abwehrspieler(""Ligma"", 22, 2.0);
+		team2[2] = new Abwehrspieler(""Fanta Lustig"", 69, 4.5);
+		team2[3] = new Sturmspieler(""Rahmspinat"", 43, 0.01);
+		team2[4] = new Sturmspieler(""GommeHD"", 22, 10);
+		team2[5] = new Sturmspieler(""Kevin AlleinZuhaus"", 43, 2);
+		team2[6] = new Sturmspieler(""Ernst Haft"", 3, 0.02);
+		team2[7] = new Mittelfeldspieler(""Matt Eagle"", 32, 0.3);
+		team2[8] = new Mittelfeldspieler(""Ikea"", 16, 1.5);
+		team2[9] = new Mittelfeldspieler(""Lmao"", 23, 3.4);
+		team2[10] = new Mittelfeldspieler(""Hornbach"", 81, 2.3);
+
+		ausgeben(team2);
+		Abwehrspieler spieler = (Abwehrspieler) team2[1];
+		spieler.setAnzahlRoteKartenJeSpiel((double) 2);
+
+		Abwehrspieler spieler2 = (Abwehrspieler) team2[2];
+		spieler2.setAnzahlRoteKartenJeSpiel((double) 5);
+
+		System.out.println(roteKartenZaehlen(team2));
+		fussballspielen(team1, team2);
+	}
+
+	public static double roteKartenZaehlen(Fussballspieler[] team) {
+		// In this method, we loop through the array and check whether the object is an
+		// instance of the class ""Abwehrspieler"". If so, we up the number of the total
+		// count of red cards.
+		// In dieser Methode, gehen wir durch die Liste und überprüfen ob das aktuelle
+		// Objekt ein Objekt der Klasse ""Abwehrspieler"" ist. Falls dem so sein sollte,
+		// erhöhen wir die Gesamtanzahl der roten Karten um 1.
+		double roteKarten = 0;
+		for (Fussballspieler spieler : team) {
+			if (spieler instanceof Abwehrspieler) {
+				Abwehrspieler aktueller_spieler = (Abwehrspieler) spieler;
+				roteKarten += aktueller_spieler.getAnzahlRoteKartenJeSpiel();
+			}
+		}
+		return roteKarten;
+	}
+
+	public static void ausgeben(Fussballspieler[] team) {
+		for (Fussballspieler spieler : team) {
+			System.out.println(spieler.toString());
+		}
+	}
+
+	public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2) {
+		int teamStärke = 0;
+		int teamStärke2 = 0;
+		for (Fussballspieler spieler : mannschaft1) {
+			if (spieler instanceof Abwehrspieler) {
+				Abwehrspieler aktueller_spieler = (Abwehrspieler) spieler;
+				teamStärke -= aktueller_spieler.getAnzahlRoteKartenJeSpiel();
+			} else if (spieler instanceof Mittelfeldspieler) {
+				Mittelfeldspieler aktueller_spieler = (Mittelfeldspieler) spieler;
+				teamStärke += aktueller_spieler.getPaesseJeSpiel();
+			} else if (spieler instanceof Sturmspieler) {
+				Sturmspieler aktueller_spieler = (Sturmspieler) spieler;
+				teamStärke += aktueller_spieler.getToreJeSpiel() * 3;
+			} else if (spieler instanceof Torwart) {
+				Torwart aktueller_spieler = (Torwart) spieler;
+				teamStärke += aktueller_spieler.getGegenToreJeSpiel() * 2;
+			}
+		}
+
+		for (Fussballspieler spieler : mannschaft2) {
+			if (spieler instanceof Abwehrspieler) {
+				Abwehrspieler aktueller_spieler = (Abwehrspieler) spieler;
+				teamStärke -= aktueller_spieler.getAnzahlRoteKartenJeSpiel();
+			} else if (spieler instanceof Mittelfeldspieler) {
+				Mittelfeldspieler aktueller_spieler = (Mittelfeldspieler) spieler;
+				teamStärke += aktueller_spieler.getPaesseJeSpiel();
+			} else if (spieler instanceof Sturmspieler) {
+				Sturmspieler aktueller_spieler = (Sturmspieler) spieler;
+				teamStärke += aktueller_spieler.getToreJeSpiel() * 3;
+			} else if (spieler instanceof Torwart) {
+				Torwart aktueller_spieler = (Torwart) spieler;
+				teamStärke += aktueller_spieler.getGegenToreJeSpiel() * 2;
+			}
+		}
+
+		if (teamStärke == teamStärke2) {
+			System.out.println(""Unentschieden!"");
+		} else if (teamStärke > teamStärke2) {
+			System.out.println(""Mannschaft 2 gewinnt!"");
+		} else if (teamStärke < teamStärke2) {
+			System.out.println(""Mannschaft 1 gewinnt!"");
+		}
+
+	}
+
+}",//
+Fischer,"Niklas Alexander Tiberius",fischer.12@campus.tu-berlin.de,Beendet,"14. Januar 2022  18:03","16. Januar 2022  23:59","2 Tage 5 Stunden","10,67","die Klasse Hund erbt von der Klasse Tier","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
+_""__Tell your children not to walk my way""_
+ausgegeben.","Zeile 1 : Klasse A hat keinen Konstruktor","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
+_""__Do you wanna bang heads with me?""_
+ausgegeben.","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+// Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
+
+public class TestMannschaft{
+  public static void main(String[] args){
+      
+     // Arrays definieren
+     	Fussballspieler deutschland[]=new Fussballspieler[11];
+		deutschland[0]=new Torwart(""Torben"", 28,2.5);
+		deutschland[1]=new Sturmspieler(""Steffen"",26,1.8);
+		deutschland[2]=new Sturmspieler(""Stefan"",22,2.4);
+		deutschland[3]=new Sturmspieler(""Sebastian"",24,0.8);
+		deutschland[4]=new Abwehrspieler(""Abdul"", 23,0.2);
+		deutschland[5]=new Abwehrspieler(""Abraham"",31,0.4);
+		deutschland[6]=new Abwehrspieler(""Abroix"",24,0.8);
+		deutschland[7]=new Mittelfeldspieler(""Mirkow"",21,34.8);
+		deutschland[8]=new Mittelfeldspieler(""Michael"",32,38.2);
+		deutschland[9]=new Mittelfeldspieler(""Mika"",19,28.9);
+		deutschland[10]=new Mittelfeldspieler(""Micha"",26,32.7);
+		
+		Fussballspieler bayern[]=new Fussballspieler[11];
+		bayern[0]=new Torwart(""Torsten"", 23,1.9);
+		bayern[1]=new Sturmspieler(""Stan"",28,2.4);
+		bayern[2]=new Sturmspieler(""Stanford"",31,2.1);
+		bayern[3]=new Sturmspieler(""Stalin"",43,1.1);
+		bayern[4]=new Abwehrspieler(""Abbany"", 21,0.8);
+		bayern[5]=new Abwehrspieler(""Abbassi"",29,0.3);
+		bayern[6]=new Abwehrspieler(""Abba"",26,0.7);
+		bayern[7]=new Mittelfeldspieler(""Michel"",27,32.9);
+		bayern[8]=new Mittelfeldspieler(""Michelino"",24,37.3);
+		bayern[9]=new Mittelfeldspieler(""Mickey"",19,32.2);
+		bayern[10]=new Mittelfeldspieler(""Miguel"",25,33.4);
+		
+		deutschland[10].geburtstagFeiern();
+     
+    //Werte einfügen
+
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+    System.out.println(""Deutschland: "");
+    ausgeben(deutschland);
+    System.out.println(""Deutschland gegen Bayern: "");
+    fussballspielen(deutschland,bayern);
+  }
+
+  public static void ausgeben(Fussballspieler x[]){
+			
+			for(int i=0; i<x.length; i++){
+				//Hier wird bei toString die richtige Methode aufgerufen, da die toString Methode der Oberklasse von der Unterklasse überschrieben wird
+				System.out.println(x[i].toString());
+			}
+			
+		}
+		
+		public static double roteKartenZaehlen(Fussballspieler x[]){
+			
+			double rotekarte=0.0;
+			
+			for (int i=0; i<x.length; i++){
+				
+				if(x[i] instanceof Abwehrspieler){
+					//Hier wird bei toString die richtige Methode aufgerufen, da die getAnzahlRoteKartenJeSpiel Methode der Oberklasse von der Unterklasse überschrieben wird
+					rotekarte=rotekarte+x[i].getAnzahlRoteKartenJeSpiel();
+				}else{
+					continue;
+				}
+			}
+			return rotekarte;
+		}
+		
+		public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+			
+			double abwehr1=0, abwehr2=0, tor1=0, tor2=0, sturm1=0, sturm2=0, mitte1=0, mitte2=0;
+			
+			for (int i=0; i<mannschaft1.length; i++){
+				if(mannschaft1[i] instanceof Abwehrspieler){
+					abwehr1=abwehr1+mannschaft1[i].getAnzahlRoteKartenJeSpiel();
+					
+				}else if(mannschaft1[i] instanceof Torwart){
+					tor1=tor1+mannschaft1[i].getGegentoreJeSpiel();
+					
+				}else if(mannschaft1[i] instanceof Sturmspieler){
+					sturm1=sturm1+mannschaft1[i].getToreJeSpiel();
+					
+				}else if(mannschaft1[i] instanceof Mittelfeldspieler){
+					mitte1=mitte1+mannschaft1[i].getPaesseJeSpiel();
+				}
+			}
+			
+			for (int i=0; i<mannschaft2.length; i++){
+				if(mannschaft2[i] instanceof Abwehrspieler){
+					abwehr2=abwehr2+mannschaft2[i].getAnzahlRoteKartenJeSpiel();
+					
+				}else if(mannschaft2[i] instanceof Torwart){
+					tor2=tor2+mannschaft2[i].getGegentoreJeSpiel();
+					
+				}else if(mannschaft1[i] instanceof Sturmspieler){
+					sturm2=sturm2+mannschaft2[i].getToreJeSpiel();
+					
+				}else if(mannschaft2[i] instanceof Mittelfeldspieler){
+					mitte2=mitte2+mannschaft2[i].getPaesseJeSpiel();
+				}
+			}
+			
+			int siegpunkt1=0;
+			int siegpunkt2=0;
+			
+			if(abwehr1<abwehr2){
+				siegpunkt1=siegpunkt1+1;
+			}else if(abwehr1>abwehr2){
+				siegpunkt2=siegpunkt2+1;
+			}else if(abwehr1==abwehr2){
+				siegpunkt1=siegpunkt1;
+				siegpunkt2=siegpunkt2;
+			}
+			 
+			if(tor1>tor2){
+				siegpunkt1=siegpunkt1+1;
+			}else if(tor1<tor2){
+				siegpunkt2=siegpunkt2+1;
+			}else if(tor1==tor2){
+				siegpunkt1=siegpunkt1;
+				siegpunkt2=siegpunkt2;
+			}
+			
+			if(sturm1>sturm2){
+				siegpunkt1=siegpunkt1+1;
+			}else if(sturm1<sturm2){
+				siegpunkt2=siegpunkt2+1;
+			}else if(sturm1==sturm2){
+				siegpunkt1=siegpunkt1;
+				siegpunkt2=siegpunkt2;
+			}
+			
+			if(mitte1>mitte2){
+				siegpunkt1=siegpunkt1+1;
+			}else if(mitte1<mitte2){
+				siegpunkt2=siegpunkt2+1;
+			}else if(mitte1==mitte2){
+				siegpunkt1=siegpunkt1;
+				siegpunkt2=siegpunkt2;
+			}
+			
+			if(siegpunkt1>siegpunkt2){
+				System.out.println(""Mannschaft 1 gewinnt!"");
+			}else if(siegpunkt1<siegpunkt2){
+				System.out.println(""Mannschaft 2 gewinnt!"");
+			}else if(siegpunkt1==siegpunkt2){
+				System.out.println(""Unentschieden!"");
+			}
+		}
+}",//
+Fortwengel,Louisa,louisa.fortwengel@campus.tu-berlin.de,Beendet,"14. Januar 2022  18:25","16. Januar 2022  20:26","2 Tage 2 Stunden","8,73","die Klasse Hund erbt von der Klasse Tier","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".",super,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es wird die Methode der Sub-Klasse aufgerufen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+// Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
+
+public class TestMannschaft{
+  public static void main(String[] args) {
+
+    // Arrays definieren
+    // zwei arrays aus je 11 fußballpielern, 1 torwart, einer feiert geburtstag
+    //public Fussballspieler[11] testdieMutigen;
+    //public Fussballspieler[11] testdieTapferen;
+    //Werte einfügen
+
+    Fussballspieler[] dieTapferen = {
+        new Torwart (""tobiasDerTorwart"", 43, 2.3),
+        new Abwehrspieler (""adrianDerAllerliebste"", 65, 3),
+        new Abwehrspieler (""annaDieInsgeheimeFrau"", 25, 4.5),
+        new Abwehrspieler (""aresDerArsch"", 22, 25),
+        new Sturmspieler (""stefanDerStumme"", 253, 234.1),
+        new Sturmspieler (""sebastianDerSopran"", 8, 23423.2),
+        new Sturmspieler (""sophusDerPhilosophus"", 235, 2),
+        new Mittelfeldspieler (""medusosDerMännliche"", 25, 22.5),
+        new Mittelfeldspieler (""moritzDerMuede"", 28, 0.1),
+        new Mittelfeldspieler (""maxDerMaedchenhafte"", 54, 1.1),
+        new Mittelfeldspieler (""marionDerMitleidige"", 27, 24),
+    };
+    
+    dieTapferen[3].geburtstagFeiern();
+    
+    Fussballspieler[] dieMutigen = {
+        new Torwart (""a"", 4, 2.3),
+        new Abwehrspieler (""b"", 634, 3.5),
+        new Abwehrspieler (""c"", 6, 53),
+        new Abwehrspieler (""d"", 22, 52),
+        new Sturmspieler (""e"", 34, 23.2),
+        new Sturmspieler (""f"", 2, 21),
+        new Sturmspieler (""g"", 3, 21),
+        new Mittelfeldspieler (""h"", 66, 253),
+        new Mittelfeldspieler (""i"", 2, 0.5),
+        new Mittelfeldspieler (""j"", 14, 13),
+        new Mittelfeldspieler (""pechgehabt"", 27, 24),
+    };
+
+    dieMutigen[5].geburtstagFeiern();
+
+
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(dieMutigen));
+    System.out.println();
+    ausgeben(dieTapferen);
+    System.out.println();
+    fussballspielen(dieMutigen, dieTapferen);
+  }
+
+
+
+    public static double roteKartenZaehlen(Fussballspieler[] dieMutigen) {
+        double roteKarten = 0;
+        for(int i = 0; i < dieMutigen.length; i++){
+            if (dieMutigen[i] instanceof Abwehrspieler){
+                roteKarten += ((Abwehrspieler)dieMutigen[i]).getAnzahlRoteKartenJeSpiel();
+            }
+        }
+        return roteKarten;
+    }
+
+
+
+    public static void ausgeben(Fussballspieler[] dieTapferen){
+            for(int i = 0; i < dieTapferen.length; i++){
+                if (dieTapferen[i] instanceof Torwart){
+                    ((Torwart) dieTapferen[i]).toString();
+                }
+                if (dieTapferen[i] instanceof Sturmspieler){
+                    ((Sturmspieler)dieTapferen[i]).toString();
+                }
+                if (dieTapferen[i] instanceof Mittelfeldspieler){
+                    ((Mittelfeldspieler)dieTapferen[i]).toString();
+                }
+                if (dieTapferen[i] instanceof Abwehrspieler){
+                    ((Abwehrspieler)dieTapferen[i]).toString();
+                }
+        }
+    }
+
+
+
+    public static void fussballspielen(Fussballspieler[] dieMutigen, Fussballspieler[] dieTapferen) {
+        double gegentoreMutig = 0;
+        double toreMutig = 0;
+        double paesseMutig = 0;
+        double roteKartenMutig = 0;
+        double totalMutig;
+
+        double gegentoreTapfer = 0;
+        double toreTapfer = 0;
+        double paesseTapfer = 0;
+        double roteKartenTapfer = 0;
+        double totalTapfer;
+
+        for(int i = 0; i < dieMutigen.length; i++){
+            if (dieMutigen[i] instanceof Torwart){
+                gegentoreMutig += ((Torwart)dieMutigen[i]).getGegentoreJeSpiel();
+            }
+            if (dieMutigen[i] instanceof Sturmspieler){
+                toreMutig += ((Sturmspieler)dieMutigen[i]).getToreJeSpiel();
+            }
+            if (dieMutigen[i] instanceof Mittelfeldspieler){
+                paesseMutig += ((Mittelfeldspieler)dieMutigen[i]).getPaesseJeSpiel();
+            }
+            if (dieMutigen[i] instanceof Abwehrspieler){
+                roteKartenMutig += ((Abwehrspieler)dieMutigen[i]).getAnzahlRoteKartenJeSpiel();
+            }
+        }
+
+        totalMutig = gegentoreMutig + toreMutig + paesseMutig + roteKartenMutig;
+
+
+        for(int i = 0; i < dieTapferen.length; i++){
+            if (dieTapferen[i] instanceof Torwart){
+                gegentoreTapfer += ((Torwart)dieTapferen[i]).getGegentoreJeSpiel();
+            }
+            if (dieTapferen[i] instanceof Sturmspieler){
+                toreTapfer += ((Sturmspieler)dieTapferen[i]).getToreJeSpiel();
+            }
+            if (dieTapferen[i] instanceof Mittelfeldspieler){
+                paesseTapfer += ((Mittelfeldspieler)dieTapferen[i]).getPaesseJeSpiel();
+            }
+            if (dieTapferen[i] instanceof Abwehrspieler){
+                roteKartenTapfer += ((Abwehrspieler)dieTapferen[i]).getAnzahlRoteKartenJeSpiel();
+            }
+        }
+
+        totalTapfer = gegentoreTapfer + toreTapfer + paesseTapfer + roteKartenTapfer;
+
+
+        if( totalMutig >  totalTapfer) {
+            System.out.println(""Mannschaft 1 gewinnt!"");
+        }
+        
+        if( totalMutig ==  totalTapfer) {
+            System.out.println(""Unentschieden!"");
+        }
+
+        if( totalMutig <  totalTapfer) {
+            System.out.println(""Mannschaft 2 gewinnt!"");
+        }
+    }
+}",-
+Grochla,Patrick,p.grochla@campus.tu-berlin.de,Beendet,"14. Januar 2022  18:53","16. Januar 2022  22:08","2 Tage 3 Stunden","13,00",Object,"Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+
+
+  public static void main(String[] args){
+      
+     // Arrays definieren
+    Fussballspieler[] deutschland = {
+      new Torwart( ""Henning"", 22, 0.3),
+      new Abwehrspieler (""Christian"", 25, 1.3),
+      new Abwehrspieler (""Kevin"", 21, 2.6),
+      new Abwehrspieler (""Leon"", 27, 4.0),
+      new Mittelfeldspieler (""Toni"", 25, 1.2),
+      new Mittelfeldspieler (""Franz"", 20, 0.6),
+      new Mittelfeldspieler (""Milan"", 22, 0.9),
+      new Sturmspieler (""Alejandro"", 24, 3.4),
+      new Sturmspieler (""Fernando"", 23, 6.6),
+      new Sturmspieler (""Roberto"", 20, 2.9),
+      new Sturmspieler (""Tilo"", 19, 0.1)
+    };
+     
+       Fussballspieler[] australien = {
+      new Torwart( ""Beyonce"", 19, 3.6),
+      new Abwehrspieler (""Rina"", 22, 0.4),
+      new Abwehrspieler (""Rihanna"", 27, 0.2),
+      new Abwehrspieler (""Miley"", 23, 1.5),
+      new Abwehrspieler (""Marina"", 19, 3.6),
+      new Mittelfeldspieler (""Dua"", 26, 8.9),
+      new Mittelfeldspieler (""Nicki"", 21, 2.2),
+      new Mittelfeldspieler (""Cardi"", 22, 4.2),
+      new Sturmspieler (""Fergie"", 24, 9.9),
+      new Sturmspieler (""Gwen"", 23, 2.3),
+      new Sturmspieler (""Taylor"", 20, 2.5)
+      
+    };
+
+    deutschland[3].geburtstagFeiern();
+     
+
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(australien));
+    ausgeben(deutschland);
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(australien));
+    fussballspielen(deutschland, australien);
+  }
+
+  public static double roteKartenZaehlen(Fussballspieler[] a) {
+
+    // getAnzahlRoteKartenJeSpiel ist keine Methode der Superklasse, weshalb es zur expliziten Konversion kommen muss.
+
+    double anzahlRoteKartenJeSpiel = 0;
+    for(Fussballspieler f : a) {
+      if( f instanceof Abwehrspieler) {     
+        Abwehrspieler b = (Abwehrspieler)f;
+        anzahlRoteKartenJeSpiel += b.getAnzahlRoteKartenJeSpiel();
+      }
+    }
+      return anzahlRoteKartenJeSpiel;
+  }
+
+
+  public static void ausgeben(Fussballspieler[] a) {
+
+    // die Methode toString wird in den Subklassen überschrieben.
+    
+    for(int i = 0; i < a.length; i++) {
+      System.out.println(a[i]);
+    }
+
+  }
+
+  public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+
+    double anzahlgegentoreJeSpiel1 = 0;
+    for(Fussballspieler f : mannschaft1) {
+      if( f instanceof Torwart) {     
+        Torwart a = (Torwart)f;
+        anzahlgegentoreJeSpiel1 += a.getGegentoreJeSpiel();
+      }
+    }
+    double anzahlgegentoreJeSpiel2 = 0;
+    for(Fussballspieler f : mannschaft2) {
+      if( f instanceof Torwart) {     
+        Torwart b = (Torwart)f;
+        anzahlgegentoreJeSpiel2 += b.getGegentoreJeSpiel();
+      }
+    }
+
+    double anzahlpaesseJeSpiel1 = 0;
+    for(Fussballspieler f : mannschaft1) {
+      if( f instanceof Mittelfeldspieler) {     
+        Mittelfeldspieler c = (Mittelfeldspieler)f;
+        anzahlpaesseJeSpiel1 += c.getPaesseJeSpiel();
+      }
+    }
+    double anzahlpaesseJeSpiel2 = 0;
+    for(Fussballspieler f : mannschaft2) {
+      if( f instanceof Mittelfeldspieler) {     
+        Mittelfeldspieler d = (Mittelfeldspieler)f;
+        anzahlpaesseJeSpiel2 += d.getPaesseJeSpiel();
+      }
+    }
+
+     double anzahltoreJeSpiel1 = 0;
+    for(Fussballspieler f : mannschaft1) {
+      if( f instanceof Sturmspieler) {     
+        Sturmspieler e = (Sturmspieler)f;
+        anzahltoreJeSpiel1 += e.getToreJeSpiel();
+      }
+    }
+    double anzahltoreJeSpiel2 = 0;
+    for(Fussballspieler f : mannschaft2) {
+      if( f instanceof Sturmspieler) {     
+        Sturmspieler g = (Sturmspieler)f;
+        anzahltoreJeSpiel2 += g.getToreJeSpiel();
+      }
+    }
+
+   double anzahlRoteKartenJeSpiel1 = roteKartenZaehlen(mannschaft1);
+   double anzahlRoteKartenJeSpiel2 = roteKartenZaehlen(mannschaft2);
+
+
+    double spiel1 = anzahltoreJeSpiel1 + anzahlpaesseJeSpiel1;
+    double staerke1 = anzahlRoteKartenJeSpiel1 + anzahlgegentoreJeSpiel1;
+    double spielstaerke1 = spiel1 - staerke1;
+
+    double spiel2 = anzahltoreJeSpiel2 + anzahlpaesseJeSpiel2;
+    double staerke2 = anzahlRoteKartenJeSpiel2 + anzahlgegentoreJeSpiel2;
+    double spielstaerke2 = spiel2 - staerke2;
+
+
+    if (spielstaerke1 > spielstaerke2) {
+      System.out.println(""Mannschaft 1 gewinnt!"");
+    }
+
+    if (spielstaerke1 == spielstaerke2) {
+      System.out.println(""Unentschieden!"");
+    }
+
+    if (spielstaerke1 < spielstaerke2) {
+      System.out.println(""Mannschaft 2 gewinnt!"");
+    }
+  }
+}",-
+Brück,"Nicole Kristin Svenja Maria",n.brueck@campus.tu-berlin.de,Beendet,"14. Januar 2022  20:56","16. Januar 2022  15:46","1 Tag 18 Stunden","13,00",Object,"Es wird die Methode der Sub-Klasse aufgerufen","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+    public static void main(String[] args){
+
+        // Arrays definieren
+        Fussballspieler[]deutschland = {
+                new Abwehrspieler(""Tobias"", 22, 1),
+                new Abwehrspieler(""Fabian"", 23, 2),
+                new Abwehrspieler(""Raphael"", 21, 0),
+                new Abwehrspieler(""Christoph"", 25, 2),
+                new Mittelfeldspieler(""Karsten"", 27, 5),
+                new Mittelfeldspieler(""Eric"", 26, 4),
+                new Mittelfeldspieler(""Timo"", 21, 4),
+                new Mittelfeldspieler(""Dominik"",28, 3),
+                new Sturmspieler(""Steven"", 25, 1),
+                new Sturmspieler(""Lennard"", 23, 2),
+                new Torwart(""Lars"",24,3)};
+
+        deutschland[10].geburtstagFeiern();
+
+
+        //Test Mannschaft
+        Fussballspieler[]spanien = {
+                new Abwehrspieler(""Tobi"", 22, 3),
+                new Abwehrspieler(""Fabi"", 23, 3),
+                new Abwehrspieler(""Rapha"", 21, 2),
+                new Abwehrspieler(""Chris"", 25, 4),
+                new Mittelfeldspieler(""Kars"", 27, 2),
+                new Mittelfeldspieler(""Er"", 26, 1),
+                new Mittelfeldspieler(""Tim"", 21, 2),
+                new Mittelfeldspieler(""Domi"",28, 1),
+                new Sturmspieler(""Steve"", 25, 0),
+                new Sturmspieler(""Lenn"", 23, 1),
+                new Torwart(""Lar"",24,2)};
+
+
+
+        System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+        System.out.println();
+        ausgeben(deutschland);
+        System.out.println();
+        fussballspielen(deutschland, spanien);
+    }
+
+    //Die Methode greift auf eine Methode der Unterklasse Abwehrspieler zu, um die Anzahl an roten Karten zu erlangen, deswegen muss down gecastet werden.
+    public static double roteKartenZaehlen(Fussballspieler[]fbs){
+        double roteKarten=0;
+        for (int i=0; i<fbs.length; i++){
+            if (fbs[i] instanceof Abwehrspieler) {
+                roteKarten += ((Abwehrspieler) fbs[i]).getAnzahlRoteKartenJeSpiel();
+            }
+        }
+        return roteKarten;
+    }
+
+    //Die Methode greift automatisch auf die toString Methode der Unterklasse zu. Deswegen braucht man hier kein Casten.)
+    public static void ausgeben(Fussballspieler[]mannschaft){
+        for(int i=0; i<mannschaft.length;i++){
+            System.out.println(mannschaft[i]);
+        }
+
+    }
+    public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+        double spielstaerke1=0;
+        for (int i=0; i<mannschaft1.length; i++) {
+            if (mannschaft1[i] instanceof Mittelfeldspieler) {
+                spielstaerke1 += ((Mittelfeldspieler) mannschaft1[i]).getPaesseJeSpiel();
+            }if (mannschaft1[i] instanceof Sturmspieler) {
+                spielstaerke1 += ((Sturmspieler) mannschaft1[i]).getToreJeSpiel();
+            }if (mannschaft1[i] instanceof Torwart){
+                spielstaerke1 -= ((Torwart) mannschaft1[i]).getGegentoreJeSpiel();
+            }if (mannschaft1[i] instanceof Abwehrspieler) {
+                spielstaerke1 -= ((Abwehrspieler) mannschaft1[i]).getAnzahlRoteKartenJeSpiel();
+            }
+        }
+        double spielstaerke2=0;
+        for (int i=0; i<mannschaft2.length; i++) {
+            if (mannschaft2[i] instanceof Mittelfeldspieler) {
+                spielstaerke2 += ((Mittelfeldspieler) mannschaft2[i]).getPaesseJeSpiel();
+            }if (mannschaft2[i] instanceof Sturmspieler){
+                spielstaerke2 += ((Sturmspieler) mannschaft2[i]).getToreJeSpiel();
+            }if (mannschaft2[i] instanceof Torwart) {
+                spielstaerke2 -= ((Torwart) mannschaft2[i]).getGegentoreJeSpiel();
+            }if (mannschaft2[i] instanceof Abwehrspieler){
+                spielstaerke2 -= ((Abwehrspieler) mannschaft2[i]).getAnzahlRoteKartenJeSpiel();
+            }
+        }
+        if (spielstaerke1<spielstaerke2) {
+            System.out.println(""Mannschaft 2 gewinnt!"");
+        }else if(spielstaerke1>spielstaerke2){
+            System.out.println(""Mannschaft 1 gewinnt!"");
+        }else{
+            System.out.println(""Unentschieden!"");
+        }
+
+    }
+
+}",-
+Basin,Yannic,yannic.basin@campus.tu-berlin.de,Beendet,"15. Januar 2022  00:06","16. Januar 2022  23:59","1 Tag 23 Stunden","11,45",Object,super,"Zeile 6,7 : super(); müsste vor x=0; stehen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
+_""__Tell your children not to walk my way""_
+ausgegeben.","Es wird die Methode der Super-Klasse aufgerufen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {15. <sub>kannSprechen:} Dropzone 8 -> {16. <sub>boolean} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+	public static void main(String[] args) {
+		Fussballspieler[] erstesTeam = new Fussballspieler[11];
+		erstesTeam[0] = new Torwart(""Torwart-Team1-1"", 22, 1.2);
+		
+		for (int i = 1; i < 3; i++) {
+			erstesTeam[i] = new Sturmspieler(""Sturm-Team1-""+i, i*10+10, 1+0.2*i);
+		}
+		for (int i = 3; i < 7; i++) {
+			erstesTeam[i] = new Abwehrspieler(""Abwehr-Team1-""+i, i*6+10, 0.15*i);
+		}
+		for (int i = 7; i < 11; i++) {
+			erstesTeam[i] = new Mittelfeldspieler(""Mittelfeld-Team1-""+i, i*3+10, 10+3*i);
+		}
+		
+		Fussballspieler[] zweitesTeam = new Fussballspieler[11];
+		Fussballspieler[] deutschland = zweitesTeam;
+		zweitesTeam[0] = new Torwart(""Torwart-Team2-1"", 22, 1.2);
+		
+		for (int i = 1; i < 3; i++) {
+			zweitesTeam[i] = new Sturmspieler(""Sturm-Team2-""+i, i*13+10, 1+0.22*i);
+		}
+		for (int i = 3; i < 7; i++) {
+			zweitesTeam[i] = new Abwehrspieler(""Abwehr-Team2-""+i, i*7+10, 0.18*i);
+		}
+		for (int i = 7; i < 11; i++) {
+			zweitesTeam[i] = new Mittelfeldspieler(""Mittelfeld-Team2-""+i, i*2+10, 10+2*i);
+		}
+		
+		zweitesTeam[3].geburtstagFeiern();
+		
+		System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+		System.out.println();
+		ausgeben(erstesTeam);
+		System.out.println();
+		fussballspielen(erstesTeam, zweitesTeam);
+	}
+	
+	public static double roteKartenZaehlen(Fussballspieler[] spieler) {
+		double roteKarten = 0;
+		for (Fussballspieler fs : spieler) {
+			if (fs instanceof Abwehrspieler) {
+				roteKarten += ((Abwehrspieler) fs).getAnzahlRoteKartenJeSpiel();
+			}
+		}
+		
+		return roteKarten;
+	}
+	
+	public static void ausgeben(Fussballspieler[] spieler) {
+		for(Fussballspieler fs : spieler) {
+			System.out.println(fs);
+		}
+	}
+	
+	public static void fussballspielen(Fussballspieler[] team1, Fussballspieler[] team2) {
+		double stats1 = 0;
+		double stats2 = 0;
+		
+		for (Fussballspieler fs : team1) {
+			if (fs instanceof Abwehrspieler) {
+				stats1 -= ((Abwehrspieler) fs).getAnzahlRoteKartenJeSpiel();
+			} else if (fs instanceof Torwart) {
+				stats1 -= ((Torwart) fs).getGegentoreJeSpiel();
+			} else if (fs instanceof Mittelfeldspieler) {
+				stats1 += ((Mittelfeldspieler) fs).getPaesseJeSpiel();
+			} else if (fs instanceof Sturmspieler) {
+				stats1 += ((Sturmspieler) fs).getToreJeSpiel();
+			}
+		}
+		
+		for (Fussballspieler fs : team2) {
+			if (fs instanceof Abwehrspieler) {
+				stats2 -= ((Abwehrspieler) fs).getAnzahlRoteKartenJeSpiel();
+			} else if (fs instanceof Torwart) {
+				stats2 -= ((Torwart) fs).getGegentoreJeSpiel();
+			} else if (fs instanceof Mittelfeldspieler) {
+				stats2 += ((Mittelfeldspieler) fs).getPaesseJeSpiel();
+			} else if (fs instanceof Sturmspieler) {
+				stats2 += ((Sturmspieler) fs).getToreJeSpiel();
+			}
+		}
+		
+		if (stats1 > stats2) {
+			System.out.println(""Mannschaft 1 gewinnt!"");
+		} else if (stats2 > stats1) {
+			System.out.println(""Mannschaft 2 gewinnt!"");
+		} else {
+			System.out.println(""Unentschieden!"");
+		}
+	}
+}",-
+Glowacki,"Robin Gregor",glowacki@campus.tu-berlin.de,Beendet,"15. Januar 2022  05:51","16. Januar 2022  23:58","1 Tag 18 Stunden","10,71",Object,"Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier",super,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+	
+	// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+	// Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
+
+	public static void main(String[] args){
+	      
+	     // Arrays definieren
+		Fussballspieler[] mannschaft1 = { new Torwart(""Spieler1"", 22, 2.2),
+				new Abwehrspieler(""Spieler2"", 19, 2.3),new Abwehrspieler(""Spieler3"", 23, 42.4),new Abwehrspieler(""Spieler4"", 18, 4.6),new Abwehrspieler(""Spieler5"", 18, 4.2),new Abwehrspieler(""Spieler6"", 18, 4.8),
+				new Mittelfeldspieler(""Spieler7"", 19, 15.2),new Mittelfeldspieler(""Spieler8"", 18, 3.3),new Mittelfeldspieler(""Spieler9"", 20, 16.4),
+				new Sturmspieler(""Spieler10"", 33, 12.1),new Sturmspieler(""Spieler11"", 24, 9.3)
+		
+		};
+	     
+	    Fussballspieler[] mannschaft2 = { new Torwart(""Spieler12"", 35, 4.2),
+	    		new Abwehrspieler(""Spieler13"", 27, 4.2),new Abwehrspieler(""Spieler14"", 19, 2.1),new Abwehrspieler(""Spieler15"", 26, 5.5),
+	    		new Mittelfeldspieler(""Spieler16"", 40, 15.2),new Mittelfeldspieler(""Spieler17"", 18, 6.6),new Mittelfeldspieler(""Spieler18"", 16, 9.2),new Mittelfeldspieler(""Spieler19"", 25, 7.8),
+	    		new Sturmspieler(""Ronaldo"", 38, 11.5),new Sturmspieler(""Neymar"", 25, 6.2),new Sturmspieler(""Lewandoswki"", 40, 15.3)
+	    };
+	    
+	    Fussballspieler[] deutschland = { new Abwehrspieler(""Spieler2"", 19, 2.3),new Abwehrspieler(""Spieler3"", 23, 42.4),new Abwehrspieler(""Spieler4"", 18, 4.6),new Abwehrspieler(""Spieler5"", 18, 4.2),new Abwehrspieler(""Spieler6"", 18, 4.8)
+	    		
+	    };
+	    
+	    Fussballspieler[] frankreich = { new Abwehrspieler(""Spieler13"", 27, 4.2),new Abwehrspieler(""Spieler14"", 19, 2.1),new Abwehrspieler(""Spieler15"", 26, 5.5)
+	    		
+	    };
+	     
+	    //Werte einfügen
+
+	    System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+	    System.out.println();
+	    ausgeben(mannschaft1, mannschaft2);
+	    System.out.println();
+	    fussballspielen(................);
+	
+	}
+
+	public static double roteKartenZaehlen(Fussballspieler[] deutschland){
+	    
+	   /* bitte implementieren */
+		double rkzGesamt;
+		
+		for(int i = 0; i <= deutschland.length; i++) {
+			rkzGesamt = deutschland.getAnzahlRoteKartenJeSpiel() + i;
+		}
+		
+		return rkzGesamt;
+		
+		
+
+	}
+	
+	
+	public static void ausgeben(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+	    
+	   /* bitte implementieren */
+		for(int i = 0; i < mannschaft1.length; i++) {
+			System.out.println(mannschaft1[i]);
+		}
+		for(int i = 0; i < mannschaft2.length; i++) {
+			System.out.println(mannschaft2[i]);
+		}
+	}
+	public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+	    
+	   /* bitte implementieren */
+	}
+		
+		
+}",-
+Kuka,Elda,elda.kuka@campus.tu-berlin.de,Beendet,"15. Januar 2022  12:40","16. Januar 2022  21:43","1 Tag 9 Stunden","5,36",extends,"die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen","Es wird die Methode der Sub-Klasse aufgerufen",Object,"Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
+Hock,"Katharina Maria",hock@campus.tu-berlin.de,Beendet,"15. Januar 2022  14:54","16. Januar 2022  23:15","1 Tag 8 Stunden","11,86","die Klasse Hund erbt von der Klasse Tier","Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Zeile 1 : Klasse A hat keinen Konstruktor",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+	
+	
+  public static void main(String[] args){
+     
+	 // Arrays definieren
+		Fussballspieler[] deutschland = new Fussballspieler[11];
+		Fussballspieler[] ff2 = new Fussballspieler[11];
+     
+     
+    //Werte einfügen
+		deutschland[0] = new Torwart(""a"", 8, 1);
+		ff2[0] = new Torwart(""b"", 7, 1);
+		
+		deutschland[1] = new Mittelfeldspieler(""c"", 2, 12);
+		deutschland[2] = new Mittelfeldspieler(""d"", 4, 13);
+		deutschland[3] = new Mittelfeldspieler(""e"", 4, 14);
+		deutschland[4] = new Mittelfeldspieler(""f"", 5, 15);
+		deutschland[5] = new Mittelfeldspieler(""g"", 3, 18);
+		ff2[1] = new Mittelfeldspieler(""h"", 2, 16);
+		ff2[2] = new Mittelfeldspieler(""i"", 7, 15);
+		ff2[3] = new Mittelfeldspieler(""j"", 8, 1);
+		ff2[4] = new Mittelfeldspieler(""k"", 9, 14);
+		ff2[5] = new Mittelfeldspieler(""l"", 2, 1);
+		
+		deutschland[6] = new Sturmspieler(""m"", 8, 16);
+		deutschland[7] = new Sturmspieler(""n"", 7, 13);
+		deutschland[8] = new Sturmspieler(""o"", 7, 14);
+		ff2[6] = new Sturmspieler(""p"", 6, 18);
+		ff2[7] = new Sturmspieler(""r"", 5, 15);
+		
+		deutschland[9] = new Abwehrspieler(""s"", 7, 14);
+		deutschland[10] = new Abwehrspieler(""t"", 6, 12);
+		ff2[8] = new Abwehrspieler(""u"", 3, 11);
+		ff2[9] = new Abwehrspieler(""v"", 3, 1);
+		ff2[10] = new Abwehrspieler(""w"", 7, 12);
+		
+	System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+    System.out.println();
+    ausgeben(deutschland);
+    System.out.println();
+    fussballspielen(deutschland, ff2);
+		
+		}	
+		
+		
+	public static double roteKartenZaehlen(Fussballspieler[] fa){ //Ruft spezialisierte Methode auf, um den gewollten Wert zu bekommen.
+		double summe = 0;
+		for(int i = 0; i<fa.length; i++){
+			if(fa[i] instanceof Abwehrspieler){
+				summe = summe + ((Abwehrspieler)fa[i]).getAnzahlRoteKartenJeSpiel();
+			}
+		} return summe;
+		
+	}
+	
+	
+	public static void ausgeben(Fussballspieler[] fa){ //Ruft die Methode auf um die eingetragenen Daten unaufwendig zu erhalten.
+		for(int i = 0; i < fa.length; i++){
+			System.out.println(fa[i]);
+		}
+  
+	}
+	
+	public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+    double tm1 = 0;
+	double tm2 = 0;
+	
+	
+	
+	for(int i = 0; i < mannschaft1.length; i++){
+		if(mannschaft1[i] instanceof Sturmspieler){
+		tm1 = tm1 + (((Sturmspieler)mannschaft1[i]).getToreJeSpiel());
+	} 	if(mannschaft1[i] instanceof Abwehrspieler){
+		tm1 = tm1 - (((Abwehrspieler)mannschaft1[i]).getAnzahlRoteKartenJeSpiel());
+	} 	if(mannschaft1[i] instanceof Torwart){
+		tm1 = tm1 - (((Torwart)mannschaft1[i]).getGegentoreJeSpiel());
+	}	if(mannschaft1[i] instanceof Mittelfeldspieler){
+		tm1 = tm1 + (((Mittelfeldspieler)mannschaft1[i]).getPaesseJeSpiel());
+	}
+	}
+	
+	
+	
+	for(int i = 0; i < mannschaft2.length; i++){
+		if(mannschaft2[i] instanceof Sturmspieler){
+		tm2 = tm2 + (((Sturmspieler)mannschaft2[i]).getToreJeSpiel());
+	} 	if(mannschaft2[i] instanceof Abwehrspieler){
+		tm2 = tm2 - (((Abwehrspieler)mannschaft2[i]).getAnzahlRoteKartenJeSpiel());
+	} 	if(mannschaft2[i] instanceof Torwart){
+		tm2 = tm2 - (((Torwart)mannschaft2[i]).getGegentoreJeSpiel());
+	}	if(mannschaft2[i] instanceof Mittelfeldspieler){
+		tm2 = tm2 + (((Mittelfeldspieler)mannschaft2[i]).getPaesseJeSpiel());
+	}
+	}
+	
+	
+	
+	if(tm1 > tm2){
+		System.out.println(""Mannschaft 1 gewinnt!"");
+	} if(tm1 == tm2){
+		System.out.println(""Unentschieden!"");
+	} if(tm1 < tm2){
+		System.out.println(""Mannschaft 2 gewinnt!"");
+	}
+	}
+
+  }",-
+Hother,"Julika Anais",j.hother@campus.tu-berlin.de,Beendet,"15. Januar 2022  14:54","16. Januar 2022  23:59","1 Tag 9 Stunden","13,00","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Zeile 6,7 : super(); müsste vor x=0; stehen",Object,"Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+// Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
+
+public class TestMannschaft{
+  public static void main(String[] args){
+      Fussballspieler[] deutschland= new Fussballspieler[11];
+      Fussballspieler[] italien= new Fussballspieler[11];
+
+        deutschland[0]= new Torwart(""Manuel"", 12, 50.0); 
+        deutschland[1]= new Abwehrspieler(""Anna"", 92, 10.3); 
+        deutschland[2]= new Abwehrspieler(""Anika"", 2, 1.9); 
+        deutschland[3]= new Mittelfeldspieler(""Lala"", 76, 0.4); 
+        deutschland[4]= new Mittelfeldspieler(""Lali"", 50, 0.0); 
+        deutschland[5]= new Mittelfeldspieler(""Lalu"", 66, 90.5); 
+        deutschland[6]= new Mittelfeldspieler(""Lalm"", 32, 9.5); 
+        deutschland[7]= new Sturmspieler(""Maxi"", 8, 7.0); 
+        deutschland[8]= new Sturmspieler(""Taxi"", 500, 1.0); 
+        deutschland[9]= new Sturmspieler(""Jule"", 26, 0.0); 
+        deutschland[10]= new Sturmspieler(""David"", 20, 0.0); 
+
+        italien[0]= new Torwart(""Manuela"", 12, 5.0); 
+        italien[1]= new Abwehrspieler(""Annapi"", 92, 10.3); 
+        italien[2]= new Abwehrspieler(""Anikali"", 2, 1.9); 
+        italien[3]= new Mittelfeldspieler(""Lalalu"", 76, 0.4); 
+        italien[4]= new Mittelfeldspieler(""Lalili"", 50, 0.0); 
+        italien[5]= new Mittelfeldspieler(""Laluli"", 66, 8.0); 
+        italien[6]= new Mittelfeldspieler(""Lalmo"", 32, 9.5); 
+        italien[7]= new Sturmspieler(""Maxio"", 8, 7.0); 
+        italien[8]= new Sturmspieler(""Taxil"", 500, 1.0); 
+        italien[9]= new Sturmspieler(""Julina"", 26, 1.0); 
+        italien[10]= new Sturmspieler(""Davidof"", 20, 8.0); 
+
+    deutschland[10].geburtstagFeiern();
+
+    //Werte einfügen
+
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+    System.out.println();
+    ausgeben(deutschland);
+    System.out.println();
+    fussballspielen(deutschland, italien);
+  }
+
+  public static double roteKartenZaehlen(Fussballspieler[] team){
+      double counter = 0.0;
+      for(int i=0; i<team.length;i++){
+          if(team[i] instanceof Abwehrspieler){
+          Abwehrspieler x = (Abwehrspieler) team[i];
+          counter += x.getAnzahlRoteKartenJeSpiel();
+          }
+      }
+      return counter;
+
+   /* bitte implementieren */
+  }
+  public static void ausgeben(Fussballspieler[] team){
+    double counter = 0.0;
+      for(int i=0; i<team.length;i++){
+       System.out.println(team[i].toString());
+      }
+   /* bitte implementieren */
+  }
+  public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+    double counter1 = 0.0;
+    double counter2 = 0.0;
+        for(int i=0; i<mannschaft1.length;i++){
+            if(mannschaft1[i] instanceof Torwart){
+            Torwart x = (Torwart) mannschaft1[i];
+            counter1 -= x.getGegentoreJeSpiel();
+            }
+            if(mannschaft1[i] instanceof Abwehrspieler){
+            Abwehrspieler x = (Abwehrspieler) mannschaft1[i];
+            counter1 -= x.getAnzahlRoteKartenJeSpiel();
+            }
+            if(mannschaft1[i] instanceof Mittelfeldspieler){
+            Mittelfeldspieler x = (Mittelfeldspieler) mannschaft1[i];
+            counter1 += x.getPaesseJeSpiel();
+            }
+            if(mannschaft1[i] instanceof Sturmspieler){
+            Sturmspieler x = (Sturmspieler) mannschaft1[i];
+            counter1 += x.getToreJeSpiel();
+            }
+        }
+        
+        for(int i=0; i<mannschaft2.length;i++){
+            if(mannschaft2[i] instanceof Torwart){
+            Torwart x = (Torwart) mannschaft2[i];
+            counter2 -= x.getGegentoreJeSpiel();
+            }
+            if(mannschaft2[i] instanceof Abwehrspieler){
+            Abwehrspieler x = (Abwehrspieler) mannschaft2[i];
+            counter2 -= x.getAnzahlRoteKartenJeSpiel();
+            }
+            if(mannschaft2[i] instanceof Mittelfeldspieler){
+            Mittelfeldspieler x = (Mittelfeldspieler) mannschaft2[i];
+            counter2 += x.getPaesseJeSpiel();
+            }
+            if(mannschaft2[i] instanceof Sturmspieler){
+            Sturmspieler x = (Sturmspieler) mannschaft2[i];
+            counter2 += x.getToreJeSpiel();
+            }        
+        }
+
+        if (counter1>counter2){
+            System.out.println(""Mannschaft 1 gewinnt!"");
+        } 
+
+        if (counter1<counter2){
+            System.out.println(""Mannschaft 2 gewinnt!"");
+        } 
+
+        if (counter1==counter2){
+            System.out.println(""Unentschieden!"");
+        } 
+   /* bitte implementieren */
+  }
+}",-
+Lohse,"Clemens Christian",clemens.lohse@campus.tu-berlin.de,Beendet,"15. Januar 2022  18:08","16. Januar 2022  23:59","1 Tag 5 Stunden","4,50","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
+_""__Tell your children not to walk my way""_
+ausgegeben.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
+_""__Do you wanna bang heads with me?""_
+ausgegeben.","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","die Klasse Hund erbt von der Klasse Tier","Zeile 1 : Klasse A hat keinen Konstruktor",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
+Frahat,Ramy,ramy.frahat@campus.tu-berlin.de,Beendet,"15. Januar 2022  18:56","16. Januar 2022  23:50","1 Tag 4 Stunden","5,50","Zeile 6,7 : super(); müsste vor x=0; stehen",Object,"Es wird die Methode der Super-Klasse aufgerufen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
+Fung,"Wendy Poju",w.fung@campus.tu-berlin.de,Beendet,"15. Januar 2022  20:36","16. Januar 2022  23:56","1 Tag 3 Stunden","12,86","die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen",super,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+// Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
+
+public class TestMannschaft {
+    public static void main(String[] args){
+
+        // Arrays definieren
+        Fussballspieler [] mannschaft1 = new Fussballspieler[11];
+        Fussballspieler [] mannschaft2 = new Fussballspieler[11];
+            mannschaft1[0] = new Abwehrspieler(""Spieler1"", 20,1);
+            mannschaft1[1] = new Abwehrspieler(""Spieler2"", 24,0);
+            mannschaft1[2] = new Abwehrspieler(""Spieler3"", 24,0.1);
+            mannschaft1[3] = new Abwehrspieler(""Spieler4"", 24,0.4);
+            mannschaft1[4] = new Mittelfeldspieler(""Spieler5"", 24,5.8);
+            mannschaft1[5] = new Mittelfeldspieler(""Spieler6"", 24,18);
+            mannschaft1[6] = new Mittelfeldspieler(""Spieler7"", 24,15.5);
+            mannschaft1[7] = new Mittelfeldspieler(""Spieler8"", 24,6.9);
+            mannschaft1[8] = new Sturmspieler(""Spieler9"", 24,2.8);
+            mannschaft1[9] = new Sturmspieler(""Spieler10"", 24,3.5);
+            mannschaft1[10] = new Torwart(""Spieler11"", 24,12.6);
+        mannschaft2[0] = new Abwehrspieler(""Spieler1"", 20,1);
+        mannschaft2[1] = new Abwehrspieler(""Spieler2"", 24,0);
+        mannschaft2[2] = new Abwehrspieler(""Spieler3"", 24,0.1);
+        mannschaft2[3] = new Abwehrspieler(""Spieler4"", 24,0.4);
+        mannschaft2[4] = new Mittelfeldspieler(""Spieler5"", 24,5.8);
+        mannschaft2[5] = new Mittelfeldspieler(""Spieler6"", 24,18);
+        mannschaft2[6] = new Mittelfeldspieler(""Spieler7"", 24,15.5);
+        mannschaft2[7] = new Mittelfeldspieler(""Spieler8"", 24,6.9);
+        mannschaft2[8] = new Sturmspieler(""Spieler9"", 24,2.8);
+        mannschaft2[9] = new Sturmspieler(""Spieler10"", 24,3.5);
+        mannschaft2[10] = new Torwart(""Spieler11"", 24,12.6);
+        mannschaft1[3].geburtstagFeiern();
+
+
+        //Werte einfügen
+
+        System.out.println(""Rote Karten: "" + roteKartenZaehlen(mannschaft1));
+        System.out.println();
+        ausgeben(mannschaft2);
+        System.out.println();
+        fussballspielen(mannschaft1, mannschaft2);
+    }
+
+    /*
+    Polymorphie spielt eine Rolle, weil man jeden Spielertyp uebergeben kann,
+    und die Methode beruecksichtigt, dass nur Abwehrspieler das rote Karten Attribut besitzen.
+     */
+    public static double roteKartenZaehlen(Fussballspieler[] spieler){
+        double anzahlrotekarten = 0;
+        for(int x=0;spieler.length>x ;x++){
+            if(spieler[x] instanceof Abwehrspieler){
+             anzahlrotekarten = anzahlrotekarten + ((Abwehrspieler) spieler[x]).getAnzahlRoteKartenJeSpiel();
+            }
+        }
+        return anzahlrotekarten;
+    }
+    /*
+    Polymorphie spielt eine Rolle, weil alle Spielertypen die toString Methode besitzen,
+    und je nach Objekttyp die korrekte Variante aufgerufen wird.
+    */
+    public static void ausgeben(Fussballspieler[] spieler){
+        for (Fussballspieler s : spieler) {
+            System.out.println(s.toString());
+        }
+    }
+
+    public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+        double spielstaerke1 = 0;
+        double spielstaerke2 = 0;
+        for (Fussballspieler s : mannschaft1) {
+            if (s instanceof Torwart) {
+                spielstaerke1 -= ((Torwart) s).getGegentoreJeSpiel();
+            }
+            if (s instanceof Abwehrspieler) {
+                spielstaerke1 -= ((Abwehrspieler) s).getAnzahlRoteKartenJeSpiel();
+            }
+            if (s instanceof Mittelfeldspieler) {
+                spielstaerke1 += ((Mittelfeldspieler) s).getPaesseJeSpiel();
+            }
+            if (s instanceof Sturmspieler) {
+                spielstaerke1 += ((Sturmspieler) s).getToreJeSpiel();
+            }
+        }
+        for (Fussballspieler s : mannschaft2) {
+            if (s instanceof Torwart) {
+                spielstaerke2 -= ((Torwart) s).getGegentoreJeSpiel();
+            }
+            if (s instanceof Abwehrspieler) {
+                spielstaerke2 -= ((Abwehrspieler) s).getAnzahlRoteKartenJeSpiel();
+            }
+            if (s instanceof Mittelfeldspieler) {
+                spielstaerke2 += ((Mittelfeldspieler) s).getPaesseJeSpiel();
+            }
+            if (s instanceof Sturmspieler) {
+                spielstaerke2 += ((Sturmspieler) s).getToreJeSpiel();
+            }
+        }
+        if (spielstaerke1 > spielstaerke2) {
+            System.out.println(""Mannschaft 1 gewinnt!"");
+        } else if (spielstaerke1 == spielstaerke2) {
+            System.out.println(""Unentschieden!"");
+        } else {
+            System.out.println(""Mannschaft 2 gewinnt!"");
+        }
+    }
+}",-
+Khatiwada,Aayush,khatiwada@campus.tu-berlin.de,Beendet,"16. Januar 2022  00:25","16. Januar 2022  23:59","23 Stunden 33 Minuten","4,23","die Klasse Hund erbt von der Klasse Tier","Zeile 1 : Klasse A hat keinen Konstruktor",Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
+_""__Tell your children not to walk my way""_
+ausgegeben.","Es wird die Methode der Super-Klasse aufgerufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
+Diao,Yiwei,yiwei.diao@campus.tu-berlin.de,Beendet,"16. Januar 2022  13:27","16. Januar 2022  23:59","10 Stunden 31 Minuten","11,82","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"Es wird die Methode der Super-Klasse aufgerufen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {6. <sub>gewicht:} Dropzone 3 -> {10. <sub>int} Dropzone 4 -> {2. <sub>bezeichnung:} Dropzone 5 -> {3. <sub>String} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+// Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
+
+public class TestMannschaft{
+  	public static void main(String[] args){
+      
+     		// Arrays definieren
+     		Fussballspieler[] eins = {	new Sturmspieler(""A"", 18, 1.0),
+						new Sturmspieler(""B"", 19, 0.5),
+						new Sturmspieler(""C"", 20, 0.8),
+						new Mittelfeldspieler(""D"", 21, 3.3),
+						new Mittelfeldspieler(""E"", 20, 2.3),
+						new Mittelfeldspieler(""F"", 19, 1.3),
+						new Abwehrspieler(""G"", 21, 1.5),
+						new Abwehrspieler(""H"", 18, 0.5),
+						new Abwehrspieler(""I"", 20, 1.3),
+						new Abwehrspieler(""J"", 18, 1.7),
+						new Torwart(""K"", 19, 2.2)
+		};
+		Fussballspieler[] zwei = {	new Sturmspieler(""a"", 20, 0.7),
+						new Sturmspieler(""b"", 22, 1.5),
+						new Sturmspieler(""c"", 16, 1.8),
+						new Mittelfeldspieler(""d"", 17, 2.3),
+						new Mittelfeldspieler(""e"", 23, 2.1),
+						new Mittelfeldspieler(""f"", 19, 1.0),
+						new Abwehrspieler(""g"", 18, 1.3),
+						new Abwehrspieler(""h"", 22, 0.9),
+						new Abwehrspieler(""i"", 16, 1.1),
+						new Abwehrspieler(""j"", 15, 1.2),
+						new Torwart(""k"", 19, 2.4)
+		
+		};
+		
+		zwei[0].geburtstagFeiern();
+     
+    		//Werte einfügen
+
+    		System.out.println(""Rote Karten: "" + roteKartenZaehlen(eins));
+    		System.out.println();
+    		ausgeben(zwei);
+    		System.out.println();
+    		fussballspielen(eins, zwei);
+  	}
+
+  	public static double roteKartenZaehlen(Fussballspieler[] fs){
+    
+   		/* bitte implementieren */
+		double rote = 0.0;
+		for(int i = 0; i < fs.length; i++) {
+			if(fs[i] instanceof Abwehrspieler) {
+				rote += ((Abwehrspieler)fs[i]).getAnzahlRoteKartenJeSpiel();
+			}		
+		}
+		return rote;
+  	}
+
+  	public static void ausgeben(Fussballspieler[] fs){
+    
+   		/* bitte implementieren */
+		for(int i = 0; i < fs.length; i++) {
+			if(fs[i] instanceof Sturmspieler) {
+				System.out.println(((Sturmspieler)fs[i]));
+			}
+			if(fs[i] instanceof Abwehrspieler) {
+				System.out.println(((Abwehrspieler)fs[i]));
+			}
+			if(fs[i] instanceof Mittelfeldspieler) {
+				System.out.println(((Mittelfeldspieler)fs[i]));
+			}
+			if(fs[i] instanceof Torwart) {
+				System.out.println(((Torwart)fs[i]));
+			}
+		}
+  	}
+
+  	public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+    
+   		/* bitte implementieren */
+		double plus1 = 0.0;
+		for(int i = 0; i < mannschaft1.length; i++) {
+			if(mannschaft1[i] instanceof Sturmspieler) {
+				plus1 += ((Sturmspieler)mannschaft1[i]).getToreJeSpiel();
+			}
+			if(mannschaft1[i] instanceof Mittelfeldspieler) {
+				plus1 += ((Mittelfeldspieler)mannschaft1[i]).getPaesseJeSpiel();
+			}
+			if(mannschaft1[i] instanceof Torwart) {
+				plus1 += ((Torwart)mannschaft1[i]).getGegentoreJeSpiel();
+			}		
+		}
+		plus1 -= roteKartenZaehlen(mannschaft1);
+
+		double plus2 = 0.0;
+		for(int i = 0; i < mannschaft2.length; i++) {
+			if(mannschaft2[i] instanceof Sturmspieler) {
+				plus1 += ((Sturmspieler)mannschaft2[i]).getToreJeSpiel();
+			}
+			if(mannschaft2[i] instanceof Mittelfeldspieler) {
+				plus1 += ((Mittelfeldspieler)mannschaft2[i]).getPaesseJeSpiel();
+			}
+			if(mannschaft2[i] instanceof Torwart) {
+				plus1 += ((Torwart)mannschaft2[i]).getGegentoreJeSpiel();
+			}		
+		}
+		plus2 -= roteKartenZaehlen(mannschaft2);
+
+		if(plus1 > plus2)
+			System.out.println(""Mannschaft 1 gewinnt!"");
+		else if(plus1 == plus2)
+			System.out.println(""Unentschieden!"");
+		else
+			System.out.println(""Mannschaft 2 gewinnt!"");
+		
+  	}
+}",-
+Hermanns,Paul-Henri,p.hermanns@campus.tu-berlin.de,Beendet,"16. Januar 2022  14:35","16. Januar 2022  23:59","9 Stunden 23 Minuten","5,36","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".",super,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+// Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
+
+public class TestMannschaft{
+  public static void main(String[] args){
+      
+     // Arrays definieren
+     
+     
+    //Werte einfügen
+
+    System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+    System.out.println();
+    ausgeben(......);
+    System.out.println();
+    fussballspielen(................);
+  }
+
+  public static double roteKartenZaehlen(.................){
+    
+   /* bitte implementieren */
+  }
+  public static void ausgeben(...){
+    
+   /* bitte implementieren */
+  }
+  public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+    
+   /* bitte implementieren */
+  }
+}",-
+Leonardo,"Louie Alessandre De",louie.ad.leonardo@campus.tu-berlin.de,Beendet,"16. Januar 2022  17:29","16. Januar 2022  23:34","6 Stunden 5 Minuten","18,73",Java,"die Klasse Hund erbt von der Klasse Tier","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Zeile 6,7 : super(); müsste vor x=0; stehen",super,"Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+// Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
+
+public class TestMannschaft {
+    public static void main(String[] args){
+
+        // Arrays definieren
+        Fussballspieler[] Indo = new Fussballspieler[11];
+        Fussballspieler[] deutschland = new Fussballspieler[11];
+
+        //Werte einfügen
+        Indo[0] = new Torwart(""Bayu"", 27, 2);
+        Indo[1] = new Abwehrspieler(""Abi"", 21, 3);
+        Indo[2] = new Abwehrspieler(""Bagus"", 24, 0);
+        Indo[3] = new Mittelfeldspieler(""Dimas"", 23, 7);
+        Indo[4] = new Mittelfeldspieler(""Bobi"", 23, 4);
+        Indo[5] = new Mittelfeldspieler(""Diaz"", 28, 4);
+        Indo[6] = new Mittelfeldspieler(""Dodil"", 32, 4);
+        Indo[7] = new Sturmspieler(""Irwan"", 34, 5);
+        Indo[8] = new Sturmspieler(""David"", 21, 5);
+        Indo[9] = new Sturmspieler(""Tomas"", 22, 2);
+        Indo[10] = new Sturmspieler(""Mario"", 24, 6);
+
+        deutschland[0] = new Torwart(""Tara"", 21, 5);
+        deutschland[1] = new Abwehrspieler(""Poto"", 28, 1);
+        deutschland[2] = new Abwehrspieler(""Kaka"", 28, 0);
+        deutschland[3] = new Mittelfeldspieler(""Didi"", 20, 5);
+        deutschland[4] = new Mittelfeldspieler(""Supratman"", 35, 1);
+        deutschland[5] = new Mittelfeldspieler(""Yusuf"", 17, 8);
+        deutschland[6] = new Mittelfeldspieler(""Yosia"", 32, 5);
+        deutschland[7] = new Sturmspieler(""Leon"", 32, 2);
+        deutschland[8] = new Sturmspieler(""Deo"", 19, 1);
+        deutschland[9] = new Sturmspieler(""Suparno"", 26, 3);
+        deutschland[10] = new Sturmspieler(""Mina"", 24, 1);
+        roteKartenZaehlen(Indo);
+        roteKartenZaehlen(deutschland);
+        System.out.println(""Rote Karten: "" + roteKartenZaehlen(deutschland));
+        System.out.println();
+        ausgeben(deutschland);
+        System.out.println();
+        fussballspielen(Indo, deutschland);
+    }
+
+    public static double roteKartenZaehlen(Fussballspieler[] mannschaft){
+        double summe = 0;
+        for(int i = 0; i < mannschaft.length; i++) {
+            if (mannschaft[i] instanceof Abwehrspieler) {
+                summe += ((Abwehrspieler) mannschaft[i]).getAnzahlRoteKartenJeSpiel();
+            }
+        }
+        return summe;
+        /* bitte implementieren */
+    }
+    public static void ausgeben(Fussballspieler[] mannschaft){
+            for(int i = 0; i < mannschaft.length; i++) {
+                System.out.println(mannschaft[i].toString());
+            }
+        }
+
+        /* bitte implementieren */
+    public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspieler[] mannschaft2){
+            double punkte1 = 0;
+            double punkte2 = 0;
+            for(int i = 0; i < mannschaft1.length; i++) {
+                if (mannschaft1[i] instanceof Sturmspieler) {
+                    punkte1 += ((Sturmspieler) mannschaft1[i]).getToreJeSpiel();
+                }
+            }
+            for(int i = 0; i < mannschaft2.length; i++) {
+                if (mannschaft2[i] instanceof Sturmspieler) {
+                    punkte2 += ((Sturmspieler) mannschaft2[i]).getToreJeSpiel();
+                }
+            }
+            if (punkte1 > punkte2) {
+                System.out.println(mannschaft1+"" gewinnt!"");
+            } else if (punkte2 > punkte1) {
+                System.out.println(mannschaft2+"" gewinnt!"");
+            } else if (punkte1 == punkte2)
+                System.out.println(""Unentschieden!"");
+        }
+}",//
+Werther,"Jasper Cornelis",j.werther@campus.tu-berlin.de,Beendet,"16. Januar 2022  23:33","16. Januar 2022  23:59","25 Minuten 24 Sekunden","5,73",Object,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
+_""Mother
+__Tell your children not to walk my way""_
+ausgegeben.","Beim Kompilieren erscheint die Fehlermeldung
+""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es wird die Methode der Sub-Klasse aufgerufen","Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-

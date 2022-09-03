@@ -1,0 +1,4828 @@
+﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/20,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9"
+Ereskovskyi,"Ulrike Anastasia",ereskovskyi@campus.tu-berlin.de,Beendet,"10. Januar 2022  00:05","16. Januar 2022  23:59","6 Tage 23 Stunden","9,00","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Die Anzahl der Bytes die gebraucht werden","int* pointer;
+
+; int array[];","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int arr [10];
+	struct s {int arr;};
+	return malloc(sizeof(arr));
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+typedef struct Arrlist{
+
+    	int size;
+    	void **elems;
+}Arrlist;
+
+
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+void resize(Arrlist *arrayList) {
+
+    int oldSize = arrayList->size;
+    int newSize = oldSize + 1;
+    int *temp = realloc(arrayList->elems, sizeof(char*) * newSize);
+    if (temp != NULL) {
+        arrayList->elems = temp;
+        arrayList->size = newSize;
+    }
+}
+
+void resizeless(Arrlist *arrayList) {
+    int num = arrayList->size;
+    int oldSize = arrayList->size;
+    int newSize = oldSize -1;
+    int *temp = realloc(arrayList->elems, sizeof(char*) * newSize);
+    if (temp != NULL) {
+        arrayList->elems = temp;
+        arrayList->size = newSize;
+    }
+}
+
+
+void arrlist_add(Arrlist* al, char* str){
+	///////////////////////////////////////////////M
+	/*
+	fügt am Ende der Arrayliste einen String hinzu
+	dazu muss der übergebene String kopiert
+	das interne Array / die Liste vergrößert
+	die Adresse des neuen Strings in das interne Array am Ende hinzugefügt werden
+	*/
+	
+	resize(al);
+	
+	al->elems[al->size-1] = str;
+	
+	/*
+	char cp [al->size];
+	
+	for(int i = 0; i<al->size; i++){
+		
+		cp[i] = al->elems[i];
+	}
+	
+	al->elems = NULL;
+	for(int i = 0; i < al->size; i++){
+		al->elems[i] = cp[i];
+	}*/
+}
+
+void arrlist_del_item(Arrlist* al, int index){
+	//////////////////////////////////////////////
+	/*
+	den dynamisch erstellten String (aus der Funktion arrlist_add()) am Index index freigeben
+    	alle Elemente die nachdem index stehen um 1 Index in der Liste nach vorne verschieben
+    	das interne Array um 1 verkleinern, da ein Element entfernt wurde
+	*/
+	al->elems[index] = NULL;
+	free(al->elems[index]);
+	
+	for(int i = 0; i < al->size; i++){
+		if(i>index){
+			al->elems[i-1] = al->elems[i];
+		}
+	}
+	
+	resizeless(al);
+	
+	arrlist_print(al);
+	
+}
+void arrlist_free(Arrlist *al){
+	//////////////////////////////////////////////
+	/*
+	soll alle beinhaltenden Strings und anschließend die Datenstruktur an sich freigeben
+	eine Ausgabe mit ""Verlassen"" stehen
+	*/
+	
+	for(int i = 0; i < al->size; i++){
+		free(al->elems[i]);
+	}
+	
+	free(al);
+	printf(""Verlassen"");
+}
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}",-
+Vu,"Phuong Anh",phuong-anh.vu@campus.tu-berlin.de,Beendet,"10. Januar 2022  00:07","16. Januar 2022  23:59","6 Tage 23 Stunden","15,75","cealloc
+; talloc
+; PPRalloc
+; mealloc","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","str == 0","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","int* pointer;","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*)malloc(10 * sizeof(int));
+	if(!arr) return 0;
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+	return;
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+typedef struct arrlist{
+    char** elems;
+    int size;
+} Arrlist;
+
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+void arrlist_add(Arrlist* al, char* str) {
+    if (al == NULL) {
+      exit(1); //Bedingung, wenn Struktur leer ist --> Prüfung auf valide Adresse
+    }
+
+    char** tmp = realloc(al->elems, sizeof(char*) * (al->size + 1));
+    if(!tmp){
+        free(al->elems); // ALARM warum dieser free hier, siehe notiz 1
+        return ; //Programm beenden ALARM beendet nur die funktion, nicht das programm
+    }
+
+    al->elems = tmp;
+    al->elems[al->size] = (char*) calloc(strlen(str) + 1, sizeof(char));
+    
+    if (al->elems[al->size] == NULL) {
+      return;
+    }
+
+    strcpy(al->elems[al->size], str);
+
+    al->size++;
+
+    return;
+}
+void arrlist_del_item(Arrlist* al, int index)
+{
+    if(al == NULL) exit(1); //Bedingung, wenn Struktur leer ist --> Prüfung auf valide Adresse
+    if(al->size == 0) return;
+    arrlist_add(al, index);
+	for(int i = al->size-1; i > index; i--){
+		al->elems[i] = al->elems[i-1];
+	}   
+	--al->elems[index];
+    al->size--;
+    al->elems = realloc(al->elems, al->size * sizeof(int));
+	return;
+
+}
+
+void arrlist_free(Arrlist *al)
+{
+    free(al->elems);
+    al->size = 0;
+    return exit(1);
+}
+
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}","#include <stdio.h>
+
+typedef char str20[21];
+typedef struct student{
+	str20 vorname;
+	str20 nachname;
+	int punkte[5];
+} Student;
+
+void student_einlesen(Student* p_stud){
+	printf(""Gebe den Vornamen ein: "");
+	scanf(""%s"", &p_stud->vorname);
+	getchar();
+	printf(""Gebe nun den Nachnamen ein: "");
+	scanf(""%s"", &p_stud->nachname);
+	getchar();
+	printf(""Gebe nun nacheinander die 5 Punkte ein: \n"");
+	for(int i = 0; i <5; i++){
+		printf(""%i: "", i+1);
+		scanf(""%i"", &p_stud->punkte[i]);
+	}
+	printf(""\n"");
+	
+}
+
+void student_ausgeben(Student* p_stud){
+	int summe = 0;
+	for(int i = 0; i<5; ++i){
+		summe += p_stud->punkte[i];
+	}
+	printf(""Student: %s %s\n"", p_stud->vorname, p_stud->nachname);
+	printf(""Anzahl Punkte: %i\n\n"", summe);
+}
+
+int main(){
+	Student studenten[5];
+	// zum Einlesen
+    for(int i = 0; i < 5; i++) {
+        student_einlesen(&studenten[i]);
+    }
+    // zum Ausgeben
+    for(int i = 0; i < 5; i++) {
+        student_ausgeben(&studenten[i]);
+    }
+}"
+Yeboah,"Andrea Kumih",a.yeboah@campus.tu-berlin.de,Beendet,"10. Januar 2022  00:07","16. Januar 2022  23:59","6 Tage 23 Stunden","8,75","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen
+; Strukturen brauchen einen Rückgabewert","malloc
+; calloc
+; realloc","str == 0","int* pointer;","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr= (int*)malloc(10* sizeof(int));
+	if (arr)
+	for(int i = 0; i < 10; ++i) arr[i] = 0;
+	return arr;
+}
+
+int main(void){
+	unsigned int summe = 0;
+	int* p = allocArray();
+	for(int i = 0; i < 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"",summe);
+	free(p);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+typedef struct arrlist{
+    char** elems;
+  int size;
+}Arrlist;
+
+void arrlist_init(Arrlist* al)
+{
+   al ->elems =(char**)malloc(0);
+   if (al -> elems == NULL){
+       printf(""%s\n"", ""Error: arraylist_init"");
+       exit(-1);
+   }
+   al ->size =0;
+  //al->size = 0;
+  //al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->size)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+// TODO: arrlist_add, arrlist_del_item und arrlist_free */
+void arrlist_add(Arrlist* al, char* str){
+    
+    al->size++;
+  char** tmp = (char**)realloc( al->elems, (al->size)*sizeof(char*) );
+  if ( !tmp ) exit( -1 );
+  al->elems = tmp;
+  char* produkt = (char*)malloc(strlen(str)+1);
+  strncpy(produkt,str,strlen(str)+1);
+  al->elems[al->size-1] = produkt;
+  
+}
+
+void arrlist_del_item(Arrlist* al, int index) {
+  
+   if ( index > al->size && index <= 0 )
+     return;
+     else{
+        al->size = al->size-1;
+  for ( int i = index -1; i < al-> size; ++i)
+  {
+     al->elems[i] = al->elems[i+1];
+  }
+  free(al-> elems[al ->size]);
+  al ->elems = (char**)realloc(al ->elems, (al ->size)*sizeof(char*));
+}
+}
+void  arrlist_free(Arrlist *al){
+   for  (int i = 0; i< al ->size; ++i)
+   {
+   free( al->elems[i] );
+   }
+   free(al ->elems);
+}
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+        //printf(""Verlassen"",'q');
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}","#include <stdio.h> 
+#include <stdlib.h> 
+#include <time.h> 
+#include <string.h> 
+
+
+#define MAX_str 20
+#define ANZ_ST 5
+#define ANZ_HA 5
+
+typedef struct student { 
+
+   char vorname[MAX_str]; 
+
+   char nachname[MAX_str]; 
+
+  int hausaufgabenblaetter[ANZ_HA]; 
+
+}Student; 
+
+void student_einlesen(Student* p_stud){ 
+   for (int i = 0; i < ANZ_ST; ++i)
+   {
+      char buf[MAX_str];
+      printf(""Gebe den Vornamen ein:"");
+      fgets(buf,MAX_str,stdin);
+      buf[strlen(buf)-1]='\0';
+      strncpy(p_stud[i].vorname,buf,MAX_str);
+
+      printf(""Gebe nun den Nachnamen ein:"");
+      fgets(buf,MAX_str,stdin);
+      buf[strlen(buf)-1]='\0';
+      strncpy(p_stud[i].nachname,buf,MAX_str);
+      
+      printf(""Gebe nun nacheinander die %d Punkte ein:\n"",ANZ_HA);
+      for (int j = 0; j < ANZ_HA; ++j)
+      {  
+         printf(""%d: "",j+1);
+         scanf(""%d"",&p_stud[i].hausaufgabenblaetter[j]);
+      }
+     getchar();    
+   }
+
+} 
+
+
+void student_ausgeben(Student* p_stud){ 
+
+   for (int i = 0; i < ANZ_ST; ++i)
+   {
+      int temp=0;
+      printf(""\nStudent: %s %s\n"",p_stud[i].vorname,p_stud[i].nachname);
+      for (int j = 0; j < ANZ_HA; ++j)
+      {
+         temp = temp + p_stud[i].hausaufgabenblaetter[j];
+      }
+      printf(""Anzahl Punkte: %d\n"",temp);
+   }
+   
+
+} 
+
+
+int main(){
+
+   Student studenten[ANZ_ST] ;
+   student_einlesen(studenten);
+   student_ausgeben(studenten);
+ }"
+Hahnen,"Leo Ole",l.hahnen@campus.tu-berlin.de,Beendet,"10. Januar 2022  08:32","16. Januar 2022  23:59","6 Tage 15 Stunden","17,50","Eine Struktur bündelt Variablen so, dass sie verteilt im Speicher liegen",-,"malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Elemente im Array",-,"#include <stdio.h> 
+#include <stdlib.h> 
+
+int* allocArray() {
+	int* arr = (int*)malloc(10 * sizeof(int));
+	if (arr == 0)
+	{
+		printf(""Fehler beim Allokieren"");
+		exit(-1);
+	}
+	return arr;
+}
+
+int main(void) {
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for (int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for (int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+	free(p);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h> // printf()
+#include <string.h> // strlen() strcpy()
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+typedef struct
+{
+	int size;
+	char** elems;
+}Arrlist;
+
+void arrlist_init(Arrlist* al)
+{
+	al->size = 0;
+	al->elems = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+	if (!al)
+		return;
+	if (!al->elems)
+		return;
+	printf(""# Ware\n"");
+	for (int i = 0; i < al->size; i++)
+		printf(""%d %s\n"", i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+void arrlist_add(Arrlist* al, char* str)
+{
+	al->elems = realloc(al->elems, sizeof(char*) * (al->size + 1));
+	
+	if (al->elems == 0)
+	{
+		printf(""Fehler beim Allokieren"");
+		exit(-1);
+	}
+	al->elems[al->size] = malloc((strlen(str) + 1) * sizeof(char));
+	strcpy(al->elems[al->size], str);
+	al->size++;
+}
+
+void arrlist_del_item(Arrlist* al, int index)
+{
+	if (index < 0 || index > (al->size - 1))
+	{
+		printf(""Index nicht im Array"");
+		return;
+	}
+	for (int i = index; i < (al->size - 1); ++i)
+	{
+		strcpy(al->elems[i], al->elems[i + 1]);
+	}
+	al->size--;
+	free(al->elems[al->size]);
+	al->elems = realloc(al->elems, al->size * sizeof(char*));
+}
+
+void arrlist_free(Arrlist* al)
+{
+	for (int i = 0; i < al->size; ++i)
+	{
+		free(al->elems[i]);
+	}
+	if (al->elems != NULL)
+	{
+		free(al->elems);
+	}
+	printf(""Verlassen"");
+}
+
+int main() {
+	Arrlist einkaufsliste;
+	char choice = 'q';
+	char buf[BUF_SIZE];
+	arrlist_init(&einkaufsliste);
+	printf(""Einkaufsliste\n""
+		""-----------------\n""
+		""(h) - Hinzufuegen\n""
+		""(l) - Loeschen\n""
+		""(a) - Ausgeben\n""
+		""(q) - Verlassen\n"");
+	do {
+		printf(""\nAuswahl: "");
+		choice = getchar();
+		getchar();
+		if (choice == 'q')
+			break;
+		switch (choice) {
+		case 'h':
+		{
+			printf(""Hinzufuegen: "");
+			fgets(buf, BUF_SIZE, stdin);
+			buf[BUF_SIZE - 1] = '\0';
+			arrlist_add(&einkaufsliste, buf);
+		}
+		break;
+		case 'l':
+		{
+			printf(""Löschen - Nummer: "");
+			int i = 0;
+			scanf(""%d"", &i);
+			getchar();
+			arrlist_del_item(&einkaufsliste, i);
+		}
+		break;
+		case 'a':
+			printf(""Ausgabe: \n"");
+			arrlist_print(&einkaufsliste);
+			break;
+		default:
+			printf(""Unbekannte Option!"");
+			break;
+		}
+	} while (1);
+	arrlist_free(&einkaufsliste);
+	return(0);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct
+{
+	char vorname[20];
+	char nachname[20];
+	int punkte[5];
+}Student;
+
+void student_einlesen(Student* p_stud)
+{
+	printf(""Gebe den Vornamen ein: "");
+	scanf(""%s"", p_stud->vorname);
+	printf(""Gebe nun den Nachnamen ein: "");
+	scanf(""%s"", p_stud->nachname);
+	printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+	for (int i = 0; i < 5; ++i)
+	{
+		printf(""%d: "", i + 1);
+		scanf(""%d"", &p_stud->punkte[i]);
+	}
+	printf(""\n"");
+}
+
+void student_ausgeben(Student* p_stud)
+{
+	int Punkte = 0;
+	for (int i = 0; i < 5; ++i)
+	{
+		Punkte += p_stud->punkte[i];
+	}
+
+	printf(""Student: %s %s\n"", p_stud->vorname, p_stud->nachname);
+	printf(""Anzahl Punkte: %d\n"", Punkte);
+}
+
+int main()
+{
+	Student Studierende[5];
+
+	for (int i = 0; i < 5; ++i)
+	{
+		student_einlesen(&Studierende[i]);
+	}
+	for (int i = 0; i < 5; ++i)
+	{
+		student_ausgeben(&Studierende[i]);
+		if (i < 4)
+			printf(""\n"");
+	}
+}"
+"Al Habbal","Abdul Ghani",a.alhabbal@campus.tu-berlin.de,Beendet,"10. Januar 2022  08:59","16. Januar 2022  23:59","6 Tage 15 Stunden","6,25","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","PPRalloc
+; mealloc
+; cealloc
+; talloc","int* pointer;","#include <stdio.h>
+#include <stdlib.h>
+
+int zahl[10];
+
+int* allocArray() {
+	int arr[10];
+	for(int i=0;i <11;i++){
+        zahl[i] = arr[i];
+	}
+	return zahl;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct student {
+    char vorname[21];
+    char nachname[21];
+    int punkte[5];
+} Student;
+
+void student_einlesen(Student*p_stud){
+printf(""Gebe den Vornamen ein: \n"");
+scanf("""");
+strcpy(.vorname, """");
+printf(""Gebe nun den Nachnamen ein: \n"");
+scanf("""");
+strcpy(.nachname, """");
+printf(""Gebe nun nacheinander die 5 Punkte ein: "");
+for(int i; i != 5; i++);
+printf(""%i: "",i);
+scanf(""%i"",&i);
+
+/*student_einlesen(&erster_Student);
+printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
+printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
+}*/
+
+void student_ausgeben(Student*p_stud)
+
+int main() {
+ static Student.p_stud[5];
+ 
+}"
+Dippold,"Veit Wilfried",v.dippold@campus.tu-berlin.de,Beendet,"10. Januar 2022  10:59","16. Januar 2022  11:29","6 Tage","19,75","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Die Anzahl der Bytes die gebraucht werden","cealloc
+; talloc
+; mealloc
+; PPRalloc","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int* pointer;","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*)malloc(10* sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+typedef struct arrlist{
+  int size;
+  char** elems;
+}Arrlist;
+
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+void arrlist_add(Arrlist* al, char* str){
+  if (!al) return;
+  int l = strlen(str);
+  char* tmp = (char*) malloc (l*sizeof(char)); 
+  if (!tmp){
+    free(al->elems);
+    return;
+  }
+  strcpy(tmp, str);
+  al->size++;
+  al->elems = realloc(al->elems, sizeof(char*)*al->size);
+  al->elems[al->size-1] = tmp;
+  return;
+}
+
+void arrlist_del_item(Arrlist* al, int index){
+  if(!al) return;
+  if(al->size == 0) return;
+  for (int i = index; i < al->size; i++)
+  {
+     al->elems[i] = al->elems[i+1];
+  }
+  al->size--;
+  al->elems = realloc(al->elems, sizeof(char*)*al->size);
+}
+
+void arrlist_free(Arrlist* al){
+  free(al->elems);
+  al->size = 0;
+  printf(""Verlassen"");
+}
+
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+		    for (int i=0; i<BUF_SIZE; i++){
+                        if (buf[i] == '\n') buf[i] = '\0';
+                    }
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+    arrlist_free(&einkaufsliste);
+    return(0);
+}","#include <stdio.h>
+#include <string.h>
+#include<stdlib.h>
+
+typedef struct student{
+   char first_name[20];
+   char last_name[20];
+   int points[5];
+}Student;
+
+void student_einlesen(Student* p_stud){
+  char vn[21];
+  char nn[21];
+  printf(""\nGebe den Vornamen ein: "");
+  fgets(vn, 20, stdin);
+  for (int i=0; i<21; i++){
+    if (vn[i] == '\n') vn[i] = '\0';
+  }
+  strcpy(p_stud->first_name, vn);
+  printf(""Gebe nun den Nachnamen ein: "");
+  fgets(nn, 20, stdin);
+  for (int i=0; i<21; i++){
+    if (nn[i] == '\n') nn[i] = '\0';
+  }
+  strcpy(p_stud->last_name, nn);
+  printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+  int tmp = 0;
+  for (int j=0; j<6; j++){
+    int tmp = 0;
+    if (j==5) return;
+    printf(""%i: "", j+1);
+    scanf(""%i"", &tmp);
+    getchar();
+    p_stud->points[j] = tmp;
+  }
+  printf(""\n"");
+  return;
+}
+
+void student_ausgeben(Student* p_stud){
+  printf(""\nStudent: %s %s\n"", p_stud->first_name, p_stud->last_name);
+  int summe = 0;
+  int pnt=0;
+  for (int z = 0; z < 5; z++) {
+      pnt = p_stud->points[z];
+      summe += pnt; 
+  }
+  printf(""Anzahl Punkte: %i\n"", summe);
+  return;
+}
+
+int main(){
+  Student stud[4];
+  for (int i = 0; i<5; i++){
+    student_einlesen(&stud[i]);
+  }
+  for (int i = 0; i<5; i++){
+    student_ausgeben(&stud[i]);
+  }
+  exit(1);
+}"
+Franke,Alexander,alexander.franke@campus.tu-berlin.de,Beendet,"10. Januar 2022  13:42","16. Januar 2022  23:59","6 Tage 10 Stunden","2,25","sizeof(ketchup) = 32","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Die Anzahl der Bytes die gebraucht werden","cealloc
+; PPRalloc","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int array[];","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int arr[10];
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}",-
+Stellwag,Moritz,m.stellwag@campus.tu-berlin.de,Beendet,"10. Januar 2022  14:13","16. Januar 2022  23:59","6 Tage 9 Stunden","11,75","talloc
+; PPRalloc
+; mealloc
+; cealloc","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Bytes die gebraucht werden","str == 0","int* pointer;","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = calloc(10, sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+typedef struct arrlist {
+    char* elems;
+    int size;
+}Arrlist;
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+void arrlist_add(Arrlist* al, char* str){
+    
+   unsigned int length = strlen(str) + 1;
+   char* copy = (char*) malloc(length * sizeof(char));
+   if (!copy) return 0;
+   strcpy(copy, str);
+   return copy;
+   
+   if (al == NULL) exit(1);
+   char* tmp = realloc(al->elems, al->size + 1);
+   if (!tmp){
+       free(al->elems);
+       return;
+   }
+   al->elems = tmp;
+   al->elems[al->size] = copy;
+   al->size++;
+   return;
+}
+
+void arrlist_del_item(Arrlist* al, int index){
+    //den dynamisch erstellten String (aus der Funktion arrlist_add()) am Index index freigeben
+    free (al->elems[index]);
+    //alle Elemente die nachdem index stehen um 1 Index in der Liste nach vorne verschieben
+    for(int i=0; i > index; i++){
+        al->elems[i-1] = al-> elems[i];
+    }
+    //das interne Array um 1 verkleinern, da ein Element entfernt wurde
+    if (!al) exit(1);
+    al->size--;
+    al->elems = realloc(al->elems, al->size * sizeof(char));
+}
+
+void arrlist_free(Arrlist* al){
+    //soll alle beinhaltenden Strings und anschließend die Datenstruktur an sich freigeben
+    for (int i=0; i<= al->size; i++){
+        free(al->elems[i]);
+    }
+    free (struct arrlist);
+    //eine Ausgabe mit ""Verlassen"" stehen
+    printf(""Verlassen\n"");
+}
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}","#include <stdio.h>
+
+typedef char Str20[21];
+typedef struct student{
+   Str20 first_name;
+   Str20  last_name;
+    int points[5];
+}Student;
+
+void student_einlesen(Student* p_stud){
+    int i = 0;
+    int z=0;
+    //Vornamen einlesen und in array schreiben
+    printf(""Gebe den Vornamen ein: "");
+    scanf("" %s"", p_stud->first_name);
+    //Nachname einlesen und in array schreiben
+    printf(""Gebe nun den Nachnamen ein: "");
+    scanf("" %s"", p_stud->last_name);
+    //nacheinander Punkte einlesen
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    for (i=0; i<5;i++){
+        z = (i+1);
+        printf(""%d: "", z);
+        scanf("" %d"",  &p_stud->points[i]);
+        
+    }
+    printf(""\n"");
+}    
+
+void student_ausgeben(Student* p_stud){
+    int summe = 0;
+    printf(""\nStudent: %s %s"", p_stud->first_name, p_stud->last_name);
+    summe = p_stud->points[0]+p_stud->points[1]+p_stud->points[2]+p_stud->points[3]+p_stud->points[4];
+    printf(""\nAnzahl Punkte: %d\n"", summe);
+}
+
+int main(){
+    int i = 0;
+    struct student studentenArray[5];
+    for (i=0; i<5; i++){
+    student_einlesen(&studentenArray[i]);}
+    for (i=0; i<5; i++){
+    student_ausgeben(&studentenArray[i]);}    
+}"
+Gülser,Bahar,b.guelser@campus.tu-berlin.de,Beendet,"10. Januar 2022  18:18","16. Januar 2022  23:59","6 Tage 5 Stunden","2,38","Die Anzahl der Bytes die gebraucht werden",-,"sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","Der Wert von str ist undefiniert.","PPRalloc
+; cealloc
+; mealloc","int array[];","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int arr[10];
+	int *arr_ptr = arr;
+	return arr_ptr;
+}
+
+int main(void){
+	
+	int summe = 0;
+	int* p = allocArray();
+	for(int i = 0; i != 10; i++) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; i++) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}",-
+Jenik,Isabell,i.jenik@campus.tu-berlin.de,Beendet,"10. Januar 2022  21:16","16. Januar 2022  23:46","6 Tage 2 Stunden","3,00","Die Anzahl der Bytes die gebraucht werden","Der Wert von str ist undefiniert.","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","char array_unbestimmt[3];","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int arr[10];
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}","#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+Studenten erster_Student
+typedef struct student{
+char vorname ;
+char nachname ;
+int erster_Student.punkte[0] = 0;
+int erster_Student.punkte[1] = 0;
+int erster_Student.punkte[2] = 0;
+int erster_Student.punkte[3] = 0;
+int erster_Student.punkte[4] = 0;
+student_ausgeben(&erster_Student);
+}Student;
+
+void student_einlesen(Student* p_stud);
+scanf(""%c"",""%c"",""%i"",""%i"",""%i"",""%i"",""%i"", vornamen, nachname, erster_Student.punkte[0],erster_Student.punkte[1],
+erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
+
+void student_ausgeben(Student* p_stud);
+int main(void){
+    int Studenten[4];
+    Studenten[0] = erster_Student;
+    Studenten[1] = zweiter_Student;
+    Studenten[2] = dritter_Student;
+    Studenten[3] = fierter_Student;
+  
+printf(""Gebe den Vornamen ein: Gebe nun den Nachnamen ein: Gebe nun nacheinander die 5 Punkte ein: 1: 2: 3: 4: 5: "");
+student_einlesen(Student* p_stud);
+student_ausgeben(Student* p_stud);
+
+student_einlesen(&erster_Student);
+printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
+printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
+}"
+Smith,"Alexander Mechielsen",a.smith@campus.tu-berlin.de,Beendet,"11. Januar 2022  21:20","16. Januar 2022  21:53","5 Tage","19,00","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Bytes die gebraucht werden","calloc
+; malloc
+; realloc","Der Wert von str ist undefiniert.","int array[];
+; int* pointer;","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*) malloc(10 * sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+typedef struct Arrlist {
+    int size;
+    char** elems;
+} Arrlist;
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems = NULL;
+}
+
+void clearNewline(char* str) {
+    int length =  strlen(str)+1;
+    for (int i = 0; i < length; i++) {
+        if (str[i] == '\n') {
+            str[i] = '\0';
+        }
+    }
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+void arrlist_add(Arrlist* al, char* str) {
+    clearNewline(str);
+    char *produkt = malloc(strlen(str)+1);
+    strcpy(produkt, str);
+    al->size++;
+    al->elems = realloc(al->elems, sizeof(char*) * al->size);
+    al->elems[al->size-1] = produkt;
+}
+
+void arrlist_del_item(Arrlist* al, int index) {
+    if(al->size == 0) return;
+    char* deletedPosition = al->elems[index];
+    for (++index; index < al->size; index++) {
+        al->elems[index-1] = al->elems[index];
+    }
+    al->size--;
+    al->elems = realloc(al->elems, sizeof(char*) * al->size);
+    free(deletedPosition);
+}
+
+void arrlist_free(Arrlist *al) {
+    for (int i = 0; i < al->size; i++) {
+        free(al->elems[i]);
+    }
+    free(al);
+    return;
+}
+
+int main(){
+    Arrlist *einkaufsliste = malloc(10 * sizeof(Arrlist));
+    char choice = 'q';
+    char buf[BUF_SIZE];
+    arrlist_init(einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q') {
+            arrlist_free(einkaufsliste);
+            printf(""Verlassen"");
+            break;
+        }
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}","#include <stdio.h>
+
+typedef struct Student {
+    char first_name[20];
+    char last_name[20];
+    int points[5];
+} Student;
+
+void student_einlesen(Student* p_stud) {
+    int i = 0;
+    printf(""Gebe den Vornamen ein: "");
+    scanf(""%s"", p_stud->first_name);
+    printf(""Gebe nun den Nachnamen ein: "");
+    scanf(""%s"", p_stud->last_name);
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    for (int i = 0; i < 5; i++) {
+        printf(""%i: "", i+1);
+        scanf(""%d"", &(p_stud->points[i]));
+    }
+    printf(""\n"");
+}
+
+void student_ausgeben(Student* p_stud) {
+    int total = 0;
+    for (int i = 0; i < 5; i++) {
+        total += p_stud->points[i];
+    }
+    printf(""Student: %s %s\n"", p_stud->first_name, p_stud->last_name);
+    printf(""Anzahl Punkte: %d\n\n"", total);
+}
+
+int main() {
+    static Student Student[5];
+    for (int i = 0; i < 5; i++) {
+        student_einlesen(&Student[i]);
+    }
+    for (int i = 0; i < 5; i++) {
+        student_ausgeben(&Student[i]);
+    }
+}"
+Hartmann,"Kaspar Lorenz",kaspar.l.hartmann@campus.tu-berlin.de,Beendet,"12. Januar 2022  08:43","12. Januar 2022  12:12","3 Stunden 29 Minuten","4,75","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","realloc; calloc
+; malloc
+; talloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) = 31
+
+; sizeof(ketchup) == sizeof(ketchup.pommes)","Die Anzahl der Bytes die gebraucht werden","int array[];","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = malloc( 10 * sizeof(int));
+    if ( !arr ) return 0;
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}",-
+Kulanathan,Keerthithan,k.kulanathan@campus.tu-berlin.de,Beendet,"12. Januar 2022  19:32","16. Januar 2022  23:58","4 Tage 4 Stunden","11,25","Strukturen brauchen einen Rückgabewert
+
+; Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","Die Anzahl der Bytes die gebraucht werden","str == 0","int array[];","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+int *arr;
+arr = malloc(10 * sizeof(int));
+return arr; 
+}
+
+int main(void) {
+int* p;
+int summe = 0;
+p = allocArray();
+for(int i = 0; i != 10; ++i) {
+p[i] = i;
+}
+for(int i = 0; i != 10; ++i) {
+summe += p[i];
+}
+printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+typedef struct Arrlist{
+
+    char *elems;
+    int size;
+
+} Arrlist;
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++){
+        printf(""%d %c\n"",i, al->elems[i]);
+    }
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+void arrlist_add(Arrlist* al, char* str) {
+    if (al == NULL) exit (1);
+
+    char* tmp = realloc(al->elems, al->size + strlen(str));
+    if (!tmp){
+        free (al->elems);
+        return; 
+    }
+    
+    al->elems = tmp;
+    al->elems[al->size] = *str;
+    al->size += 1;
+    return; 
+}
+
+void arrlist_del_item(Arrlist *al, int index)
+{
+    if(!al) exit(1); //Fehlerbehandlung
+    if(al->size < index){
+        printf(""Dieser Index existiert nicht."");
+        return;
+    }
+
+    for(int a = index; a <= al->size; a++)
+    {
+        al->elems[a] = al->elems[a+1];
+    }  
+
+    al->size -= 1;
+    al->elems = realloc(al->elems, al->size * sizeof(char));
+}
+
+void arrlist_free(Arrlist* al) {
+    int a = al->size;
+    for(int i = 0; i <= a; i++)
+    {
+        al->size--;
+    }
+    printf(""Verlassen"");
+}
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q'){
+            arrlist_free(&einkaufsliste);
+            break;
+        }
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+typedef struct Student{
+
+    char first_name[21];
+    char last_name[21];
+    int points[5];
+
+} Student;
+
+void student_einlesen(Student* p_stud)
+{
+    for(int i = 0; i <= 5; i++)
+    {
+        printf(""Gebe den Vornamen ein: \n"");
+        scanf(""%s"", p_stud->first_name);
+        printf(""Gebe nun den Nachnamen ein: \n"");
+        scanf(""%s"", p_stud->last_name);
+        printf(""Gebe nun nacheinander die 5 Punkte ein: \n"");
+        scanf(""%d"", p_stud->points);
+    }
+}
+
+void student_ausgeben(Student* p_stud)
+{
+    for(int i = 0; i <= 5; i++)
+    {
+        printf(""\nerster_Student: %s %s\n"", p_stud->first_name, p_stud->last_name);
+        int summe = 0;\
+        for(int i = 0; i <= 5; i++)
+        {
+            summe += p_stud->points[i];
+            printf(""Anzahl Punkte: %d\n"", summe);
+        }
+    }
+}
+
+int main(void)
+{
+    Student studenten[5];
+    struct Student erster_Student[0];
+    struct Student zweiter_Student[1];
+    struct Student dritter_Student[2];
+    struct Student vierter_Student[3];
+    struct Student fuenfter_Student[4];
+
+    student_einlesen(studenten);
+    student_ausgeben(studenten);
+
+}"
+Schneider,"Mark Daniel",mark.schneider@campus.tu-berlin.de,Beendet,"12. Januar 2022  21:27","16. Januar 2022  22:52","4 Tage 1 Stunde","4,75","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen
+; Strukturen sind das gleiche wie Arrays","talloc
+; PPRalloc
+; cealloc
+; mealloc","sizeof(ketchup) == sizeof(ketchup.pommes)","int array[];
+; int* pointer;","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*) malloc(10 * sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}",-
+"Von Dobschütz","Henriette Marie",h.von-dobschuetz@campus.tu-berlin.de,Beendet,"13. Januar 2022  09:10","16. Januar 2022  23:59","3 Tage 14 Stunden","11,25","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","cealloc
+; PPRalloc
+; mealloc
+; talloc","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","int array[];
+; int* pointer;","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int * arr= malloc(10*sizeof(int));
+	return arr;
+}
+
+int main(){
+
+	int summe = 0;
+	int * tmp = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		tmp[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += tmp[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+typedef struct arrlist{
+char* elems;
+int size;
+} Arrlist;
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]); //%s mit %c ersetzt nach warning
+}
+
+void arrlist_add(Arrlist* al, char* str){
+	if(al == NULL) exit(1);
+	if(str == NULL)exit (1);
+char* tmp= realloc (al->elems, (al->size) * sizeof(char));
+	if(!tmp){
+		free(al->elems);
+		return;
+		}
+		al->elems = tmp;
+		al->elems[al->size]= *str;
+	al->size++;
+	return;
+}
+
+
+void arrlist_del_item(Arrlist* al, int index){
+	if(!al) exit(1);
+	if(al->elems == 0) return;
+    if(al->size < index) return;
+    al->elems[index]=0;
+	for(int ind=index; ind<= al->size;ind++){
+	al->elems[ind]=al->elems[ind+1];
+	}
+	al->size--;
+}
+
+void arrlist_free(Arrlist *al){
+	free(al->elems);
+	al->size=0;
+	free(al);
+
+	printf(""Auswahl: Verlassen"");
+}
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+   arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin); 
+                    buf[BUF_SIZE-1] = '\0';  
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+           case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+
+arrlist_free(&einkaufsliste);
+}","#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+//#include ""readline.h""
+#define BUF_SIZE 100
+
+
+typedef struct student {
+char vorname [21]; //string
+char nachname [21]; //string
+int punkte [4];  //array
+} Student;
+
+void student_einlesen(Student* p_stud){
+//char buf[BUF_SIZE];
+printf(""Gebe den Vornamen ein: "");
+//fgets(setbuffer, buffersize, stdin);
+//int p=strlen(setbuffer);
+//setbuffer[p-1]='\0'; 
+//readLine(p_stud->vorname[1], buf); //buf statt 21
+
+char tmp [21];
+scanf(""%s"", tmp);
+int c;
+while( ((c=getchar()) !=EOF)&& (c != '\n'));
+
+for(int k=0; k<21; k++){
+p_stud->vorname[k]=tmp[k];
+}
+
+printf(""Gebe nun den Nachnamen ein: "");
+scanf(""%s"", tmp);
+int d;
+while( ((d=getchar()) !=EOF)&& (d != '\n'));
+
+for(int k=0; k<21; k++){
+p_stud->nachname[k]=tmp[k];
+}
+
+printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+  for(int i=0; i<5; i++){
+    printf(""%i: "", i+1);
+   scanf(""%i"", &p_stud->punkte[i]);
+ }
+ printf(""\n"");
+
+}
+//#endif //#ifndef READLINE_H
+void student_ausgeben(Student* p_stud){
+	printf(""Student: %s %s\n"", p_stud->vorname, p_stud->nachname);
+	int summe=0;
+	for(int l=0; l<5; l++) {
+    summe += p_stud->punkte[l];
+    }
+	printf(""Anzahl Punkte: %i\n\n"", summe);
+    
+}
+
+int main() {
+
+Student Studis[5]= {};
+//Studis[]
+//Student [4] (=) {(""erster_Student""), ""zweiter_Student"", ""dritter_Student"", ""vierter_Student""};
+//Student erster_Student;
+//Student [0]=""erster_Student"";
+	for(int i=0; i<5; i++){
+	student_einlesen(&Studis[i]);
+	}
+
+	for(int i=0; i<5; i++){
+	student_ausgeben(&Studis[i]);
+	}
+}"
+Krech,"Fabian Jonathan",f.krech@campus.tu-berlin.de,Beendet,"13. Januar 2022  12:49","16. Januar 2022  15:42","3 Tage 2 Stunden","12,75","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) = 32","str == 0","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Die Anzahl der Bytes die gebraucht werden","int array[];
+; int* pointer;","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+    int *arr;
+	arr = (int *) malloc(10 * sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+    int arr[10];
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+
+//Datenstruktur Student
+typedef struct student{
+    char vorname[20];
+    char nachname[20];
+    int punkte[5];
+} Student;
+
+//Einlesefunktion
+void student_einlesen(Student* p_stud){
+    char p_vorname[20];
+    char p_nachname[20];
+    int p_punkte[5];
+
+    printf(""Gebe den Vornamen ein: "");
+    scanf(""%19s"",p_vorname);
+    printf(""Gebe nun den Nachnamen ein: "");
+    scanf(""%19s"",p_nachname);
+    printf(""Gebe nun nacheinander die 5 Punkte ein: \n"");
+    for(int i = 1; i < 6; i++){
+        printf(""%i: "",i);
+        scanf(""%i"",&p_punkte[i-1]);
+    }
+
+    strcpy(p_stud->vorname,p_vorname);
+    strcpy(p_stud->nachname,p_nachname);
+
+    for(int i = 0; i < 5; i++) p_stud->punkte[i] = p_punkte[i];
+}
+
+//Ausgabefunktion
+void student_ausgeben(Student* p_stud){
+    int punkte_summe = 0;
+    for(int i = 0; i < 5; i++) punkte_summe += p_stud->punkte[i];
+    printf(""\nStudent: %s %s\n"",p_stud->vorname,p_stud->nachname);
+    printf(""Anzahl Punkte: %i\n"",punkte_summe);
+}
+
+int main(){
+    Student studenten[5];
+
+    for(int i = 0; i < 5; i++){
+        student_einlesen(&studenten[i]);
+        printf(""\n"");
+    }
+
+    for(int i = 0; i < 5; i++){
+        student_ausgeben(&studenten[i]);
+    }
+
+    return 0;
+}"
+Krause,"Lennart Andreas",lennart.krause@campus.tu-berlin.de,Beendet,"13. Januar 2022  16:31","16. Januar 2022  23:49","3 Tage 7 Stunden","11,50","sizeof(ketchup) = 32","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","talloc
+; mealloc
+; cealloc
+; PPRalloc","int array[];","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	return (int*) malloc(10);
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	printf(""P"");
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+	free(p);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+typedef struct arrlist{
+	int size;
+	char** elems;
+}Arrlist;
+
+void arrlist_init(Arrlist* al){
+  al->size = 0;
+  al->elems  = NULL;
+};
+
+
+void arrlist_print(Arrlist* al){
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+void arrlist_add(Arrlist* al, char* buf){
+	if (al->size == 0) al->elems = malloc(sizeof(char*));
+	else al->elems = realloc(al->elems, (al->size + 1 ) * sizeof(char*));
+	
+	
+	*strchr(buf, '\n') = '\0';
+	al->elems[al->size] = (char*)malloc(strlen(buf)+1);
+	strcpy(al->elems[al->size],buf); 
+
+	al->size++;
+	
+} 
+
+void arrlist_del_item(Arrlist* al, int index){
+	free(al->elems[index]);
+	free(al->elems[index]);
+	al->elems[index] = NULL;
+}
+
+void arrlist_free(Arrlist* al){
+	printf(""Verlassen\n"");
+	for(int i=0; i<(al->size); i++){
+		if(al->elems[i] != NULL){
+			free(al->elems[i]);
+		}
+	}
+}
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}","#include <stdio.h>
+
+typedef struct student{
+	char vorname[20];
+	char nachname[20];
+	int punkte[5];
+}Student;
+
+void student_ausgeben(Student* p_stud){
+	printf(""Student: %s %s\n"", p_stud->vorname, p_stud->nachname);
+	int punkte = 0;
+	for(int i=0; i<5; i++){
+		punkte+=p_stud->punkte[i];
+	}
+	printf(""Anzahl Punkte: %i\n\n"", punkte);
+}
+
+void student_einlesen(Student* p_stud){
+	printf(""Gebe den Vornamen ein: "");
+	scanf(""%s"", (p_stud->vorname));
+	getchar();
+	printf(""Gebe nun den Nachnamen ein: "");
+	scanf(""%s"", (p_stud->nachname));
+	getchar();
+	printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+	for(int i=0; i<4; i++){
+		printf(""%i: "", i+1);
+		scanf(""%i"", &(p_stud->punkte[i]));
+	}
+	printf(""%i: "", 5);
+	scanf(""%i"", &(p_stud->punkte[4]));
+	getchar();
+	printf(""\n"");
+}
+
+int main(){
+	Student s[5];
+	for(int i=0; i<5; i++){
+		student_einlesen(&s[i]);
+	}
+	for(int i=0; i<5; i++){
+		student_ausgeben(&s[i]);
+	}
+}"
+Yilmaz,"Saffet Sercan",s.yilmaz.1@campus.tu-berlin.de,Beendet,"13. Januar 2022  17:00","16. Januar 2022  14:35","2 Tage 21 Stunden","5,25","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","PPRalloc
+; talloc
+; mealloc
+; cealloc","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","int* pointer;","#include <stdio.h>
+#include <stdlib.h>
+int arr[10];
+int* allocArray() {
+	
+	return arr;
+}
+
+int main(void){
+
+	int* p;
+	int summe = 0;
+	p = allocArray(); // Adresse
+	for(int i = 0; i != 10; ++i) {
+
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}",-
+Karabalik,Tugce,t.karabalik@campus.tu-berlin.de,Beendet,"13. Januar 2022  19:11","16. Januar 2022  23:59","3 Tage 4 Stunden","0,75","Für Variablen, deren Speicherbedarf zur Übersetzungszeit fest steht","malloc
+; realloc; calloc
+; talloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen
+; Strukturen brauchen einen Rückgabewert","sizeof(ketchup) = 32","str == 0","int array[];
+; int* pointer;","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int arr[10];
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}",-
+Pflantz,"Dennis Patrick",d.pflantz@campus.tu-berlin.de,Beendet,"13. Januar 2022  20:03","16. Januar 2022  23:59","3 Tage 3 Stunden","5,25","Die Anzahl der Bytes die gebraucht werden","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","PPRalloc
+; talloc
+; cealloc
+; mealloc","int* pointer;","#include <stdio.h>
+#include <stdlib.h>
+int arr[10];
+
+int* allocArray() {
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+    p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+typedef struct arrlist {
+    int elems;
+    int size;
+ } Arrlist;
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+void arrlist_add(Arrlist* al, char* str){
+    strcpy(Arrlist, str);
+
+    Arrlist =+ &strcpy;
+    puts(Arrlist);
+    return copy;
+    }
+
+void arrlist_del_item(Arrlist* al, int index){
+
+     }
+
+void arrlist_free(Arrlist *al){
+
+     }
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}",-
+Krappe,"Jakob Thomas",j.krappe@campus.tu-berlin.de,Beendet,"14. Januar 2022  11:01","16. Januar 2022  22:30","2 Tage 11 Stunden","8,75","mealloc
+; talloc
+; cealloc
+; PPRalloc","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int* pointer;","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr;
+	arr = (int*) malloc(10 * sizeof(int));
+	if(arr == 0) exit(-1);
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; i++) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; i++) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+	free(p);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+typedef struct arrlist{
+    char** elems;
+    int size;
+}Arrlist;
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+void arrlist_add(Arrlist* al, char* str){
+    if(!al) exit(1);
+    char** tmp = realloc(al->elems, (al->size + 1) * sizeof(char));
+    if(!tmp){
+        free(al->elems);
+        return;
+    }
+    al->elems = tmp;
+    strcpy(al->elems[al->size], str);
+    al->size++;
+    return;
+}
+
+void arrlist_del_item(Arrlist* al, int index){
+    if(!al) exit(1);
+    if(al->size < index) return;
+    for(int i = index; i <= al->size; i++) al->elems[i] = al->elems[i+1];
+    al->size--;
+    al->elems = realloc(al->elems, al->size * sizeof(char));
+    return;
+}
+
+void arrlist_free(Arrlist* al){
+    printf(""Verlassen\n"");
+    free(al);
+    return;
+}
+
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+    arrlist_free(&einkaufsliste);
+    return(0);
+}",-
+Junge,Theodor,t.junge@campus.tu-berlin.de,Beendet,"14. Januar 2022  11:51","14. Januar 2022  15:07","3 Stunden 15 Minuten","5,25","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","str == 0","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen
+; Strukturen brauchen einen Rückgabewert","sizeof(ketchup) = 32","Die Anzahl der Bytes die gebraucht werden","int* pointer;
+
+; int array[];","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*) malloc(10*sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int summe = 0;
+	int* p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+	free(p);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}",-
+Löffelmann,Lukas,l.loeffelmann@campus.tu-berlin.de,Beendet,"15. Januar 2022  11:51","16. Januar 2022  22:00","1 Tag 10 Stunden","20,00","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Die Anzahl der Bytes die gebraucht werden","talloc
+; mealloc
+; PPRalloc
+; cealloc","int* pointer;
+
+; int array[];","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int *arr = calloc(10,sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+typedef struct {
+int size;
+char **elems;
+}Arrlist;
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+
+void arrlist_add(Arrlist *al, char *str){
+	al->size++;
+	al->elems = realloc(al->elems, al->size * sizeof(char*));
+	al->elems[al->size-1] = malloc(sizeof(char)*strlen(str));
+	strcpy(al->elems[al->size-1], str);
+}
+
+void arrlist_del_item(Arrlist *al, int index){
+	for(int i = 0; i < al->size - index; i++){
+		if(al->elems[index+1] != NULL){
+			al->elems[index] = al->elems[index+1];
+		}
+	}
+	al->size--;
+	al->elems = realloc(al->elems, al->size * sizeof(char*));
+}
+
+void arrlist_free(Arrlist *al){
+	for(int i = 0; i < al->size; i++){
+		free(al->elems[i]);
+	}
+	printf(""Verlassen\n"");
+}
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+					buf[strlen(buf)-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+	
+	arrlist_free(&einkaufsliste);
+
+    return(0);
+}","#include <stdio.h>
+
+typedef struct student{
+	char vorname[20];
+	char nachname[20];
+	int punkte[5];
+} Student;
+
+void student_einlesen(Student *p_stud){
+	printf(""Gebe den Vornamen ein: "");
+	scanf(""%s"",p_stud->vorname);
+	printf(""Gebe nun den Nachnamen ein: "");
+	scanf(""%s"", p_stud->nachname);
+	printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+	
+	for(int i = 0; i<5; i++){
+		printf(""%d: "", i+1);
+		scanf(""%d"", &(p_stud->punkte[i]));
+	}
+	printf(""\n"");
+	
+}
+
+void student_ausgeben(Student *p_stud){
+	int sum = 0;
+	
+	for(int i = 0; i < 5; i++){
+		sum += p_stud->punkte[i];
+	}
+	printf(""Student: %s %s\n"", p_stud->vorname, p_stud->nachname);
+	printf(""Anzahl Punkte: %d\n\n"", sum);
+}
+
+int main(){
+
+	Student array[5];
+	
+	for(int i = 0; i < 5; i++){
+		student_einlesen(&array[i]);
+	}
+	
+
+	for(int i = 0; i < 5; i++){
+		student_ausgeben(&array[i]);
+	}
+	
+	
+
+return 0;	
+}"
+Schroeter,"Robert Daniel Berndt Leonard",r.schroeter@campus.tu-berlin.de,Beendet,"15. Januar 2022  15:00","16. Januar 2022  17:35","1 Tag 2 Stunden","4,50","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) == sizeof(ketchup.pommes)","Der Wert von str ist undefiniert.","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen
+; Strukturen sind das gleiche wie Arrays","int array[];","#include <stdio.h>
+#include <stdlib.h>
+int* allocArray() {
+	int* arr = malloc(10*sizeof(int));
+	return arr;
+}
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+	free(p);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}",-
+Eckardt,"Jan Hartmut",jan.h.eckardt@campus.tu-berlin.de,Beendet,"15. Januar 2022  17:34","16. Januar 2022  23:59","1 Tag 6 Stunden","0,00",-,-,-,-,-,-,-,-,-
+Schaefer,Anton,anton.schaefer@campus.tu-berlin.de,Beendet,"15. Januar 2022  18:22","16. Januar 2022  22:51","1 Tag 4 Stunden","5,00","PPRalloc
+; talloc
+; cealloc
+; mealloc","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen
+; Strukturen sind das gleiche wie Arrays","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","int* pointer;
+
+; int array[];","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*) malloc (10 * sizeof(int));
+	if (arr)
+	    for (int i = 0; i<10;i++ ) arr[i]=0;
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}",-
+Gross,"Nevio Noah Chaim",n.gross.1@campus.tu-berlin.de,Beendet,"15. Januar 2022  21:26","16. Januar 2022  23:59","1 Tag 2 Stunden","4,00",-,"Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie verteilt im Speicher liegen","sizeof(ketchup) = 32",-,"int array[];","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = calloc(10, sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}",-
+Zell,Martha,m.zell@campus.tu-berlin.de,Beendet,"16. Januar 2022  10:47","16. Januar 2022  20:39","9 Stunden 52 Minuten","12,75","str == 0","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Bytes die gebraucht werden","int array[];","#include <stdio.h>
+#include <stdlib.h>
+
+int *allocArray()
+{
+    int *arr = malloc(sizeof(int) * 10);
+    return arr;
+}
+
+int main(void)
+{
+    int *p;
+    int summe = 0;
+    p = allocArray();
+    for (int i = 0; i != 10; ++i)
+    {
+        p[i] = i;
+    }
+    for (int i = 0; i != 10; ++i)
+    {
+        summe += p[i];
+    }
+    printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct student
+{
+    char vorname[21];
+    char nachname[21];
+    int punkte[5];
+
+} Student;
+
+void student_einlesen(Student *p_stud)
+{
+    printf(""Gebe den Vornamen ein: "");
+    scanf(""%s"", p_stud->vorname);
+    printf(""Gebe nun den Nachnamen ein: "");
+    scanf(""%s"", p_stud->nachname);
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    for (int i = 0; i < 5; ++i)
+    {
+        printf(""%d: "", i + 1);
+        scanf(""%d"", &(p_stud->punkte[i]));
+    }
+    printf(""\n"");
+}
+
+void student_ausgeben(Student *p_stud)
+{
+    printf(""Student: %s %s\n"", p_stud->vorname, p_stud->nachname);
+    int summe = 0;
+    for (int i = 0; i < 5; ++i)
+    {
+        summe += p_stud->punkte[i];
+    }
+    printf(""Anzahl Punkte: %d\n\n"", summe);
+}
+
+int main(void)
+{
+    Student studierende[5];
+
+    for (int i = 0; i < 5; ++i)
+    {
+        student_einlesen(&studierende[i]);
+    }
+
+    for (int i = 0; i < 5; ++i)
+    {
+        student_ausgeben(&studierende[i]);
+    }
+}"
+Wang,Jiawei,jiawei.wang.2@campus.tu-berlin.de,Beendet,"16. Januar 2022  11:24","16. Januar 2022  20:47","9 Stunden 23 Minuten","12,25","str == 0","calloc
+; realloc; malloc","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","int array[];","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr;
+	arr = (int*)malloc(10 * sizeof(int));
+	return arr;
+
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+typedef struct{
+    char* elems;
+    int size;
+}Arrlist;
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+void arrlist_add( Arrlist* al, char* str )
+{
+    //unsigned int length = strlen(str);
+    char* copy = malloc( 10 * sizeof(char));
+    strcpy(copy,str);
+    al->size++;
+    al->elems = realloc(al->elems, sizeof(char*) * al->size);
+    al->elems[al->size-1] = copy;
+    return;
+}
+
+void arrlist_del_item(Arrlist* al, int index)
+{
+    if(al->size < index) return;
+    if(al->size == 0) return;
+    for(int i = index; i < al->size; i++) al->elems[i] = al->elems[i+1];
+    al->size--;
+    al->elems = realloc(al->elems, al->size * sizeof(char));
+    return;
+}
+
+void arrlist_free(Arrlist *al)
+{
+    free( al->elems );
+    al->size = 0;
+    printf(""Auswahl: Verlassen"");
+    return;
+}
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+typedef struct student{
+    char vorname[20];
+    char nachname[20];
+    int punkte[5];
+
+}Student;
+
+void student_einlesen( Student* p_stud ){
+int a,b,c,d,e;
+char vor[20];
+char nach[20];
+printf(""Gebe den Vornamen ein: "");
+scanf(""%s"", vor);
+strcpy(p_stud->vorname,vor);
+printf(""Gebe nun den Nachnamen ein: "");
+scanf(""%s"", nach);
+strcpy(p_stud->nachname,nach);
+printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+printf(""1: 2: 3: 4: 5:\n"");
+scanf(""%d"",&a);
+scanf(""%d"",&b);
+scanf(""%d"",&c);
+scanf(""%d"",&d);
+scanf(""%d"",&e);
+p_stud->punkte[0] = a;
+p_stud->punkte[1] = b;
+p_stud->punkte[2] = c;
+p_stud->punkte[3] = d;
+p_stud->punkte[4] = e;
+}
+void student_ausgeben( Student* p_stud ){
+int sum = 0;
+for(int i=0;i<5;i++){
+    sum = sum + p_stud->punkte[i];
+}
+printf(""Student: %s %s\n"",p_stud->vorname,p_stud->nachname);
+printf(""Anzahl Punkte: %d\n\n"",sum);
+}
+
+int main(){
+struct student erste_student;
+struct student *sp_1=NULL;
+sp_1 = &erste_student;
+student_einlesen(sp_1);
+
+struct student zweite_student;
+struct student *sp_2=NULL;
+sp_2 = &zweite_student;
+student_einlesen(sp_2);
+
+struct student dritte_student;
+struct student *sp_3=NULL;
+sp_3 = &dritte_student;
+student_einlesen(sp_3);
+
+struct student vierte_student;
+struct student *sp_4=NULL;
+sp_4 = &vierte_student;
+student_einlesen(sp_4);
+
+struct student fuenfte_student;
+struct student *sp_5=NULL;
+sp_5 = &fuenfte_student;
+student_einlesen(sp_5);
+
+student_ausgeben(sp_1);
+student_ausgeben(sp_2);
+student_ausgeben(sp_3);
+student_ausgeben(sp_4);
+student_ausgeben(sp_5);
+
+return 0;
+}"
+Sule,"Tanmay Amit",t.sule@campus.tu-berlin.de,Beendet,"16. Januar 2022  14:35","16. Januar 2022  23:06","8 Stunden 30 Minuten","5,13","Eine Struktur bündelt Variablen so, dass sie verteilt im Speicher liegen","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Bytes die gebraucht werden","PPRalloc
+; mealloc
+; cealloc","int* pointer;","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr =(int*) malloc(10*sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}",-
+Vaidya,"Rudra Rakesh",rudra.vaidya@campus.tu-berlin.de,Beendet,"16. Januar 2022  14:42","16. Januar 2022  22:05","7 Stunden 22 Minuten","4,63","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","PPRalloc
+; cealloc
+; mealloc","Eine Struktur bündelt Variablen so, dass sie verteilt im Speicher liegen","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","Die Anzahl an Bits die gebraucht werden","int* pointer;","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = malloc(40);
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}",-
+Küster,"Lars Kilian",lars-kilian.kuester@campus.tu-berlin.de,Beendet,"16. Januar 2022  15:33","16. Januar 2022  23:57","8 Stunden 23 Minuten","6,50","Die Anzahl der Bytes die gebraucht werden","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen
+; Strukturen brauchen einen Rückgabewert","int array[];
+; char p;","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* array;
+	array = malloc( 10 * sizeof(int));
+	return array;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+	free(p);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+typedef struct arrlist{
+    char* elems;
+    int size;
+}Arrlist;
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+void arrlist_add(Arrlist* al, char* str)
+{
+    int copy[strlen((char*)str)];
+    strcpy((char*)copy,(char*)str);
+    int* tmp = realloc(al->elems, sizeof(int) *(al->size + 1));
+    if(!tmp) {
+        free(al->elems);
+        return;
+    }
+    al->elems = tmp;
+    al->elems[al->size]= &copy;
+    al->size++;
+    return;
+}
+
+void arrlist_del_item(Arrlist* al, int index){
+    if(!al)return;
+    for(int i = index;i < al->size; i++) al->elems[i] = al->elems[i+1];
+    al->size--;
+    al->elems = realloc(al->elems, al->size * sizeof(int));
+    return;
+    
+}
+
+
+void arrlist_free(Arrlist* al){
+    free( al->elems );
+    al->size = 0;
+    printf(""Verlassen"");
+}
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+   
+    arrlist_free(&einkaufsliste); 
+    return(0);
+}","#include <stdlib.h> 
+#include <string.h>
+
+typedef struct student{
+    char vorname[21];
+    char nachname[21];
+    int array[4];
+}Student
+
+void student_einlesen(Student* p_stud){
+    printf(""Gebe den Vornamen ein:"");
+    fgets(p_stud->vorname, 21, stdin);
+    printf(""Gebe nun den Nachnamen ein:"");
+    fgets(p_stud->nachname, 21, stdin);
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    for(int i = 0; i<= 4; i++){
+        printf(""%i: "", (i + 1));
+        scanf(""%i"", &p_stud->array[0]);
+    }
+}
+
+void student_ausgeben(Student* p_stud){
+    
+}
+
+int main(){
+    static int array[4];
+    Student  array;
+    for(b = 0; b<= 4, b++){
+        student_einlesen(&array);
+    }
+    
+}"
+Pham,"Thanh Nam",thanh.n.pham@campus.tu-berlin.de,Beendet,"16. Januar 2022  16:09","16. Januar 2022  22:46","6 Stunden 37 Minuten","16,50","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Bytes die gebraucht werden","Der Wert von str ist undefiniert.","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen
+; Strukturen sind das gleiche wie Arrays","sizeof(ketchup) = 32","int array[];","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*) malloc(10 * sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+typedef struct arrlist{
+    char** elems;
+    int size;
+} Arrlist;
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+void arrlist_add(Arrlist* al, char* str){
+    al->size++;
+    al->elems = (char**) realloc(al->elems, al->size * sizeof(char*));
+    al->elems[al->size - 1] = malloc(strlen(str) * sizeof(char) + 1);
+    strcpy(al->elems[al->size - 1], str);
+}
+
+void arrlist_del_item(Arrlist* al, int index){
+    if(!al)
+        return;
+    if(index >= al->size)
+        return;
+    al->size--;
+    for(int i = index; i < al->size; i++){
+        al->elems[i] = (char**) realloc(al->elems[i], sizeof(al->elems[i + 1]) * sizeof(char) + 1);
+        strcpy(al->elems[i], al->elems[i + 1]);
+    }
+    free(al->elems[al->size]);
+    al->elems = (char**) realloc(al->elems, al->size * sizeof(char*));
+}
+
+void arrlist_free(Arrlist *al){
+    if(!al)
+        return;
+    for(int i = 0; i < al->size; i++){
+        free(al->elems[i]);
+    }
+    free(al);
+    printf(""Verlassen"");
+}
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q'){
+            arrlist_free(&einkaufsliste);
+            break;
+        }
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[strlen(buf) - 1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}","#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+typedef struct student{
+    char first_name[21];
+    char last_name[21];
+    int points[5];
+}Student;
+
+void student_einlesen(Student* p_stud){
+    printf(""Gebe den Vornamen ein: "");
+    fgets(p_stud->first_name, 21, stdin);
+    int last = strlen(p_stud->first_name);
+    p_stud->first_name[last - 1] = '\0';
+
+    printf(""Gebe nun den Nachnamen ein: "");
+    fgets(p_stud->last_name, 21, stdin);
+    last = strlen(p_stud->last_name);
+    p_stud->last_name[last - 1] = '\0';
+
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    for(int i = 0; i < 5; i++){
+        printf(""%i: "", i + 1);
+        char score[10];
+        fgets(score, 21, stdin);
+        p_stud->points[i] = atoi(score);
+    }
+    printf(""\n"");
+}
+
+void student_ausgeben(Student* p_stud){
+    printf(""Student: %s %s\n"", p_stud->first_name, p_stud->last_name);
+    int summe = 0;
+    for(int i = 0; i < 5; i++){
+        summe = summe + p_stud->points[i];
+    }
+    printf(""Anzahl Punkte: %d\n\n"", summe);
+}
+
+int main(){
+    Student students[5];
+    Student erster_Student;
+    for(int i = 0; i < 5; i++){
+        student_einlesen(&students[i]);
+    }
+    for(int i = 0; i < 5; i++){
+        student_ausgeben(&students[i]);
+    }
+}"
+Paterson,"Moritz Alexander",m.paterson@campus.tu-berlin.de,Beendet,"16. Januar 2022  17:39","16. Januar 2022  23:11","5 Stunden 32 Minuten","9,00","sizeof(ketchup) = 32","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Bytes die gebraucht werden","malloc
+; realloc; calloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","int array[];","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int arr[10];
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf(""# Ware\n"");
+    for(int i = 0; i < al->size; i++)
+        printf(""%d %s\n"",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf(""Einkaufsliste\n""
+            ""-----------------\n""
+            ""(h) - Hinzufuegen\n""
+            ""(l) - Loeschen\n""
+            ""(a) - Ausgeben\n""
+            ""(q) - Verlassen\n"");
+
+    do{
+        printf(""\nAuswahl: "");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf(""Hinzufuegen: "");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf(""Löschen - Nummer: "");
+                    int i = 0;
+                    scanf(""%d"", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf(""Ausgabe: \n"");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf(""Unbekannte Option!"");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}","#include <stdio.h>
+#include <stdlib.h>
+#include <strings.h>
+
+typedef struct student{
+    char first_name[20];
+    char last_name[20];
+    int points[5];
+}Student;
+
+
+
+void student_einlesen(Student* p_stud){
+printf(""Gebe den Vornamen ein: "");
+scanf(""%s"",&p_stud->first_name);
+printf(""Gebe nun den Nachnamen ein: "");
+scanf(""%s"",&p_stud->last_name);
+printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+for (int k=1; k<6; k++){
+    printf(""%i:"",k);
+    if (k<5) printf("" "");/*Wenn sie schon loops erwarten machen sie wenigstens die Formatierung durchsetzbar!*/
+    scanf(""%i"",&p_stud->points[k-1]);
+}
+printf(""\n"");/*SOWAS zum Beispiel!*/
+}
+
+void student_ausgeben(Student* p_stud){
+int sum=0;
+for (int j=0; j<5; j+=1){
+sum+=p_stud->points[j];
+}
+printf(""Student: %s %s\n"", p_stud->first_name, p_stud->last_name);
+printf(""Anzahl Punkte: %d\n\n"",sum);
+}
+
+int main(){
+Student studs[5];
+for (int i=0;i<5;i++){
+student_einlesen(&studs[i]);
+}
+for (int i=0;i<5;i++){
+student_ausgeben(&studs[i]);
+}
+}"

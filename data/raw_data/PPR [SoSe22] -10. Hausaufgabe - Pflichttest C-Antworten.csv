@@ -1,0 +1,2634 @@
+﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/15,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9"
+Schwolow,Niklas,niklas.schwolow@campus.tu-berlin.de,Beendet,"27. Juni 2022  12:43","3. Juli 2022  23:59","6 Tage 11 Stunden","9,50","str == 0","PPRalloc
+; talloc
+; cealloc
+; mealloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray(){
+	int* array = (int *) malloc(10*sizeof(int));
+	return array;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct student{
+    char* vorname[20];
+    char* nachname[20];
+    int punkte[5];
+} Student;
+
+void student_einlesen(Student * p_stud){
+    printf(""Gebe den Vornamen ein: "");
+    scanf(""%s"", p_stud->vorname);
+    printf(""Gebe nun den Nachnamen ein: "");
+    scanf(""%s"", p_stud->nachname);
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    for(int i = 0; i<5; i++){
+        printf(""%d: "", i+1);
+        scanf("""", &p_stud->punkte[i]);
+    }
+}
+
+void student_ausgeben(Student* p_stud){
+    int sum;
+    for (int i = 0; i<5; i++){
+        sum += p_stud->punkte[i];
+    }
+    printf(""Student: %s %s\nAnzahl Punkte: %d\n"", p_stud->vorname, p_stud->nachname, sum);
+}
+
+int main(){
+    int AnzahlStudenten = 5;
+    Student* studenten = malloc(AnzahlStudenten*sizeof*studenten);
+    for(int i = 0; i<5; i++){
+        studenten[i].vorname=(char*)malloc(sizeof(char*));
+        studenten[i].nachname=(char*)malloc(sizeof(char*));
+        student_einlesen(&studenten[i]);
+    }
+    for(int i = 0; i<5; i++){
+        student_ausgeben(&studenten[i]);
+    }
+}"
+Yeboah,"Andrea Kumih",a.yeboah@campus.tu-berlin.de,Beendet,"27. Juni 2022  13:23","3. Juli 2022  23:59","6 Tage 10 Stunden","7,00","Der Datentyp, für den Speicher beantragt wird","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","str == 0","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","cealloc
+; talloc
+; PPRalloc
+; mealloc","int array[];
+; int* pointer;","Teil 1: stdlib.h; Teil 2: 2 * sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*)malloc(10* sizeof(int)); 
+	if (arr)
+	for (int i = 0; i < 10; ++i) arr[i] = 0;
+	return arr;
+}
+
+int main(void){
+	int* p = allocArray();
+	unsigned int summe = 0;
+	p = allocArray();
+	for(int i = 0; i < 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}",-
+"Tavakoli Anaraki",Parham,parham.tavakoli-anaraki@campus.tu-berlin.de,Beendet,"27. Juni 2022  13:59","3. Juli 2022  20:20","6 Tage 6 Stunden","6,75","str == 0","Die Anzahl der Bytes die gebraucht werden","mealloc
+; cealloc
+; PPRalloc
+; talloc","Strukturen sind nie größer als 4-bit groß
+
+; Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) == sizeof(ketchup.pommes)","int* pointer;
+
+; int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","int* allocArray() {
+    int *arr = calloc(10,sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int *p;
+	int summe = 0;
+	p = allocArray();
+
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}",-
+Hengst,Tobias,tobias.hengst@campus.tu-berlin.de,Beendet,"27. Juni 2022  14:04","3. Juli 2022  20:19","6 Tage 6 Stunden","10,88","mealloc
+; PPRalloc
+; cealloc","Der Wert von str ist undefiniert.","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie verteilt im Speicher liegen","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: ungewiss; Teil 5: 3.00; Teil 6: 3.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray(void) {
+    int* arr =  malloc(10 * sizeof(int));
+    return arr;
+}
+
+int main(void){
+    int* p;
+    int summe = 0;
+    p = allocArray();
+    for(int i = 0; i != 10; ++i) {
+        p[i] = i;
+    }
+    for(int i = 0; i != 10; ++i) {
+        summe += p[i];
+    }
+    printf(""Summe = %d\n"", summe);
+}","//
+//  main.c
+//  HA
+//
+//  Created by Tobias Hengst on 27.06.22.
+//
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct student{
+    char first_name[20];
+    char last_name[20];
+    int points[5];
+}Student;
+
+void student_einlesen(Student* p_stud){
+    printf(""Gebe den Vornamen ein: "");
+    fgets(p_stud -> first_name, 20, stdin);
+    for (int i = 19; i >= 0; i--) {
+        if (p_stud -> first_name[i] == '\n') {
+            p_stud -> first_name[i] = '\0';
+            p_stud -> first_name[i+1] = 0;
+            break;
+        }
+    }
+    printf(""Gebe nun den Nachnamen ein: "");
+    fgets(p_stud -> last_name, 20, stdin);
+    for (int i = 19; i >= 0; i--) {
+        if (p_stud -> last_name[i] == '\n') {
+            p_stud -> last_name[i] = '\0';
+            p_stud -> last_name[i+1] = 0;
+            break;
+        }
+    }
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    for (int i = 0; i < 5; i++) {
+        printf(""%i: "", i+1);
+        scanf(""%i"", &p_stud -> points[i]);
+    }
+    getchar();
+    
+}
+
+void student_ausgeben(Student* p_stud){
+    printf(""Student: %s %s\n"", p_stud -> first_name, p_stud -> last_name);
+    int summe = 0;
+    for (int i = 0; i < 5; i++) {
+        summe += p_stud -> points[i];
+    }
+    printf(""Anzahl Punkte: %i\n\n"", summe);
+}
+
+int main(){
+    Student liste[5];
+    for (int i = 0; i < (sizeof(liste)/sizeof(Student)); i++) {
+        student_einlesen(&liste[i]);
+        printf(""\n"");
+    }
+    for (int i = 0; i < (sizeof(liste)/sizeof(Student)); i++) {
+        student_ausgeben(&liste[i]);
+    }
+}"
+Dannenberg,Paul,paul.dannenberg@campus.tu-berlin.de,Beendet,"27. Juni 2022  14:15","3. Juli 2022  20:22","6 Tage 6 Stunden","7,25","sizeof(ketchup) == sizeof(ketchup.pommes)","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","talloc
+; cealloc
+; mealloc
+; PPRalloc","Die Anzahl der Bytes die gebraucht werden","str == 0","int array[];
+; int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+    int *arr = calloc(10,sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int *p;
+	int summe = 0;
+	p = allocArray();
+
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}",-
+Bücking,"Jakob Pius",j.buecking@campus.tu-berlin.de,Beendet,"27. Juni 2022  14:22","3. Juli 2022  23:14","6 Tage 8 Stunden","13,75","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","cealloc
+; talloc
+; mealloc
+; PPRalloc","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","str == 0","int array[];
+; int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: ungewiss; Teil 6: ungewiss; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int * arr= malloc(10*(sizeof(int)));
+    return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct student{
+    char vorname[21];
+    char nachname[21];
+    int punkte[5];
+} Student;
+
+
+
+void student_einlesen(Student* p_stud){
+    printf(""Gebe den Vornamen ein: "");
+    scanf(""%s"", &p_stud->vorname);
+    printf(""Gebe nun den Nachnamen ein: "");
+    scanf(""%s"", &p_stud->nachname);
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    for (int i = 0; i<5;i++){
+        printf(""%i: "",i+1 );
+        scanf(""%d"", &p_stud->punkte[i]);
+
+    }
+    printf(""\n"");
+
+
+}
+
+ void student_ausgeben(Student* p_stud){
+    printf(""Student: %s %s\n"",p_stud->vorname, p_stud->nachname);
+    int sum =0;
+    for (int i = 0; i<5;i++){
+        sum += p_stud->punkte[i];
+
+    }
+    printf(""Anzahl Punkte: %i\n\n"", sum);
+ }
+
+void main(){
+    Student list[5];
+    for (int i = 0; i<5;i++){
+        student_einlesen(&list[i]);
+
+    }
+    for (int i = 0; i<5;i++){
+        student_ausgeben(&list[i]);
+
+    }
+
+
+}"
+Eckhardt,Jonas,j.eckhardt@campus.tu-berlin.de,Beendet,"27. Juni 2022  16:36","3. Juli 2022  22:57","6 Tage 6 Stunden","11,00","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","malloc
+; calloc
+; realloc","str == 0","Die Anzahl der Elemente im Array","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 31","int array[];
+; int* pointer;","Teil 1: stdlib.h; Teil 2: 2 * sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 6.00; Teil 6: ungewiss; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int *arr;
+	arr = (int*) malloc(10*sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct student {
+	char first_name[21];
+	char last_name[21];
+	int points[5];
+}Student;
+
+void student_einlesen(Student* p_stud) {
+		printf(""Gebe den Vornamen ein: "");
+		scanf(""%s"", p_stud->first_name);
+		getchar();
+		printf(""Gebe nun den Nachnamen ein: "");
+		scanf(""%s"", p_stud->last_name);
+		getchar();
+		printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+		for(int y = 0; y < 5; y++) {
+			
+			printf(""%i: "", y+1);
+			scanf(""%i"", &(p_stud->points[y]));
+		}
+	printf(""\n"");
+	}
+void student_ausgeben(Student* p_stud){
+	
+		int summe = 0;
+	for(int b = 0; b < 5; b++){
+		
+			summe += p_stud -> points[b];
+		}
+
+	printf(""Student: %s %s \nAnzahl Punkte: %i\n\n"", p_stud->first_name, p_stud->last_name, summe);
+	
+	}
+
+int main() {
+	Student studenten[5];
+	for(int i = 0; i < 5; i++){
+	student_einlesen(&studenten[i]);
+	}
+	for(int i = 0; i < 5; i++)
+	student_ausgeben(&studenten[i]);
+	return 0;
+}"
+Stolte,"Leif Erik",leif.erik.stolte@campus.tu-berlin.de,Beendet,"27. Juni 2022  16:37","3. Juli 2022  23:59","6 Tage 7 Stunden","8,75","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) = 31
+
+; sizeof(ketchup) == sizeof(ketchup.pommes)","realloc; malloc
+; calloc","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","str == 0","int array[];
+; int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 6.00; Teil 6: ungewiss; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr;
+	arr = (int*) calloc(10, sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct student {
+	char first_name[21];
+	char last_name[21];
+	int points[5];
+}Student;
+
+void student_einlesen(Student* p_stud) {
+	for(int i=0; i<5; i++) {
+		printf(""Gebe den Vornamen ein: "");
+		scanf(""%s"", p_stud[i].first_name);
+		getchar();
+		printf(""Gebe nun den Nachnamen ein: "");
+		scanf(""%s"", p_stud[i].last_name);
+		getchar();
+		printf(""Gebe nun nacheinander die 5 Punkte ein: \n"");
+		for(int a = 1; a < 6; a++) {
+			printf(""%i: "", a);
+			scanf( ""%i"",&p_stud[i].points[a-1]);
+		}
+		printf(""\n"");
+	}
+}
+void student_ausgeben(Student* p_stud){
+	for(int i = 0; i < 5; i++) {
+		int summe[5]; 
+		for(int b=0; b<5; b++) {
+			summe[b]=0;
+		}
+		for(int a=0; a<5;a++){
+			summe[i]= summe[i] + p_stud[i].points[a];
+		}
+	printf(""Student: %s %s \n"", p_stud[i].first_name, p_stud[i].last_name );
+	printf(""Anzahl Punkte: %i \n \n"", summe[i]);
+	}
+}
+int main() {
+	Student studenten[5];
+	student_einlesen(studenten);
+	student_ausgeben(studenten);
+	return 0;
+}"
+Voß,Hannes,hannes.voss@campus.tu-berlin.de,Beendet,"27. Juni 2022  16:46","2. Juli 2022  18:17","5 Tage 1 Stunde","7,50","talloc
+; mealloc
+; cealloc
+; PPRalloc","str == 0","Die Anzahl der Bytes die gebraucht werden","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+        int* arr = calloc(10, sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}",-
+Strobl,Florian,florian.strobl@campus.tu-berlin.de,Beendet,"27. Juni 2022  18:45","27. Juni 2022  19:11","25 Minuten 47 Sekunden","14,75","Die Anzahl der Bytes die gebraucht werden","cealloc
+; PPRalloc
+; mealloc
+; talloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: ungewiss; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*) malloc(sizeof(int) * 10);
+	return arr;
+}
+
+int main(void){
+	int* p = allocArray();
+	int summe = 0;
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+
+typedef struct student {
+    char first_name[21];
+    char last_name[21];
+    unsigned int points[5];
+} Student;
+
+void student_einlesen(Student* p_stud) {
+    printf(""Gebe den Vornamen ein: "");
+    scanf(""%s"", p_stud->first_name);
+    printf(""Gebe nun den Nachnamen ein: "");
+    scanf(""%s"", p_stud->last_name);
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    for (int i = 0; i < 5; ++i) {
+        printf(""%i: "", i+1);
+        scanf(""%i"", &p_stud->points[i]);
+    }
+    printf(""\n"");
+}
+
+void student_ausgeben(Student* p_stud) {
+    unsigned int sum = 0;
+    for (int i = 0; i < 5; ++i)
+        sum += p_stud->points[i];
+    printf(""Student: %s %s\nAnzahl Punkte: %i\n"", p_stud->first_name, p_stud->last_name, sum);
+}
+
+int main() {
+    Student students[5];
+    
+    for (int i = 0; i < 5; ++i)
+        student_einlesen(&students[i]);
+        
+    for (int i = 0; i < 5; ++i)
+        student_ausgeben(&students[i]);
+        
+    return 0;
+}"
+Glaschke,"Adrian Maximilian",a.glaschke@campus.tu-berlin.de,Beendet,"27. Juni 2022  18:57","3. Juli 2022  23:32","6 Tage 4 Stunden","10,25","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","Strukturen brauchen einen Rückgabewert
+
+; Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","realloc; calloc
+; malloc","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","str == 0","int array[];","Teil 1: stdlib.h; Teil 2: 2 * sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr=(int*) malloc( 10 * sizeof(int) );
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct student {
+char first_name [20];
+char last_name [20];
+int points;
+} Student;
+
+
+void student_einlesen(Student* p_stud){
+int Punkt1;
+int Punkt2;
+int Punkt3;
+int Punkt4;
+int Punkt5;
+
+printf(""Gebe den Vornamen ein: "");
+scanf(""%s"", p_stud->first_name);
+printf(""Gebe nun den Nachnamen ein: "");
+scanf(""%s"", p_stud->last_name);
+printf(""Gebe nun nacheinander die 5 Punkte ein:\n1: 2: 3: 4: 5: \n"");
+scanf(""%d"", &Punkt1);
+scanf(""%d"", &Punkt2); 
+scanf(""%d"", &Punkt3);
+scanf(""%d"", &Punkt4);
+scanf(""%d"", &Punkt5);
+
+p_stud->points=Punkt1+Punkt2+Punkt3+Punkt4+Punkt5;
+
+//Punkt1+Punkt2+Punkt3+Punkt4+Punkt5=p_stud->points;
+}
+
+void student_ausgeben(Student* p_stud){
+printf(""Student: %s %s\n"", p_stud->first_name, p_stud->last_name);
+printf(""Anzahl Punkte: %d\n\n"", p_stud->points);
+}
+
+int main(){
+
+
+
+
+char Studierenden[5];
+	
+
+Student erster_Student;
+student_einlesen(&erster_Student);
+
+Student zweiter_Student;
+student_einlesen(&zweiter_Student);
+
+Student dritter_Student;
+student_einlesen(&dritter_Student);
+
+Student vierter_Student;
+student_einlesen(&vierter_Student);
+
+Student fuenfter_Student;
+student_einlesen(&fuenfter_Student);
+
+student_ausgeben(&erster_Student);
+student_ausgeben(&zweiter_Student);
+student_ausgeben(&dritter_Student);
+student_ausgeben(&vierter_Student);
+student_ausgeben(&fuenfter_Student);
+
+}"
+Anastasiadou,"Pinelopi Eleni",p.anastasiadou@campus.tu-berlin.de,Beendet,"27. Juni 2022  19:06","27. Juni 2022  22:33","3 Stunden 26 Minuten","5,13","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) == sizeof(ketchup.pommes)","Die Anzahl an Bits die gebraucht werden","PPRalloc
+; cealloc
+; mealloc","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int arr[10];
+	return arr[10];
+}
+
+int main(void){
+	int* p[10];
+	int summe = 0;
+	p[10] = allocArray();
+	for(int i = 0; i < 10; i++) {
+		p[i] = i;
+	}
+	for(int i = 0; i < 10; i++) {
+		summe += p[i];
+	}
+		summe = summe/2589;
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
+
+typedef struct student{
+    char first_name[20];
+    char last_name[20];
+    int points;
+} Student;
+
+void student_einlesen(Student* p_stud){
+    printf(""Gebe den Vornamen ein:"");
+scanf(""%s"", &p_stud->first_name);
+getchar();
+printf("" Gebe nun den Nachnamen ein:"");
+scanf(""%s"", &p_stud->last_name);
+getchar();
+printf("" Gebe nun nacheinander die 5 Punkte ein:\n"");
+int points[5];
+int summe=0;
+for (int i = 0; i<5; i++){
+    printf("" %i:"", (i+1));
+    scanf(""%i"", &points[i]);
+    summe+=points[i];
+    p_stud->points=summe;
+}
+}
+
+void student_ausgeben(Student* p_stud){
+        printf(""\nStudent: %s %s\n"", p_stud->first_name, p_stud->last_name);
+printf(""Anzahl Punkte: %d\n"", p_stud->points);
+}
+
+int main() {
+    Student dar;
+    for (int k = 0; k<5; k++){
+   student_einlesen( &dar );
+   student_ausgeben( &dar );
+    }
+}"
+Braune,"Tom Frederik",t.braune.1@campus.tu-berlin.de,Beendet,"27. Juni 2022  19:09","28. Juni 2022  16:06","20 Stunden 56 Minuten","13,50","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl an Bits die gebraucht werden","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 0.00; Teil 5: 3.00; Teil 6: 9.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int arr[10];
+int* allocArray() {
+	
+	int* adr = arr;
+	return adr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct student{
+	char vorname[21];
+	char nachname[21];
+	int punkte[5];
+}Student;
+	
+void student_einlesen(Student* p_stud)
+{
+	printf(""Gebe den Vornamen ein: "");
+	scanf(""%s"", p_stud->vorname);
+	printf(""Gebe nun den Nachnamen ein: "");
+	scanf(""%s"", p_stud->nachname);
+	printf(""Gebe nun nacheinander die 5 Punkte ein:\n1: "");
+	scanf(""%i"", &p_stud->punkte[0]);
+	printf(""2: "");
+	scanf(""%i"", &p_stud->punkte[1]);
+	printf(""3: "");
+	scanf(""%i"", &p_stud->punkte[2]);
+	printf(""4: "");
+	scanf(""%i"", &p_stud->punkte[3]);
+	printf(""5: "");
+	scanf(""%i"", &p_stud->punkte[4]);
+	printf(""\n"");
+	for(int i=0;i<5;i++){int a=0; a++;}
+}
+	
+void student_ausgeben(Student* p_stud){
+	int a = p_stud->punkte[0]+p_stud->punkte[1]+p_stud->punkte[2]+p_stud->punkte[3]+p_stud->punkte[4];
+	printf(""Student: %s %s\nAnzahl Punkte: %i\n\n"",p_stud->vorname,p_stud->nachname,a);
+	for(int i=0;i<5;i++){int a=0; a++;}	
+}
+
+int main(void){
+	int a=5;
+	 	struct student studenten[a];
+		for(int i=0;i<a;i++){
+						student_einlesen(&studenten[i]);
+		}
+		
+		for(int i=0;i<a;i++){
+						student_ausgeben(&studenten[i]);
+		}
+		
+ 	}"
+"Tellez Pedroza",Gabriele,tellezpedroza@campus.tu-berlin.de,Beendet,"27. Juni 2022  19:57","3. Juli 2022  21:23","6 Tage 1 Stunde","9,50","Strukturen brauchen einen Rückgabewert
+
+; Strukturen sind das gleiche wie Arrays","talloc
+; cealloc
+; PPRalloc
+; mealloc","Der Wert von str ist undefiniert.","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: realloc; Teil 4: 3.00; Teil 5: 6.00; Teil 6: 9.00; Teil 7: DoublePointer; Teil 8: calloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*) malloc(10*sizeof(int) );
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef int* IntPointer;
+
+typedef struct Student{
+    char first_name[20];
+    char last_name[20];
+    int points[5];
+}Student;
+
+void student_einlesen(Student* p_stud);
+
+
+void student_ausgeben(Student* p_stud);
+
+int main()
+{
+    Student stud[5];
+    for(int n=0; n<5;n++){
+    	student_einlesen(&stud[n]);
+	}
+	for(int p=0; p<5;p++){
+    	student_ausgeben(&stud[p]);
+	}
+    return 0;
+}
+
+void student_einlesen(Student* p_stud)
+{
+    printf(""Gebe den Vornamen ein: "");
+    scanf(""%s"", &p_stud->first_name);
+    printf(""Gebe nun den Nachnamen ein: "");
+    scanf(""%s"", &p_stud->last_name);
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    printf (""1: "");
+    scanf(""%d"", &p_stud->points[0]);
+    printf (""2: "");
+    scanf(""%d"", &p_stud->points[1]);
+    printf (""3: "");
+    scanf(""%d"", &p_stud->points[2]);
+    printf (""4: "");
+    scanf(""%d"", &p_stud->points[3]);
+    printf (""5: "");
+    scanf(""%d"", &p_stud->points[4]);
+}
+
+void student_ausgeben(Student* p_stud)
+{
+	int sum=0;
+	for(int n=0;n<5;n++){ sum += p_stud->points[n];}
+	printf(""\nStudent: %s %s"",p_stud->first_name,p_stud->last_name);
+	printf(""\nAnzahl Punkte: %i\n"", sum);
+}"
+Michael,"Lars Rudolf Heinrich",l.michael.1@campus.tu-berlin.de,Beendet,"27. Juni 2022  20:27","29. Juni 2022  23:25","2 Tage 2 Stunden","14,50","cealloc
+; mealloc
+; PPRalloc
+; talloc","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) = 32","int* pointer;
+
+; int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 3.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray(){
+	int* arr = (int*) calloc(10, sizeof(int));
+	
+	
+	//int arr[10];
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+	//free(arr);
+	free(p);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct student {
+	char first_name[20];
+	char last_name[20];
+	int points[5];
+}Student;
+
+
+
+void student_einlesen(Student* p_stud){
+	
+	printf(""Gebe den Vornamen ein: "");
+	scanf(""%s"", p_stud -> first_name);
+
+	printf(""Gebe nun den Nachnamen ein: "");
+	scanf(""%s"", p_stud -> last_name);
+
+	printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+	for(int i = 0; i<5; i++){
+		printf(""%i: "",i+1);
+		scanf(""%i"", &p_stud->points[i]);
+		
+		}	
+	printf(""\n"");	
+}
+
+
+
+
+void student_ausgeben(Student* p_stud){
+	
+	printf(""Student: %s %s\n"", p_stud->first_name, p_stud -> last_name);
+	
+	int temp = 0;
+	for(int i = 0 ; i <5; i++){
+		temp += p_stud->points[i];
+		
+	}
+printf(""Anzahl Punkte: %i\n"", temp);
+	printf(""\n"");
+}
+
+
+
+int main(){
+	
+	Student array[5];
+	
+	for(int i = 0; i<5; i++){
+	student_einlesen(&array[i]);
+	}
+	for(int i = 0; i<5; i++){
+	student_ausgeben(&array[i]);
+	}
+
+}"
+Franke,Alexander,alexander.franke@campus.tu-berlin.de,Beendet,"27. Juni 2022  22:05","3. Juli 2022  21:13","5 Tage 23 Stunden","7,50","cealloc
+; mealloc
+; PPRalloc
+; talloc","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","str == 0","int* pointer;
+
+; int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr;
+	arr = (int*) malloc(10*sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p =  allocArray();
+
+
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}",-
+Große-Wöhrmann,Fabian,fabian.grosse-woehrmann@campus.tu-berlin.de,Beendet,"27. Juni 2022  22:56","3. Juli 2022  23:15","6 Tage","11,20","realloc; malloc
+; calloc","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32",-,-,"int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 0.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: double*; Teil 8: calloc","#include <stdlib.h>
+
+int* allocArray() {
+	int *arr = calloc(10, sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+#include <string.h>
+
+typedef struct
+{
+    char vorname[20];
+    char nachname[20];
+    int punkte[5];
+}Student;
+
+void student_einlesen( Student* p_stud){
+    printf(""Gebe den Vornamen ein: "");
+    scanf(""%s"",&p_stud->vorname);
+    printf(""Gebe nun den Nachnamen ein: "");
+    scanf(""%s"",&p_stud->nachname);
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n1: "");
+    scanf(""%i"",&p_stud->punkte[0]);
+    printf(""2: "");
+    scanf(""%i"",&p_stud->punkte[1]);
+    printf(""3: "");
+    scanf(""%i"",&p_stud->punkte[2]);
+    printf(""4: "");
+    scanf(""%i"",&p_stud->punkte[3]);
+    printf(""5: "");
+    scanf(""%i"",&p_stud->punkte[4]);
+    printf(""\n"");
+}
+
+void student_ausgeben( Student* p_stud){
+    printf(""Student: %s %s\n"", p_stud->vorname, p_stud->nachname);
+    printf(""Anzahl Punkte: %i\n\n"", (p_stud->punkte[0]+p_stud->punkte[1]+p_stud->punkte[2]+p_stud->punkte[3]+p_stud->punkte[4]));
+}   
+
+int main(){
+     Student s[5];
+    for(int i=0; i<5; i++){
+        student_einlesen(&s[i]);
+    }
+
+    for(int i=0; i<5; i++){
+        student_ausgeben(&s[i]);
+    }
+}"
+Muß,Niklas,muss@campus.tu-berlin.de,Beendet,"28. Juni 2022  11:14","1. Juli 2022  12:08","3 Tage","14,15","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Die Anzahl der Bytes die gebraucht werden","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+    int* arr;
+    arr = (int* )malloc(10* sizeof(int));
+    return arr;
+}
+
+int main(void){
+    int* p;
+    int summe = 0;
+    p = allocArray();
+    for(int i = 0; i != 10; ++i) {
+        p[i] = i;
+    }
+    for(int i = 0; i != 10; ++i) {
+        summe += p[i];
+    }
+    printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+
+typedef struct{
+    char vorname[20];
+    char nachname[20];
+    int punkte[5];
+}Student;
+
+void student_einlesen(Student* p_stud) {
+    printf(""Gebe den Vornamen ein: "");
+    scanf(""%s"",&p_stud->vorname);
+    printf(""Gebe nun den Nachnamen ein: "");
+    scanf(""%s"",&p_stud->nachname);
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    for (int i = 0; i < 5; ++i) {
+        printf(""%i: "", i+1);
+        scanf(""%i"", &p_stud->punkte[i]);
+    }
+    printf(""\n"");
+}
+
+void student_ausgeben(Student* p_stud) {
+    printf(""Student: %s %s\n"", p_stud->vorname, p_stud->nachname);
+    int summe = 0;
+    for (int i = 0; i < 5; ++i) {
+        summe += p_stud->punkte[i];
+    }
+    printf(""Anzahl Punkte: %i\n"", summe);
+}
+
+int main(void){
+    Student erster_student;
+    Student zweiter_student;
+    Student dritter_student;
+    Student vierter_student;
+    Student fuenfter_student;
+    Student studierende[5] = {erster_student, zweiter_student, dritter_student, vierter_student, fuenfter_student};
+    for (int i = 0; i < 5; ++i) {
+        student_einlesen(&studierende[i]);
+    }
+    for (int i = 0; i < 5; ++i) {
+        student_ausgeben(&studierende[i]);
+        printf(""\n"");
+    }
+}"
+Hilbrich,"Luca Marius",luca.hilbrich@campus.tu-berlin.de,Beendet,"28. Juni 2022  12:49","28. Juni 2022  23:22","10 Stunden 32 Minuten","13,80","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","str == 0","mealloc
+; talloc
+; cealloc
+; PPRalloc","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: ungewiss; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+    int *arr = calloc(10, sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+#include <string.h>
+
+typedef char Str20[21];
+typedef int Int5[5];
+typedef struct student {
+    Str20 first_name;
+    Str20 last_name;
+    Int5 points;
+} Student;
+
+void readline(char* strbuffer, unsigned int buffersize)
+{
+    fgets(strbuffer, buffersize, stdin);
+    int p = strlen(strbuffer);
+    strbuffer[p-1] = '\0';
+}
+
+void student_einlesen(Student* p_stud)
+{
+    printf(""\nGebe den Vornamen ein: "");
+    readline(p_stud->first_name, 20);
+    printf(""Gebe nun den Nachnamen ein: "");
+    readline(p_stud->last_name, 20);
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    for ( int i = 0; i < 5; i++ ) {
+        printf(""%i: "", i + 1);
+        scanf(""%i"", &p_stud->points[i]);
+    }
+    getchar();
+}
+
+void student_ausgeben(Student* p_stud)
+{
+    printf(""\nStudent: "");
+    printf(""%.*s "", strlen(p_stud->first_name), p_stud->first_name);
+    printf(""%.*s\n"", strlen(p_stud->last_name), p_stud->last_name);
+    int sum = 0;
+    for ( int i = 0; i < 5; i++ ) {
+        sum += p_stud->points[i];
+    }
+    printf(""Anzahl Punkte: %i\n"", sum);
+}
+
+int main()
+{
+    Student students[5];
+    for ( int i = 0; i < 5; i++ ) {
+        student_einlesen(&students[i]);
+    }
+    for ( int i = 0; i < 5; i++ ) {
+        student_ausgeben(&students[i]);
+    }
+}"
+Hartmann,"Kaspar Lorenz",kaspar.l.hartmann@campus.tu-berlin.de,Beendet,"28. Juni 2022  14:30","3. Juli 2022  23:59","5 Tage 9 Stunden","7,50","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","realloc; calloc
+; malloc","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) == sizeof(ketchup.pommes)","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 6.00; Teil 5: ungewiss; Teil 6: ungewiss; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr= (int*)malloc(10* sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+	free(p);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct student{
+    char vorname[21];
+    char nachname[21];
+    int punkte[5];
+}Student;
+
+void student_einlesen(Student* p_stud){
+printf(""Gebe den Vornamen ein: "");
+scanf(""%c"",p_stud->vorname);
+printf(""Gebe nun den Nachnamen ein: "");
+scanf(""%c"",p_stud->nachname);
+printf(""Gebe nun nacheinander die 5 Punkte ein:"");
+for (int i =0;i<5;i++){
+    printf(""%i:"",i+1);
+    scanf(""%i"",p_stud->punkte[i]);
+    }
+}
+
+void student_ausgeben(Student* p_stud){
+printf(""Student: %c %c\nAnzahl Punkte: %i"",p_stud->vorname,p_stud->nachname,p_stud->punkte[0]+p_stud->punkte[1]+p_stud->punkte[2]+p_stud->punkte[3]+p_stud->punkte[4]);
+}
+
+int main(){
+Student studenten[5];
+printf(""Gebe den Vornamen ein: Gebe nun den Nachnamen ein: Gebe nun nacheinander die 5 Punkte ein:
+1: 2: 3: 4: 5:
+erster_Student: Marco Wagner
+Punkte -> 14; 18; 13; 9; 16"");
+for(int k=0;k<5;k+1 ){
+    student_einlesen(studenten+k);
+    student_ausgeben(studenten+k);
+}
+}"
+Schacht,Florian,florian.schacht@campus.tu-berlin.de,Beendet,"28. Juni 2022  15:20","3. Juli 2022  23:55","5 Tage 8 Stunden","14,50","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","cealloc
+; PPRalloc
+; talloc
+; mealloc","str == 0","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","int array[];
+; int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: malloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*)malloc(10*sizeof(int));
+	
+	if(arr == NULL){
+		exit(42);
+	}
+	
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	
+	p = allocArray();
+	
+	for(int i = 0; i < 10; ++i){
+		// printf(""i == %d\n"", i);
+		p[i] = i;
+	}
+	
+	for(int i = 0; i != 10; ++i){
+		summe += p[i];
+	}
+	
+	printf(""Summe = %d\n"", summe);
+	free(p);
+}","//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+
+#include<stdio.h>
+#include<limits.h>
+#include<string.h>
+#include<stdlib.h>
+
+typedef struct{
+	char nachname[21];
+	char vorname[21];
+	int punkte[5];
+}Student;
+
+void readLine(char* strbuffer, unsigned int buffersize){//Quelle: PPR Vorlesungsfolien, ""folien_C_dynamischeSpeicherStructs.pdf"" Seite 5
+	char format[30] = """";
+	sprintf(format, ""%%%u[^\n]%%*c"", buffersize-1);
+	scanf(format, strbuffer);
+}
+
+void student_einlesen(Student *pStud){
+	printf(""Gebe den Vornamen ein: "");
+	scanf(""%s"", pStud->vorname);
+	printf(""Gebe nun den Nachnamen ein: "");
+	scanf(""%s"", pStud->nachname);
+	
+	printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+	
+	for(int i=0;i<5;i++){
+		printf(""%d: "", i+1);
+		scanf(""%d"", &(pStud->punkte)[i]);
+	}
+	
+	printf(""\n"");
+}
+void student_ausgeben(Student *pStud){
+	printf(""Student: "");
+	printf(""%s "", pStud->vorname);
+	printf(""%s\n"", pStud->nachname);
+	int intPointsSum = 0;
+	
+	for (int i=0;i<5;i++){
+		intPointsSum += pStud->punkte[i];
+	}
+	printf(""Anzahl Punkte: "");
+	printf(""%d\n\n"", intPointsSum);
+}
+
+int main(){
+
+	int intAmountOfStudents = 5;
+	if(1){
+		Student rgStudis[intAmountOfStudents];
+		Student *rgPStudis[intAmountOfStudents];
+		
+		for (int i=0;i<intAmountOfStudents;i++){
+			rgPStudis[i] = &rgStudis[i];
+		}
+		
+		for (int i=0;i<intAmountOfStudents;i++){
+			student_einlesen(rgPStudis[i]);
+		}
+		for (int i=0; i<intAmountOfStudents; i++){
+			student_ausgeben(rgPStudis[i]);
+		}
+	}
+	return 0;
+}"
+Reiter,Tobias,tobias.reiter@campus.tu-berlin.de,Beendet,"28. Juni 2022  15:35","3. Juli 2022  23:59","5 Tage 8 Stunden","6,50","Die Anzahl der Bytes die gebraucht werden","PPRalloc
+; talloc
+; mealloc
+; cealloc","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","int array[];","Teil 1: stdlib.h; Teil 2: 8; Teil 3: calloc; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8:","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int *arr = (int *) malloc(10 * sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}",-
+Schönknecht,Mathias,mathias.schoenknecht@campus.tu-berlin.de,Beendet,"28. Juni 2022  17:30","3. Juli 2022  14:58","4 Tage 21 Stunden","0,88","Eine Struktur bündelt Variablen so, dass sie verteilt im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll",-,-,talloc,"char array_unbestimmt[3];
+
+; int* pointer;
+
+; char p;
+; int array[];","Teil 1: stdlib.h; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8:","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int arr[10];
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}",-
+Lehmann,Gregor,gregor.lehmann@campus.tu-berlin.de,Beendet,"28. Juni 2022  19:38","3. Juli 2022  16:35","4 Tage 20 Stunden","9,25","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","PPRalloc
+; cealloc
+; talloc
+; mealloc","Die Anzahl der Bytes die gebraucht werden","str == 0","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = malloc(10*sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef char Str20[21];
+typedef struct student {
+    Str20 first_name;
+    Str20 last_name;
+    int points[5];
+}Student;
+
+void student_einlesen(Student* p_stud) {
+    for(int i = 0; i < 5; i++){
+        printf(""Gebe den Vornamen ein:\n"");
+        scanf(""%c"", &p_stud[i].first_name);
+        printf(""Gebe nun den Nachnamen ein:\n"");
+        scanf(""%c"", &p_stud[i].last_name);
+        printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+        scanf(""%d"", &p_stud[i].points[0]);
+        scanf(""%d"", &p_stud[i].points[1]);
+        scanf(""%d"", &p_stud[i].points[2]);
+        scanf(""%d"", &p_stud[i].points[3]);
+        scanf(""%d"", &p_stud[i].points[4]);
+    }
+}
+
+void student_ausgeben(Student* p_stud){
+    for(int i = 0; i < 5; i++) {
+        printf(""Student: %c %c\n"", p_stud[i].first_name, p_stud[i].last_name);
+        int gesPunkte = p_stud[i].points[0] + p_stud[i].points[1] + p_stud[i].points[2] + p_stud[i].points[3] + p_stud[i].points[4];
+        printf(""Anzahl Punkte: %d\n"", gesPunkte);
+    }
+}
+
+
+int main()
+{
+    struct Student p_stud[5];
+    
+    for(int i = 0; i < 5; i++) {
+        student_einlesen(&p_stud[i]);
+    }
+    
+    for(int i = 0; i < 5; i++) {
+        student_ausgeben(&p_stud[i]);
+    }
+
+}"
+Niethammer,"Moritz Sebastian",m.niethammer@campus.tu-berlin.de,Beendet,"28. Juni 2022  20:43","3. Juli 2022  22:02","5 Tage 1 Stunde","13,25","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","calloc
+; realloc; malloc","sizeof(ketchup) = 32","Die Anzahl der Bytes die gebraucht werden","int array[];","Teil 1: stdlib.h; Teil 2: 24; Teil 3: calloc; Teil 4: 0.00; Teil 5: 3.00; Teil 6: ungewiss; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*) malloc(10 * sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+
+typedef struct student{
+    char first_name[21];
+    char last_name[21];
+    int points[5];
+} Student;
+
+void student_einlesen(Student* p_stud){
+    printf(""Gebe den Vornamen ein: "");
+    scanf(""%s"", p_stud->first_name);
+    printf(""Gebe nun den Nachnamen ein: "");
+    scanf(""%s"", p_stud->last_name);
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    for (int i = 0; i < 5; i++){
+        printf(""%d: "", i + 1);
+        scanf(""%d"", &p_stud->points[i]);
+    }
+    printf(""\n"");
+}
+
+void student_ausgeben(Student* p_stud){
+    printf(""Student: %s %s\n"", p_stud->first_name, p_stud->last_name);
+    int sum = 0;
+    for(int i = 0; i < 5; i++){
+        sum += p_stud->points[i];
+    }
+    printf(""Anzahl Punkte: %d\n"", sum);
+}
+int main(){
+    static struct student students[5];
+    for (int i = 0; i < 5; i++){
+        Student newStudent;
+        student_einlesen(&newStudent);
+        students[i] = newStudent;
+    }
+    for (Student* student = students; student < students + 5; student++){
+        student_ausgeben(student);
+        printf(""\n"");
+    }
+    return 0;
+}"
+Gülser,Bahar,b.guelser@campus.tu-berlin.de,Beendet,"28. Juni 2022  20:52","3. Juli 2022  23:19","5 Tage 2 Stunden","9,50","Der Datentyp, für den Speicher beantragt wird","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","str == 0","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int array[];
+; int* pointer;","Teil 1: malloc.h; Teil 2: sizeof(double); Teil 3: malloc; Teil 4: 0.00; Teil 5: 3.00; Teil 6: 6.00; Teil 7: float*; Teil 8: calloc","#include <stdio.h>
+#include <stdlib.h>
+int* allocArray() {
+int arr[10];
+int *arr_ptr = arr;
+return arr_ptr;
+}
+int main(void){
+int summe = 0;
+int* p = allocArray();
+for(int i = 0; i != 10; i++) {
+p[i] = i;
+}
+for(int i = 0; i != 10; i++) {
+summe += p[i];
+}
+printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+typedef struct student{
+char vorname[21];
+char nachname[21];
+int punkte[5];
+} 
+Student;
+
+void student_einlesen(Student* p_stud)
+{
+
+printf(""\nGebe den Vornamen ein: "");
+scanf(""%s"", p_stud->vorname);
+printf(""Gebe nun den Nachnamen ein: "");
+scanf(""%s"", p_stud->nachname);
+printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+
+for(int i=0; i<5; i++)
+{
+
+printf(""%i: "", i+1);
+scanf(""%i"", &(p_stud->punkte[i]));
+
+}
+}
+
+void student_ausgeben(Student* p_stud)
+
+{
+
+int sum = 0;
+for(int i=0; i<5; i++)
+sum += p_stud->punkte[i];
+printf(""\nStudent: %s %s\n"", p_stud->vorname, p_stud->nachname );
+printf(""Anzahl Punkte: %i\n"", sum);
+}
+int main()
+{
+Student st[5];
+for (int i=0; i<5; i++)
+student_einlesen(&st[i]);
+for (int i=0; i<5; i++)
+student_ausgeben(&st[i]);
+return 0;
+}"
+Großkopf,"Edgar Wolf",e.grosskopf@campus.tu-berlin.de,Beendet,"28. Juni 2022  21:16","3. Juli 2022  23:59","5 Tage 2 Stunden","9,25","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","malloc
+; calloc
+; realloc","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Die Anzahl der Bytes die gebraucht werden","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+void allocArray(int* p) {
+	int arr[10];
+	*p = &arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	allocArray(p);
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include<stdio.h>
+
+typedef struct student{
+char first_name[20];
+char last_name[20];
+int points[5];
+} Student;
+
+void student_einlesen(Student* p_stud){
+	printf(""Gebe den Vornamen ein: "");
+	scanf(""%s"",p_stud->first_name);
+	printf(""Gebe nun den Nachnamen ein: "");
+	scanf(""%s"",p_stud->last_name);
+	printf(""Gebe nun nacheinander die 5 Punkte ein: \n"");
+	printf(""1: "");
+	scanf(""%i"",&p_stud->points[0]);
+	printf(""2: "");
+	scanf(""%i"",&p_stud->points[1]);
+	printf(""3: "");
+	scanf(""%i"",&p_stud->points[2]);
+	printf(""4: "");
+	scanf(""%i"",&p_stud->points[3]);
+	printf(""5: \n"");
+	scanf(""%i"",&p_stud->points[4]);
+}
+
+void student_ausgeben(Student *p_stud){
+	printf(""Student: %s %s\n"",p_stud->first_name,p_stud->last_name);
+	printf(""Anzahl Punkte: %i\n\n"",p_stud->points[0] + p_stud->points[1] + p_stud->points[2] + p_stud->points[3] + p_stud->points[4]);
+}
+
+int main(){
+	Student studi[5];
+	for(int i = 0; i < 5; i++){
+		student_einlesen(&studi[i]);
+	}
+	for(int i = 0; i < 5; i++){
+		student_ausgeben(&studi[i]);
+	}
+}"
+Groß,"Elisabeth Maria",e.gross@campus.tu-berlin.de,Beendet,"30. Juni 2022  14:10","3. Juli 2022  23:59","3 Tage 9 Stunden","14,50","cealloc
+; talloc
+; PPRalloc
+; mealloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+ 
+int* allocArray() {
+    int* arr;
+    arr = (int* )malloc(10* sizeof(int));
+    return arr;
+}
+ 
+int main(void){
+    int* p;
+    int summe = 0;
+    p = allocArray();
+    for(int i = 0; i != 10; ++i) {
+        p[i] = i;
+        summe += i;
+    }
+    printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+ 
+typedef struct{
+    char first_name[20];
+    char last_name[20];
+    int points[5];
+}Student;
+ 
+void student_einlesen(Student* p_stud) {
+    printf(""Gebe den Vornamen ein: "");
+    scanf(""%s"",&p_stud->first_name);
+    printf(""Gebe nun den Nachnamen ein: "");
+    scanf(""%s"",&p_stud->last_name);
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    for (int i = 0; i < 5; ++i) {
+        printf(""%i: "", i+1);
+        scanf(""%i"", &p_stud->points[i]);
+    }
+    printf(""\n"");
+}
+ 
+void student_ausgeben(Student* p_stud) {
+    printf(""Student: %s %s"", p_stud->first_name, p_stud->last_name);
+    int x = 0;
+    for (int i = 0; i < 5; ++i) {
+        x += p_stud->points[i];
+    }
+    printf(""\nAnzahl Punkte: %i\n"", x);
+}
+ 
+int main(void){
+    Student erster_student, zweiter_student, dritter_student, vierter_student, fuenfter_student;
+    Student studis[5] = {erster_student, zweiter_student, dritter_student, vierter_student, fuenfter_student};
+    for (int i = 0; i < 5; ++i) {
+        student_einlesen(&studis[i]);
+    }
+    for (int i = 0; i < 5; ++i) {
+        student_ausgeben(&studis[i]);
+        printf(""\n"");
+    }
+}"
+Warns,"Butch Michel Guntbert",b.warns@tu-berlin.de,Beendet,"1. Juli 2022  09:37","3. Juli 2022  14:50","2 Tage 5 Stunden","14,75","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","str == 0","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: ungewiss; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	//int arr[10]; <- statisch
+	int *arr = (int*) calloc(10, sizeof(int)); // Allocate on heap instead
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+	free(p); // Free allocated memory
+}","#include <stdio.h>
+#include <stdlib.h>
+
+const int ANZAHL = 5; // Should be 5
+
+struct student {
+    char first_name[20];
+    char last_name[20];
+    int points[5];
+};
+
+typedef struct student Student;
+
+void student_einlesen(Student* p_stud);
+void student_ausgeben(Student* p_stud);
+
+int main(void){
+
+    Student students[ANZAHL];
+
+    // Einlesen
+    for(int i = 0; i < ANZAHL; i++)
+    {
+        student_einlesen(students + i);
+    }
+
+    // Ausgeben
+    for(int i = 0; i < ANZAHL; i++)
+    {
+        student_ausgeben(students + i);
+    }
+}
+
+void student_einlesen(Student* p_stud)
+{
+    // Nutzer einlesen
+    printf(""Gebe den Vornamen ein: "");
+    scanf(""%s"", p_stud->first_name);
+    printf(""Gebe nun den Nachnamen ein: "");
+    scanf(""%s"", p_stud->last_name);
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    for(int i = 0; i < 5; i++)
+    {
+        printf(""%d: "", i + 1);
+        scanf(""%d"", &(p_stud->points[i]));
+    }
+    printf(""\n"");
+}
+
+void student_ausgeben(Student *p_stud)
+{
+    printf(""Student: %s %s\n"", p_stud->first_name, p_stud->last_name);
+    int sum = 0;
+    for(int i = 0; i < 5; i++)
+    {
+        sum += *(p_stud->points + i);
+    }
+
+    printf(""Anzahl Punkte: %d\n"", sum);
+}"
+Hagenberg,Rosa,rosa.hagenberg@campus.tu-berlin.de,Beendet,"1. Juli 2022  10:37","3. Juli 2022  23:59","2 Tage 13 Stunden","4,50",-,-,-,-,-,-,"Teil 1: stdlib.h; Teil 2: 8; Teil 3: malloc; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: double; Teil 8: calloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*) malloc(10 * sizeof(int));
+	if(arr)
+		for(int i = 0; i<10; i++) arr[i] = 0;
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct student {
+	char first_name[21]; 
+	char last_name[21];
+	unsigned int points[5];
+}Student;
+void student_ausgeben(Student* p_stud){
+	for(int j = 0; j<5; ++j){
+	printf(""Student: %s%s\n"", p_stud[j].first_name, p_stud[j].last_name);
+	int sum = 0;
+	for(int i = 0; i<5; i++){
+		sum += p_stud[j].points[i];
+	}
+	printf(""Anzahl Punkte: %i\n"", sum);
+	}
+}
+
+void student_einlesen(Student* p_stud){
+	for(int i = 0; i<4; ++i){
+	printf(""Gebe den Vornamen ein:"");
+	fgets(p_stud[i].first_name, 21, stdin);
+	printf(""Gebe nun den Nachnamen ein:""); 
+	fgets(p_stud[i].last_name, 21, stdin);
+	printf(""Gebe nun nacheinander die 5 Punkte ein:"");
+	printf(""1:"");
+	scanf(""%u"", &p_stud[i].points[0]);
+	printf(""2:"");
+	scanf(""%u"", &p_stud[i].points[1]);
+	printf(""3:"");
+	scanf(""%u"", &p_stud[i].points[2]);
+	printf(""4:"");
+	scanf(""%u"", &p_stud[i].points[3]);
+	printf(""5:"");
+	scanf(""%u"", &p_stud[i].points[4]);
+	}
+}
+int main(){
+	Student* students[5];
+	student_einlesen(students);
+	student_ausgeben(students);
+
+}"
+Kraska,Timo,t.kraska@campus.tu-berlin.de,Beendet,"1. Juli 2022  13:40","1. Juli 2022  15:04","1 Stunde 24 Minuten","14,00","str == 0","PPRalloc
+; cealloc
+; talloc
+; mealloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","Die Anzahl der Bytes die gebraucht werden","int* pointer;
+
+; int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: ungewiss; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*) malloc(10*sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct student{
+	char first_name[21];
+	char last_name[21];
+	int points[5];
+}Student;
+
+void student_einlesen(Student* p_stud){
+	printf(""Gebe den Vornamen ein: "");
+	scanf(""%s"", p_stud->first_name);
+	printf(""Gebe nun den Nachnamen ein: "");
+	scanf(""%s"", p_stud->last_name);
+	printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+	printf(""1: "");
+	scanf(""%i"", &p_stud->points[0]);
+	printf(""2: "");
+	scanf(""%i"", &p_stud->points[1]);
+	printf(""3: "");
+	scanf(""%i"", &p_stud->points[2]);
+	printf(""4: "");
+	scanf(""%i"", &p_stud->points[3]);
+	printf(""5: "");
+	scanf(""%i"", &p_stud->points[4]);
+	printf(""\n"");
+}
+
+void student_ausgeben(Student* p_stud){
+	int punkte = 0;
+	for(int i=0; i<5; i++){
+		punkte += p_stud->points[i];
+	} 
+	printf(""Student: %s %s\n"", p_stud->first_name, p_stud->last_name);
+	printf(""Anzahl Punkte: %i\n\n"", punkte);
+}
+
+int main(){
+	static Student studenten[5];
+	for(int i=0; i<5; i++){
+		student_einlesen(&studenten[i]);
+	}
+	for(int i=0; i<5; i++){
+		student_ausgeben(&studenten[i]);
+	}
+}"
+Ibraimi,Ibraim,ibraimi@campus.tu-berlin.de,Beendet,"1. Juli 2022  20:06","2. Juli 2022  00:38","4 Stunden 32 Minuten","14,75","sizeof(ketchup) = 32","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","cealloc
+; talloc
+; PPRalloc
+; mealloc","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int* pointer;
+
+; int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: ungewiss; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	/* int arr[10];*/
+	int* arr = malloc(10*sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	if (!p) {
+	return -1;
+	}
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+	if (p){
+	free(p);
+	}
+	return 0;
+}","#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct student { 
+    char first_name[20];
+    char last_name[20];
+    int points[5];
+} Student;
+
+void student_einlesen(Student* p_stud){
+
+ printf(""Gebe den Vornamen ein: "");
+ scanf(""%s"", p_stud->first_name);
+ printf(""Gebe nun den Nachnamen ein: "");
+ scanf(""%s"", p_stud->last_name);
+ printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+ for (int i = 0; i<5; ++i){
+  printf(""%d: "", i+1);
+  scanf(""%d"", p_stud->points + i);
+ 
+ }
+ printf(""\n"");
+
+}
+
+void student_ausgeben(Student* p_stud){
+ 
+ printf(""Student: %s %s\n"", p_stud->first_name, p_stud->last_name);
+ 
+ int summe = 0;
+ for(int i = 0; i != 5; ++i) {
+		summe += p_stud->points[i];
+	}
+	printf(""Anzahl Punkte: %d\n"", summe);
+
+}
+
+int main(){
+ Student students[5];
+  for(int i = 0; i != 5; ++i) {
+	student_einlesen(students + i);
+	}
+  for(int i = 0; i != 5; ++i) {
+	printf(""\n"");
+	student_ausgeben(students + i);
+	}
+}"
+Sharma,Shaurya,shaurya.sharma@campus.tu-berlin.de,Beendet,"2. Juli 2022  06:25","3. Juli 2022  23:48","1 Tag 17 Stunden","7,38","cealloc
+; mealloc
+; PPRalloc","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*) malloc(10*sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+
+
+
+typedef struct student {
+    char vorname[21];
+    char nachname[21];
+    int punkte[5];
+    
+}Student;
+
+void student_einlesen(Student* p_stud){
+    for(int i=0; i<5; i++){
+        printf(""Gebe den Vornamen ein:"");
+        scanf(""%s"", p_stud[i].vorname);
+        printf(""Gebe den Nachnamen ein:"");
+        scanf(""%s"", p_stud[i].nachname);
+        printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+        for(int j =0; j<5;j++){
+            printf(""%i: \n"",j+1);
+            scanf(""%i"", &p_stud[i].punkte[j]);
+        }
+        
+    }
+}
+
+void student_ausgeben(Student* p_stud){
+    
+    for(int i=0; i<5; i++){
+        int sum = 0;
+        for(int j =0; j<5;j++){
+            sum+= p_stud[i].punkte[j];
+        }
+        printf(""Student: %s %s\n"",p_stud[i].vorname,p_stud[i].nachname);
+        printf(""Anzahl Punkte: %i\n\n"", sum);
+    }
+   
+}
+
+int main()
+{
+    Student studArray[5];
+    student_einlesen(studArray);
+    student_ausgeben(studArray);
+
+    return 0;
+}"
+Schulze,"Dennis Benedikt",dennis.schulze.1@campus.tu-berlin.de,Beendet,"2. Juli 2022  09:43","2. Juli 2022  12:38","2 Stunden 55 Minuten","13,38","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) = 32","cealloc
+; mealloc
+; PPRalloc","Die Anzahl der Bytes die gebraucht werden","int array[];
+; int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 3.00; Teil 6: ungewiss; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int SIZE = 10;
+
+int* allocArray() {
+	int *arr = malloc( SIZE * sizeof(int) );
+	
+	if ( arr != NULL )
+	    return arr;
+	else
+	    return NULL;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	if ( p == NULL )
+	    return -1;
+	
+	for(int i = 0; i != SIZE; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != SIZE; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+	free(p);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct student {
+  char vorname[21]; // one more char for the NULL byte '\0'
+  char nachname[21];
+  int punkte[5];
+} Student;
+
+static Student students[5];
+
+void student_einlesen(Student *p_stud) {
+  printf(""Gebe den Vornamen ein: "");
+  scanf(""%s"", p_stud->vorname);
+  printf(""Gebe nun den Nachnamen ein: "");
+  scanf(""%s"", p_stud->nachname);
+  printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+  for (int i = 0; i < 5; ++i) {
+    printf(""%i:"", i + 1);
+    scanf(""%i"", p_stud->punkte + i);
+    
+    if ( i == 4 ) {
+        printf(""\n"");
+    } else {
+        printf("" "");
+    }
+  }
+}
+
+int sum_points(int *arr, int size) {
+  int sum = 0;
+  for (int i = 0; i < size; ++i)
+    sum += arr[i];
+
+  return sum;
+}
+
+void student_ausgeben(Student *p_stud) {
+  int sum = sum_points(p_stud->punkte, 5);
+  printf(""Student: %s "", p_stud->vorname);
+  printf(""%s\n"", p_stud->nachname);
+  printf(""Anzahl Punkte: %i\n"", sum);
+}
+
+int main() {
+  for (int i = 0; i < 5; ++i) {
+    student_einlesen(students + i);
+  }
+
+  for (int i = 0; i < 5; ++i) {
+    student_ausgeben(students + i);
+    if ( i < 4 )
+        printf(""\n"");
+  }
+}"
+Rubner,Ben,ben.rubner@campus.tu-berlin.de,Beendet,"2. Juli 2022  10:57","3. Juli 2022  20:22","1 Tag 9 Stunden","7,25","PPRalloc
+; talloc
+; cealloc
+; mealloc","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) == sizeof(ketchup.pommes)","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","str == 0","int* pointer;
+
+; int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+    int *arr = calloc(10,sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int *p;
+	int summe = 0;
+	p = allocArray();
+
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}",-
+Tiede,"Paul Georg",tiede@campus.tu-berlin.de,Beendet,"2. Juli 2022  12:15","3. Juli 2022  20:56","1 Tag 8 Stunden","4,63","sizeof(ketchup) = 32
+; sizeof(ketchup) == sizeof(ketchup.pommes)","Strukturen brauchen einen Rückgabewert
+
+; Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","str == 0","Die Anzahl der Bytes die gebraucht werden","PPRalloc
+; mealloc
+; cealloc","int* pointer;
+
+; int array[];","Teil 1: string.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int arr[10];
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p=allocArray;
+	p=(int*) malloc(10*sizeof(int));
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+	free(p);
+}","#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct student{
+char vorname [21];
+char nachname[21];
+unsigned int punkte[4];
+} Student;
+
+void student_einlesen(Student* p_stud)
+{
+
+ for(int i=0;i<5;i++)
+ {
+     printf(""Gebe den Vornamen ein:"");
+     scanf(""%s"",&p_stud[i].vorname);
+     printf(""Gebe nun den Nachnamen ein:"");
+      scanf(""%s"",&p_stud[i].nachname);
+      printf(""Gebe nun nacheinander die 5 Punkte ein:"");
+      for (int z=0;z<5;z++){
+      printf(""%u:"",z+1);
+      scanf(""%u"",&p_stud[i].punkte[z]);
+      }
+}
+ }
+
+
+void student_ausgeben(Student* p_stud)
+{
+for (int i=0;i<5;i++)
+{
+    printf(""Student:"");
+    printf(""%s,%s"",p_stud[i].vorname,p_stud[i].nachname);
+    printf(""Anzahl Punkte: %u"",((p_stud[i].punkte[0])+(p_stud[i].punkte[1])+(p_stud[i].punkte[2])+(p_stud[i].punkte[3])+(p_stud[i].punkte[4])));
+}
+}
+
+int main ()
+{
+char* p_stud[] ={""erster_student"", ""zweiter_student"", ""dritter_student"", ""vierter_student"", ""fuenfter_student""};
+student_einlesen(p_stud);
+student_ausgeben(p_stud);
+
+}"
+Rabe,Richard,richard.rabe@campus.tu-berlin.de,Beendet,"2. Juli 2022  12:23","3. Juli 2022  23:59","1 Tag 11 Stunden","7,50","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Bytes die gebraucht werden","str == 0","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*)malloc(10*sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}",-
+Hilger,Emilie,e.hilger@campus.tu-berlin.de,Beendet,"2. Juli 2022  19:05","3. Juli 2022  23:59","1 Tag 4 Stunden","5,38","Die Anzahl der Bytes die gebraucht werden","PPRalloc
+; mealloc
+; cealloc","sizeof(ketchup) = 31","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen
+; Strukturen brauchen einen Rückgabewert","str == 0","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: malloc; Teil 4: 0.00; Teil 5: 3.00; Teil 6: 6.00; Teil 7: DoublePointer; Teil 8: malloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int *arr = (int*) malloc(10*sizeof(int)); 
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+char*  struct student() {
+	char *Student  = (char*) malloc(20*sizeof(char)); 
+	return Student ;
+}
+
+int main(void){
+	char* p;
+	char vorname = 0;
+	char nachname = 0;
+	p = struct student();
+	for(char i = 0; i != 20; ++i) {
+		p[i] = i;
+	}
+	for(char i = 0; i != 20; ++i) {
+		summe += p[i];
+	}
+	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
+    printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
+}"
+"Zamudio Bargel","Athena Sabina",zamudiobargel@campus.tu-berlin.de,Beendet,"3. Juli 2022  11:01","3. Juli 2022  23:59","12 Stunden 57 Minuten","4,38","Strukturen brauchen einen Rückgabewert
+
+; Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Die Anzahl der Bytes die gebraucht werden","cealloc
+; PPRalloc
+; mealloc","str == 0","Für Variablen, deren Speicherbedarf zur Übersetzungszeit fest steht","int array[];
+; int* pointer;","Teil 1: ; Teil 2: sizeof(DoublePointer); Teil 3: realloc; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8:","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int *arr = (int *) malloc(10*sizeof(int));
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}",-
+Breuer,Larissa,laribre@zedat.fu-berlin.de,Beendet,"3. Juli 2022  13:25","3. Juli 2022  22:18","8 Stunden 52 Minuten","11,70","Der Wert von str ist undefiniert.","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","calloc
+; malloc
+; realloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","int array[];
+; int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 0.00; Teil 5: 3.00; Teil 6: 6.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int* arr = (int*)malloc( 10*sizeof(int) );
+	return arr;
+}
+
+int main(void){
+	
+	int summe = 0;
+	int* p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+	free(p);
+
+}","#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
+
+typedef struct student {
+   char first_name[21];
+   char last_name[21];
+   int points[5];
+} Student;
+
+void readLine( char* strbuffer, unsigned int buffersize )
+{
+  char format[30] = """";
+  sprintf( format, ""%%%u[^\n]%%*c"", buffersize-1 );
+  scanf( format, strbuffer );
+}
+
+void student_einlesen(Student* p_stud){
+	// Vorname, Nachname:
+	printf(""Gebe den Vornamen ein: "");
+	readLine(p_stud->first_name, 20);
+	printf(""Gebe nun den Nachnamen ein: "");
+	readLine(p_stud->last_name, 20);
+	
+	// Punkte:
+	printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+	for (int i=1; i<=5; i++){
+		printf(""%i: "", i);
+		scanf(""%i"", &p_stud->points[i-1]);
+	}
+	getchar();
+	printf(""\n"");
+}
+
+void student_ausgeben(Student* p_stud){
+	int summe=0;
+	for (int i=0; i<5;i++){
+		summe += p_stud->points[i];
+	}
+	printf(""Student: %s %s\n"", p_stud->first_name, p_stud->last_name);
+	printf(""Anzahl Punkte: %i\n\n"", summe);
+}
+
+int main(){
+	
+	Student erster_Student, zweiter_Student, dritter_Student, vierter_Student, fuenfter_Student;
+	Student* Studierende[5] = {&erster_Student, &zweiter_Student, &dritter_Student,	&vierter_Student, &fuenfter_Student};
+	
+	for (int i=0; i<5; i++){
+		student_einlesen(Studierende[i]);
+	}
+
+	for (int i=0; i<5; i++){
+		student_ausgeben(Studierende[i]);
+	}
+}"
+Krause,"Heiner Hans",heiner.h.krause@campus.tu-berlin.de,Beendet,"3. Juli 2022  18:03","3. Juli 2022  23:59","5 Stunden 55 Minuten","3,88","Die Anzahl der Bytes die gebraucht werden","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 33","str == -1","cealloc
+; mealloc
+; PPRalloc","int array[];","Teil 1: malloc.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int arr[10];
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+#include <malloc.h>
+
+typedef struct student{"
+"Saltos Erazo","Melany Shaden",m.saltoserazo@campus.tu-berlin.de,Beendet,"3. Juli 2022  18:12","3. Juli 2022  23:59","5 Stunden 46 Minuten","4,75","malloc
+; realloc; talloc
+; calloc","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int array[];
+; char p;","Teil 1: stdlib.h; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8:","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray()
+{
+    int* arr = (int*)malloc(10*sizeof(int));
+    return arr;
+}
+
+int main(void)
+{
+    int* p;
+    int summe = 0;
+    p = allocArray();
+    for(int i = 0; i != 10; ++i)
+    {
+        p[i] = i;
+    }
+    for(int i = 0; i != 10; ++i)
+    {
+        summe += p[i];
+    }
+    printf(""Summe = %d\n"", summe);
+}",-
+Karabalik,Tugce,t.karabalik@campus.tu-berlin.de,Beendet,"3. Juli 2022  19:03","3. Juli 2022  23:58","4 Stunden 54 Minuten","10,75","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) == sizeof(ketchup.pommes)
+
+; sizeof(ketchup) = 32","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","str == 0","int array[];
+; int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: ungewiss; Teil 5: ungewiss; Teil 6: 9.00; Teil 7: DoublePointer; Teil 8: malloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+    int* arr = (int*)malloc(10 * sizeof( int));
+    return arr;
+    
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+
+typedef struct student{
+    char vorname[21];
+    char nachname[21];
+    int punkte[5];
+} Student;
+
+void student_einlesen(Student* p_stud)
+{
+    printf(""\nGebe den Vornamen ein: "");
+    scanf(""%s"", p_stud->vorname);
+    printf(""Gebe nun den Nachnamen ein: "");
+    scanf(""%s"", p_stud->nachname);
+    printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+    for(int i=0; i<5; i++)
+    {
+        printf(""%i: "", i+1);
+        scanf(""%i"", &(p_stud->punkte[i]));
+        
+    }
+}
+
+
+void student_ausgeben(Student* p_stud)
+{
+    int sum =0;
+    for(int i=0; i<5; i++)
+    sum += p_stud->punkte[i];
+    printf(""\nStudent: %s %s\n"", p_stud->vorname, p_stud->nachname);
+    printf(""Anzahl Punkte: %i\n"", sum);
+}
+
+int main()
+{
+    Student st[5];
+    for (int i=0; i<5; i++)
+    student_einlesen(&st[i]);
+      for(int i=0; i<5; i++)
+    student_ausgeben(&st[i]);
+    
+    return 0;
+}"
+Tsai,Ming-You,m.tsai@campus.tu-berlin.de,Beendet,"3. Juli 2022  19:04","3. Juli 2022  23:59","4 Stunden 54 Minuten","0,00",-,-,-,-,-,-,"Teil 1: malloc.h; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8:","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	int arr[10];
+	return arr;
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}",-
+Pegler,"Silas Johannes",s.pegler.1@campus.tu-berlin.de,Beendet,"3. Juli 2022  21:17","3. Juli 2022  23:10","1 Stunde 53 Minuten","13,75","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","talloc
+; cealloc
+; PPRalloc
+; mealloc","str == 0","int* pointer;
+
+; int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+#include <stdlib.h>
+
+int* allocArray() {
+	return (int*) malloc(10*sizeof(int));
+}
+
+int main(void){
+	int* p;
+	int summe = 0;
+	p = allocArray();
+	for(int i = 0; i != 10; ++i) {
+		p[i] = i;
+	}
+	for(int i = 0; i != 10; ++i) {
+		summe += p[i];
+	}
+	printf(""Summe = %d\n"", summe);
+}","#include <stdio.h>
+
+typedef char Str20[21];
+typedef struct student
+{
+	Str20 vorname;
+	Str20 nachname;
+	int punkte[5];
+}Student;
+
+void readLine( char* strbuffer, unsigned int buffersize )
+{
+  char format[30] = """";
+  sprintf( format, ""%%%u[^\n]%%*c"", buffersize-1 );
+  scanf( format, strbuffer );
+}
+
+void student_einlesen(Student* p_stud)
+{
+	printf(""Gebe den Vornamen ein: "");
+	readLine(p_stud->vorname, 20);
+	printf(""Gebe nun den Nachnamen ein: "");
+	readLine(p_stud->nachname, 20);
+	printf(""Gebe nun nacheinander die 5 Punkte ein:\n"");
+	for(int j = 0; j < 5; j++)
+	{
+		printf(""%i: "", j + 1);
+		scanf(""%i"", &p_stud->punkte[j]);
+		getchar();
+	}
+	printf(""\n"");
+}
+
+void student_ausgeben(Student* p_stud)
+{
+	printf(""Student: %s %s\n"", p_stud->vorname, p_stud->nachname);
+	
+	int summe = 0;
+	
+	for(int l = 0; l < 5; l++)
+	{
+		summe += p_stud->punkte[l];
+	}
+	printf(""Anzahl Punkte: %i\n\n"", summe);
+}
+
+void main()
+{
+	Student studierende[5];
+	for(int i = 0; i < 5; i++)
+	{
+		student_einlesen(&studierende[i]);
+	}
+	for(int k = 0; k < 5; k++)
+	{
+		student_ausgeben(&studierende[k]);
+	}
+	
+}"

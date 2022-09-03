@@ -1,0 +1,3364 @@
+﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/15,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9","Antwort 10","Antwort 11"
+Allaham,"Mohamad Anas",m.allaham@tu-berlin.de,Beendet,"10. Dezember 2020  04:02","21. Dezember 2020  00:12","10 Tage 20 Stunden","3,50","unendlich oft",-,"a = 6 und b = 6",-,-,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72:","#include <stdio.h>
+
+void menue()
+{
+	   printf(""Bitte auswaehlen...\n""
+          ""\tPPR ist [t]oll\n""
+          ""\tPPR [s]tinkt mir\n""
+          ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch(eingabe) {
+		case ('t'): 
+			printf(""Wir moegen dich auch.\n""); 
+			break;
+		case ('s'): 
+		printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+		break;
+		case ('l'): printf(""Giovanni, lernst du Programmieren?\n""); 
+		break;
+		default: printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+	}
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    if (zeit >= 0){
+        do{
+        //eine Sekunde warten
+        sleep(1);
+        printf( ""time %i\n"", zeit);
+        zeit--;
+        } while (zeit >= 0);
+    }
+}",-,"int main(){
+    
+}"
+Batilla,Moritz,m.batilla@campus.tu-berlin.de,Beendet,"10. Dezember 2020  09:54","18. Dezember 2020  15:32","8 Tage 5 Stunden","14,15","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","10 mal",1,"10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 0.","void countdown(char counter){
+for(; counter > 0; counter-- ) {
+    printf(""%d\n"", counter);
+}
+printf( ""Start!!!\n"");
+}",15,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch(eingabe){
+    case 't': printf(""Wir moegen dich auch.\n""); break;
+    case 's': printf(""Hauptsache wir stinken geruchstechnisch nicht.\n""); break;
+    case 'l': printf(""Giovanni, lernst du Programmieren?\n""); break;
+    default: printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n""); break;
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for(zeit; zeit >= 0;zeit--)
+    {
+        sleep(1);
+        printf( ""time %i\n"", zeit);
+    }
+}","#include <stdio.h>
+
+int main()
+{
+    unsigned int zahl;
+    printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+    scanf(""%u"", &zahl);
+    if(0 == zahl%400)
+        {
+          printf(""%u ist ein Schaltjahr.\n"", zahl);
+        }
+    else if(0 == zahl%4 && 0!=zahl%100)
+        {
+         printf(""%u ist ein Schaltjahr.\n"", zahl);
+        }
+    else
+        {
+         printf(""%u ist kein Schaltjahr.\n"", zahl);
+        }
+}","#include <stdio.h>
+
+int main()
+{
+    int a;
+    for(a=0; a<5; a++){
+    printf(""Hello Loop!\n"");
+    }
+
+    while (a < 10){
+        printf(""Hello Loop!\n"");
+        a++;
+    }
+}"
+Eichstädt,"Daniel Dominik",daniel.eichstaedt@campus.tu-berlin.de,Beendet,"10. Dezember 2020  22:37","12. Dezember 2020  00:18","1 Tag 1 Stunde","14,20",0,1,Bonjour,"1 mal","int countdown (int a)
+{  
+   
+   
+    for (;a>=2;a--)
+    {printf (""%d\n"",a);
+
+    }
+    printf (""%d\n"",a);
+    printf (""Start!!!"");
+    return 0;
+}","x == 0 und y == 1","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch (eingabe)
+    {
+    case 't':
+    printf(""Wir moegen dich auch.\n"");
+    break;
+    case 's':
+    printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+    break;
+    case 'l':
+    printf(""Giovanni, lernst du Programmieren?\n"");
+    break;
+    default:
+        printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+        break;
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+ for (;zeit>=0;zeit--) 
+{
+        sleep(1);
+        printf( ""time %i\n"", zeit);
+    }
+}","#include <stdio.h>
+
+
+int main()
+{
+    int jahr;
+    printf (""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+    scanf (""%d"", &jahr);
+    if (jahr%400==0||(jahr%4==0&&jahr%100!=0))
+        printf (""%d ist ein Schaltjahr.\n"", jahr);
+    else
+        printf (""%d ist kein Schaltjahr.\n"", jahr);
+}","#include <stdio.h>
+
+int HelloLoop ()
+{   int i=1;
+    for(i;i<=5;i++)
+    {
+        printf(""Hello Loop!\n"");
+    }
+ while (i<=10)
+    {
+        printf (""Hello Loop!\n"");
+    i++;}
+
+}
+
+int main(){
+ HelloLoop ();   
+}"
+Schumann,"Jolanda Marietta",jolanda.schumann@campus.tu-berlin.de,Beendet,"11. Dezember 2020  10:10","11. Dezember 2020  11:53","1 Stunde 42 Minuten","14,49",15,"1 mal","x == 0 und y == 1","a = 6 und b = 6",Bonjour,"if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: &; Teil 8: &; Teil 9: 5; Teil 10: &; Teil 11: 0; Teil 12: &; Teil 13: 6; Teil 14: &; Teil 15: &; Teil 16: &; Teil 17: 7; Teil 18: 9; Teil 19: &; Teil 20: &; Teil 21: 8; Teil 22: &; Teil 23: &; Teil 24: 2; Teil 25: &; Teil 26: &; Teil 27: &; Teil 28: 10; Teil 29: &; Teil 30: &; Teil 31: &; Teil 32: &; Teil 33: &; Teil 34: &; Teil 35: 8; Teil 36: &; Teil 37: &; Teil 38: &; Teil 39: 9; Teil 40: &; Teil 41: &; Teil 42: 3; Teil 43: 10; Teil 44: &; Teil 45: &; Teil 46: &; Teil 47: 11; Teil 48: &; Teil 49: &; Teil 50: &; Teil 51: 12; Teil 52: &; Teil 53: 1; Teil 54: &; Teil 55: &; Teil 56: &; Teil 57: 16; Teil 58: &; Teil 59: &; Teil 60: &; Teil 61: 18; Teil 62: &; Teil 63: &; Teil 64: &; Teil 65: 19; Teil 66: &; Teil 67: &; Teil 68: &; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+void menue(){
+	 printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+switch (eingabe) {
+        case 't':
+                printf(""Wir moegen dich auch.\n"");
+                break;
+        case 's':
+                printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+                break;
+        case 'l':
+                printf(""Giovanni, lernst du Programmieren?\n"");
+                break;
+        default:
+                printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+				break;
+}
+}","#include <stdio.h>
+#include <unistd.h>
+
+
+int main(){
+	int zeit = 0;
+	printf( ""Wieviele Sekunden soll ich warten?\n"");
+    scanf(""%i"",&zeit);
+	
+	for(zeit; zeit >=0; zeit--){
+		sleep(1);
+		printf( ""time %i\n"", zeit);
+	}
+}","#include <stdio.h>
+
+
+int main(){
+	int jahr = 0;
+	printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+	scanf(""%i"", &jahr);
+	if (jahr%400 == 0 || (jahr%4 == 0 && jahr%100 != 0))
+	{
+		printf(""%i ist ein Schaltjahr."", jahr);	
+	}
+	else {
+	printf(""%i ist kein Schaltjahr."", jahr);
+	}
+}","#include <stdio.h>
+
+
+int main(){
+	int i = 1;
+	for(i; i <= 5; i++){
+		printf(""Hello Loop!\n"");
+	}
+	i = 5;
+	while(i<=9){
+		printf(""Hello Loop!\n"");
+		i++;
+	}
+}"
+Ergin,"Can Mert",c.ergin@campus.tu-berlin.de,Beendet,"12. Dezember 2020  00:29","19. Dezember 2020  18:27","7 Tage 17 Stunden","14,20",1,"x == 0 und y == 1","void countdown(int zahl)
+{
+	int i = 0;
+	for (i = zahl; i>0; i--)
+	{
+		printf(""%i\n"",i);
+	}
+	printf(""Start!!!"");
+}","!(x < y)","a = 6 und b = 6","x = 12 + 22 + 32 + ...+ (n-1)2 + n2 = n(n+1)(2n+1)/6","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+	switch(eingabe)
+	{
+		case 't':
+			printf(""Wir moegen dich auch.\n"");
+			break;
+		case 's':
+			printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+			break;
+		case 'l':
+			printf(""Giovanni, lernst du Programmieren?\n"");
+			break;
+		default:
+			printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+			break;
+	}
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+	for(int i = zeit; i >= 0; i--)
+	{
+		//eine Sekunde warten
+        sleep(1);
+        printf( ""time %i\n"", i);
+	}
+}","#include <stdio.h>
+
+int main(void)
+{
+	printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+	unsigned int jahr = 0;
+	scanf(""%i"", &jahr);
+	if ((jahr % 400 == 0) || ((jahr % 4 == 0) && (jahr % 100 != 0)))
+	{
+		printf(""%i ist ein Schaltjahr."",jahr);
+	}
+	else
+	{
+		printf(""%i ist kein Schaltjahr."",jahr);
+	}
+}","#include <stdio.h>
+
+void student_main()
+{
+	int i;
+	for (i=1;i<=5;i++)
+	{
+		printf(""Hello Loop!\n"");
+	}
+	while (i<=10)
+	{
+		printf(""Hello Loop!\n"");
+		i++;
+	}
+}"
+"Florez Vargas",Catalina,c.florez@campus.tu-berlin.de,Beendet,"12. Dezember 2020  19:33","17. Dezember 2020  13:39","4 Tage 18 Stunden","12,50","x <= y","switch (a,b) {
+        case >=0, >=0:
+                printf(""a und b sind positiv!\n"");
+                break;
+        case <=0, <=0:
+                printf(""a und b sind negativ!\n"");
+                break;
+        case >0, <0:
+                printf(""a ist positiv und b ist negativ!\n"");
+                break;
+        case <0, >0:
+                printf(""a ist negativ und b ist positiv!\n"");
+}","(5 && 4)",0,"a = 6 und b = 6","x = 12 + 22 + 32 + ...+ (n-1)2 + n2 = n(n+1)(2n+1)/6","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar();
+    switch (eingabe)
+    {
+        case 't':
+            printf(""Wir moegen dich auch.\n"");
+            break;
+        case 's':
+            printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+            break;
+        case 'l':
+            printf(""Giovanni, lernst du Programmieren?\n"");
+            break;
+        default:
+            printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+            break;
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main()
+{
+    printf(""Wieviele Sekunden soll ich warten?\n"");
+    int zeit;
+    scanf(""%i"", &zeit);
+    for (int a=zeit; a>= 0;a--)
+    {
+        sleep(1);
+        printf(""time %i\n"", a);
+    }
+}","#include <stdio.h>
+int main()
+{
+    int jahr;
+    printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+    scanf(""%i"", &jahr);
+    if (jahr % 400 == 0 || (jahr % 4 == 0 && jahr % 100 != 0))
+    {
+        printf(""%i ist ein Schaltjahr.\n"", jahr);
+    }
+    else
+    {
+        printf(""%i ist kein Schaltjahr.\n"", jahr);
+    }
+}","#include <stdio.h>
+int main()
+{
+    for (int i = 0; i <= 4; i++)
+    {
+        printf(""Hello Loop!\n"");
+    }
+    int i = 0;
+    while (i <= 4)
+    {
+        printf(""Hello Loop!\n"");
+        i++;
+    }
+}"
+Bestgen,Jonas,bestgen@campus.tu-berlin.de,Beendet,"13. Dezember 2020  12:45","18. Dezember 2020  22:36","5 Tage 9 Stunden","13,70",15,"1 mal","(a && b) || (!(a && b))","!(x < y)",Bonjour,"switch (a,b) {
+        case >=0, >=0:
+                printf(""a und b sind positiv!\n"");
+                break;
+        case <=0, <=0:
+                printf(""a und b sind negativ!\n"");
+                break;
+        case >0, <0:
+                printf(""a ist positiv und b ist negativ!\n"");
+                break;
+        case <0, >0:
+                printf(""a ist negativ und b ist positiv!\n"");
+}","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+	printf(""Bitte auswaehlen...\n""
+	""\tPPR ist [t]oll\n""
+	""\tPPR [s]tinkt mir\n""
+	""\tPPR, Flasche [l]eer.\n\n"");
+	char eingabe = getchar();
+	getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+	switch(eingabe){
+		case 't':
+		printf(""Wir moegen dich auch.\n"");
+		break;
+		case 's':
+		printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+		break;
+		case 'l':	
+		printf(""Giovanni, lernst du Programmieren?\n"");
+		break;
+		default:
+		printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+		break;
+	}
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+	printf( ""Wieviele Sekunden soll ich warten?\n"");
+	int zeit=0;
+	scanf(""%i"",&zeit);
+	for ( ;zeit>= 0; zeit--){
+		
+			//eine Sekunde warten
+			sleep(1);
+			printf( ""time %i\n"", zeit);
+			
+		
+	}
+}","#include <stdio.h>
+
+int main(){
+	int zahl;
+	unsigned char teilbar = 0;
+	printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+	scanf(""%i"",&zahl);
+	if (zahl%100==0){
+	if (zahl%400==0){
+	teilbar=1;}}
+	
+	if (zahl%100!=0){
+		if(zahl%4==0){
+	teilbar=1;
+	}}
+		
+			
+		if (teilbar)
+		printf(""%i ist ein Schaltjahr."",zahl);
+		else
+		printf(""%i ist kein Schaltjahr."",zahl);
+	
+}","#include <stdio.h>
+int main(){
+int i= 1;
+for(;i<=5;i++){
+	printf(""Hello Loop!\n"");
+}
+
+while(i<=10){
+	printf(""Hello Loop!\n"");
+	i++;
+}
+
+}"
+Ullrich,Gabriel,gabriel.ullrich@campus.tu-berlin.de,Beendet,"13. Dezember 2020  13:24","18. Dezember 2020  22:36","5 Tage 9 Stunden","13,70","unendlich oft","1 mal","#include <stdio.h>
+
+int countdown(){
+    int summe;
+    scanf(""%i"", &summe);
+    int x;
+    for(x = summe ; x > 0 ; x-- ){
+      printf(""%d\n"", x);
+    } 
+printf(""Start!!!"");   
+return 0;
+}","a = 6 und b = 6",Bonjour,"INT i = 0; 
+DO {
+    printf(""%d "", i);
+} WHILE (i = (i+1) % 7);","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+
+int menue(){
+    
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar();
+       switch(eingabe){
+          case 't': printf(""Wir moegen dich auch.\n"");
+          break;
+          case 's': printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+          break;
+          case 'l': printf(""Giovanni, lernst du Programmieren?\n"");
+          break;
+          default: printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+          break;
+          }
+          
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    int i;
+    scanf(""%i"",&zeit);
+    for(i = zeit; zeit >= 0 ; i--){
+        sleep(1);
+        printf( ""time %i\n"", zeit);
+        zeit--;
+        }
+}","#include <stdio.h>
+
+int main(){ 
+    int jahr;
+    unsigned char teilbar = 0;
+    printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+    scanf(""%i"", &jahr);
+    if(jahr%100 == 0){
+      if(jahr%400 == 0){
+      teilbar = 1;
+      }
+    }
+    
+    if(jahr%100 != 0){
+      if(jahr%4 == 0){
+      teilbar = 1;
+      }
+    }
+    
+    if(teilbar)
+      printf(""%i ist ein Schaltjahr."", jahr);
+      else{
+      printf(""%i ist kein Schaltjahr."", jahr);
+      }
+}","#include <stdio.h>
+
+int main(){
+     int i;
+     int a = 1;
+     for(i=0; i <= 4; i++){
+        printf(""Hello Loop!\n"");
+        }
+     while(a <= 5){
+        printf(""Hello Loop!\n"");
+        a++;   
+        }
+    }"
+Radke,"Simon Sebastian",s.radke@campus.tu-berlin.de,Beendet,"13. Dezember 2020  18:51","20. Dezember 2020  17:58","6 Tage 23 Stunden","14,30","x == 0 und y == 1","1 mal","x = 12 + 22 + 32 + ...+ (n-1)2 + n2 = n(n+1)(2n+1)/6",15,"!(x < y)","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 15; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h> //bibs importen
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n"" 
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n""); //menue fuehrung
+    char eingabe = getchar();// getchar aus tastatureingabe
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+
+switch (eingabe){ //anfang switch konstrukt
+case 't' : printf(""Wir moegen dich auch.\n""); break; //cases
+case 's' : printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");break;
+case 'l' : printf(""Giovanni, lernst du Programmieren?\n""); break;
+default : printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");break;//rest
+}
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+int zeit = 0;
+ scanf(""%i"",&zeit);
+for (;zeit >= 0;zeit--)
+{
+sleep(1);
+printf( ""time %i\n"", zeit);
+}
+}","#include <stdio.h> 
+
+int main (){
+printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+unsigned int anno;
+scanf(""%u"",&anno);
+if (anno%400==0 || anno%4==0 && anno%100!=0){
+printf(""%u ist ein Schaltjahr."", anno);
+}
+else {
+printf(""%u ist kein Schaltjahr."", anno);
+}
+}","#include <stdio.h> 
+
+int main (){
+int i = 1;
+for (; i < 6; i++ ){
+printf (""Hello Loop!\n"");
+}
+int k= 1;
+while (k < 6){
+printf (""Hello Loop!\n"");
+k++;
+}
+}"
+Mohr,Niklas,niklas.mohr@campus.tu-berlin.de,Beendet,"13. Dezember 2020  19:44","20. Dezember 2020  23:58","7 Tage 4 Stunden","13,06",!3,"1 mal","switch (a,b) {
+        case >=0, >=0:
+                printf(""a und b sind positiv!\n"");
+                break;
+        case <=0, <=0:
+                printf(""a und b sind negativ!\n"");
+                break;
+        case >0, <0:
+                printf(""a ist positiv und b ist negativ!\n"");
+                break;
+        case <0, >0:
+                printf(""a ist negativ und b ist positiv!\n"");
+}","#include <stdio.h>
+
+int countdown(int i)
+{
+    for(int t = i; t >= 1; t--)
+    {
+        printf(""%i\n"", t);
+    }
+    printf(""Start!!!"");
+    return 0;
+}","!(x < y)",5,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: &; Teil 15: &; Teil 16: &; Teil 17: 7; Teil 18: 9; Teil 19: &; Teil 20: &; Teil 21: 8; Teil 22: &; Teil 23: &; Teil 24: 2; Teil 25: &; Teil 26: &; Teil 27: &; Teil 28: 10; Teil 29: &; Teil 30: &; Teil 31: &; Teil 32: &; Teil 33: &; Teil 34: 3; Teil 35: 8; Teil 36: &; Teil 37: &; Teil 38: &; Teil 39: 9; Teil 40: &; Teil 41: &; Teil 42: &; Teil 43: 10; Teil 44: &; Teil 45: 6; Teil 46: &; Teil 47: 11; Teil 48: &; Teil 49: &; Teil 50: &; Teil 51: 12; Teil 52: &; Teil 53: 1; Teil 54: &; Teil 55: &; Teil 56: &; Teil 57: 16; Teil 58: &; Teil 59: &; Teil 60: 6; Teil 61: 18; Teil 62: &; Teil 63: &; Teil 64: &; Teil 65: 19; Teil 66: &; Teil 67: &; Teil 68: &; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: &","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+   switch(eingabe)
+   {
+       case('t'):
+       printf(""Wir moegen dich auch.\n"");
+       break;
+
+       case('s'):
+       printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+       break;
+
+       case('l'):
+       printf(""Giovanni, lernst du Programmieren?\n"");
+       break;
+
+       default:
+       printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+       break;
+   }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for(int i = zeit; i >= 0; i--)
+    {
+        sleep(1);
+        printf(""time %i\n"", i);
+    }
+    printf(""\n"");
+}","#include <stdio.h>
+
+int main()
+{
+    int jahr;
+    printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+    scanf(""%i"", &jahr );
+    if(((jahr%400 == 0)&&(jahr%4 == 0)) || (!(jahr%100 == 0))) printf(""%i ist ein Schaltjahr."", jahr);
+    else printf(""%i ist kein Schaltjahr."", jahr);
+}","#include <stdio.h>
+
+int student_main()
+{
+    for(int i=1; i<6; i++)
+    {
+        printf(""Hello Loop!\n"");
+    }
+
+    int a=1;
+    while(a<6)
+    {
+        printf(""Hello Loop!\n"");
+        a++;
+    }
+}"
+Breous,Alexandros,a.breous@campus.tu-berlin.de,Beendet,"13. Dezember 2020  20:45","21. Dezember 2020  00:12","7 Tage 3 Stunden","13,78","a = 6 und b = 6",0,"!(x < y)","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 0.","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","#include <stdio.h>
+
+printf(""Geben Sie eine Zahl ein.\n"");
+int zahl;
+scanf(""%d"", &zahl);
+countdown(zahl);
+int countdown(int zahl)
+{
+	while(zahl != 0)
+	{
+		printf(""\n%d"", zahl);
+		zahl--;
+	}
+	printf(""\nStart!!!"");
+	return 0;
+}","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: -; Teil 26: -; Teil 27: -; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: -; Teil 34: -; Teil 35: 16; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 17; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 8(17); Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 14; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: -","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch(eingabe)
+    {
+	case 't':    
+        printf(""Wir moegen dich auch.\n"");
+        break;
+    
+	case 's':
+        printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+        break;
+    
+	case 'l':
+        printf(""Giovanni, lernst du Programmieren?\n"");
+	break;
+	
+	default:
+        printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+        break;
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for(; zeit >= 0; zeit--){ 
+        //eine Sekunde warten
+        sleep(1);
+        printf( ""time %i\n"", zeit);
+    }
+}","#include <stdio.h>
+
+int main()
+{
+	unsigned int i;
+	printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+	scanf(""%u"",&i);
+	if( (i % 4 == 0 && i % 100 != 0) || i % 400 == 0)
+	{
+            printf(""%u ist ein Schaltjahr.\n"", i);}
+        else 
+            printf(""%u ist kein Schaltjahr.\n"", i);    
+}","#include <stdio.h>
+
+int main(){
+	for(int a = 5; a != 0; a--){
+	printf(""Hello Loop!\n"");
+	}
+	int a = 5;
+	while(a != 0){
+	printf(""Hello Loop!\n"");
+	a--;
+	}
+}"
+Franke,Alexander,alexander.franke@campus.tu-berlin.de,Beendet,"14. Dezember 2020  00:10","20. Dezember 2020  23:59","6 Tage 23 Stunden","6,99","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");",1,"a = 6 und b = 6","INT i = 0; 
+WHILE (i){
+    i = (i+1) % 7;
+    printf(""%d "", i);
+}","1 mal","(5 && 4)","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: -","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch(eingabe)
+        {
+        case 't':
+        printf(""Wir moegen dich auch.\n"");
+        break;
+        case 's':
+        printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+        break;
+        case 'l':
+        printf(""Giovanni, lernst du Programmieren?\n"");
+        break;
+        default:
+        printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+        break;
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for (;Zeit >= )
+    if (zeit >= 0){
+        do{
+        //eine Sekunde warten
+        sleep(1);
+        printf( ""time %i\n"", zeit);
+        zeit--;
+        } while (zeit >= 0);
+    }
+}",-,"int main(){
+    
+}"
+Bauz,Noah,noah.bauz@campus.tu-berlin.de,Beendet,"14. Dezember 2020  11:08","15. Dezember 2020  17:06","1 Tag 5 Stunden","13,90","x == 0 und y == 1","10 mal",15,"a = 6 und b = 6","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 0.","INT i = 0; 
+DO {
+    i = (i+1) % 7;
+    printf(""%d "", i);
+} WHILE (i);","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch (eingabe) {
+        case 't':
+            printf(""Wir moegen dich auch.\n"");
+            break;
+        case 's':
+            printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+            break;
+        case 'l':
+            printf(""Giovanni, lernst du Programmieren?\n"");
+            break;
+        default:
+            printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+            break;
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for( ; zeit >= 0 ; zeit--){
+        sleep(1);
+        printf(""time %i\n"", zeit);
+    }
+}","#include <stdio.h>
+int main()
+{
+    unsigned int zahl;
+    printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+    scanf(""%u"",&zahl);
+    if(zahl%4==0 && zahl%100<<0){
+        printf(""%u ist ein Schaltjahr.\n"",zahl);
+    }
+    else if(zahl%400==0){
+        printf(""%u ist ein Schaltjahr.\n"",zahl);
+    }
+    else printf(""%u ist kein Schaltjahr.\n"",zahl);
+}","#include <stdio.h>
+
+int main(){
+    for(int zahl = 1 ; zahl <= 5 ; zahl++){
+        printf(""Hello Loop!\n"");
+    }
+    int zahl=6;
+    while(zahl <= 10){
+        printf(""Hello Loop!\n"");
+        zahl++;
+    }
+}"
+Atallah,"Ali H. R.",ali.atallah@campus.tu-berlin.de,Beendet,"14. Dezember 2020  12:07","20. Dezember 2020  20:19","6 Tage 8 Stunden","14,23","void countdown(int Zahl)
+{
+	for(int i = Zahl; i > 0; i--)
+	{
+		printf(""%i\n"", i);
+	}
+	printf(""Start!!!\n"");
+}",15,1,"x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","1 mal","if (a >= 0) {
+        if (b >= 0) {
+                printf(""a und b sind positiv!\n"");
+        } else {
+                printf(""a und b sind negativ!\n"");
+        }
+} else {
+        if (b < 0) {
+                printf(""a ist positiv und b ist negativ!\n"");
+        } else {
+                printf(""a ist negativ und b ist positiv!\n"");
+        }
+}","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: -; Teil 27: 2; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+
+    switch(eingabe)
+    {
+    	case 't':
+    	printf(""Wir moegen dich auch.\n"");
+    	break;
+
+    	case 's':
+    	printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+    	break;
+
+    	case 'l':
+    	printf(""Giovanni, lernst du Programmieren?\n"");
+    	break;
+
+    	default:
+    	printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+    	break;
+
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main()
+{
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for(int i = zeit; i >= 0; i--)
+    {
+        //eine Sekunde warten
+        sleep(1);
+        printf( ""time %i\n"", i);
+    }
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+	int Jahr;
+
+	printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+	scanf(""%i"", &Jahr);
+
+	if((Jahr %400==0 || (Jahr %4==0 && Jahr %100!=0)) && Jahr>0)
+	{  
+		printf(""%i ist ein Schaltjahr.\n"", Jahr);
+	}
+	else
+	{
+		printf(""%i ist kein Schaltjahr.\n"", Jahr);
+	}
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+	for (int i = 0; i <= 4; i++)
+	{
+		printf(""Hello Loop!\n"");
+	}
+	int j = 0;
+	while(j < 5) 
+		{
+			printf(""Hello Loop!\n"");
+			j++;
+		}
+}"
+Kruschel,"Annegret Claire",kruschel@campus.tu-berlin.de,Beendet,"14. Dezember 2020  14:32","20. Dezember 2020  22:35","6 Tage 8 Stunden","14,60","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}",1,"#include <stdio.h>
+#include <unistd.h> 
+
+int countdown(){
+int i;
+scanf(""%d"", &i);     
+
+for( i=i; i > 0; i--) 
+{
+    
+    printf(""%d\n"",i);  
+} 
+
+printf(""Start!!!\n"");  
+
+return 0;
+}","x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","!(x < y)",!3,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 14; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: -","#include <stdio.h>
+
+void menue(){
+
+   
+
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+		getchar();
+
+
+    switch(eingabe)
+    {
+        case 't':
+            printf(""Wir moegen dich auch.\n"");
+            break;
+
+        case 's':
+            printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+            break;
+
+        case 'l':
+            printf(""Giovanni, lernst du Programmieren?\n"");
+            break;
+
+        
+        default:
+            printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+	int zeit;
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    
+    scanf(""%i"",&zeit);
+    for (zeit=zeit; zeit >= 0; zeit--)
+{
+        
+       sleep(1);
+        printf( ""time %i\n"", zeit);
+	
+        
+        
+    }
+}","#include <stdio.h>
+
+int main() {
+   int j;
+   printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+   scanf(""%d"", &j);
+
+   
+   if (j % 400 == 0) {
+      printf(""%d ist ein Schaltjahr.\n"", j);
+   }
+   
+   else if (j % 100 == 0) {
+      printf(""%d ist kein Schaltjahr.\n"", j);
+   }
+   
+   else if (j % 4 == 0) {
+      printf(""%d ist ein Schaltjahr.\n"", j);
+   }
+   
+   else {
+      printf(""%d ist kein Schaltjahr.\n"", j);
+   }
+
+   
+}","#include <stdio.h>
+int main()
+{
+
+int i;   
+for (i = 1; i <= 5; ++i)
+{
+   printf ( ""Hello Loop!\n"" );
+}
+int a = 1;
+while (  a <= 5 )
+ {  
+   printf ( ""Hello Loop!\n"" );
+   a ++;
+}
+    
+}"
+Girod,"Lucie Chantal",lucie.girod@campus.tu-berlin.de,Beendet,"14. Dezember 2020  14:43","20. Dezember 2020  14:44","6 Tage","14,49","!(x < y)","10 mal","x == 0 und y == 1","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 0.","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: -","#include <stdio.h>
+
+void menue(){
+
+printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+        char eingabe = getchar();
+    	getchar();
+
+switch(eingabe){
+	case 't':printf(""Wir moegen dich auch.\n"");
+	break;
+	case 's':printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+	break;
+	case 'l':printf(""Giovanni, lernst du Programmieren?\n"");
+	break;
+	default:printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+	break;
+	}
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+	printf( ""Wieviele Sekunden soll ich warten?\n"");
+	int zeit = 0;
+	scanf(""%i"", &zeit);
+	for(int time = zeit; time >= 0; time --){
+	printf(""time %i\n"", time);
+	}
+	printf(""\n""); 
+
+}","#include <stdio.h>
+
+int main(){
+	unsigned int jahr = 0;
+	printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+	scanf(""%u"", &jahr);
+	if(jahr%400==0 || ((jahr%4==0)&&(jahr%100>0))){
+	printf(""%u ist ein Schaltjahr."", jahr);
+	}
+	else printf(""%u ist kein Schaltjahr.\n"", jahr);
+}","#include <stdio.h>
+int main(){
+	for(int anzahl = 0; anzahl < 5; anzahl ++){
+	printf(""Hello Loop!\n"");
+	}
+	int anzahl = 0;	
+	while(anzahl < 5){
+	printf(""Hello Loop!\n"");
+	anzahl ++;
+	}
+}"
+Merle,"Katharina Elisabeth",k.merle@campus.tu-berlin.de,Beendet,"14. Dezember 2020  18:01","21. Dezember 2020  00:12","6 Tage 6 Stunden","0,00",-,-,-,-,-,-,"Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72:",-,-,-,-
+Pahlke,"Victoria Sophie",v.pahlke@campus.tu-berlin.de,Beendet,"15. Dezember 2020  12:43","20. Dezember 2020  21:13","5 Tage 8 Stunden","12,70","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","1 mal","#include <stdio.h>
+int countdown (int x)
+{
+    for (; x>0; x--)
+    {
+        printf(""%i\n"",x);
+    }
+    printf(""Start!!!\n"");
+    return x;
+}","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 0.","x == 0 und y == 1","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch(eingabe)
+    {
+        case 't': printf(""Wir moegen dich auch.\n""); break;
+        case 's': printf(""Hauptsache wir stinken geruchstechnisch nicht.\n""); break;
+        case 'l': printf(""Giovanni, lernst du Programmieren?\n""); break;
+        default: printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+    
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for (zeit; zeit >= 0; zeit --)
+    {
+        sleep (1);
+        printf(""time %i\n"", zeit);
+    }
+}","#include <stdio.h>
+int main (){
+    printf (""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+    unsigned int jahr;
+    scanf (""%u"", &jahr);
+    if ((jahr%4==0 && jahr%100 != 0) | jahr%400==0)
+    {
+        printf(""%u ist ein Schaltjahr.\n"", jahr);
+    }
+  else
+  {
+      printf(""%u ist kein Schaltjahr.\n"", jahr);
+  }  
+}","#include <stdio.h>
+int main()
+{
+    int i;
+    for (i=5; i>0; i --)
+    {
+        printf(""Hello Loop!\n"");
+    }
+    int x=5;
+    while (x>0)
+    {
+        printf(""Hello Loop!\n"");
+        x -= 1;
+    }
+}"
+Englert,"Lukas Peter Alex",ae2f9cf5a465c781b1548e3a67f2038a,Beendet,"15. Dezember 2020  16:55","19. Dezember 2020  11:46","3 Tage 18 Stunden","11,88","10 mal","switch (a,b) {
+        case >=0, >=0:
+                printf(""a und b sind positiv!\n"");
+                break;
+        case <=0, <=0:
+                printf(""a und b sind negativ!\n"");
+                break;
+        case >0, <0:
+                printf(""a ist positiv und b ist negativ!\n"");
+                break;
+        case <0, >0:
+                printf(""a ist negativ und b ist positiv!\n"");
+}",0,Ciao,"x = 2 + 4 + 6 + ... + (2n-2) + 2n = n(n+1)","(a && b) || (!(a && b))","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: -; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: -","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+   switch(eingabe) {
+    case 't':
+        printf(""Wir moegen dich auch.\n"");
+        break;
+    case 's':
+        printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+        break;
+    case 'l':
+        printf(""Giovanni, lernst du Programmieren?\n"");
+        break;
+    default:
+        printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+   }
+}","#include <stdio.h>
+
+#include <unistd.h>
+
+
+
+int main(){
+
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+
+int zeit = 0;
+
+    scanf(""%i"",&zeit);
+
+    
+
+  for(; zeit>=0; zeit--) 
+
+   {
+
+  sleep(1);
+
+printf( ""time %i\n"", zeit);
+
+}
+
+}","#include <stdio.h>
+
+int main()
+{
+printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+unsigned int jahr = 0;
+scanf(""%u"", &jahr);
+if (jahr%400==0) (printf(""%u ist ein Schaltjahr.\n"", jahr)) ;
+else if (jahr%4==0 && jahr%100!=0) (printf(""%u ist ein Schaltjahr.\n"", jahr)) ;
+else (printf(""%u ist kein Schaltjahr.\n"", jahr)) ;
+}","#include <stdio.h>
+
+int main() 
+{
+for (int i = 1; i<=5;i++)
+{
+printf(""Hello Loop!\n"");
+}
+int i = 6;
+while (i<=10)
+{
+printf(""Hello Loop!\n"");
+i++;
+}
+}"
+Butzer,Niklas,n.butzer@campus.tu-berlin.de,Beendet,"16. Dezember 2020  16:36","17. Dezember 2020  19:16","1 Tag 2 Stunden","13,80","!(x < y)","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 1.","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}",!3,Bonjour,"x == 0 und y == 1","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+char eingabe = getchar();
+getchar();
+switch (eingabe){
+case 't' : printf(""Wir moegen dich auch.\n""); break;
+case 's' : printf(""Hauptsache wir stinken geruchstechnisch nicht.\n""); break;
+case 'l' : printf(""Giovanni, lernst du Programmieren?\n""); break;
+default : printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n""); break;
+}
+}","#include <stdio.h>
+#include <unistd.h>
+
+
+int main(){
+printf( ""Wieviele Sekunden soll ich warten?\n"");
+int zeit=0;
+scanf(""%i"",&zeit);
+for(int i=zeit;i>=0;i--){
+sleep(1);
+printf( ""time %i\n"", i);
+}
+}","#include <stdio.h>
+
+int main(){
+printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+unsigned int jahreszahl;
+scanf(""%d"", &jahreszahl);
+if(jahreszahl%400==0)
+{
+printf(""%u ist ein Schaltjahr."", jahreszahl);
+}
+else if(jahreszahl%100==0)
+    {
+printf(""%u ist kein Schaltjahr."", jahreszahl);
+    }
+else if(jahreszahl%4==0)
+{
+printf(""%u ist ein Schaltjahr."", jahreszahl);
+}
+else
+{
+printf(""%u ist kein Schaltjahr."", jahreszahl);
+}
+}","#include <stdio.h>
+
+int main(){
+for(int i=0; i<5; i++)
+{
+printf(""Hello Loop!\n"");
+}
+int j=0;
+while(j<5)
+{
+printf(""Hello Loop!\n"");
+j++;
+}
+}"
+Meyer,"Florian Philipp",florian.p.meyer@campus.tu-berlin.de,Beendet,"16. Dezember 2020  17:39","20. Dezember 2020  18:29","4 Tage","14,45",0,Bonjour,"!(x < y)","x = 12 + 22 + 32 + ...+ (n-1)2 + n2 = n(n+1)(2n+1)/6","void countdown(int x) {
+  for(; x>=1; x--)
+    printf(""%i\n"", x);
+  printf(""Start!!!\n"");
+}",15,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch(eingabe)
+    {
+      case 116: printf(""Wir moegen dich auch.\n"");
+      break;
+      case 115: printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+      break;
+      case 108: printf(""Giovanni, lernst du Programmieren?\n"");
+      break;
+      default: printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for(; zeit>=0; zeit--)
+      {
+        sleep(1);
+        printf( ""time %i\n"", zeit);
+      }
+}","#include <stdio.h>
+int checkleapyear()
+{
+  int unsigned crntyear;
+  printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+  scanf(""%u"", &crntyear);
+  if(crntyear%400==0 || crntyear%4==0 && crntyear%100!=0)
+    printf(""%u ist ein Schaltjahr.\n"", crntyear);
+  else
+    printf(""%u ist kein Schaltjahr.\n"", crntyear);
+}
+void main()
+{
+  checkleapyear();
+}","#include <stdio.h>
+int main()
+{
+  int counter;
+  for(counter = 0; counter <5; counter++)
+    printf(""Hello Loop!\n"");
+  while(counter++ <10)
+    printf(""Hello Loop!\n"");
+}"
+Felisiak,"Ann Sophie",a.felisiak@campus.tu-berlin.de,Beendet,"16. Dezember 2020  18:41","20. Dezember 2020  20:22","4 Tage 1 Stunde","14,50","unendlich oft",!3,"switch (a,b) {
+        case >=0, >=0:
+                printf(""a und b sind positiv!\n"");
+                break;
+        case <=0, <=0:
+                printf(""a und b sind negativ!\n"");
+                break;
+        case >0, <0:
+                printf(""a ist positiv und b ist negativ!\n"");
+                break;
+        case <0, >0:
+                printf(""a ist negativ und b ist positiv!\n"");
+}","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 0.","1 mal","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch (eingabe)
+    {
+        case 't':
+          printf(""Wir moegen dich auch.\n"");
+          break;
+
+        case 's':
+          printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+          break;
+
+        case 'l':
+          printf(""Giovanni, lernst du Programmieren?\n"");
+          break;
+
+        default:
+          printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for (; zeit>=0; zeit--)
+    {
+      sleep(1);
+      printf( ""time %i\n"", zeit);
+    }
+}","#include <stdio.h>
+
+int main(){
+
+    printf( ""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+
+    int jahr=0;
+    int schaltjahr = 0;
+    scanf(""%i"",&jahr);
+
+    if (jahr%400==0)
+    {
+      schaltjahr=1;
+    }
+    else if (jahr%4==0 && jahr%100!=0)
+    {
+      schaltjahr=1;
+    }
+
+
+
+
+    if (schaltjahr){
+      printf( ""%i ist ein Schaltjahr."", jahr);
+    }
+    else {
+      printf( ""%i ist kein Schaltjahr."", jahr);
+    }
+}","#include <stdio.h>
+
+int main()
+{
+    for (int i=0; i<5; i++)
+    {
+      printf(""Hello Loop!\n"");
+    }
+
+    int j=5;
+    while (j)
+    {
+      printf(""Hello Loop!\n"");
+      j--;
+    }
+}"
+Gerndt,Alexander,5afb11f6268c4f6be6cd43c56fdb1902,Beendet,"17. Dezember 2020  13:10","17. Dezember 2020  14:15","1 Stunde 4 Minuten","12,91","a = 6 und b = 6","switch (a,b) {
+        case >=0, >=0:
+                printf(""a und b sind positiv!\n"");
+                break;
+        case <=0, <=0:
+                printf(""a und b sind negativ!\n"");
+                break;
+        case >0, <0:
+                printf(""a ist positiv und b ist negativ!\n"");
+                break;
+        case <0, >0:
+                printf(""a ist negativ und b ist positiv!\n"");
+}",0,15,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","int countdown(int wert){
+    for(int i = wert; i>0; i--){
+        printf(""%d\n"",i);
+    }
+   return printf(""Start!!!"");
+}","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: %; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: undef; Teil 11: %; Teil 12: %; Teil 13: 5; Teil 14: %; Teil 15: 0; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 7; Teil 22: 9; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: 2; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch(eingabe){
+        case 't':
+            printf(""Wir moegen dich auch.\n"");
+            break;
+        case 's':
+             printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+             break;
+        case 'l':
+            printf(""Giovanni, lernst du Programmieren?\n"");
+            break;
+        default:
+            printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+            break;
+    }
+   
+    
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    
+    for(int i=zeit;i>=0;i--){
+        sleep(1);
+        printf( ""time %i\n"", i);
+    }
+    
+}","#include <stdio.h>
+int main(){
+    int jahr;
+	printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+	scanf(""%d"", &jahr);
+
+	if (jahr % 400 == 0) {
+		printf(""%d ist ein Schaltjahr."", jahr);
+	}
+
+	else if (jahr % 4 == 0 & jahr % 100 != 0) {
+		printf(""%d ist ein Schaltjahr."", jahr);
+}
+
+
+	else {
+		printf(""%d ist kein Schaltjahr."", jahr);
+		
+	}
+}","#include <stdio.h>
+
+int main(){
+    int i = 0;
+    
+    for(i=0;i<5;i++){
+        printf(""Hello Loop!\n"");
+    }
+    while(i<10){
+        printf(""Hello Loop!\n"");
+        i++;
+    }
+}"
+Kunze,"Damian Chac Elias",b35e2b45462cfc96e7bebd39996c5230,Beendet,"17. Dezember 2020  13:31","17. Dezember 2020  22:33","9 Stunden 1 Minute","10,50","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 0.",!3,Bonjour,"!(x < y)","1 mal",0,"Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72:","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch (eingabe) {
+        case 't':
+            printf(""Wir moegen dich auch.\n"");
+            break;
+            
+        case 's':
+            printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+            break;
+            
+        case 'l':
+            printf(""Giovanni, lernst du Programmieren?\n"");
+            break;
+            
+        default:
+            printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+            break;
+        
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for (; zeit >= 0; zeit--) {
+        sleep(1);
+        printf( ""time %i\n"", zeit);
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main (){
+    printf( ""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+    int jahr=0;
+    scanf(""%i"",&jahr);
+    if (jahr % 400 == 0 || (jahr % 4 == 0 && jahr % 100 != 0)) {
+        printf( ""%i ist ein Schaltjahr.\n"", jahr);
+    } else {
+        printf( ""%i ist kein Schaltjahr.\n"", jahr);
+    }
+ 
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    int i = 1;
+    for (; i <= 5; i++) {
+        printf(""Hello Loop!\n"");
+    }
+    
+    while (i <= 10) {
+        printf(""Hello Loop!\n"");
+        i++;
+    }
+}"
+Dirks,Leonhard,leonhard.dirks@campus.tu-berlin.de,Beendet,"17. Dezember 2020  19:11","20. Dezember 2020  22:43","3 Tage 3 Stunden","14,80",15,"x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");",Bonjour,1,"#include <stdio.h>
+
+void countdown(){
+	int a;
+	scanf(""%i"", &a);
+	for (; a >= 1; a-= 1){
+		printf(""%i\n"", a);
+	}
+	printf(""Start!!!\n"");
+}","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch( eingabe ){
+    	case 't':
+    		printf(""Wir moegen dich auch.\n"");
+    		break;
+    	case 's':
+    		printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+    		break;
+    	case 'l':
+    		printf(""Giovanni, lernst du Programmieren?\n"");
+    		break;
+    	default:
+    		printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+    		break;
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for (; zeit >= 0; zeit--){
+    	sleep(1);
+    	printf( ""time %i\n"", zeit);
+    }
+}","#include <stdio.h>
+
+int main(){
+	int Jahr;
+	printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+	scanf(""%i"", &Jahr);
+	if ( Jahr%400==0 || (Jahr%4==0 && Jahr%100!=0)){
+		printf(""%i ist ein Schaltjahr.\n"", Jahr);
+	}
+	else{
+		printf(""%i ist kein Schaltjahr.\n"", Jahr);
+	}
+}","#include <stdio.h>
+
+int main(){
+    for ( int i = 1; i <= 5; i++){
+		printf(""Hello Loop!\n"");
+	}
+	int j = 1;
+	while ( j <= 5){
+		j ++;
+		printf(""Hello Loop!\n"");
+	}
+}"
+Stubler,David,stubler@campus.tu-berlin.de,Beendet,"18. Dezember 2020  09:31","18. Dezember 2020  15:21","5 Stunden 50 Minuten","14,18",Bonjour,"!(x < y)","10 mal","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 0.","a = 6 und b = 6","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: 0; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: -","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch(eingabe)
+    {
+    case 't':
+        printf(""Wir moegen dich auch.\n"");
+        break;
+    case 's':
+        printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+        break;
+    case 'l': 
+        printf(""Giovanni, lernst du Programmieren?\n"");
+        break;
+    default:
+        printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+        break;
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main()
+{
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for (int i = zeit; i >= 0; i--)
+    {
+        sleep(1);
+        printf( ""time %i \n"", zeit);
+        zeit--;
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main()
+{
+    int jahr;
+    printf( ""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden? \n"");
+    scanf("" %i"" ,&jahr);
+    if ( jahr > 0)
+    {
+        if( jahr % 400 == 0)
+        {
+            printf(""%i ist ein Schaltjahr."", jahr);
+        }
+        else if( jahr %4 == 0 && !(jahr %100 == 0) )
+        {
+            printf(""%i ist ein Schaltjahr."", jahr);
+        }
+        else
+         {
+            printf(""%i ist kein Schaltjahr."", jahr);
+         }
+
+    }
+
+    else
+    {
+        printf(""fehler"");
+    }
+
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main()
+{
+    for(int i = 0; i < 5;i++)
+    {
+        printf(""Hello Loop!\n"");
+    }
+    int f = 0;
+    while (f<5)
+    {
+        printf(""Hello Loop!\n"");
+        f++;
+    }
+}"
+Klima,"Jakob Valentin",j.klima@campus.tu-berlin.de,Beendet,"18. Dezember 2020  13:07","20. Dezember 2020  23:53","2 Tage 10 Stunden","12,79","switch (a,b) {
+        case >=0, >=0:
+                printf(""a und b sind positiv!\n"");
+                break;
+        case <=0, <=0:
+                printf(""a und b sind negativ!\n"");
+                break;
+        case >0, <0:
+                printf(""a ist positiv und b ist negativ!\n"");
+                break;
+        case <0, >0:
+                printf(""a ist negativ und b ist positiv!\n"");
+}",65,"1 mal",Ciao,"INT i = 0; 
+WHILE (i){
+    i = (i+1) % 7;
+    printf(""%d "", i);
+}","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 0.","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 15; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: -","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    			
+    switch (eingabe) {
+				case 't':
+		            printf(""Wir moegen dich auch.\n"");
+break;
+				case 's':
+				    printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+break;
+				case 'l':
+					printf(""Giovanni, lernst du Programmieren?\n"");
+break;
+				default:
+				printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+			};
+		}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+  	scanf(""%i"",&zeit);
+		for(;zeit >= 0;zeit--)
+		{
+			printf( ""time %i\n"", zeit);
+			//eine Sekunde warten
+			sleep(1);
+
+	}
+}","#include<stdio.h>
+
+int main(){
+printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+int eingabe;
+scanf(""%i"",&eingabe);
+if (eingabe % 400 == 0 || (eingabe%4 == 0 && eingabe % 100 != 0))
+{
+		printf(""%i ist ein Schaltjahr.\n"",eingabe );
+}
+
+else
+{
+printf(""%i ist kein Schaltjahr.\n"", eingabe);
+}
+}","#include<stdio.h>
+
+int main(){
+    ;
+    int wiederholung=10;
+
+
+
+		for(;wiederholung >= 6;wiederholung--)
+		{
+			printf( ""Hello Loop!\n"");
+		}
+
+	while (wiederholung >= 1)
+	{
+	printf( ""Hello Loop!\n"");
+	wiederholung--;
+	}
+}"
+Wahl,Moritz,moritz.wahl@campus.tu-berlin.de,Beendet,"18. Dezember 2020  16:39","20. Dezember 2020  22:03","2 Tage 5 Stunden","14,00","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}",Bonjour,"x = 1 + 2 + 3 +...+ (n-1) + n = n(n+1)/2","!(x < y)",0,"x == 0 und y == 1","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch(eingabe)
+    {
+        case 't':
+            printf(""Wir moegen dich auch.\n"");
+            break;
+        case 's':
+            printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+            break;
+        case 'l':
+            printf(""Giovanni, lernst du Programmieren?\n"");
+            break;
+        default:
+            printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit = 0;
+    scanf(""%i"",&zeit);
+    for (int i = zeit; i >= 0; i--){
+        sleep(1);
+        printf(""time %i\n"", i);
+    }
+}","#include <stdio.h>
+
+int main(){
+    unsigned int jahr;
+    printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+    scanf(""%u"", &jahr);
+    int x = !(jahr % 400);
+    int y = !(jahr % 4) && ((jahr % 100)!=0);
+    if(x || y){
+        printf(""%u ist ein Schaltjahr.\n"",jahr);
+    }
+    else{
+        printf(""%u ist kein Schaltjahr.\n"",jahr);
+    }
+}","#include <stdio.h>
+int main(){
+    int i;
+    for(i = 0; i <5; i++){
+        printf(""Hello Loop!\n"");
+    }
+    while(i < 10){
+        printf(""Hello Loop!\n"");
+        i++;
+    }
+}"
+Sobchuk,Yana,y.sobchuk@campus.tu-berlin.de,Beendet,"18. Dezember 2020  20:02","20. Dezember 2020  23:32","2 Tage 3 Stunden","5,00","switch (a,b) {
+        case >=0, >=0:
+                printf(""a und b sind positiv!\n"");
+                break;
+        case <=0, <=0:
+                printf(""a und b sind negativ!\n"");
+                break;
+        case >0, <0:
+                printf(""a ist positiv und b ist negativ!\n"");
+                break;
+        case <0, >0:
+                printf(""a ist negativ und b ist positiv!\n"");
+}","x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2",0,"x <= y",Hey,5,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: 0; Teil 30: %; Teil 31: %; Teil 32: -; Teil 33: %; Teil 34: -; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 2; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: 0; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: -; Teil 56: -; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    
+    switch (eingabe)
+    {
+        case 't':
+        printf(""Wir moegen dich auch.\n"");
+        break;
+        case 's': 
+        printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+        break;
+        case 'l': 
+        printf(""Giovanni, lernst du Programmieren?\n"");
+        break;
+        default: 
+        printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+        break;
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    
+    for (zeit >=3; zeit >= 0; zeit--) {
+     printf( ""time %i\n"", zeit);
+    
+     break;
+    }
+}","#include <stdio.h>
+
+int main() {
+int zahl;
+  printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+  scanf(""%d"", &zahl);
+
+if(zahl%400 || (zahl%4 && zahl%100))
+    printf(""%d ist ein Schaltjahr!"");
+  else
+    printf(""%d ist kein Schaltjahr!"");
+  
+}","#include <stdio.h>
+int main(){
+int i ;
+
+for(i = 1; i;)
+    {
+   printf(""Hello Loop!\n"",i);
+   printf(""Hello Loop!\n"",i);
+   printf(""Hello Loop!\n"",i);
+   printf(""Hello Loop!\n"",i);
+   printf(""Hello Loop!\n"",i);
+    break;
+    } 
+    
+while(i)
+    {
+    printf(""Hello Loop!\n""); 
+    printf(""Hello Loop!\n""); 
+    printf(""Hello Loop!\n""); 
+    printf(""Hello Loop!\n""); 
+    printf(""Hello Loop!\n""); 
+    break;
+    }
+}"
+Djitté,"Karim Adama",karim.a.djitte@campus.tu-berlin.de,Beendet,"19. Dezember 2020  11:40","20. Dezember 2020  23:56","1 Tag 12 Stunden","9,20",0,5,Bonjour,"x == 0 und y == 1","#include <stdio.h>
+#include <unistd.h>
+
+
+
+
+int main()
+{
+   
+    int Zeit;
+    printf( ""Bitte geben sie die Zeit in Sekunuden ein\n"");
+    scanf(""%i"",&Zeit);
+    
+    if (Zeit > 0)
+    {
+        do
+    {
+        printf( ""%i\n"", Zeit);
+        sleep(1);
+        Zeit--;
+    }
+        while (Zeit > 0);
+        printf(""Start!!!\n"");
+    }
+}","x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72:","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    
+    switch(eingabe)
+    {
+        case 't': printf(""Wir moegen dich auch.\n""); break;
+        case 's': printf(""Hauptsache wir stinken geruchstechnisch nicht.\n""); break;
+        case 'l': printf(""Giovanni, lernst du Programmieren?\n""); break;
+        default : printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    
+    for(zeit >= 0; zeit >= 0; zeit--)
+    {
+    
+        sleep(1);
+        printf( ""time %i\n"", zeit);
+
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+
+
+
+
+int main()
+{
+    int Jahreszahl=0;
+    
+    printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+    scanf(""%i"", &Jahreszahl);
+    
+    if((Jahreszahl % 4 ==0 && Jahreszahl % 100 !=0) ||Jahreszahl %400 ==0)
+        printf(""%i ist ein Schaltjahr.\n"",Jahreszahl);
+    else printf(""%i ist kein Schaltjahr.\n"",Jahreszahl);
+    
+}","#include <stdio.h>
+#include <unistd.h>
+
+
+
+
+
+int main()
+{
+    int var = 0;
+   
+    for (var >=0; var<5; var +1)
+    {
+        printf(""Hello Loop\n"");
+        var =var +1;
+    }
+    
+    while (var < 10)
+    {
+        printf(""Hello loop\n"");
+        var = var+1;
+    }
+    }"
+Schultz,David,d.schultz@campus.tu-berlin.de,Beendet,"19. Dezember 2020  12:48","20. Dezember 2020  23:21","1 Tag 10 Stunden","13,80","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","x == 0 und y == 1","1 mal","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 1.","!(x < y)","(5 && 4)","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 15; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+
+void menue () {
+	printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    	char eingabe = getchar();
+   	getchar();
+		switch(eingabe) {
+			case 't' : printf(""Wir moegen dich auch.\n"");
+			break;
+			case 's': printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+			break;
+			case 'l' : printf(""Giovanni, lernst du Programmieren?\n"");
+			break;
+			default : printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+			break;
+		}
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for (; zeit >= 0; zeit--) {
+	sleep(1);
+	printf( ""time %i\n"", zeit);
+    }
+}","#include <stdio.h>
+
+int main(){
+	unsigned int jahr;
+	printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+	scanf(""%u"", &jahr);
+	if (jahr % 4 == 0 && jahr % 100 != 0 || jahr % 400 == 0) {
+		printf(""%u ist ein Schaltjahr."", jahr);
+	}
+	else {
+		printf(""%u ist kein Schaltjahr."", jahr);
+	}
+}","#include <stdio.h>
+
+int main(){
+	for(int a=0; a<5; a++){
+		printf(""Hello Loop!\n"");
+	}
+	int i=0;
+	while(i<5) {
+		printf(""Hello Loop!\n"");
+		i++;
+	}
+
+}"
+Eichner,"Melvin Elon Bendix",melvin.eichner@campus.tu-berlin.de,Beendet,"19. Dezember 2020  14:38","19. Dezember 2020  17:53","3 Stunden 15 Minuten","10,68","a = 6 und b = 6","(a && b) || (!(a && b))","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}",17,65,Bonjour,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: 3; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 15; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: -","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    int eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch (eingabe)
+        {
+        case ('t'):
+            printf(""Wir moegen dich auch.\n"");
+            break;
+         case ('s'):
+            printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+            break;
+         case ('l'):
+            printf(""Giovanni, lernst du Programmieren?\n"");
+            break;
+        default:
+            printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+            break;
+        }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for (zeit;zeit >= 0;zeit--){
+		sleep(1);
+		printf( ""time %i\n"", zeit);
+		}
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+	int jahr = 0;
+	scanf(""%i"", &jahr);
+	if ( jahr/400==1 || (jahr/4==1 && jahr/100==0))
+	{
+	printf(""%i ist ein Schaltjahr\n"", jahr);
+	}
+	else 
+	{
+	printf(""%i ist kein Schaltjahr.\n"", jahr);
+	}
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    for (int times = 0; times <= 4; times++){
+		printf( ""Hello Loop!\n"");
+	}
+	int times = 5;
+	while ( times <= 9){
+		printf( ""Hello Loop!\n"");
+		times++;
+	}
+}"
+Grönefeld,Daniel,groenefeld@campus.tu-berlin.de,Beendet,"19. Dezember 2020  22:16","20. Dezember 2020  20:06","21 Stunden 49 Minuten","14,50","x == 0 und y == 1","!(x < y)","void countdown (int i)
+{
+for (; i >= 1; i--)
+{
+	printf(""%i\n"", i);
+}
+printf (""Start!!!"");
+}","x = 12 + 22 + 32 + ...+ (n-1)2 + n2 = n(n+1)(2n+1)/6","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 0.","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch (eingabe) {
+    	case 't':
+        printf(""Wir moegen dich auch.\n"");
+        break;
+    	case 's':    
+        printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+    	  break;
+    	case 'l':
+        printf(""Giovanni, lernst du Programmieren?\n"");    
+        break;
+    	default:
+        printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+        break;
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for (; zeit >= 0; zeit--)
+    {
+    	sleep(1);
+      printf( ""time %i\n"", zeit);
+    }
+}","#include<stdio.h>
+
+int main()
+{
+int year = 0;
+printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+scanf(""%i"", &year);
+if (year <= 0)
+{
+printf(""Geben sie eine Jahreszahl ein, die größer als Null ist!\n"");
+return 0;
+}
+if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
+{
+printf(""%i ist ein Schaltjahr."", year);
+}
+else
+{
+printf(""%i ist kein Schaltjahr."", year);
+}
+}","#include<stdio.h>
+
+int main(){
+ int a = 5;
+for (int i = 5; i > 0; --i)
+{
+printf(""Hello Loop!\n"");
+} 
+while (a > 0)
+{
+printf(""Hello Loop!\n"");
+--a;
+}   
+}"
+Kühl,Jakob,jakob.kuehl@campus.tu-berlin.de,Beendet,"20. Dezember 2020  09:19","21. Dezember 2020  00:12","14 Stunden 53 Minuten","12,90","x == 1 und y == 0",!3,Bonjour,5,1,"x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: 3; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch(eingabe){
+		case 't': printf(""Wir moegen dich auch.\n"");
+		break;
+		case 's': printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+		break;
+		case 'l': printf(""Giovanni, lernst du Programmieren?\n"");
+		break;
+		default: printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+	}
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+   printf(""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+	for (zeit; zeit >= 0; zeit--){
+		sleep(1);
+		 printf( ""time %i\n"", zeit);
+	}
+}","#include <stdio.h>
+
+int main(){
+	printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+	int jahr = 0;
+	scanf(""%i"", &jahr);
+	if((jahr % 4) && !(jahr % 100) || jahr % 400){
+		printf(""%i ist kein Schaltjahr."", jahr);
+	}	
+	else{
+		printf(""%i ist ein Schaltjahr."", jahr);
+	}
+}","#include <stdio.h>
+
+int main(){
+    unsigned char count = 0;
+	for (unsigned char numeros = 0; numeros < 5; numeros += 1){
+		printf(""Hello Loop!\n"");
+	}
+	while (count < 5){
+	printf(""Hello Loop!\n"");
+	count += 1;
+	}
+}"
+Paluteder,Sandro,paluteder@campus.tu-berlin.de,Beendet,"20. Dezember 2020  10:42","20. Dezember 2020  23:47","13 Stunden 4 Minuten","10,12","x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","!(x < y)","#include <stdio.h>
+#include <unistd.h>
+
+int main()
+{
+    int countdown;
+    scanf(""%i"", &countdown);
+    
+    while(countdown != 0)
+    {
+        printf(""%i\n"", countdown);
+        countdown--;
+        sleep(1);
+    }
+    printf(""Start!!!\n"");
+    return 0;
+}","0 mal","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 1.","INT i = 0; 
+DO {
+    printf(""%d "", i);
+} WHILE (i = (i+1) % 7);","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: 1; Teil 31: 3; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 16; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 17; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 9; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 15; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+
+void menue()
+
+
+
+{   
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+             
+    char eingabe = getchar();
+    switch (eingabe)
+    { 
+        case 't': printf(""Wir moegen dich auch.\n""); 
+        break;
+        case 's': printf(""Hauptsache wir stinken geruchstechnisch nicht.\n""); 
+        break;
+        case 'l': printf(""Giovanni, lernst du Programmieren?\n""); 
+        break;
+        default: printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+        break;
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main()
+{
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    unsigned int zeit=0;
+    scanf(""%i"",&zeit);
+    
+    for(zeit >= 0; zeit < 5; zeit--) 
+    {
+       
+        //eine Sekunde warten
+        printf( ""time %i\n"", zeit);
+        sleep(1);
+    }
+}","#include <stdio.h>
+
+int main()
+{
+    printf( ""Das Programm kann Schaltjahre bestimmen - welches Jahr soll gestestet werden?\n"");
+    unsigned int Jahr;
+    unsigned char teilbar = 0;
+    scanf(""%u\n"", &Jahr);
+    
+    if (Jahr/400==0)
+    {
+        teilbar = 1;
+        break;
+    }
+        if(!teilbar)
+        {
+            printf(""%u ist ein Schaltjahr.\n"", Jahr);
+        }
+        else
+        {
+            printf(""%u ist kein Schaltjahr.\n"", Jahr);    
+        }
+}","#include <stdio.h>
+
+int main()
+{
+    int i;
+    int a = 0;
+    
+    for(i = 1; i<=5; i++)
+  
+        {
+            printf(""Hello Loop!\n"");
+        }
+    while(a < 5)
+    {
+        a++;
+        printf(""Hello Loop!\n"");
+    }
+}"
+Werner,"Sören Sven",soeren.werner@campus.tu-berlin.de,Beendet,"20. Dezember 2020  13:22","20. Dezember 2020  16:57","3 Stunden 34 Minuten","15,00",15,"x == 0 und y == 1","a = 6 und b = 6",!3,"10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 0.","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+
+    switch(eingabe) {
+	    case 't': printf(""Wir moegen dich auch.\n""); break;
+	    case 's': printf(""Hauptsache wir stinken geruchstechnisch nicht.\n""); break;
+	    case 'l': printf(""Giovanni, lernst du Programmieren?\n""); break;
+	    default: printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n""); break;
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for(; zeit >= 0; zeit--){
+	//eine Sekunde warten
+        sleep(1);
+        printf( ""time %i\n"", zeit);
+    }
+}","#include <stdio.h>
+
+int main(){
+    printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+    int jahr=0;
+    scanf(""%i"",&jahr);
+
+    if((jahr % 400 == 0) || ((jahr % 4 == 0) && (jahr % 100 != 0))){
+	printf(""%i ist ein Schaltjahr."", jahr);
+
+    }else printf(""%i ist kein Schaltjahr."", jahr);
+
+}","#include <stdio.h>
+
+int main(){
+    int i = 1;
+    for(; i <=5; i++){
+        printf(""Hello Loop!\n"");
+    }
+
+    while(i <= 10){
+	printf(""Hello Loop!\n"");
+	i++;
+    }
+    
+}"
+Platena,Moritz,platena@campus.tu-berlin.de,Beendet,"20. Dezember 2020  14:36","20. Dezember 2020  17:22","2 Stunden 46 Minuten","14,00","a = 6 und b = 6","!(x < y)","x = 12 + 22 + 32 + ...+ (n-1)2 + n2 = n(n+1)(2n+1)/6","1 mal","unendlich oft",!3,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+
+void menue(){
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    unsigned char eingabe;
+    scanf(""%s"", &eingabe);
+    switch(eingabe){
+    case 't': 
+        printf(""Wir moegen dich auch.\n""); break;
+    case 's':
+        printf(""Hauptsache wir stinken geruchstechnisch nicht.\n""); break;
+    case 'l':
+        printf(""Giovanni, lernst du Programmieren?\n""); break;
+    default :
+        printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+    
+}
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int i=0;
+    scanf(""%i"",&i);
+    for ( int zeit=i; zeit >= 0; zeit-- ){
+        //eine Sekunde warten
+        sleep(1);
+        printf( ""time %i\n"", zeit);
+    }
+}","#include <stdio.h>
+
+unsigned int jahr;
+
+int main(){
+    printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+    scanf(""%i"", &jahr);
+    if (jahr%400 == 0){
+        printf(""%i ist ein Schaltjahr.\n"", jahr);
+    }
+    else {
+        if ((jahr%4 == 0)&&(jahr%100 != 0) ){
+         printf(""%i ist ein Schaltjahr.\n"", jahr);
+        }
+       else { 
+        printf(""%i ist kein Schaltjahr.\n"", jahr);
+       }
+    }
+}","#include <stdio.h>
+
+
+int main(){
+ for (int a=5; a>0; a--){
+    printf(""Hello Loop!\n"");
+ }
+ int b =5;
+ 
+ while (b>0){
+     printf(""Hello Loop!\n"");
+     b--;
+ }
+}"
+Freier,"Constanze Cosima",c.freier@campus.tu-berlin.de,Beendet,"20. Dezember 2020  15:20","20. Dezember 2020  18:36","3 Stunden 15 Minuten","14,79","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 0.","x == 0 und y == 1","void countdown(int a)
+{
+    for (int b = a; b > 0; b--)
+    {
+        printf(""%i\n"", b);
+    }
+    printf(""Start!!!\n"");
+}","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");",1,"a = 6 und b = 6","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: 2; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: 3; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch (eingabe)
+    {
+        case 't': printf(""Wir moegen dich auch.\n"");
+            break;
+        case 's': printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+            break;
+        case 'l': printf(""Giovanni, lernst du Programmieren?\n"");
+            break;
+        default : printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main()
+{
+    printf(""Wieviele Sekunden soll ich warten?\n"");
+    int zeit = 0;
+    scanf(""%i"", &zeit);
+    for (zeit; zeit >= 0; zeit--){
+        //eine Sekunde warten
+        sleep(1);
+        printf(""time %i\n"", zeit);
+    }
+}","#include <stdio.h>
+
+int main(){
+    unsigned int jahreszahl;
+    printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+    scanf(""%u"", &jahreszahl);
+    if((jahreszahl%100 != 0 && jahreszahl%4 == 0) || jahreszahl%400 == 0)
+    {
+        printf(""%i ist ein Schaltjahr.\n"", jahreszahl);
+    }
+    else
+    {
+        printf(""%i ist kein Schaltjahr.\n"", jahreszahl);
+    }
+}","#include <stdio.h>
+int main(){
+    for (int a = 5; a > 0; a--){
+        printf(""Hello Loop!\n"");
+    }
+    int a = 5;
+    while (a > 0)
+    {
+        printf(""Hello Loop!\n"");
+        a = (a-1);
+    }
+}"
+Zell,"Caspar Valentin",zell@campus.tu-berlin.de,Beendet,"20. Dezember 2020  15:21","21. Dezember 2020  00:12","8 Stunden 50 Minuten","14,79",0,"!(x < y)","INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","#include <stdio.h>
+void countdown(int a)
+{
+	while(a>0)
+	{
+		printf(""%u\n"",a);
+		a=a-1;
+		if(a==0)
+			{
+				printf(""Start!!!"");
+			}
+	}
+
+}",15,Bonjour,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: 2; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: 3; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch (eingabe)
+	{
+	case 't':
+		 printf(""Wir moegen dich auch.\n"");
+		 break;
+	case 'l':
+		 printf(""Giovanni, lernst du Programmieren?\n"");
+		 break;
+	case 's':
+		 printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+		 break;
+
+	default:
+		 printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+		 break;
+	}
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for(int x = zeit; x >= 0; x--)
+	{
+		sleep(1);
+		printf( ""time %i\n"", x);
+    }
+}","#include <stdio.h>
+
+int test(unsigned int a)
+{
+	unsigned int b=0;
+	if(a%400 == 0||(a%4==0 && a%100!=0))
+	{
+		b=1;
+	}
+	return b;
+}
+int main()
+{
+	unsigned int x;
+	unsigned int antwort;
+	printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+	scanf(""%u"",&x);
+	antwort=test(x);
+	if(antwort)
+	{
+		printf(""%u ist ein Schaltjahr."",x);
+	}
+	else
+	{
+		printf(""%u ist kein Schaltjahr."",x);
+	}
+	
+}","#include <stdio.h>
+int main()
+{
+	int x=5;
+	for(int i=x; i>=1; i=i-1)
+		{
+			printf(""Hello Loop!\n"");
+		}
+	while(x>=1)
+		{
+			printf(""Hello Loop!\n"");
+			x=x-1;
+		}
+	
+}"
+Said,Yasmin,yasmin.said@campus.tu-berlin.de,Beendet,"20. Dezember 2020  16:35","20. Dezember 2020  22:05","5 Stunden 29 Minuten","14,50","a = 6 und b = 6",Bonjour,"x = 2 + 4 + 6 + ... + (2n-2) + 2n = n(n+1)","if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");",15,"10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 0.","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+        ""\tPPR ist [t]oll\n""
+        ""\tPPR [s]tinkt mir\n""
+        ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch (eingabe) 
+    {
+    case 't':
+        printf(""Wir moegen dich auch.\n""); break;
+    case 's':
+        printf(""Hauptsache wir stinken geruchstechnisch nicht.\n""); break;
+    case 'l':
+        printf(""Giovanni, lernst du Programmieren?\n""); break;
+    default:
+        printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n""); break;
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main() 
+{
+    printf(""Wieviele Sekunden soll ich warten?\n"");
+    int zeit = 0;
+    scanf (""%i"", &zeit);
+    for (int x=zeit; x >= 0; x--)
+    {
+        sleep(1);
+        printf(""time %i\n"", x);
+    }
+}","#include <stdio.h>
+
+int main() 
+{
+	printf (""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+	int x=1;
+	scanf(""%i"", &x);
+	if (x % 400 == 0)
+	{
+		printf(""%i ist ein Schaltjahr."", x);
+	}
+	else if (x % 4 == 0 && x % 100 != 0)
+	{
+		printf(""%i ist ein Schaltjahr."", x);
+	}
+	else
+	{
+		printf(""%i ist kein Schaltjahr."", x);
+	}
+
+}","#include <stdio.h>
+
+int main() 
+{
+	void student_main();
+	{
+		int i = 0;
+		for (int x = 0; x < 5; x++)
+		{
+			printf(""Hello Loop!\n"");
+		}
+		while (i < 5)
+		{
+			printf(""Hello Loop!\n"");
+			i++;
+		}
+	}
+}"
+Gaida-Ernst,Louis,13815be4325b61b808a04255a1731a15,Beendet,"20. Dezember 2020  17:20","20. Dezember 2020  20:35","3 Stunden 15 Minuten","9,88",False,"#include <stdio.h>
+
+
+int countdown(int zahl)
+{
+    do
+    {
+        zahl -= 1;
+        printf (""%u \n"", zahl );
+    }while (zahl >= 1)
+}
+int main()
+{
+    int zahl;
+    scanf( ""%u"", &zahl );
+    countdown();
+    printf(""Start!!!\n"");
+}","switch (a,b) {
+        case >=0, >=0:
+                printf(""a und b sind positiv!\n"");
+                break;
+        case <=0, <=0:
+                printf(""a und b sind negativ!\n"");
+                break;
+        case >0, <0:
+                printf(""a ist positiv und b ist negativ!\n"");
+                break;
+        case <0, >0:
+                printf(""a ist negativ und b ist positiv!\n"");
+}","10 mal",5,"a = 6 und b = 6","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: -; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: -","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch(eingabe)
+    {
+        case 't': printf(""Wir moegen dich auch.\n""); break;
+        case 's': printf(""Hauptsache wir stinken geruchstechnisch nicht.\n""); break;
+        case 'l': printf(""Giovanni, lernst du Programmieren?\n""); break;
+        default: printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for ( int zeit; zeit >= 0;  zeit--)
+    {
+    //eine Sekunde warten
+        sleep(1);
+        printf( ""time %i\n"", zeit);
+    }
+}","#include <stdio.h>
+
+int main()
+{
+ int jahr=0;
+ printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+ scanf(""%d"", &jahr);
+ if (jahr % 4 ==0)
+ {
+  if (jahr % 100==0)
+  {
+  if (jahr %400 ==0)
+   printf(""%d ist ein Schaltjahr.\n"", jahr);
+  else
+   printf(""%d ist kein Schaltjahr.\n"", jahr);
+  }
+  else
+   printf(""%d ist ein Schaltjahr.\n"", jahr);
+  }
+  else
+   printf(""%d ist kein Schaltjahr.\n"",  jahr);
+ return 0;
+}","#include <stdio.h>
+
+
+int main()
+{
+    int counter = 0;
+    
+    
+     for (counter =0;counter<=4;counter++)
+    {
+        printf(""Hello Loop!\n"");
+    }
+    counter=0;
+    while(counter<=4)
+    {
+        counter++;
+        printf(""Hello Loop!\n"");
+    }
+    
+}"
+Eckardt,"Jan Hartmut",jan.h.eckardt@campus.tu-berlin.de,Beendet,"20. Dezember 2020  18:03","20. Dezember 2020  23:38","5 Stunden 34 Minuten","7,61","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 0.","(a && b) || (!(a && b))",65,0,"1 mal","x == 0 und y == 1","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: -; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72:","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch (eingabe)
+    {   case 't': printf(""Wir moegen dich auch.\n""); break;
+        case 's': printf(""Hauptsache wir stinken geruchstechnisch nicht.\n""); break;
+        case 'l': printf(""Giovanni, lernst du Programmieren?\n""); break;
+        default : printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for(; zeit >= 0; --zeit)
+    {printf(""time %i\n"", zeit);
+    }
+}",-,"#include <stdio.h>
+int main(){
+    
+    int loop;
+    for(loop = 10; loop > 5; --loop)
+    {printf(""Hello Loop!\n"");}
+    while(loop > 0)
+    {printf(""Hello Loop!\n"");}
+    --loop;
+    }"
+Lang,"Christian Theo",christian.t.lang@campus.tu-berlin.de,Beendet,"20. Dezember 2020  18:14","20. Dezember 2020  21:45","3 Stunden 31 Minuten","6,95",0,"x == 1 und y == 0","10 mal","a = 6 und b = 6","(5 && 4)","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
+Counter gestoppt bei 1.","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: -; Teil 8: -; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: -; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: -; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: -; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 11; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 9; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 11; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 13; Teil 44: %; Teil 45: 1; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch (eingabe) {
+    case eingabe == t:
+        printf(""Wir moegen dich auch.\n"");
+        break;
+    case s:
+        printf(""Wir moegen dich auch.\n"");
+        break;
+    case l:
+        printf(""Giovanni, lernst du Programmieren?\n"");
+        break;
+    default:
+        printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+        break;
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for (zeit; zeit >= 0; zeit--) {
+        sleep(1);
+        printf( ""time %i\n"", zeit);
+    }
+}","#include <stdio.h>
+
+int main () {
+    int Eingabe = 0;
+    printf (""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+    scanf (""%d"", &Eingabe);
+    if (Eingabe%400 == 0) {
+        printf (""%d ist ein Schaltjahr.\n"");
+    }
+    else if (Eingabe%4 == 0 && Eingabe%100 == 1) {
+        printf (""%d ist ein Schaltjahr.\n"");
+    }
+    else 
+    printf (""%d ist kein Schaltjahr.\n"");
+}","#include <stdio.h>
+
+int main(){
+    int i;
+    for (i = 0; i < 5; i++) {
+        printf (""Hello Loop!\n"");
+    }
+    while (i < 10) {
+        printf (""Hello Loop!\n"");
+        i++;
+    }
+}"
+Andree,Benedikt,85c8efa1191eb1bf6dd959433f88a563,Beendet,"20. Dezember 2020  19:06","20. Dezember 2020  23:56","4 Stunden 50 Minuten","4,81",Bonjour,1,"x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","switch (a,b) {
+        case >=0, >=0:
+                printf(""a und b sind positiv!\n"");
+                break;
+        case <=0, <=0:
+                printf(""a und b sind negativ!\n"");
+                break;
+        case >0, <0:
+                printf(""a ist positiv und b ist negativ!\n"");
+                break;
+        case <0, >0:
+                printf(""a ist negativ und b ist positiv!\n"");
+}",5,!3,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: -; Teil 8: -; Teil 9: 5; Teil 10: undef; Teil 11: 0; Teil 12: -; Teil 13: 6; Teil 14: undef; Teil 15: %; Teil 16: -; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: -; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 15; Teil 58: %; Teil 59: %; Teil 60: -; Teil 61: 16; Teil 62: %; Teil 63: %; Teil 64: -; Teil 65: 18; Teil 66: %; Teil 67: %; Teil 68: -; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: -","#include <stdio.h>
+
+void menue()
+{
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    if(eingabe == 't')
+    {
+        printf(""Wir moegen dich auch.\n"");
+    }
+    else if(eingabe == 's')
+    {
+        printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+    }
+    else if(eingabe == 'l')
+    {
+        printf(""Giovanni, lernst du Programmieren?\n"");
+    }
+    else
+    {
+        printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+    }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for (zeit; zeit >= 0; zeit--){
+        sleep(1);
+        printf( ""time %i \n"", zeit);
+    }
+}","#include <stdio.h>
+
+int main( int zahl ){
+    printf ( ""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?"");
+    scanf ( ""Ist %i ein Schaltjahr?"",&zahl);
+    if ( zahl%400==0 ){
+        printf (""%i \n ist ein Schaltjahr."",zahl);
+    }
+    if ( zahl%4==0 && zahl%100!=0 ){
+        printf (""%i ist ein Schaltjahr."",zahl);
+    }else{
+        printf (""%i ist kein Schaltjahr."",zahl);
+        }
+}","#include <stdio.h>
+
+int main(){
+    
+}"
+Nie,"Tammo Hendrik",tammo.h.nie@campus.tu-berlin.de,Beendet,"20. Dezember 2020  19:32","20. Dezember 2020  21:45","2 Stunden 12 Minuten","14,85",Bonjour,"if (a >= 0 && b >= 0)
+        printf(""a und b sind positiv!\n"");
+if (a <= 0 && b <= 0 && a+b != 0)
+        printf(""a und b sind negativ!\n"");
+if (a > 0 && b < 0)
+        printf(""a ist positiv und b ist negativ!\n"");
+if (a < 0 && b > 0)
+        printf(""a ist negativ und b ist positiv!\n"");","void countdown (int a)
+{
+  while (a > 0)
+  {
+    printf(""%i \n"", a);
+    a-- ;
+  }
+  printf(""Start!!!"");
+}",0,"INT i = 1; 
+WHILE (i){
+    printf(""%d "", i);
+    i = (i+1) % 7;
+}","x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 17; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: -","#include <stdio.h>
+
+void menue()
+{
+  {
+    printf(""Bitte auswaehlen...\n""
+           ""\tPPR ist [t]oll\n""
+           ""\tPPR [s]tinkt mir\n""
+           ""\tPPR, Flasche [l]eer.\n\n"");
+    char eingabe = getchar();
+    getchar(); // ""enter"" aus dem Tastaturpuffer entfernen
+    switch (eingabe)
+    {
+    case 't':
+      printf(""Wir moegen dich auch.\n"");
+      break;
+    case 's':
+      printf(""Hauptsache wir stinken geruchstechnisch nicht.\n"");
+      break;
+    case 'l':
+      printf(""Giovanni, lernst du Programmieren?\n"");
+      break;
+    default:
+       printf(""Das stand gar nicht zur Auswahl. Auf wiedersehen.\n"");
+      break;
+    }
+  }
+}","#include <stdio.h>
+#include <unistd.h>
+
+int main()
+{
+    printf( ""Wieviele Sekunden soll ich warten?\n"");
+    int zeit=0;
+    scanf(""%i"",&zeit);
+    for(zeit; zeit >= 0; zeit--)
+    {
+      sleep(1);
+      printf( ""time %i\n"", zeit);
+    }
+  
+}","#include <stdio.h>
+
+int main()
+{
+   printf(""Das Programm kann Schaltjahre bestimmen - welches Jahr soll getestet werden?\n"");
+    int Jahr;
+   scanf(""%d"", &Jahr);
+   int i = Jahr;
+   if (i%400==0 || i%4 == 0 && i%100 != 0) printf(""%d ist ein Schaltjahr."", Jahr);
+   else printf(""%d ist kein Schaltjahr."", Jahr);
+}","#include <stdio.h>
+
+int main()
+{
+  int i = 10;
+   for(i; i > 5; i--) printf(""Hello Loop!\n"");
+   while(i > 0)
+   {
+      printf(""Hello Loop!\n"");
+      i--;
+   }
+}"
