@@ -1,39 +1,9 @@
-# -*- coding: utf-8 -*-
-from turtle import width
 import dash
-from dash import no_update, dcc, html, Input, Output, State
+from dash import html, dcc, callback, Input, Output
 import dash_bootstrap_components as dbc
-import plotly.express as px
-import plotly.graph_objects as go
+from .src import csv_stuff
 
-import plotly.graph_objs as go
-
-from datetime import datetime, date
-from sklearn.manifold import MDS
-# import js2py for highlight code, but dont know how to use it
-from json import dumps
-
-import pandas as pd
-import base64
-import io
-import numpy as np
-import random
-from src import csv_stuff
-
-# TODO logo funktioniert nicht
-PLOTLY_LOGO = "./src/logo.png"
-
-GLOBAL_MARGIN = {'l': 60, 'b': 60, 't': 10, 'r': 10}
-GLOBAL_MARGIN_BOTTOMLARGE = {'l': 60, 'b': 100, 't': 10, 'r': 10}
-GLOBAL_MARKER_SIZE = 7
-GLOBAL_TEMPLATE = "plotly_white"
-
-# only needed if running single page dash app instead
-external_stylesheets = [dbc.themes.CERULEAN]
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-server = app.server
-
-# dash.register_page(__name__)
+PLOTLY_LOGO = "../assets/logo.png"
 semester = 'SoSe21'
 ha = '9'
 # tasks = ['Antwort 9']
@@ -42,24 +12,14 @@ prog_language = 'C'
 last_task = 0
 last_id = -1
 labled_pairs = 0
-data = ["Text1", "Text2", "Text3", "Text4", "Text5"]
-current1 = 0
-current2 = 1
-scores = []
 df_labled, df_labled_len = csv_stuff.create_labled_table_routine(
     semester, ha, tasks, prog_language)
 all_pairs = df_labled_len
 
-# remove app when using index.py
-# layout = html.Div([
-app.layout = html.Div([
+dash.register_page(__name__)
+
+layout = html.Div([
     # content will be rendered in this element
-    # dcc.Store(id='semester'),
-    # dcc.Store(id='ha'),
-    # dcc.Store(id='tasks'),
-    # dcc.Store(id='prog_language'),
-    # dcc.Store(id='df_labled_len'),
-    # dcc.Store(id='df_labled'),
     html.Div([
         dbc.Navbar(
             dbc.Container(
@@ -74,9 +34,8 @@ app.layout = html.Div([
                                     "PPR Hausaufgaben Labeltool", className="ml-2")),
                             ],
                             align="center",
-                            # no_gutters=True,
                         ),
-                        href="/init",
+                        href="/init"
                         # href="https://www.ni.tu-berlin.de/menue/members/postgraduate_students_and_doctoral_candidates/goerttler_thomas/",
                     ),
                 ]
@@ -161,7 +120,7 @@ app.layout = html.Div([
 #     return dumps(semester), dumps(ha), dumps(tasks), dumps(prog_language), dumps(df_labled_len), df_labled.to_json(date_format='iso', orient='split')
 
 
-@app.callback(
+@callback(
     Output('textarea1', 'value'),
     Output('textarea2', 'value'),
     Output('textarea3', 'value'),
@@ -215,32 +174,36 @@ def get_new_pair_routine(df_labled):
     return next[0], next[1], next[2], next[3], next[4]
 
 
-# TODO
+# # TODO
+# # @app.callback(
+# #     Output('textarea1', 'value'),
+# #     Output('textarea2', 'value'),
+# #     Output('textarea3', 'value'),
+# #     Output('caption1', 'children'),
+# #     Output('caption2', 'children'),
+# #     Input('previous', 'n_clicks'), prevent_initial_call=True)
+# # def prev_button_pressed(n_clicks, value):
+# #     global last_id
+# #     global last_task
+# #     print('button pressed ' + str(n_clicks))
+# #     next = csv_stuff.get_new_pair(df_labled, last_task, last_id)
+# #     if next == None:
+# #         return '', '', '', 'Niemandes Code', 'Niemandes Code'
+# #     last_id = next[5]
+# #     if next[2] == None:
+# #         return next[0], next[1], dash.no_update, next[3], next[4]
+# #     last_task = next[6]
+# #     return next[0], next[1], next[2], next[3], next[4]
+
+
 # @app.callback(
-#     Output('textarea1', 'value'),
-#     Output('textarea2', 'value'),
-#     Output('textarea3', 'value'),
-#     Output('caption1', 'children'),
-#     Output('caption2', 'children'),
-#     Input('previous', 'n_clicks'), prevent_initial_call=True)
-# def prev_button_pressed(n_clicks, value):
-#     global last_id
-#     global last_task
-#     print('button pressed ' + str(n_clicks))
-#     next = csv_stuff.get_new_pair(df_labled, last_task, last_id)
-#     if next == None:
-#         return '', '', '', 'Niemandes Code', 'Niemandes Code'
-#     last_id = next[5]
-#     if next[2] == None:
-#         return next[0], next[1], dash.no_update, next[3], next[4]
-#     last_task = next[6]
-#     return next[0], next[1], next[2], next[3], next[4]
-
-
-@app.callback(
+@callback(
     Output('download-text', 'data'),
     Input('download', 'n_clicks'), prevent_initial_call=True)
 def download_button_pressed(n_clicks):
+    ctx = dash.callback_context
+    if ctx.triggered_id == None:
+        raise dash.exceptions.PreventUpdate
     file_name = f'PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten_labled.csv'
     return dcc.send_data_frame(df_labled.to_csv, file_name)
 
@@ -257,6 +220,29 @@ def download_button_pressed(n_clicks):
 (- syntax highliting wäre natürlich super, aber evtl. Doch sehr schwierig und zeitaufwändig)
 - auf bspw. Heroku deployen, sodass andere Personen (Tobias, Paula, ..) direkt darauf zugreifen können
 """
+# checked
+# TODO 1. erfolgreichen match hinbekommen        *check*
+# TODO 2. empty_solution_matrix richtig setzen   *check*
+# TODO 3. dann daraus ein paar ableiten          *check*
+# TODO 4. dann daraus eine tabellenreihe für ...labled.csv machen *check*
+# TODO 5. dann eine ganze tabelle draus machen   *check*
+# TODO! 6. wo wird tabelle zwischengespeichert?
+# TODO 7. funktion schreiben die die erste Routine macht mit #aller paar und #aller bereits gelableten und die 3 texte ausgibt  *check*
+# TODO 7.1 funktion schreiben, die ein lable übergeben bekommt, in tabelle einträgt und ein neues paar zurückgibt (ggf. auch neue vorgabe)    *check*
+# TODO gibt es ein Download fenster? --> ja, da dynos in heroku nicht global speichern können       *check*
+# TODO 7.2 set_label zum laufen bringen      *check*
+# TODO 8. Download button realisieren        *check*
+
+# unchecked
+# TODO 8.1 temporäre speicherung des df_labels
+# TODO (9. neuen knopf für previous labled hinzufügen)
+# TODO (10. liste für gelabelte ids hinzufügen)
+# TODO (11. liste für nicht gelabelte ids hinzufügen)
+# TODO 12. beide pages gleichzeitig zum laufen bringen
+# TODO 13. callbacks für init page schreiben
+# TODO 14. back end für halbgelabelte csv im drag&drop realisieren
+# TODO checken weshalb nur 12/13 leere abgaben bei antwort 10 gefunden wurden
+# TODO double linked list, für die id schreiben, um prev und next button zu realisieren
 # only needed if running single page dash app instead
 if __name__ == '__main__':
     # print((df_labled, type(df_labled)))

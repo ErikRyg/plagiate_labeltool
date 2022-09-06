@@ -76,7 +76,7 @@ def create_labled_table_routine(semester, ha, tasks, prog_language, labled_csv=N
     df = add_valid_code_columns(
         df=df, semester=semester, ha=ha, tasks=tasks, prog_language=prog_language)
     df_labled = create_labled_table(df, semester, ha, tasks, prog_language)
-    return df_labled[0:3], len(df_labled[0:3])
+    return df_labled, len(df_labled)
 
 
 def get_new_pair(df_labled, last_task, last_id):
@@ -112,28 +112,5 @@ def set_label(df_labled, last_id, label_score, labled_pairs):
         return False, labled_pairs
 
 
-# checked
-# TODO 1. erfolgreichen match hinbekommen        *check*
-# TODO 2. empty_solution_matrix richtig setzen   *check*
-# TODO 3. dann daraus ein paar ableiten          *check*
-# TODO 4. dann daraus eine tabellenreihe für ...labled.csv machen *check*
-# TODO 5. dann eine ganze tabelle draus machen   *check*
-# TODO! 6. wo wird tabelle zwischengespeichert?
-# TODO 7. funktion schreiben die die erste Routine macht mit #aller paar und #aller bereits gelableten und die 3 texte ausgibt  *check*
-# TODO 7.1 funktion schreiben, die ein lable übergeben bekommt, in tabelle einträgt und ein neues paar zurückgibt (ggf. auch neue vorgabe)    *check*
-# TODO gibt es ein Download fenster? --> ja, da dynos in heroku nicht global speichern können
-# TODO 7.2 set_label zum laufen bringen      *check*
-# TODO 8. Download button realisieren        *check*
-
-# unchecked
-# TODO 8.1 temporäre speicherung des df_labels
-# TODO (9. neuen knopf für previous labled hinzufügen)
-# TODO (10. liste für gelabelte ids hinzufügen)
-# TODO (11. liste für nicht gelabelte ids hinzufügen)
-# TODO 12. beide pages gleichzeitig zum laufen bringen
-# TODO 13. callbacks für init page schreiben
-# TODO 14. back end für halbgelabelte csv im drag&drop realisieren
-# TODO checken weshalb nur 12/13 leere abgaben bei antwort 10 gefunden wurden
-# TODO double linked list, für die id schreiben, um prev und next button zu realisieren
 if __name__ == '__main__':
     pass

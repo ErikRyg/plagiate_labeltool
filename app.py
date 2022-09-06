@@ -1,74 +1,43 @@
+from dash import Dash, html, dcc, Input, Output
 import dash
 import dash_bootstrap_components as dbc
-import dash_core_components as dcc
-import dash_html_components as html
-from dash.dependencies import Input, Output, State
-import dash_bootstrap_components as dbc
-
-# must add this line in order for the app to be deployed successfully on Heroku
-# from app import app
-# from app import server
-# import all pages in the app
-from pages import init
-from plagiate_labeltool.pages import label_pairs
-
-PLOTLY_LOGO = "./assets/logo.png"
 
 GLOBAL_MARGIN = {'l': 60, 'b': 60, 't': 10, 'r': 10}
 GLOBAL_MARGIN_BOTTOMLARGE = {'l': 60, 'b': 100, 't': 10, 'r': 10}
 GLOBAL_MARKER_SIZE = 7
 GLOBAL_TEMPLATE = "plotly_white"
 
-# bootstrap theme
-# https://bootswatch.com/lux/
-# external_stylesheets = [dbc.themes.LUX]
-
-# app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 external_stylesheets = [dbc.themes.CERULEAN]
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets, use_pages=True)
-server = app.server
-app.config.suppress_callback_exceptions = True
-
-navbar = dbc.Navbar(
-    dbc.Container(
-        [
-            html.A(
-                # Use row and col to control vertical alignment of logo / brand
-                dbc.Row(
-                    [
-                        dbc.Col(html.Img(src=PLOTLY_LOGO, height="30px")),
-                        dbc.Col(dbc.NavbarBrand("PPR Hausaufgaben Labeltool", className="ml-2")),
-                    ],
-                    align="center",
-                    no_gutters=True,
-                ),
-                href="/init",
-                # href="https://www.ni.tu-berlin.de/menue/members/postgraduate_students_and_doctoral_candidates/goerttler_thomas/",
-            ),
-        ]
-    ),
-    color="primary",
-    dark=True,
-    id="navbar",
-)
+app = dash.Dash(__name__, use_pages=True, suppress_callback_exceptions=True, external_stylesheets=external_stylesheets)
 
 app.layout = html.Div([
-    dcc.Location(pathname="/init", id='url', refresh=False),
-    navbar,
-    html.Div(id='page-content')
-    # dash.page_container
+	dash.page_container,
+	dcc.Store(id='st_semester'),
+	dcc.Store(id='st_ha'),
+	dcc.Store(id='st_tasks'),
+	dcc.Store(id='st_prog_language'),
+	dcc.Store(id='st_df_labled_len'),
+	dcc.Store(id='st_df_labled'),
 ])
 
 
-@app.callback(Output('page-content', 'children'),
-              [Input('url', 'pathname')])
-def display_page(pathname):
-    if pathname == '/lable_pairs':
-        return label_pairs.layout
-    elif pathname == '/init':
-        return init.layout
-    else:
-        return '404'
+
+# app.layout = html.Div([
+#     dcc.Location(id='url', refresh=False),
+#     html.Div(id='page-content')
+# ])
+
+
+# @app.callback(Output('page-content', 'children'),
+#               [Input('url', 'pathname')])
+# def display_page(pathname):
+#     if pathname == '/pages/init_copy':
+#         return app1.layout
+#     elif pathname == '/pages/label_pairs_copy':
+#         return app2.layout
+#     else:
+#         return '404'
+
 
 """
 0.1 index datei löschen und nur noch mit app.py arbeiten *check*
@@ -86,4 +55,4 @@ def display_page(pathname):
 11. knopf zum pausieren und downloaden hinzufügen und implementieren
 """
 if __name__ == '__main__':
-    app.run_server(debug=True)
+	app.run_server(debug=True)
