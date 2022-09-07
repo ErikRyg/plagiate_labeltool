@@ -1,20 +1,22 @@
 import dash
-from dash import html, dcc, callback, Input, Output
+from dash import html, dcc, callback, Input, Output, State
 import dash_bootstrap_components as dbc
+import pandas as pd
+from json import loads, dumps
 from .src import csv_stuff
 
 PLOTLY_LOGO = "../assets/logo.png"
-semester = 'SoSe21'
-ha = '9'
-# tasks = ['Antwort 9']
-tasks = ['Antwort 8', 'Antwort 9', 'Antwort 10']
-prog_language = 'C'
-last_task = 0
-last_id = -1
-labled_pairs = 0
-df_labled, df_labled_len = csv_stuff.create_labled_table_routine(
-    semester, ha, tasks, prog_language)
-all_pairs = df_labled_len
+# semester = 'SoSe21'
+# ha = '9'
+# # tasks = ['Antwort 9']
+# tasks = ['Antwort 8', 'Antwort 9', 'Antwort 10']
+# prog_language = 'C'
+# last_task = 0
+# last_id = -1
+# labled_pairs = 0
+# df_labled, df_labled_len = csv_stuff.create_labled_table_routine(
+#     semester, ha, tasks, prog_language)
+# df_labled_len = df_labled_len
 
 dash.register_page(__name__)
 
@@ -55,22 +57,22 @@ layout = html.Div([
                             dbc.Col(html.H5('Vorgabe'), md=3,
                                     className="title_container"),
                             dbc.Col(html.H5(
-                                f'{labled_pairs}/{all_pairs} Paaren', id='number_labled'), md=0, className="title_container"),
+                                id='labled_pairs_string'), md=0, className="title_container"),
                         ]),
                         # TODO use prettify
                         dcc.Textarea(
                             id='textarea1',
                             wrap='<pre>',
-                            style={'width': '33%', 'height': 700},
+                            style={'width': '33%', 'height': 600},
                         ),
                         dcc.Textarea(
                             id='textarea2',
-                            style={'width': '33%', 'height': 700},
+                            style={'width': '33%', 'height': 600},
                             className="code",
                         ),
                         dcc.Textarea(
                             id='textarea3',
-                            style={'width': '33%', 'height': 700},
+                            style={'width': '33%', 'height': 600},
                         ),
                         dbc.Row([
                             dbc.Col(html.Div(id='answer_1'), md=6,
@@ -104,6 +106,9 @@ layout = html.Div([
             ], className="h-100"),
     ], className="h-100", id='page-lable_pairs'
     ),
+    dcc.Store(id='st_labled_pairs'),
+    dcc.Store(id='st_last_id'),
+    dcc.Store(id='st_last_task'),
 ], className="h-100")
 
 
@@ -126,52 +131,87 @@ layout = html.Div([
     Output('textarea3', 'value'),
     Output('caption1', 'children'),
     Output('caption2', 'children'),
-    Output('number_labled', 'children'),
+    Output('labled_pairs_string', 'children'),
+    Output('st_labled_pairs', 'data'),
+    Output('st_df_labled_len', 'data'),
+    Output('st_df_labled', 'data'),
+    Output('st_last_id', 'data'),
+    Output('st_last_task', 'data'),
     Input('previous', 'n_clicks'),
     Input('done_next', 'n_clicks'),
     Input('next', 'n_clicks'),
-    # Input('df_labled', 'data'),
-    Input('score', 'value'))  # , prevent_initial_call=True
-def button_pressed(prev_clicks, done_clicks, next_clicks, label):
+    Input('score', 'value'),
+    State('st_df_labled_len', 'data'),
+    State('st_df_labled', 'data'),
+    State('st_labled_pairs', 'data'),
+    State('st_last_id', 'data'),
+    State('st_last_task', 'data'),
+    State('st_given_csv', 'data'),
+    State('st_semester', 'data'),
+    State('st_ha', 'data'),
+    State('st_tasks', 'data'),
+    State('st_prog_language', 'data'))  # , prevent_initial_call=True
+def button_pressed(prev_clicks, done_clicks, next_clicks, label, st_df_labled_len, st_df_labled, st_labled_pairs, st_last_id, st_last_task, st_given_csv, st_semester, st_ha, st_tasks, st_prog_language):
     # print('button pressed ' + str(n_clicks))
     ctx = dash.callback_context
-    if ctx.triggered_id == None:
-        rt = get_new_pair_routine(df_labled)
-        return rt[0], rt[1], rt[2], rt[3], rt[4], dash.no_update
-    elif ctx.triggered_id == 'done_next':
-        # global last_id
-        global last_task
-        global labled_pairs
-        global all_pairs
+    if st_df_labled == None:
+        print('initial call triggered this callback')
+        given_csv = st_given_csv
+        labled_pairs = 0
+        print((st_semester, st_ha, st_tasks, st_prog_language))
+        # print((loads(st_semester), loads(st_ha), loads(
+        # st_tasks), loads(st_prog_language)))
+        if given_csv == None or given_csv == 'null':
+            print("ohne csv")
+            df_labled, df_labled_len = csv_stuff.create_labled_table_routine(
+                loads(st_semester), loads(st_ha), loads(st_tasks), loads(st_prog_language))
+        else:
+            print("mit csv")
+            print(type(given_csv))
+            print(given_csv)
+            df_labled = loads(given_csv)
+            df_labled_len = len(given_csv)
+            labled_pairs = csv_stuff.count_labled(df_labled)
+        rt = get_new_pair_routine(df_labled, 0, "")
+        return rt[0], rt[1], rt[2], rt[3], rt[4], f'{labled_pairs}/{df_labled_len} Paaren', dumps(labled_pairs), dumps(df_labled_len), df_labled.to_json(date_format='iso', orient='split'), dumps(rt[5]), dumps(rt[6])
+    print(ctx.triggered_id)
+    df_labled = pd.read_json(st_df_labled, orient='split')
+    last_id = int(loads(st_last_id))
+    last_task = loads(st_last_task)
+    # if ctx.triggered_id == None:
+    #     rt = get_new_pair_routine(df_labled, last_id, last_task)
+    #     return rt[0], rt[1], rt[2], rt[3], rt[4], dash.no_update, dash.no_update, dash.no_update, dumps(rt[5]), dumps(rt[6])
+    if ctx.triggered_id == 'done_next':
+        print((last_id, last_id+1))
+        df_labled_len = loads(st_df_labled_len)
+        labled_pairs = loads(st_labled_pairs)
         print('label_button_pressed ' + str(done_clicks))
-        valid_set, labled_pairs = csv_stuff.set_label(
+        valid_set, labled_pairs, df_labled = csv_stuff.set_label(
             df_labled, last_id, label, labled_pairs)
         if not valid_set:
             raise dash.exceptions.PreventUpdate
-        rt = get_new_pair_routine(df_labled)
-        return rt[0], rt[1], rt[2], rt[3], rt[4], f'{labled_pairs}/{all_pairs} Paaren'
+        rt = get_new_pair_routine(df_labled, last_id+1, last_task)
+        return rt[0], rt[1], rt[2], rt[3], rt[4], f'{labled_pairs}/{df_labled_len} Paaren', dumps(labled_pairs), dash.no_update, df_labled.to_json(date_format='iso', orient='split'), dumps(rt[5]), dumps(rt[6])
     elif ctx.triggered_id == 'next':
-        rt = get_new_pair_routine(df_labled)
-        return rt[0], rt[1], rt[2], rt[3], rt[4], dash.no_update
+        rt = get_new_pair_routine(df_labled, last_id+1, last_task)
+        return rt[0], rt[1], rt[2], rt[3], rt[4], dash.no_update, dash.no_update, dash.no_update, dash.no_update, dumps(rt[5]), dumps(rt[6])
     # elif ctx.triggered_id == 'previous':
     #     return get_new_pair_routine(df_labled)
     else:
         raise dash.exceptions.PreventUpdate
 
 
-def get_new_pair_routine(df_labled):
-    global last_id
-    global last_task
+def get_new_pair_routine(df_labled, last_id, last_task):
     # print(f'last id in get_new_pair_routine: {last_id}')
     next = csv_stuff.get_new_pair(df_labled, last_task, last_id)
     print(f'last id in get_new_pair_routine: {last_id}')
     if next == None:
-        return '', '', '', 'Niemandes Code', 'Niemandes Code'
+        return '', '', '', 'Niemandes Code', 'Niemandes Code', last_id, last_task
     last_id = next[5]
     if next[2] == None:
-        return next[0], next[1], dash.no_update, next[3], next[4]
+        return next[0], next[1], dash.no_update, next[3], next[4], last_id, last_task
     last_task = next[6]
-    return next[0], next[1], next[2], next[3], next[4]
+    return next[0], next[1], next[2], next[3], next[4], last_id, last_task
 
 
 # # TODO
@@ -199,13 +239,17 @@ def get_new_pair_routine(df_labled):
 # @app.callback(
 @callback(
     Output('download-text', 'data'),
-    Input('download', 'n_clicks'), prevent_initial_call=True)
-def download_button_pressed(n_clicks):
+    Input('download', 'n_clicks'),
+    State('st_semester', 'data'),
+    State('st_ha', 'data'),
+    State('st_prog_language', 'data'),
+    State('st_df_labled', 'data'), prevent_initial_call=True)
+def download_button_pressed(n_clicks, st_semester, st_ha, st_prog_language, st_df_labled):
     ctx = dash.callback_context
-    if ctx.triggered_id == None:
+    if ctx.triggered_id != 'download':
         raise dash.exceptions.PreventUpdate
-    file_name = f'PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten_labled.csv'
-    return dcc.send_data_frame(df_labled.to_csv, file_name)
+    file_name = f'PPR [{loads(st_semester)}]-{loads(st_ha)}. Hausaufgabe - Pflichttest {loads(st_prog_language)}-Antworten_labled.csv'
+    return dcc.send_data_frame(pd.read_json(st_df_labled, orient='split').to_csv, file_name)
 
 
 # TODO how does the initial start works; every input sensitive callback starts??

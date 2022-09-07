@@ -9,15 +9,14 @@ import matplotlib.pyplot as plt
 
 
 def create_labled_table(df, semester, ha, tasks, prog_language):
-    df_labled = pd.DataFrame(columns=['id', 'semester', 'ha', 'task', 'prog_lang',
+    df_labled = pd.DataFrame(columns=['semester', 'ha', 'task', 'prog_lang',
                              'surname1', 'lastname1', 'surname2', 'lastname2', 'code1', 'code2', 'label'])
-    i = 0
+    df_labled.index.name = 'index'
     for task in tasks:
         for ln1, sn1, code1 in df.loc[df[f'{task} empty'] == 0][['Nachname', 'Vorname', task]].values:
             for ln2, sn2, code2 in df.loc[(df[f'{task} empty'] == 0) & (df[task] != code1)][['Nachname', 'Vorname', task]].values:
                 df_labled.loc[len(df_labled)] = [
-                    i, semester, ha, task, prog_language, sn1, ln1, sn2, ln2, code1, code2, -1]
-                i += 1
+                    semester, ha, task, prog_language, sn1, ln1, sn2, ln2, code1, code2, -1]
     return df_labled
 
 
@@ -76,40 +75,46 @@ def create_labled_table_routine(semester, ha, tasks, prog_language, labled_csv=N
     df = add_valid_code_columns(
         df=df, semester=semester, ha=ha, tasks=tasks, prog_language=prog_language)
     df_labled = create_labled_table(df, semester, ha, tasks, prog_language)
-    return df_labled, len(df_labled)
+    return df_labled[:2], len(df_labled[:2])
 
 
 def get_new_pair(df_labled, last_task, last_id):
-    next = df_labled.loc[(df_labled['label'] == -1) &
-                         (df_labled['id'] > last_id)]
+    next = df_labled.iloc[last_id:].loc[df_labled['label'] == -1]
     if next.empty:
-        if last_id != -1:
-            return get_new_pair(df_labled, last_task, -1)
+        if last_id != 0:
+            return get_new_pair(df_labled, last_task, 0)
         print('no unlabled pair')
         return None
+    index = df_labled.iloc[last_id:].loc[df_labled['label'] == -1].index[0]
     next = next.values[0]
     answerpreload = None
     # return new template
-    if last_task != next[3]:
+    if last_task != next[2]:
         answerpreload = get_given_code(
-            f'./data/code_templates/PPR [{next[1]}]-{next[2]}. Hausaufgabe - Pflichttest {next[4]}-Antworten_{next[3]}.xml')
-    return next[9], next[10], answerpreload, next[5], next[7], next[0], next[3]
+            f'./data/code_templates/PPR [{next[0]}]-{next[1]}. Hausaufgabe - Pflichttest {next[3]}-Antworten_{next[2]}.xml')
+    return next[8], next[9], answerpreload, next[4], next[6], str(index), next[2]
 
 
 def set_label(df_labled, last_id, label_score, labled_pairs):
     try:
-        already_labled = (df_labled.loc[last_id]['label'] != -1)
-        df_labled.loc[last_id]['label'] = label_score
+        already_labled = (df_labled.loc[int(last_id)]['label'] != -1)
+        df_labled.loc[int(last_id), 'label'] = label_score
         # print(already_labled)
         if not already_labled:
             labled_pairs += 1
-        # print(last_id)
-        print(df_labled[['id', 'surname1', 'surname2', 'label']])
-        return True, labled_pairs
+        print(last_id)
+        print(df_labled[['surname1', 'surname2', 'label']].head(4))
+        return True, labled_pairs, df_labled
     except:
-        print('beim Setzen des labels wurde die Reihe mit der gegebene id nicht gefunden')
-        # print(f'id: {last_id}')
+        print(
+            f'beim Setzen des labels wurde die Reihe mit dem gegebenen index {last_id} nicht gefunden')
+        # print(f'index: {last_id}')
         return False, labled_pairs
+
+
+def count_labled(df_labled):
+    return df_labled.loc[df_labled['label'] != -1]
+    # return len(df_labled.loc[df_labled['label'] != -1])
 
 
 if __name__ == '__main__':

@@ -124,30 +124,38 @@ layout = html.Div(
     Output('st_ha', 'data'),
     Output('st_tasks', 'data'),
     Output('st_prog_language', 'data'),
-    Output('st_df_labled_len', 'data'),
-    Output('st_df_labled', 'data'),
+    # Output('st_df_labled_len', 'data'),
+    # Output('st_df_labled', 'data'),
+    Output('st_given_csv', 'data'),
+    # Output('st_df_labled', 'data'),
+    Input('submit', 'n_clicks'),
     State('semester', 'value'),
     State('ha', 'value'),
     State('tasks', 'value'),
     State('prog_language', 'value'),
     State('upload-data', 'data'),
-    State('continue_label', 'value'),
-    Input('submit', 'n_clicks'), prevent_initial_call=True)
-def start_button_pressed(semester, ha, tasks, prog_language, labled_csv, continue_label, n_clicks):
-    print(f"Es Wurde eine Callback ausgeführt: {n_clicks}")
-    ctx = dash.callback_context
+    State('continue_label', 'value'), prevent_initial_call=True)
+def start_button_pressed(n_clicks, semester, ha, tasks, prog_language, labled_csv, continue_label):
+    print(
+        f"Es Wurde eine Callback auf der init-seite ausgeführt: {n_clicks}")
+    if n_clicks == 0:
+        raise dash.exceptions.PreventUpdate
     # 'Aufgabe 7' --> 'Antwort 7'
     tasks = [dict_tasks[x] for x in tasks]
-    if labled_csv == None:
-        print("ohne csv")
-        df_labled, df_labled_len = csv_stuff.create_labled_table_routine(
-            semester, ha, tasks, prog_language)
-    else:
-        print("mit csv")
-        df_labled = labled_csv
-        df_labled_len = len(labled_csv)
-    print((semester, ha, tasks, prog_language, df_labled_len, df_labled.head(3)))
-    return dumps(semester), dumps(ha), dumps(tasks), dumps(prog_language), dumps(df_labled_len), df_labled.to_json(date_format='iso', orient='split')
+    # if labled_csv == None:
+    #     print("ohne csv")
+    #     df_labled, df_labled_len = csv_stuff.create_labled_table_routine(
+    #         semester, ha, tasks, prog_language)
+    # else:
+    #     print("mit csv")
+    #     df_labled = labled_csv
+    #     df_labled_len = len(labled_csv)
+    # , df_labled.head(3)))
+    print((type(semester), type(ha), type(tasks), type(prog_language)))
+    print((dumps(semester), dumps(ha), dumps(tasks), dumps(
+        prog_language), dumps(labled_csv)))  # , df_labled.head(3)))
+    # df_labled.to_json(date_format='iso', orient='split')
+    return dumps(semester), dumps(ha), dumps(tasks), dumps(prog_language), dumps(labled_csv)
 
 
 # @callback(
