@@ -1,8 +1,11 @@
+import base64
+import io
+import pandas as pd
 import dash
 from dash import html, dcc, Input, Output, State, callback
 import dash_bootstrap_components as dbc
 from .src import csv_stuff
-from json import dumps
+from json import dumps, loads
 
 PLOTLY_LOGO = "../assets/logo.png"
 GLOBAL_MARGIN = {'l': 60, 'b': 60, 't': 10, 'r': 10}
@@ -65,13 +68,13 @@ init_content = html.Div([
                                  multi=True), md=4),
             ]),
     html.Hr(),
-    html.Label(
-        'Falls du einige Paare der Hausaufgabe bereits gelabelt hast, dann füge die bisherige csv Datei hier hinzu:'),
+    html.Label([
+        html.B('Falls'), ' Sie einige Paare der Hausaufgabe bereits gelabelt haben, dann fügen Sie die bisherige csv Datei hier hinzu:']),
     dbc.Row([
             dcc.Upload(
-                id="upload-data",
+                id="upload_data",
                 children=html.Div(
-                    ["Ziehe Datei oder klicke auf das Feld (i.e. 'PPR [SoSe21]-9. Hausaufgabe - Pflichttest C-Antworten_labled.csv')"]
+                    [html.B("Ziehe Datei"), " (i.e. 'PPR [SoSe21]-9. Hausaufgabe - Pflichttest C-Antworten_labled.csv')", html.B(" oder klicke"), " auf das Feld"], id='upload_text'
                 ),
                 style={
                     "width": "100%",
@@ -133,39 +136,37 @@ layout = html.Div(
     State('ha', 'value'),
     State('tasks', 'value'),
     State('prog_language', 'value'),
-    State('upload-data', 'data'),
+    State('upload_data', 'contents'),
+    State('upload_data', 'filename'),
     State('continue_label', 'value'), prevent_initial_call=True)
-def start_button_pressed(n_clicks, semester, ha, tasks, prog_language, labled_csv, continue_label):
+def start_button_pressed(n_clicks, semester, ha, tasks, prog_language, labled_csv, filename, continue_label):
     print(
         f"Es Wurde eine Callback auf der init-seite ausgeführt: {n_clicks}")
     if n_clicks == 0:
         raise dash.exceptions.PreventUpdate
     # 'Aufgabe 7' --> 'Antwort 7'
     tasks = [dict_tasks[x] for x in tasks]
-    # if labled_csv == None:
-    #     print("ohne csv")
-    #     df_labled, df_labled_len = csv_stuff.create_labled_table_routine(
-    #         semester, ha, tasks, prog_language)
-    # else:
-    #     print("mit csv")
-    #     df_labled = labled_csv
-    #     df_labled_len = len(labled_csv)
-    # , df_labled.head(3)))
-    print((type(semester), type(ha), type(tasks), type(prog_language)))
+    if labled_csv is not None:
+        _, content_string = labled_csv.split(',')
+        labled_csv = base64.b64decode(content_string)
+        try:
+            if 'csv' in filename:
+                # Assume that the user uploaded a CSV file
+                labled_csv = pd.read_csv(
+                    io.StringIO(labled_csv.decode('utf-8')))
+                print(type(labled_csv.head(3)))
+                print(labled_csv.head(3))
+                return dumps(semester), dumps(ha), dumps(tasks), dumps(prog_language), labled_csv.to_json(date_format='iso', orient='split')
+        except Exception as e:
+            print(e)
+            return dash.exceptions.PreventUpdate
     print((dumps(semester), dumps(ha), dumps(tasks), dumps(
-        prog_language), dumps(labled_csv)))  # , df_labled.head(3)))
-    # df_labled.to_json(date_format='iso', orient='split')
+        prog_language), dumps(labled_csv)))
     return dumps(semester), dumps(ha), dumps(tasks), dumps(prog_language), dumps(labled_csv)
 
 
-# @callback(
-#     Output('test', 'children'),
-#     Input('start', 'n_clicks'))
-# def start_button_pressed(n_clicks):
-#     # ctx = dash.callback_context
-#     # if ctx.triggered_id != 'start':
-#     #     raise dash.exceptions.PreventUpdate
-#     # if n_click == None:
-#     #     return dash.no_update
-#     print("Es Wurde eine Callback ausgeführt: {n_clicks}")
-#     return dumps(n_clicks)
+@callback(
+    Output('upload_text', 'children'),
+    Input('upload_data', 'filename'), prevent_initial_call=True)
+def start_button_pressed(filename):
+    return ['Es wurde die Datei "', html.B(filename), '" hochgeladen. ', html.B('Achten Sie darauf'), ', dass die gewählten Optionen mit der Datei übereinstimmen!']

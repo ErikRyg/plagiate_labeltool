@@ -75,7 +75,7 @@ def create_labled_table_routine(semester, ha, tasks, prog_language, labled_csv=N
     df = add_valid_code_columns(
         df=df, semester=semester, ha=ha, tasks=tasks, prog_language=prog_language)
     df_labled = create_labled_table(df, semester, ha, tasks, prog_language)
-    return df_labled[:2], len(df_labled[:2])
+    return df_labled, len(df_labled)
 
 
 def get_new_pair(df_labled, last_task, last_id):

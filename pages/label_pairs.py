@@ -26,20 +26,21 @@ layout = html.Div([
         dbc.Navbar(
             dbc.Container(
                 [
-                    html.A(
-                        # Use row and col to control vertical alignment of logo / brand
-                        dbc.Row(
-                            [
-                                dbc.Col(
-                                    html.Img(src=PLOTLY_LOGO, height="30px")),
-                                dbc.Col(dbc.NavbarBrand(
-                                    "PPR Hausaufgaben Labeltool", className="ml-2")),
-                            ],
-                            align="center",
-                        ),
-                        href="/init"
-                        # href="https://www.ni.tu-berlin.de/menue/members/postgraduate_students_and_doctoral_candidates/goerttler_thomas/",
+                    # Use row and col to control vertical alignment of logo / brand
+                    dbc.Row(
+                        [
+                            dbc.Col(
+                                html.A(
+                                    html.Img(src=PLOTLY_LOGO, height="30px"),
+                                    href="https://www.ni.tu-berlin.de/menue/neural_information_processing_group/")
+                            ),
+                            dbc.Col(dbc.NavbarBrand(
+                                "PPR Hausaufgaben Labeltool", className="ml-2", href="/")
+                            ),
+                        ],
+                        align="center",
                     ),
+                    # href="https://www.ni.tu-berlin.de/menue/members/postgraduate_students_and_doctoral_candidates/goerttler_thomas/",
                 ]
             ),
             color="primary",
@@ -49,6 +50,10 @@ layout = html.Div([
         dbc.Row(
             [
                 dbc.Col(html.Div([
+                        dbc.Row([
+                            dbc.Col(html.H5(id='retry_message'), md=12,
+                                    className="title_container")
+                        ]),
                         dbc.Row([
                             dbc.Col(html.H5('Code 1', id='caption1'), md=4,
                                     className="title_container"),
@@ -86,20 +91,19 @@ layout = html.Div([
                             }),
                         ]),
                         dbc.Row([
-                            # dbc.Col(dcc.Slider(min=0, max=1, step=0.05, value=0.5, id='score'), md=6, className="graph_container"),
                             dbc.Col(dcc.Slider(0, 1, 0.01, value=0.5, marks={0: "0", 0.25: "0.25", 0.5: "0.5", 0.75: "0.75", 1: "1"}, id='score',
                                 tooltip={"placement": "bottom", "always_visible": True}), md=12, className="graph_container"),
                         ]),
                         dbc.Row([
-                            dbc.Col(html.Button('vorheriges Paar', id='previous',
-                                    n_clicks=0), md=4, className="button", width={"offset": 1}),
+                            # dbc.Col(html.Button('vorheriges Paar', id='previous',
+                            #         n_clicks=0), md=4, className="button", width={"offset": 1}),
+                            dbc.Col(html.Button('Download [...]_labled.csv', id='download',
+                                    n_clicks=0), md=4, className="button_do", width={"offset": 1}),
+                            dcc.Download(id="download-text"),
                             dbc.Col(html.Button(
                                 'bewerten und weiter', id='done_next', n_clicks=0), md=4, className="button"),
                             dbc.Col(html.Button('überspringen', id='next',
-                                    n_clicks=0), md=2, className="button"),
-                            dbc.Col(html.Button('Download [...]_labled.csv', id='download',
-                                    n_clicks=0), md=0, className="button_do"),
-                            dcc.Download(id="download-text")
+                                    n_clicks=0), md=3, className="button"),
                         ]),
                         ],
                     className="h-100"), md=12, className="content")
@@ -109,6 +113,7 @@ layout = html.Div([
     dcc.Store(id='st_labled_pairs'),
     dcc.Store(id='st_last_id'),
     dcc.Store(id='st_last_task'),
+    # dcc.Store(id='st_last_ids_list'),
 ], className="h-100")
 
 
@@ -137,7 +142,7 @@ layout = html.Div([
     Output('st_df_labled', 'data'),
     Output('st_last_id', 'data'),
     Output('st_last_task', 'data'),
-    Input('previous', 'n_clicks'),
+    # Input('previous', 'n_clicks'),
     Input('done_next', 'n_clicks'),
     Input('next', 'n_clicks'),
     Input('score', 'value'),
@@ -151,30 +156,30 @@ layout = html.Div([
     State('st_ha', 'data'),
     State('st_tasks', 'data'),
     State('st_prog_language', 'data'))  # , prevent_initial_call=True
-def button_pressed(prev_clicks, done_clicks, next_clicks, label, st_df_labled_len, st_df_labled, st_labled_pairs, st_last_id, st_last_task, st_given_csv, st_semester, st_ha, st_tasks, st_prog_language):
-    # print('button pressed ' + str(n_clicks))
+def button_pressed(done_clicks, next_clicks, label, st_df_labled_len, st_df_labled, st_labled_pairs, st_last_id, st_last_task, st_given_csv, st_semester, st_ha, st_tasks, st_prog_language):
     ctx = dash.callback_context
     if st_df_labled == None:
         print('initial call triggered this callback')
         given_csv = st_given_csv
         labled_pairs = 0
         print((st_semester, st_ha, st_tasks, st_prog_language))
-        # print((loads(st_semester), loads(st_ha), loads(
-        # st_tasks), loads(st_prog_language)))
         if given_csv == None or given_csv == 'null':
             print("ohne csv")
-            df_labled, df_labled_len = csv_stuff.create_labled_table_routine(
-                loads(st_semester), loads(st_ha), loads(st_tasks), loads(st_prog_language))
+            try:
+                df_labled, df_labled_len = csv_stuff.create_labled_table_routine(
+                    loads(st_semester), loads(st_ha), loads(st_tasks), loads(st_prog_language))
+                print(type(df_labled.head(3)))
+                print(df_labled.head(3))
+            except TypeError:
+                raise dash.exceptions.PreventUpdate
         else:
             print("mit csv")
             print(type(given_csv))
-            print(given_csv)
             df_labled = loads(given_csv)
             df_labled_len = len(given_csv)
             labled_pairs = csv_stuff.count_labled(df_labled)
         rt = get_new_pair_routine(df_labled, 0, "")
         return rt[0], rt[1], rt[2], rt[3], rt[4], f'{labled_pairs}/{df_labled_len} Paaren', dumps(labled_pairs), dumps(df_labled_len), df_labled.to_json(date_format='iso', orient='split'), dumps(rt[5]), dumps(rt[6])
-    print(ctx.triggered_id)
     df_labled = pd.read_json(st_df_labled, orient='split')
     last_id = int(loads(st_last_id))
     last_task = loads(st_last_task)
@@ -182,7 +187,6 @@ def button_pressed(prev_clicks, done_clicks, next_clicks, label, st_df_labled_le
     #     rt = get_new_pair_routine(df_labled, last_id, last_task)
     #     return rt[0], rt[1], rt[2], rt[3], rt[4], dash.no_update, dash.no_update, dash.no_update, dumps(rt[5]), dumps(rt[6])
     if ctx.triggered_id == 'done_next':
-        print((last_id, last_id+1))
         df_labled_len = loads(st_df_labled_len)
         labled_pairs = loads(st_labled_pairs)
         print('label_button_pressed ' + str(done_clicks))
@@ -202,7 +206,6 @@ def button_pressed(prev_clicks, done_clicks, next_clicks, label, st_df_labled_le
 
 
 def get_new_pair_routine(df_labled, last_id, last_task):
-    # print(f'last id in get_new_pair_routine: {last_id}')
     next = csv_stuff.get_new_pair(df_labled, last_task, last_id)
     print(f'last id in get_new_pair_routine: {last_id}')
     if next == None:
@@ -212,28 +215,6 @@ def get_new_pair_routine(df_labled, last_id, last_task):
         return next[0], next[1], dash.no_update, next[3], next[4], last_id, last_task
     last_task = next[6]
     return next[0], next[1], next[2], next[3], next[4], last_id, last_task
-
-
-# # TODO
-# # @app.callback(
-# #     Output('textarea1', 'value'),
-# #     Output('textarea2', 'value'),
-# #     Output('textarea3', 'value'),
-# #     Output('caption1', 'children'),
-# #     Output('caption2', 'children'),
-# #     Input('previous', 'n_clicks'), prevent_initial_call=True)
-# # def prev_button_pressed(n_clicks, value):
-# #     global last_id
-# #     global last_task
-# #     print('button pressed ' + str(n_clicks))
-# #     next = csv_stuff.get_new_pair(df_labled, last_task, last_id)
-# #     if next == None:
-# #         return '', '', '', 'Niemandes Code', 'Niemandes Code'
-# #     last_id = next[5]
-# #     if next[2] == None:
-# #         return next[0], next[1], dash.no_update, next[3], next[4]
-# #     last_task = next[6]
-# #     return next[0], next[1], next[2], next[3], next[4]
 
 
 # @app.callback(
@@ -252,6 +233,19 @@ def download_button_pressed(n_clicks, st_semester, st_ha, st_prog_language, st_d
     return dcc.send_data_frame(pd.read_json(st_df_labled, orient='split').to_csv, file_name)
 
 
+@callback(
+    Output('retry_message', 'children'),
+    Input('st_semester', 'data'),
+    Input('st_ha', 'data'),
+    Input('st_tasks', 'data'),
+    Input('st_prog_language', 'data'))
+def print_retry_message(st_semester, st_ha, st_tasks, st_prog_language):
+    if st_semester == None and st_ha == None and st_tasks == None and st_prog_language == None:
+        return [html.B('Drücken Sie auf "PPR Hausaufgaben Labeltool"'), " um eine neue Sesssion zu starten!"]
+    else:
+        return dash.no_update
+
+
 # TODO how does the initial start works; every input sensitive callback starts??
 # --> if clicked == None: raise dash.exceptions.PreventUpdate or
 # --> prevent_initial_call=True
@@ -265,29 +259,29 @@ def download_button_pressed(n_clicks, st_semester, st_ha, st_prog_language, st_d
 - auf bspw. Heroku deployen, sodass andere Personen (Tobias, Paula, ..) direkt darauf zugreifen können
 """
 # checked
-# TODO 1. erfolgreichen match hinbekommen        *check*
-# TODO 2. empty_solution_matrix richtig setzen   *check*
-# TODO 3. dann daraus ein paar ableiten          *check*
-# TODO 4. dann daraus eine tabellenreihe für ...labled.csv machen *check*
-# TODO 5. dann eine ganze tabelle draus machen   *check*
-# TODO! 6. wo wird tabelle zwischengespeichert?
-# TODO 7. funktion schreiben die die erste Routine macht mit #aller paar und #aller bereits gelableten und die 3 texte ausgibt  *check*
-# TODO 7.1 funktion schreiben, die ein lable übergeben bekommt, in tabelle einträgt und ein neues paar zurückgibt (ggf. auch neue vorgabe)    *check*
-# TODO gibt es ein Download fenster? --> ja, da dynos in heroku nicht global speichern können       *check*
-# TODO 7.2 set_label zum laufen bringen      *check*
-# TODO 8. Download button realisieren        *check*
+# 1. erfolgreichen match hinbekommen
+# 2. empty_solution_matrix richtig setzen
+# 3. dann daraus ein paar ableiten
+# 4. dann daraus eine tabellenreihe für ...labled.csv machen
+# 5. dann eine ganze tabelle draus machen
+# 6. wo wird tabelle zwischengespeichert? --> aktuelle Session des users (dcc.store)
+# 7. funktion schreiben die die erste Routine macht mit #aller paar und #aller bereits gelableten und die 3 texte ausgibt
+# 7.1 funktion schreiben, die ein lable übergeben bekommt, in tabelle einträgt und ein neues paar zurückgibt (ggf. auch neue vorgabe)
+# gibt es ein Download fenster? --> ja, da dynos in heroku nicht global speichern können
+# 7.2 set_label zum laufen bringen
+# 8. Download button realisieren
+# 8.1 temporäre speicherung des df_labels
+# 12. beide pages gleichzeitig zum laufen bringen
+# 13. callbacks für init page schreiben
 
 # unchecked
-# TODO 8.1 temporäre speicherung des df_labels
 # TODO (9. neuen knopf für previous labled hinzufügen)
 # TODO (10. liste für gelabelte ids hinzufügen)
 # TODO (11. liste für nicht gelabelte ids hinzufügen)
-# TODO 12. beide pages gleichzeitig zum laufen bringen
-# TODO 13. callbacks für init page schreiben
 # TODO 14. back end für halbgelabelte csv im drag&drop realisieren
+# TODO 15. loading state für page lable_pairs hinzufügen
 # TODO checken weshalb nur 12/13 leere abgaben bei antwort 10 gefunden wurden
 # TODO double linked list, für die id schreiben, um prev und next button zu realisieren
 # only needed if running single page dash app instead
 if __name__ == '__main__':
-    # print((df_labled, type(df_labled)))
     app.run_server(debug=True)
