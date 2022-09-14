@@ -10,6 +10,7 @@ GLOBAL_TEMPLATE = "plotly_white"
 external_stylesheets = [dbc.themes.CERULEAN]
 app = dash.Dash(__name__, use_pages=True, suppress_callback_exceptions=True,
                 external_stylesheets=external_stylesheets)
+server = app.server
 
 app.layout = html.Div([
     dash.page_container,
