@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 2332118  -->
+  <question type="coderunner">
+    <name>
+      <text>Pointer und Switch</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Vervollständigt den Quellcode des Programms, sodass das Programm Temperaturen umrechnet.<br><br>Die Funktionen zur Umrechnung sind bereits gegeben. <strong>Eure Aufgabe</strong> ist es die Funktion <strong><em>temperatur()</em></strong> zu ergänzen.<br>Es gibt drei Temperaturskalen. Für <strong>eine Skala</strong> wird der <strong>Wert eingegeben. </strong>Die Werte der beiden anderen müssen von eurem Programm mithilfe der gegebenen Funktionen berechnet werden.<br><br><p>Eure Funktion <em>temperatur(</em>) erwartet dementsprechend drei Pointer auf die Variablen aus der main() um deren Werte anpassen zu können. Testet nach validen Zeigern<br></p><p>Zusätzlich benötigt eure Funktion noch einen <strong>4en Parameter</strong>, welcher aussagt, welche <strong>Temperatureinheit </strong>vom Nutzer <strong>ausgesucht wurde</strong>.<br></p>Der <strong>Rückgabewert </strong>eurer Funktion soll lediglich dafür benutzt werden um zu zeigen, dass die Umwandlung legitim ist. Eine legitime Umwandlung ist für Temperaturen, die über den absoluten Nullpunkt (-273.15°C) liegen. Die <em>main()</em> erwartet <strong>diesen Wahrheitswert </strong>und gibt eine entsprechende Warnung heraus, falls die Temperatur unter dem absoluten Nullpunkt liegt. Falls nicht, werden die Umwandlungen ausgegeben.<br><br><p>Die Ausgabe des Programms ist bereits vorgegeben.<br></p><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <coderunnertype>c_program</coderunnertype>
+    <prototypetype>0</prototypetype>
+    <allornothing>0</allornothing>
+    <penaltyregime>0, 0, 5, 10, 20, ...</penaltyregime>
+    <precheck>0</precheck>
+    <hidecheck>0</hidecheck>
+    <showsource>0</showsource>
+    <answerboxlines>27</answerboxlines>
+    <answerboxcolumns>100</answerboxcolumns>
+    <answerpreload><![CDATA[#include <stdio.h>
+
+// Umrechnung Kelvin -> Celsius
+float k2c(float k)
+{
+    return k - 273.15f;
+}
+
+// Umrechnung Kelvin -> Fahrenheit
+float k2f(float k)
+{
+    return (k - 273.15f) * 1.8f + 32;
+}
+
+// Umrechnung Celsius -> Kelvin
+float c2k(float c)
+{
+    return c + 273.15f;
+}
+
+// Umrechnung Celsius -> Fahrenheit
+float c2f(float c)
+{
+    return c * 1.8f + 32;
+}
+
+// Umrechnung Fahrenheit -> Kelvin
+float f2k(float f)
+{
+    return (f - 32)/1.8f + 273.15f;
+}
+
+// Umrechnung Fahrenheit -> Celsius
+float f2c(float f)
+{
+    return (f - 32)/1.8f;
+}
+
+/*TODO*/ temperatur(/*TODO*/)
+{
+    /*TODO*/
+}
+
+int main()
+{
+    char type = 'k';
+    float val  = 0;
+    float kel, cel, fah;
+    
+    printf("Bitte geben Sie die Temperatureinheit an:"
+            "\nk    Kelvin\nc    Celsius\nf    Fahrenheit\n"
+            "Einheitenkuerzel: ");
+    scanf("%c", &type);
+    getchar();
+    printf("Geben Sie den Wert ein, der umgerechnet werden soll: ");
+    scanf("%f", &val);
+    getchar();
+
+    switch(type){
+        case 'k':
+            kel = val;
+        break;
+        case 'c':
+            cel = val;
+        break;
+        case 'f':
+            fah = val;
+        break;
+        default:
+            printf("Unbekannte Option!\n");
+            return -1;
+    }
+    
+    if(!temperatur(/*TODO*/))
+        printf("Die Temperatur liegt unter dem absoluten Nullpunkt!\n");
+    else
+        printf("%f K    %f C    %f F\n", kel, cel, fah);
+
+    return 0;
+}
+]]></answerpreload>
+    <globalextra></globalextra>
+    <useace></useace>
+    <resultcolumns></resultcolumns>
+    <template></template>
+    <iscombinatortemplate></iscombinatortemplate>
+    <allowmultiplestdins></allowmultiplestdins>
+    <answer><![CDATA[#include <stdio.h>
+
+// Umrechnung Kelvin -> Celsius
+float k2c(float k)
+{
+    return k - 273.15f;
+}
+
+// Umrechnung Kelvin -> Fahrenheit
+float k2f(float k)
+{
+    return (k - 273.15f) * 1.8f + 32;
+}
+
+// Umrechnung Celsius -> Kelvin
+float c2k(float c)
+{
+    return c + 273.15f;
+}
+
+// Umrechnung Celsius -> Fahrenheit
+float c2f(float c)
+{
+    return c * 1.8f + 32;
+}
+
+// Umrechnung Fahrenheit -> Kelvin
+float f2k(float f)
+{
+    return (f - 32)/1.8f + 273.15f;
+}
+
+// Umrechnung Fahrenheit -> Celsius
+float f2c(float f)
+{
+    return (f - 32)/1.8f;
+}
+
+int temperatur(char selector, float* kelvin, float* celsius, float* fahrenheit)
+{
+    if(!kelvin || !celsius || !fahrenheit){
+        return -1;
+    }
+    switch(selector){
+    case 'k':
+        *celsius = k2c(*kelvin);
+        *fahrenheit = k2f(*kelvin);
+    break;
+    case 'c':
+        *kelvin = c2k(*celsius);
+        *fahrenheit = c2f(*celsius);
+    break;
+    case 'f':
+        *kelvin = f2k(*fahrenheit);
+        *celsius = f2c(*fahrenheit);
+    break;
+    default:
+        printf("Unknown option!\n");
+    }
+    if(*celsius<-273.15f){
+        return 0;
+    }
+
+    return 1;
+}
+
+int main()
+{
+    char type = 'k';
+    float val  = 0;
+    float kel, cel, fah;
+    
+    printf("Bitte geben Sie die Temperatureinheit an:"
+            "\nk    Kelvin\nc    Celsius\nf    Fahrenheit\n"
+            "Einheitenkuerzel: ");
+    scanf("%c", &type);
+    getchar();
+    printf("Geben Sie den Wert ein, der umgerechnet werden soll: ");
+    scanf("%f", &val);
+    getchar();
+
+    switch(type){
+        case 'k':
+            kel = val;
+        break;
+        case 'c':
+            cel = val;
+        break;
+        case 'f':
+            fah = val;
+        break;
+        default:
+            printf("Unbekannte Option!\n");
+            return -1;
+    }
+    
+    if(!temperatur(type, &kel, &cel, &fah))
+        printf("Die Temperatur liegt unter dem absoluten Nullpunkt!\n");
+    else
+        printf("%f K    %f C    %f F\n", kel, cel, fah);
+    return 0;
+}
+]]></answer>
+    <validateonsave>1</validateonsave>
+    <testsplitterre></testsplitterre>
+    <language></language>
+    <acelang></acelang>
+    <sandbox></sandbox>
+    <grader></grader>
+    <cputimelimitsecs></cputimelimitsecs>
+    <memlimitmb></memlimitmb>
+    <sandboxparams><![CDATA[{ "compileargs": ["-std=c99"] }]]></sandboxparams>
+    <templateparams></templateparams>
+    <hoisttemplateparams>1</hoisttemplateparams>
+    <templateparamslang>twig</templateparamslang>
+    <templateparamsevalpertry>0</templateparamsevalpertry>
+    <templateparamsevald></templateparamsevald>
+    <twigall>0</twigall>
+    <uiplugin></uiplugin>
+    <uiparameters></uiparameters>
+    <attachments>0</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <maxfilesize>10240</maxfilesize>
+    <filenamesregex></filenamesregex>
+    <filenamesexplain></filenamesexplain>
+    <displayfeedback>1</displayfeedback>
+    <giveupallowed>0</giveupallowed>
+    <prototypeextra></prototypeextra>
+    <testcases>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>1. Test</text>
+      </testcode>
+      <stdin>
+                <text>k
+35
+</text>
+      </stdin>
+      <expected>
+                <text>Bitte geben Sie die Temperatureinheit an:
+k    Kelvin
+c    Celsius
+f    Fahrenheit
+Einheitenkuerzel: Geben Sie den Wert ein, der umgerechnet werden soll: 35.000000 K    -238.149994 C    -396.669983 F
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>2. Test</text>
+      </testcode>
+      <stdin>
+                <text>c
+-300
+</text>
+      </stdin>
+      <expected>
+                <text>Bitte geben Sie die Temperatureinheit an:
+k    Kelvin
+c    Celsius
+f    Fahrenheit
+Einheitenkuerzel: Geben Sie den Wert ein, der umgerechnet werden soll: Die Temperatur liegt unter dem absoluten Nullpunkt!
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>3. Test</text>
+      </testcode>
+      <stdin>
+                <text>c
+50
+</text>
+      </stdin>
+      <expected>
+                <text>Bitte geben Sie die Temperatureinheit an:
+k    Kelvin
+c    Celsius
+f    Fahrenheit
+Einheitenkuerzel: Geben Sie den Wert ein, der umgerechnet werden soll: 323.149994 K    50.000000 C    122.000000 F
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>4. Test</text>
+      </testcode>
+      <stdin>
+                <text>f
+200
+</text>
+      </stdin>
+      <expected>
+                <text>Bitte geben Sie die Temperatureinheit an:
+k    Kelvin
+c    Celsius
+f    Fahrenheit
+Einheitenkuerzel: Geben Sie den Wert ein, der umgerechnet werden soll: 366.483337 K    93.333336 C    200.000000 F
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>5. Test</text>
+      </testcode>
+      <stdin>
+                <text>g
+42</text>
+      </stdin>
+      <expected>
+                <text>Bitte geben Sie die Temperatureinheit an:
+k    Kelvin
+c    Celsius
+f    Fahrenheit
+Einheitenkuerzel: Geben Sie den Wert ein, der umgerechnet werden soll: Unbekannte Option!
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+    </testcases>
+  </question>
+
+</quiz>

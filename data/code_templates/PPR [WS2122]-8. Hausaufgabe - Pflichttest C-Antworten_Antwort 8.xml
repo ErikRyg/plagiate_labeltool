@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 2261275  -->
+  <question type="coderunner">
+    <name>
+      <text>Versandkosten</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Ein Paketdienst soll fünf Artikel möglichst kostengünstig an einen Kunden versenden. Der Dienst berechnet für Pakete bis zu einem Gewicht von (inklusive) 10 Kilo 3 € Versandkosten. Darüber hinaus sind für jedes zusätzliche Kilo 45 Cent zu bezahlen.<br><br>Vervollständigt das gegebene Programm, das die Artikel auf Päckchen verteilt, indem ihr die Funktion <b>packePakete</b> und die Funktion <b>berechnePaketKosten</b> implementiert:<br></p><ol><li>in <b>packePakete</b> müsst ihr über die Artikel (Gewichte) iterieren. Jeder Artikel mit mehr als zehn kg bekommt ein eigenes, neues Paket. Von den Artikeln, die nicht mehr als zehn kg wiegen, werden so viele wie möglich zusammengepackt, so dass dabei einzelne Pakete nicht mehr als zehn kg wiegen. Pakete können <b>unbenutzt</b> bleiben, indem ihr Gewicht auf 0 bleibt.</li><li>in <b>berechnePaketKosten</b> müsst ihr über die Paket (Gewichte) iterieren, und die Kosten nach obigem Schema summieren. Missachtet Pakete mit Gewicht 0.</li></ol><p><b>main</b> soll nicht verändert werden.<br><br><b>Achtung:</b><br><div>Die Funktion&nbsp;<b>packePackete()&nbsp;</b>soll eine "einfache" Funktion sein. Das heißt, wenn mehrere kleine Gewichte&nbsp;<b>hintereinander</b>&nbsp;im Array gespeichert sind,&nbsp;<b>sollt</b>&nbsp;ihr diese&nbsp;<b>zusammenfassen</b>.<br></div><div>Wenn jedoch immer ein größeres Gewicht dazwischen liegt, wie zum Beispiel bei dem Fall "int array[3] = {6,9,4};", dann kommen die Gewichte alle in einzelne Packete, weil wir weder 6 mit 9, noch 9 mit 4 zu einem Packet, was maximal 10kg wiegen soll, zusammen packen können.</div><br><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <coderunnertype>c_program</coderunnertype>
+    <prototypetype>0</prototypetype>
+    <allornothing>0</allornothing>
+    <penaltyregime>0, 0, 5, 10, 20, ...</penaltyregime>
+    <precheck>0</precheck>
+    <hidecheck>0</hidecheck>
+    <showsource>0</showsource>
+    <answerboxlines>70</answerboxlines>
+    <answerboxcolumns>100</answerboxcolumns>
+    <answerpreload><![CDATA[#include <stdio.h>
+#include <stdlib.h>
+
+
+// Funktion veraendert paeckchenGewicht
+void packePakete( int paeckchenGewicht[], int artikelGewicht[] )
+{
+
+
+   /* -----------------------------
+   hier muesst ihr implementieren
+    ----------------------------- */
+
+}
+
+double berechnePaketKosten( int paeckchenGewicht[] )
+{
+
+
+   /* -----------------------------
+   hier muesst ihr implementieren
+    ----------------------------- */
+
+
+}
+
+int main () // nicht aendern!
+{
+   int artikelGewicht[5];
+   artikelGewicht[0] = 60;
+   artikelGewicht[1] = 57;
+   artikelGewicht[2] = 6;
+   artikelGewicht[3] = 9;
+   artikelGewicht[4] = 4;
+   printf("\nArtikelgewichte: %d, %d, %d, %d, %d.\n", 
+                     artikelGewicht[0],artikelGewicht[1],artikelGewicht[2],
+                     artikelGewicht[3],artikelGewicht[4]);
+   
+   int paeckchenGewicht[5] = {0,0,0,0,0};
+   packePakete( paeckchenGewicht, artikelGewicht );
+   
+   double endkosten = berechnePaketKosten( paeckchenGewicht );
+   printf("\nDie Gesamtsumme ihrer Paeckchen betraegt: %.2f Euro.\n", endkosten);
+}
+]]></answerpreload>
+    <globalextra></globalextra>
+    <useace></useace>
+    <resultcolumns></resultcolumns>
+    <template>{{ STUDENT_ANSWER | replace({'int main': 'void student_main', }) }}
+int main() {
+    {{ TEST.testcode }};
+    return 0;
+}
+</template>
+    <iscombinatortemplate></iscombinatortemplate>
+    <allowmultiplestdins></allowmultiplestdins>
+    <answer><![CDATA[#include <stdio.h>
+#include <stdlib.h>
+
+
+void packePakete( int paeckchenGewicht[], int artikelGewicht[] )
+{
+   int paeckchenIdx = 0; 
+   for (int j = 0; j < 5; j++)
+   {
+      if (artikelGewicht[j] > 10)
+      {
+         paeckchenGewicht[paeckchenIdx] = artikelGewicht[j];
+         paeckchenIdx++;
+         continue;
+      }
+      if (paeckchenGewicht[paeckchenIdx] + artikelGewicht[j] > 10)
+      {
+         paeckchenIdx++;
+      }
+      paeckchenGewicht[paeckchenIdx] += artikelGewicht[j];
+   }
+}
+
+double berechnePaketKosten( int paeckchenGewicht[] )
+{
+   double endkosten = 0;
+   for (int i = 0; i < 5; i++)
+   {
+      double kosten = 0;
+      if (paeckchenGewicht[i] > 0)
+      {
+         printf("\nGewicht des %d. Paeckchens: %d Kilo\n", (i+1), paeckchenGewicht[i]);
+         if (paeckchenGewicht[i] <= 10) kosten = 3.00;
+         else kosten = (((paeckchenGewicht[i]-10)*0.45) + 3.00);
+         endkosten += kosten;
+         printf("Die Versandkosten ihres %d. Paeckchens betragen: %.2f Euro\n", (i+1), kosten);
+      }              
+   }
+   return endkosten;
+}
+
+int main ()
+{
+   int artikelGewicht[5];
+   artikelGewicht[0] = 60;
+   artikelGewicht[1] = 57;
+   artikelGewicht[2] = 6;
+   artikelGewicht[3] = 9;
+   artikelGewicht[4] = 4;
+   printf("\nArtikelgewichte: %d, %d, %d, %d, %d.\n", 
+                     artikelGewicht[0],artikelGewicht[1],artikelGewicht[2],
+                     artikelGewicht[3],artikelGewicht[4]);
+   
+   int paeckchenGewicht[5] = {0,0,0,0,0};
+   packePakete( paeckchenGewicht, artikelGewicht );
+   
+   double endkosten = berechnePaketKosten( paeckchenGewicht );
+   printf("\nDie Gesamtsumme ihrer Paeckchen betraegt: %.2f Euro.\n", endkosten);
+}
+]]></answer>
+    <validateonsave>1</validateonsave>
+    <testsplitterre><![CDATA[|#<ab@17943918#@>#\n|ms]]></testsplitterre>
+    <language></language>
+    <acelang></acelang>
+    <sandbox></sandbox>
+    <grader>NearEqualityGrader</grader>
+    <cputimelimitsecs></cputimelimitsecs>
+    <memlimitmb></memlimitmb>
+    <sandboxparams><![CDATA[  { "compileargs": ["-std=c99"], "linkargs":["-lm"] } ]]></sandboxparams>
+    <templateparams></templateparams>
+    <hoisttemplateparams>1</hoisttemplateparams>
+    <templateparamslang>twig</templateparamslang>
+    <templateparamsevalpertry>0</templateparamsevalpertry>
+    <templateparamsevald></templateparamsevald>
+    <twigall>0</twigall>
+    <uiplugin></uiplugin>
+    <uiparameters></uiparameters>
+    <attachments>0</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <maxfilesize>10240</maxfilesize>
+    <filenamesregex></filenamesregex>
+    <filenamesexplain></filenamesexplain>
+    <displayfeedback>1</displayfeedback>
+    <giveupallowed>0</giveupallowed>
+    <prototypeextra></prototypeextra>
+    <testcases>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>student_main()</text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Artikelgewichte: 60, 57, 6, 9, 4.
+
+Gewicht des 1. Paeckchens: 60 Kilo
+Die Versandkosten ihres 1. Paeckchens betragen: 25.50 Euro
+
+Gewicht des 2. Paeckchens: 57 Kilo
+Die Versandkosten ihres 2. Paeckchens betragen: 24.15 Euro
+
+Gewicht des 3. Paeckchens: 6 Kilo
+Die Versandkosten ihres 3. Paeckchens betragen: 3.00 Euro
+
+Gewicht des 4. Paeckchens: 9 Kilo
+Die Versandkosten ihres 4. Paeckchens betragen: 3.00 Euro
+
+Gewicht des 5. Paeckchens: 4 Kilo
+Die Versandkosten ihres 5. Paeckchens betragen: 3.00 Euro
+
+Die Gesamtsumme ihrer Paeckchen betraegt: 58.65 Euro.
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[int a[5] = {0, 0, 0, 0, 0};
+int b[5] = {1,2,3,5,10};
+packePakete(a, b);
+for(int i=0; i < 5; i++) printf("%i\n", a[i])]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>6
+5
+10
+0
+0
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[int b[5] = {1,2,3,5,10};
+printf("%lf\n", berechnePaketKosten(b))]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Gewicht des 1. Paeckchens: 1 Kilo
+Die Versandkosten ihres 1. Paeckchens betragen: 3.00 Euro
+
+Gewicht des 2. Paeckchens: 2 Kilo
+Die Versandkosten ihres 2. Paeckchens betragen: 3.00 Euro
+
+Gewicht des 3. Paeckchens: 3 Kilo
+Die Versandkosten ihres 3. Paeckchens betragen: 3.00 Euro
+
+Gewicht des 4. Paeckchens: 5 Kilo
+Die Versandkosten ihres 4. Paeckchens betragen: 3.00 Euro
+
+Gewicht des 5. Paeckchens: 10 Kilo
+Die Versandkosten ihres 5. Paeckchens betragen: 3.00 Euro
+15.000000
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[int b[5] = {60,57,6,9,4};
+printf("%lf\n", berechnePaketKosten(b))]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Gewicht des 1. Paeckchens: 60 Kilo
+Die Versandkosten ihres 1. Paeckchens betragen: 25.50 Euro
+
+Gewicht des 2. Paeckchens: 57 Kilo
+Die Versandkosten ihres 2. Paeckchens betragen: 24.15 Euro
+
+Gewicht des 3. Paeckchens: 6 Kilo
+Die Versandkosten ihres 3. Paeckchens betragen: 3.00 Euro
+
+Gewicht des 4. Paeckchens: 9 Kilo
+Die Versandkosten ihres 4. Paeckchens betragen: 3.00 Euro
+
+Gewicht des 5. Paeckchens: 4 Kilo
+Die Versandkosten ihres 5. Paeckchens betragen: 3.00 Euro
+58.650000
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[int a[5] = {0, 0, 0, 0, 0};
+int b[5] = {60,57,6,9,4};
+packePakete(a, b);
+for(int i=0; i < 5; i++) printf("%i\n", a[i])]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>60
+57
+6
+9
+4
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+    </testcases>
+  </question>
+
+</quiz>

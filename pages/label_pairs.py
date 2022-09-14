@@ -6,27 +6,13 @@ from json import loads, dumps
 from .src import csv_stuff
 
 PLOTLY_LOGO = "../assets/logo.png"
-# semester = 'SoSe21'
-# ha = '9'
-# # tasks = ['Antwort 9']
-# tasks = ['Antwort 8', 'Antwort 9', 'Antwort 10']
-# prog_language = 'C'
-# last_task = 0
-# last_id = -1
-# labled_pairs = 0
-# df_labled, df_labled_len = csv_stuff.create_labled_table_routine(
-#     semester, ha, tasks, prog_language)
-# df_labled_len = df_labled_len
-
 dash.register_page(__name__)
 
 layout = html.Div([
-    # content will be rendered in this element
     html.Div([
         dbc.Navbar(
             dbc.Container(
                 [
-                    # Use row and col to control vertical alignment of logo / brand
                     dbc.Row(
                         [
                             dbc.Col(
@@ -65,20 +51,29 @@ layout = html.Div([
                                 id='labled_pairs_string'), md=0, className="title_container"),
                         ]),
                         # TODO use prettify
-                        dcc.Textarea(
-                            id='textarea1',
-                            wrap='<pre>',
-                            style={'width': '33%', 'height': 600},
-                        ),
-                        dcc.Textarea(
-                            id='textarea2',
-                            style={'width': '33%', 'height': 600},
-                            className="code",
-                        ),
-                        dcc.Textarea(
-                            id='textarea3',
-                            style={'width': '33%', 'height': 600},
-                        ),
+                        dbc.Row([
+                            dbc.Col(dcc.Loading(
+                                children=dcc.Textarea(
+                                    id='textarea1',
+                                    style={'width': '100%', 'height': 600},
+                                ),
+                                type="circle",
+                            ), md=4),
+                            dbc.Col(dcc.Loading(
+                                children=dcc.Textarea(
+                                    id='textarea2',
+                                    style={'width': '100%', 'height': 600},
+                                ),
+                                type="circle",
+                            ), md=4),
+                            dbc.Col(dcc.Loading(
+                                children=dcc.Textarea(
+                                    id='textarea3',
+                                    style={'width': '100%', 'height': 600},
+                                ),
+                                type="circle",
+                            ), md=4),
+                        ]),
                         dbc.Row([
                             dbc.Col(html.Div(id='answer_1'), md=6,
                                     className="graph_container"),
@@ -117,19 +112,6 @@ layout = html.Div([
 ], className="h-100")
 
 
-# @app.callback(
-#     Output('semester', 'data'),
-#     Output('ha', 'data'),
-#     Output('tasks', 'data'),
-#     Output('prog_language', 'data'),
-#     Output('df_labled_len', 'data'),
-#     Output('df_labled', 'data'))
-# def init_call(semester, ha, tasks, prog_language):
-#     # print('button pressed ' + str(n_clicks))
-#     df_labled, df_labled_len = csv_stuff.create_labled_table_routine(semester, ha, tasks, prog_language)
-#     return dumps(semester), dumps(ha), dumps(tasks), dumps(prog_language), dumps(df_labled_len), df_labled.to_json(date_format='iso', orient='split')
-
-
 @callback(
     Output('textarea1', 'value'),
     Output('textarea2', 'value'),
@@ -155,41 +137,40 @@ layout = html.Div([
     State('st_semester', 'data'),
     State('st_ha', 'data'),
     State('st_tasks', 'data'),
-    State('st_prog_language', 'data'))  # , prevent_initial_call=True
+    State('st_prog_language', 'data'))
 def button_pressed(done_clicks, next_clicks, label, st_df_labled_len, st_df_labled, st_labled_pairs, st_last_id, st_last_task, st_given_csv, st_semester, st_ha, st_tasks, st_prog_language):
     ctx = dash.callback_context
-    if st_df_labled == None:
-        print('initial call triggered this callback')
+    if st_df_labled == None or st_last_id == None:
+        # print('initial call triggered this callback')
         given_csv = st_given_csv
         labled_pairs = 0
-        print((st_semester, st_ha, st_tasks, st_prog_language))
+        # print((st_semester, st_ha, st_tasks, st_prog_language))
         if given_csv == None or given_csv == 'null':
-            print("ohne csv")
+            # print("ohne csv")
             try:
                 df_labled, df_labled_len = csv_stuff.create_labled_table_routine(
                     loads(st_semester), loads(st_ha), loads(st_tasks), loads(st_prog_language))
-                print(type(df_labled.head(3)))
-                print(df_labled.head(3))
+                # print(type(df_labled.head(3)))
+                # print(df_labled.head(3))
             except TypeError:
                 raise dash.exceptions.PreventUpdate
         else:
-            print("mit csv")
-            print(type(given_csv))
+            # print("mit csv")
+            # print(type(given_csv))
             df_labled = loads(given_csv)
             df_labled_len = len(given_csv)
             labled_pairs = csv_stuff.count_labled(df_labled)
         rt = get_new_pair_routine(df_labled, 0, "")
         return rt[0], rt[1], rt[2], rt[3], rt[4], f'{labled_pairs}/{df_labled_len} Paaren', dumps(labled_pairs), dumps(df_labled_len), df_labled.to_json(date_format='iso', orient='split'), dumps(rt[5]), dumps(rt[6])
     df_labled = pd.read_json(st_df_labled, orient='split')
+    # print((st_semester, st_ha, st_tasks, st_prog_language))
+    # print((st_last_id, st_last_task, len(st_df_labled)))
     last_id = int(loads(st_last_id))
     last_task = loads(st_last_task)
-    # if ctx.triggered_id == None:
-    #     rt = get_new_pair_routine(df_labled, last_id, last_task)
-    #     return rt[0], rt[1], rt[2], rt[3], rt[4], dash.no_update, dash.no_update, dash.no_update, dumps(rt[5]), dumps(rt[6])
     if ctx.triggered_id == 'done_next':
         df_labled_len = loads(st_df_labled_len)
         labled_pairs = loads(st_labled_pairs)
-        print('label_button_pressed ' + str(done_clicks))
+        # print('label_button_pressed ' + str(done_clicks))
         valid_set, labled_pairs, df_labled = csv_stuff.set_label(
             df_labled, last_id, label, labled_pairs)
         if not valid_set:
@@ -207,7 +188,7 @@ def button_pressed(done_clicks, next_clicks, label, st_df_labled_len, st_df_labl
 
 def get_new_pair_routine(df_labled, last_id, last_task):
     next = csv_stuff.get_new_pair(df_labled, last_task, last_id)
-    print(f'last id in get_new_pair_routine: {last_id}')
+    # print(f'last id in get_new_pair_routine: {last_id}')
     if next == None:
         return '', '', '', 'Niemandes Code', 'Niemandes Code', last_id, last_task
     last_id = next[5]
@@ -217,7 +198,6 @@ def get_new_pair_routine(df_labled, last_id, last_task):
     return next[0], next[1], next[2], next[3], next[4], last_id, last_task
 
 
-# @app.callback(
 @callback(
     Output('download-text', 'data'),
     Input('download', 'n_clicks'),
@@ -225,7 +205,7 @@ def get_new_pair_routine(df_labled, last_id, last_task):
     State('st_ha', 'data'),
     State('st_prog_language', 'data'),
     State('st_df_labled', 'data'), prevent_initial_call=True)
-def download_button_pressed(n_clicks, st_semester, st_ha, st_prog_language, st_df_labled):
+def download_button_pressed(_, st_semester, st_ha, st_prog_language, st_df_labled):
     ctx = dash.callback_context
     if ctx.triggered_id != 'download':
         raise dash.exceptions.PreventUpdate
@@ -246,7 +226,7 @@ def print_retry_message(st_semester, st_ha, st_tasks, st_prog_language):
         return dash.no_update
 
 
-# TODO how does the initial start works; every input sensitive callback starts??
+# how does the initial start works; every input sensitive callback starts??
 # --> if clicked == None: raise dash.exceptions.PreventUpdate or
 # --> prevent_initial_call=True
 """

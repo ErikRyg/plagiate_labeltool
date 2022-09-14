@@ -8,37 +8,20 @@ GLOBAL_MARKER_SIZE = 7
 GLOBAL_TEMPLATE = "plotly_white"
 
 external_stylesheets = [dbc.themes.CERULEAN]
-app = dash.Dash(__name__, use_pages=True, suppress_callback_exceptions=True, external_stylesheets=external_stylesheets)
+app = dash.Dash(__name__, use_pages=True, suppress_callback_exceptions=True,
+                external_stylesheets=external_stylesheets)
 
 app.layout = html.Div([
-	dash.page_container,
-	dcc.Store(id='st_semester'),
-	dcc.Store(id='st_ha'),
-	dcc.Store(id='st_tasks'),
-	dcc.Store(id='st_prog_language'),
-	dcc.Store(id='st_df_labled_len'),
-	dcc.Store(id='st_df_labled'),
-	dcc.Store(id='st_df_labled_tmp'),
-	dcc.Store(id='st_given_csv'),
+    dash.page_container,
+    dcc.Store(id='st_semester'),
+    dcc.Store(id='st_ha'),
+    dcc.Store(id='st_tasks'),
+    dcc.Store(id='st_prog_language'),
+    dcc.Store(id='st_df_labled_len'),
+    dcc.Store(id='st_df_labled'),
+    # dcc.Store(id='st_df_labled_tmp'),
+    dcc.Store(id='st_given_csv'),
 ])
-
-
-
-# app.layout = html.Div([
-#     dcc.Location(id='url', refresh=False),
-#     html.Div(id='page-content')
-# ])
-
-
-# @app.callback(Output('page-content', 'children'),
-#               [Input('url', 'pathname')])
-# def display_page(pathname):
-#     if pathname == '/pages/init_copy':
-#         return app1.layout
-#     elif pathname == '/pages/label_pairs_copy':
-#         return app2.layout
-#     else:
-#         return '404'
 
 
 """
@@ -57,4 +40,4 @@ app.layout = html.Div([
 11. knopf zum pausieren und downloaden hinzufügen und implementieren
 """
 if __name__ == '__main__':
-	app.run_server(debug=True)
+    app.run_server(debug=True)

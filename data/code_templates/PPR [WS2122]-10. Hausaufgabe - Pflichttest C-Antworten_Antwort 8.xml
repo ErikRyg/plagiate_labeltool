@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 2261552  -->
+  <question type="coderunner">
+    <name>
+      <text>Struktur ArrayList</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Eure Aufgabe ist es, die Implementierung einer <strong>dynamischen Datenstruktur</strong>&nbsp; zu vervollständigen. Es handelt sich dabei um eine Arrayliste, welches im<br>Kern ein Array ist, das mit der Anzahl der Einträge <strong>wächst </strong>und <strong>schrumpft</strong>. Die Einträge selbst sollen beliebig lange Strings sein.<br>In Ihnen ist bereits eine <i>main()</i> vorgegeben, die dem Benutzer ein Menü vorgibt, sowie zusätzliche Hilfsfunktionen, die bereits benutzt werden.<br><br>Hier sehen Sie schematisch, wie sich die Datenstruktur am Beispiel einer Einkaufsliste verhält:<br><p>Einkaufsliste<br>-----------------<br>(h) - Hinzufuegen<br>(l) - Loeschen<br>(a) - Ausgeben<br>(q) - Verlassen<br><br>Auswahl: h<br>Hinzufuegen: Gurke<br><br>Auswahl: h<br>Hinzufuegen: Käse<br><br>Auswahl: h<br>Hinzufuegen: Wurst<br><br>Auswahl: a<br>Ausgabe: <br># Ware<br>0 Gurke<br>1 Käse<br>2 Wurst<br><br>Auswahl: q<br>Verlassen<br><br></p><ul><li>Orientiert euch am vorgegeben Code und implementieren Sie die Datenstruktur <strong>Arrlist</strong>. Verwendet die beiden Begriffe <strong>elems </strong>und <strong>size </strong>für eure Variablen, damit der erste Test erfolgreich durchläuft<br></li><li>Implementiert die Funktion <strong>arrlist_add()</strong>. Diese Funktion fügt am Ende der Arrayliste einen String hinzu. Dazu muss der übergebene String kopiert und das interne Array vergrößert werden.</li><li>Sie dürfen <strong>strlen(char* str)</strong> und <strong>strcpy(char* dest, char* src)</strong> aus der Standardbibliothek verwenden.</li><li>Implementiert die Funktion <strong>arrlist_del_item()</strong>. Diese soll unter anderem einen Index von dem zulöschenden Listeneintrag übergeben bekommen. Außer dem soll die Liste verkleinert werden.</li><li>Abschließend soll eine Funktion <strong>arrlist_free()</strong> implementiert werden, die die ihr übergebene Datenstruktur und beinhaltende Strings wieder freigibt. <strong>Hinweis</strong>: Ihr müsst in die Funktion - oder vor oder nach Aufruf -&nbsp; noch <i>printf("Verlassen\n");</i>&nbsp;einbauen, sonst schlagen die Tests fehl.</li><li>Achtet darauf, nicht mehr benötigten Speicherplatz freizugeben. Überprüft Pointer auf ihre Gültigkeit.<br></li></ul><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>7</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <coderunnertype>c_program</coderunnertype>
+    <prototypetype>0</prototypetype>
+    <allornothing>0</allornothing>
+    <penaltyregime>0, 0, 5, 10, 20, ...</penaltyregime>
+    <precheck>0</precheck>
+    <hidecheck>0</hidecheck>
+    <showsource>0</showsource>
+    <answerboxlines>40</answerboxlines>
+    <answerboxcolumns>100</answerboxcolumns>
+    <answerpreload><![CDATA[#include <stdlib.h> // malloc-Familie, exit()
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+/* TODO: Arrlist */
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf("# Ware\n");
+    for(int i = 0; i < al->size; i++)
+        printf("%d %s",i, al->elems[i]);
+}
+
+/* TODO: arrlist_add, arrlist_del_item und arrlist_free */
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf("Einkaufsliste\n"
+            "-----------------\n"
+            "(h) - Hinzufuegen\n"
+            "(l) - Loeschen\n"
+            "(a) - Ausgeben\n"
+            "(q) - Verlassen\n");
+
+    do{
+        printf("\nAuswahl: ");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf("Hinzufuegen: ");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf("Löschen - Nummer: ");
+                    int i = 0;
+                    scanf("%d", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf("Ausgabe: \n");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf("Unbekannte Option!");
+                break;
+        }
+    }while(1);
+
+    return(0);
+}
+]]></answerpreload>
+    <globalextra></globalextra>
+    <useace></useace>
+    <resultcolumns></resultcolumns>
+    <template><![CDATA[{# name of the function you want to parse (flexibel) #}
+{% set function_name = "main" %}
+{# parse STUDENT_ANSWER #}
+{% set text_after_function_name = STUDENT_ANSWER | split(function_name)[1] %}
+{# constants (DO NOT CHANGE) #}
+{% set occurence_of_open = 0 %}
+{% set occurence_of_close = 0 %}
+{% set function_string = "" %}
+{% set parsing_done = false %}
+{# outer loop { #}
+{% for text_till_next_opened_brace in text_after_function_name | split("{")  %}
+    {# Count how many { HAVE ALREADY occured.#}
+    {% if not loop.first %}
+        {% set occurence_of_open = occurence_of_open + 1 %}
+    {% endif %}
+    {# add { to string. First not because it has occured before first { second not, as we only want the content inside the {} #}
+    {% if not parsing_done and loop.index0 >=2%}
+        {% set function_string = function_string ~ "{" %}
+    {% endif %}
+    {# we need the information later #}
+    {% set outer_loop_first = loop.first %}
+    {# inner loop } #}
+    {% for text_till_next_closed_brace in text_till_next_opened_brace | split("}")  %}
+        {# Count how many } HAVE ALREADY occured.#}
+        {% if not loop.first %}
+            {% set occurence_of_close = occurence_of_close + 1 %}
+        {% endif %}
+        {# if this criterium holds, function is over } #}
+        {% if occurence_of_open <= occurence_of_close and occurence_of_open > 0 %}
+            {% set parsing_done = true %}
+        {% endif %}
+        {# content before and after fucntion is ignored } #}
+        {% if not parsing_done and not outer_loop_first%}
+            {# add } to string  #}
+            {% if not loop.first %}
+                {% set function_string = function_string ~ "}" %}
+            {% endif %}
+            {# add CONTENT to the string #}
+            {% set function_string = function_string ~ text_till_next_closed_brace %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+{% if "return" in function_string %}
+    {% set function_has_return = true %}
+{% else %}
+    {% set function_has_return = false %}
+{% endif %}
+
+{% if function_has_return %}
+{{ STUDENT_ANSWER | replace({'int main': 'int student_main'}) }} 
+{% else %}
+{{ STUDENT_ANSWER | replace({'int main': 'void student_main', 'void main': 'void student_main'}) }} 
+{% endif %}
+
+
+int main() {
+    {{TEST.testcode}}
+}
+
+]]></template>
+    <iscombinatortemplate></iscombinatortemplate>
+    <allowmultiplestdins></allowmultiplestdins>
+    <answer><![CDATA[#include <stdlib.h> // malloc-Familie
+#include <stdio.h>  // printf()
+#include <string.h> // strlen() strcpy()
+
+#define BUF_SIZE 100
+
+typedef struct arrlist {
+  char** elems;
+  int size;
+} Arrlist;
+
+void arrlist_init(Arrlist* al)
+{
+  al->size = 0;
+  al->elems  = NULL;
+}
+
+void arrlist_add(Arrlist* al, char* str)
+{
+  //Ueberpruefen ob al gueltig ist; wenn nicht, beenden
+  if(!al)
+    exit(-1);
+  //Listengroesse inkrementieren
+  al->size++;
+  //Speicher fuer eine Kopie des uebergebenen Strings anfordern
+  //bei fehlerhafter Allokation beenden
+  char* tmp = malloc(sizeof(char)*strlen(str));
+  if(!tmp)
+    exit(-1);
+  //uebergebenen String in neuen kopieren
+  strcpy(tmp, str);
+  //Listenarray um einen Eintrag vergroessern (re-allozieren)
+  //bei fehlerhafter Allokation beenden
+  al->elems = realloc(al->elems, sizeof(char*) * al->size);
+  if(!al->elems){
+    exit(-1);
+  }
+  //Kopierten String an das Listenarray anhaengen
+  al->elems[al->size-1] = tmp;
+}
+
+void arrlist_del_item(Arrlist* al, int index)
+{
+    /* Pointer ueberpruefen */
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    if(index >= al->size)
+        return;
+
+    /* Gesuchtes Element freigeben */
+    free(al->elems[index]);
+    /* Elemente vorruecken */
+    for(int i = index; i<(al->size-1); i++){
+        al->elems[i] = al->elems[i+1];
+    }
+    /* Frei gewordenen Element nullen */
+    al->elems[al->size-1] = NULL;
+    /* Groeße vermindern */
+    if(al->size>0)
+        al->size--;
+    /* Array verkleinern */
+    al->elems = realloc(al->elems, sizeof(char*) * al->size);
+    if(!al->elems){
+        perror("Failed to allocate memory");
+        exit(-1);
+    }
+
+}
+
+void arrlist_free(Arrlist *al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf("Verlassen\n");
+    for(int i = 0; i < al->size; i++)
+        free(al->elems[i]);
+    free(al->elems);
+}
+
+
+
+void arrlist_print(Arrlist* al)
+{
+    if(!al)
+        return;
+    if(!al->elems)
+        return;
+    printf("# Ware\n");
+    for(int i = 0; i < al->size; i++)
+        printf("%d %s",i, al->elems[i]);
+}
+
+int main(){
+    Arrlist einkaufsliste;
+    char choice = 'q';
+    char buf[BUF_SIZE];
+
+    arrlist_init(&einkaufsliste);
+    printf("Einkaufsliste\n"
+            "-----------------\n"
+            "(h) - Hinzufuegen\n"
+            "(l) - Loeschen\n"
+            "(a) - Ausgeben\n"
+            "(q) - Verlassen\n");
+
+    do{
+        printf("\nAuswahl: ");
+        choice = getchar();
+        getchar();
+        if(choice == 'q')
+            break;
+        switch(choice){
+            case 'h':
+                {
+                    printf("Hinzufuegen: ");
+                    fgets(buf, BUF_SIZE, stdin);
+                    buf[BUF_SIZE-1] = '\0';
+                    arrlist_add(&einkaufsliste, buf);
+                }
+                break;
+            case 'l':
+                {
+                    printf("Löschen - Nummer: ");
+                    int i = 0;
+                    scanf("%d", &i);
+                    getchar();
+                    arrlist_del_item(&einkaufsliste, i);
+                }
+                break;
+            case 'a':
+                printf("Ausgabe: \n");
+                arrlist_print(&einkaufsliste);
+                break;
+            default:
+                printf("Unbekannte Option!");
+                break;
+        }
+    }while(1);
+    arrlist_free(&einkaufsliste);
+    return(0);
+}
+]]></answer>
+    <validateonsave>1</validateonsave>
+    <testsplitterre></testsplitterre>
+    <language></language>
+    <acelang></acelang>
+    <sandbox></sandbox>
+    <grader>NearEqualityGrader</grader>
+    <cputimelimitsecs></cputimelimitsecs>
+    <memlimitmb></memlimitmb>
+    <sandboxparams><![CDATA[{ "compileargs": ["-std=c99"] }]]></sandboxparams>
+    <templateparams></templateparams>
+    <hoisttemplateparams>1</hoisttemplateparams>
+    <templateparamslang>twig</templateparamslang>
+    <templateparamsevalpertry>0</templateparamsevalpertry>
+    <templateparamsevald></templateparamsevald>
+    <twigall>0</twigall>
+    <uiplugin></uiplugin>
+    <uiparameters></uiparameters>
+    <attachments>0</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <maxfilesize>10240</maxfilesize>
+    <filenamesregex></filenamesregex>
+    <filenamesexplain></filenamesexplain>
+    <displayfeedback>1</displayfeedback>
+    <giveupallowed>0</giveupallowed>
+    <prototypeextra></prototypeextra>
+    <testcases>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text><![CDATA[Arrlist al;
+arrlist_init(&al);
+char name[] = "Eduard";
+al.elems = malloc(sizeof(char*));
+al.elems[0] = name;
+al.size++;
+printf("Name = %s; Größe = %i", al.elems[0], al.size);]]></text>
+      </testcode>
+      <stdin>
+                <text></text>
+      </stdin>
+      <expected>
+                <text>Name = Eduard; Größe = 1
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>student_main();</text>
+      </testcode>
+      <stdin>
+                <text>h
+Gurke
+X
+H
+h
+Kaese
+h
+Wurst
+a
+l
+1
+a
+q</text>
+      </stdin>
+      <expected>
+                <text>Einkaufsliste
+-----------------
+(h) - Hinzufuegen
+(l) - Loeschen
+(a) - Ausgeben
+(q) - Verlassen
+
+Auswahl: Hinzufuegen:
+Auswahl: Unbekannte Option!
+Auswahl: Unbekannte Option!
+Auswahl: Hinzufuegen:
+Auswahl: Hinzufuegen:
+Auswahl: Ausgabe:
+# Ware
+0 Gurke
+1 Kaese
+2 Wurst
+
+Auswahl: Löschen - Nummer:
+Auswahl: Ausgabe:
+# Ware
+0 Gurke
+1 Wurst
+
+Auswahl: Verlassen
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>student_main();</text>
+      </testcode>
+      <stdin>
+                <text>h
+Orangen
+A
+h
+Wodka
+h
+Orangenpresse
+h
+Energydrink
+a
+l
+2
+a
+q
+</text>
+      </stdin>
+      <expected>
+                <text>Einkaufsliste
+-----------------
+(h) - Hinzufuegen
+(l) - Loeschen
+(a) - Ausgeben
+(q) - Verlassen
+
+Auswahl: Hinzufuegen:
+Auswahl: Unbekannte Option!
+Auswahl: Hinzufuegen:
+Auswahl: Hinzufuegen:
+Auswahl: Hinzufuegen:
+Auswahl: Ausgabe:
+# Ware
+0 Orangen
+1 Wodka
+2 Orangenpresse
+3 Energydrink
+
+Auswahl: Löschen - Nummer:
+Auswahl: Ausgabe:
+# Ware
+0 Orangen
+1 Wodka
+2 Energydrink
+
+Auswahl: Verlassen
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+    </testcases>
+  </question>
+
+</quiz>

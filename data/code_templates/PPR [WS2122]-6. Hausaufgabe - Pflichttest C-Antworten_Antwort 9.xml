@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 2260655  -->
+  <question type="coderunner">
+    <name>
+      <text>Ersetze if/switch</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Das folgende Programm gibt dem/der BenutzerIn verschiedene Optionen zur Auswahl -- also eine Art Menü, aus dem man einzelne Funktionen aufruft. <br><br>Das Programm funktioniert so wie gegeben, der Code für die Auswahl ginge aber auch ein klein bisschen kompakter mit einem <b>switch</b>-Konstrukt. Ersetzt das <b>if</b>-Konstrukt entsprechend. Die Funktionalität soll sich dadurch nicht verändern.<br></p><p><span class="" style="color: rgb(255, 207, 53);">Hinweis</span>: Ihr dürft keine main-Funktion in eurer Lösung haben, da euch sonst ein Syntaxfehler angezeigt wird. Beim Testen wird eine (für euch) versteckte main erstellt, die eure Funktion menue() aufruft und testet.<br><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <coderunnertype>c_function</coderunnertype>
+    <prototypetype>0</prototypetype>
+    <allornothing>0</allornothing>
+    <penaltyregime>0, 0, 5, 10, 20, ...</penaltyregime>
+    <precheck>0</precheck>
+    <hidecheck>0</hidecheck>
+    <showsource>0</showsource>
+    <answerboxlines>18</answerboxlines>
+    <answerboxcolumns>100</answerboxcolumns>
+    <answerpreload><![CDATA[#include <stdio.h>
+
+void menue()
+{
+    printf("Bitte auswaehlen...\n"
+           "\tPPR ist [t]oll\n"
+           "\tPPR [s]tinkt mir\n"
+           "\tPPR, Flasche [l]eer.\n\n");
+    char eingabe = getchar();
+    getchar(); // "enter" aus dem Tastaturpuffer entfernen
+    if(eingabe == 't')
+    {
+        printf("Wir moegen dich auch.\n");
+    }
+    else if(eingabe == 's')
+    {
+        printf("Hauptsache wir stinken geruchstechnisch nicht.\n");
+    }
+    else if(eingabe == 'l')
+    {
+        printf("Giovanni, lernst du Programmieren?\n");
+    }
+    else
+    {
+        printf("Das stand gar nicht zur Auswahl. Auf wiedersehen.\n");
+    }
+}
+]]></answerpreload>
+    <globalextra></globalextra>
+    <useace></useace>
+    <resultcolumns></resultcolumns>
+    <template><![CDATA[#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include <stdbool.h>
+#include <math.h>
+#define SEPARATOR "#<ab@17943918#@>#"
+
+{{ STUDENT_ANSWER }}
+
+int main() {
+    
+
+
+{% if 'if' in STUDENT_ANSWER %}
+printf("ERROR. Do not use IF");
+return 0;
+{% endif %}
+{% for TEST in TESTCASES %}
+   {
+    {{ TEST.testcode }};
+   }
+    {% if not loop.last %}printf("%s\n", SEPARATOR);{% endif %}
+{% endfor %}
+    return 0;
+}
+]]></template>
+    <iscombinatortemplate></iscombinatortemplate>
+    <allowmultiplestdins></allowmultiplestdins>
+    <answer><![CDATA[#include <stdio.h>
+
+void menue()
+{
+    printf("Bitte auswaehlen...\n"
+           "\tPPR ist [t]oll\n"
+           "\tPPR [s]tinkt mir\n"
+           "\tPPR, Flasche [l]eer.\n\n");
+    char eingabe = getchar();
+    getchar(); // "enter" aus dem Tastaturpuffer entfernen
+    switch (eingabe)
+    {
+        case 't':
+            printf("Wir moegen dich auch.\n");
+            break;
+        case 's':
+            printf("Hauptsache wir stinken geruchstechnisch nicht.\n");
+            break;
+        case 'l':
+            printf("Giovanni, lernst du Programmieren?\n");
+            break;
+        default:
+            printf("Das stand gar nicht zur Auswahl. Auf wiedersehen.\n");
+            eingabe = 0;
+    }
+}]]></answer>
+    <validateonsave>1</validateonsave>
+    <testsplitterre></testsplitterre>
+    <language></language>
+    <acelang></acelang>
+    <sandbox></sandbox>
+    <grader></grader>
+    <cputimelimitsecs></cputimelimitsecs>
+    <memlimitmb></memlimitmb>
+    <sandboxparams><![CDATA[{ "compileargs": ["-std=c99"] }]]></sandboxparams>
+    <templateparams></templateparams>
+    <hoisttemplateparams>1</hoisttemplateparams>
+    <templateparamslang>twig</templateparamslang>
+    <templateparamsevalpertry>0</templateparamsevalpertry>
+    <templateparamsevald></templateparamsevald>
+    <twigall>0</twigall>
+    <uiplugin></uiplugin>
+    <uiparameters></uiparameters>
+    <attachments>0</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <maxfilesize>10240</maxfilesize>
+    <filenamesregex></filenamesregex>
+    <filenamesexplain></filenamesexplain>
+    <displayfeedback>1</displayfeedback>
+    <giveupallowed>0</giveupallowed>
+    <prototypeextra></prototypeextra>
+    <testcases>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>menue()</text>
+      </testcode>
+      <stdin>
+                <text>t</text>
+      </stdin>
+      <expected>
+                <text>Bitte auswaehlen...
+\tPPR ist [t]oll
+\tPPR [s]tinkt mir
+\tPPR, Flasche [l]eer.
+
+Wir moegen dich auch.
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>menue()</text>
+      </testcode>
+      <stdin>
+                <text>s</text>
+      </stdin>
+      <expected>
+                <text>Bitte auswaehlen...
+\tPPR ist [t]oll
+\tPPR [s]tinkt mir
+\tPPR, Flasche [l]eer.
+
+Hauptsache wir stinken geruchstechnisch nicht.
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>menue()</text>
+      </testcode>
+      <stdin>
+                <text>l</text>
+      </stdin>
+      <expected>
+                <text>Bitte auswaehlen...
+\tPPR ist [t]oll
+\tPPR [s]tinkt mir
+\tPPR, Flasche [l]eer.
+
+Giovanni, lernst du Programmieren?
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>menue()</text>
+      </testcode>
+      <stdin>
+                <text>a</text>
+      </stdin>
+      <expected>
+                <text>Bitte auswaehlen...
+\tPPR ist [t]oll
+\tPPR [s]tinkt mir
+\tPPR, Flasche [l]eer.
+
+Das stand gar nicht zur Auswahl. Auf wiedersehen.
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+    </testcases>
+  </question>
+
+</quiz>

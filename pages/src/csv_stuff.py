@@ -83,7 +83,7 @@ def get_new_pair(df_labled, last_task, last_id):
     if next.empty:
         if last_id != 0:
             return get_new_pair(df_labled, last_task, 0)
-        print('no unlabled pair')
+        # print('no unlabled pair')
         return None
     index = df_labled.iloc[last_id:].loc[df_labled['label'] == -1].index[0]
     next = next.values[0]
@@ -92,6 +92,8 @@ def get_new_pair(df_labled, last_task, last_id):
     if last_task != next[2]:
         answerpreload = get_given_code(
             f'./data/code_templates/PPR [{next[0]}]-{next[1]}. Hausaufgabe - Pflichttest {next[3]}-Antworten_{next[2]}.xml')
+        if answerpreload == "":
+            answerpreload = "Keine Vorgabe"
     return next[8], next[9], answerpreload, next[4], next[6], str(index), next[2]
 
 
@@ -102,8 +104,8 @@ def set_label(df_labled, last_id, label_score, labled_pairs):
         # print(already_labled)
         if not already_labled:
             labled_pairs += 1
-        print(last_id)
-        print(df_labled[['surname1', 'surname2', 'label']].head(4))
+        # print(last_id)
+        # print(df_labled[['surname1', 'surname2', 'label']].head(4))
         return True, labled_pairs, df_labled
     except:
         print(

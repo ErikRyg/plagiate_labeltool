@@ -16,7 +16,7 @@
 - Media Queries
 */
 
-/* PLotly.js 
+/* PLotly.js
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* plotly.js's modebar's z-index is 1001 by default
  * https://github.com/plotly/plotly.js/blob/7e4d8ab164258f6bd48be56589dacd9bdd7fded2/src/css/_modebar.scss#L5
@@ -126,7 +126,7 @@
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; 
+  font-size: 62.5%;
   padding: 30px;
 }
 body {
@@ -168,7 +168,7 @@ blockquote {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; 
+  color: #1EAEDB;
   text-decoration: underline;
   cursor: pointer;}
 a:hover {
@@ -252,7 +252,7 @@ select {
   border: 1px solid #D1D1D1;
   border-radius: 4px;
   box-shadow: none;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   font-family: inherit;
   font-size: inherit; /*https://stackoverflow.com/questions/6080413/why-doesnt-input-inherit-the-font-from-body*/}
 /* Removes awkward default styles on some inputs for iOS */
@@ -400,7 +400,7 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
- 
+
 
 /* Larger than mobile */
 @media (min-width: 400px) {}
@@ -416,4 +416,4 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
-	
+

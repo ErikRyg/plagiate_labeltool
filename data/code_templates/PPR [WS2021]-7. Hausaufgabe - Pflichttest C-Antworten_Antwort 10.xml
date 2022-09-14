@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 2332115  -->
+  <question type="coderunner">
+    <name>
+      <text>Verschachtelte while-Schleifen und if-else</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Implementiert eine vereinfachte und umgedrehte Version des Bachet’schen Spiels zwischen 2 Spielern. <br>Die Spielregeln sind die folgenden:<ul><li>Die Gesamtsumme des Spiels beträgt am Anfang 100.</li><li>Beginnend mit Spieler 1, wählen beide Spieler abwechselnd eine Zahl zwischen 1 und 10.</li><li>Die von den Spielern gewählten Zahlen werden stets von der Gesamtsumme subtrahiert.</li><li>Gewonnen hat der Spieler, dessen subtrahierte Zahl die Gesamtsumme <strong>auf null</strong> oder darunter sinken lässt.</li></ul><p>Dabei sind folgende Sachen zu beachten:<br></p><ul><li>Zunächst sollen die beiden Spieler aufgefordert werden, ein Kürzel (einen Buchstaben) einzugeben. Danach sollen beide Spieler stets mit ihrem Kürzel angesprochen werden (z.B. wenn ein Spieler aufgefordert wird, eine Zahl einzugeben).<br></li><li>Wenn ein Spieler eine ungültige Zahl eingibt, soll er solange aufgefordert werden, erneut eine Zahl einzugeben, bis er eine gültige Zahl eingibt. <br></li><li>Nachdem eine gültige Zahl eingegeben wurde, soll jedes Mal auf der Konsole die aktuelle Zwischensumme ausgegeben werden.</li><li>Am Ende soll der Spieler, der gewonnen hat, darüber mit einem <strong>persönlichen</strong> Glückwunsch informiert werden. </li></ul><p>Orientiert euch dabei an der Beispielausgabe: </p><div style="margin-left: 30px;" class="editor-indent">ivo@lubi:~/projekteHD/ppr/inftech/aufgabendb/gamc/Loesung$ ./game<br>Kuerzel von Spieler 1 eingeben (ein Buchstabe): I<br>Kuerzel von Spieler 2 eingeben (ein Buchstabe): L<br>I, bitte eine Zahl zwischen 1 und 10 eingeben: 10<br>Aktuelle Summe: 90<br>L, bitte eine Zahl zwischen 1 und 10 eingeben: 10<br>Aktuelle Summe: 80<br>I, bitte eine Zahl zwischen 1 und 10 eingeben: 10<br>Aktuelle Summe: 70<br>L, bitte eine Zahl zwischen 1 und 10 eingeben: 10<br>Aktuelle Summe: 60<br>I, bitte eine Zahl zwischen 1 und 10 eingeben: 10<br>Aktuelle Summe: 50<br>L, bitte eine Zahl zwischen 1 und 10 eingeben: 10<br>Aktuelle Summe: 40<br>I, bitte eine Zahl zwischen 1 und 10 eingeben: 10<br>Aktuelle Summe: 30<br>L, bitte eine Zahl zwischen 1 und 10 eingeben: 10<br>Aktuelle Summe: 20<br>I, bitte eine Zahl zwischen 1 und 10 eingeben: 5<br>Aktuelle Summe: 15<br>L, bitte eine Zahl zwischen 1 und 10 eingeben: 2<br>Aktuelle Summe: 13<br>I, bitte eine Zahl zwischen 1 und 10 eingeben: 2<br>Aktuelle Summe: 11<br>L, bitte eine Zahl zwischen 1 und 10 eingeben: 11<br>Fehlerhafte Zahl. Bitte erneut eine Zahl eingeben: -1<br>Fehlerhafte Zahl. Bitte erneut eine Zahl eingeben: 1<br>Aktuelle Summe: 10<br>I, bitte eine Zahl zwischen 1 und 10 eingeben: 10<br>Aktuelle Summe: 0<br>Herzlichen Glückwunsch I. Du hast gewonnen!<br>ivo@lubi:~/projekteHD/ppr/inftech/aufgabendb/gamc/Loesung$<br></div><br><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <coderunnertype>c_program</coderunnertype>
+    <prototypetype>0</prototypetype>
+    <allornothing>0</allornothing>
+    <penaltyregime>0, 0, 5, 10, 20, ...</penaltyregime>
+    <precheck>0</precheck>
+    <hidecheck>0</hidecheck>
+    <showsource>0</showsource>
+    <answerboxlines>40</answerboxlines>
+    <answerboxcolumns>100</answerboxcolumns>
+    <answerpreload></answerpreload>
+    <globalextra></globalextra>
+    <useace></useace>
+    <resultcolumns></resultcolumns>
+    <template></template>
+    <iscombinatortemplate></iscombinatortemplate>
+    <allowmultiplestdins></allowmultiplestdins>
+    <answer><![CDATA[#include <stdio.h>
+
+int main()
+{
+   int gesamtsumme = 100;
+   int eingabe = 0;
+   unsigned char spieler1Dran = 1;
+ 
+   printf("Kuerzel von Spieler 1 eingeben (ein Buchstabe): ");
+   char spieler1Kuerzel = getchar();
+   getchar(); // Enter aus dem Tastaturpuffer entfernen
+   printf("Kuerzel von Spieler 2 eingeben (ein Buchstabe): ");
+   char spieler2Kuerzel = getchar();
+   getchar(); // Enter aus dem Tastaturpuffer entfernen
+
+   // Spiel laeuft so lange, bis gesamtsumme <= 0 ist.
+   while (gesamtsumme > 0)
+   {
+      // Personalisierte Eingabeaufforderung fuer Zahl
+      if(spieler1Dran){
+         printf("%c", spieler1Kuerzel);
+      }else{
+         printf("%c", spieler2Kuerzel);
+      }
+      printf(", bitte eine Zahl zwischen 1 und 10 eingeben: ");
+      scanf("%i", &eingabe);
+   
+      // Solange die Eingabe inkorrekt ist auffordern neue Zahl einzugeben
+      while(eingabe < 1 || eingabe > 10){
+         printf("Fehlerhafte Zahl. Bitte erneut eine Zahl eingeben: ");
+         scanf("%i", &eingabe);
+      }
+   
+      // Eingabe von der Gesamtsumme abziehen
+      gesamtsumme = gesamtsumme - eingabe;
+      printf("Aktuelle Summe: %i\n", gesamtsumme);
+   
+      // Spielerwechsel
+      spieler1Dran = !spieler1Dran;
+   }
+   // Gesamtsumme ist nun kleiner oder gleich 0.
+   
+   if(spieler1Dran){
+         printf("Herzlichen Glückwunsch %c. Du hast gewonnen!\n", spieler2Kuerzel);
+   }else{
+         printf("Herzlichen Glückwunsch %c. Du hast gewonnen!\n", spieler1Kuerzel);
+   }
+}
+]]></answer>
+    <validateonsave>1</validateonsave>
+    <testsplitterre></testsplitterre>
+    <language></language>
+    <acelang></acelang>
+    <sandbox></sandbox>
+    <grader>NearEqualityGrader</grader>
+    <cputimelimitsecs></cputimelimitsecs>
+    <memlimitmb></memlimitmb>
+    <sandboxparams><![CDATA[{ "compileargs": ["-std=c99"] }]]></sandboxparams>
+    <templateparams></templateparams>
+    <hoisttemplateparams>1</hoisttemplateparams>
+    <templateparamslang>twig</templateparamslang>
+    <templateparamsevalpertry>0</templateparamsevalpertry>
+    <templateparamsevald></templateparamsevald>
+    <twigall>0</twigall>
+    <uiplugin></uiplugin>
+    <uiparameters></uiparameters>
+    <attachments>0</attachments>
+    <attachmentsrequired>0</attachmentsrequired>
+    <maxfilesize>10240</maxfilesize>
+    <filenamesregex></filenamesregex>
+    <filenamesexplain></filenamesexplain>
+    <displayfeedback>1</displayfeedback>
+    <giveupallowed>0</giveupallowed>
+    <prototypeextra></prototypeextra>
+    <testcases>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>Test 1: Normaler Spielverlauf; Spieler 1 gewinnt</text>
+      </testcode>
+      <stdin>
+                <text>E
+L
+10
+9
+10
+10
+10
+10
+10
+10
+10
+10
+5</text>
+      </stdin>
+      <expected>
+                <text>Kuerzel von Spieler 1 eingeben (ein Buchstabe): Kuerzel von Spieler 2 eingeben (ein Buchstabe): E, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 90
+L, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 81
+E, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 71
+L, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 61
+E, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 51
+L, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 41
+E, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 31
+L, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 21
+E, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 11
+L, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 1
+E, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: -4
+Herzlichen Glückwunsch E. Du hast gewonnen!
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="1" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>2. Test: Spieler gibt ungültige Werte ein; Spieler 2 gewinnt</text>
+      </testcode>
+      <stdin>
+                <text>M
+S
+10
+10
+10
+10
+10
+10
+-1
+42
+10
+10
+10
+10
+10
+10
+</text>
+      </stdin>
+      <expected>
+                <text>Kuerzel von Spieler 1 eingeben (ein Buchstabe): Kuerzel von Spieler 2 eingeben (ein Buchstabe): M, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 90
+S, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 80
+M, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 70
+S, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 60
+M, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 50
+S, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 40
+M, bitte eine Zahl zwischen 1 und 10 eingeben: Fehlerhafte Zahl. Bitte erneut eine Zahl eingeben: Fehlerhafte Zahl. Bitte erneut eine Zahl eingeben: Aktuelle Summe: 30
+S, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 20
+M, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 10
+S, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 0
+Herzlichen Glückwunsch S. Du hast gewonnen!
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>SHOW</text>
+      </display>
+    </testcase>
+      <testcase testtype="0" useasexample="0" hiderestiffail="0" mark="1.0000000" >
+      <testcode>
+                <text>3. Test: Beide Spieler geben ungültige Werte ein; Spieler 2 gewinnt</text>
+      </testcode>
+      <stdin>
+                <text>P
+J
+10
+10
+10
+10
+10
+10
+10
+10
+-1
+42
+10
+-2
+43
+10
+</text>
+      </stdin>
+      <expected>
+                <text>Kuerzel von Spieler 1 eingeben (ein Buchstabe): Kuerzel von Spieler 2 eingeben (ein Buchstabe): P, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 90
+J, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 80
+P, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 70
+J, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 60
+P, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 50
+J, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 40
+P, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 30
+J, bitte eine Zahl zwischen 1 und 10 eingeben: Aktuelle Summe: 20
+P, bitte eine Zahl zwischen 1 und 10 eingeben: Fehlerhafte Zahl. Bitte erneut eine Zahl eingeben: Fehlerhafte Zahl. Bitte erneut eine Zahl eingeben: Aktuelle Summe: 10
+J, bitte eine Zahl zwischen 1 und 10 eingeben: Fehlerhafte Zahl. Bitte erneut eine Zahl eingeben: Fehlerhafte Zahl. Bitte erneut eine Zahl eingeben: Aktuelle Summe: 0
+Herzlichen Glückwunsch J. Du hast gewonnen!
+</text>
+      </expected>
+      <extra>
+                <text></text>
+      </extra>
+      <display>
+                <text>HIDE_IF_SUCCEED</text>
+      </display>
+    </testcase>
+    </testcases>
+  </question>
+
+</quiz>
