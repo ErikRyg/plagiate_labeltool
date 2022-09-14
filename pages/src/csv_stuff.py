@@ -21,10 +21,13 @@ def create_labled_table(df, semester, ha, tasks, prog_language):
 
 
 def get_given_code(file):
-    with open(file) as xmlstr:
-        soup = BeautifulSoup(xmlstr, 'xml')
-        answerpreload = soup.find('answerpreload').text
-        return answerpreload
+    try:
+        with open(file) as xmlstr:
+            soup = BeautifulSoup(xmlstr, 'xml')
+            answerpreload = soup.find('answerpreload').text
+            return answerpreload
+    except FileNotFoundError:
+        return "Keine Vorgabedatei im Repo gefunden"
 
 
 """
@@ -94,7 +97,7 @@ def get_new_pair(df_labled, last_task, last_id):
             f'./data/code_templates/PPR [{next[0]}]-{next[1]}. Hausaufgabe - Pflichttest {next[3]}-Antworten_{next[2]}.xml')
         if answerpreload == "":
             answerpreload = "Keine Vorgabe"
-    return next[8], next[9], answerpreload, next[4], next[6], str(index), next[2]
+    return next[8], next[9], answerpreload, str(index), next[2]
 
 
 def set_label(df_labled, last_id, label_score, labled_pairs):

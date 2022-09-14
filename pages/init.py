@@ -23,7 +23,7 @@ dict_tasks = {'Aufgabe 7': 'Antwort 7',
               'Aufgabe 10': 'Antwort 10',
               'Aufgabe 11': 'Antwort 11',
               }
-list_has = [str(x) for x in range(5, 11)]
+list_has = [str(x) for x in range(6, 11)]
 
 navbar = dbc.Navbar(
     [

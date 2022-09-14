@@ -41,9 +41,9 @@ layout = html.Div([
                                     className="title_container")
                         ]),
                         dbc.Row([
-                            dbc.Col(html.H5('Code 1', id='caption1'), md=4,
+                            dbc.Col(html.H5('Code 1'), md=4,
                                     className="title_container"),
-                            dbc.Col(html.H5('Code 2', id='caption2'), md=4,
+                            dbc.Col(html.H5('Code 2'), md=4,
                                     className="title_container"),
                             dbc.Col(html.H5('Vorgabe'), md=3,
                                     className="title_container"),
@@ -92,12 +92,12 @@ layout = html.Div([
                         dbc.Row([
                             # dbc.Col(html.Button('vorheriges Paar', id='previous',
                             #         n_clicks=0), md=4, className="button", width={"offset": 1}),
-                            dbc.Col(html.Button('Download [...]_labled.csv', id='download',
+                            dbc.Col(dbc.Button('Download [...]_labled.csv', id='download',
                                     n_clicks=0), md=4, className="button_do", width={"offset": 1}),
                             dcc.Download(id="download-text"),
-                            dbc.Col(html.Button(
+                            dbc.Col(dbc.Button(
                                 'bewerten und weiter', id='done_next', n_clicks=0), md=4, className="button"),
-                            dbc.Col(html.Button('überspringen', id='next',
+                            dbc.Col(dbc.Button('überspringen', id='next',
                                     n_clicks=0), md=3, className="button"),
                         ]),
                         ],
@@ -116,8 +116,6 @@ layout = html.Div([
     Output('textarea1', 'value'),
     Output('textarea2', 'value'),
     Output('textarea3', 'value'),
-    Output('caption1', 'children'),
-    Output('caption2', 'children'),
     Output('labled_pairs_string', 'children'),
     Output('st_labled_pairs', 'data'),
     Output('st_df_labled_len', 'data'),
@@ -127,7 +125,7 @@ layout = html.Div([
     # Input('previous', 'n_clicks'),
     Input('done_next', 'n_clicks'),
     Input('next', 'n_clicks'),
-    Input('score', 'value'),
+    State('score', 'value'),
     State('st_df_labled_len', 'data'),
     State('st_df_labled', 'data'),
     State('st_labled_pairs', 'data'),
@@ -161,7 +159,7 @@ def button_pressed(done_clicks, next_clicks, label, st_df_labled_len, st_df_labl
             df_labled_len = len(given_csv)
             labled_pairs = csv_stuff.count_labled(df_labled)
         rt = get_new_pair_routine(df_labled, 0, "")
-        return rt[0], rt[1], rt[2], rt[3], rt[4], f'{labled_pairs}/{df_labled_len} Paaren', dumps(labled_pairs), dumps(df_labled_len), df_labled.to_json(date_format='iso', orient='split'), dumps(rt[5]), dumps(rt[6])
+        return rt[0], rt[1], rt[2], f'{labled_pairs}/{df_labled_len} Paaren', dumps(labled_pairs), dumps(df_labled_len), df_labled.to_json(date_format='iso', orient='split'), dumps(rt[3]), dumps(rt[4])
     df_labled = pd.read_json(st_df_labled, orient='split')
     # print((st_semester, st_ha, st_tasks, st_prog_language))
     # print((st_last_id, st_last_task, len(st_df_labled)))
@@ -176,10 +174,10 @@ def button_pressed(done_clicks, next_clicks, label, st_df_labled_len, st_df_labl
         if not valid_set:
             raise dash.exceptions.PreventUpdate
         rt = get_new_pair_routine(df_labled, last_id+1, last_task)
-        return rt[0], rt[1], rt[2], rt[3], rt[4], f'{labled_pairs}/{df_labled_len} Paaren', dumps(labled_pairs), dash.no_update, df_labled.to_json(date_format='iso', orient='split'), dumps(rt[5]), dumps(rt[6])
+        return rt[0], rt[1], rt[2], f'{labled_pairs}/{df_labled_len} Paaren', dumps(labled_pairs), dash.no_update, df_labled.to_json(date_format='iso', orient='split'), dumps(rt[3]), dumps(rt[4])
     elif ctx.triggered_id == 'next':
         rt = get_new_pair_routine(df_labled, last_id+1, last_task)
-        return rt[0], rt[1], rt[2], rt[3], rt[4], dash.no_update, dash.no_update, dash.no_update, dash.no_update, dumps(rt[5]), dumps(rt[6])
+        return rt[0], rt[1], rt[2], dash.no_update, dash.no_update, dash.no_update, dash.no_update, dumps(rt[3]), dumps(rt[4])
     # elif ctx.triggered_id == 'previous':
     #     return get_new_pair_routine(df_labled)
     else:
@@ -190,12 +188,12 @@ def get_new_pair_routine(df_labled, last_id, last_task):
     next = csv_stuff.get_new_pair(df_labled, last_task, last_id)
     # print(f'last id in get_new_pair_routine: {last_id}')
     if next == None:
-        return '', '', '', 'Niemandes Code', 'Niemandes Code', last_id, last_task
-    last_id = next[5]
+        return '', '', '', last_id, last_task
+    last_id = next[3]
     if next[2] == None:
-        return next[0], next[1], dash.no_update, next[3], next[4], last_id, last_task
-    last_task = next[6]
-    return next[0], next[1], next[2], next[3], next[4], last_id, last_task
+        return next[0], next[1], dash.no_update, last_id, last_task
+    last_task = next[4]
+    return next[0], next[1], next[2], last_id, last_task
 
 
 @callback(
@@ -226,18 +224,6 @@ def print_retry_message(st_semester, st_ha, st_tasks, st_prog_language):
         return dash.no_update
 
 
-# how does the initial start works; every input sensitive callback starts??
-# --> if clicked == None: raise dash.exceptions.PreventUpdate or
-# --> prevent_initial_call=True
-"""
-- download text in csv umwandeln
-- globale variablen ersetzen, da gefährlich (https://dash.plotly.com/sharing-data-between-callbacks)
-- Datenanbindung an richtige Daten
-- vermutlich die textviews noch scorralbe machen für lange aufgaben
-- code muss schön aussehen (tabs etc angezeigt werden)
-(- syntax highliting wäre natürlich super, aber evtl. Doch sehr schwierig und zeitaufwändig)
-- auf bspw. Heroku deployen, sodass andere Personen (Tobias, Paula, ..) direkt darauf zugreifen können
-"""
 # checked
 # 1. erfolgreichen match hinbekommen
 # 2. empty_solution_matrix richtig setzen
@@ -260,6 +246,7 @@ def print_retry_message(st_semester, st_ha, st_tasks, st_prog_language):
 # TODO (11. liste für nicht gelabelte ids hinzufügen)
 # TODO 14. back end für halbgelabelte csv im drag&drop realisieren
 # TODO 15. loading state für page lable_pairs hinzufügen
+# TODO 16. hover field für die Aufgabenstellung hinzufügen hinzufügen
 # TODO checken weshalb nur 12/13 leere abgaben bei antwort 10 gefunden wurden
 # TODO double linked list, für die id schreiben, um prev und next button zu realisieren
 # only needed if running single page dash app instead

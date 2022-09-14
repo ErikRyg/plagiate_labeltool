@@ -25,20 +25,5 @@ app.layout = html.Div([
 ])
 
 
-"""
-0.1 index datei löschen und nur noch mit app.py arbeiten *check*
-0.2 knopf für sprache und knopf zum von vorne anfangen hinzufügen *okay*
-1. start knopf drücken und seite wechseln
-2. gesetzte parameter der neuen seite übergeben
-3. parameter erhalten
-4. dateien einlesen
-5. nur gewünschte tabelle lesen
-6. paare zählen
-(7. leere dateien komplett weglassen)
-8. ein paar anzeigen lassen
-9. label knopf implementieren
-10. gelabeltes paar in ein dataframe hinzufügen
-11. knopf zum pausieren und downloaden hinzufügen und implementieren
-"""
 if __name__ == '__main__':
     app.run_server(debug=True)
