@@ -138,6 +138,8 @@ def start_button_pressed(n_clicks, semester, ha, tasks, prog_language, labled_cs
                     io.StringIO(labled_csv.decode('utf-8')))
                 # print(type(labled_csv.head(3)))
                 # print(labled_csv.head(3))
+                # print((dumps(semester), dumps(ha), dumps(tasks),
+                #       dumps(prog_language), labled_csv.head(3)))
                 return dumps(semester), dumps(ha), dumps(tasks), dumps(prog_language), labled_csv.to_json(date_format='iso', orient='split')
         except Exception as e:
             print(e)
@@ -151,4 +153,7 @@ def start_button_pressed(n_clicks, semester, ha, tasks, prog_language, labled_cs
     Output('upload_text', 'children'),
     Input('upload_data', 'filename'), prevent_initial_call=True)
 def react_on_uploaded_data(filename):
-    return ['Es wurde die Datei "', html.B(filename), '" hochgeladen. ', html.B('Achten Sie darauf'), ', dass die gewählten Optionen mit der Datei übereinstimmen!']
+    if 'csv' in filename:
+        return ['Es wurde die Datei "', html.B(filename), '" hochgeladen. ', html.B('Achten Sie darauf'), ', dass die gewählten Optionen mit der Datei übereinstimmen!']
+    else:
+        return ['Die Datei "', html.B(filename), '" ist ', html.B('keine'), ' csv Datei. Bitte lade eine bereits erstellte csv Datei hoch!']
