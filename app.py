@@ -22,7 +22,7 @@ app.layout = html.Div([
     dcc.Store(id='st_df_labled'),
     # dcc.Store(id='st_df_labled_tmp'),
     dcc.Store(id='st_given_csv'),
-])
+], style={'overflow-x': 'auto', 'overflow-y': 'auto'})
 
 
 if __name__ == '__main__':

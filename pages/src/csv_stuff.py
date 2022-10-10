@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 def create_labled_table(df, semester, ha, tasks, prog_language):
     df_labled = pd.DataFrame(columns=['semester', 'ha', 'task', 'prog_lang',
                              'surname1', 'lastname1', 'surname2', 'lastname2', 'code1', 'code2', 'label', 'hand_labled'])
-    df_labled.index.name = 'index'
+    # df_labled.index.name = 'index'
     for task in tasks:
         i = 0
         for ln1, sn1, code1 in df.loc[df[f'{task} empty'] == 0][['Nachname', 'Vorname', task]].values:
