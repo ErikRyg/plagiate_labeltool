@@ -7,7 +7,8 @@ GLOBAL_MARGIN_BOTTOMLARGE = {'l': 60, 'b': 100, 't': 10, 'r': 10}
 GLOBAL_MARKER_SIZE = 7
 GLOBAL_TEMPLATE = "plotly_white"
 
-external_stylesheets = [dbc.themes.CERULEAN]
+external_stylesheets = [dbc.themes.CERULEAN,
+                        '/assets/panda-syntax-dark.min.css']
 app = dash.Dash(__name__, use_pages=True, suppress_callback_exceptions=True,
                 external_stylesheets=external_stylesheets)
 server = app.server

@@ -49,7 +49,7 @@ layout = html.Div([
                         dbc.Col(html.H5(html.Details(children=[
                             html.Summary('Vorgabe'),
                             dcc.Loading(
-                                children=dcc.Textarea(
+                                children=dcc.Markdown(
                                     id='textarea3',
                                     style={'width': '100%', 'height': 300}
                                 ),
@@ -64,24 +64,23 @@ layout = html.Div([
                         dbc.Col(html.H5(
                             id='labled_pairs_string'), md=1, className="title_container"),
                     ]),
-                    # TODO use prettify
                     dbc.Row([
                         dbc.Col(dcc.Loading(
-                            children=dcc.Textarea(
+                            children=dcc.Markdown(
                                 id='textarea1',
                                 style={
-                                    'width': '100%', 'height': 600, 'font-size': '20px'},
+                                    'width': '100%', 'height': 600, 'font-size': '20px', 'overflow-x': 'auto', 'overflow-y': 'auto'},
                             ),
                             type="circle",
-                        )),
+                        ), md=6),
                         dbc.Col(dcc.Loading(
-                            children=dcc.Textarea(
+                            children=dcc.Markdown(
                                 id='textarea2',
                                 style={'width': '100%', 'height': 600,
-                                       'font-size': '20px'},
+                                       'font-size': '20px', 'overflow-x': 'auto', 'overflow-y': 'auto'},
                             ),
                             type="circle",
-                        )),
+                        ), md=6),
                     ]),
                     dbc.Row([
                         dbc.Col(html.Div(id='answer_1'), md=6,
@@ -120,9 +119,9 @@ layout = html.Div([
 
 
 @ callback(
-    Output('textarea1', 'value'),
-    Output('textarea2', 'value'),
-    Output('textarea3', 'value'),
+    Output('textarea1', 'children'),
+    Output('textarea2', 'children'),
+    Output('textarea3', 'children'),
     Output('aufgabenstellung', 'srcDoc'),
     Output('labled_pairs_string', 'children'),
     Output('score', 'value'),
@@ -162,10 +161,12 @@ def button_pressed(done_clicks, next_clicks, label, st_df_labled_len, st_df_labl
             df_labled_len = len(df_labled)
             labled_pairs = csv_stuff.count_labled(df_labled)
         rt = get_new_pair_routine(df_labled, 0, "")
-        return rt[0], rt[1], rt[2], rt[3], f'{labled_pairs}/{df_labled_len} Paaren', rt[4], dumps(labled_pairs), dumps(df_labled_len), df_labled.to_json(date_format='iso', orient='split'), dumps(rt[5]), dumps(rt[6])
+        prog_language = loads(st_prog_language).lower()
+        return f'```{prog_language}\n' + rt[0], f'```{prog_language}\n' + rt[1], f'```{prog_language}\n' + rt[2], rt[3], f'{labled_pairs}/{df_labled_len} Paaren', rt[4], dumps(labled_pairs), dumps(df_labled_len), df_labled.to_json(date_format='iso', orient='split'), dumps(rt[5]), dumps(rt[6])
     df_labled = pd.read_json(st_df_labled, orient='split')
     last_id = int(loads(st_last_id))
     last_task = loads(st_last_task)
+    prog_language = loads(st_prog_language).lower()
     if ctx.triggered_id == 'done_next':
         df_labled_len = loads(st_df_labled_len)
         labled_pairs = loads(st_labled_pairs)
@@ -174,10 +175,10 @@ def button_pressed(done_clicks, next_clicks, label, st_df_labled_len, st_df_labl
         if not valid_set:
             raise dash.exceptions.PreventUpdate
         rt = get_new_pair_routine(df_labled, last_id+1, last_task)
-        return rt[0], rt[1], rt[2], rt[3], f'{labled_pairs}/{df_labled_len} Paaren', rt[4], dumps(labled_pairs), dash.no_update, df_labled.to_json(date_format='iso', orient='split'), dumps(rt[5]), dumps(rt[6])
+        return f'```{prog_language}\n' + rt[0], f'```{prog_language}\n' + rt[1], f'```{prog_language}\n' + rt[2], rt[3], f'{labled_pairs}/{df_labled_len} Paaren', rt[4], dumps(labled_pairs), dash.no_update, df_labled.to_json(date_format='iso', orient='split'), dumps(rt[5]), dumps(rt[6])
     elif ctx.triggered_id == 'next':
         rt = get_new_pair_routine(df_labled, last_id+1, last_task)
-        return rt[0], rt[1], rt[2], rt[3], dash.no_update, rt[4], dash.no_update, dash.no_update, dash.no_update, dumps(rt[5]), dumps(rt[6])
+        return f'```{prog_language}\n' + rt[0], f'```{prog_language}\n' + rt[1], f'```{prog_language}\n' + rt[2], rt[3], dash.no_update, rt[4], dash.no_update, dash.no_update, dash.no_update, dumps(rt[5]), dumps(rt[6])
     # elif ctx.triggered_id == 'previous':
     #     return get_new_pair_routine(df_labled)
     else:
@@ -255,6 +256,7 @@ def print_retry_message(st_semester, st_ha, st_tasks, st_prog_language):
 # TODO 22. google how to manage multiple return values + consistenc
 # TODO 23. code mithilfe von bibliotheken highlighten!
 # TODO 24. code should work on keywords in columns not in position of the columns
+# TODO 25. dark mode button hinzufügen?
 # TODO checken weshalb nur 12/13 leere abgaben bei antwort 10 gefunden wurden
 # TODO double linked list, für die id schreiben, um prev und next button zu realisieren
 if __name__ == '__main__':
