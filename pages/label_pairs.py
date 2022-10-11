@@ -50,7 +50,7 @@ layout = html.Div([
                             html.Summary('Vorgabe'),
                             dcc.Loading(
                                 children=dcc.Markdown(
-                                    id='textarea3',
+                                    id='markdown3',
                                     style={'width': '100%', 'height': 300}
                                 ),
                                 type="circle",
@@ -67,17 +67,17 @@ layout = html.Div([
                     dbc.Row([
                         dbc.Col(dcc.Loading(
                             children=dcc.Markdown(
-                                id='textarea1',
+                                id='markdown1',
                                 style={
-                                    'width': '100%', 'height': 600, 'font-size': '20px', 'overflow-x': 'auto', 'overflow-y': 'auto'},
+                                    'width': '100%', 'height': 600, 'font-size': '20px', 'overflow-x': 'auto', 'overflow-y': 'auto', 'resize': 'both'},
                             ),
                             type="circle",
                         ), md=6),
                         dbc.Col(dcc.Loading(
                             children=dcc.Markdown(
-                                id='textarea2',
+                                id='markdown2',
                                 style={'width': '100%', 'height': 600,
-                                       'font-size': '20px', 'overflow-x': 'auto', 'overflow-y': 'auto'},
+                                       'font-size': '20px', 'overflow-x': 'auto', 'overflow-y': 'auto', 'resize': 'both'},
                             ),
                             type="circle",
                         ), md=6),
@@ -119,9 +119,9 @@ layout = html.Div([
 
 
 @ callback(
-    Output('textarea1', 'children'),
-    Output('textarea2', 'children'),
-    Output('textarea3', 'children'),
+    Output('markdown1', 'children'),
+    Output('markdown2', 'children'),
+    Output('markdown3', 'children'),
     Output('aufgabenstellung', 'srcDoc'),
     Output('labled_pairs_string', 'children'),
     Output('score', 'value'),
@@ -160,9 +160,9 @@ def button_pressed(done_clicks, next_clicks, label, st_df_labled_len, st_df_labl
             df_labled = df_labled.drop('Unnamed: 0', axis=1)
             df_labled_len = len(df_labled)
             labled_pairs = csv_stuff.count_labled(df_labled)
-        rt = get_new_pair_routine(df_labled, 0, "")
         prog_language = loads(st_prog_language).lower()
-        return f'```{prog_language}\n' + rt[0], f'```{prog_language}\n' + rt[1], f'```{prog_language}\n' + rt[2], rt[3], f'{labled_pairs}/{df_labled_len} Paaren', rt[4], dumps(labled_pairs), dumps(df_labled_len), df_labled.to_json(date_format='iso', orient='split'), dumps(rt[5]), dumps(rt[6])
+        rt = get_new_pair_routine(df_labled, 0, "", prog_language)
+        return rt[0], rt[1], rt[2], rt[3], f'{labled_pairs}/{df_labled_len} Paaren', rt[4], dumps(labled_pairs), dumps(df_labled_len), df_labled.to_json(date_format='iso', orient='split'), dumps(rt[5]), dumps(rt[6])
     df_labled = pd.read_json(st_df_labled, orient='split')
     last_id = int(loads(st_last_id))
     last_task = loads(st_last_task)
@@ -174,26 +174,28 @@ def button_pressed(done_clicks, next_clicks, label, st_df_labled_len, st_df_labl
             df_labled, last_id, label, labled_pairs)
         if not valid_set:
             raise dash.exceptions.PreventUpdate
-        rt = get_new_pair_routine(df_labled, last_id+1, last_task)
-        return f'```{prog_language}\n' + rt[0], f'```{prog_language}\n' + rt[1], f'```{prog_language}\n' + rt[2], rt[3], f'{labled_pairs}/{df_labled_len} Paaren', rt[4], dumps(labled_pairs), dash.no_update, df_labled.to_json(date_format='iso', orient='split'), dumps(rt[5]), dumps(rt[6])
+        rt = get_new_pair_routine(
+            df_labled, last_id+1, last_task, prog_language)
+        return rt[0], rt[1], rt[2], rt[3], f'{labled_pairs}/{df_labled_len} Paaren', rt[4], dumps(labled_pairs), dash.no_update, df_labled.to_json(date_format='iso', orient='split'), dumps(rt[5]), dumps(rt[6])
     elif ctx.triggered_id == 'next':
-        rt = get_new_pair_routine(df_labled, last_id+1, last_task)
-        return f'```{prog_language}\n' + rt[0], f'```{prog_language}\n' + rt[1], f'```{prog_language}\n' + rt[2], rt[3], dash.no_update, rt[4], dash.no_update, dash.no_update, dash.no_update, dumps(rt[5]), dumps(rt[6])
+        rt = get_new_pair_routine(
+            df_labled, last_id+1, last_task, prog_language)
+        return rt[0], rt[1], rt[2], rt[3], dash.no_update, rt[4], dash.no_update, dash.no_update, dash.no_update, dumps(rt[5]), dumps(rt[6])
     # elif ctx.triggered_id == 'previous':
     #     return get_new_pair_routine(df_labled)
     else:
         raise dash.exceptions.PreventUpdate
 
 
-def get_new_pair_routine(df_labled, last_id, last_task):
+def get_new_pair_routine(df_labled, last_id, last_task, prog_language):
     next = csv_stuff.get_new_pair(df_labled, last_task, last_id)
     if next == None:
         return '', '', '', '', 0.5, last_id, last_task
     last_id = next[5]
     if next[2] == None:
-        return next[0], next[1], dash.no_update, dash.no_update, next[4], last_id, last_task
+        return f'```{prog_language}\n' + next[0], f'```{prog_language}\n' + next[1], dash.no_update, dash.no_update, next[4], last_id, last_task
     last_task = next[6]
-    return next[0], next[1], next[2], next[3], next[4], last_id, last_task
+    return f'```{prog_language}\n' + next[0], f'```{prog_language}\n' + next[1], f'```{prog_language}\n' + next[2], next[3], next[4], last_id, last_task
 
 
 @ callback(
