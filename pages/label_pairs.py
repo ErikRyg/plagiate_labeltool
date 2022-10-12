@@ -249,6 +249,7 @@ def print_retry_message(st_semester, st_ha, st_tasks, st_prog_language):
 # 18. mithilfe von difflib oder anderem plagiates checker die paare prelabeln
 # 19. font size von code anpassen
 # 20. website scrollable machen
+# 23. code mithilfe von bibliotheken highlighten!
 
 # unchecked
 # TODO (9. neuen knopf für previous labled hinzufügen)
@@ -256,7 +257,6 @@ def print_retry_message(st_semester, st_ha, st_tasks, st_prog_language):
 # TODO (11. liste für nicht gelabelte ids hinzufügen)
 # TODO 21. csv_stuff in class umschreiben, damit übergabeparameter sich wegkürzen
 # TODO 22. google how to manage multiple return values + consistenc
-# TODO 23. code mithilfe von bibliotheken highlighten!
 # TODO 24. code should work on keywords in columns not in position of the columns
 # TODO 25. dark mode button hinzufügen?
 # TODO checken weshalb nur 12/13 leere abgaben bei antwort 10 gefunden wurden
