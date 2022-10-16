@@ -53,7 +53,6 @@ def add_valid_code_columns(df, semester, ha, tasks, prog_language):
         # {{ cr_random.f1 }} --> \S*
         answerpreload = re.sub(
             r"\\{\\{\\\s*\S+\s*\\}\\}", r"\\S*", answerpreload)
-        summe = 0
         result = 0
         df[f"{task} empty"] = 0
         # TODO wie vergleicht man leicht unterschiedliche texte auf Gleichheit miteinander??? -> bisher nur direkte gleichheit
@@ -66,7 +65,6 @@ def add_valid_code_columns(df, semester, ha, tasks, prog_language):
                 result = re.match(answerpreload, column)
             if column == '-' or result:
                 df.loc[j, f"{task} empty"] = 1
-                summe += 1
     return df
 
 
