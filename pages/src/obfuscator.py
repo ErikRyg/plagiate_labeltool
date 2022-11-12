@@ -34,14 +34,14 @@ def variable_renamer(given_string):
 
     # For loop to add examples found from running a REGEX to a dictionary object
     # Ignores special cases and repeats
-    # When a value is entered it is also assigned a random string of length 12
+    # When a value is entered it is also assigned a random string of length 5
     for found_example in filtered_code:
 
         if (found_example not in special_cases):
 
             if (found_example not in variable_dictionary):
 
-                variable_dictionary[found_example] = random_string(12)
+                variable_dictionary[found_example] = random_string(5)
 
     # For each even section in split code (odd indicates that it is in a string)
     # replace all of the varaible and function names with what is defined in the dictionary

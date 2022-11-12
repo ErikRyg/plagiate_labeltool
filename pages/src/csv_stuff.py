@@ -1,4 +1,4 @@
-from cProfile import label
+# from cProfile import label
 import pandas as pd
 import sys
 import re
@@ -36,9 +36,27 @@ def get_given_code(file):
         return "Keine Vorgabedatei im Repo gefunden", "Keine Vorgabedatei im Repo gefunden"
 
 
-"""
-(empty- or template solution) == 1
-"""
+def remove_given_code(code, preload_file_path):
+    answerpreload, _ = get_given_code(preload_file_path)
+    # remove empty lines
+    code = '\n'.join([s for s in code.splitlines() if s.strip() != ''])
+    if answerpreload == 'Keine Vorgabedatei im Repo gefunden':
+        return code
+    # print(answerpreload)
+    answerpreload = answerpreload.replace('\t', '').replace('\r', '')
+    answerpreload = '\n'.join([s for s in answerpreload.splitlines() if s.strip() != ''])
+    for ap_tmp in answerpreload.splitlines():
+        ap_tmp = re.escape(ap_tmp)
+        ap_tmp = '^' + ap_tmp + '$'
+        # {{ cr_random.f1 }} --> \S*
+        ap_tmp = re.sub(
+            r"\\{\\{\\\s*\S+\s*\\}\\}", r"\\S*", ap_tmp)
+        for code_tmp in code.splitlines():
+            # print((re.match(ap_tmp, code_tmp.replace('\t', '').replace('\r', ''))!=None, ap_tmp, code_tmp))
+            if re.match(ap_tmp, code_tmp.replace('\t', '').replace('\r', '')):
+                code = code.replace(code_tmp+'\n', '', 1)
+                break
+    return code
 
 
 def add_valid_code_columns(df, semester, ha, tasks, prog_language):
