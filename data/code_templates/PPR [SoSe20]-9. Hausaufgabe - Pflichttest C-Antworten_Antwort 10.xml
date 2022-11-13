@@ -80,7 +80,7 @@ void umdrehen( char* str )
 
 int main( int argc, char* argv[] )
 {  
-  char test[11]= "0123456789";
+  char test[11] = "0123456789";
   printf( "Das Original ist: %s \n", test );
   ersetzen( test , atoi(argv[1]), argv[2] );
   printf( "Ersetzt : %s \n", test );

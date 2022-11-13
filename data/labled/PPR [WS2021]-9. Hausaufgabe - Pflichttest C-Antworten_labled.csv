@@ -390,7 +390,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-4,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Gabriel,Ullrich,"#include <stdio.h>
+3,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Gabriel,Ullrich,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -511,7 +511,7 @@ int main(int argc,char** argv){
 	printf(""x,y,q und X,Y,Q aussortiert: %s\n"",zsm);
 	printf(""Der neue String lautet: %s"",neustr);
 }",0.0,1
-6,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Florian Philipp,Meyer,"#include <stdio.h>
+4,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Florian Philipp,Meyer,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -637,7 +637,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-7,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Leonhard,Dirks,"#include <stdio.h>
+5,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Leonhard,Dirks,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -753,7 +753,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.02,1
-8,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Annegret Claire,Kruschel,"#include <stdio.h>
+6,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Annegret Claire,Kruschel,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -866,7 +866,7 @@ if((i%3)==0){
 }
 printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s\n"", compactstring,shortend);
 }",0.0,1
-11,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Lucie Chantal,Girod,"#include <stdio.h>
+7,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Lucie Chantal,Girod,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -981,7 +981,7 @@ int main(int argc, char* argv[]){
 	printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s\n"", text_str, solution);
 	
 }",0.0,1
-13,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Moritz,Batilla,"#include <stdio.h>
+8,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Moritz,Batilla,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -1104,7 +1104,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-14,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Can Mert,Ergin,"#include <stdio.h>
+9,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Can Mert,Ergin,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -1233,7 +1233,7 @@ int main(int argc, char* argv[] )
 	str2[lange] = '\0';
 	printf(""Der neue String lautet: %s"",str2);
 }",0.0,1
-15,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Daniel,Grönefeld,"#include <stdio.h>
+10,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Daniel,Grönefeld,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -1348,7 +1348,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );	
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-17,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Catalina,Florez Vargas,"#include <stdio.h>
+11,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Catalina,Florez Vargas,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -1488,7 +1488,7 @@ int main(int argc, char *argv[])
     if (neu[0] == 'z')
         printf(""z"");
 }",0.0,1
-18,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Sandro,Paluteder,"#include <stdio.h>
+12,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Sandro,Paluteder,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -1669,7 +1669,7 @@ int main(int argc, char *argv[])
     printf(""Der neue String lautet: %s"", StringThirdRemoved);
     
 }",0.0,1
-19,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Jonas,Bestgen,"#include <stdio.h>
+13,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Jonas,Bestgen,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -1782,7 +1782,7 @@ int main( int argc, char* argv[] )
 	umdrehen( test );
 	printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-20,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Constanze Cosima,Freier,"#include <stdio.h>
+14,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Constanze Cosima,Freier,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -1932,7 +1932,7 @@ int main(int argc, char *argv[])
     Ausgabe[Entfernen(Ausgabe)] = '\0';
     printf(""Der neue String lautet: %s\n"", Ausgabe);
 }",0.0,1
-22,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Caspar Valentin,Zell,"#include <stdio.h>
+15,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Caspar Valentin,Zell,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -2054,7 +2054,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-23,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Jakob,Kühl,"#include <stdio.h>
+16,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Jakob,Kühl,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -2161,7 +2161,7 @@ int main(int argc, char* argv[]){
 	}
 	printf(""Der neue String lautet: %s\n"", b);
 }",0.0,1
-24,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Niklas,Mohr,"#include <stdio.h>
+17,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Niklas,Mohr,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -2293,7 +2293,7 @@ int main( int argc, char* argv[] )
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
 }",0.0,1
-25,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Tammo Hendrik,Nie,"#include <stdio.h>
+18,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Tammo Hendrik,Nie,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -2427,7 +2427,7 @@ int main(int argc, char* argv[52])
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
 }",0.0,1
-26,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Sören Sven,Werner,"#include <stdio.h>
+19,WS2021,9,Antwort 10,C,Jolanda Marietta,Schumann,Sören Sven,Werner,"#include <stdio.h>
 
 void aussortieren (char* string)
 {
@@ -2536,7 +2536,7 @@ int main( int argc, char* argv[]){
 
 
 }",0.0,1
-27,WS2021,9,Antwort 10,C,David,Stubler,Daniel Dominik,Eichstädt,"#include <stdio.h>
+20,WS2021,9,Antwort 10,C,David,Stubler,Daniel Dominik,Eichstädt,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -2611,7 +2611,7 @@ printf (""x,y,q und X,Y,Q aussortiert: %s\n"",str);
 ersetzen(str);
 printf (""Der neue String lautet: %s\n"",str);
 }",0.0,1
-28,WS2021,9,Antwort 10,C,David,Stubler,Mohamad Anas,Allaham,"#include <stdio.h>
+21,WS2021,9,Antwort 10,C,David,Stubler,Mohamad Anas,Allaham,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -2703,7 +2703,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-30,WS2021,9,Antwort 10,C,David,Stubler,Gabriel,Ullrich,"#include <stdio.h>
+22,WS2021,9,Antwort 10,C,David,Stubler,Gabriel,Ullrich,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -2769,7 +2769,7 @@ int main(int argc,char** argv){
 	printf(""x,y,q und X,Y,Q aussortiert: %s\n"",zsm);
 	printf(""Der neue String lautet: %s"",neustr);
 }",0.0,1
-32,WS2021,9,Antwort 10,C,David,Stubler,Florian Philipp,Meyer,"#include <stdio.h>
+23,WS2021,9,Antwort 10,C,David,Stubler,Florian Philipp,Meyer,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -2840,7 +2840,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-33,WS2021,9,Antwort 10,C,David,Stubler,Leonhard,Dirks,"#include <stdio.h>
+24,WS2021,9,Antwort 10,C,David,Stubler,Leonhard,Dirks,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -2901,7 +2901,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-34,WS2021,9,Antwort 10,C,David,Stubler,Annegret Claire,Kruschel,"#include <stdio.h>
+25,WS2021,9,Antwort 10,C,David,Stubler,Annegret Claire,Kruschel,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -2959,7 +2959,7 @@ if((i%3)==0){
 }
 printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s\n"", compactstring,shortend);
 }",0.0,1
-37,WS2021,9,Antwort 10,C,David,Stubler,Lucie Chantal,Girod,"#include <stdio.h>
+26,WS2021,9,Antwort 10,C,David,Stubler,Lucie Chantal,Girod,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -3019,7 +3019,7 @@ int main(int argc, char* argv[]){
 	printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s\n"", text_str, solution);
 	
 }",0.01,1
-39,WS2021,9,Antwort 10,C,David,Stubler,Moritz,Batilla,"#include <stdio.h>
+27,WS2021,9,Antwort 10,C,David,Stubler,Moritz,Batilla,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -3087,7 +3087,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-40,WS2021,9,Antwort 10,C,David,Stubler,Can Mert,Ergin,"#include <stdio.h>
+28,WS2021,9,Antwort 10,C,David,Stubler,Can Mert,Ergin,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -3161,7 +3161,7 @@ int main(int argc, char* argv[] )
 	str2[lange] = '\0';
 	printf(""Der neue String lautet: %s"",str2);
 }",0.0,1
-41,WS2021,9,Antwort 10,C,David,Stubler,Daniel,Grönefeld,"#include <stdio.h>
+29,WS2021,9,Antwort 10,C,David,Stubler,Daniel,Grönefeld,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -3221,7 +3221,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );	
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-43,WS2021,9,Antwort 10,C,David,Stubler,Catalina,Florez Vargas,"#include <stdio.h>
+30,WS2021,9,Antwort 10,C,David,Stubler,Catalina,Florez Vargas,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -3306,7 +3306,7 @@ int main(int argc, char *argv[])
     if (neu[0] == 'z')
         printf(""z"");
 }",0.0,1
-44,WS2021,9,Antwort 10,C,David,Stubler,Sandro,Paluteder,"#include <stdio.h>
+31,WS2021,9,Antwort 10,C,David,Stubler,Sandro,Paluteder,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -3432,7 +3432,7 @@ int main(int argc, char *argv[])
     printf(""Der neue String lautet: %s"", StringThirdRemoved);
     
 }",0.0,1
-45,WS2021,9,Antwort 10,C,David,Stubler,Jonas,Bestgen,"#include <stdio.h>
+32,WS2021,9,Antwort 10,C,David,Stubler,Jonas,Bestgen,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -3490,7 +3490,7 @@ int main( int argc, char* argv[] )
 	umdrehen( test );
 	printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-46,WS2021,9,Antwort 10,C,David,Stubler,Constanze Cosima,Freier,"#include <stdio.h>
+33,WS2021,9,Antwort 10,C,David,Stubler,Constanze Cosima,Freier,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -3585,7 +3585,7 @@ int main(int argc, char *argv[])
     Ausgabe[Entfernen(Ausgabe)] = '\0';
     printf(""Der neue String lautet: %s\n"", Ausgabe);
 }",0.0,1
-48,WS2021,9,Antwort 10,C,David,Stubler,Caspar Valentin,Zell,"#include <stdio.h>
+34,WS2021,9,Antwort 10,C,David,Stubler,Caspar Valentin,Zell,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -3652,7 +3652,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-49,WS2021,9,Antwort 10,C,David,Stubler,Jakob,Kühl,"#include <stdio.h>
+35,WS2021,9,Antwort 10,C,David,Stubler,Jakob,Kühl,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -3704,7 +3704,7 @@ int main(int argc, char* argv[]){
 	}
 	printf(""Der neue String lautet: %s\n"", b);
 }",0.0,1
-50,WS2021,9,Antwort 10,C,David,Stubler,Niklas,Mohr,"#include <stdio.h>
+36,WS2021,9,Antwort 10,C,David,Stubler,Niklas,Mohr,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -3781,7 +3781,7 @@ int main( int argc, char* argv[] )
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
 }",0.0,1
-51,WS2021,9,Antwort 10,C,David,Stubler,Tammo Hendrik,Nie,"#include <stdio.h>
+37,WS2021,9,Antwort 10,C,David,Stubler,Tammo Hendrik,Nie,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -3860,7 +3860,7 @@ int main(int argc, char* argv[52])
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
 }",0.0,1
-52,WS2021,9,Antwort 10,C,David,Stubler,Sören Sven,Werner,"#include <stdio.h>
+38,WS2021,9,Antwort 10,C,David,Stubler,Sören Sven,Werner,"#include <stdio.h>
 #include <stdlib.h>
 
 int main( int argc, char** argv)
@@ -3914,7 +3914,7 @@ int main( int argc, char* argv[]){
 
 
 }",0.0,1
-53,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Mohamad Anas,Allaham,"#include <stdio.h>
+39,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Mohamad Anas,Allaham,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -4022,7 +4022,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-55,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Gabriel,Ullrich,"#include <stdio.h>
+40,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Gabriel,Ullrich,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -4104,7 +4104,7 @@ int main(int argc,char** argv){
 	printf(""x,y,q und X,Y,Q aussortiert: %s\n"",zsm);
 	printf(""Der neue String lautet: %s"",neustr);
 }",0.0,1
-57,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Florian Philipp,Meyer,"#include <stdio.h>
+41,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Florian Philipp,Meyer,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -4191,7 +4191,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-58,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Leonhard,Dirks,"#include <stdio.h>
+42,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Leonhard,Dirks,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -4268,7 +4268,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-59,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Annegret Claire,Kruschel,"#include <stdio.h>
+43,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Annegret Claire,Kruschel,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -4342,7 +4342,7 @@ if((i%3)==0){
 }
 printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s\n"", compactstring,shortend);
 }",0.0,1
-62,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Lucie Chantal,Girod,"#include <stdio.h>
+44,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Lucie Chantal,Girod,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -4418,7 +4418,7 @@ int main(int argc, char* argv[]){
 	printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s\n"", text_str, solution);
 	
 }",0.0,1
-64,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Moritz,Batilla,"#include <stdio.h>
+45,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Moritz,Batilla,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -4502,7 +4502,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-65,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Can Mert,Ergin,"#include <stdio.h>
+46,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Can Mert,Ergin,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -4592,7 +4592,7 @@ int main(int argc, char* argv[] )
 	str2[lange] = '\0';
 	printf(""Der neue String lautet: %s"",str2);
 }",0.0,1
-66,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Daniel,Grönefeld,"#include <stdio.h>
+47,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Daniel,Grönefeld,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -4668,7 +4668,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );	
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-68,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Catalina,Florez Vargas,"#include <stdio.h>
+48,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Catalina,Florez Vargas,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -4769,7 +4769,7 @@ int main(int argc, char *argv[])
     if (neu[0] == 'z')
         printf(""z"");
 }",0.0,1
-69,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Sandro,Paluteder,"#include <stdio.h>
+49,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Sandro,Paluteder,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -4911,7 +4911,7 @@ int main(int argc, char *argv[])
     printf(""Der neue String lautet: %s"", StringThirdRemoved);
     
 }",0.0,1
-70,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Jonas,Bestgen,"#include <stdio.h>
+50,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Jonas,Bestgen,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -4985,7 +4985,7 @@ int main( int argc, char* argv[] )
 	umdrehen( test );
 	printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-71,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Constanze Cosima,Freier,"#include <stdio.h>
+51,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Constanze Cosima,Freier,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -5096,7 +5096,7 @@ int main(int argc, char *argv[])
     Ausgabe[Entfernen(Ausgabe)] = '\0';
     printf(""Der neue String lautet: %s\n"", Ausgabe);
 }",0.0,1
-73,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Caspar Valentin,Zell,"#include <stdio.h>
+52,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Caspar Valentin,Zell,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -5179,7 +5179,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-74,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Jakob,Kühl,"#include <stdio.h>
+53,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Jakob,Kühl,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -5247,7 +5247,7 @@ int main(int argc, char* argv[]){
 	}
 	printf(""Der neue String lautet: %s\n"", b);
 }",0.0,1
-75,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Niklas,Mohr,"#include <stdio.h>
+54,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Niklas,Mohr,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -5340,7 +5340,7 @@ int main( int argc, char* argv[] )
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
 }",0.1614395887,1
-76,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Tammo Hendrik,Nie,"#include <stdio.h>
+55,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Tammo Hendrik,Nie,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -5435,7 +5435,7 @@ int main(int argc, char* argv[52])
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
 }",0.0,1
-77,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Sören Sven,Werner,"#include <stdio.h>
+56,WS2021,9,Antwort 10,C,Daniel Dominik,Eichstädt,Sören Sven,Werner,"#include <stdio.h>
 
 char aussortieren (char buchstabe)
 {if (buchstabe=='x'||buchstabe=='y'||buchstabe=='q'||
@@ -5505,7 +5505,7 @@ int main( int argc, char* argv[]){
 
 
 }",0.0,1
-79,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Gabriel,Ullrich,"#include <stdio.h>
+57,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Gabriel,Ullrich,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -5604,7 +5604,7 @@ int main(int argc,char** argv){
 	printf(""x,y,q und X,Y,Q aussortiert: %s\n"",zsm);
 	printf(""Der neue String lautet: %s"",neustr);
 }",0.0,1
-81,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Florian Philipp,Meyer,"#include <stdio.h>
+58,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Florian Philipp,Meyer,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -5708,7 +5708,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-82,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Leonhard,Dirks,"#include <stdio.h>
+59,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Leonhard,Dirks,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -5802,7 +5802,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-83,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Annegret Claire,Kruschel,"#include <stdio.h>
+60,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Annegret Claire,Kruschel,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -5893,7 +5893,7 @@ if((i%3)==0){
 }
 printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s\n"", compactstring,shortend);
 }",0.0,1
-86,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Lucie Chantal,Girod,"#include <stdio.h>
+61,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Lucie Chantal,Girod,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -5986,7 +5986,7 @@ int main(int argc, char* argv[]){
 	printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s\n"", text_str, solution);
 	
 }",0.0,1
-88,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Moritz,Batilla,"#include <stdio.h>
+62,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Moritz,Batilla,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -6087,7 +6087,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-89,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Can Mert,Ergin,"#include <stdio.h>
+63,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Can Mert,Ergin,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -6194,7 +6194,7 @@ int main(int argc, char* argv[] )
 	str2[lange] = '\0';
 	printf(""Der neue String lautet: %s"",str2);
 }",0.0,1
-90,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Daniel,Grönefeld,"#include <stdio.h>
+64,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Daniel,Grönefeld,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -6287,7 +6287,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );	
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-92,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Catalina,Florez Vargas,"#include <stdio.h>
+65,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Catalina,Florez Vargas,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -6405,7 +6405,7 @@ int main(int argc, char *argv[])
     if (neu[0] == 'z')
         printf(""z"");
 }",0.0,1
-93,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Sandro,Paluteder,"#include <stdio.h>
+66,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Sandro,Paluteder,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -6564,7 +6564,7 @@ int main(int argc, char *argv[])
     printf(""Der neue String lautet: %s"", StringThirdRemoved);
     
 }",0.0,1
-94,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Jonas,Bestgen,"#include <stdio.h>
+67,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Jonas,Bestgen,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -6655,7 +6655,7 @@ int main( int argc, char* argv[] )
 	umdrehen( test );
 	printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-95,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Constanze Cosima,Freier,"#include <stdio.h>
+68,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Constanze Cosima,Freier,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -6783,7 +6783,7 @@ int main(int argc, char *argv[])
     Ausgabe[Entfernen(Ausgabe)] = '\0';
     printf(""Der neue String lautet: %s\n"", Ausgabe);
 }",0.0,1
-97,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Caspar Valentin,Zell,"#include <stdio.h>
+69,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Caspar Valentin,Zell,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -6883,7 +6883,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-98,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Jakob,Kühl,"#include <stdio.h>
+70,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Jakob,Kühl,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -6968,7 +6968,7 @@ int main(int argc, char* argv[]){
 	}
 	printf(""Der neue String lautet: %s\n"", b);
 }",0.0,1
-99,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Niklas,Mohr,"#include <stdio.h>
+71,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Niklas,Mohr,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -7078,7 +7078,7 @@ int main( int argc, char* argv[] )
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
 }",0.0,1
-100,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Tammo Hendrik,Nie,"#include <stdio.h>
+72,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Tammo Hendrik,Nie,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -7190,7 +7190,7 @@ int main(int argc, char* argv[52])
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
 }",0.0,1
-101,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Sören Sven,Werner,"#include <stdio.h>
+73,WS2021,9,Antwort 10,C,Mohamad Anas,Allaham,Sören Sven,Werner,"#include <stdio.h>
 #include <stdlib.h>
 
 int length(char *p)
@@ -7277,7 +7277,7 @@ int main( int argc, char* argv[]){
 
 
 }",0.0,1
-120,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Florian Philipp,Meyer,"#include <stdio.h>
+74,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Florian Philipp,Meyer,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -7355,7 +7355,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-121,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Leonhard,Dirks,"#include <stdio.h>
+75,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Leonhard,Dirks,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -7423,7 +7423,7 @@ int main( int argc, char* argv[] )
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
 }",0.0,1
-122,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Annegret Claire,Kruschel,"#include <stdio.h>
+76,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Annegret Claire,Kruschel,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -7488,7 +7488,7 @@ if((i%3)==0){
 }
 printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s\n"", compactstring,shortend);
 }",0.0,1
-125,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Lucie Chantal,Girod,"#include <stdio.h>
+77,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Lucie Chantal,Girod,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -7554,8 +7554,8 @@ int main(int argc, char* argv[]){
 	}
 	printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s\n"", text_str, solution);
 	
-}",0.1756272401,0
-127,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Moritz,Batilla,"#include <stdio.h>
+}",0.0,1
+78,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Moritz,Batilla,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -7629,8 +7629,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.1298857486,0
-128,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Can Mert,Ergin,"#include <stdio.h>
+}",0.0,1
+79,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Can Mert,Ergin,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -7710,8 +7710,8 @@ int main(int argc, char* argv[] )
 		;
 	str2[lange] = '\0';
 	printf(""Der neue String lautet: %s"",str2);
-}",0.2073813708,0
-129,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Daniel,Grönefeld,"#include <stdio.h>
+}",0.0,1
+80,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Daniel,Grönefeld,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -7777,8 +7777,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test);
   umdrehen( test );	
   printf( ""Rückwärts : %s \n"", test );
-}",0.139184953,0
-131,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Catalina,Florez Vargas,"#include <stdio.h>
+}",0.0,1
+81,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Catalina,Florez Vargas,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -7869,8 +7869,8 @@ int main(int argc, char *argv[])
             printf(""%c"", nueva[i]);
     if (neu[0] == 'z')
         printf(""z"");
-}",0.1494420184,0
-132,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Sandro,Paluteder,"#include <stdio.h>
+}",0.0,1
+82,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Sandro,Paluteder,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -8002,8 +8002,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s \n"", StringXYQRemoved);
     printf(""Der neue String lautet: %s"", StringThirdRemoved);
     
-}",0.0754342432,0
-133,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Jonas,Bestgen,"#include <stdio.h>
+}",0.0,1
+83,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Jonas,Bestgen,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -8067,8 +8067,8 @@ int main( int argc, char* argv[] )
 	printf( ""Ersetzt : %s \n"", test );
 	umdrehen( test );
 	printf( ""Rückwärts : %s \n"", test );
-}",0.1089700997,0
-134,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Constanze Cosima,Freier,"#include <stdio.h>
+}",0.0,1
+84,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Constanze Cosima,Freier,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -8169,8 +8169,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", Ausgabe);
     Ausgabe[Entfernen(Ausgabe)] = '\0';
     printf(""Der neue String lautet: %s\n"", Ausgabe);
-}",0.1958041958,0
-136,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Caspar Valentin,Zell,"#include <stdio.h>
+}",0.0,1
+85,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Caspar Valentin,Zell,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -8243,8 +8243,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.1428571429,0
-137,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Jakob,Kühl,"#include <stdio.h>
+}",0.0,1
+86,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Jakob,Kühl,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -8302,8 +8302,8 @@ int main(int argc, char* argv[]){
 		y++;
 	}
 	printf(""Der neue String lautet: %s\n"", b);
-}",0.2212518195,0
-138,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Niklas,Mohr,"#include <stdio.h>
+}",0.0,1
+87,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Niklas,Mohr,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -8386,8 +8386,8 @@ int main( int argc, char* argv[] )
     }
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
-}",0.1180364038,0
-139,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Tammo Hendrik,Nie,"#include <stdio.h>
+}",0.0,1
+88,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Tammo Hendrik,Nie,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -8472,8 +8472,8 @@ int main(int argc, char* argv[52])
    //drucken:
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
-}",0.1421267894,0
-140,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Sören Sven,Werner,"#include <stdio.h>
+}",0.0,1
+89,WS2021,9,Antwort 10,C,Gabriel,Ullrich,Sören Sven,Werner,"#include <stdio.h>
 void xyqentfernen(char* str1){
 	int i;
 	int j;
@@ -8533,8 +8533,8 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.1728813559,0
-156,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Leonhard,Dirks,"#include <stdio.h>
+}",0.0,1
+90,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Leonhard,Dirks,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -8606,8 +8606,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.5822306238,0
-157,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Annegret Claire,Kruschel,"#include <stdio.h>
+}",0.0,1
+91,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Annegret Claire,Kruschel,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -8676,8 +8676,8 @@ if((i%3)==0){
 }
 }
 printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s\n"", compactstring,shortend);
-}",0.097711812,0
-160,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Lucie Chantal,Girod,"#include <stdio.h>
+}",0.0,1
+92,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Lucie Chantal,Girod,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -8748,8 +8748,8 @@ int main(int argc, char* argv[]){
 	}
 	printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s\n"", text_str, solution);
 	
-}",0.1053906723,0
-162,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Moritz,Batilla,"#include <stdio.h>
+}",0.0,1
+93,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Moritz,Batilla,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -8828,8 +8828,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.6207317073,0
-163,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Can Mert,Ergin,"#include <stdio.h>
+}",0.0,1
+94,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Can Mert,Ergin,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -8914,8 +8914,8 @@ int main(int argc, char* argv[] )
 		;
 	str2[lange] = '\0';
 	printf(""Der neue String lautet: %s"",str2);
-}",0.109263658,0
-164,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Daniel,Grönefeld,"#include <stdio.h>
+}",0.0,1
+95,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Daniel,Grönefeld,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -8986,8 +8986,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test);
   umdrehen( test );	
   printf( ""Rückwärts : %s \n"", test );
-}",0.5776081425,0
-166,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Catalina,Florez Vargas,"#include <stdio.h>
+}",0.0,1
+96,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Catalina,Florez Vargas,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -9083,8 +9083,8 @@ int main(int argc, char *argv[])
             printf(""%c"", nueva[i]);
     if (neu[0] == 'z')
         printf(""z"");
-}",0.0932286555,0
-167,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Sandro,Paluteder,"#include <stdio.h>
+}",0.0,1
+97,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Sandro,Paluteder,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -9221,8 +9221,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s \n"", StringXYQRemoved);
     printf(""Der neue String lautet: %s"", StringThirdRemoved);
     
-}",0.0848515099,0
-168,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Jonas,Bestgen,"#include <stdio.h>
+}",0.0,1
+98,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Jonas,Bestgen,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -9291,8 +9291,8 @@ int main( int argc, char* argv[] )
 	printf( ""Ersetzt : %s \n"", test );
 	umdrehen( test );
 	printf( ""Rückwärts : %s \n"", test );
-}",0.6059379217,0
-169,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Constanze Cosima,Freier,"#include <stdio.h>
+}",0.0,1
+99,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Constanze Cosima,Freier,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -9398,8 +9398,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", Ausgabe);
     Ausgabe[Entfernen(Ausgabe)] = '\0';
     printf(""Der neue String lautet: %s\n"", Ausgabe);
-}",0.1244109331,0
-171,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Caspar Valentin,Zell,"#include <stdio.h>
+}",0.0,1
+100,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Caspar Valentin,Zell,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -9477,8 +9477,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.6068111455,0
-172,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Jakob,Kühl,"#include <stdio.h>
+}",0.0,1
+101,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Jakob,Kühl,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -9541,8 +9541,8 @@ int main(int argc, char* argv[]){
 		y++;
 	}
 	printf(""Der neue String lautet: %s\n"", b);
-}",0.1110288675,0
-173,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Niklas,Mohr,"#include <stdio.h>
+}",0.0,1
+102,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Niklas,Mohr,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -9630,8 +9630,8 @@ int main( int argc, char* argv[] )
     }
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
-}",0.2502793296,0
-174,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Tammo Hendrik,Nie,"#include <stdio.h>
+}",0.0,1
+103,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Tammo Hendrik,Nie,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -9721,8 +9721,8 @@ int main(int argc, char* argv[52])
    //drucken:
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
-}",0.1551991723,0
-175,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Sören Sven,Werner,"#include <stdio.h>
+}",0.0,1
+104,WS2021,9,Antwort 10,C,Florian Philipp,Meyer,Sören Sven,Werner,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -9787,8 +9787,8 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.1936041487,0
-176,WS2021,9,Antwort 10,C,Leonhard,Dirks,Annegret Claire,Kruschel,"#include <stdio.h>
+}",0.0,1
+105,WS2021,9,Antwort 10,C,Leonhard,Dirks,Annegret Claire,Kruschel,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -9847,8 +9847,8 @@ if((i%3)==0){
 }
 }
 printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s\n"", compactstring,shortend);
-}",0.1724137931,0
-179,WS2021,9,Antwort 10,C,Leonhard,Dirks,Lucie Chantal,Girod,"#include <stdio.h>
+}",0.0,1
+106,WS2021,9,Antwort 10,C,Leonhard,Dirks,Lucie Chantal,Girod,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -9909,8 +9909,8 @@ int main(int argc, char* argv[]){
 	}
 	printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s\n"", text_str, solution);
 	
-}",0.18375,0
-181,WS2021,9,Antwort 10,C,Leonhard,Dirks,Moritz,Batilla,"#include <stdio.h>
+}",0.0,1
+107,WS2021,9,Antwort 10,C,Leonhard,Dirks,Moritz,Batilla,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -9979,8 +9979,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.5487728131,0
-182,WS2021,9,Antwort 10,C,Leonhard,Dirks,Can Mert,Ergin,"#include <stdio.h>
+}",0.0,1
+108,WS2021,9,Antwort 10,C,Leonhard,Dirks,Can Mert,Ergin,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -10055,8 +10055,8 @@ int main(int argc, char* argv[] )
 		;
 	str2[lange] = '\0';
 	printf(""Der neue String lautet: %s"",str2);
-}",0.1371708512,0
-183,WS2021,9,Antwort 10,C,Leonhard,Dirks,Daniel,Grönefeld,"#include <stdio.h>
+}",0.0,1
+109,WS2021,9,Antwort 10,C,Leonhard,Dirks,Daniel,Grönefeld,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -10117,8 +10117,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test);
   umdrehen( test );	
   printf( ""Rückwärts : %s \n"", test );
-}",0.674556213,0
-185,WS2021,9,Antwort 10,C,Leonhard,Dirks,Catalina,Florez Vargas,"#include <stdio.h>
+}",1.0,1
+110,WS2021,9,Antwort 10,C,Leonhard,Dirks,Catalina,Florez Vargas,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -10204,8 +10204,8 @@ int main(int argc, char *argv[])
             printf(""%c"", nueva[i]);
     if (neu[0] == 'z')
         printf(""z"");
-}",0.09562154,0
-186,WS2021,9,Antwort 10,C,Leonhard,Dirks,Sandro,Paluteder,"#include <stdio.h>
+}",0.0,1
+111,WS2021,9,Antwort 10,C,Leonhard,Dirks,Sandro,Paluteder,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -10332,8 +10332,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s \n"", StringXYQRemoved);
     printf(""Der neue String lautet: %s"", StringThirdRemoved);
     
-}",0.0798786653,0
-187,WS2021,9,Antwort 10,C,Leonhard,Dirks,Jonas,Bestgen,"#include <stdio.h>
+}",0.0,1
+112,WS2021,9,Antwort 10,C,Leonhard,Dirks,Jonas,Bestgen,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -10392,8 +10392,8 @@ int main( int argc, char* argv[] )
 	printf( ""Ersetzt : %s \n"", test );
 	umdrehen( test );
 	printf( ""Rückwärts : %s \n"", test );
-}",0.6191474493,0
-188,WS2021,9,Antwort 10,C,Leonhard,Dirks,Constanze Cosima,Freier,"#include <stdio.h>
+}",1.0,1
+113,WS2021,9,Antwort 10,C,Leonhard,Dirks,Constanze Cosima,Freier,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -10489,8 +10489,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", Ausgabe);
     Ausgabe[Entfernen(Ausgabe)] = '\0';
     printf(""Der neue String lautet: %s\n"", Ausgabe);
-}",0.1361661033,0
-190,WS2021,9,Antwort 10,C,Leonhard,Dirks,Caspar Valentin,Zell,"#include <stdio.h>
+}",0.0,1
+114,WS2021,9,Antwort 10,C,Leonhard,Dirks,Caspar Valentin,Zell,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -10558,8 +10558,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.5549872123,0
-191,WS2021,9,Antwort 10,C,Leonhard,Dirks,Jakob,Kühl,"#include <stdio.h>
+}",0.75,1
+115,WS2021,9,Antwort 10,C,Leonhard,Dirks,Jakob,Kühl,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -10612,8 +10612,8 @@ int main(int argc, char* argv[]){
 		y++;
 	}
 	printf(""Der neue String lautet: %s\n"", b);
-}",0.12,0
-192,WS2021,9,Antwort 10,C,Leonhard,Dirks,Niklas,Mohr,"#include <stdio.h>
+}",0.0,1
+116,WS2021,9,Antwort 10,C,Leonhard,Dirks,Niklas,Mohr,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -10691,8 +10691,8 @@ int main( int argc, char* argv[] )
     }
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
-}",0.1518113859,0
-193,WS2021,9,Antwort 10,C,Leonhard,Dirks,Tammo Hendrik,Nie,"#include <stdio.h>
+}",0.0,1
+117,WS2021,9,Antwort 10,C,Leonhard,Dirks,Tammo Hendrik,Nie,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -10772,8 +10772,8 @@ int main(int argc, char* argv[52])
    //drucken:
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
-}",0.1264612115,0
-194,WS2021,9,Antwort 10,C,Leonhard,Dirks,Sören Sven,Werner,"#include <stdio.h>
+}",0.0,1
+118,WS2021,9,Antwort 10,C,Leonhard,Dirks,Sören Sven,Werner,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -10828,8 +10828,8 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.2622061483,0
-197,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Lucie Chantal,Girod,"#include <stdio.h>
+}",0.0,1
+119,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Lucie Chantal,Girod,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -10887,8 +10887,8 @@ int main(int argc, char* argv[]){
 	}
 	printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s\n"", text_str, solution);
 	
-}",0.5950920245,0
-199,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Moritz,Batilla,"#include <stdio.h>
+}",1.0,1
+120,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Moritz,Batilla,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -10954,8 +10954,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.1235330451,0
-200,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Can Mert,Ergin,"#include <stdio.h>
+}",0.0,1
+121,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Can Mert,Ergin,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -11027,8 +11027,8 @@ int main(int argc, char* argv[] )
 		;
 	str2[lange] = '\0';
 	printf(""Der neue String lautet: %s"",str2);
-}",0.1707757066,0
-201,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Daniel,Grönefeld,"#include <stdio.h>
+}",0.0,1
+122,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Daniel,Grönefeld,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -11086,8 +11086,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test);
   umdrehen( test );	
   printf( ""Rückwärts : %s \n"", test );
-}",0.1302385558,0
-203,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Catalina,Florez Vargas,"#include <stdio.h>
+}",0.0,1
+123,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Catalina,Florez Vargas,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -11170,8 +11170,8 @@ int main(int argc, char *argv[])
             printf(""%c"", nueva[i]);
     if (neu[0] == 'z')
         printf(""z"");
-}",0.2885473475,0
-204,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Sandro,Paluteder,"#include <stdio.h>
+}",0.0,1
+124,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Sandro,Paluteder,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -11295,8 +11295,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s \n"", StringXYQRemoved);
     printf(""Der neue String lautet: %s"", StringThirdRemoved);
     
-}",0.092323131,0
-205,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Jonas,Bestgen,"#include <stdio.h>
+}",0.0,1
+125,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Jonas,Bestgen,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -11352,8 +11352,8 @@ int main( int argc, char* argv[] )
 	printf( ""Ersetzt : %s \n"", test );
 	umdrehen( test );
 	printf( ""Rückwärts : %s \n"", test );
-}",0.12183436,0
-206,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Constanze Cosima,Freier,"#include <stdio.h>
+}",0.0,1
+126,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Constanze Cosima,Freier,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -11446,8 +11446,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", Ausgabe);
     Ausgabe[Entfernen(Ausgabe)] = '\0';
     printf(""Der neue String lautet: %s\n"", Ausgabe);
-}",0.1761066159,0
-208,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Caspar Valentin,Zell,"#include <stdio.h>
+}",0.0,1
+127,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Caspar Valentin,Zell,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -11512,8 +11512,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.1267252196,0
-209,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Jakob,Kühl,"#include <stdio.h>
+}",0.0,1
+128,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Jakob,Kühl,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -11563,8 +11563,8 @@ int main(int argc, char* argv[]){
 		y++;
 	}
 	printf(""Der neue String lautet: %s\n"", b);
-}",0.2556390977,0
-210,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Niklas,Mohr,"#include <stdio.h>
+}",0.0,1
+129,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Niklas,Mohr,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -11639,8 +11639,8 @@ int main( int argc, char* argv[] )
     }
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
-}",0.158281515,0
-211,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Tammo Hendrik,Nie,"#include <stdio.h>
+}",0.0,1
+130,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Tammo Hendrik,Nie,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -11717,8 +11717,8 @@ int main(int argc, char* argv[52])
    //drucken:
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
-}",0.230125523,0
-212,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Sören Sven,Werner,"#include <stdio.h>
+}",0.0,1
+131,WS2021,9,Antwort 10,C,Annegret Claire,Kruschel,Sören Sven,Werner,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -11770,8 +11770,8 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.1602112676,0
-235,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Moritz,Batilla,"#include <stdio.h>
+}",0.0,1
+132,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Moritz,Batilla,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -11839,8 +11839,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.1173623714,0
-236,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Can Mert,Ergin,"#include <stdio.h>
+}",0.0,1
+133,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Can Mert,Ergin,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -11914,8 +11914,8 @@ int main(int argc, char* argv[] )
 		;
 	str2[lange] = '\0';
 	printf(""Der neue String lautet: %s"",str2);
-}",0.2203889216,0
-237,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Daniel,Grönefeld,"#include <stdio.h>
+}",0.0,1
+134,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Daniel,Grönefeld,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -11975,8 +11975,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test);
   umdrehen( test );	
   printf( ""Rückwärts : %s \n"", test );
-}",0.18170347,0
-239,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Catalina,Florez Vargas,"#include <stdio.h>
+}",0.0,1
+135,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Catalina,Florez Vargas,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -12061,8 +12061,8 @@ int main(int argc, char *argv[])
             printf(""%c"", nueva[i]);
     if (neu[0] == 'z')
         printf(""z"");
-}",0.3052169673,0
-240,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Sandro,Paluteder,"#include <stdio.h>
+}",0.0,1
+136,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Sandro,Paluteder,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -12188,8 +12188,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s \n"", StringXYQRemoved);
     printf(""Der neue String lautet: %s"", StringThirdRemoved);
     
-}",0.0880597015,0
-241,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Jonas,Bestgen,"#include <stdio.h>
+}",0.01,1
+137,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Jonas,Bestgen,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -12247,8 +12247,8 @@ int main( int argc, char* argv[] )
 	printf( ""Ersetzt : %s \n"", test );
 	umdrehen( test );
 	printf( ""Rückwärts : %s \n"", test );
-}",0.1230769231,0
-242,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Constanze Cosima,Freier,"#include <stdio.h>
+}",0.0,1
+138,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Constanze Cosima,Freier,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -12343,8 +12343,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", Ausgabe);
     Ausgabe[Entfernen(Ausgabe)] = '\0';
     printf(""Der neue String lautet: %s\n"", Ausgabe);
-}",0.1704918033,0
-244,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Caspar Valentin,Zell,"#include <stdio.h>
+}",0.0,1
+139,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Caspar Valentin,Zell,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -12411,8 +12411,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.1228501229,0
-245,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Jakob,Kühl,"#include <stdio.h>
+}",0.0,1
+140,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Jakob,Kühl,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -12464,8 +12464,8 @@ int main(int argc, char* argv[]){
 		y++;
 	}
 	printf(""Der neue String lautet: %s\n"", b);
-}",0.3299120235,0
-246,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Niklas,Mohr,"#include <stdio.h>
+}",0.0,1
+141,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Niklas,Mohr,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -12542,8 +12542,8 @@ int main( int argc, char* argv[] )
     }
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
-}",0.1586245147,0
-247,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Tammo Hendrik,Nie,"#include <stdio.h>
+}",0.0,1
+142,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Tammo Hendrik,Nie,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -12622,8 +12622,8 @@ int main(int argc, char* argv[52])
    //drucken:
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
-}",0.2343268243,0
-248,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Sören Sven,Werner,"#include <stdio.h>
+}",0.0,1
+143,WS2021,9,Antwort 10,C,Lucie Chantal,Girod,Sören Sven,Werner,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char* argv[]){
@@ -12677,8 +12677,8 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.2427350427,0
-257,WS2021,9,Antwort 10,C,Moritz,Batilla,Can Mert,Ergin,"#include <stdio.h>
+}",0.0,1
+144,WS2021,9,Antwort 10,C,Moritz,Batilla,Can Mert,Ergin,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -12760,8 +12760,8 @@ int main(int argc, char* argv[] )
 		;
 	str2[lange] = '\0';
 	printf(""Der neue String lautet: %s"",str2);
-}",0.1079478055,0
-258,WS2021,9,Antwort 10,C,Moritz,Batilla,Daniel,Grönefeld,"#include <stdio.h>
+}",0.0,1
+145,WS2021,9,Antwort 10,C,Moritz,Batilla,Daniel,Grönefeld,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -12829,8 +12829,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test);
   umdrehen( test );	
   printf( ""Rückwärts : %s \n"", test );
-}",0.5908513342,0
-260,WS2021,9,Antwort 10,C,Moritz,Batilla,Catalina,Florez Vargas,"#include <stdio.h>
+}",0.0,1
+146,WS2021,9,Antwort 10,C,Moritz,Batilla,Catalina,Florez Vargas,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -12923,8 +12923,8 @@ int main(int argc, char *argv[])
             printf(""%c"", nueva[i]);
     if (neu[0] == 'z')
         printf(""z"");
-}",0.0931372549,0
-261,WS2021,9,Antwort 10,C,Moritz,Batilla,Sandro,Paluteder,"#include <stdio.h>
+}",0.0,1
+147,WS2021,9,Antwort 10,C,Moritz,Batilla,Sandro,Paluteder,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -13058,8 +13058,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s \n"", StringXYQRemoved);
     printf(""Der neue String lautet: %s"", StringThirdRemoved);
     
-}",0.0693439761,0
-262,WS2021,9,Antwort 10,C,Moritz,Batilla,Jonas,Bestgen,"#include <stdio.h>
+}",0.0,1
+148,WS2021,9,Antwort 10,C,Moritz,Batilla,Jonas,Bestgen,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -13125,8 +13125,8 @@ int main( int argc, char* argv[] )
 	printf( ""Ersetzt : %s \n"", test );
 	umdrehen( test );
 	printf( ""Rückwärts : %s \n"", test );
-}",0.5876010782000001,0
-263,WS2021,9,Antwort 10,C,Moritz,Batilla,Constanze Cosima,Freier,"#include <stdio.h>
+}",0.0,1
+149,WS2021,9,Antwort 10,C,Moritz,Batilla,Constanze Cosima,Freier,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -13229,8 +13229,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", Ausgabe);
     Ausgabe[Entfernen(Ausgabe)] = '\0';
     printf(""Der neue String lautet: %s\n"", Ausgabe);
-}",0.1468926554,0
-265,WS2021,9,Antwort 10,C,Moritz,Batilla,Caspar Valentin,Zell,"#include <stdio.h>
+}",0.0,1
+150,WS2021,9,Antwort 10,C,Moritz,Batilla,Caspar Valentin,Zell,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -13305,8 +13305,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.5565862709,0
-266,WS2021,9,Antwort 10,C,Moritz,Batilla,Jakob,Kühl,"#include <stdio.h>
+}",0.0,1
+151,WS2021,9,Antwort 10,C,Moritz,Batilla,Jakob,Kühl,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -13366,8 +13366,8 @@ int main(int argc, char* argv[]){
 		y++;
 	}
 	printf(""Der neue String lautet: %s\n"", b);
-}",0.14781966,0
-267,WS2021,9,Antwort 10,C,Moritz,Batilla,Niklas,Mohr,"#include <stdio.h>
+}",0.0,1
+152,WS2021,9,Antwort 10,C,Moritz,Batilla,Niklas,Mohr,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -13452,8 +13452,8 @@ int main( int argc, char* argv[] )
     }
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
-}",0.2544642857,0
-268,WS2021,9,Antwort 10,C,Moritz,Batilla,Tammo Hendrik,Nie,"#include <stdio.h>
+}",0.0,1
+153,WS2021,9,Antwort 10,C,Moritz,Batilla,Tammo Hendrik,Nie,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -13540,8 +13540,8 @@ int main(int argc, char* argv[52])
    //drucken:
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
-}",0.1343669251,0
-269,WS2021,9,Antwort 10,C,Moritz,Batilla,Sören Sven,Werner,"#include <stdio.h>
+}",0.0,1
+154,WS2021,9,Antwort 10,C,Moritz,Batilla,Sören Sven,Werner,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -13603,8 +13603,8 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.2381363244,0
-270,WS2021,9,Antwort 10,C,Can Mert,Ergin,Daniel,Grönefeld,"#include <stdio.h>
+}",0.0,1
+155,WS2021,9,Antwort 10,C,Can Mert,Ergin,Daniel,Grönefeld,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -13678,8 +13678,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test);
   umdrehen( test );	
   printf( ""Rückwärts : %s \n"", test );
-}",0.1619283066,0
-272,WS2021,9,Antwort 10,C,Can Mert,Ergin,Catalina,Florez Vargas,"#include <stdio.h>
+}",0.0,1
+156,WS2021,9,Antwort 10,C,Can Mert,Ergin,Catalina,Florez Vargas,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -13778,8 +13778,8 @@ int main(int argc, char *argv[])
             printf(""%c"", nueva[i]);
     if (neu[0] == 'z')
         printf(""z"");
-}",0.2312859885,0
-273,WS2021,9,Antwort 10,C,Can Mert,Ergin,Sandro,Paluteder,"#include <stdio.h>
+}",0.0,1
+157,WS2021,9,Antwort 10,C,Can Mert,Ergin,Sandro,Paluteder,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -13919,8 +13919,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s \n"", StringXYQRemoved);
     printf(""Der neue String lautet: %s"", StringThirdRemoved);
     
-}",0.0996792499,0
-274,WS2021,9,Antwort 10,C,Can Mert,Ergin,Jonas,Bestgen,"#include <stdio.h>
+}",0.0,1
+158,WS2021,9,Antwort 10,C,Can Mert,Ergin,Jonas,Bestgen,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -13992,8 +13992,8 @@ int main( int argc, char* argv[] )
 	printf( ""Ersetzt : %s \n"", test );
 	umdrehen( test );
 	printf( ""Rückwärts : %s \n"", test );
-}",0.140052356,0
-275,WS2021,9,Antwort 10,C,Can Mert,Ergin,Constanze Cosima,Freier,"#include <stdio.h>
+}",0.0,1
+159,WS2021,9,Antwort 10,C,Can Mert,Ergin,Constanze Cosima,Freier,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -14102,8 +14102,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", Ausgabe);
     Ausgabe[Entfernen(Ausgabe)] = '\0';
     printf(""Der neue String lautet: %s\n"", Ausgabe);
-}",0.1586715867,0
-277,WS2021,9,Antwort 10,C,Can Mert,Ergin,Caspar Valentin,Zell,"#include <stdio.h>
+}",0.0,1
+160,WS2021,9,Antwort 10,C,Can Mert,Ergin,Caspar Valentin,Zell,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -14184,8 +14184,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.1673690548,0
-278,WS2021,9,Antwort 10,C,Can Mert,Ergin,Jakob,Kühl,"#include <stdio.h>
+}",0.0,1
+161,WS2021,9,Antwort 10,C,Can Mert,Ergin,Jakob,Kühl,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -14251,8 +14251,8 @@ int main(int argc, char* argv[]){
 		y++;
 	}
 	printf(""Der neue String lautet: %s\n"", b);
-}",0.3464566929,0
-279,WS2021,9,Antwort 10,C,Can Mert,Ergin,Niklas,Mohr,"#include <stdio.h>
+}",0.0,1
+162,WS2021,9,Antwort 10,C,Can Mert,Ergin,Niklas,Mohr,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -14343,8 +14343,8 @@ int main( int argc, char* argv[] )
     }
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
-}",0.1263616558,0
-280,WS2021,9,Antwort 10,C,Can Mert,Ergin,Tammo Hendrik,Nie,"#include <stdio.h>
+}",0.0,1
+163,WS2021,9,Antwort 10,C,Can Mert,Ergin,Tammo Hendrik,Nie,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -14437,8 +14437,8 @@ int main(int argc, char* argv[52])
    //drucken:
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
-}",0.2516422436,0
-281,WS2021,9,Antwort 10,C,Can Mert,Ergin,Sören Sven,Werner,"#include <stdio.h>
+}",0.0,1
+164,WS2021,9,Antwort 10,C,Can Mert,Ergin,Sören Sven,Werner,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -14506,8 +14506,8 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.1546134663,0
-283,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Catalina,Florez Vargas,"#include <stdio.h>
+}",0.0,1
+165,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Catalina,Florez Vargas,"#include <stdio.h>
 #include <stdlib.h>
 
 void ersetzen(char* dest, int zahl, char* src)
@@ -14592,8 +14592,8 @@ int main(int argc, char *argv[])
             printf(""%c"", nueva[i]);
     if (neu[0] == 'z')
         printf(""z"");
-}",0.1176470588,0
-284,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Sandro,Paluteder,"#include <stdio.h>
+}",0.0,1
+166,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Sandro,Paluteder,"#include <stdio.h>
 #include <stdlib.h>
 
 void ersetzen(char* dest, int zahl, char* src)
@@ -14719,8 +14719,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s \n"", StringXYQRemoved);
     printf(""Der neue String lautet: %s"", StringThirdRemoved);
     
-}",0.0715554428,0
-285,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Jonas,Bestgen,"#include <stdio.h>
+}",0.0,1
+167,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Jonas,Bestgen,"#include <stdio.h>
 #include <stdlib.h>
 
 void ersetzen(char* dest, int zahl, char* src)
@@ -14778,8 +14778,8 @@ int main( int argc, char* argv[] )
 	printf( ""Ersetzt : %s \n"", test );
 	umdrehen( test );
 	printf( ""Rückwärts : %s \n"", test );
-}",0.5805084746,0
-286,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Constanze Cosima,Freier,"#include <stdio.h>
+}",1.0,1
+168,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Constanze Cosima,Freier,"#include <stdio.h>
 #include <stdlib.h>
 
 void ersetzen(char* dest, int zahl, char* src)
@@ -14874,8 +14874,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", Ausgabe);
     Ausgabe[Entfernen(Ausgabe)] = '\0';
     printf(""Der neue String lautet: %s\n"", Ausgabe);
-}",0.1040856031,0
-288,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Caspar Valentin,Zell,"#include <stdio.h>
+}",0.0,1
+169,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Caspar Valentin,Zell,"#include <stdio.h>
 #include <stdlib.h>
 
 void ersetzen(char* dest, int zahl, char* src)
@@ -14942,8 +14942,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.5487411233,0
-289,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Jakob,Kühl,"#include <stdio.h>
+}",0.0,1
+170,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Jakob,Kühl,"#include <stdio.h>
 #include <stdlib.h>
 
 void ersetzen(char* dest, int zahl, char* src)
@@ -14995,8 +14995,8 @@ int main(int argc, char* argv[]){
 		y++;
 	}
 	printf(""Der neue String lautet: %s\n"", b);
-}",0.1509727626,0
-290,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Niklas,Mohr,"#include <stdio.h>
+}",0.0,1
+171,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Niklas,Mohr,"#include <stdio.h>
 #include <stdlib.h>
 
 void ersetzen(char* dest, int zahl, char* src)
@@ -15073,8 +15073,8 @@ int main( int argc, char* argv[] )
     }
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
-}",0.1740139211,0
-291,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Tammo Hendrik,Nie,"#include <stdio.h>
+}",0.0,1
+172,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Tammo Hendrik,Nie,"#include <stdio.h>
 #include <stdlib.h>
 
 void ersetzen(char* dest, int zahl, char* src)
@@ -15153,8 +15153,8 @@ int main(int argc, char* argv[52])
    //drucken:
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
-}",0.1349758972,0
-292,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Sören Sven,Werner,"#include <stdio.h>
+}",0.0,1
+173,WS2021,9,Antwort 10,C,Daniel,Grönefeld,Sören Sven,Werner,"#include <stdio.h>
 #include <stdlib.h>
 
 void ersetzen(char* dest, int zahl, char* src)
@@ -15208,8 +15208,8 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.2383134739,0
-297,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Sandro,Paluteder,"#include <stdio.h>
+}",0.0,1
+174,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Sandro,Paluteder,"#include <stdio.h>
 
 int main(int argc, char *argv[])
 
@@ -15360,8 +15360,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s \n"", StringXYQRemoved);
     printf(""Der neue String lautet: %s"", StringThirdRemoved);
     
-}",0.1887905605,0
-298,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Jonas,Bestgen,"#include <stdio.h>
+}",0.0,1
+175,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Jonas,Bestgen,"#include <stdio.h>
 
 int main(int argc, char *argv[])
 
@@ -15444,8 +15444,8 @@ int main( int argc, char* argv[] )
 	printf( ""Ersetzt : %s \n"", test );
 	umdrehen( test );
 	printf( ""Rückwärts : %s \n"", test );
-}",0.0967056323,0
-299,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Constanze Cosima,Freier,"#include <stdio.h>
+}",0.0,1
+176,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Constanze Cosima,Freier,"#include <stdio.h>
 
 int main(int argc, char *argv[])
 
@@ -15565,8 +15565,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", Ausgabe);
     Ausgabe[Entfernen(Ausgabe)] = '\0';
     printf(""Der neue String lautet: %s\n"", Ausgabe);
-}",0.219666931,0
-301,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Caspar Valentin,Zell,"#include <stdio.h>
+}",0.0,1
+177,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Caspar Valentin,Zell,"#include <stdio.h>
 
 int main(int argc, char *argv[])
 
@@ -15658,8 +15658,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.1181141439,0
-302,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Jakob,Kühl,"#include <stdio.h>
+}",0.0,1
+178,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Jakob,Kühl,"#include <stdio.h>
 
 int main(int argc, char *argv[])
 
@@ -15736,8 +15736,8 @@ int main(int argc, char* argv[]){
 		y++;
 	}
 	printf(""Der neue String lautet: %s\n"", b);
-}",0.2535693889,0
-303,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Niklas,Mohr,"#include <stdio.h>
+}",0.0,1
+179,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Niklas,Mohr,"#include <stdio.h>
 
 int main(int argc, char *argv[])
 
@@ -15839,8 +15839,8 @@ int main( int argc, char* argv[] )
     }
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
-}",0.1196347032,0
-304,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Tammo Hendrik,Nie,"#include <stdio.h>
+}",0.0,1
+180,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Tammo Hendrik,Nie,"#include <stdio.h>
 
 int main(int argc, char *argv[])
 
@@ -15944,8 +15944,8 @@ int main(int argc, char* argv[52])
    //drucken:
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
-}",0.2683240463,0
-305,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Sören Sven,Werner,"#include <stdio.h>
+}",0.0,1
+181,WS2021,9,Antwort 10,C,Catalina,Florez Vargas,Sören Sven,Werner,"#include <stdio.h>
 
 int main(int argc, char *argv[])
 
@@ -16024,8 +16024,8 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.1502890173,0
-306,WS2021,9,Antwort 10,C,Sandro,Paluteder,Jonas,Bestgen,"#include <stdio.h>
+}",0.0,1
+182,WS2021,9,Antwort 10,C,Sandro,Paluteder,Jonas,Bestgen,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char *argv[])
@@ -16149,8 +16149,8 @@ int main( int argc, char* argv[] )
 	printf( ""Ersetzt : %s \n"", test );
 	umdrehen( test );
 	printf( ""Rückwärts : %s \n"", test );
-}",0.0560893274,0
-307,WS2021,9,Antwort 10,C,Sandro,Paluteder,Constanze Cosima,Freier,"#include <stdio.h>
+}",0.0,1
+183,WS2021,9,Antwort 10,C,Sandro,Paluteder,Constanze Cosima,Freier,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char *argv[])
@@ -16311,8 +16311,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", Ausgabe);
     Ausgabe[Entfernen(Ausgabe)] = '\0';
     printf(""Der neue String lautet: %s\n"", Ausgabe);
-}",0.1197951458,0
-309,WS2021,9,Antwort 10,C,Sandro,Paluteder,Caspar Valentin,Zell,"#include <stdio.h>
+}",0.0,1
+184,WS2021,9,Antwort 10,C,Sandro,Paluteder,Caspar Valentin,Zell,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char *argv[])
@@ -16445,8 +16445,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.0903614458,0
-310,WS2021,9,Antwort 10,C,Sandro,Paluteder,Jakob,Kühl,"#include <stdio.h>
+}",0.0,1
+185,WS2021,9,Antwort 10,C,Sandro,Paluteder,Jakob,Kühl,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char *argv[])
@@ -16564,8 +16564,8 @@ int main(int argc, char* argv[]){
 		y++;
 	}
 	printf(""Der neue String lautet: %s\n"", b);
-}",0.102688172,0
-311,WS2021,9,Antwort 10,C,Sandro,Paluteder,Niklas,Mohr,"#include <stdio.h>
+}",0.0,1
+186,WS2021,9,Antwort 10,C,Sandro,Paluteder,Niklas,Mohr,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char *argv[])
@@ -16708,8 +16708,8 @@ int main( int argc, char* argv[] )
     }
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
-}",0.1086799711,0
-312,WS2021,9,Antwort 10,C,Sandro,Paluteder,Tammo Hendrik,Nie,"#include <stdio.h>
+}",0.0,1
+187,WS2021,9,Antwort 10,C,Sandro,Paluteder,Tammo Hendrik,Nie,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char *argv[])
@@ -16854,8 +16854,8 @@ int main(int argc, char* argv[52])
    //drucken:
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
-}",0.0957694096,0
-313,WS2021,9,Antwort 10,C,Sandro,Paluteder,Sören Sven,Werner,"#include <stdio.h>
+}",0.0,1
+188,WS2021,9,Antwort 10,C,Sandro,Paluteder,Sören Sven,Werner,"#include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char *argv[])
@@ -16975,8 +16975,8 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.0703346568,0
-314,WS2021,9,Antwort 10,C,Jonas,Bestgen,Constanze Cosima,Freier,"#include <stdio.h>
+}",0.0,1
+189,WS2021,9,Antwort 10,C,Jonas,Bestgen,Constanze Cosima,Freier,"#include <stdio.h>
 #include <stdlib.h>
 
 void ersetzen(char* dest, int zahl, char* src)
@@ -17069,8 +17069,8 @@ int main(int argc, char *argv[])
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", Ausgabe);
     Ausgabe[Entfernen(Ausgabe)] = '\0';
     printf(""Der neue String lautet: %s\n"", Ausgabe);
-}",0.0813835198,0
-316,WS2021,9,Antwort 10,C,Jonas,Bestgen,Caspar Valentin,Zell,"#include <stdio.h>
+}",0.0,1
+190,WS2021,9,Antwort 10,C,Jonas,Bestgen,Caspar Valentin,Zell,"#include <stdio.h>
 #include <stdlib.h>
 
 void ersetzen(char* dest, int zahl, char* src)
@@ -17135,8 +17135,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.5702535984,0
-317,WS2021,9,Antwort 10,C,Jonas,Bestgen,Jakob,Kühl,"#include <stdio.h>
+}",0.0,1
+191,WS2021,9,Antwort 10,C,Jonas,Bestgen,Jakob,Kühl,"#include <stdio.h>
 #include <stdlib.h>
 
 void ersetzen(char* dest, int zahl, char* src)
@@ -17186,8 +17186,8 @@ int main(int argc, char* argv[]){
 		y++;
 	}
 	printf(""Der neue String lautet: %s\n"", b);
-}",0.1138075314,0
-318,WS2021,9,Antwort 10,C,Jonas,Bestgen,Niklas,Mohr,"#include <stdio.h>
+}",0.0,1
+192,WS2021,9,Antwort 10,C,Jonas,Bestgen,Niklas,Mohr,"#include <stdio.h>
 #include <stdlib.h>
 
 void ersetzen(char* dest, int zahl, char* src)
@@ -17262,8 +17262,8 @@ int main( int argc, char* argv[] )
     }
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
-}",0.1860465116,0
-319,WS2021,9,Antwort 10,C,Jonas,Bestgen,Tammo Hendrik,Nie,"#include <stdio.h>
+}",0.0,1
+193,WS2021,9,Antwort 10,C,Jonas,Bestgen,Tammo Hendrik,Nie,"#include <stdio.h>
 #include <stdlib.h>
 
 void ersetzen(char* dest, int zahl, char* src)
@@ -17340,8 +17340,8 @@ int main(int argc, char* argv[52])
    //drucken:
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
-}",0.1159257175,0
-320,WS2021,9,Antwort 10,C,Jonas,Bestgen,Sören Sven,Werner,"#include <stdio.h>
+}",0.0,1
+194,WS2021,9,Antwort 10,C,Jonas,Bestgen,Sören Sven,Werner,"#include <stdio.h>
 #include <stdlib.h>
 
 void ersetzen(char* dest, int zahl, char* src)
@@ -17393,8 +17393,8 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.2537462537,0
-322,WS2021,9,Antwort 10,C,Constanze Cosima,Freier,Caspar Valentin,Zell,"#include <stdlib.h>
+}",0.0,1
+195,WS2021,9,Antwort 10,C,Constanze Cosima,Freier,Caspar Valentin,Zell,"#include <stdlib.h>
 #include <stdio.h>
 int Laenge(char *str)
 {
@@ -17496,8 +17496,8 @@ int main( int argc, char* argv[] )
   printf( ""Ersetzt : %s \n"", test );
   umdrehen( test );
   printf( ""Rückwärts : %s \n"", test );
-}",0.1819914245,0
-323,WS2021,9,Antwort 10,C,Constanze Cosima,Freier,Jakob,Kühl,"#include <stdlib.h>
+}",0.0,1
+196,WS2021,9,Antwort 10,C,Constanze Cosima,Freier,Jakob,Kühl,"#include <stdlib.h>
 #include <stdio.h>
 int Laenge(char *str)
 {
@@ -17584,8 +17584,8 @@ int main(int argc, char* argv[]){
 		y++;
 	}
 	printf(""Der neue String lautet: %s\n"", b);
-}",0.1722070845,0
-324,WS2021,9,Antwort 10,C,Constanze Cosima,Freier,Niklas,Mohr,"#include <stdlib.h>
+}",0.0,1
+197,WS2021,9,Antwort 10,C,Constanze Cosima,Freier,Niklas,Mohr,"#include <stdlib.h>
 #include <stdio.h>
 int Laenge(char *str)
 {
@@ -17697,8 +17697,8 @@ int main( int argc, char* argv[] )
     }
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
-}",0.182937555,0
-325,WS2021,9,Antwort 10,C,Constanze Cosima,Freier,Tammo Hendrik,Nie,"#include <stdlib.h>
+}",0.0,1
+198,WS2021,9,Antwort 10,C,Constanze Cosima,Freier,Tammo Hendrik,Nie,"#include <stdlib.h>
 #include <stdio.h>
 int Laenge(char *str)
 {
@@ -17812,8 +17812,8 @@ int main(int argc, char* argv[52])
    //drucken:
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
-}",0.1836988002,0
-326,WS2021,9,Antwort 10,C,Constanze Cosima,Freier,Sören Sven,Werner,"#include <stdlib.h>
+}",0.0,1
+199,WS2021,9,Antwort 10,C,Constanze Cosima,Freier,Sören Sven,Werner,"#include <stdlib.h>
 #include <stdio.h>
 int Laenge(char *str)
 {
@@ -17902,8 +17902,8 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.1828153565,0
-327,WS2021,9,Antwort 10,C,Caspar Valentin,Zell,Jakob,Kühl,"#include <stdio.h>
+}",0.0,1
+200,WS2021,9,Antwort 10,C,Caspar Valentin,Zell,Jakob,Kühl,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -17962,8 +17962,8 @@ int main(int argc, char* argv[]){
 		y++;
 	}
 	printf(""Der neue String lautet: %s\n"", b);
-}",0.1445783133,0
-328,WS2021,9,Antwort 10,C,Caspar Valentin,Zell,Niklas,Mohr,"#include <stdio.h>
+}",0.0,1
+201,WS2021,9,Antwort 10,C,Caspar Valentin,Zell,Niklas,Mohr,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -18047,8 +18047,8 @@ int main( int argc, char* argv[] )
     }
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
-}",0.2625919638,0
-329,WS2021,9,Antwort 10,C,Caspar Valentin,Zell,Tammo Hendrik,Nie,"#include <stdio.h>
+}",0.0,1
+202,WS2021,9,Antwort 10,C,Caspar Valentin,Zell,Tammo Hendrik,Nie,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -18134,8 +18134,8 @@ int main(int argc, char* argv[52])
    //drucken:
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
-}",0.2408376963,0
-330,WS2021,9,Antwort 10,C,Caspar Valentin,Zell,Sören Sven,Werner,"#include <stdio.h>
+}",0.0,1
+203,WS2021,9,Antwort 10,C,Caspar Valentin,Zell,Sören Sven,Werner,"#include <stdio.h>
 #include <stdlib.h>
  
 void ersetzen(char* dest, int zahl, char* src)
@@ -18196,8 +18196,8 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.2345679012,0
-331,WS2021,9,Antwort 10,C,Jakob,Kühl,Niklas,Mohr,"#include<stdio.h>
+}",0.0,1
+204,WS2021,9,Antwort 10,C,Jakob,Kühl,Niklas,Mohr,"#include<stdio.h>
 
 int main(int argc, char* argv[]){
 	char a[100]= """";
@@ -18266,8 +18266,8 @@ int main( int argc, char* argv[] )
     }
     char zusammen = sortieren(length, argv);
     printf(""x,y,q und X,Y,Q aussortiert: %s"", zusammen); 
-}",0.1410512309,0
-332,WS2021,9,Antwort 10,C,Jakob,Kühl,Tammo Hendrik,Nie,"#include<stdio.h>
+}",0.0,1
+205,WS2021,9,Antwort 10,C,Jakob,Kühl,Tammo Hendrik,Nie,"#include<stdio.h>
 
 int main(int argc, char* argv[]){
 	char a[100]= """";
@@ -18338,8 +18338,8 @@ int main(int argc, char* argv[52])
    //drucken:
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
-}",0.2247873633,0
-333,WS2021,9,Antwort 10,C,Jakob,Kühl,Sören Sven,Werner,"#include<stdio.h>
+}",0.0,1
+206,WS2021,9,Antwort 10,C,Jakob,Kühl,Sören Sven,Werner,"#include<stdio.h>
 
 int main(int argc, char* argv[]){
 	char a[100]= """";
@@ -18385,8 +18385,8 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.2367816092,0
-334,WS2021,9,Antwort 10,C,Niklas,Mohr,Tammo Hendrik,Nie,"#include <stdio.h>
+}",0.0,1
+207,WS2021,9,Antwort 10,C,Niklas,Mohr,Tammo Hendrik,Nie,"#include <stdio.h>
 #include <stdlib.h>
 
 void aussortieren(char* str)
@@ -18482,8 +18482,8 @@ int main(int argc, char* argv[52])
    //drucken:
 
    printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str2, str3);
-}",0.2091127098,0
-335,WS2021,9,Antwort 10,C,Niklas,Mohr,Sören Sven,Werner,"#include <stdio.h>
+}",0.0,1
+208,WS2021,9,Antwort 10,C,Niklas,Mohr,Sören Sven,Werner,"#include <stdio.h>
 #include <stdlib.h>
 
 void aussortieren(char* str)
@@ -18554,8 +18554,8 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.1909854851,0
-336,WS2021,9,Antwort 10,C,Tammo Hendrik,Nie,Sören Sven,Werner,"#include <stdio.h>
+}",0.0,1
+209,WS2021,9,Antwort 10,C,Tammo Hendrik,Nie,Sören Sven,Werner,"#include <stdio.h>
 #include <stdlib.h>
  
 int main(int argc, char* argv[52])
@@ -18628,4 +18628,4 @@ int main( int argc, char* argv[]){
 	printf(""%s\n"", str);
 
 
-}",0.1597796143,0
+}",0.0,1
