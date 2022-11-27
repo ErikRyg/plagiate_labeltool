@@ -157,7 +157,10 @@ def button_pressed(done_clicks, next_clicks, label, st_df_labled_len, st_df_labl
         else:
             df_labled = pd.read_json(
                 st_given_csv, orient='split')
-            df_labled = df_labled.drop('Unnamed: 0', axis=1)
+            try:
+                df_labled = df_labled.drop('Unnamed: 0', axis=1)
+            except KeyError:
+                pass
             df_labled_len = len(df_labled)
             labled_pairs = csv_stuff.count_labled(df_labled)
         prog_language = loads(st_prog_language).lower()

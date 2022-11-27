@@ -8,11 +8,11 @@ import argparse
 import difflib
 import matplotlib.pyplot as plt
 
-
+#TODO use difflib on code with removed given code
+#TODO add row with two times the same code
 def create_labled_table(df, semester, ha, tasks, prog_language):
     df_labled = pd.DataFrame(columns=['semester', 'ha', 'task', 'prog_lang',
                              'surname1', 'lastname1', 'surname2', 'lastname2', 'code1', 'code2', 'label', 'hand_labled'])
-    # df_labled.index.name = 'index'
     for task in tasks:
         i = 0
         for ln1, sn1, code1 in df.loc[df[f'{task} empty'] == 0][['Nachname', 'Vorname', task]].values:
@@ -22,6 +22,8 @@ def create_labled_table(df, semester, ha, tasks, prog_language):
                 df_labled.loc[len(df_labled)] = [
                     semester, ha, task, prog_language, sn1, ln1, sn2, ln2, code1, code2, max(prelabel1, prelabel2), 0]
             i += 1
+    df_labled = df_labled.sort_values(by=['label'], ascending=False)
+    df_labled = df_labled.reset_index(drop=True)
     return df_labled
 
 
@@ -75,6 +77,9 @@ def add_valid_code_columns(df, semester, ha, tasks, prog_language):
         df[f"{task} empty"] = 0
         # TODO wie vergleicht man leicht unterschiedliche texte auf Gleichheit miteinander??? -> bisher nur direkte gleichheit
         for j, column in enumerate(df[task]):
+            if type(column) == float:
+                df.loc[j, f"{task} empty"] = 1
+                continue
             # there are \\n in the student solutions because "...\n" --> "...\\n" while read_csv
             column = column.replace('\t', '').replace(
                 '\r', '').replace('\n', '').replace('\\n', r'\n')
