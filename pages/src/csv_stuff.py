@@ -22,6 +22,11 @@ def create_labled_table(df, semester, ha, tasks, prog_language):
                 df_labled.loc[len(df_labled)] = [
                     semester, ha, task, prog_language, sn1, ln1, sn2, ln2, code1, code2, max(prelabel1, prelabel2), 0]
             i += 1
+    # create new rows in df_labled for every row in df with column empty == 0 and add the same code to code1 and code2
+    for task in tasks:
+        for ln, sn, code in df.loc[df[f'{task} empty'] == 0][['Nachname', 'Vorname', task]].values:
+            df_labled.loc[len(df_labled)] = [
+                semester, ha, task, prog_language, sn, ln, sn, ln, code, code, 1, 1]
     df_labled = df_labled.sort_values(by=['label'], ascending=False)
     df_labled = df_labled.reset_index(drop=True)
     return df_labled
@@ -93,7 +98,7 @@ def add_valid_code_columns(df, semester, ha, tasks, prog_language):
 
 def create_labled_table_routine(semester, ha, tasks, prog_language, labled_csv=None):
     # csv_path = f'../../data/raw_data/PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten.csv'
-    csv_path = f'./data/raw_data/PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten.csv'
+    csv_path = f'../../data/raw_data/PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten.csv'
     df = pd.read_csv(csv_path, delimiter=',')
     keep_columns = ['Nachname', 'Vorname'] + tasks
     drop_columns = []

@@ -82,12 +82,7 @@ def variable_renamer(given_string):
 
 
 def random_string(stringLength=8):
-    """
-    Function to generate a random string.
-    Can pass it an integer string length to make it that size else it will be 8
-    """
-    letters = string.ascii_lowercase
-    return ''.join(random.choice(letters) for i in range(stringLength))
+    return ''.join(random.choices(string.ascii_lowercase, k=5))
 
 
 def whitespace_remover(a):
