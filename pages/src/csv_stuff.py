@@ -8,8 +8,6 @@ import argparse
 import difflib
 import matplotlib.pyplot as plt
 
-#TODO use difflib on code with removed given code
-#TODO add row with two times the same code
 def create_labled_table(df, semester, ha, tasks, prog_language):
     df_labled = pd.DataFrame(columns=['semester', 'ha', 'task', 'prog_lang',
                              'surname1', 'lastname1', 'surname2', 'lastname2', 'code1', 'code2', 'label', 'hand_labled'])
@@ -98,7 +96,7 @@ def add_valid_code_columns(df, semester, ha, tasks, prog_language):
 
 def create_labled_table_routine(semester, ha, tasks, prog_language, labled_csv=None):
     # csv_path = f'../../data/raw_data/PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten.csv'
-    csv_path = f'../../data/raw_data/PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten.csv'
+    csv_path = f'./data/raw_data/PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten.csv'
     df = pd.read_csv(csv_path, delimiter=',')
     keep_columns = ['Nachname', 'Vorname'] + tasks
     drop_columns = []
