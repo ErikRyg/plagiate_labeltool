@@ -13,7 +13,7 @@ import random
 import string
 
 
-def variable_renamer(given_string):
+def rename_variables(given_string):
     """
     Function to rename all variables and fuctions.
     given_string is a string of C/C++ code
@@ -85,81 +85,11 @@ def random_string(stringLength=8):
     return ''.join(random.choices(string.ascii_lowercase, k=5))
 
 
-def whitespace_remover(a):
-    """
-    Function to remove all whitespace, except for after functions, variables, and imports
-    """
-    splits = re.split('\"', a)
-    code_string = "((\w+\s+)[a-zA-Z_*][|a-zA-Z0-9_]*|#.*|return [a-zA-Z0-9_]*| [[.].]|else)"
-    index = 0
-    a = ""
-    for s in splits:
-        # If its not the contents of a string, remove spaces of everything but code
-        if (index % 2 == 0):
-            # Create a spaceless version of s
-            s_spaceless = re.sub("[\s]", "", s)
-            # find all spaced code blocks in s
-            s_code = re.findall(code_string, s)
-
-            for code in s_code:
-                old = re.sub("[\s]", "", code[0])
-                new = code[0]
-
-                if (code[0][0] == '#'):
-                    # Adding a newline for preprocesser commands
-                    new = code[0] + "\n"
-                elif ("unsigned" in code[0] or "else" in code[0]):
-                    new = code[0] + " "
-                # Replace the spaceless code blocks in s with their spaced equivilents
-                s_spaceless = s_spaceless.replace(old, new)
-        else:
-            s_spaceless = s
-
-        if (index >= 1):
-            a = a + "\"" + s_spaceless
-        else:
-            a = a + s_spaceless
-        index += 1
-    return a
-
-
-def comment_remover(given_string):
-    """
-    Function to (currently) remove C++ style comments
-    given_string is a string of C/C++ code
-    """
-
-    # This does not take into account if a C++ style comment happens within a string
-    # i.e. "Normal String // With a C++ comment embedded inside"
-    cpp_filtered_code = re.findall(
-        r"\/\/.*", given_string)
-    for entry in cpp_filtered_code:
-        given_string = given_string.replace(entry, "")
-
-    # This is a barebones start for C style block comments
-    # Current issue is it is only single line C style comments
-    # It also finds C style comments in strings
-    c_filtered_code = re.findall(
-        r"\/\*.*\*\/", given_string)
-    for entry in c_filtered_code:
-        given_string = given_string.replace(entry, "")
-
-    return given_string
-
-
 def main():
     """
     The main function to begin the obfuscation of c code files
     """
     cwd = os.getcwd()
-    # Attempt to find the repository directory name, if it exists change cwd to where the tests folder should be in the cwd
-    # if(r"C-Code-Obfuscator" in cwd):
-    #     offset = cwd.find("C-Code-Obfuscator") + 17
-    #     cwd = cwd[:offset]
-    #     cwd = cwd + cwd[-18] + "tests"
-    # else:
-    # cwd = input('Path to C Source Files Directory: ')
-    cwd = '/home/erik/TU/ni/plagiate_labeltool/data/labled/c_files'
     print("Looking for C Source Files in {}...".format(cwd))
 
     print("Log: ")
@@ -169,9 +99,7 @@ def main():
             with open(os.path.join(cwd, filename)) as file_data:
                 file_string = file_data.read()
                 print("PASS\n")
-                file_string = comment_remover(file_string)
-                file_string = variable_renamer(file_string)
-                # file_string = whitespace_remover(file_string)
+                file_string = rename_variables(file_string)
                 f = open("obfuscated_"+filename, "w+")
                 f.write(file_string)
                 print(file_string)

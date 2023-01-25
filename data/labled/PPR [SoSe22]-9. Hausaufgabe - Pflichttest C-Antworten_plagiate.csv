@@ -1,0 +1,3745 @@
+,semester,ha,task,prog_lang,surname1,lastname1,code1,code2,label
+0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+      dest[i]=src[i];
+  {
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+}
+{  
+      }","{  
+  for (int cczzu = 0; (cczzu<zahl)&&(dest[cczzu]!=0)&&(src[cczzu]!=0); cczzu++)
+      dest[cczzu]=src[cczzu];
+  {
+  int wbpuu;
+  char sdfvy;
+  for (wbpuu = 0; str[wbpuu]!=0; wbpuu++){  for (int cczzu=0; cczzu<wbpuu/2; cczzu++){
+    sdfvy=str[cczzu];
+    str[cczzu]=str[wbpuu-cczzu-1];
+    str[wbpuu-cczzu-1]=sdfvy;
+  }
+}
+{  
+      }",1
+0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+      dest[i]=src[i];
+  {
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+}
+{  
+      }","{  
+  for (int dvfmv = 0; (dvfmv<zahl)&&(dest[dvfmv]!=0)&&(src[dvfmv]!=0); dvfmv++)
+      dest[dvfmv]=src[dvfmv];
+  {
+  int hkrvi;
+  char esofj;
+  for (hkrvi = 0; str[hkrvi]!=0; hkrvi++){  for (int dvfmv=0; dvfmv<hkrvi/2; dvfmv++){
+    esofj=str[dvfmv];
+    str[dvfmv]=str[hkrvi-dvfmv-1];
+    str[hkrvi-dvfmv-1]=esofj;
+  }
+}
+{  
+      }",1
+0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+      dest[i]=src[i];
+  {
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+}
+{  
+      }","{  
+  for (int glxnz = 0; (glxnz<zahl)&&(dest[glxnz]!=0)&&(src[glxnz]!=0); glxnz++)
+      dest[glxnz]=src[glxnz];
+  {
+  int amdov;
+  char ewchq;
+  for (amdov = 0; str[amdov]!=0; amdov++){  for (int glxnz=0; glxnz<amdov/2; glxnz++){
+    ewchq=str[glxnz];
+    str[glxnz]=str[amdov-glxnz-1];
+    str[amdov-glxnz-1]=ewchq;
+  }
+}
+{  
+      }",1
+0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+      dest[i]=src[i];
+  {
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+}
+{  
+      }","{  
+  for (int lwvvx = 0; (lwvvx<zahl)&&(dest[lwvvx]!=0)&&(src[lwvvx]!=0); lwvvx++)
+      dest[lwvvx]=src[lwvvx];
+  {
+  int chyrl;
+  char scwxz;
+  for (chyrl = 0; str[chyrl]!=0; chyrl++){  for (int lwvvx=0; lwvvx<chyrl/2; lwvvx++){
+    scwxz=str[lwvvx];
+    str[lwvvx]=str[chyrl-lwvvx-1];
+    str[chyrl-lwvvx-1]=scwxz;
+  }
+}
+{  
+      }",1
+0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+      dest[i]=src[i];
+  {
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+}
+{  
+      }","{  
+  for (int assna = 0; (assna<zahl)&&(dest[assna]!=0)&&(src[assna]!=0); assna++)
+      dest[assna]=src[assna];
+  {
+  int xjoiz;
+  char soyjx;
+  for (xjoiz = 0; str[xjoiz]!=0; xjoiz++){  for (int assna=0; assna<xjoiz/2; assna++){
+    soyjx=str[assna];
+    str[assna]=str[xjoiz-assna-1];
+    str[xjoiz-assna-1]=soyjx;
+  }
+}
+{  
+      }",1
+0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+      dest[i]=src[i];
+  {
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+}
+{  
+      }","{  
+  for (int iatac = 0; (iatac<zahl)&&(dest[iatac]!=0)&&(src[iatac]!=0); iatac++)
+      dest[iatac]=src[iatac];
+  {
+  int ttsqp;
+  char licut;
+  for (ttsqp = 0; str[ttsqp]!=0; ttsqp++){  for (int iatac=0; iatac<ttsqp/2; iatac++){
+    licut=str[iatac];
+    str[iatac]=str[ttsqp-iatac-1];
+    str[ttsqp-iatac-1]=licut;
+  }
+}
+{  
+      }",1
+0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+      dest[i]=src[i];
+  {
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+}
+{  
+      }","{  
+  for (int pdldv = 0; (pdldv<zahl)&&(dest[pdldv]!=0)&&(src[pdldv]!=0); pdldv++)
+      dest[pdldv]=src[pdldv];
+  {
+  int pxsmy;
+  char mbzpn;
+  for (pxsmy = 0; str[pxsmy]!=0; pxsmy++){  for (int pdldv=0; pdldv<pxsmy/2; pdldv++){
+    mbzpn=str[pdldv];
+    str[pdldv]=str[pxsmy-pdldv-1];
+    str[pxsmy-pdldv-1]=mbzpn;
+  }
+}
+{  
+      }",1
+0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+      dest[i]=src[i];
+  {
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+}
+{  
+      }","{  
+  for (int wyhzv = 0; (wyhzv<zahl)&&(dest[wyhzv]!=0)&&(src[wyhzv]!=0); wyhzv++)
+      dest[wyhzv]=src[wyhzv];
+  {
+  int lvhuo;
+  char oesou;
+  for (lvhuo = 0; str[lvhuo]!=0; lvhuo++){  for (int wyhzv=0; wyhzv<lvhuo/2; wyhzv++){
+    oesou=str[wyhzv];
+    str[wyhzv]=str[lvhuo-wyhzv-1];
+    str[lvhuo-wyhzv-1]=oesou;
+  }
+}
+{  
+      }",1
+16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
+        i++;
+        int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+        int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+{
+                  }","    int jecva = 0;
+    while ((jecva < zahl) && (dest[jecva] != '\0') && (src[jecva] != '\0'))        dest[jecva] = src[jecva];
+        jecva++;
+        int jecva = 0;
+    int vcbfw = 0;
+    while(str[jecva] != '\0'){
+        vcbfw += 1;
+        jecva += 1;
+        int hyryj = 0;
+    int xjoea = vcbfw - 1;
+    while (hyryj < xjoea){
+        char svzjd = str[hyryj];
+        str[hyryj] = str[xjoea];
+        str[xjoea] = svzjd;
+        hyryj++;
+        xjoea--;
+    }
+}
+{
+                  }",1
+16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
+        i++;
+        int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+        int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+{
+                  }","    int aqcml = 0;
+    while ((aqcml < zahl) && (dest[aqcml] != '\0') && (src[aqcml] != '\0'))        dest[aqcml] = src[aqcml];
+        aqcml++;
+        int aqcml = 0;
+    int qulqb = 0;
+    while(str[aqcml] != '\0'){
+        qulqb += 1;
+        aqcml += 1;
+        int bggnj = 0;
+    int lgare = qulqb - 1;
+    while (bggnj < lgare){
+        char dwkwy = str[bggnj];
+        str[bggnj] = str[lgare];
+        str[lgare] = dwkwy;
+        bggnj++;
+        lgare--;
+    }
+}
+{
+                  }",1
+16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
+        i++;
+        int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+        int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+{
+                  }","    int fzier = 0;
+    while ((fzier < zahl) && (dest[fzier] != '\0') && (src[fzier] != '\0'))        dest[fzier] = src[fzier];
+        fzier++;
+        int fzier = 0;
+    int pmvmm = 0;
+    while(str[fzier] != '\0'){
+        pmvmm += 1;
+        fzier += 1;
+        int qyqql = 0;
+    int jtcfg = pmvmm - 1;
+    while (qyqql < jtcfg){
+        char bcrpv = str[qyqql];
+        str[qyqql] = str[jtcfg];
+        str[jtcfg] = bcrpv;
+        qyqql++;
+        jtcfg--;
+    }
+}
+{
+                  }",1
+16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
+        i++;
+        int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+        int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+{
+                  }","    int hbtpf = 0;
+    while ((hbtpf < zahl) && (dest[hbtpf] != '\0') && (src[hbtpf] != '\0'))        dest[hbtpf] = src[hbtpf];
+        hbtpf++;
+        int hbtpf = 0;
+    int cldzk = 0;
+    while(str[hbtpf] != '\0'){
+        cldzk += 1;
+        hbtpf += 1;
+        int gktxm = 0;
+    int fgora = cldzk - 1;
+    while (gktxm < fgora){
+        char eetcl = str[gktxm];
+        str[gktxm] = str[fgora];
+        str[fgora] = eetcl;
+        gktxm++;
+        fgora--;
+    }
+}
+{
+                  }",1
+16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
+        i++;
+        int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+        int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+{
+                  }","    int xrfhf = 0;
+    while ((xrfhf < zahl) && (dest[xrfhf] != '\0') && (src[xrfhf] != '\0'))        dest[xrfhf] = src[xrfhf];
+        xrfhf++;
+        int xrfhf = 0;
+    int tarai = 0;
+    while(str[xrfhf] != '\0'){
+        tarai += 1;
+        xrfhf += 1;
+        int gleyj = 0;
+    int tvpqr = tarai - 1;
+    while (gleyj < tvpqr){
+        char apokt = str[gleyj];
+        str[gleyj] = str[tvpqr];
+        str[tvpqr] = apokt;
+        gleyj++;
+        tvpqr--;
+    }
+}
+{
+                  }",1
+16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
+        i++;
+        int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+        int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+{
+                  }","    int yfmul = 0;
+    while ((yfmul < zahl) && (dest[yfmul] != '\0') && (src[yfmul] != '\0'))        dest[yfmul] = src[yfmul];
+        yfmul++;
+        int yfmul = 0;
+    int kwluw = 0;
+    while(str[yfmul] != '\0'){
+        kwluw += 1;
+        yfmul += 1;
+        int cdmgt = 0;
+    int ysdxz = kwluw - 1;
+    while (cdmgt < ysdxz){
+        char pasmn = str[cdmgt];
+        str[cdmgt] = str[ysdxz];
+        str[ysdxz] = pasmn;
+        cdmgt++;
+        ysdxz--;
+    }
+}
+{
+                  }",1
+16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
+        i++;
+        int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+        int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+{
+                  }","    int ncopy = 0;
+    while ((ncopy < zahl) && (dest[ncopy] != '\0') && (src[ncopy] != '\0'))        dest[ncopy] = src[ncopy];
+        ncopy++;
+        int ncopy = 0;
+    int fhjya = 0;
+    while(str[ncopy] != '\0'){
+        fhjya += 1;
+        ncopy += 1;
+        int ecvxr = 0;
+    int tqwkx = fhjya - 1;
+    while (ecvxr < tqwkx){
+        char rniei = str[ecvxr];
+        str[ecvxr] = str[tqwkx];
+        str[tqwkx] = rniei;
+        ecvxr++;
+        tqwkx--;
+    }
+}
+{
+                  }",1
+16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
+        i++;
+        int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+        int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+{
+                  }","    int mpqxp = 0;
+    while ((mpqxp < zahl) && (dest[mpqxp] != '\0') && (src[mpqxp] != '\0'))        dest[mpqxp] = src[mpqxp];
+        mpqxp++;
+        int mpqxp = 0;
+    int zihsc = 0;
+    while(str[mpqxp] != '\0'){
+        zihsc += 1;
+        mpqxp += 1;
+        int fdyad = 0;
+    int ncufo = zihsc - 1;
+    while (fdyad < ncufo){
+        char uipoy = str[fdyad];
+        str[fdyad] = str[ncufo];
+        str[ncufo] = uipoy;
+        fdyad++;
+        ncufo--;
+    }
+}
+{
+                  }",1
+31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+        char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+int main( int argc, char* argv[] ){  
+      }","void uexih(char* dest, int wlgtf, char* src){  
+    for (int dhbcr = 0; dhbcr <=wlgtf && dest[dhbcr] != '\0'; dhbcr++){
+        dest[dhbcr] = src[dhbcr];
+    void lhdrr( char* str ){
+    int pmheh = 0;
+    for(int dhbcr = 1; str[dhbcr] != '\0'; dhbcr++){
+        pmheh = dhbcr;
+        char gkxfy[pmheh];
+    for(int dhbcr = 0; str[dhbcr] != '\0'; dhbcr++){
+        gkxfy[dhbcr] = str[pmheh-dhbcr];
+    }
+    for(int dhbcr = 0; str[dhbcr] != '\0'; dhbcr++){
+        str[dhbcr]=gkxfy[dhbcr];
+    }
+}
+int main( int ybgal, char* argv[] ){  
+      }",1
+31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+        char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+int main( int argc, char* argv[] ){  
+      }","void capfx(char* dest, int zjsux, char* src){  
+    for (int thyra = 0; thyra <=zjsux && dest[thyra] != '\0'; thyra++){
+        dest[thyra] = src[thyra];
+    void afqjc( char* str ){
+    int tbisd = 0;
+    for(int thyra = 1; str[thyra] != '\0'; thyra++){
+        tbisd = thyra;
+        char xdsnu[tbisd];
+    for(int thyra = 0; str[thyra] != '\0'; thyra++){
+        xdsnu[thyra] = str[tbisd-thyra];
+    }
+    for(int thyra = 0; str[thyra] != '\0'; thyra++){
+        str[thyra]=xdsnu[thyra];
+    }
+}
+int main( int nhmjp, char* argv[] ){  
+      }",1
+31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+        char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+int main( int argc, char* argv[] ){  
+      }","void puavd(char* dest, int pokes, char* src){  
+    for (int jgyma = 0; jgyma <=pokes && dest[jgyma] != '\0'; jgyma++){
+        dest[jgyma] = src[jgyma];
+    void rwbjc( char* str ){
+    int zjcyn = 0;
+    for(int jgyma = 1; str[jgyma] != '\0'; jgyma++){
+        zjcyn = jgyma;
+        char vokjc[zjcyn];
+    for(int jgyma = 0; str[jgyma] != '\0'; jgyma++){
+        vokjc[jgyma] = str[zjcyn-jgyma];
+    }
+    for(int jgyma = 0; str[jgyma] != '\0'; jgyma++){
+        str[jgyma]=vokjc[jgyma];
+    }
+}
+int main( int shvqd, char* argv[] ){  
+      }",1
+31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+        char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+int main( int argc, char* argv[] ){  
+      }","void iihmz(char* dest, int mlres, char* src){  
+    for (int lnjcu = 0; lnjcu <=mlres && dest[lnjcu] != '\0'; lnjcu++){
+        dest[lnjcu] = src[lnjcu];
+    void ebtqg( char* str ){
+    int xaubb = 0;
+    for(int lnjcu = 1; str[lnjcu] != '\0'; lnjcu++){
+        xaubb = lnjcu;
+        char mdmfa[xaubb];
+    for(int lnjcu = 0; str[lnjcu] != '\0'; lnjcu++){
+        mdmfa[lnjcu] = str[xaubb-lnjcu];
+    }
+    for(int lnjcu = 0; str[lnjcu] != '\0'; lnjcu++){
+        str[lnjcu]=mdmfa[lnjcu];
+    }
+}
+int main( int rfhjj, char* argv[] ){  
+      }",1
+31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+        char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+int main( int argc, char* argv[] ){  
+      }","void ryzzm(char* dest, int drlhq, char* src){  
+    for (int cqsje = 0; cqsje <=drlhq && dest[cqsje] != '\0'; cqsje++){
+        dest[cqsje] = src[cqsje];
+    void thyqv( char* str ){
+    int waifh = 0;
+    for(int cqsje = 1; str[cqsje] != '\0'; cqsje++){
+        waifh = cqsje;
+        char jmdyl[waifh];
+    for(int cqsje = 0; str[cqsje] != '\0'; cqsje++){
+        jmdyl[cqsje] = str[waifh-cqsje];
+    }
+    for(int cqsje = 0; str[cqsje] != '\0'; cqsje++){
+        str[cqsje]=jmdyl[cqsje];
+    }
+}
+int main( int szjuc, char* argv[] ){  
+      }",1
+31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+        char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+int main( int argc, char* argv[] ){  
+      }","void tquld(char* dest, int ydgag, char* src){  
+    for (int yzatd = 0; yzatd <=ydgag && dest[yzatd] != '\0'; yzatd++){
+        dest[yzatd] = src[yzatd];
+    void yktxn( char* str ){
+    int qpson = 0;
+    for(int yzatd = 1; str[yzatd] != '\0'; yzatd++){
+        qpson = yzatd;
+        char ihiil[qpson];
+    for(int yzatd = 0; str[yzatd] != '\0'; yzatd++){
+        ihiil[yzatd] = str[qpson-yzatd];
+    }
+    for(int yzatd = 0; str[yzatd] != '\0'; yzatd++){
+        str[yzatd]=ihiil[yzatd];
+    }
+}
+int main( int ckoqv, char* argv[] ){  
+      }",1
+31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+        char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+int main( int argc, char* argv[] ){  
+      }","void veaud(char* dest, int jgndj, char* src){  
+    for (int zqjuy = 0; zqjuy <=jgndj && dest[zqjuy] != '\0'; zqjuy++){
+        dest[zqjuy] = src[zqjuy];
+    void spdtb( char* str ){
+    int yccmx = 0;
+    for(int zqjuy = 1; str[zqjuy] != '\0'; zqjuy++){
+        yccmx = zqjuy;
+        char uemif[yccmx];
+    for(int zqjuy = 0; str[zqjuy] != '\0'; zqjuy++){
+        uemif[zqjuy] = str[yccmx-zqjuy];
+    }
+    for(int zqjuy = 0; str[zqjuy] != '\0'; zqjuy++){
+        str[zqjuy]=uemif[zqjuy];
+    }
+}
+int main( int wbyfk, char* argv[] ){  
+      }",1
+31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+        char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+int main( int argc, char* argv[] ){  
+      }","void ixdku(char* dest, int ehfmz, char* src){  
+    for (int vjkrv = 0; vjkrv <=ehfmz && dest[vjkrv] != '\0'; vjkrv++){
+        dest[vjkrv] = src[vjkrv];
+    void aansk( char* str ){
+    int mivcd = 0;
+    for(int vjkrv = 1; str[vjkrv] != '\0'; vjkrv++){
+        mivcd = vjkrv;
+        char adqvn[mivcd];
+    for(int vjkrv = 0; str[vjkrv] != '\0'; vjkrv++){
+        adqvn[vjkrv] = str[mivcd-vjkrv];
+    }
+    for(int vjkrv = 0; str[vjkrv] != '\0'; vjkrv++){
+        str[vjkrv]=adqvn[vjkrv];
+    }
+}
+int main( int krece, char* argv[] ){  
+      }",1
+45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+    while(x[i] != NULL)         i++;
+        return i;
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+}
+{
+                  }","int kzstz(char msxhy[])     int bhxan = 0;
+    while(msxhy[bhxan] != NULL)         bhxan++;
+        return bhxan;
+    for (int bhxan = 0; bhxan < zahl && bhxan < kzstz(src) && bhxan < 10; ++bhxan) {
+        dest[bhxan] = src[bhxan];
+    }
+{
+    int ymxsk = kzstz(str);
+    char msxhy[ymxsk];
+    for (int bhxan = 0; bhxan < ymxsk; ++bhxan) {
+        msxhy[bhxan] = str[bhxan];
+    }
+    for (int bhxan = ymxsk-1; bhxan >= 0; --bhxan) {
+        str[(ymxsk-1)-bhxan]=msxhy[bhxan];
+    }
+}
+{
+                  }",1
+45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+    while(x[i] != NULL)         i++;
+        return i;
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+}
+{
+                  }","int zgwrc(char rbbil[])     int lcnct = 0;
+    while(rbbil[lcnct] != NULL)         lcnct++;
+        return lcnct;
+    for (int lcnct = 0; lcnct < zahl && lcnct < zgwrc(src) && lcnct < 10; ++lcnct) {
+        dest[lcnct] = src[lcnct];
+    }
+{
+    int oipkj = zgwrc(str);
+    char rbbil[oipkj];
+    for (int lcnct = 0; lcnct < oipkj; ++lcnct) {
+        rbbil[lcnct] = str[lcnct];
+    }
+    for (int lcnct = oipkj-1; lcnct >= 0; --lcnct) {
+        str[(oipkj-1)-lcnct]=rbbil[lcnct];
+    }
+}
+{
+                  }",1
+45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+    while(x[i] != NULL)         i++;
+        return i;
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+}
+{
+                  }","int zvkza(char lbisj[])     int iwgmr = 0;
+    while(lbisj[iwgmr] != NULL)         iwgmr++;
+        return iwgmr;
+    for (int iwgmr = 0; iwgmr < zahl && iwgmr < zvkza(src) && iwgmr < 10; ++iwgmr) {
+        dest[iwgmr] = src[iwgmr];
+    }
+{
+    int aewes = zvkza(str);
+    char lbisj[aewes];
+    for (int iwgmr = 0; iwgmr < aewes; ++iwgmr) {
+        lbisj[iwgmr] = str[iwgmr];
+    }
+    for (int iwgmr = aewes-1; iwgmr >= 0; --iwgmr) {
+        str[(aewes-1)-iwgmr]=lbisj[iwgmr];
+    }
+}
+{
+                  }",1
+45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+    while(x[i] != NULL)         i++;
+        return i;
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+}
+{
+                  }","int bbzfu(char pxboc[])     int qqskj = 0;
+    while(pxboc[qqskj] != NULL)         qqskj++;
+        return qqskj;
+    for (int qqskj = 0; qqskj < zahl && qqskj < bbzfu(src) && qqskj < 10; ++qqskj) {
+        dest[qqskj] = src[qqskj];
+    }
+{
+    int zxytk = bbzfu(str);
+    char pxboc[zxytk];
+    for (int qqskj = 0; qqskj < zxytk; ++qqskj) {
+        pxboc[qqskj] = str[qqskj];
+    }
+    for (int qqskj = zxytk-1; qqskj >= 0; --qqskj) {
+        str[(zxytk-1)-qqskj]=pxboc[qqskj];
+    }
+}
+{
+                  }",1
+45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+    while(x[i] != NULL)         i++;
+        return i;
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+}
+{
+                  }","int jzvsz(char zfbmn[])     int kpbgb = 0;
+    while(zfbmn[kpbgb] != NULL)         kpbgb++;
+        return kpbgb;
+    for (int kpbgb = 0; kpbgb < zahl && kpbgb < jzvsz(src) && kpbgb < 10; ++kpbgb) {
+        dest[kpbgb] = src[kpbgb];
+    }
+{
+    int mokef = jzvsz(str);
+    char zfbmn[mokef];
+    for (int kpbgb = 0; kpbgb < mokef; ++kpbgb) {
+        zfbmn[kpbgb] = str[kpbgb];
+    }
+    for (int kpbgb = mokef-1; kpbgb >= 0; --kpbgb) {
+        str[(mokef-1)-kpbgb]=zfbmn[kpbgb];
+    }
+}
+{
+                  }",1
+45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+    while(x[i] != NULL)         i++;
+        return i;
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+}
+{
+                  }","int cbfgo(char lurbh[])     int lacwe = 0;
+    while(lurbh[lacwe] != NULL)         lacwe++;
+        return lacwe;
+    for (int lacwe = 0; lacwe < zahl && lacwe < cbfgo(src) && lacwe < 10; ++lacwe) {
+        dest[lacwe] = src[lacwe];
+    }
+{
+    int vzdcj = cbfgo(str);
+    char lurbh[vzdcj];
+    for (int lacwe = 0; lacwe < vzdcj; ++lacwe) {
+        lurbh[lacwe] = str[lacwe];
+    }
+    for (int lacwe = vzdcj-1; lacwe >= 0; --lacwe) {
+        str[(vzdcj-1)-lacwe]=lurbh[lacwe];
+    }
+}
+{
+                  }",1
+45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+    while(x[i] != NULL)         i++;
+        return i;
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+}
+{
+                  }","int abvcx(char xbvcz[])     int aahuw = 0;
+    while(xbvcz[aahuw] != NULL)         aahuw++;
+        return aahuw;
+    for (int aahuw = 0; aahuw < zahl && aahuw < abvcx(src) && aahuw < 10; ++aahuw) {
+        dest[aahuw] = src[aahuw];
+    }
+{
+    int tanlh = abvcx(str);
+    char xbvcz[tanlh];
+    for (int aahuw = 0; aahuw < tanlh; ++aahuw) {
+        xbvcz[aahuw] = str[aahuw];
+    }
+    for (int aahuw = tanlh-1; aahuw >= 0; --aahuw) {
+        str[(tanlh-1)-aahuw]=xbvcz[aahuw];
+    }
+}
+{
+                  }",1
+45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+    while(x[i] != NULL)         i++;
+        return i;
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+}
+{
+                  }","int qipww(char aeyve[])     int birut = 0;
+    while(aeyve[birut] != NULL)         birut++;
+        return birut;
+    for (int birut = 0; birut < zahl && birut < qipww(src) && birut < 10; ++birut) {
+        dest[birut] = src[birut];
+    }
+{
+    int nwyex = qipww(str);
+    char aeyve[nwyex];
+    for (int birut = 0; birut < nwyex; ++birut) {
+        aeyve[birut] = str[birut];
+    }
+    for (int birut = nwyex-1; birut >= 0; --birut) {
+        str[(nwyex-1)-birut]=aeyve[birut];
+    }
+}
+{
+                  }",1
+70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
+  {
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;  n--;
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+}
+{  
+      }","{  
+  for(int jjqle=0; jjqle<zahl && *(dest+jjqle) != '\0'  ; jjqle++)  *(dest+jjqle) = *(src +jjqle);
+  {
+  int aonob=0;
+  for(int jjqle =0; *(str+jjqle) != '\0' ;jjqle++){
+  aonob++;  aonob--;
+  for(int jjqle=0; jjqle<=aonob; jjqle++){
+  char wifup = *(str +jjqle); 
+  *(str + jjqle) = *(str + aonob );
+  *(str + aonob) = wifup;
+    aonob--;
+  }
+}
+{  
+      }",1
+70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
+  {
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;  n--;
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+}
+{  
+      }","{  
+  for(int ulaqo=0; ulaqo<zahl && *(dest+ulaqo) != '\0'  ; ulaqo++)  *(dest+ulaqo) = *(src +ulaqo);
+  {
+  int eggqx=0;
+  for(int ulaqo =0; *(str+ulaqo) != '\0' ;ulaqo++){
+  eggqx++;  eggqx--;
+  for(int ulaqo=0; ulaqo<=eggqx; ulaqo++){
+  char zewad = *(str +ulaqo); 
+  *(str + ulaqo) = *(str + eggqx );
+  *(str + eggqx) = zewad;
+    eggqx--;
+  }
+}
+{  
+      }",1
+70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
+  {
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;  n--;
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+}
+{  
+      }","{  
+  for(int fvfti=0; fvfti<zahl && *(dest+fvfti) != '\0'  ; fvfti++)  *(dest+fvfti) = *(src +fvfti);
+  {
+  int kgqjx=0;
+  for(int fvfti =0; *(str+fvfti) != '\0' ;fvfti++){
+  kgqjx++;  kgqjx--;
+  for(int fvfti=0; fvfti<=kgqjx; fvfti++){
+  char jdqmw = *(str +fvfti); 
+  *(str + fvfti) = *(str + kgqjx );
+  *(str + kgqjx) = jdqmw;
+    kgqjx--;
+  }
+}
+{  
+      }",1
+70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
+  {
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;  n--;
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+}
+{  
+      }","{  
+  for(int igymb=0; igymb<zahl && *(dest+igymb) != '\0'  ; igymb++)  *(dest+igymb) = *(src +igymb);
+  {
+  int fshac=0;
+  for(int igymb =0; *(str+igymb) != '\0' ;igymb++){
+  fshac++;  fshac--;
+  for(int igymb=0; igymb<=fshac; igymb++){
+  char akeip = *(str +igymb); 
+  *(str + igymb) = *(str + fshac );
+  *(str + fshac) = akeip;
+    fshac--;
+  }
+}
+{  
+      }",1
+70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
+  {
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;  n--;
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+}
+{  
+      }","{  
+  for(int rjtqw=0; rjtqw<zahl && *(dest+rjtqw) != '\0'  ; rjtqw++)  *(dest+rjtqw) = *(src +rjtqw);
+  {
+  int bqqfe=0;
+  for(int rjtqw =0; *(str+rjtqw) != '\0' ;rjtqw++){
+  bqqfe++;  bqqfe--;
+  for(int rjtqw=0; rjtqw<=bqqfe; rjtqw++){
+  char qgdld = *(str +rjtqw); 
+  *(str + rjtqw) = *(str + bqqfe );
+  *(str + bqqfe) = qgdld;
+    bqqfe--;
+  }
+}
+{  
+      }",1
+70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
+  {
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;  n--;
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+}
+{  
+      }","{  
+  for(int cgsxm=0; cgsxm<zahl && *(dest+cgsxm) != '\0'  ; cgsxm++)  *(dest+cgsxm) = *(src +cgsxm);
+  {
+  int lslrt=0;
+  for(int cgsxm =0; *(str+cgsxm) != '\0' ;cgsxm++){
+  lslrt++;  lslrt--;
+  for(int cgsxm=0; cgsxm<=lslrt; cgsxm++){
+  char ttauy = *(str +cgsxm); 
+  *(str + cgsxm) = *(str + lslrt );
+  *(str + lslrt) = ttauy;
+    lslrt--;
+  }
+}
+{  
+      }",1
+70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
+  {
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;  n--;
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+}
+{  
+      }","{  
+  for(int sfmvr=0; sfmvr<zahl && *(dest+sfmvr) != '\0'  ; sfmvr++)  *(dest+sfmvr) = *(src +sfmvr);
+  {
+  int ublww=0;
+  for(int sfmvr =0; *(str+sfmvr) != '\0' ;sfmvr++){
+  ublww++;  ublww--;
+  for(int sfmvr=0; sfmvr<=ublww; sfmvr++){
+  char tupsz = *(str +sfmvr); 
+  *(str + sfmvr) = *(str + ublww );
+  *(str + ublww) = tupsz;
+    ublww--;
+  }
+}
+{  
+      }",1
+70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
+  {
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;  n--;
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+}
+{  
+      }","{  
+  for(int wfrrk=0; wfrrk<zahl && *(dest+wfrrk) != '\0'  ; wfrrk++)  *(dest+wfrrk) = *(src +wfrrk);
+  {
+  int snqma=0;
+  for(int wfrrk =0; *(str+wfrrk) != '\0' ;wfrrk++){
+  snqma++;  snqma--;
+  for(int wfrrk=0; wfrrk<=snqma; wfrrk++){
+  char xotnl = *(str +wfrrk); 
+  *(str + wfrrk) = *(str + snqma );
+  *(str + snqma) = xotnl;
+    snqma--;
+  }
+}
+{  
+      }",1
+81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //    {   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+{  
+      }","{  
+    for (int ijslu = 0;(ijslu<zahl && dest[ijslu] != '\0'  ) && src[ijslu] != '\0' ; ijslu++){
+        
+        dest[ijslu] = src[ijslu];
+        
+           
+        
+        
+        
+    int ijslu = 0; 
+    while(str[ijslu] != '\0'){
+        ijslu++;
+    }
+    ijslu +=1;
+    
+    for(int zzjew = 0; zzjew<(ijslu-zzjew-2); zzjew++){
+        
+        char urydv = str[zzjew]; 
+        str[zzjew] = str[ijslu-zzjew-2];
+        str[ijslu-zzjew-2] = urydv;
+    }
+}
+{  
+      }",1
+81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //    {   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+{  
+      }","{  
+    for (int zcicp = 0;(zcicp<zahl && dest[zcicp] != '\0'  ) && src[zcicp] != '\0' ; zcicp++){
+        
+        dest[zcicp] = src[zcicp];
+        
+           
+        
+        
+        
+    int zcicp = 0; 
+    while(str[zcicp] != '\0'){
+        zcicp++;
+    }
+    zcicp +=1;
+    
+    for(int owrld = 0; owrld<(zcicp-owrld-2); owrld++){
+        
+        char bruuq = str[owrld]; 
+        str[owrld] = str[zcicp-owrld-2];
+        str[zcicp-owrld-2] = bruuq;
+    }
+}
+{  
+      }",1
+81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //    {   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+{  
+      }","{  
+    for (int mxavc = 0;(mxavc<zahl && dest[mxavc] != '\0'  ) && src[mxavc] != '\0' ; mxavc++){
+        
+        dest[mxavc] = src[mxavc];
+        
+           
+        
+        
+        
+    int mxavc = 0; 
+    while(str[mxavc] != '\0'){
+        mxavc++;
+    }
+    mxavc +=1;
+    
+    for(int zcdxk = 0; zcdxk<(mxavc-zcdxk-2); zcdxk++){
+        
+        char ijlyk = str[zcdxk]; 
+        str[zcdxk] = str[mxavc-zcdxk-2];
+        str[mxavc-zcdxk-2] = ijlyk;
+    }
+}
+{  
+      }",1
+81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //    {   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+{  
+      }","{  
+    for (int imunk = 0;(imunk<zahl && dest[imunk] != '\0'  ) && src[imunk] != '\0' ; imunk++){
+        
+        dest[imunk] = src[imunk];
+        
+           
+        
+        
+        
+    int imunk = 0; 
+    while(str[imunk] != '\0'){
+        imunk++;
+    }
+    imunk +=1;
+    
+    for(int uktsb = 0; uktsb<(imunk-uktsb-2); uktsb++){
+        
+        char jleqi = str[uktsb]; 
+        str[uktsb] = str[imunk-uktsb-2];
+        str[imunk-uktsb-2] = jleqi;
+    }
+}
+{  
+      }",1
+81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //    {   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+{  
+      }","{  
+    for (int pfdmk = 0;(pfdmk<zahl && dest[pfdmk] != '\0'  ) && src[pfdmk] != '\0' ; pfdmk++){
+        
+        dest[pfdmk] = src[pfdmk];
+        
+           
+        
+        
+        
+    int pfdmk = 0; 
+    while(str[pfdmk] != '\0'){
+        pfdmk++;
+    }
+    pfdmk +=1;
+    
+    for(int iqgxz = 0; iqgxz<(pfdmk-iqgxz-2); iqgxz++){
+        
+        char ksznc = str[iqgxz]; 
+        str[iqgxz] = str[pfdmk-iqgxz-2];
+        str[pfdmk-iqgxz-2] = ksznc;
+    }
+}
+{  
+      }",1
+81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //    {   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+{  
+      }","{  
+    for (int yqpkl = 0;(yqpkl<zahl && dest[yqpkl] != '\0'  ) && src[yqpkl] != '\0' ; yqpkl++){
+        
+        dest[yqpkl] = src[yqpkl];
+        
+           
+        
+        
+        
+    int yqpkl = 0; 
+    while(str[yqpkl] != '\0'){
+        yqpkl++;
+    }
+    yqpkl +=1;
+    
+    for(int sfgmf = 0; sfgmf<(yqpkl-sfgmf-2); sfgmf++){
+        
+        char shphq = str[sfgmf]; 
+        str[sfgmf] = str[yqpkl-sfgmf-2];
+        str[yqpkl-sfgmf-2] = shphq;
+    }
+}
+{  
+      }",1
+81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //    {   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+{  
+      }","{  
+    for (int akdfl = 0;(akdfl<zahl && dest[akdfl] != '\0'  ) && src[akdfl] != '\0' ; akdfl++){
+        
+        dest[akdfl] = src[akdfl];
+        
+           
+        
+        
+        
+    int akdfl = 0; 
+    while(str[akdfl] != '\0'){
+        akdfl++;
+    }
+    akdfl +=1;
+    
+    for(int erlvn = 0; erlvn<(akdfl-erlvn-2); erlvn++){
+        
+        char zpmmz = str[erlvn]; 
+        str[erlvn] = str[akdfl-erlvn-2];
+        str[akdfl-erlvn-2] = zpmmz;
+    }
+}
+{  
+      }",1
+81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //    {   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+{  
+      }","{  
+    for (int cbfbz = 0;(cbfbz<zahl && dest[cbfbz] != '\0'  ) && src[cbfbz] != '\0' ; cbfbz++){
+        
+        dest[cbfbz] = src[cbfbz];
+        
+           
+        
+        
+        
+    int cbfbz = 0; 
+    while(str[cbfbz] != '\0'){
+        cbfbz++;
+    }
+    cbfbz +=1;
+    
+    for(int yzacv = 0; yzacv<(cbfbz-yzacv-2); yzacv++){
+        
+        char roofx = str[yzacv]; 
+        str[yzacv] = str[cbfbz-yzacv-2];
+        str[cbfbz-yzacv-2] = roofx;
+    }
+}
+{  
+      }",1
+91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+//void umdrehen( char* str )
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+//int main( int argc, char* argv[] )
+int main( int argc, char* argv[] ){  
+      }","
+void gvjny(char* dest, int ormla, char* src){  
+	for (int livqg = 0; livqg <=ormla && dest[livqg] != '\0'; livqg++){
+		dest[livqg] = src[livqg];
+
+void xqwwt( char* str ){
+	int jnyzr = 0;
+	for(int livqg = 1; str[livqg] != '\0'; livqg++){
+		jnyzr = livqg;
+	char kbioh[jnyzr];
+	for(int livqg = 0; str[livqg] != '\0'; livqg++){
+		kbioh[livqg] = str[jnyzr-livqg];
+	}
+	for(int livqg = 0; str[livqg] != '\0'; livqg++){
+		str[livqg]=kbioh[livqg];
+	}
+}
+
+int main( int xbhgv, char* argv[] ){  
+      }",1
+91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+//void umdrehen( char* str )
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+//int main( int argc, char* argv[] )
+int main( int argc, char* argv[] ){  
+      }","
+void vyiro(char* dest, int mibld, char* src){  
+	for (int bjlml = 0; bjlml <=mibld && dest[bjlml] != '\0'; bjlml++){
+		dest[bjlml] = src[bjlml];
+
+void yssry( char* str ){
+	int tmmzs = 0;
+	for(int bjlml = 1; str[bjlml] != '\0'; bjlml++){
+		tmmzs = bjlml;
+	char zuoqr[tmmzs];
+	for(int bjlml = 0; str[bjlml] != '\0'; bjlml++){
+		zuoqr[bjlml] = str[tmmzs-bjlml];
+	}
+	for(int bjlml = 0; str[bjlml] != '\0'; bjlml++){
+		str[bjlml]=zuoqr[bjlml];
+	}
+}
+
+int main( int mrjvf, char* argv[] ){  
+      }",1
+91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+//void umdrehen( char* str )
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+//int main( int argc, char* argv[] )
+int main( int argc, char* argv[] ){  
+      }","
+void gftjr(char* dest, int iodrn, char* src){  
+	for (int aakzd = 0; aakzd <=iodrn && dest[aakzd] != '\0'; aakzd++){
+		dest[aakzd] = src[aakzd];
+
+void llxsd( char* str ){
+	int lsjts = 0;
+	for(int aakzd = 1; str[aakzd] != '\0'; aakzd++){
+		lsjts = aakzd;
+	char xiknr[lsjts];
+	for(int aakzd = 0; str[aakzd] != '\0'; aakzd++){
+		xiknr[aakzd] = str[lsjts-aakzd];
+	}
+	for(int aakzd = 0; str[aakzd] != '\0'; aakzd++){
+		str[aakzd]=xiknr[aakzd];
+	}
+}
+
+int main( int gvygt, char* argv[] ){  
+      }",1
+91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+//void umdrehen( char* str )
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+//int main( int argc, char* argv[] )
+int main( int argc, char* argv[] ){  
+      }","
+void vwevr(char* dest, int ecdpw, char* src){  
+	for (int pamtu = 0; pamtu <=ecdpw && dest[pamtu] != '\0'; pamtu++){
+		dest[pamtu] = src[pamtu];
+
+void cmzdu( char* str ){
+	int wwnkx = 0;
+	for(int pamtu = 1; str[pamtu] != '\0'; pamtu++){
+		wwnkx = pamtu;
+	char cykju[wwnkx];
+	for(int pamtu = 0; str[pamtu] != '\0'; pamtu++){
+		cykju[pamtu] = str[wwnkx-pamtu];
+	}
+	for(int pamtu = 0; str[pamtu] != '\0'; pamtu++){
+		str[pamtu]=cykju[pamtu];
+	}
+}
+
+int main( int xiiar, char* argv[] ){  
+      }",1
+91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+//void umdrehen( char* str )
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+//int main( int argc, char* argv[] )
+int main( int argc, char* argv[] ){  
+      }","
+void xshde(char* dest, int kgqfw, char* src){  
+	for (int yilsx = 0; yilsx <=kgqfw && dest[yilsx] != '\0'; yilsx++){
+		dest[yilsx] = src[yilsx];
+
+void drhmj( char* str ){
+	int bnhtp = 0;
+	for(int yilsx = 1; str[yilsx] != '\0'; yilsx++){
+		bnhtp = yilsx;
+	char icfva[bnhtp];
+	for(int yilsx = 0; str[yilsx] != '\0'; yilsx++){
+		icfva[yilsx] = str[bnhtp-yilsx];
+	}
+	for(int yilsx = 0; str[yilsx] != '\0'; yilsx++){
+		str[yilsx]=icfva[yilsx];
+	}
+}
+
+int main( int nztrs, char* argv[] ){  
+      }",1
+91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+//void umdrehen( char* str )
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+//int main( int argc, char* argv[] )
+int main( int argc, char* argv[] ){  
+      }","
+void pcwhe(char* dest, int bzykg, char* src){  
+	for (int baddp = 0; baddp <=bzykg && dest[baddp] != '\0'; baddp++){
+		dest[baddp] = src[baddp];
+
+void ejnil( char* str ){
+	int pllog = 0;
+	for(int baddp = 1; str[baddp] != '\0'; baddp++){
+		pllog = baddp;
+	char umgni[pllog];
+	for(int baddp = 0; str[baddp] != '\0'; baddp++){
+		umgni[baddp] = str[pllog-baddp];
+	}
+	for(int baddp = 0; str[baddp] != '\0'; baddp++){
+		str[baddp]=umgni[baddp];
+	}
+}
+
+int main( int sgwmt, char* argv[] ){  
+      }",1
+91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+//void umdrehen( char* str )
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+//int main( int argc, char* argv[] )
+int main( int argc, char* argv[] ){  
+      }","
+void lfaer(char* dest, int uqsbh, char* src){  
+	for (int olfpd = 0; olfpd <=uqsbh && dest[olfpd] != '\0'; olfpd++){
+		dest[olfpd] = src[olfpd];
+
+void paxhc( char* str ){
+	int enbab = 0;
+	for(int olfpd = 1; str[olfpd] != '\0'; olfpd++){
+		enbab = olfpd;
+	char epnev[enbab];
+	for(int olfpd = 0; str[olfpd] != '\0'; olfpd++){
+		epnev[olfpd] = str[enbab-olfpd];
+	}
+	for(int olfpd = 0; str[olfpd] != '\0'; olfpd++){
+		str[olfpd]=epnev[olfpd];
+	}
+}
+
+int main( int fdsdg, char* argv[] ){  
+      }",1
+91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+//void umdrehen( char* str )
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+//int main( int argc, char* argv[] )
+int main( int argc, char* argv[] ){  
+      }","
+void xyeqx(char* dest, int ordeq, char* src){  
+	for (int xjamb = 0; xjamb <=ordeq && dest[xjamb] != '\0'; xjamb++){
+		dest[xjamb] = src[xjamb];
+
+void otfap( char* str ){
+	int dereb = 0;
+	for(int xjamb = 1; str[xjamb] != '\0'; xjamb++){
+		dereb = xjamb;
+	char sbqib[dereb];
+	for(int xjamb = 0; str[xjamb] != '\0'; xjamb++){
+		sbqib[xjamb] = str[dereb-xjamb];
+	}
+	for(int xjamb = 0; str[xjamb] != '\0'; xjamb++){
+		str[xjamb]=sbqib[xjamb];
+	}
+}
+
+int main( int cblni, char* argv[] ){  
+      }",1
+100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	for(int i = 0; i <= zahl && i<länge; i++)		if(src[i] == '\0') return;
+		dest[i] = src[i];
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+{  
+      }","{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int cwaoz = 0; dest[cwaoz] != '\0'; cwaoz++) länge++;
+	for(int cwaoz = 0; cwaoz <= zahl && cwaoz<länge; cwaoz++)		if(src[cwaoz] == '\0') return;
+		dest[cwaoz] = src[cwaoz];
+{
+	int länge;
+	for(int cwaoz = 0; str[cwaoz] != '\0'; cwaoz++) länge++;
+	char xmgpt[länge];
+	for(int cwaoz = 0; cwaoz<=länge; cwaoz++){
+		xmgpt[cwaoz] = str[cwaoz];
+	for(int cwaoz = 0; cwaoz<länge; cwaoz++){
+		str[cwaoz] = xmgpt[länge-1-cwaoz];
+	}
+}
+{  
+      }",1
+100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	for(int i = 0; i <= zahl && i<länge; i++)		if(src[i] == '\0') return;
+		dest[i] = src[i];
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+{  
+      }","{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int hquxo = 0; dest[hquxo] != '\0'; hquxo++) länge++;
+	for(int hquxo = 0; hquxo <= zahl && hquxo<länge; hquxo++)		if(src[hquxo] == '\0') return;
+		dest[hquxo] = src[hquxo];
+{
+	int länge;
+	for(int hquxo = 0; str[hquxo] != '\0'; hquxo++) länge++;
+	char njpkp[länge];
+	for(int hquxo = 0; hquxo<=länge; hquxo++){
+		njpkp[hquxo] = str[hquxo];
+	for(int hquxo = 0; hquxo<länge; hquxo++){
+		str[hquxo] = njpkp[länge-1-hquxo];
+	}
+}
+{  
+      }",1
+100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	for(int i = 0; i <= zahl && i<länge; i++)		if(src[i] == '\0') return;
+		dest[i] = src[i];
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+{  
+      }","{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int uziyt = 0; dest[uziyt] != '\0'; uziyt++) länge++;
+	for(int uziyt = 0; uziyt <= zahl && uziyt<länge; uziyt++)		if(src[uziyt] == '\0') return;
+		dest[uziyt] = src[uziyt];
+{
+	int länge;
+	for(int uziyt = 0; str[uziyt] != '\0'; uziyt++) länge++;
+	char bcoyk[länge];
+	for(int uziyt = 0; uziyt<=länge; uziyt++){
+		bcoyk[uziyt] = str[uziyt];
+	for(int uziyt = 0; uziyt<länge; uziyt++){
+		str[uziyt] = bcoyk[länge-1-uziyt];
+	}
+}
+{  
+      }",1
+100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	for(int i = 0; i <= zahl && i<länge; i++)		if(src[i] == '\0') return;
+		dest[i] = src[i];
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+{  
+      }","{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int skzhp = 0; dest[skzhp] != '\0'; skzhp++) länge++;
+	for(int skzhp = 0; skzhp <= zahl && skzhp<länge; skzhp++)		if(src[skzhp] == '\0') return;
+		dest[skzhp] = src[skzhp];
+{
+	int länge;
+	for(int skzhp = 0; str[skzhp] != '\0'; skzhp++) länge++;
+	char lcxzo[länge];
+	for(int skzhp = 0; skzhp<=länge; skzhp++){
+		lcxzo[skzhp] = str[skzhp];
+	for(int skzhp = 0; skzhp<länge; skzhp++){
+		str[skzhp] = lcxzo[länge-1-skzhp];
+	}
+}
+{  
+      }",1
+100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	for(int i = 0; i <= zahl && i<länge; i++)		if(src[i] == '\0') return;
+		dest[i] = src[i];
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+{  
+      }","{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int wvcme = 0; dest[wvcme] != '\0'; wvcme++) länge++;
+	for(int wvcme = 0; wvcme <= zahl && wvcme<länge; wvcme++)		if(src[wvcme] == '\0') return;
+		dest[wvcme] = src[wvcme];
+{
+	int länge;
+	for(int wvcme = 0; str[wvcme] != '\0'; wvcme++) länge++;
+	char fxaqz[länge];
+	for(int wvcme = 0; wvcme<=länge; wvcme++){
+		fxaqz[wvcme] = str[wvcme];
+	for(int wvcme = 0; wvcme<länge; wvcme++){
+		str[wvcme] = fxaqz[länge-1-wvcme];
+	}
+}
+{  
+      }",1
+100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	for(int i = 0; i <= zahl && i<länge; i++)		if(src[i] == '\0') return;
+		dest[i] = src[i];
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+{  
+      }","{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int vxvlm = 0; dest[vxvlm] != '\0'; vxvlm++) länge++;
+	for(int vxvlm = 0; vxvlm <= zahl && vxvlm<länge; vxvlm++)		if(src[vxvlm] == '\0') return;
+		dest[vxvlm] = src[vxvlm];
+{
+	int länge;
+	for(int vxvlm = 0; str[vxvlm] != '\0'; vxvlm++) länge++;
+	char ihzeq[länge];
+	for(int vxvlm = 0; vxvlm<=länge; vxvlm++){
+		ihzeq[vxvlm] = str[vxvlm];
+	for(int vxvlm = 0; vxvlm<länge; vxvlm++){
+		str[vxvlm] = ihzeq[länge-1-vxvlm];
+	}
+}
+{  
+      }",1
+100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	for(int i = 0; i <= zahl && i<länge; i++)		if(src[i] == '\0') return;
+		dest[i] = src[i];
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+{  
+      }","{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int hwglf = 0; dest[hwglf] != '\0'; hwglf++) länge++;
+	for(int hwglf = 0; hwglf <= zahl && hwglf<länge; hwglf++)		if(src[hwglf] == '\0') return;
+		dest[hwglf] = src[hwglf];
+{
+	int länge;
+	for(int hwglf = 0; str[hwglf] != '\0'; hwglf++) länge++;
+	char bbvon[länge];
+	for(int hwglf = 0; hwglf<=länge; hwglf++){
+		bbvon[hwglf] = str[hwglf];
+	for(int hwglf = 0; hwglf<länge; hwglf++){
+		str[hwglf] = bbvon[länge-1-hwglf];
+	}
+}
+{  
+      }",1
+100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	for(int i = 0; i <= zahl && i<länge; i++)		if(src[i] == '\0') return;
+		dest[i] = src[i];
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+{  
+      }","{  
+	if(zahl == 0) return; 
+	int länge;
+	for(int whexf = 0; dest[whexf] != '\0'; whexf++) länge++;
+	for(int whexf = 0; whexf <= zahl && whexf<länge; whexf++)		if(src[whexf] == '\0') return;
+		dest[whexf] = src[whexf];
+{
+	int länge;
+	for(int whexf = 0; str[whexf] != '\0'; whexf++) länge++;
+	char ajmbb[länge];
+	for(int whexf = 0; whexf<=länge; whexf++){
+		ajmbb[whexf] = str[whexf];
+	for(int whexf = 0; whexf<länge; whexf++){
+		str[whexf] = ajmbb[länge-1-whexf];
+	}
+}
+{  
+      }",1
+108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+    for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+            {
+    char temp[100] = """";
+    int count = 0;
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+}
+{  
+      }","{  
+    for(int zdujz= 0; dest[zdujz] != 0; zdujz++)        if(zdujz < zahl && src[zdujz] != 0){
+            dest[zdujz] = src[zdujz];
+            {
+    char lmgjn[100] = """";
+    int eyteh = 0;
+    for(int zdujz= 0; str[zdujz] != 0; zdujz++){
+       lmgjn[zdujz] = str[zdujz];
+       eyteh++;
+    }
+    for(int zdujz= 0; lmgjn[zdujz] != 0; zdujz++){
+       str[zdujz] = lmgjn[eyteh-zdujz-1];
+    }
+}
+{  
+      }",1
+108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+    for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+            {
+    char temp[100] = """";
+    int count = 0;
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+}
+{  
+      }","{  
+    for(int upqri= 0; dest[upqri] != 0; upqri++)        if(upqri < zahl && src[upqri] != 0){
+            dest[upqri] = src[upqri];
+            {
+    char saccc[100] = """";
+    int yvyui = 0;
+    for(int upqri= 0; str[upqri] != 0; upqri++){
+       saccc[upqri] = str[upqri];
+       yvyui++;
+    }
+    for(int upqri= 0; saccc[upqri] != 0; upqri++){
+       str[upqri] = saccc[yvyui-upqri-1];
+    }
+}
+{  
+      }",1
+108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+    for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+            {
+    char temp[100] = """";
+    int count = 0;
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+}
+{  
+      }","{  
+    for(int alwli= 0; dest[alwli] != 0; alwli++)        if(alwli < zahl && src[alwli] != 0){
+            dest[alwli] = src[alwli];
+            {
+    char srcba[100] = """";
+    int fbxyi = 0;
+    for(int alwli= 0; str[alwli] != 0; alwli++){
+       srcba[alwli] = str[alwli];
+       fbxyi++;
+    }
+    for(int alwli= 0; srcba[alwli] != 0; alwli++){
+       str[alwli] = srcba[fbxyi-alwli-1];
+    }
+}
+{  
+      }",1
+108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+    for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+            {
+    char temp[100] = """";
+    int count = 0;
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+}
+{  
+      }","{  
+    for(int xyucg= 0; dest[xyucg] != 0; xyucg++)        if(xyucg < zahl && src[xyucg] != 0){
+            dest[xyucg] = src[xyucg];
+            {
+    char uqkpc[100] = """";
+    int usgou = 0;
+    for(int xyucg= 0; str[xyucg] != 0; xyucg++){
+       uqkpc[xyucg] = str[xyucg];
+       usgou++;
+    }
+    for(int xyucg= 0; uqkpc[xyucg] != 0; xyucg++){
+       str[xyucg] = uqkpc[usgou-xyucg-1];
+    }
+}
+{  
+      }",1
+108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+    for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+            {
+    char temp[100] = """";
+    int count = 0;
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+}
+{  
+      }","{  
+    for(int ozlcf= 0; dest[ozlcf] != 0; ozlcf++)        if(ozlcf < zahl && src[ozlcf] != 0){
+            dest[ozlcf] = src[ozlcf];
+            {
+    char nbkdk[100] = """";
+    int wouzy = 0;
+    for(int ozlcf= 0; str[ozlcf] != 0; ozlcf++){
+       nbkdk[ozlcf] = str[ozlcf];
+       wouzy++;
+    }
+    for(int ozlcf= 0; nbkdk[ozlcf] != 0; ozlcf++){
+       str[ozlcf] = nbkdk[wouzy-ozlcf-1];
+    }
+}
+{  
+      }",1
+108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+    for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+            {
+    char temp[100] = """";
+    int count = 0;
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+}
+{  
+      }","{  
+    for(int jhncv= 0; dest[jhncv] != 0; jhncv++)        if(jhncv < zahl && src[jhncv] != 0){
+            dest[jhncv] = src[jhncv];
+            {
+    char nmwgp[100] = """";
+    int bigmg = 0;
+    for(int jhncv= 0; str[jhncv] != 0; jhncv++){
+       nmwgp[jhncv] = str[jhncv];
+       bigmg++;
+    }
+    for(int jhncv= 0; nmwgp[jhncv] != 0; jhncv++){
+       str[jhncv] = nmwgp[bigmg-jhncv-1];
+    }
+}
+{  
+      }",1
+108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+    for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+            {
+    char temp[100] = """";
+    int count = 0;
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+}
+{  
+      }","{  
+    for(int lqvvb= 0; dest[lqvvb] != 0; lqvvb++)        if(lqvvb < zahl && src[lqvvb] != 0){
+            dest[lqvvb] = src[lqvvb];
+            {
+    char mphlg[100] = """";
+    int soqso = 0;
+    for(int lqvvb= 0; str[lqvvb] != 0; lqvvb++){
+       mphlg[lqvvb] = str[lqvvb];
+       soqso++;
+    }
+    for(int lqvvb= 0; mphlg[lqvvb] != 0; lqvvb++){
+       str[lqvvb] = mphlg[soqso-lqvvb-1];
+    }
+}
+{  
+      }",1
+108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+    for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+            {
+    char temp[100] = """";
+    int count = 0;
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+}
+{  
+      }","{  
+    for(int swhzf= 0; dest[swhzf] != 0; swhzf++)        if(swhzf < zahl && src[swhzf] != 0){
+            dest[swhzf] = src[swhzf];
+            {
+    char dlktv[100] = """";
+    int bknxa = 0;
+    for(int swhzf= 0; str[swhzf] != 0; swhzf++){
+       dlktv[swhzf] = str[swhzf];
+       bknxa++;
+    }
+    for(int swhzf= 0; dlktv[swhzf] != 0; swhzf++){
+       str[swhzf] = dlktv[bknxa-swhzf-1];
+    }
+}
+{  
+      }",1
+115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+{  
+      }","{  
+{  
+      }",1
+115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+{  
+      }","{  
+{  
+      }",1
+115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+{  
+      }","{  
+{  
+      }",1
+115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+{  
+      }","{  
+{  
+      }",1
+115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+{  
+      }","{  
+{  
+      }",1
+115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+{  
+      }","{  
+{  
+      }",1
+115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+{  
+      }","{  
+{  
+      }",1
+115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+{  
+      }","{  
+{  
+      }",1
+118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+{  
+      }","{  
+{  
+      }",1
+118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+{  
+      }","{  
+{  
+      }",1
+118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+{  
+      }","{  
+{  
+      }",1
+118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+{  
+      }","{  
+{  
+      }",1
+118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+{  
+      }","{  
+{  
+      }",1
+118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+{  
+      }","{  
+{  
+      }",1
+118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+{  
+      }","{  
+{  
+      }",1
+118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+{  
+      }","{  
+{  
+      }",1
+120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+{  
+      }","{  
+{  
+      }",1
+120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+{  
+      }","{  
+{  
+      }",1
+120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+{  
+      }","{  
+{  
+      }",1
+120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+{  
+      }","{  
+{  
+      }",1
+120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+{  
+      }","{  
+{  
+      }",1
+120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+{  
+      }","{  
+{  
+      }",1
+120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+{  
+      }","{  
+{  
+      }",1
+120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+{  
+      }","{  
+{  
+      }",1
+121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
+     int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  {
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+{  
+      }","{  
+  int jwxje = 0;
+  for(int iabqz = 0; src[iabqz] != '\0'; iabqz++)   jwxje = jwxje + 1;
+     int xxcfp = 0;
+  for(int iabqz = 0; dest[iabqz] != '\0'; iabqz++){
+   xxcfp = xxcfp + 1;
+   } 
+  int diary = zahl;
+  if(jwxje <= diary){
+  diary = jwxje;
+  } 
+  if(xxcfp <= diary){
+  diary = xxcfp;
+  } 
+  for(int iabqz = 0; iabqz<diary; iabqz++){
+   dest[iabqz] = src[iabqz];
+  {
+  int ozfcd = 0;
+  for(int iabqz = 0; str[iabqz] != '\0'; iabqz++){
+   ozfcd = ozfcd + 1;
+   }
+  for(int iabqz = 0; iabqz<ozfcd/2; iabqz++){
+   char ecjdt = str[iabqz];
+   str[iabqz] = str[ozfcd - 1 - iabqz];
+   str[ozfcd - 1 -iabqz] = ecjdt;
+  } 
+}
+{  
+      }",1
+121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
+     int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  {
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+{  
+      }","{  
+  int pnkcj = 0;
+  for(int iahbg = 0; src[iahbg] != '\0'; iahbg++)   pnkcj = pnkcj + 1;
+     int gdbsg = 0;
+  for(int iahbg = 0; dest[iahbg] != '\0'; iahbg++){
+   gdbsg = gdbsg + 1;
+   } 
+  int tnyxv = zahl;
+  if(pnkcj <= tnyxv){
+  tnyxv = pnkcj;
+  } 
+  if(gdbsg <= tnyxv){
+  tnyxv = gdbsg;
+  } 
+  for(int iahbg = 0; iahbg<tnyxv; iahbg++){
+   dest[iahbg] = src[iahbg];
+  {
+  int nierc = 0;
+  for(int iahbg = 0; str[iahbg] != '\0'; iahbg++){
+   nierc = nierc + 1;
+   }
+  for(int iahbg = 0; iahbg<nierc/2; iahbg++){
+   char udzpk = str[iahbg];
+   str[iahbg] = str[nierc - 1 - iahbg];
+   str[nierc - 1 -iahbg] = udzpk;
+  } 
+}
+{  
+      }",1
+121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
+     int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  {
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+{  
+      }","{  
+  int ywkyt = 0;
+  for(int bzrds = 0; src[bzrds] != '\0'; bzrds++)   ywkyt = ywkyt + 1;
+     int akpbo = 0;
+  for(int bzrds = 0; dest[bzrds] != '\0'; bzrds++){
+   akpbo = akpbo + 1;
+   } 
+  int btaez = zahl;
+  if(ywkyt <= btaez){
+  btaez = ywkyt;
+  } 
+  if(akpbo <= btaez){
+  btaez = akpbo;
+  } 
+  for(int bzrds = 0; bzrds<btaez; bzrds++){
+   dest[bzrds] = src[bzrds];
+  {
+  int moeqb = 0;
+  for(int bzrds = 0; str[bzrds] != '\0'; bzrds++){
+   moeqb = moeqb + 1;
+   }
+  for(int bzrds = 0; bzrds<moeqb/2; bzrds++){
+   char ozcgv = str[bzrds];
+   str[bzrds] = str[moeqb - 1 - bzrds];
+   str[moeqb - 1 -bzrds] = ozcgv;
+  } 
+}
+{  
+      }",1
+121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
+     int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  {
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+{  
+      }","{  
+  int dnlub = 0;
+  for(int ninht = 0; src[ninht] != '\0'; ninht++)   dnlub = dnlub + 1;
+     int ylmye = 0;
+  for(int ninht = 0; dest[ninht] != '\0'; ninht++){
+   ylmye = ylmye + 1;
+   } 
+  int hdqsb = zahl;
+  if(dnlub <= hdqsb){
+  hdqsb = dnlub;
+  } 
+  if(ylmye <= hdqsb){
+  hdqsb = ylmye;
+  } 
+  for(int ninht = 0; ninht<hdqsb; ninht++){
+   dest[ninht] = src[ninht];
+  {
+  int bbfrm = 0;
+  for(int ninht = 0; str[ninht] != '\0'; ninht++){
+   bbfrm = bbfrm + 1;
+   }
+  for(int ninht = 0; ninht<bbfrm/2; ninht++){
+   char adtyu = str[ninht];
+   str[ninht] = str[bbfrm - 1 - ninht];
+   str[bbfrm - 1 -ninht] = adtyu;
+  } 
+}
+{  
+      }",1
+121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
+     int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  {
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+{  
+      }","{  
+  int pdsbr = 0;
+  for(int anmba = 0; src[anmba] != '\0'; anmba++)   pdsbr = pdsbr + 1;
+     int zzcju = 0;
+  for(int anmba = 0; dest[anmba] != '\0'; anmba++){
+   zzcju = zzcju + 1;
+   } 
+  int ovgud = zahl;
+  if(pdsbr <= ovgud){
+  ovgud = pdsbr;
+  } 
+  if(zzcju <= ovgud){
+  ovgud = zzcju;
+  } 
+  for(int anmba = 0; anmba<ovgud; anmba++){
+   dest[anmba] = src[anmba];
+  {
+  int hmbua = 0;
+  for(int anmba = 0; str[anmba] != '\0'; anmba++){
+   hmbua = hmbua + 1;
+   }
+  for(int anmba = 0; anmba<hmbua/2; anmba++){
+   char caxhd = str[anmba];
+   str[anmba] = str[hmbua - 1 - anmba];
+   str[hmbua - 1 -anmba] = caxhd;
+  } 
+}
+{  
+      }",1
+121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
+     int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  {
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+{  
+      }","{  
+  int giwgd = 0;
+  for(int iggnd = 0; src[iggnd] != '\0'; iggnd++)   giwgd = giwgd + 1;
+     int ozowv = 0;
+  for(int iggnd = 0; dest[iggnd] != '\0'; iggnd++){
+   ozowv = ozowv + 1;
+   } 
+  int ewkhz = zahl;
+  if(giwgd <= ewkhz){
+  ewkhz = giwgd;
+  } 
+  if(ozowv <= ewkhz){
+  ewkhz = ozowv;
+  } 
+  for(int iggnd = 0; iggnd<ewkhz; iggnd++){
+   dest[iggnd] = src[iggnd];
+  {
+  int siutz = 0;
+  for(int iggnd = 0; str[iggnd] != '\0'; iggnd++){
+   siutz = siutz + 1;
+   }
+  for(int iggnd = 0; iggnd<siutz/2; iggnd++){
+   char usjxm = str[iggnd];
+   str[iggnd] = str[siutz - 1 - iggnd];
+   str[siutz - 1 -iggnd] = usjxm;
+  } 
+}
+{  
+      }",1
+121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
+     int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  {
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+{  
+      }","{  
+  int muhtx = 0;
+  for(int tchcz = 0; src[tchcz] != '\0'; tchcz++)   muhtx = muhtx + 1;
+     int maqnp = 0;
+  for(int tchcz = 0; dest[tchcz] != '\0'; tchcz++){
+   maqnp = maqnp + 1;
+   } 
+  int ubasa = zahl;
+  if(muhtx <= ubasa){
+  ubasa = muhtx;
+  } 
+  if(maqnp <= ubasa){
+  ubasa = maqnp;
+  } 
+  for(int tchcz = 0; tchcz<ubasa; tchcz++){
+   dest[tchcz] = src[tchcz];
+  {
+  int mymbq = 0;
+  for(int tchcz = 0; str[tchcz] != '\0'; tchcz++){
+   mymbq = mymbq + 1;
+   }
+  for(int tchcz = 0; tchcz<mymbq/2; tchcz++){
+   char nzxme = str[tchcz];
+   str[tchcz] = str[mymbq - 1 - tchcz];
+   str[mymbq - 1 -tchcz] = nzxme;
+  } 
+}
+{  
+      }",1
+121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
+     int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  {
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+{  
+      }","{  
+  int rszvr = 0;
+  for(int fjefl = 0; src[fjefl] != '\0'; fjefl++)   rszvr = rszvr + 1;
+     int ufhux = 0;
+  for(int fjefl = 0; dest[fjefl] != '\0'; fjefl++){
+   ufhux = ufhux + 1;
+   } 
+  int vqmtf = zahl;
+  if(rszvr <= vqmtf){
+  vqmtf = rszvr;
+  } 
+  if(ufhux <= vqmtf){
+  vqmtf = ufhux;
+  } 
+  for(int fjefl = 0; fjefl<vqmtf; fjefl++){
+   dest[fjefl] = src[fjefl];
+  {
+  int fzqbq = 0;
+  for(int fjefl = 0; str[fjefl] != '\0'; fjefl++){
+   fzqbq = fzqbq + 1;
+   }
+  for(int fjefl = 0; fjefl<fzqbq/2; fjefl++){
+   char pqylo = str[fjefl];
+   str[fjefl] = str[fzqbq - 1 - fjefl];
+   str[fzqbq - 1 -fjefl] = pqylo;
+  } 
+}
+{  
+      }",1
+124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+	for(int i = 0; i < zahl; i++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			i = zahl;
+}
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }","{  
+	for(int jaose = 0; jaose < zahl; jaose++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			jaose = zahl;
+}
+{
+	int wvqql = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		wvqql++;
+	}
+	char nkvaf[wvqql + 1];
+	lenpt = nkvaf;
+	lenpt += wvqql;
+	*lenpt = 0;
+	lenpt--;
+	for(int jaose = wvqql; jaose >= 0; jaose--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = nkvaf;
+	for(int jaose = wvqql; jaose > 0; jaose--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }",1
+124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+	for(int i = 0; i < zahl; i++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			i = zahl;
+}
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }","{  
+	for(int uuwwm = 0; uuwwm < zahl; uuwwm++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			uuwwm = zahl;
+}
+{
+	int wgvwj = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		wgvwj++;
+	}
+	char inhjn[wgvwj + 1];
+	lenpt = inhjn;
+	lenpt += wgvwj;
+	*lenpt = 0;
+	lenpt--;
+	for(int uuwwm = wgvwj; uuwwm >= 0; uuwwm--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = inhjn;
+	for(int uuwwm = wgvwj; uuwwm > 0; uuwwm--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }",1
+124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+	for(int i = 0; i < zahl; i++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			i = zahl;
+}
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }","{  
+	for(int heoss = 0; heoss < zahl; heoss++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			heoss = zahl;
+}
+{
+	int pnuyn = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		pnuyn++;
+	}
+	char czpfi[pnuyn + 1];
+	lenpt = czpfi;
+	lenpt += pnuyn;
+	*lenpt = 0;
+	lenpt--;
+	for(int heoss = pnuyn; heoss >= 0; heoss--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = czpfi;
+	for(int heoss = pnuyn; heoss > 0; heoss--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }",1
+124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+	for(int i = 0; i < zahl; i++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			i = zahl;
+}
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }","{  
+	for(int lyprq = 0; lyprq < zahl; lyprq++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			lyprq = zahl;
+}
+{
+	int gedzy = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		gedzy++;
+	}
+	char abntg[gedzy + 1];
+	lenpt = abntg;
+	lenpt += gedzy;
+	*lenpt = 0;
+	lenpt--;
+	for(int lyprq = gedzy; lyprq >= 0; lyprq--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = abntg;
+	for(int lyprq = gedzy; lyprq > 0; lyprq--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }",1
+124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+	for(int i = 0; i < zahl; i++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			i = zahl;
+}
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }","{  
+	for(int vdnhu = 0; vdnhu < zahl; vdnhu++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			vdnhu = zahl;
+}
+{
+	int yibzi = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		yibzi++;
+	}
+	char ckcnz[yibzi + 1];
+	lenpt = ckcnz;
+	lenpt += yibzi;
+	*lenpt = 0;
+	lenpt--;
+	for(int vdnhu = yibzi; vdnhu >= 0; vdnhu--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = ckcnz;
+	for(int vdnhu = yibzi; vdnhu > 0; vdnhu--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }",1
+124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+	for(int i = 0; i < zahl; i++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			i = zahl;
+}
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }","{  
+	for(int xygdu = 0; xygdu < zahl; xygdu++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			xygdu = zahl;
+}
+{
+	int uwpal = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		uwpal++;
+	}
+	char ddwjn[uwpal + 1];
+	lenpt = ddwjn;
+	lenpt += uwpal;
+	*lenpt = 0;
+	lenpt--;
+	for(int xygdu = uwpal; xygdu >= 0; xygdu--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = ddwjn;
+	for(int xygdu = uwpal; xygdu > 0; xygdu--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }",1
+124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+	for(int i = 0; i < zahl; i++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			i = zahl;
+}
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }","{  
+	for(int qyxhi = 0; qyxhi < zahl; qyxhi++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			qyxhi = zahl;
+}
+{
+	int vqcrx = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		vqcrx++;
+	}
+	char eaeok[vqcrx + 1];
+	lenpt = eaeok;
+	lenpt += vqcrx;
+	*lenpt = 0;
+	lenpt--;
+	for(int qyxhi = vqcrx; qyxhi >= 0; qyxhi--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = eaeok;
+	for(int qyxhi = vqcrx; qyxhi > 0; qyxhi--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }",1
+124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+	for(int i = 0; i < zahl; i++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			i = zahl;
+}
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }","{  
+	for(int hbaeh = 0; hbaeh < zahl; hbaeh++)
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		else
+		{
+			hbaeh = zahl;
+}
+{
+	int svrrs = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	for(;*lenpt != 0;  lenpt++)
+	{
+		svrrs++;
+	}
+	char pipiy[svrrs + 1];
+	lenpt = pipiy;
+	lenpt += svrrs;
+	*lenpt = 0;
+	lenpt--;
+	for(int hbaeh = svrrs; hbaeh >= 0; hbaeh--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	orgpt = str;
+	lenpt = pipiy;
+	for(int hbaeh = svrrs; hbaeh > 0; hbaeh--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+{  
+      }",1

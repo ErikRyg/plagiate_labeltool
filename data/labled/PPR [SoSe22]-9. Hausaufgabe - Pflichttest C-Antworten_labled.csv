@@ -1,0 +1,7196 @@
+,semester,ha,task,prog_lang,surname1,lastname1,surname2,lastname2,code1,code2,label,hand_labled
+0,SoSe22,9,Antwort 9,C,Paul,Dannenberg,Parham,Tavakoli Anaraki,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+    }
+    char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+//void ersetzen(char* dest, int zahl, char* src)
+
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+	}
+}
+
+//void umdrehen( char* str )
+
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	}
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+
+//int main( int argc, char* argv[] )
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",1.0,1
+1,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,Tom Frederik,Braune,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+  {
+    dest[i]=src[i];
+  }
+  
+}
+
+void umdrehen( char* str )
+{
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){}
+  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++){
+  *(dest+i) = *(src +i);
+  }
+}
+
+void umdrehen( char* str )
+{
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;}
+  n--;
+  
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+  
+}
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.0,1
+2,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,Tugce,Karabalik,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+  {
+    dest[i]=src[i];
+  }
+  
+}
+
+void umdrehen( char* str )
+{
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){}
+  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i=0; i < zahl; i++)
+    {
+        if (dest[i] == '\0' || src[i] == '\0') break;
+        dest[i] =src[i];
+    }
+  
+}
+
+void umdrehen( char* str )
+{
+    char tmp=0;
+    int strlen= 0;
+    for( ; str[strlen] !='\0'; strlen++ );
+    for( int i= 0; i< strlen /2; i++)
+    {
+        tmp= str[i];
+        str[i] = str[strlen-i-1];
+        str[strlen-i-1] - tmp;
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",1.0,1
+3,SoSe22,9,Antwort 9,C,Paul,Dannenberg,Tom Frederik,Braune,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+    }
+    char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++){
+  *(dest+i) = *(src +i);
+  }
+}
+
+void umdrehen( char* str )
+{
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;}
+  n--;
+  
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+  
+}
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.0,1
+4,SoSe22,9,Antwort 9,C,Paul,Dannenberg,Shaurya,Sharma,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+    }
+    char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i= 0; dest[i] != 0; i++){
+        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+        }
+    }
+}
+
+void umdrehen( char* str )
+{
+    char temp[100] = """";
+    int count = 0;
+    
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.0,1
+5,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,Paul,Dannenberg,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+  {
+    dest[i]=src[i];
+  }
+  
+}
+
+void umdrehen( char* str )
+{
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){}
+  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+    }
+    char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.0,1
+6,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,Shaurya,Sharma,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+  {
+    dest[i]=src[i];
+  }
+  
+}
+
+void umdrehen( char* str )
+{
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){}
+  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i= 0; dest[i] != 0; i++){
+        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+        }
+    }
+}
+
+void umdrehen( char* str )
+{
+    char temp[100] = """";
+    int count = 0;
+    
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.0,1
+7,SoSe22,9,Antwort 9,C,Shaurya,Sharma,Tugce,Karabalik,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i= 0; dest[i] != 0; i++){
+        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+        }
+    }
+}
+
+void umdrehen( char* str )
+{
+    char temp[100] = """";
+    int count = 0;
+    
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i=0; i < zahl; i++)
+    {
+        if (dest[i] == '\0' || src[i] == '\0') break;
+        dest[i] =src[i];
+    }
+  
+}
+
+void umdrehen( char* str )
+{
+    char tmp=0;
+    int strlen= 0;
+    for( ; str[strlen] !='\0'; strlen++ );
+    for( int i= 0; i< strlen /2; i++)
+    {
+        tmp= str[i];
+        str[i] = str[strlen-i-1];
+        str[strlen-i-1] - tmp;
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.0,1
+8,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,Parham,Tavakoli Anaraki,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++){
+  *(dest+i) = *(src +i);
+  }
+}
+
+void umdrehen( char* str )
+{
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;}
+  n--;
+  
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+  
+}
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+//void ersetzen(char* dest, int zahl, char* src)
+
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+	}
+}
+
+//void umdrehen( char* str )
+
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	}
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+
+//int main( int argc, char* argv[] )
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.0,1
+9,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,Niklas,Muß,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+  {
+    dest[i]=src[i];
+  }
+  
+}
+
+void umdrehen( char* str )
+{
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){}
+  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+int getStringLength(char x[]) {
+    int i = 0;
+    while(x[i] != NULL) {
+        i++;
+    }
+    return i;
+}
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str )
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen(test);
+    printf( ""Rückwärts : %s \n"", test );
+}",0.0,1
+10,SoSe22,9,Antwort 9,C,Paul,Dannenberg,Tugce,Karabalik,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+    }
+    char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i=0; i < zahl; i++)
+    {
+        if (dest[i] == '\0' || src[i] == '\0') break;
+        dest[i] =src[i];
+    }
+  
+}
+
+void umdrehen( char* str )
+{
+    char tmp=0;
+    int strlen= 0;
+    for( ; str[strlen] !='\0'; strlen++ );
+    for( int i= 0; i< strlen /2; i++)
+    {
+        tmp= str[i];
+        str[i] = str[strlen-i-1];
+        str[strlen-i-1] - tmp;
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.0,1
+11,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,Shaurya,Sharma,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++){
+  *(dest+i) = *(src +i);
+  }
+}
+
+void umdrehen( char* str )
+{
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;}
+  n--;
+  
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+  
+}
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i= 0; dest[i] != 0; i++){
+        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+        }
+    }
+}
+
+void umdrehen( char* str )
+{
+    char temp[100] = """";
+    int count = 0;
+    
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.6325036603,0
+12,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,Parham,Tavakoli Anaraki,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+  {
+    dest[i]=src[i];
+  }
+  
+}
+
+void umdrehen( char* str )
+{
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){}
+  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+//void ersetzen(char* dest, int zahl, char* src)
+
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+	}
+}
+
+//void umdrehen( char* str )
+
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	}
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+
+//int main( int argc, char* argv[] )
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.6296296296,0
+13,SoSe22,9,Antwort 9,C,Paul,Dannenberg,Niklas,Muß,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+    }
+    char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+int getStringLength(char x[]) {
+    int i = 0;
+    while(x[i] != NULL) {
+        i++;
+    }
+    return i;
+}
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str )
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen(test);
+    printf( ""Rückwärts : %s \n"", test );
+}",0.6224899598,0
+14,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,Shaurya,Sharma,"#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+//void ersetzen(char* dest, int zahl, char* src)
+
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+	}
+}
+
+//void umdrehen( char* str )
+
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	}
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+
+//int main( int argc, char* argv[] )
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i= 0; dest[i] != 0; i++){
+        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+        }
+    }
+}
+
+void umdrehen( char* str )
+{
+    char temp[100] = """";
+    int count = 0;
+    
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.6201342282,0
+15,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,Tugce,Karabalik,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //}
+        
+        
+    }
+  
+}
+
+void umdrehen( char* str )
+{   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i=0; i < zahl; i++)
+    {
+        if (dest[i] == '\0' || src[i] == '\0') break;
+        dest[i] =src[i];
+    }
+  
+}
+
+void umdrehen( char* str )
+{
+    char tmp=0;
+    int strlen= 0;
+    for( ; str[strlen] !='\0'; strlen++ );
+    for( int i= 0; i< strlen /2; i++)
+    {
+        tmp= str[i];
+        str[i] = str[strlen-i-1];
+        str[strlen-i-1] - tmp;
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.6108490566,0
+16,SoSe22,9,Antwort 9,C,Niklas,Muß,Shaurya,Sharma,"#include <stdio.h>
+#include <stdlib.h>
+
+int getStringLength(char x[]) {
+    int i = 0;
+    while(x[i] != NULL) {
+        i++;
+    }
+    return i;
+}
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str )
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen(test);
+    printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i= 0; dest[i] != 0; i++){
+        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+        }
+    }
+}
+
+void umdrehen( char* str )
+{
+    char temp[100] = """";
+    int count = 0;
+    
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.6082337317000001,0
+17,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,Niklas,Schwolow,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+  {
+    dest[i]=src[i];
+  }
+  
+}
+
+void umdrehen( char* str )
+{
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){}
+  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    int max = 0;
+    int laengedest = strlen(dest);
+    int laengesrc = strlen(src);
+    if (zahl > laengedest){
+        if (zahl > laengesrc) max = zahl;
+        else if(zahl < laengesrc) max = laengesrc;
+    }
+    else if (laengedest > zahl){
+        if (laengedest > laengesrc) max = laengedest;
+        else if (laengedest < laengesrc) max = laengesrc;
+    }
+
+    for(int i = 0; i < max; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int laenge = strlen(str);
+    for (int i = 0; i < laenge/2; i++){
+        int tmp = str[i];
+        str[i] = str[laenge - i -1];
+        str[laenge - i - 1] = tmp;
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.6072083079,0
+18,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,Rosa,Hagenberg,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+  {
+    dest[i]=src[i];
+  }
+  
+}
+
+void umdrehen( char* str )
+{
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){}
+  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	if(zahl == 0) return; 
+	
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	
+	for(int i = 0; i <= zahl && i<länge; i++){
+		if(src[i] == '\0') return;
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	}
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+
+  char test[11]= ""0123456789"";
+  
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.6038543897,0
+19,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,Tugce,Karabalik,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++){
+  *(dest+i) = *(src +i);
+  }
+}
+
+void umdrehen( char* str )
+{
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;}
+  n--;
+  
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+  
+}
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i=0; i < zahl; i++)
+    {
+        if (dest[i] == '\0' || src[i] == '\0') break;
+        dest[i] =src[i];
+    }
+  
+}
+
+void umdrehen( char* str )
+{
+    char tmp=0;
+    int strlen= 0;
+    for( ; str[strlen] !='\0'; strlen++ );
+    for( int i= 0; i< strlen /2; i++)
+    {
+        tmp= str[i];
+        str[i] = str[strlen-i-1];
+        str[strlen-i-1] - tmp;
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.6031976744,0
+20,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,Tugce,Karabalik,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0')){
+        dest[i] = src[i];
+        i++;
+    }
+}
+
+void umdrehen( char* str )
+{
+    int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+    }
+    int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen( test );
+    printf( ""Rückwärts : %s \n"", test);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i=0; i < zahl; i++)
+    {
+        if (dest[i] == '\0' || src[i] == '\0') break;
+        dest[i] =src[i];
+    }
+  
+}
+
+void umdrehen( char* str )
+{
+    char tmp=0;
+    int strlen= 0;
+    for( ; str[strlen] !='\0'; strlen++ );
+    for( int i= 0; i< strlen /2; i++)
+    {
+        tmp= str[i];
+        str[i] = str[strlen-i-1];
+        str[strlen-i-1] - tmp;
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5987012987,0
+21,SoSe22,9,Antwort 9,C,Paul,Dannenberg,Niklas,Schwolow,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+    }
+    char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    int max = 0;
+    int laengedest = strlen(dest);
+    int laengesrc = strlen(src);
+    if (zahl > laengedest){
+        if (zahl > laengesrc) max = zahl;
+        else if(zahl < laengesrc) max = laengesrc;
+    }
+    else if (laengedest > zahl){
+        if (laengedest > laengesrc) max = laengedest;
+        else if (laengedest < laengesrc) max = laengesrc;
+    }
+
+    for(int i = 0; i < max; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int laenge = strlen(str);
+    for (int i = 0; i < laenge/2; i++){
+        int tmp = str[i];
+        str[i] = str[laenge - i -1];
+        str[laenge - i - 1] = tmp;
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5949736996,0
+22,SoSe22,9,Antwort 9,C,Niklas,Muß,Tom Frederik,Braune,"#include <stdio.h>
+#include <stdlib.h>
+
+int getStringLength(char x[]) {
+    int i = 0;
+    while(x[i] != NULL) {
+        i++;
+    }
+    return i;
+}
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str )
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen(test);
+    printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++){
+  *(dest+i) = *(src +i);
+  }
+}
+
+void umdrehen( char* str )
+{
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;}
+  n--;
+  
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+  
+}
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5947075209,0
+23,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,Moritz Sebastian,Niethammer,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+  {
+    dest[i]=src[i];
+  }
+  
+}
+
+void umdrehen( char* str )
+{
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){}
+  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0')){
+        dest[i] = src[i];
+        i++;
+    }
+}
+
+void umdrehen( char* str )
+{
+    int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+    }
+    int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen( test );
+    printf( ""Rückwärts : %s \n"", test);
+}",0.5914127424,0
+24,SoSe22,9,Antwort 9,C,Paul,Dannenberg,Ibraim,Ibraimi,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+    }
+    char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++){
+   size_source = size_source + 1;
+   }
+   
+  int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+   
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  }
+}
+
+void umdrehen( char* str )
+{
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+  
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5908018868,0
+25,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,Jakob Pius,Bücking,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+  {
+    dest[i]=src[i];
+  }
+  
+}
+
+void umdrehen( char* str )
+{
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){}
+  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //}
+        
+        
+    }
+  
+}
+
+void umdrehen( char* str )
+{   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.59,0
+26,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,Tugce,Karabalik,"#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	if(zahl == 0) return; 
+	
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	
+	for(int i = 0; i <= zahl && i<länge; i++){
+		if(src[i] == '\0') return;
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	}
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+
+  char test[11]= ""0123456789"";
+  
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i=0; i < zahl; i++)
+    {
+        if (dest[i] == '\0' || src[i] == '\0') break;
+        dest[i] =src[i];
+    }
+  
+}
+
+void umdrehen( char* str )
+{
+    char tmp=0;
+    int strlen= 0;
+    for( ; str[strlen] !='\0'; strlen++ );
+    for( int i= 0; i< strlen /2; i++)
+    {
+        tmp= str[i];
+        str[i] = str[strlen-i-1];
+        str[strlen-i-1] - tmp;
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5865063460000001,0
+27,SoSe22,9,Antwort 9,C,Niklas,Muß,Tugce,Karabalik,"#include <stdio.h>
+#include <stdlib.h>
+
+int getStringLength(char x[]) {
+    int i = 0;
+    while(x[i] != NULL) {
+        i++;
+    }
+    return i;
+}
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str )
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen(test);
+    printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i=0; i < zahl; i++)
+    {
+        if (dest[i] == '\0' || src[i] == '\0') break;
+        dest[i] =src[i];
+    }
+  
+}
+
+void umdrehen( char* str )
+{
+    char tmp=0;
+    int strlen= 0;
+    for( ; str[strlen] !='\0'; strlen++ );
+    for( int i= 0; i< strlen /2; i++)
+    {
+        tmp= str[i];
+        str[i] = str[strlen-i-1];
+        str[strlen-i-1] - tmp;
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5857519789,0
+28,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,Shaurya,Sharma,"#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	if(zahl == 0) return; 
+	
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	
+	for(int i = 0; i <= zahl && i<länge; i++){
+		if(src[i] == '\0') return;
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	}
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+
+  char test[11]= ""0123456789"";
+  
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i= 0; dest[i] != 0; i++){
+        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+        }
+    }
+}
+
+void umdrehen( char* str )
+{
+    char temp[100] = """";
+    int count = 0;
+    
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5837256221,0
+29,SoSe22,9,Antwort 9,C,Paul,Dannenberg,Jakob Pius,Bücking,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+    }
+    char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //}
+        
+        
+    }
+  
+}
+
+void umdrehen( char* str )
+{   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5794504182,0
+30,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,Rosa,Hagenberg,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++){
+  *(dest+i) = *(src +i);
+  }
+}
+
+void umdrehen( char* str )
+{
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;}
+  n--;
+  
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+  
+}
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	if(zahl == 0) return; 
+	
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	
+	for(int i = 0; i <= zahl && i<länge; i++){
+		if(src[i] == '\0') return;
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	}
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+
+  char test[11]= ""0123456789"";
+  
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5758645025,0
+31,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,Shaurya,Sharma,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //}
+        
+        
+    }
+  
+}
+
+void umdrehen( char* str )
+{   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i= 0; dest[i] != 0; i++){
+        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+        }
+    }
+}
+
+void umdrehen( char* str )
+{
+    char temp[100] = """";
+    int count = 0;
+    
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5753262159,0
+32,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,Silas Johannes,Pegler,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++){
+  *(dest+i) = *(src +i);
+  }
+}
+
+void umdrehen( char* str )
+{
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;}
+  n--;
+  
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+  
+}
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	for(int i = 0; i < zahl; i++)
+	{
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		}
+		else
+		{
+			i = zahl;
+		}
+	}
+}
+
+void umdrehen( char* str )
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5752551020000001,0
+33,SoSe22,9,Antwort 9,C,Niklas,Schwolow,Tugce,Karabalik,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    int max = 0;
+    int laengedest = strlen(dest);
+    int laengesrc = strlen(src);
+    if (zahl > laengedest){
+        if (zahl > laengesrc) max = zahl;
+        else if(zahl < laengesrc) max = laengesrc;
+    }
+    else if (laengedest > zahl){
+        if (laengedest > laengesrc) max = laengedest;
+        else if (laengedest < laengesrc) max = laengesrc;
+    }
+
+    for(int i = 0; i < max; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int laenge = strlen(str);
+    for (int i = 0; i < laenge/2; i++){
+        int tmp = str[i];
+        str[i] = str[laenge - i -1];
+        str[laenge - i - 1] = tmp;
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i=0; i < zahl; i++)
+    {
+        if (dest[i] == '\0' || src[i] == '\0') break;
+        dest[i] =src[i];
+    }
+  
+}
+
+void umdrehen( char* str )
+{
+    char tmp=0;
+    int strlen= 0;
+    for( ; str[strlen] !='\0'; strlen++ );
+    for( int i= 0; i< strlen /2; i++)
+    {
+        tmp= str[i];
+        str[i] = str[strlen-i-1];
+        str[strlen-i-1] - tmp;
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5735718407,0
+34,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,Silas Johannes,Pegler,"#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	if(zahl == 0) return; 
+	
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	
+	for(int i = 0; i <= zahl && i<länge; i++){
+		if(src[i] == '\0') return;
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	}
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+
+  char test[11]= ""0123456789"";
+  
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	for(int i = 0; i < zahl; i++)
+	{
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		}
+		else
+		{
+			i = zahl;
+		}
+	}
+}
+
+void umdrehen( char* str )
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5660153937,0
+35,SoSe22,9,Antwort 9,C,Paul,Dannenberg,Rosa,Hagenberg,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+    }
+    char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	if(zahl == 0) return; 
+	
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	
+	for(int i = 0; i <= zahl && i<länge; i++){
+		if(src[i] == '\0') return;
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	}
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+
+  char test[11]= ""0123456789"";
+  
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5640677966000001,0
+36,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,Rosa,Hagenberg,"#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+//void ersetzen(char* dest, int zahl, char* src)
+
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+	}
+}
+
+//void umdrehen( char* str )
+
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	}
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+
+//int main( int argc, char* argv[] )
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	if(zahl == 0) return; 
+	
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	
+	for(int i = 0; i <= zahl && i<länge; i++){
+		if(src[i] == '\0') return;
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	}
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+
+  char test[11]= ""0123456789"";
+  
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5632706035,0
+37,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,Jakob Pius,Bücking,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0')){
+        dest[i] = src[i];
+        i++;
+    }
+}
+
+void umdrehen( char* str )
+{
+    int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+    }
+    int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen( test );
+    printf( ""Rückwärts : %s \n"", test);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //}
+        
+        
+    }
+  
+}
+
+void umdrehen( char* str )
+{   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5606741573,0
+38,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,Niklas,Muß,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0')){
+        dest[i] = src[i];
+        i++;
+    }
+}
+
+void umdrehen( char* str )
+{
+    int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+    }
+    int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen( test );
+    printf( ""Rückwärts : %s \n"", test);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+int getStringLength(char x[]) {
+    int i = 0;
+    while(x[i] != NULL) {
+        i++;
+    }
+    return i;
+}
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str )
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen(test);
+    printf( ""Rückwärts : %s \n"", test );
+}",0.56,0
+39,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,Tugce,Karabalik,"#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+//void ersetzen(char* dest, int zahl, char* src)
+
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+	}
+}
+
+//void umdrehen( char* str )
+
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	}
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+
+//int main( int argc, char* argv[] )
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i=0; i < zahl; i++)
+    {
+        if (dest[i] == '\0' || src[i] == '\0') break;
+        dest[i] =src[i];
+    }
+  
+}
+
+void umdrehen( char* str )
+{
+    char tmp=0;
+    int strlen= 0;
+    for( ; str[strlen] !='\0'; strlen++ );
+    for( int i= 0; i< strlen /2; i++)
+    {
+        tmp= str[i];
+        str[i] = str[strlen-i-1];
+        str[strlen-i-1] - tmp;
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.56,0
+40,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,Paul,Dannenberg,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0')){
+        dest[i] = src[i];
+        i++;
+    }
+}
+
+void umdrehen( char* str )
+{
+    int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+    }
+    int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen( test );
+    printf( ""Rückwärts : %s \n"", test);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+    }
+    char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5586297760000001,0
+41,SoSe22,9,Antwort 9,C,Paul,Dannenberg,Silas Johannes,Pegler,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+    }
+    char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	for(int i = 0; i < zahl; i++)
+	{
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		}
+		else
+		{
+			i = zahl;
+		}
+	}
+}
+
+void umdrehen( char* str )
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.557195572,0
+42,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,Ibraim,Ibraimi,"#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	if(zahl == 0) return; 
+	
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	
+	for(int i = 0; i <= zahl && i<länge; i++){
+		if(src[i] == '\0') return;
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	}
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+
+  char test[11]= ""0123456789"";
+  
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++){
+   size_source = size_source + 1;
+   }
+   
+  int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+   
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  }
+}
+
+void umdrehen( char* str )
+{
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+  
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5525866970000001,0
+43,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,Silas Johannes,Pegler,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+  {
+    dest[i]=src[i];
+  }
+  
+}
+
+void umdrehen( char* str )
+{
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){}
+  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	for(int i = 0; i < zahl; i++)
+	{
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		}
+		else
+		{
+			i = zahl;
+		}
+	}
+}
+
+void umdrehen( char* str )
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5515463918,0
+44,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,Jakob Pius,Bücking,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++){
+  *(dest+i) = *(src +i);
+  }
+}
+
+void umdrehen( char* str )
+{
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;}
+  n--;
+  
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+  
+}
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //}
+        
+        
+    }
+  
+}
+
+void umdrehen( char* str )
+{   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5507425743000001,0
+45,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,Ibraim,Ibraimi,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++){
+  *(dest+i) = *(src +i);
+  }
+}
+
+void umdrehen( char* str )
+{
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;}
+  n--;
+  
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+  
+}
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++){
+   size_source = size_source + 1;
+   }
+   
+  int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+   
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  }
+}
+
+void umdrehen( char* str )
+{
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+  
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.547008547,0
+46,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,Tom Frederik,Braune,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0')){
+        dest[i] = src[i];
+        i++;
+    }
+}
+
+void umdrehen( char* str )
+{
+    int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+    }
+    int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen( test );
+    printf( ""Rückwärts : %s \n"", test);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++){
+  *(dest+i) = *(src +i);
+  }
+}
+
+void umdrehen( char* str )
+{
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;}
+  n--;
+  
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+  
+}
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5465753425000001,0
+47,SoSe22,9,Antwort 9,C,Niklas,Schwolow,Tom Frederik,Braune,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    int max = 0;
+    int laengedest = strlen(dest);
+    int laengesrc = strlen(src);
+    if (zahl > laengedest){
+        if (zahl > laengesrc) max = zahl;
+        else if(zahl < laengesrc) max = laengesrc;
+    }
+    else if (laengedest > zahl){
+        if (laengedest > laengesrc) max = laengedest;
+        else if (laengedest < laengesrc) max = laengesrc;
+    }
+
+    for(int i = 0; i < max; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int laenge = strlen(str);
+    for (int i = 0; i < laenge/2; i++){
+        int tmp = str[i];
+        str[i] = str[laenge - i -1];
+        str[laenge - i - 1] = tmp;
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++){
+  *(dest+i) = *(src +i);
+  }
+}
+
+void umdrehen( char* str )
+{
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;}
+  n--;
+  
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+  
+}
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5456745312,0
+48,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,Niklas,Schwolow,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0')){
+        dest[i] = src[i];
+        i++;
+    }
+}
+
+void umdrehen( char* str )
+{
+    int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+    }
+    int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen( test );
+    printf( ""Rückwärts : %s \n"", test);
+}","#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    int max = 0;
+    int laengedest = strlen(dest);
+    int laengesrc = strlen(src);
+    if (zahl > laengedest){
+        if (zahl > laengesrc) max = zahl;
+        else if(zahl < laengesrc) max = laengesrc;
+    }
+    else if (laengedest > zahl){
+        if (laengedest > laengesrc) max = laengedest;
+        else if (laengedest < laengesrc) max = laengesrc;
+    }
+
+    for(int i = 0; i < max; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int laenge = strlen(str);
+    for (int i = 0; i < laenge/2; i++){
+        int tmp = str[i];
+        str[i] = str[laenge - i -1];
+        str[laenge - i - 1] = tmp;
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5404512933,0
+49,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,Tugce,Karabalik,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++){
+   size_source = size_source + 1;
+   }
+   
+  int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+   
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  }
+}
+
+void umdrehen( char* str )
+{
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+  
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i=0; i < zahl; i++)
+    {
+        if (dest[i] == '\0' || src[i] == '\0') break;
+        dest[i] =src[i];
+    }
+  
+}
+
+void umdrehen( char* str )
+{
+    char tmp=0;
+    int strlen= 0;
+    for( ; str[strlen] !='\0'; strlen++ );
+    for( int i= 0; i< strlen /2; i++)
+    {
+        tmp= str[i];
+        str[i] = str[strlen-i-1];
+        str[strlen-i-1] - tmp;
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5355064028000001,0
+50,SoSe22,9,Antwort 9,C,Niklas,Schwolow,Shaurya,Sharma,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    int max = 0;
+    int laengedest = strlen(dest);
+    int laengesrc = strlen(src);
+    if (zahl > laengedest){
+        if (zahl > laengesrc) max = zahl;
+        else if(zahl < laengesrc) max = laengesrc;
+    }
+    else if (laengedest > zahl){
+        if (laengedest > laengesrc) max = laengedest;
+        else if (laengedest < laengesrc) max = laengesrc;
+    }
+
+    for(int i = 0; i < max; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int laenge = strlen(str);
+    for (int i = 0; i < laenge/2; i++){
+        int tmp = str[i];
+        str[i] = str[laenge - i -1];
+        str[laenge - i - 1] = tmp;
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i= 0; dest[i] != 0; i++){
+        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+        }
+    }
+}
+
+void umdrehen( char* str )
+{
+    char temp[100] = """";
+    int count = 0;
+    
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5316308764000001,0
+51,SoSe22,9,Antwort 9,C,Shaurya,Sharma,Ibraim,Ibraimi,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i= 0; dest[i] != 0; i++){
+        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+        }
+    }
+}
+
+void umdrehen( char* str )
+{
+    char temp[100] = """";
+    int count = 0;
+    
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++){
+   size_source = size_source + 1;
+   }
+   
+  int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+   
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  }
+}
+
+void umdrehen( char* str )
+{
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+  
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5292740047,0
+52,SoSe22,9,Antwort 9,C,Niklas,Muß,Niklas,Schwolow,"#include <stdio.h>
+#include <stdlib.h>
+
+int getStringLength(char x[]) {
+    int i = 0;
+    while(x[i] != NULL) {
+        i++;
+    }
+    return i;
+}
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str )
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen(test);
+    printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    int max = 0;
+    int laengedest = strlen(dest);
+    int laengesrc = strlen(src);
+    if (zahl > laengedest){
+        if (zahl > laengesrc) max = zahl;
+        else if(zahl < laengesrc) max = laengesrc;
+    }
+    else if (laengedest > zahl){
+        if (laengedest > laengesrc) max = laengedest;
+        else if (laengedest < laengesrc) max = laengesrc;
+    }
+
+    for(int i = 0; i < max; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int laenge = strlen(str);
+    for (int i = 0; i < laenge/2; i++){
+        int tmp = str[i];
+        str[i] = str[laenge - i -1];
+        str[laenge - i - 1] = tmp;
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.526491913,0
+53,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,Tugce,Karabalik,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	for(int i = 0; i < zahl; i++)
+	{
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		}
+		else
+		{
+			i = zahl;
+		}
+	}
+}
+
+void umdrehen( char* str )
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i=0; i < zahl; i++)
+    {
+        if (dest[i] == '\0' || src[i] == '\0') break;
+        dest[i] =src[i];
+    }
+  
+}
+
+void umdrehen( char* str )
+{
+    char tmp=0;
+    int strlen= 0;
+    for( ; str[strlen] !='\0'; strlen++ );
+    for( int i= 0; i< strlen /2; i++)
+    {
+        tmp= str[i];
+        str[i] = str[strlen-i-1];
+        str[strlen-i-1] - tmp;
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5242718447,0
+54,SoSe22,9,Antwort 9,C,Shaurya,Sharma,Silas Johannes,Pegler,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i= 0; dest[i] != 0; i++){
+        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+        }
+    }
+}
+
+void umdrehen( char* str )
+{
+    char temp[100] = """";
+    int count = 0;
+    
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	for(int i = 0; i < zahl; i++)
+	{
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		}
+		else
+		{
+			i = zahl;
+		}
+	}
+}
+
+void umdrehen( char* str )
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5213675214,0
+55,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,Shaurya,Sharma,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0')){
+        dest[i] = src[i];
+        i++;
+    }
+}
+
+void umdrehen( char* str )
+{
+    int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+    }
+    int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen( test );
+    printf( ""Rückwärts : %s \n"", test);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i= 0; dest[i] != 0; i++){
+        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+        }
+    }
+}
+
+void umdrehen( char* str )
+{
+    char temp[100] = """";
+    int count = 0;
+    
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5189542484,0
+56,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,Parham,Tavakoli Anaraki,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0')){
+        dest[i] = src[i];
+        i++;
+    }
+}
+
+void umdrehen( char* str )
+{
+    int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+    }
+    int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen( test );
+    printf( ""Rückwärts : %s \n"", test);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+//void ersetzen(char* dest, int zahl, char* src)
+
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+	}
+}
+
+//void umdrehen( char* str )
+
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	}
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+
+//int main( int argc, char* argv[] )
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5126262626,0
+57,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,Rosa,Hagenberg,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0')){
+        dest[i] = src[i];
+        i++;
+    }
+}
+
+void umdrehen( char* str )
+{
+    int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+    }
+    int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen( test );
+    printf( ""Rückwärts : %s \n"", test);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	if(zahl == 0) return; 
+	
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	
+	for(int i = 0; i <= zahl && i<länge; i++){
+		if(src[i] == '\0') return;
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	}
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+
+  char test[11]= ""0123456789"";
+  
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.504743833,0
+58,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,Ibraim,Ibraimi,"#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+//void ersetzen(char* dest, int zahl, char* src)
+
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+	}
+}
+
+//void umdrehen( char* str )
+
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	}
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+
+//int main( int argc, char* argv[] )
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++){
+   size_source = size_source + 1;
+   }
+   
+  int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+   
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  }
+}
+
+void umdrehen( char* str )
+{
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+  
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5039727582,0
+59,SoSe22,9,Antwort 9,C,Niklas,Muß,Jakob Pius,Bücking,"#include <stdio.h>
+#include <stdlib.h>
+
+int getStringLength(char x[]) {
+    int i = 0;
+    while(x[i] != NULL) {
+        i++;
+    }
+    return i;
+}
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str )
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen(test);
+    printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //}
+        
+        
+    }
+  
+}
+
+void umdrehen( char* str )
+{   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.5022779043,0
+60,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,Ibraim,Ibraimi,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+  {
+    dest[i]=src[i];
+  }
+  
+}
+
+void umdrehen( char* str )
+{
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){}
+  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++){
+   size_source = size_source + 1;
+   }
+   
+  int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+   
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  }
+}
+
+void umdrehen( char* str )
+{
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+  
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.4993834772,0
+61,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,Silas Johannes,Pegler,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0')){
+        dest[i] = src[i];
+        i++;
+    }
+}
+
+void umdrehen( char* str )
+{
+    int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+    }
+    int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen( test );
+    printf( ""Rückwärts : %s \n"", test);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	for(int i = 0; i < zahl; i++)
+	{
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		}
+		else
+		{
+			i = zahl;
+		}
+	}
+}
+
+void umdrehen( char* str )
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.4930715935,0
+62,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,Silas Johannes,Pegler,"#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+//void ersetzen(char* dest, int zahl, char* src)
+
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+	}
+}
+
+//void umdrehen( char* str )
+
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	}
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+
+//int main( int argc, char* argv[] )
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	for(int i = 0; i < zahl; i++)
+	{
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		}
+		else
+		{
+			i = zahl;
+		}
+	}
+}
+
+void umdrehen( char* str )
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.4905437352,0
+63,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,Rosa,Hagenberg,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //}
+        
+        
+    }
+  
+}
+
+void umdrehen( char* str )
+{   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	if(zahl == 0) return; 
+	
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	
+	for(int i = 0; i <= zahl && i<länge; i++){
+		if(src[i] == '\0') return;
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	}
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+
+  char test[11]= ""0123456789"";
+  
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.4835924007,0
+64,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,Ibraim,Ibraimi,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0')){
+        dest[i] = src[i];
+        i++;
+    }
+}
+
+void umdrehen( char* str )
+{
+    int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+    }
+    int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen( test );
+    printf( ""Rückwärts : %s \n"", test);
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++){
+   size_source = size_source + 1;
+   }
+   
+  int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+   
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  }
+}
+
+void umdrehen( char* str )
+{
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+  
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.4716981132,0
+65,SoSe22,9,Antwort 9,C,Niklas,Muß,Rosa,Hagenberg,"#include <stdio.h>
+#include <stdlib.h>
+
+int getStringLength(char x[]) {
+    int i = 0;
+    while(x[i] != NULL) {
+        i++;
+    }
+    return i;
+}
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str )
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen(test);
+    printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	if(zahl == 0) return; 
+	
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	
+	for(int i = 0; i <= zahl && i<länge; i++){
+		if(src[i] == '\0') return;
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	}
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+
+  char test[11]= ""0123456789"";
+  
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.4714193963,0
+66,SoSe22,9,Antwort 9,C,Niklas,Schwolow,Jakob Pius,Bücking,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    int max = 0;
+    int laengedest = strlen(dest);
+    int laengesrc = strlen(src);
+    if (zahl > laengedest){
+        if (zahl > laengesrc) max = zahl;
+        else if(zahl < laengesrc) max = laengesrc;
+    }
+    else if (laengedest > zahl){
+        if (laengedest > laengesrc) max = laengedest;
+        else if (laengedest < laengesrc) max = laengesrc;
+    }
+
+    for(int i = 0; i < max; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int laenge = strlen(str);
+    for (int i = 0; i < laenge/2; i++){
+        int tmp = str[i];
+        str[i] = str[laenge - i -1];
+        str[laenge - i - 1] = tmp;
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //}
+        
+        
+    }
+  
+}
+
+void umdrehen( char* str )
+{   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.4693360365,0
+67,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,Silas Johannes,Pegler,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //}
+        
+        
+    }
+  
+}
+
+void umdrehen( char* str )
+{   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	for(int i = 0; i < zahl; i++)
+	{
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		}
+		else
+		{
+			i = zahl;
+		}
+	}
+}
+
+void umdrehen( char* str )
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.469279661,0
+68,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,Parham,Tavakoli Anaraki,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //}
+        
+        
+    }
+  
+}
+
+void umdrehen( char* str )
+{   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+//void ersetzen(char* dest, int zahl, char* src)
+
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+	}
+}
+
+//void umdrehen( char* str )
+
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	}
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+
+//int main( int argc, char* argv[] )
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.467816092,0
+69,SoSe22,9,Antwort 9,C,Niklas,Schwolow,Parham,Tavakoli Anaraki,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    int max = 0;
+    int laengedest = strlen(dest);
+    int laengesrc = strlen(src);
+    if (zahl > laengedest){
+        if (zahl > laengesrc) max = zahl;
+        else if(zahl < laengesrc) max = laengesrc;
+    }
+    else if (laengedest > zahl){
+        if (laengedest > laengesrc) max = laengedest;
+        else if (laengedest < laengesrc) max = laengesrc;
+    }
+
+    for(int i = 0; i < max; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int laenge = strlen(str);
+    for (int i = 0; i < laenge/2; i++){
+        int tmp = str[i];
+        str[i] = str[laenge - i -1];
+        str[laenge - i - 1] = tmp;
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+//void ersetzen(char* dest, int zahl, char* src)
+
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+	}
+}
+
+//void umdrehen( char* str )
+
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	}
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+
+//int main( int argc, char* argv[] )
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.458075408,0
+70,SoSe22,9,Antwort 9,C,Niklas,Schwolow,Rosa,Hagenberg,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    int max = 0;
+    int laengedest = strlen(dest);
+    int laengesrc = strlen(src);
+    if (zahl > laengedest){
+        if (zahl > laengesrc) max = zahl;
+        else if(zahl < laengesrc) max = laengesrc;
+    }
+    else if (laengedest > zahl){
+        if (laengedest > laengesrc) max = laengedest;
+        else if (laengedest < laengesrc) max = laengesrc;
+    }
+
+    for(int i = 0; i < max; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int laenge = strlen(str);
+    for (int i = 0; i < laenge/2; i++){
+        int tmp = str[i];
+        str[i] = str[laenge - i -1];
+        str[laenge - i - 1] = tmp;
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	if(zahl == 0) return; 
+	
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	
+	for(int i = 0; i <= zahl && i<länge; i++){
+		if(src[i] == '\0') return;
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	}
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+
+  char test[11]= ""0123456789"";
+  
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.4532130778,0
+71,SoSe22,9,Antwort 9,C,Niklas,Muß,Parham,Tavakoli Anaraki,"#include <stdio.h>
+#include <stdlib.h>
+
+int getStringLength(char x[]) {
+    int i = 0;
+    while(x[i] != NULL) {
+        i++;
+    }
+    return i;
+}
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str )
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen(test);
+    printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+//void ersetzen(char* dest, int zahl, char* src)
+
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+	}
+}
+
+//void umdrehen( char* str )
+
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	}
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+
+//int main( int argc, char* argv[] )
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.4461538462,0
+72,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,Ibraim,Ibraimi,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //}
+        
+        
+    }
+  
+}
+
+void umdrehen( char* str )
+{   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++){
+   size_source = size_source + 1;
+   }
+   
+  int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+   
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  }
+}
+
+void umdrehen( char* str )
+{
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+  
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.4392236977,0
+73,SoSe22,9,Antwort 9,C,Niklas,Muß,Silas Johannes,Pegler,"#include <stdio.h>
+#include <stdlib.h>
+
+int getStringLength(char x[]) {
+    int i = 0;
+    while(x[i] != NULL) {
+        i++;
+    }
+    return i;
+}
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str )
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen(test);
+    printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	for(int i = 0; i < zahl; i++)
+	{
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		}
+		else
+		{
+			i = zahl;
+		}
+	}
+}
+
+void umdrehen( char* str )
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.4274004684,0
+74,SoSe22,9,Antwort 9,C,Niklas,Schwolow,Ibraim,Ibraimi,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    int max = 0;
+    int laengedest = strlen(dest);
+    int laengesrc = strlen(src);
+    if (zahl > laengedest){
+        if (zahl > laengesrc) max = zahl;
+        else if(zahl < laengesrc) max = laengesrc;
+    }
+    else if (laengedest > zahl){
+        if (laengedest > laengesrc) max = laengedest;
+        else if (laengedest < laengesrc) max = laengesrc;
+    }
+
+    for(int i = 0; i < max; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int laenge = strlen(str);
+    for (int i = 0; i < laenge/2; i++){
+        int tmp = str[i];
+        str[i] = str[laenge - i -1];
+        str[laenge - i - 1] = tmp;
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++){
+   size_source = size_source + 1;
+   }
+   
+  int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+   
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  }
+}
+
+void umdrehen( char* str )
+{
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+  
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.4180451128,0
+75,SoSe22,9,Antwort 9,C,Niklas,Muß,Ibraim,Ibraimi,"#include <stdio.h>
+#include <stdlib.h>
+
+int getStringLength(char x[]) {
+    int i = 0;
+    while(x[i] != NULL) {
+        i++;
+    }
+    return i;
+}
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str )
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen(test);
+    printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++){
+   size_source = size_source + 1;
+   }
+   
+  int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+   
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  }
+}
+
+void umdrehen( char* str )
+{
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+  
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.4128233971,0
+76,SoSe22,9,Antwort 9,C,Niklas,Schwolow,Silas Johannes,Pegler,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    int max = 0;
+    int laengedest = strlen(dest);
+    int laengesrc = strlen(src);
+    if (zahl > laengedest){
+        if (zahl > laengesrc) max = zahl;
+        else if(zahl < laengesrc) max = laengesrc;
+    }
+    else if (laengedest > zahl){
+        if (laengedest > laengesrc) max = laengedest;
+        else if (laengedest < laengesrc) max = laengesrc;
+    }
+
+    for(int i = 0; i < max; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int laenge = strlen(str);
+    for (int i = 0; i < laenge/2; i++){
+        int tmp = str[i];
+        str[i] = str[laenge - i -1];
+        str[laenge - i - 1] = tmp;
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	for(int i = 0; i < zahl; i++)
+	{
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		}
+		else
+		{
+			i = zahl;
+		}
+	}
+}
+
+void umdrehen( char* str )
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.4103896104,0
+77,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,Silas Johannes,Pegler,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++){
+   size_source = size_source + 1;
+   }
+   
+  int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+   
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  }
+}
+
+void umdrehen( char* str )
+{
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+  
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	for(int i = 0; i < zahl; i++)
+	{
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		}
+		else
+		{
+			i = zahl;
+		}
+	}
+}
+
+void umdrehen( char* str )
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",0.4052356021,0
+78,SoSe22,9,Antwort 9,C,Paul,Dannenberg,Paul,Dannenberg,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+    }
+    char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src){  
+    for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str ){
+    int z = 0;
+    for(int i = 1; str[i] != '\0'; i++){
+        z = i;
+    }
+    char tmp[z];
+    for(int i = 0; str[i] != '\0'; i++){
+        tmp[i] = str[z-i];
+    }
+    for(int i = 0; str[i] != '\0'; i++){
+        str[i]=tmp[i];
+    }
+}
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",1.0,1
+79,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,Fabian,Große-Wöhrmann,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+  {
+    dest[i]=src[i];
+  }
+  
+}
+
+void umdrehen( char* str )
+{
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){}
+  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
+  {
+    dest[i]=src[i];
+  }
+  
+}
+
+void umdrehen( char* str )
+{
+  int l;
+  char puffer;
+  for (l = 0; str[l]!=0; l++){}
+  for (int i=0; i<l/2; i++){
+    puffer=str[i];
+    str[i]=str[l-i-1];
+    str[l-i-1]=puffer;
+  }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",1.0,1
+80,SoSe22,9,Antwort 9,C,Shaurya,Sharma,Shaurya,Sharma,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i= 0; dest[i] != 0; i++){
+        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+        }
+    }
+}
+
+void umdrehen( char* str )
+{
+    char temp[100] = """";
+    int count = 0;
+    
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for(int i= 0; dest[i] != 0; i++){
+        if(i < zahl && src[i] != 0){
+            dest[i] = src[i];
+        }
+    }
+}
+
+void umdrehen( char* str )
+{
+    char temp[100] = """";
+    int count = 0;
+    
+    for(int i= 0; str[i] != 0; i++){
+       temp[i] = str[i];
+       count++;
+    }
+    for(int i= 0; temp[i] != 0; i++){
+       str[i] = temp[count-i-1];
+    }
+  
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",1.0,1
+81,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,Tom Frederik,Braune,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++){
+  *(dest+i) = *(src +i);
+  }
+}
+
+void umdrehen( char* str )
+{
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;}
+  n--;
+  
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+  
+}
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++){
+  *(dest+i) = *(src +i);
+  }
+}
+
+void umdrehen( char* str )
+{
+  int n=0;
+  for(int i =0; *(str+i) != '\0' ;i++){
+  n++;}
+  n--;
+  
+  for(int i=0; i<=n; i++){
+  char tmp = *(str +i); 
+  *(str + i) = *(str + n );
+  *(str + n) = tmp;
+    n--;
+  }
+  
+}
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",1.0,1
+82,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,Parham,Tavakoli Anaraki,"#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+//void ersetzen(char* dest, int zahl, char* src)
+
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+	}
+}
+
+//void umdrehen( char* str )
+
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	}
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+
+//int main( int argc, char* argv[] )
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+//void ersetzen(char* dest, int zahl, char* src)
+
+void ersetzen(char* dest, int zahl, char* src){  
+	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
+		dest[i] = src[i];
+	}
+}
+
+//void umdrehen( char* str )
+
+void umdrehen( char* str ){
+	int c = 0;
+	for(int i = 1; str[i] != '\0'; i++){
+		c = i;
+	}
+	char tmp[c];
+	for(int i = 0; str[i] != '\0'; i++){
+		tmp[i] = str[c-i];
+	}
+	for(int i = 0; str[i] != '\0'; i++){
+		str[i]=tmp[i];
+	}
+}
+
+//int main( int argc, char* argv[] )
+
+int main( int argc, char* argv[] ){  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",1.0,1
+83,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,Jakob Pius,Bücking,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //}
+        
+        
+    }
+  
+}
+
+void umdrehen( char* str )
+{   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+    for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
+        //printf(""%c"", dest[i]);
+        dest[i] = src[i];
+        //if (dest[i] == '\0' || src[i] == '\0' ){
+           // break;
+        //} else {
+        //    dest[i] = src[i];
+        //}
+        
+        
+    }
+  
+}
+
+void umdrehen( char* str )
+{   //printf(""%s\n"", str);
+    int i = 0; 
+    while(str[i] != '\0'){
+        i++;
+    }
+    i +=1;
+    //printf(""%i \n"", i);
+    for(int k = 0; k<(i-k-2); k++){
+        //printf(""%c \n"", str[i-k-2]);
+        char mem = str[k]; 
+        str[k] = str[i-k-2];
+        str[i-k-2] = mem;
+    }
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",1.0,1
+84,SoSe22,9,Antwort 9,C,Niklas,Muß,Niklas,Muß,"#include <stdio.h>
+#include <stdlib.h>
+
+int getStringLength(char x[]) {
+    int i = 0;
+    while(x[i] != NULL) {
+        i++;
+    }
+    return i;
+}
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str )
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen(test);
+    printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+int getStringLength(char x[]) {
+    int i = 0;
+    while(x[i] != NULL) {
+        i++;
+    }
+    return i;
+}
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
+        dest[i] = src[i];
+    }
+}
+
+void umdrehen( char* str )
+{
+    int z = getStringLength(str);
+    char x[z];
+    for (int i = 0; i < z; ++i) {
+        x[i] = str[i];
+    }
+    for (int i = z-1; i >= 0; --i) {
+        str[(z-1)-i]=x[i];
+    }
+
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen(test);
+    printf( ""Rückwärts : %s \n"", test );
+}",1.0,1
+85,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,Moritz Sebastian,Niethammer,"#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0')){
+        dest[i] = src[i];
+        i++;
+    }
+}
+
+void umdrehen( char* str )
+{
+    int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+    }
+    int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen( test );
+    printf( ""Rückwärts : %s \n"", test);
+}","#include <stdio.h>
+#include <stdlib.h>
+
+void ersetzen(char* dest, int zahl, char* src)
+{
+    int i = 0;
+    while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0')){
+        dest[i] = src[i];
+        i++;
+    }
+}
+
+void umdrehen( char* str )
+{
+    int i = 0;
+    int len = 0;
+    while(str[i] != '\0'){
+        len += 1;
+        i += 1;
+    }
+    int left = 0;
+    int right = len - 1;
+    while (left < right){
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+int main( int argc, char* argv[] )
+{
+    char test[11]= ""0123456789"";
+    printf( ""Das Original ist: %s \n"", test );
+    ersetzen( test , atoi(argv[1]), argv[2] );
+    printf( ""Ersetzt : %s \n"", test );
+    umdrehen( test );
+    printf( ""Rückwärts : %s \n"", test);
+}",1.0,1
+86,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,Rosa,Hagenberg,"#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	if(zahl == 0) return; 
+	
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	
+	for(int i = 0; i <= zahl && i<länge; i++){
+		if(src[i] == '\0') return;
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	}
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+
+  char test[11]= ""0123456789"";
+  
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	if(zahl == 0) return; 
+	
+	int länge;
+	for(int i = 0; dest[i] != '\0'; i++) länge++;
+	
+	for(int i = 0; i <= zahl && i<länge; i++){
+		if(src[i] == '\0') return;
+		dest[i] = src[i];
+	}
+}
+
+void umdrehen( char* str )
+{
+	int länge;
+	for(int i = 0; str[i] != '\0'; i++) länge++;
+	
+	char copy[länge];
+	for(int i = 0; i<=länge; i++){
+		copy[i] = str[i];
+	}
+	for(int i = 0; i<länge; i++){
+		str[i] = copy[länge-1-i];
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+
+  char test[11]= ""0123456789"";
+  
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",1.0,1
+87,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,Ibraim,Ibraimi,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++){
+   size_source = size_source + 1;
+   }
+   
+  int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+   
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  }
+}
+
+void umdrehen( char* str )
+{
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+  
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+  int size_source = 0;
+  for(int i = 0; src[i] != '\0'; i++){
+   size_source = size_source + 1;
+   }
+   
+  int size_dest = 0;
+  for(int i = 0; dest[i] != '\0'; i++){
+   size_dest = size_dest + 1;
+   } 
+   
+  int minimum = zahl;
+  if(size_source <= minimum){
+  minimum = size_source;
+  } 
+  
+  if(size_dest <= minimum){
+  minimum = size_dest;
+  } 
+  
+  for(int i = 0; i<minimum; i++){
+   dest[i] = src[i];
+  }
+}
+
+void umdrehen( char* str )
+{
+  int size = 0;
+  for(int i = 0; str[i] != '\0'; i++){
+   size = size + 1;
+   }
+  for(int i = 0; i<size/2; i++){
+  
+   char c = str[i];
+   str[i] = str[size - 1 - i];
+   str[size - 1 -i] = c;
+  } 
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",1.0,1
+88,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,Silas Johannes,Pegler,"#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	for(int i = 0; i < zahl; i++)
+	{
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		}
+		else
+		{
+			i = zahl;
+		}
+	}
+}
+
+void umdrehen( char* str )
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}","#include <stdio.h>
+#include <stdlib.h>
+ 
+void ersetzen(char* dest, int zahl, char* src)
+{  
+	for(int i = 0; i < zahl; i++)
+	{
+		if(*dest != 0 && *src != 0)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		}
+		else
+		{
+			i = zahl;
+		}
+	}
+}
+
+void umdrehen( char* str )
+{
+	int lencnt = 0;
+	char* lenpt = str;
+	char* orgpt = str;
+	
+	for(;*lenpt != 0;  lenpt++)
+	{
+		lencnt++;
+	}
+	char auxString[lencnt + 1];
+	lenpt = auxString;
+	lenpt += lencnt;
+	*lenpt = 0;
+	lenpt--;
+	
+	for(int i = lencnt; i >= 0; i--)
+	{
+		*lenpt = *orgpt;
+		lenpt--;
+		orgpt++;
+	}
+	
+	orgpt = str;
+	lenpt = auxString;
+	for(int i = lencnt; i > 0; i--)
+	{
+		*orgpt = *lenpt;
+		lenpt++;
+		orgpt++;
+	}
+}
+
+int main( int argc, char* argv[] )
+{  
+  char test[11]= ""0123456789"";
+  printf( ""Das Original ist: %s \n"", test );
+  ersetzen( test , atoi(argv[1]), argv[2] );
+  printf( ""Ersetzt : %s \n"", test );
+  umdrehen( test );
+  printf( ""Rückwärts : %s \n"", test );
+}",1.0,1
