@@ -1,5 +1,5 @@
-,semester,ha,task,prog_lang,surname1,lastname1,surname2,lastname2,code1,code2,label,hand_labled
-0,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Vedia,Aksoy,"#include <stdio.h>
+Unnamed: 0,semester,ha,task,prog_lang,surname1,lastname1,surname2,lastname2,code1,code2,label,hand_labled
+0,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_75,Name_75,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -88,7 +88,7 @@ int main( int argc, char* argv[] )
   printf( ""Der neue String lautet:"" );
   printf( ""%s \n"", kedi(argc,argv)[1] );
 }",0.0,1
-1,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Luis Valentin,Salas Lara,"#include <stdio.h>
+1,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_77,Name_77,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -168,7 +168,7 @@ erg[len]='\0';
  erg2[len]='\0';
 printf(""Der neue String lautet: %s\n"",erg2);
 }",0.0,1
-2,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Matea,Miskovic,"#include <stdio.h>
+2,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_78,Name_78,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -238,7 +238,7 @@ int main(int argc, char** argv){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", string1);
     printf(""Der neue String lautet: %s\n"",string2);
 }",1.0,1
-3,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Maximilian Erich,Jacoby,"#include <stdio.h>
+3,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_79,Name_79,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -332,7 +332,7 @@ int main(int argc, char *argv[]){
 	rechnung( string2, string );
 	printf(""Der neue String lautet: %s\n"", string);
 }",0.0,1
-4,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Max Richard,Horneburg,"#include <stdio.h>
+4,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_80,Name_80,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -420,7 +420,7 @@ int main (int argc, char** argv) {
 	printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str[0].str, str[1].str);
 	return 0;
 }",0.85,1
-5,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Florian Alexander,Bauszus,"#include <stdio.h>
+5,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_82,Name_82,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -516,7 +516,7 @@ int main(int argc, char* argv[])
   xyzz(str);
   printf( ""Der neue String lautet: %s\n"",str);
 }",0.85,1
-6,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Jeremias Harry,Alexe,"#include <stdio.h>
+6,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_83,Name_83,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -575,7 +575,7 @@ int main(int argc, char** argv){
     }
     printf(""Der neue String lautet: %s"", array2);
 }",0.3200992556,1
-7,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Umut,Durak,"#include <stdio.h>
+7,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_84,Name_84,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -662,7 +662,7 @@ int main(int argc, char* argv[] )
 	strneu[length] = '\0';
 	printf(""Der neue String lautet: %s"",strneu);
 }",0.32,1
-8,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Fynn Niklas,Gerhardt,"#include <stdio.h>
+8,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_85,Name_85,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -732,7 +732,7 @@ int main(int argc, char* argv[]){
 	str2[j] = '\0';
 	printf(""Der neue String lautet: %s\n"", str2);
 }",0.31,1
-9,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Michael Andreas,Weber,"#include <stdio.h>
+9,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_86,Name_86,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -796,7 +796,7 @@ int main() {
     printf(""Der neue String lautet: %s"", satz2);
     return 0;
 }",0.2991162475,1
-10,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Muzaffer Mert,Sen,"#include <stdio.h>
+10,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_87,Name_87,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -882,7 +882,7 @@ int main(int argc, char* argv[] )
 
 
 //**(argv + 1 + lange) != '\0'",0.01,1
-11,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Moritz,Platena,"#include <stdio.h>
+11,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_88,Name_88,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -957,7 +957,7 @@ int main(int argc, char** argv){
     printf(""Der neue String lautet: %s\n"", str3);
     
 }",0.0,1
-12,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Jared Louis,Outhwaite,"#include <stdio.h>
+12,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_92,Name_92,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -1055,7 +1055,7 @@ int main(int argc, char** argv){
 	}
 	printf(""\n"");
 }",0.0,1
-13,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Franziska Anna-Lena,Gillich,"#include <stdio.h>
+13,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_93,Name_93,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -1117,7 +1117,7 @@ int main(int laenge, char** Zeichen){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
     printf(""Der neue String lautet: %s\n"",Ausgabe2);
 }",0.0,1
-14,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Leon,Schulz,"#include <stdio.h>
+14,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_96,Name_96,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -1204,7 +1204,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",0.0,1
-15,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Tom Alexander,Schmidt,"#include <stdio.h>
+15,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_7,Name_7,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -1313,7 +1313,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-16,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Karsten Siegfried,Hansel,"#include <stdio.h>
+16,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_99,Name_99,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -1413,7 +1413,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-17,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Luis Valentin,Salas Lara,"#include stdio.h
+17,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_77,Name_77,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -1505,7 +1505,7 @@ erg[len]='\0';
  erg2[len]='\0';
 printf(""Der neue String lautet: %s\n"",erg2);
 }",0.0,1
-18,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Matea,Miskovic,"#include stdio.h
+18,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_78,Name_78,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -1587,7 +1587,7 @@ int main(int argc, char** argv){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", string1);
     printf(""Der neue String lautet: %s\n"",string2);
 }",0.0,1
-19,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Maximilian Erich,Jacoby,"#include stdio.h
+19,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_79,Name_79,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -1693,7 +1693,7 @@ int main(int argc, char *argv[]){
 	rechnung( string2, string );
 	printf(""Der neue String lautet: %s\n"", string);
 }",0.0,1
-20,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Max Richard,Horneburg,"#include stdio.h
+20,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_80,Name_80,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -1793,7 +1793,7 @@ int main (int argc, char** argv) {
 	printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str[0].str, str[1].str);
 	return 0;
 }",0.0,1
-21,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Florian Alexander,Bauszus,"#include stdio.h
+21,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_82,Name_82,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -1901,7 +1901,7 @@ int main(int argc, char* argv[])
   xyzz(str);
   printf( ""Der neue String lautet: %s\n"",str);
 }",0.0,1
-22,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Jeremias Harry,Alexe,"#include stdio.h
+22,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_83,Name_83,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -1972,7 +1972,7 @@ int main(int argc, char** argv){
     }
     printf(""Der neue String lautet: %s"", array2);
 }",0.0,1
-23,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Umut,Durak,"#include stdio.h
+23,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_84,Name_84,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -2071,7 +2071,7 @@ int main(int argc, char* argv[] )
 	strneu[length] = '\0';
 	printf(""Der neue String lautet: %s"",strneu);
 }",0.0,1
-24,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Fynn Niklas,Gerhardt,"#include stdio.h
+24,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_85,Name_85,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -2153,7 +2153,7 @@ int main(int argc, char* argv[]){
 	str2[j] = '\0';
 	printf(""Der neue String lautet: %s\n"", str2);
 }",0.0,1
-25,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Michael Andreas,Weber,"#include stdio.h
+25,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_86,Name_86,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -2229,7 +2229,7 @@ int main() {
     printf(""Der neue String lautet: %s"", satz2);
     return 0;
 }",0.0,1
-26,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Muzaffer Mert,Sen,"#include stdio.h
+26,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_87,Name_87,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -2327,7 +2327,7 @@ int main(int argc, char* argv[] )
 
 
 //**(argv + 1 + lange) != '\0'",0.0,1
-27,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Moritz,Platena,"#include stdio.h
+27,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_88,Name_88,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -2414,7 +2414,7 @@ int main(int argc, char** argv){
     printf(""Der neue String lautet: %s\n"", str3);
     
 }",0.0,1
-28,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Jared Louis,Outhwaite,"#include stdio.h
+28,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_92,Name_92,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -2524,7 +2524,7 @@ int main(int argc, char** argv){
 	}
 	printf(""\n"");
 }",0.0,1
-29,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Franziska Anna-Lena,Gillich,"#include stdio.h
+29,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_93,Name_93,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -2598,7 +2598,7 @@ int main(int laenge, char** Zeichen){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
     printf(""Der neue String lautet: %s\n"",Ausgabe2);
 }",0.0,1
-30,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Leon,Schulz,"#include stdio.h
+30,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_96,Name_96,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -2697,7 +2697,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",0.0,1
-31,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Tom Alexander,Schmidt,"#include stdio.h
+31,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_7,Name_7,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -2818,7 +2818,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-32,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Karsten Siegfried,Hansel,"#include stdio.h
+32,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_99,Name_99,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -2930,7 +2930,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-33,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Matea,Miskovic,"#include <stdio.h>
+33,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_78,Name_78,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3003,7 +3003,7 @@ int main(int argc, char** argv){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", string1);
     printf(""Der neue String lautet: %s\n"",string2);
 }",0.0,1
-34,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Maximilian Erich,Jacoby,"#include <stdio.h>
+34,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_79,Name_79,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3100,7 +3100,7 @@ int main(int argc, char *argv[]){
 	rechnung( string2, string );
 	printf(""Der neue String lautet: %s\n"", string);
 }",0.0,1
-35,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Max Richard,Horneburg,"#include <stdio.h>
+35,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_80,Name_80,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3191,7 +3191,7 @@ int main (int argc, char** argv) {
 	printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str[0].str, str[1].str);
 	return 0;
 }",0.0,1
-36,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Florian Alexander,Bauszus,"#include <stdio.h>
+36,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_82,Name_82,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3290,7 +3290,7 @@ int main(int argc, char* argv[])
   xyzz(str);
   printf( ""Der neue String lautet: %s\n"",str);
 }",0.0,1
-37,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Jeremias Harry,Alexe,"#include <stdio.h>
+37,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_83,Name_83,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3352,7 +3352,7 @@ int main(int argc, char** argv){
     }
     printf(""Der neue String lautet: %s"", array2);
 }",0.0,1
-38,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Umut,Durak,"#include <stdio.h>
+38,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_84,Name_84,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3442,7 +3442,7 @@ int main(int argc, char* argv[] )
 	strneu[length] = '\0';
 	printf(""Der neue String lautet: %s"",strneu);
 }",0.0,1
-39,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Fynn Niklas,Gerhardt,"#include <stdio.h>
+39,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_85,Name_85,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3515,7 +3515,7 @@ int main(int argc, char* argv[]){
 	str2[j] = '\0';
 	printf(""Der neue String lautet: %s\n"", str2);
 }",0.0,1
-40,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Michael Andreas,Weber,"#include <stdio.h>
+40,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_86,Name_86,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3582,7 +3582,7 @@ int main() {
     printf(""Der neue String lautet: %s"", satz2);
     return 0;
 }",0.0,1
-41,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Muzaffer Mert,Sen,"#include <stdio.h>
+41,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_87,Name_87,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3671,7 +3671,7 @@ int main(int argc, char* argv[] )
 
 
 //**(argv + 1 + lange) != '\0'",0.0,1
-42,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Moritz,Platena,"#include <stdio.h>
+42,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_88,Name_88,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3749,7 +3749,7 @@ int main(int argc, char** argv){
     printf(""Der neue String lautet: %s\n"", str3);
     
 }",0.0,1
-43,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Jared Louis,Outhwaite,"#include <stdio.h>
+43,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_92,Name_92,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3850,7 +3850,7 @@ int main(int argc, char** argv){
 	}
 	printf(""\n"");
 }",0.0,1
-44,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Franziska Anna-Lena,Gillich,"#include <stdio.h>
+44,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_93,Name_93,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3915,7 +3915,7 @@ int main(int laenge, char** Zeichen){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
     printf(""Der neue String lautet: %s\n"",Ausgabe2);
 }",0.0,1
-45,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Leon,Schulz,"#include <stdio.h>
+45,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_96,Name_96,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -4005,7 +4005,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",0.0,1
-46,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Tom Alexander,Schmidt,"#include <stdio.h>
+46,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_7,Name_7,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -4117,7 +4117,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-47,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Karsten Siegfried,Hansel,"#include <stdio.h>
+47,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_99,Name_99,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -4220,7 +4220,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-48,SoSe21,9,Antwort 9,C,Matea,Miskovic,Maximilian Erich,Jacoby,"#include <stdio.h>
+48,SoSe21,9,Antwort 9,C,VName_78,Name_78,VName_79,Name_79,"#include <stdio.h>
 
 
 
@@ -4307,7 +4307,7 @@ int main(int argc, char *argv[]){
 	rechnung( string2, string );
 	printf(""Der neue String lautet: %s\n"", string);
 }",0.0,1
-49,SoSe21,9,Antwort 9,C,Matea,Miskovic,Max Richard,Horneburg,"#include <stdio.h>
+49,SoSe21,9,Antwort 9,C,VName_78,Name_78,VName_80,Name_80,"#include <stdio.h>
 
 
 
@@ -4388,7 +4388,7 @@ int main (int argc, char** argv) {
 	printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str[0].str, str[1].str);
 	return 0;
 }",0.0,1
-50,SoSe21,9,Antwort 9,C,Matea,Miskovic,Florian Alexander,Bauszus,"#include <stdio.h>
+50,SoSe21,9,Antwort 9,C,VName_78,Name_78,VName_82,Name_82,"#include <stdio.h>
 
 
 
@@ -4477,7 +4477,7 @@ int main(int argc, char* argv[])
   xyzz(str);
   printf( ""Der neue String lautet: %s\n"",str);
 }",0.0,1
-51,SoSe21,9,Antwort 9,C,Matea,Miskovic,Jeremias Harry,Alexe,"#include <stdio.h>
+51,SoSe21,9,Antwort 9,C,VName_78,Name_78,VName_83,Name_83,"#include <stdio.h>
 
 
 
@@ -4529,7 +4529,7 @@ int main(int argc, char** argv){
     }
     printf(""Der neue String lautet: %s"", array2);
 }",0.0,1
-52,SoSe21,9,Antwort 9,C,Matea,Miskovic,Umut,Durak,"#include <stdio.h>
+52,SoSe21,9,Antwort 9,C,VName_78,Name_78,VName_84,Name_84,"#include <stdio.h>
 
 
 
@@ -4609,7 +4609,7 @@ int main(int argc, char* argv[] )
 	strneu[length] = '\0';
 	printf(""Der neue String lautet: %s"",strneu);
 }",0.0,1
-53,SoSe21,9,Antwort 9,C,Matea,Miskovic,Fynn Niklas,Gerhardt,"#include <stdio.h>
+53,SoSe21,9,Antwort 9,C,VName_78,Name_78,VName_85,Name_85,"#include <stdio.h>
 
 
 
@@ -4672,7 +4672,7 @@ int main(int argc, char* argv[]){
 	str2[j] = '\0';
 	printf(""Der neue String lautet: %s\n"", str2);
 }",0.0,1
-54,SoSe21,9,Antwort 9,C,Matea,Miskovic,Michael Andreas,Weber,"#include <stdio.h>
+54,SoSe21,9,Antwort 9,C,VName_78,Name_78,VName_86,Name_86,"#include <stdio.h>
 
 
 
@@ -4729,7 +4729,7 @@ int main() {
     printf(""Der neue String lautet: %s"", satz2);
     return 0;
 }",0.0,1
-55,SoSe21,9,Antwort 9,C,Matea,Miskovic,Muzaffer Mert,Sen,"#include <stdio.h>
+55,SoSe21,9,Antwort 9,C,VName_78,Name_78,VName_87,Name_87,"#include <stdio.h>
 
 
 
@@ -4808,7 +4808,7 @@ int main(int argc, char* argv[] )
 
 
 //**(argv + 1 + lange) != '\0'",0.0,1
-56,SoSe21,9,Antwort 9,C,Matea,Miskovic,Moritz,Platena,"#include <stdio.h>
+56,SoSe21,9,Antwort 9,C,VName_78,Name_78,VName_88,Name_88,"#include <stdio.h>
 
 
 
@@ -4876,7 +4876,7 @@ int main(int argc, char** argv){
     printf(""Der neue String lautet: %s\n"", str3);
     
 }",0.0,1
-57,SoSe21,9,Antwort 9,C,Matea,Miskovic,Jared Louis,Outhwaite,"#include <stdio.h>
+57,SoSe21,9,Antwort 9,C,VName_78,Name_78,VName_92,Name_92,"#include <stdio.h>
 
 
 
@@ -4967,7 +4967,7 @@ int main(int argc, char** argv){
 	}
 	printf(""\n"");
 }",0.0,1
-58,SoSe21,9,Antwort 9,C,Matea,Miskovic,Franziska Anna-Lena,Gillich,"#include <stdio.h>
+58,SoSe21,9,Antwort 9,C,VName_78,Name_78,VName_93,Name_93,"#include <stdio.h>
 
 
 
@@ -5022,7 +5022,7 @@ int main(int laenge, char** Zeichen){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
     printf(""Der neue String lautet: %s\n"",Ausgabe2);
 }",0.0,1
-59,SoSe21,9,Antwort 9,C,Matea,Miskovic,Leon,Schulz,"#include <stdio.h>
+59,SoSe21,9,Antwort 9,C,VName_78,Name_78,VName_96,Name_96,"#include <stdio.h>
 
 
 
@@ -5102,7 +5102,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",0.0,1
-60,SoSe21,9,Antwort 9,C,Matea,Miskovic,Tom Alexander,Schmidt,"#include <stdio.h>
+60,SoSe21,9,Antwort 9,C,VName_78,Name_78,VName_7,Name_7,"#include <stdio.h>
 
 
 
@@ -5204,7 +5204,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-61,SoSe21,9,Antwort 9,C,Matea,Miskovic,Karsten Siegfried,Hansel,"#include <stdio.h>
+61,SoSe21,9,Antwort 9,C,VName_78,Name_78,VName_99,Name_99,"#include <stdio.h>
 
 
 
@@ -5297,7 +5297,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-62,SoSe21,9,Antwort 9,C,Maximilian Erich,Jacoby,Max Richard,Horneburg,"#include <stdio.h>
+62,SoSe21,9,Antwort 9,C,VName_79,Name_79,VName_80,Name_80,"#include <stdio.h>
 
 void strat( char *str1, char *str2 ){
 	int y = 0;
@@ -5402,7 +5402,7 @@ int main (int argc, char** argv) {
 	printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str[0].str, str[1].str);
 	return 0;
 }",0.0,1
-63,SoSe21,9,Antwort 9,C,Maximilian Erich,Jacoby,Florian Alexander,Bauszus,"#include <stdio.h>
+63,SoSe21,9,Antwort 9,C,VName_79,Name_79,VName_82,Name_82,"#include <stdio.h>
 
 void strat( char *str1, char *str2 ){
 	int y = 0;
@@ -5515,7 +5515,7 @@ int main(int argc, char* argv[])
   xyzz(str);
   printf( ""Der neue String lautet: %s\n"",str);
 }",0.0,1
-64,SoSe21,9,Antwort 9,C,Maximilian Erich,Jacoby,Jeremias Harry,Alexe,"#include <stdio.h>
+64,SoSe21,9,Antwort 9,C,VName_79,Name_79,VName_83,Name_83,"#include <stdio.h>
 
 void strat( char *str1, char *str2 ){
 	int y = 0;
@@ -5591,7 +5591,7 @@ int main(int argc, char** argv){
     }
     printf(""Der neue String lautet: %s"", array2);
 }",0.0,1
-65,SoSe21,9,Antwort 9,C,Maximilian Erich,Jacoby,Umut,Durak,"#include <stdio.h>
+65,SoSe21,9,Antwort 9,C,VName_79,Name_79,VName_84,Name_84,"#include <stdio.h>
 
 void strat( char *str1, char *str2 ){
 	int y = 0;
@@ -5695,7 +5695,7 @@ int main(int argc, char* argv[] )
 	strneu[length] = '\0';
 	printf(""Der neue String lautet: %s"",strneu);
 }",0.0,1
-66,SoSe21,9,Antwort 9,C,Maximilian Erich,Jacoby,Fynn Niklas,Gerhardt,"#include <stdio.h>
+66,SoSe21,9,Antwort 9,C,VName_79,Name_79,VName_85,Name_85,"#include <stdio.h>
 
 void strat( char *str1, char *str2 ){
 	int y = 0;
@@ -5782,7 +5782,7 @@ int main(int argc, char* argv[]){
 	str2[j] = '\0';
 	printf(""Der neue String lautet: %s\n"", str2);
 }",0.0,1
-67,SoSe21,9,Antwort 9,C,Maximilian Erich,Jacoby,Michael Andreas,Weber,"#include <stdio.h>
+67,SoSe21,9,Antwort 9,C,VName_79,Name_79,VName_86,Name_86,"#include <stdio.h>
 
 void strat( char *str1, char *str2 ){
 	int y = 0;
@@ -5863,7 +5863,7 @@ int main() {
     printf(""Der neue String lautet: %s"", satz2);
     return 0;
 }",0.0,1
-68,SoSe21,9,Antwort 9,C,Maximilian Erich,Jacoby,Muzaffer Mert,Sen,"#include <stdio.h>
+68,SoSe21,9,Antwort 9,C,VName_79,Name_79,VName_87,Name_87,"#include <stdio.h>
 
 void strat( char *str1, char *str2 ){
 	int y = 0;
@@ -5966,7 +5966,7 @@ int main(int argc, char* argv[] )
 
 
 //**(argv + 1 + lange) != '\0'",0.0,1
-69,SoSe21,9,Antwort 9,C,Maximilian Erich,Jacoby,Moritz,Platena,"#include <stdio.h>
+69,SoSe21,9,Antwort 9,C,VName_79,Name_79,VName_88,Name_88,"#include <stdio.h>
 
 void strat( char *str1, char *str2 ){
 	int y = 0;
@@ -6058,7 +6058,7 @@ int main(int argc, char** argv){
     printf(""Der neue String lautet: %s\n"", str3);
     
 }",0.0,1
-70,SoSe21,9,Antwort 9,C,Maximilian Erich,Jacoby,Jared Louis,Outhwaite,"#include <stdio.h>
+70,SoSe21,9,Antwort 9,C,VName_79,Name_79,VName_92,Name_92,"#include <stdio.h>
 
 void strat( char *str1, char *str2 ){
 	int y = 0;
@@ -6173,7 +6173,7 @@ int main(int argc, char** argv){
 	}
 	printf(""\n"");
 }",0.0,1
-71,SoSe21,9,Antwort 9,C,Maximilian Erich,Jacoby,Franziska Anna-Lena,Gillich,"#include <stdio.h>
+71,SoSe21,9,Antwort 9,C,VName_79,Name_79,VName_93,Name_93,"#include <stdio.h>
 
 void strat( char *str1, char *str2 ){
 	int y = 0;
@@ -6252,7 +6252,7 @@ int main(int laenge, char** Zeichen){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
     printf(""Der neue String lautet: %s\n"",Ausgabe2);
 }",0.0,1
-72,SoSe21,9,Antwort 9,C,Maximilian Erich,Jacoby,Leon,Schulz,"#include <stdio.h>
+72,SoSe21,9,Antwort 9,C,VName_79,Name_79,VName_96,Name_96,"#include <stdio.h>
 
 void strat( char *str1, char *str2 ){
 	int y = 0;
@@ -6356,7 +6356,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",0.0,1
-73,SoSe21,9,Antwort 9,C,Maximilian Erich,Jacoby,Tom Alexander,Schmidt,"#include <stdio.h>
+73,SoSe21,9,Antwort 9,C,VName_79,Name_79,VName_7,Name_7,"#include <stdio.h>
 
 void strat( char *str1, char *str2 ){
 	int y = 0;
@@ -6482,7 +6482,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-74,SoSe21,9,Antwort 9,C,Maximilian Erich,Jacoby,Karsten Siegfried,Hansel,"#include <stdio.h>
+74,SoSe21,9,Antwort 9,C,VName_79,Name_79,VName_99,Name_99,"#include <stdio.h>
 
 void strat( char *str1, char *str2 ){
 	int y = 0;
@@ -6599,7 +6599,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-75,SoSe21,9,Antwort 9,C,Max Richard,Horneburg,Florian Alexander,Bauszus,"#include <stdio.h>
+75,SoSe21,9,Antwort 9,C,VName_80,Name_80,VName_82,Name_82,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -6706,7 +6706,7 @@ int main(int argc, char* argv[])
   xyzz(str);
   printf( ""Der neue String lautet: %s\n"",str);
 }",0.0,1
-76,SoSe21,9,Antwort 9,C,Max Richard,Horneburg,Jeremias Harry,Alexe,"#include <stdio.h>
+76,SoSe21,9,Antwort 9,C,VName_80,Name_80,VName_83,Name_83,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -6776,7 +6776,7 @@ int main(int argc, char** argv){
     }
     printf(""Der neue String lautet: %s"", array2);
 }",0.0,1
-77,SoSe21,9,Antwort 9,C,Max Richard,Horneburg,Umut,Durak,"#include <stdio.h>
+77,SoSe21,9,Antwort 9,C,VName_80,Name_80,VName_84,Name_84,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -6874,7 +6874,7 @@ int main(int argc, char* argv[] )
 	strneu[length] = '\0';
 	printf(""Der neue String lautet: %s"",strneu);
 }",0.0,1
-78,SoSe21,9,Antwort 9,C,Max Richard,Horneburg,Fynn Niklas,Gerhardt,"#include <stdio.h>
+78,SoSe21,9,Antwort 9,C,VName_80,Name_80,VName_85,Name_85,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -6955,7 +6955,7 @@ int main(int argc, char* argv[]){
 	str2[j] = '\0';
 	printf(""Der neue String lautet: %s\n"", str2);
 }",0.0,1
-79,SoSe21,9,Antwort 9,C,Max Richard,Horneburg,Michael Andreas,Weber,"#include <stdio.h>
+79,SoSe21,9,Antwort 9,C,VName_80,Name_80,VName_86,Name_86,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -7030,7 +7030,7 @@ int main() {
     printf(""Der neue String lautet: %s"", satz2);
     return 0;
 }",0.0,1
-80,SoSe21,9,Antwort 9,C,Max Richard,Horneburg,Muzaffer Mert,Sen,"#include <stdio.h>
+80,SoSe21,9,Antwort 9,C,VName_80,Name_80,VName_87,Name_87,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -7127,7 +7127,7 @@ int main(int argc, char* argv[] )
 
 
 //**(argv + 1 + lange) != '\0'",0.0,1
-81,SoSe21,9,Antwort 9,C,Max Richard,Horneburg,Moritz,Platena,"#include <stdio.h>
+81,SoSe21,9,Antwort 9,C,VName_80,Name_80,VName_88,Name_88,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -7213,7 +7213,7 @@ int main(int argc, char** argv){
     printf(""Der neue String lautet: %s\n"", str3);
     
 }",0.0,1
-82,SoSe21,9,Antwort 9,C,Max Richard,Horneburg,Jared Louis,Outhwaite,"#include <stdio.h>
+82,SoSe21,9,Antwort 9,C,VName_80,Name_80,VName_92,Name_92,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -7322,7 +7322,7 @@ int main(int argc, char** argv){
 	}
 	printf(""\n"");
 }",0.0,1
-83,SoSe21,9,Antwort 9,C,Max Richard,Horneburg,Franziska Anna-Lena,Gillich,"#include <stdio.h>
+83,SoSe21,9,Antwort 9,C,VName_80,Name_80,VName_93,Name_93,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -7395,7 +7395,7 @@ int main(int laenge, char** Zeichen){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
     printf(""Der neue String lautet: %s\n"",Ausgabe2);
 }",0.0,1
-84,SoSe21,9,Antwort 9,C,Max Richard,Horneburg,Leon,Schulz,"#include <stdio.h>
+84,SoSe21,9,Antwort 9,C,VName_80,Name_80,VName_96,Name_96,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -7493,7 +7493,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",0.0,1
-85,SoSe21,9,Antwort 9,C,Max Richard,Horneburg,Tom Alexander,Schmidt,"#include <stdio.h>
+85,SoSe21,9,Antwort 9,C,VName_80,Name_80,VName_7,Name_7,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -7613,7 +7613,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-86,SoSe21,9,Antwort 9,C,Max Richard,Horneburg,Karsten Siegfried,Hansel,"#include <stdio.h>
+86,SoSe21,9,Antwort 9,C,VName_80,Name_80,VName_99,Name_99,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -7724,7 +7724,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-87,SoSe21,9,Antwort 9,C,Florian Alexander,Bauszus,Jeremias Harry,Alexe,"#include <stdio.h>
+87,SoSe21,9,Antwort 9,C,VName_82,Name_82,VName_83,Name_83,"#include <stdio.h>
 #include <stdlib.h>
 
 void xyzz(char* string)
@@ -7802,7 +7802,7 @@ int main(int argc, char** argv){
     }
     printf(""Der neue String lautet: %s"", array2);
 }",0.0,1
-88,SoSe21,9,Antwort 9,C,Florian Alexander,Bauszus,Umut,Durak,"#include <stdio.h>
+88,SoSe21,9,Antwort 9,C,VName_82,Name_82,VName_84,Name_84,"#include <stdio.h>
 #include <stdlib.h>
 
 void xyzz(char* string)
@@ -7908,7 +7908,7 @@ int main(int argc, char* argv[] )
 	strneu[length] = '\0';
 	printf(""Der neue String lautet: %s"",strneu);
 }",0.0,1
-89,SoSe21,9,Antwort 9,C,Florian Alexander,Bauszus,Fynn Niklas,Gerhardt,"#include <stdio.h>
+89,SoSe21,9,Antwort 9,C,VName_82,Name_82,VName_85,Name_85,"#include <stdio.h>
 #include <stdlib.h>
 
 void xyzz(char* string)
@@ -7997,7 +7997,7 @@ int main(int argc, char* argv[]){
 	str2[j] = '\0';
 	printf(""Der neue String lautet: %s\n"", str2);
 }",0.0,1
-90,SoSe21,9,Antwort 9,C,Florian Alexander,Bauszus,Michael Andreas,Weber,"#include <stdio.h>
+90,SoSe21,9,Antwort 9,C,VName_82,Name_82,VName_86,Name_86,"#include <stdio.h>
 #include <stdlib.h>
 
 void xyzz(char* string)
@@ -8080,7 +8080,7 @@ int main() {
     printf(""Der neue String lautet: %s"", satz2);
     return 0;
 }",0.0,1
-91,SoSe21,9,Antwort 9,C,Florian Alexander,Bauszus,Muzaffer Mert,Sen,"#include <stdio.h>
+91,SoSe21,9,Antwort 9,C,VName_82,Name_82,VName_87,Name_87,"#include <stdio.h>
 #include <stdlib.h>
 
 void xyzz(char* string)
@@ -8185,7 +8185,7 @@ int main(int argc, char* argv[] )
 
 
 //**(argv + 1 + lange) != '\0'",0.0,1
-92,SoSe21,9,Antwort 9,C,Florian Alexander,Bauszus,Moritz,Platena,"#include <stdio.h>
+92,SoSe21,9,Antwort 9,C,VName_82,Name_82,VName_88,Name_88,"#include <stdio.h>
 #include <stdlib.h>
 
 void xyzz(char* string)
@@ -8279,7 +8279,7 @@ int main(int argc, char** argv){
     printf(""Der neue String lautet: %s\n"", str3);
     
 }",0.0,1
-93,SoSe21,9,Antwort 9,C,Florian Alexander,Bauszus,Jared Louis,Outhwaite,"#include <stdio.h>
+93,SoSe21,9,Antwort 9,C,VName_82,Name_82,VName_92,Name_92,"#include <stdio.h>
 #include <stdlib.h>
 
 void xyzz(char* string)
@@ -8396,7 +8396,7 @@ int main(int argc, char** argv){
 	}
 	printf(""\n"");
 }",0.0,1
-94,SoSe21,9,Antwort 9,C,Florian Alexander,Bauszus,Franziska Anna-Lena,Gillich,"#include <stdio.h>
+94,SoSe21,9,Antwort 9,C,VName_82,Name_82,VName_93,Name_93,"#include <stdio.h>
 #include <stdlib.h>
 
 void xyzz(char* string)
@@ -8477,7 +8477,7 @@ int main(int laenge, char** Zeichen){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
     printf(""Der neue String lautet: %s\n"",Ausgabe2);
 }",0.0,1
-95,SoSe21,9,Antwort 9,C,Florian Alexander,Bauszus,Leon,Schulz,"#include <stdio.h>
+95,SoSe21,9,Antwort 9,C,VName_82,Name_82,VName_96,Name_96,"#include <stdio.h>
 #include <stdlib.h>
 
 void xyzz(char* string)
@@ -8583,7 +8583,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",0.0,1
-96,SoSe21,9,Antwort 9,C,Florian Alexander,Bauszus,Tom Alexander,Schmidt,"#include <stdio.h>
+96,SoSe21,9,Antwort 9,C,VName_82,Name_82,VName_7,Name_7,"#include <stdio.h>
 #include <stdlib.h>
 
 void xyzz(char* string)
@@ -8711,7 +8711,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-97,SoSe21,9,Antwort 9,C,Florian Alexander,Bauszus,Karsten Siegfried,Hansel,"#include <stdio.h>
+97,SoSe21,9,Antwort 9,C,VName_82,Name_82,VName_99,Name_99,"#include <stdio.h>
 #include <stdlib.h>
 
 void xyzz(char* string)
@@ -8830,7 +8830,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-98,SoSe21,9,Antwort 9,C,Jeremias Harry,Alexe,Umut,Durak,"#include <stdio.h>
+98,SoSe21,9,Antwort 9,C,VName_83,Name_83,VName_84,Name_84,"#include <stdio.h>
 
 int main(int argc, char** argv){
     char array [100];
@@ -8899,7 +8899,7 @@ int main(int argc, char* argv[] )
 	strneu[length] = '\0';
 	printf(""Der neue String lautet: %s"",strneu);
 }",0.0,1
-99,SoSe21,9,Antwort 9,C,Jeremias Harry,Alexe,Fynn Niklas,Gerhardt,"#include <stdio.h>
+99,SoSe21,9,Antwort 9,C,VName_83,Name_83,VName_85,Name_85,"#include <stdio.h>
 
 int main(int argc, char** argv){
     char array [100];
@@ -8951,7 +8951,7 @@ int main(int argc, char* argv[]){
 	str2[j] = '\0';
 	printf(""Der neue String lautet: %s\n"", str2);
 }",0.0,1
-100,SoSe21,9,Antwort 9,C,Jeremias Harry,Alexe,Michael Andreas,Weber,"#include <stdio.h>
+100,SoSe21,9,Antwort 9,C,VName_83,Name_83,VName_86,Name_86,"#include <stdio.h>
 
 int main(int argc, char** argv){
     char array [100];
@@ -8997,7 +8997,7 @@ int main() {
     printf(""Der neue String lautet: %s"", satz2);
     return 0;
 }",0.0,1
-101,SoSe21,9,Antwort 9,C,Jeremias Harry,Alexe,Muzaffer Mert,Sen,"#include <stdio.h>
+101,SoSe21,9,Antwort 9,C,VName_83,Name_83,VName_87,Name_87,"#include <stdio.h>
 
 int main(int argc, char** argv){
     char array [100];
@@ -9065,7 +9065,7 @@ int main(int argc, char* argv[] )
 
 
 //**(argv + 1 + lange) != '\0'",0.0,1
-102,SoSe21,9,Antwort 9,C,Jeremias Harry,Alexe,Moritz,Platena,"#include <stdio.h>
+102,SoSe21,9,Antwort 9,C,VName_83,Name_83,VName_88,Name_88,"#include <stdio.h>
 
 int main(int argc, char** argv){
     char array [100];
@@ -9122,7 +9122,7 @@ int main(int argc, char** argv){
     printf(""Der neue String lautet: %s\n"", str3);
     
 }",0.0,1
-103,SoSe21,9,Antwort 9,C,Jeremias Harry,Alexe,Jared Louis,Outhwaite,"#include <stdio.h>
+103,SoSe21,9,Antwort 9,C,VName_83,Name_83,VName_92,Name_92,"#include <stdio.h>
 
 int main(int argc, char** argv){
     char array [100];
@@ -9202,7 +9202,7 @@ int main(int argc, char** argv){
 	}
 	printf(""\n"");
 }",0.0,1
-104,SoSe21,9,Antwort 9,C,Jeremias Harry,Alexe,Franziska Anna-Lena,Gillich,"#include <stdio.h>
+104,SoSe21,9,Antwort 9,C,VName_83,Name_83,VName_93,Name_93,"#include <stdio.h>
 
 int main(int argc, char** argv){
     char array [100];
@@ -9246,7 +9246,7 @@ int main(int laenge, char** Zeichen){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
     printf(""Der neue String lautet: %s\n"",Ausgabe2);
 }",0.0,1
-105,SoSe21,9,Antwort 9,C,Jeremias Harry,Alexe,Leon,Schulz,"#include <stdio.h>
+105,SoSe21,9,Antwort 9,C,VName_83,Name_83,VName_96,Name_96,"#include <stdio.h>
 
 int main(int argc, char** argv){
     char array [100];
@@ -9315,7 +9315,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",0.0,1
-106,SoSe21,9,Antwort 9,C,Jeremias Harry,Alexe,Tom Alexander,Schmidt,"#include <stdio.h>
+106,SoSe21,9,Antwort 9,C,VName_83,Name_83,VName_7,Name_7,"#include <stdio.h>
 
 int main(int argc, char** argv){
     char array [100];
@@ -9406,7 +9406,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-107,SoSe21,9,Antwort 9,C,Jeremias Harry,Alexe,Karsten Siegfried,Hansel,"#include <stdio.h>
+107,SoSe21,9,Antwort 9,C,VName_83,Name_83,VName_99,Name_99,"#include <stdio.h>
 
 int main(int argc, char** argv){
     char array [100];
@@ -9488,7 +9488,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-108,SoSe21,9,Antwort 9,C,Umut,Durak,Fynn Niklas,Gerhardt,"#include <stdio.h>
+108,SoSe21,9,Antwort 9,C,VName_84,Name_84,VName_85,Name_85,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -9568,7 +9568,7 @@ int main(int argc, char* argv[]){
 	str2[j] = '\0';
 	printf(""Der neue String lautet: %s\n"", str2);
 }",0.0,1
-109,SoSe21,9,Antwort 9,C,Umut,Durak,Michael Andreas,Weber,"#include <stdio.h>
+109,SoSe21,9,Antwort 9,C,VName_84,Name_84,VName_86,Name_86,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -9642,7 +9642,7 @@ int main() {
     printf(""Der neue String lautet: %s"", satz2);
     return 0;
 }",0.0,1
-110,SoSe21,9,Antwort 9,C,Umut,Durak,Muzaffer Mert,Sen,"#include <stdio.h>
+110,SoSe21,9,Antwort 9,C,VName_84,Name_84,VName_87,Name_87,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -9738,7 +9738,7 @@ int main(int argc, char* argv[] )
 
 
 //**(argv + 1 + lange) != '\0'",0.0,1
-111,SoSe21,9,Antwort 9,C,Umut,Durak,Moritz,Platena,"#include <stdio.h>
+111,SoSe21,9,Antwort 9,C,VName_84,Name_84,VName_88,Name_88,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -9823,7 +9823,7 @@ int main(int argc, char** argv){
     printf(""Der neue String lautet: %s\n"", str3);
     
 }",0.0,1
-112,SoSe21,9,Antwort 9,C,Umut,Durak,Jared Louis,Outhwaite,"#include <stdio.h>
+112,SoSe21,9,Antwort 9,C,VName_84,Name_84,VName_92,Name_92,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -9931,7 +9931,7 @@ int main(int argc, char** argv){
 	}
 	printf(""\n"");
 }",0.0,1
-113,SoSe21,9,Antwort 9,C,Umut,Durak,Franziska Anna-Lena,Gillich,"#include <stdio.h>
+113,SoSe21,9,Antwort 9,C,VName_84,Name_84,VName_93,Name_93,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -10003,7 +10003,7 @@ int main(int laenge, char** Zeichen){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
     printf(""Der neue String lautet: %s\n"",Ausgabe2);
 }",0.0,1
-114,SoSe21,9,Antwort 9,C,Umut,Durak,Leon,Schulz,"#include <stdio.h>
+114,SoSe21,9,Antwort 9,C,VName_84,Name_84,VName_96,Name_96,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -10100,7 +10100,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",0.0,1
-115,SoSe21,9,Antwort 9,C,Umut,Durak,Tom Alexander,Schmidt,"#include <stdio.h>
+115,SoSe21,9,Antwort 9,C,VName_84,Name_84,VName_7,Name_7,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -10219,7 +10219,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-116,SoSe21,9,Antwort 9,C,Umut,Durak,Karsten Siegfried,Hansel,"#include <stdio.h>
+116,SoSe21,9,Antwort 9,C,VName_84,Name_84,VName_99,Name_99,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -10329,7 +10329,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-117,SoSe21,9,Antwort 9,C,Fynn Niklas,Gerhardt,Michael Andreas,Weber,"#include <stdio.h>
+117,SoSe21,9,Antwort 9,C,VName_85,Name_85,VName_86,Name_86,"#include <stdio.h>
 
 int main(int argc, char* argv[]){
 	int a = 0;
@@ -10386,7 +10386,7 @@ int main() {
     printf(""Der neue String lautet: %s"", satz2);
     return 0;
 }",0.0,1
-118,SoSe21,9,Antwort 9,C,Fynn Niklas,Gerhardt,Muzaffer Mert,Sen,"#include <stdio.h>
+118,SoSe21,9,Antwort 9,C,VName_85,Name_85,VName_87,Name_87,"#include <stdio.h>
 
 int main(int argc, char* argv[]){
 	int a = 0;
@@ -10465,7 +10465,7 @@ int main(int argc, char* argv[] )
 
 
 //**(argv + 1 + lange) != '\0'",0.0,1
-119,SoSe21,9,Antwort 9,C,Fynn Niklas,Gerhardt,Moritz,Platena,"#include <stdio.h>
+119,SoSe21,9,Antwort 9,C,VName_85,Name_85,VName_88,Name_88,"#include <stdio.h>
 
 int main(int argc, char* argv[]){
 	int a = 0;
@@ -10533,7 +10533,7 @@ int main(int argc, char** argv){
     printf(""Der neue String lautet: %s\n"", str3);
     
 }",0.0,1
-120,SoSe21,9,Antwort 9,C,Fynn Niklas,Gerhardt,Jared Louis,Outhwaite,"#include <stdio.h>
+120,SoSe21,9,Antwort 9,C,VName_85,Name_85,VName_92,Name_92,"#include <stdio.h>
 
 int main(int argc, char* argv[]){
 	int a = 0;
@@ -10624,7 +10624,7 @@ int main(int argc, char** argv){
 	}
 	printf(""\n"");
 }",0.0,1
-121,SoSe21,9,Antwort 9,C,Fynn Niklas,Gerhardt,Franziska Anna-Lena,Gillich,"#include <stdio.h>
+121,SoSe21,9,Antwort 9,C,VName_85,Name_85,VName_93,Name_93,"#include <stdio.h>
 
 int main(int argc, char* argv[]){
 	int a = 0;
@@ -10679,7 +10679,7 @@ int main(int laenge, char** Zeichen){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
     printf(""Der neue String lautet: %s\n"",Ausgabe2);
 }",0.0,1
-122,SoSe21,9,Antwort 9,C,Fynn Niklas,Gerhardt,Leon,Schulz,"#include <stdio.h>
+122,SoSe21,9,Antwort 9,C,VName_85,Name_85,VName_96,Name_96,"#include <stdio.h>
 
 int main(int argc, char* argv[]){
 	int a = 0;
@@ -10759,7 +10759,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",0.0,1
-123,SoSe21,9,Antwort 9,C,Fynn Niklas,Gerhardt,Tom Alexander,Schmidt,"#include <stdio.h>
+123,SoSe21,9,Antwort 9,C,VName_85,Name_85,VName_7,Name_7,"#include <stdio.h>
 
 int main(int argc, char* argv[]){
 	int a = 0;
@@ -10861,7 +10861,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-124,SoSe21,9,Antwort 9,C,Fynn Niklas,Gerhardt,Karsten Siegfried,Hansel,"#include <stdio.h>
+124,SoSe21,9,Antwort 9,C,VName_85,Name_85,VName_99,Name_99,"#include <stdio.h>
 
 int main(int argc, char* argv[]){
 	int a = 0;
@@ -10954,7 +10954,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-125,SoSe21,9,Antwort 9,C,Michael Andreas,Weber,Muzaffer Mert,Sen,"#include <stdio.h>
+125,SoSe21,9,Antwort 9,C,VName_86,Name_86,VName_87,Name_87,"#include <stdio.h>
 int main() {
    char satz[100], satz2[100];
    int l, k;
@@ -11027,7 +11027,7 @@ int main(int argc, char* argv[] )
 
 
 //**(argv + 1 + lange) != '\0'",0.0,1
-126,SoSe21,9,Antwort 9,C,Michael Andreas,Weber,Moritz,Platena,"#include <stdio.h>
+126,SoSe21,9,Antwort 9,C,VName_86,Name_86,VName_88,Name_88,"#include <stdio.h>
 int main() {
    char satz[100], satz2[100];
    int l, k;
@@ -11089,7 +11089,7 @@ int main(int argc, char** argv){
     printf(""Der neue String lautet: %s\n"", str3);
     
 }",0.0,1
-127,SoSe21,9,Antwort 9,C,Michael Andreas,Weber,Jared Louis,Outhwaite,"#include <stdio.h>
+127,SoSe21,9,Antwort 9,C,VName_86,Name_86,VName_92,Name_92,"#include <stdio.h>
 int main() {
    char satz[100], satz2[100];
    int l, k;
@@ -11174,7 +11174,7 @@ int main(int argc, char** argv){
 	}
 	printf(""\n"");
 }",0.0,1
-128,SoSe21,9,Antwort 9,C,Michael Andreas,Weber,Franziska Anna-Lena,Gillich,"#include <stdio.h>
+128,SoSe21,9,Antwort 9,C,VName_86,Name_86,VName_93,Name_93,"#include <stdio.h>
 int main() {
    char satz[100], satz2[100];
    int l, k;
@@ -11223,7 +11223,7 @@ int main(int laenge, char** Zeichen){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
     printf(""Der neue String lautet: %s\n"",Ausgabe2);
 }",0.0,1
-129,SoSe21,9,Antwort 9,C,Michael Andreas,Weber,Leon,Schulz,"#include <stdio.h>
+129,SoSe21,9,Antwort 9,C,VName_86,Name_86,VName_96,Name_96,"#include <stdio.h>
 int main() {
    char satz[100], satz2[100];
    int l, k;
@@ -11297,7 +11297,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",0.0,1
-130,SoSe21,9,Antwort 9,C,Michael Andreas,Weber,Tom Alexander,Schmidt,"#include <stdio.h>
+130,SoSe21,9,Antwort 9,C,VName_86,Name_86,VName_7,Name_7,"#include <stdio.h>
 int main() {
    char satz[100], satz2[100];
    int l, k;
@@ -11393,7 +11393,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-131,SoSe21,9,Antwort 9,C,Michael Andreas,Weber,Karsten Siegfried,Hansel,"#include <stdio.h>
+131,SoSe21,9,Antwort 9,C,VName_86,Name_86,VName_99,Name_99,"#include <stdio.h>
 int main() {
    char satz[100], satz2[100];
    int l, k;
@@ -11480,7 +11480,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-132,SoSe21,9,Antwort 9,C,Muzaffer Mert,Sen,Moritz,Platena,"#include <stdio.h>
+132,SoSe21,9,Antwort 9,C,VName_87,Name_87,VName_88,Name_88,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -11564,7 +11564,7 @@ int main(int argc, char** argv){
     printf(""Der neue String lautet: %s\n"", str3);
     
 }",0.0,1
-133,SoSe21,9,Antwort 9,C,Muzaffer Mert,Sen,Jared Louis,Outhwaite,"#include <stdio.h>
+133,SoSe21,9,Antwort 9,C,VName_87,Name_87,VName_92,Name_92,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -11671,7 +11671,7 @@ int main(int argc, char** argv){
 	}
 	printf(""\n"");
 }",0.0,1
-134,SoSe21,9,Antwort 9,C,Muzaffer Mert,Sen,Franziska Anna-Lena,Gillich,"#include <stdio.h>
+134,SoSe21,9,Antwort 9,C,VName_87,Name_87,VName_93,Name_93,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -11742,7 +11742,7 @@ int main(int laenge, char** Zeichen){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
     printf(""Der neue String lautet: %s\n"",Ausgabe2);
 }",0.0,1
-135,SoSe21,9,Antwort 9,C,Muzaffer Mert,Sen,Leon,Schulz,"#include <stdio.h>
+135,SoSe21,9,Antwort 9,C,VName_87,Name_87,VName_96,Name_96,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -11838,7 +11838,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",0.0,1
-136,SoSe21,9,Antwort 9,C,Muzaffer Mert,Sen,Tom Alexander,Schmidt,"#include <stdio.h>
+136,SoSe21,9,Antwort 9,C,VName_87,Name_87,VName_7,Name_7,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -11956,7 +11956,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-137,SoSe21,9,Antwort 9,C,Muzaffer Mert,Sen,Karsten Siegfried,Hansel,"#include <stdio.h>
+137,SoSe21,9,Antwort 9,C,VName_87,Name_87,VName_99,Name_99,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -12065,7 +12065,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-138,SoSe21,9,Antwort 9,C,Moritz,Platena,Jared Louis,Outhwaite,"#include <stdio.h>
+138,SoSe21,9,Antwort 9,C,VName_88,Name_88,VName_92,Name_92,"#include <stdio.h>
 
 
 
@@ -12161,7 +12161,7 @@ int main(int argc, char** argv){
 	}
 	printf(""\n"");
 }",0.0,1
-139,SoSe21,9,Antwort 9,C,Moritz,Platena,Franziska Anna-Lena,Gillich,"#include <stdio.h>
+139,SoSe21,9,Antwort 9,C,VName_88,Name_88,VName_93,Name_93,"#include <stdio.h>
 
 
 
@@ -12221,7 +12221,7 @@ int main(int laenge, char** Zeichen){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
     printf(""Der neue String lautet: %s\n"",Ausgabe2);
 }",0.0,1
-140,SoSe21,9,Antwort 9,C,Moritz,Platena,Leon,Schulz,"#include <stdio.h>
+140,SoSe21,9,Antwort 9,C,VName_88,Name_88,VName_96,Name_96,"#include <stdio.h>
 
 
 
@@ -12306,7 +12306,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",0.0,1
-141,SoSe21,9,Antwort 9,C,Moritz,Platena,Tom Alexander,Schmidt,"#include <stdio.h>
+141,SoSe21,9,Antwort 9,C,VName_88,Name_88,VName_7,Name_7,"#include <stdio.h>
 
 
 
@@ -12413,7 +12413,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-142,SoSe21,9,Antwort 9,C,Moritz,Platena,Karsten Siegfried,Hansel,"#include <stdio.h>
+142,SoSe21,9,Antwort 9,C,VName_88,Name_88,VName_99,Name_99,"#include <stdio.h>
 
 
 
@@ -12511,7 +12511,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-143,SoSe21,9,Antwort 9,C,Jared Louis,Outhwaite,Franziska Anna-Lena,Gillich,"#include <stdio.h>
+143,SoSe21,9,Antwort 9,C,VName_92,Name_92,VName_93,Name_93,"#include <stdio.h>
 
 int main(int argc, char** argv){
 	char a[100];
@@ -12594,7 +12594,7 @@ int main(int laenge, char** Zeichen){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
     printf(""Der neue String lautet: %s\n"",Ausgabe2);
 }",0.0,1
-144,SoSe21,9,Antwort 9,C,Jared Louis,Outhwaite,Leon,Schulz,"#include <stdio.h>
+144,SoSe21,9,Antwort 9,C,VName_92,Name_92,VName_96,Name_96,"#include <stdio.h>
 
 int main(int argc, char** argv){
 	char a[100];
@@ -12702,7 +12702,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",0.0,1
-145,SoSe21,9,Antwort 9,C,Jared Louis,Outhwaite,Tom Alexander,Schmidt,"#include <stdio.h>
+145,SoSe21,9,Antwort 9,C,VName_92,Name_92,VName_7,Name_7,"#include <stdio.h>
 
 int main(int argc, char** argv){
 	char a[100];
@@ -12832,7 +12832,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-146,SoSe21,9,Antwort 9,C,Jared Louis,Outhwaite,Karsten Siegfried,Hansel,"#include <stdio.h>
+146,SoSe21,9,Antwort 9,C,VName_92,Name_92,VName_99,Name_99,"#include <stdio.h>
 
 int main(int argc, char** argv){
 	char a[100];
@@ -12953,7 +12953,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-147,SoSe21,9,Antwort 9,C,Franziska Anna-Lena,Gillich,Leon,Schulz,"#include <stdio.h>
+147,SoSe21,9,Antwort 9,C,VName_93,Name_93,VName_96,Name_96,"#include <stdio.h>
 
 int main(int laenge, char** Zeichen){
     char Ausgabe[100]="""";
@@ -13025,7 +13025,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",0.0,1
-148,SoSe21,9,Antwort 9,C,Franziska Anna-Lena,Gillich,Tom Alexander,Schmidt,"#include <stdio.h>
+148,SoSe21,9,Antwort 9,C,VName_93,Name_93,VName_7,Name_7,"#include <stdio.h>
 
 int main(int laenge, char** Zeichen){
     char Ausgabe[100]="""";
@@ -13119,7 +13119,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-149,SoSe21,9,Antwort 9,C,Franziska Anna-Lena,Gillich,Karsten Siegfried,Hansel,"#include <stdio.h>
+149,SoSe21,9,Antwort 9,C,VName_93,Name_93,VName_99,Name_99,"#include <stdio.h>
 
 int main(int laenge, char** Zeichen){
     char Ausgabe[100]="""";
@@ -13204,7 +13204,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-150,SoSe21,9,Antwort 9,C,Leon,Schulz,Tom Alexander,Schmidt,"#include <stdio.h>
+150,SoSe21,9,Antwort 9,C,VName_96,Name_96,VName_7,Name_7,"#include <stdio.h>
 
 int main(int  argc, char *argv[]) // start at argv[1]
 {
@@ -13323,7 +13323,7 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }",0.0,1
-151,SoSe21,9,Antwort 9,C,Leon,Schulz,Karsten Siegfried,Hansel,"#include <stdio.h>
+151,SoSe21,9,Antwort 9,C,VName_96,Name_96,VName_99,Name_99,"#include <stdio.h>
 
 int main(int  argc, char *argv[]) // start at argv[1]
 {
@@ -13433,7 +13433,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-152,SoSe21,9,Antwort 9,C,Tom Alexander,Schmidt,Karsten Siegfried,Hansel,"#include <stdio.h>
+152,SoSe21,9,Antwort 9,C,VName_7,Name_7,VName_99,Name_99,"#include <stdio.h>
 
 int main(int argc, char* argv[]) {
     //char* str[] = {""./[programm]"", ""PPR"", ""macht"", ""Spass!""}; //zum testen
@@ -13565,7 +13565,7 @@ printf(""Der neue String lautet: lsonao\n"");
 
 //
 }",0.0,1
-0,SoSe21,9,Antwort 9,C,Yang Felix,Wang,Yang Felix,Wang,"#include <stdio.h>
+0,SoSe21,9,Antwort 9,C,VName_73,Name_73,VName_73,Name_73,"#include <stdio.h>
 
 int main( int argc, char* argv[] ) 
 {
@@ -13642,7 +13642,7 @@ int main( int argc, char* argv[] )
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", str1);
     printf(""Der neue String lautet: %s\n"", str2);
 }",1.0,1
-17,SoSe21,9,Antwort 9,C,Vedia,Aksoy,Vedia,Aksoy,"#include stdio.h
+17,SoSe21,9,Antwort 9,C,VName_75,Name_75,VName_75,Name_75,"#include stdio.h
 
 def char* kedi(int sayi, char* isim[]){
     char array[100];
@@ -13743,7 +13743,7 @@ int main( int argc, char* argv[] )
   printf( ""Der neue String lautet:"" );
   printf( ""%s \n"", kedi(argc,argv)[1] );
 }",1.0,1
-33,SoSe21,9,Antwort 9,C,Luis Valentin,Salas Lara,Luis Valentin,Salas Lara,"#include <stdio.h>
+33,SoSe21,9,Antwort 9,C,VName_77,Name_77,VName_77,Name_77,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -13826,7 +13826,7 @@ erg[len]='\0';
  erg2[len]='\0';
 printf(""Der neue String lautet: %s\n"",erg2);
 }",1.0,1
-48,SoSe21,9,Antwort 9,C,Matea,Miskovic,Matea,Miskovic,"#include <stdio.h>
+48,SoSe21,9,Antwort 9,C,VName_78,Name_78,VName_78,Name_78,"#include <stdio.h>
 
 
 
@@ -13889,7 +13889,7 @@ int main(int argc, char** argv){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"", string1);
     printf(""Der neue String lautet: %s\n"",string2);
 }",1.0,1
-62,SoSe21,9,Antwort 9,C,Maximilian Erich,Jacoby,Maximilian Erich,Jacoby,"#include <stdio.h>
+62,SoSe21,9,Antwort 9,C,VName_79,Name_79,VName_79,Name_79,"#include <stdio.h>
 
 void strat( char *str1, char *str2 ){
 	int y = 0;
@@ -14000,7 +14000,7 @@ int main(int argc, char *argv[]){
 	rechnung( string2, string );
 	printf(""Der neue String lautet: %s\n"", string);
 }",1.0,1
-75,SoSe21,9,Antwort 9,C,Max Richard,Horneburg,Max Richard,Horneburg,"#include <stdio.h>
+75,SoSe21,9,Antwort 9,C,VName_80,Name_80,VName_80,Name_80,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -14099,7 +14099,7 @@ int main (int argc, char** argv) {
 	printf(""x,y,q und X,Y,Q aussortiert: %s\nDer neue String lautet: %s"", str[0].str, str[1].str);
 	return 0;
 }",1.0,1
-87,SoSe21,9,Antwort 9,C,Florian Alexander,Bauszus,Florian Alexander,Bauszus,"#include <stdio.h>
+87,SoSe21,9,Antwort 9,C,VName_82,Name_82,VName_82,Name_82,"#include <stdio.h>
 #include <stdlib.h>
 
 void xyzz(char* string)
@@ -14214,7 +14214,7 @@ int main(int argc, char* argv[])
   xyzz(str);
   printf( ""Der neue String lautet: %s\n"",str);
 }",1.0,1
-98,SoSe21,9,Antwort 9,C,Jeremias Harry,Alexe,Jeremias Harry,Alexe,"#include <stdio.h>
+98,SoSe21,9,Antwort 9,C,VName_83,Name_83,VName_83,Name_83,"#include <stdio.h>
 
 int main(int argc, char** argv){
     char array [100];
@@ -14255,7 +14255,7 @@ int main(int argc, char** argv){
     }
     printf(""Der neue String lautet: %s"", array2);
 }",1.0,1
-108,SoSe21,9,Antwort 9,C,Umut,Durak,Umut,Durak,"#include <stdio.h>
+108,SoSe21,9,Antwort 9,C,VName_84,Name_84,VName_84,Name_84,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -14352,7 +14352,7 @@ int main(int argc, char* argv[] )
 	strneu[length] = '\0';
 	printf(""Der neue String lautet: %s"",strneu);
 }",1.0,1
-117,SoSe21,9,Antwort 9,C,Fynn Niklas,Gerhardt,Fynn Niklas,Gerhardt,"#include <stdio.h>
+117,SoSe21,9,Antwort 9,C,VName_85,Name_85,VName_85,Name_85,"#include <stdio.h>
 
 int main(int argc, char* argv[]){
 	int a = 0;
@@ -14415,7 +14415,7 @@ int main(int argc, char* argv[]){
 	str2[j] = '\0';
 	printf(""Der neue String lautet: %s\n"", str2);
 }",1.0,1
-125,SoSe21,9,Antwort 9,C,Michael Andreas,Weber,Michael Andreas,Weber,"#include <stdio.h>
+125,SoSe21,9,Antwort 9,C,VName_86,Name_86,VName_86,Name_86,"#include <stdio.h>
 int main() {
    char satz[100], satz2[100];
    int l, k;
@@ -14466,7 +14466,7 @@ int main() {
     printf(""Der neue String lautet: %s"", satz2);
     return 0;
 }",1.0,1
-132,SoSe21,9,Antwort 9,C,Muzaffer Mert,Sen,Muzaffer Mert,Sen,"#include <stdio.h>
+132,SoSe21,9,Antwort 9,C,VName_87,Name_87,VName_87,Name_87,"#include <stdio.h>
 
 int main(int argc, char* argv[] )
 {  
@@ -14561,7 +14561,7 @@ int main(int argc, char* argv[] )
 
 
 //**(argv + 1 + lange) != '\0'",1.0,1
-138,SoSe21,9,Antwort 9,C,Moritz,Platena,Moritz,Platena,"#include <stdio.h>
+138,SoSe21,9,Antwort 9,C,VName_88,Name_88,VName_88,Name_88,"#include <stdio.h>
 
 
 
@@ -14634,7 +14634,7 @@ int main(int argc, char** argv){
     printf(""Der neue String lautet: %s\n"", str3);
     
 }",1.0,1
-143,SoSe21,9,Antwort 9,C,Jared Louis,Outhwaite,Jared Louis,Outhwaite,"#include <stdio.h>
+143,SoSe21,9,Antwort 9,C,VName_92,Name_92,VName_92,Name_92,"#include <stdio.h>
 
 int main(int argc, char** argv){
 	char a[100];
@@ -14753,7 +14753,7 @@ int main(int argc, char** argv){
 	}
 	printf(""\n"");
 }",1.0,1
-147,SoSe21,9,Antwort 9,C,Franziska Anna-Lena,Gillich,Franziska Anna-Lena,Gillich,"#include <stdio.h>
+147,SoSe21,9,Antwort 9,C,VName_93,Name_93,VName_93,Name_93,"#include <stdio.h>
 
 int main(int laenge, char** Zeichen){
     char Ausgabe[100]="""";
@@ -14800,7 +14800,7 @@ int main(int laenge, char** Zeichen){
     printf(""x,y,q und X,Y,Q aussortiert: %s\n"",Ausgabe);
     printf(""Der neue String lautet: %s\n"",Ausgabe2);
 }",1.0,1
-150,SoSe21,9,Antwort 9,C,Leon,Schulz,Leon,Schulz,"#include <stdio.h>
+150,SoSe21,9,Antwort 9,C,VName_96,Name_96,VName_96,Name_96,"#include <stdio.h>
 
 int main(int  argc, char *argv[]) // start at argv[1]
 {
@@ -14897,7 +14897,7 @@ for(int m = 0; m < slot_count; m++) printf(""%c"", array[m]);
 printf(""\nDer neue String lautet: "");
 for(int n = 0; n < slot_count_b; n++) printf(""%c"", b[n]); 
 }",1.0,1
-152,SoSe21,9,Antwort 9,C,Tom Alexander,Schmidt,Tom Alexander,Schmidt,"#include <stdio.h>
+152,SoSe21,9,Antwort 9,C,VName_7,Name_7,VName_7,Name_7,"#include <stdio.h>
 
 int main(int argc, char* argv[]) {
     //char* str[] = {""./[programm]"", ""PPR"", ""macht"", ""Spass!""}; //zum testen

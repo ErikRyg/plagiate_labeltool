@@ -1,9 +1,5 @@
-﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/20,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9"
-Schubert,Tom,tom.schubert@campus.tu-berlin.de,Beendet,"18. Juni 2021  11:14","25. Juni 2021  17:43","7 Tage 6 Stunden","8,54","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Zeile 6,7 : super(); müsste vor x=0; stehen","Es wird die Methode der Super-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {7. <sub>fellfarbe:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {2. <sub>bezeichnung:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Nachname,Vorname,Antwort 8,Antwort 9
+Name_2,VName_2,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft {
@@ -219,10 +215,7 @@ public class TestMannschaft {
 	    }
 	  }
 	}",-
-Schmidt,Lucca,lucca.schmidt@campus.tu-berlin.de,Beendet,"18. Juni 2021  11:29","27. Juni 2021  11:44","9 Tage","14,10","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 1 : Klasse A hat keinen Konstruktor","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Tell your children not to walk my way""_
-ausgegeben.","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_7,VName_7,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{ //extends Fussballspieler{ // extends Torwart,Sturmspieler,Mittelfeldspieler,Abwehrspieler{
@@ -347,11 +340,7 @@ public class TestMannschaft{ //extends Fussballspieler{ // extends Torwart,Sturm
   
 	}
 }",//
-Wontorra,Lara,lara.wontorra@campus.tu-berlin.de,Beendet,"18. Juni 2021  11:51","27. Juni 2021  11:29","8 Tage 23 Stunden","12,50","Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Es wird die Methode der Sub-Klasse aufgerufen","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","die Klasse Tier erbt von der Klasse Hund","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_5,VName_5,"public class TestMannschaft{
   public static void main(String[] args){
     Fussballspieler[] deutschland = new Fussballspieler[11];
     Fussballspieler[] england = new Fussballspieler[11];
@@ -425,11 +414,7 @@ ausgegeben.","Es wird die Methode der Sub-Klasse aufgerufen","Beim Kompilieren e
     else System.out.println(""Mannschaft 2 gewinnt!"");
   }
 }",-
-Hecht,Leon,leon.hecht@campus.tu-berlin.de,Beendet,"18. Juni 2021  15:58","19. Juni 2021  17:35","1 Tag 1 Stunde","17,73",super,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.",Object,"Es wird die Methode der Super-Klasse aufgerufen","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {6. <sub>gewicht:} Dropzone 3 -> {4. <sub>double} Dropzone 4 -> {2. <sub>bezeichnung:} Dropzone 5 -> {3. <sub>String} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {15. <sub>kannSprechen:} Dropzone 8 -> {16. <sub>boolean} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {13. <sub>spannweite:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {12. <sub>schnabelfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {4. <sub>double} Dropzone 18 -> {7. <sub>fellfarbe:} Dropzone 19 -> {3. <sub>String} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_42,VName_42,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -628,10 +613,7 @@ public class TestMannschaft{
         }
     }
 }",//
-"Al Hamwi",Nassim,nassim.alhamwi@campus.tu-berlin.de,Beendet,"19. Juni 2021  12:07","26. Juni 2021  11:54","6 Tage 23 Stunden","18,73",extends,"Zeile 6,7 : super(); müsste vor x=0; stehen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Es wird die Methode der Super-Klasse aufgerufen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {16. <sub>boolean} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {3. <sub>String} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_11,VName_11,"public class TestMannschaft{
 	public static double roteKartenZaehlen(Fussballspieler[] mannschaft){
 		double roteKarten=0;
 		Abwehrspieler a;
@@ -744,7 +726,7 @@ ausgegeben.","Es wird die Methode der Super-Klasse aufgerufen","Dies ruft innerh
 	deshalb muss das Objekt umgewandelt werden. Die Methode ausgeben bekommt ebenfalls ein Objekt des Typs Fussballspieler übergeben. Wenn auf die Methode toString() zugegriffen wird,
 	so wird auf die Methode toString vom Objekt Fussballspieler zugegriffen. Jedoch ist de Aufruf der gleichnamigen Methode der Subklassen erwünscht. Deshalb wird hier auch das Objekt umgewandelt*/
 }",//
-Hadhri,"Mehdi Abdelfattah",m.hadhri@campus.tu-berlin.de,Beendet,"19. Juni 2021  12:12","26. Juni 2021  13:35","7 Tage 1 Stunde","12,15","die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen",Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_9,VName_9,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -849,13 +831,8 @@ public class TestMannschaft{
     }
    
 }",-
-Huang,Chenghao,chenghao.huang@campus.tu-berlin.de,Beendet,"20. Juni 2021  10:47","27. Juni 2021  21:42","7 Tage 10 Stunden","4,14","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".",super,"die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Main,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {11. Vogel} Dropzone 7 -> {12. <sub>schnabelfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {14. Papagei} Dropzone 10 -> {15. <sub>kannSprechen:} Dropzone 11 -> {16. <sub>boolean} Dropzone 12 -> {5. Saeugetier} Dropzone 13 -> {7. <sub>fellfarbe:} Dropzone 14 -> {8. Elefant} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {9. <sub>ruessellaenge:} Dropzone 19 -> {10. <sub>int} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Mansfeld,Maurice,maurice.mansfeld@campus.tu-berlin.de,Beendet,"20. Juni 2021  11:18","27. Juni 2021  23:59","7 Tage 12 Stunden","20,00","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"Es wird die Methode der Sub-Klasse aufgerufen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","/** Mein Kommentar zur Polymorphie:
+Name_29,VName_29,-,-
+Name_15,VName_15,"/** Mein Kommentar zur Polymorphie:
  Ich rufe sowohl in ausgeben als auch in roteKartenZaehlen ein Array aus Fussballspielern auf. Diese Klasse hat eine eigene toString Methode die dann theoretisch verwendet wird.
  Da ich aber auch in den Unterklassen jeweils eine toString Methode habe und die Objekte zwar Fussballspieler sind aber halt spezifischer auch Abwehrspieler, Mittelfeldspieler usw. sind, wird die toString Methode aus diesen Klassen aufgerufen.
  Java sucht immer nach der toString Methode die am wenigsten entfernt von meinem Objekt ist.*/
@@ -985,11 +962,7 @@ public class TestMannschaft {
 
     }
 }",//
-Dukart,Kevin,dukart@campus.tu-berlin.de,Beendet,"20. Juni 2021  11:35","26. Juni 2021  11:59","6 Tage","20,00","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_8,VName_8,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -1078,9 +1051,7 @@ public class TestMannschaft{
 
 	}
 }",//
-Voßbeck,"Marike Antonia Karoline",m.vossbeck@tu-berlin.de,Beendet,"20. Juni 2021  14:48","24. Juni 2021  20:00","4 Tage 5 Stunden","18,65","Zeile 6,7 : super(); müsste vor x=0; stehen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Do you wanna bang heads with me?""_
-ausgegeben.","Es wird die Methode der Sub-Klasse aufgerufen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",extends,"die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_4,VName_4,"public class TestMannschaft{
   public static void main(String[] args){
 	  
     Fussballspieler[] raeuberinnen = new Fussballspieler[11];
@@ -1170,11 +1141,7 @@ public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspiele
 		System.out.println(""Unentschieden!"");}
 	}
 }",//
-Ochmann,"Luis Eddie",luis.ochmann@campus.tu-berlin.de,Beendet,"20. Juni 2021  16:10","27. Juni 2021  23:35","7 Tage 7 Stunden","10,30","Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"die Klasse Hund erbt von der Klasse Tier","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_14,VName_14,"public class TestMannschaft{
     public static void main(String[] args){
         Torwart vet=new Torwart(""Vettel "", 33, 9);
         Abwehrspieler ham= new Abwehrspieler(""Hamilton"",66,98);
@@ -1284,11 +1251,7 @@ ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropz
         }
     }
 }",-
-Mondry,Leonard,leonard.mondry@campus.tu-berlin.de,Beendet,"20. Juni 2021  22:01","21. Juni 2021  01:25","3 Stunden 24 Minuten","18,23","die Klasse Hund erbt von der Klasse Tier",Object,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Zeile 6,7 : super(); müsste vor x=0; stehen","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Es wird die Methode der Sub-Klasse aufgerufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {11. Vogel} Dropzone 7 -> {13. <sub>spannweite:} Dropzone 8 -> {4. <sub>double} Dropzone 9 -> {14. Papagei} Dropzone 10 -> {12. <sub>schnabelfarbe:} Dropzone 11 -> {3. <sub>String} Dropzone 12 -> {5. Saeugetier} Dropzone 13 -> {7. <sub>fellfarbe:} Dropzone 14 -> {8. Elefant} Dropzone 15 -> {15. <sub>kannSprechen:} Dropzone 16 -> {16. <sub>boolean} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {9. <sub>ruessellaenge:} Dropzone 19 -> {10. <sub>int} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+Name_24,VName_24,"public class TestMannschaft {
 	
 	public static void main(String[] args){
 		
@@ -1407,14 +1370,8 @@ ausgegeben.","Zeile 6,7 : super(); müsste vor x=0; stehen","Beim Kompilieren er
 		}
 	}
 }",//
-Kinschus,Oskar,o.kinschus@campus.tu-berlin.de,Beendet,"20. Juni 2021  22:57","26. Juni 2021  20:15","5 Tage 21 Stunden","9,70","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".",Main,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {13. <sub>spannweite:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {12. <sub>schnabelfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {10. <sub>int} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,//
-"Cabral de Jesus",Francisco,cabraldejesus@campus.tu-berlin.de,Beendet,"21. Juni 2021  00:04","27. Juni 2021  23:59","6 Tage 23 Stunden","10,36","Zeile 7 : super(); müsste this(); heißen","Dies ruft innerhalb einer Superklasse den Konstruktor einer Subklasse auf.",Java,"Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Tell your children not to walk my way""_
-ausgegeben.","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_19,VName_19,-,//
+Name_36,VName_36,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -1497,9 +1454,7 @@ public class TestMannschaft{
 	}
   }
 }",-
-Asad,Hamza,hamza.asad@campus.tu-berlin.de,Beendet,"21. Juni 2021  00:19","27. Juni 2021  23:39","6 Tage 23 Stunden","11,59","die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"Es wird die Methode der Sub-Klasse aufgerufen","Zeile 5 : Methode B() hat keinen Rückgabewert","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Tell your children not to walk my way""_
-ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {10. <sub>int} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {10. <sub>int} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Kommentar zur Polymorphie: in der ausgeben()-Methode wird ein Array übergeben, welcher wiederrum Unterklassen hat.
+Name_25,VName_25,"// Kommentar zur Polymorphie: in der ausgeben()-Methode wird ein Array übergeben, welcher wiederrum Unterklassen hat.
 // Da alle Objekte der Unterklassen eine toString-Methode haben ist ein cast hier überflüssig.
 // Das liegt daran, dass Java objektorientiert arbeitet. Es wird erst zur Laufzeit entschieden, welche Methode aufgerufen wird.
 // Dabei wird danach entschieden welche Methode dem Objekt am nächsten ist. In RoteKartenZaehlen() soll nur die Unterklasse Abwehrspieler
@@ -1604,11 +1559,7 @@ public class TestMannschaft {
         }
     }
 }",-
-Czekanski,"Julian Michael",j.czekanski@campus.tu-berlin.de,Beendet,"21. Juni 2021  01:02","25. Juni 2021  14:37","4 Tage 13 Stunden","19,15","Zeile 6,7 : super(); müsste vor x=0; stehen",Object,"Es wird die Methode der Sub-Klasse aufgerufen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+Name_45,VName_45,"public class TestMannschaft {
 
 	public static void main(String[] args) {
 		Fussballspieler[] deutschland = new Fussballspieler[11];
@@ -1726,10 +1677,7 @@ ausgegeben.","Beim Kompilieren erscheint die Fehlermeldung
 	}
 
 }",//
-Chaudhary,Pradeep,p.chaudhary@campus.tu-berlin.de,Beendet,"21. Juni 2021  08:16","27. Juni 2021  23:59","6 Tage 15 Stunden","16,00","die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_17,VName_17,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -1789,11 +1737,8 @@ public class TestMannschaft{
 	   		return spielStaerke;
 	   }  
 }",//
-Mäding,"Toni Siegfried",t.maeding@campus.tu-berlin.de,Beendet,"21. Juni 2021  11:05","27. Juni 2021  23:21","6 Tage 12 Stunden","4,14","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","die Klasse Hund erbt von der Klasse Tier","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".",extends,Object,"Es wird die Methode der Sub-Klasse aufgerufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {11. Vogel} Dropzone 7 -> {12. <sub>schnabelfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {14. Papagei} Dropzone 10 -> {15. <sub>kannSprechen:} Dropzone 11 -> {16. <sub>boolean} Dropzone 12 -> {5. Saeugetier} Dropzone 13 -> {7. <sub>fellfarbe:} Dropzone 14 -> {8. Elefant} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {9. <sub>ruessellaenge:} Dropzone 19 -> {4. <sub>double} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Großgoerge,Corvin,corvin.grossgoerge@campus.tu-berlin.de,Beendet,"21. Juni 2021  11:47","27. Juni 2021  21:55","6 Tage 10 Stunden","11,23","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Tell your children not to walk my way""_
-ausgegeben.","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Main,"die Methode Hund erbt ein Tier-Objekt","Zeile 6,7 : super(); müsste vor x=0; stehen",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_53,VName_53,-,-
+Name_1,VName_1,"public class TestMannschaft{
 
   public static void main(String[] args){
       
@@ -1924,11 +1869,7 @@ ausgegeben.","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklass
 		  }
   }
 }",//
-Hankewitz,David,david.hankewitz@campus.tu-berlin.de,Beendet,"21. Juni 2021  12:27","27. Juni 2021  21:36","6 Tage 9 Stunden","15,54","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.",Object,"Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen",extends,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {15. <sub>kannSprechen:} Dropzone 8 -> {16. <sub>boolean} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {7. <sub>fellfarbe:} Dropzone 19 -> {3. <sub>String} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_28,VName_28,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -2075,15 +2016,8 @@ public class TestMannschaft{
       System.out.println(""Unentschieden!"");
     }
   }",//
-Tanka,Kostantin,kostandin.tanka@campus.tu-berlin.de,Beendet,"21. Juni 2021  13:19","27. Juni 2021  23:51","6 Tage 10 Stunden","9,09","die Klasse Hund erbt von der Klasse Tier","Zeile 1 : Klasse A hat keinen Konstruktor",Object,"Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Father
-__Do you wanna bang heads with me?""_
-ausgegeben.","Dies zeigt an, dass der folgende Codeabschnitt superwichtig ist.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {} Dropzone 3 -> {} Dropzone 4 -> {} Dropzone 5 -> {} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {2. <sub>bezeichnung:} Dropzone 8 -> {} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {6. <sub>gewicht:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {} Dropzone 16 -> {} Dropzone 17 -> {} Dropzone 18 -> {} Dropzone 19 -> {} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {}",-,//
-Ataev,Batyr,ataev@campus.tu-berlin.de,Beendet,"21. Juni 2021  13:30","27. Juni 2021  23:59","6 Tage 10 Stunden","14,56","Es wird die Methode der Sub-Klasse aufgerufen","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","die Klasse Hund erbt von der Klasse Tier",super,Object,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+Name_20,VName_20,-,//
+Name_69,VName_69,"public class TestMannschaft {
 	public static void main(String[] args){
       
      // Arrays definieren
@@ -2239,10 +2173,7 @@ ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropz
 		return 0;
 	}
 }",//
-Maas,"Lukas Maximilian",lukas.maas@campus.tu-berlin.de,Beendet,"21. Juni 2021  14:35","27. Juni 2021  23:59","6 Tage 9 Stunden","8,67","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Tell your children not to walk my way""_
-ausgegeben.","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Zeile 6,7 : super(); müsste vor x=0; stehen","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".",super,Java,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+Name_51,VName_51,"public class TestMannschaft {
     public static void main(String[] args) {
 
         Torwart Torwart1 = new Torwart(""Neuer"",20, 1.5);
@@ -2314,13 +2245,8 @@ ausgegeben.","Es kommt ein Fehler, da man zuerst casten muss, um die überschrie
 
     }
 }",-
-Doan,Anh-Minh,a.doan@campus.tu-berlin.de,Beendet,"21. Juni 2021  15:21","27. Juni 2021  23:59","6 Tage 8 Stunden","10,07","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen","Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","die Klasse Hund erbt von der Klasse Tier",super,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Tell your children not to walk my way""_
-ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {6. <sub>gewicht:} Dropzone 3 -> {4. <sub>double} Dropzone 4 -> {2. <sub>bezeichnung:} Dropzone 5 -> {3. <sub>String} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {13. <sub>spannweite:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {12. <sub>schnabelfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {4. <sub>double} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,//
-Ranneberg,Thea,t.ranneberg@campus.tu-berlin.de,Beendet,"21. Juni 2021  16:03","27. Juni 2021  23:59","6 Tage 7 Stunden","20,00",Object,super,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es wird die Methode der Sub-Klasse aufgerufen","Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Kommentar zur Polymorphie: in der ausgeben()-Methode wird ein Array übergeben, welcher wiederrum Unterklassen hat.
+Name_30,VName_30,-,//
+Name_27,VName_27,"// Kommentar zur Polymorphie: in der ausgeben()-Methode wird ein Array übergeben, welcher wiederrum Unterklassen hat.
 // Da alle Objekte der Unterklassen eine toString-Methode haben ist ein cast hier überflüssig.
 // Das liegt daran, dass Java objektorientiert arbeitet. Es wird erst zur Laufzeit entschieden, welche Methode aufgerufen wird.
 // Dabei wird danach entschieden welche Methode dem Objekt am nächsten ist. In RoteKartenZaehlen() soll nur die Unterklasse Abwehrspieler
@@ -2425,11 +2351,7 @@ public class TestMannschaft {
         }
     }
 }",//
-Aymergen,Berke,berke.aymergen@campus.tu-berlin.de,Beendet,"21. Juni 2021  21:11","22. Juni 2021  12:15","15 Stunden 3 Minuten","19,36","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen",super,"Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_22,VName_22,"public class TestMannschaft{
     public static void main(String[] args){
         
       Fussballspieler[] deutschland = new Fussballspieler[11];
@@ -2542,9 +2464,7 @@ ausgegeben.","Beim Kompilieren erscheint die Fehlermeldung
         else System.out.println(""Unentschieden!"");
     }
   }",//
-Lee,"Woo Jin",lee.16@campus.tu-berlin.de,Beendet,"21. Juni 2021  21:20","27. Juni 2021  23:59","6 Tage 2 Stunden","10,82","Es wird die Methode der Sub-Klasse aufgerufen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Class,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Tell your children not to walk my way""_
-ausgegeben.",extends,"Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {13. <sub>spannweite:} Dropzone 8 -> {4. <sub>double} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {7. <sub>fellfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {12. <sub>schnabelfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+Name_16,VName_16,"public class TestMannschaft {
     public static void main (String[] args) {
         Fussballspieler[] team1 = {
                 new Torwart (""Neuer"", 30, 3.5),
@@ -2650,8 +2570,7 @@ ausgegeben.",extends,"Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 
     }
 
 }",-
-Dewitz,"Klemens Julian",k.dewitz@campus.tu-berlin.de,Beendet,"22. Juni 2021  12:27","26. Juni 2021  22:44","4 Tage 10 Stunden","12,50","die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen",extends,"Zeile 6,7 : super(); müsste vor x=0; stehen","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_13,VName_13,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -2795,10 +2714,7 @@ public class TestMannschaft{
 }
 //Polymorphie beschreibt die Struktur, dass beim Zugriff auf Methoden mit gleicher Signatur unterschiedliche Ergebnisse ausgegeben werden.
 //In den entsprechenden Methoden werden bspw. ""Abwehrspieler"" übergeben und aufgrund der unterschiedlichen Einträge des Arrays werden unterschiedliche Ergebnisse zurückgegeben.",-
-König,Timon,timon.koenig@campus.tu-berlin.de,Beendet,"22. Juni 2021  17:04","27. Juni 2021  23:59","5 Tage 6 Stunden","18,36","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier",Java,"Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Do you wanna bang heads with me?""_
-ausgegeben.",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_58,VName_58,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -2882,8 +2798,7 @@ public class TestMannschaft{
 	}
   }
 }",//
-"Saa Hinojosa","Paola Carolina",p.saahinojosa@campus.tu-berlin.de,Beendet,"22. Juni 2021  22:07","27. Juni 2021  23:59","5 Tage 1 Stunde","4,36",Java,"die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Superklasse den Konstruktor einer Subklasse auf.",super,"Zeile 7 : super(); müsste this(); heißen","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_43,VName_43,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -2914,12 +2829,8 @@ public class TestMannschaft{
    /* bitte implementieren */
   }
 }",-
-Bormann,Lisa,lisa.bormann@campus.tu-berlin.de,Beendet,"23. Juni 2021  13:03","27. Juni 2021  23:59","4 Tage 10 Stunden","11,80",super,"Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen",Object,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Tell your children not to walk my way""_
-ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,//
-Reinartz,"Karl Levin",reinartz@campus.tu-berlin.de,Beendet,"23. Juni 2021  13:10","27. Juni 2021  23:59","4 Tage 10 Stunden","12,15",Object,"die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen",super,"Zeile 6,7 : super(); müsste vor x=0; stehen","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_34,VName_34,-,//
+Name_33,VName_33,"public class TestMannschaft{
   public static void main(String[] args){
     Fussballspieler[] deutschland = {
 		new Torwart(""Steffen"",25,3.7),
@@ -3026,13 +2937,7 @@ Reinartz,"Karl Levin",reinartz@campus.tu-berlin.de,Beendet,"23. Juni 2021  13:10
 			System.out.println(""Mannschaft 2 gewinnt!"");
 	}
 }",-
-Schnabel,Josefina,josefina.schnabel@campus.tu-berlin.de,Beendet,"23. Juni 2021  13:47","26. Juni 2021  22:03","3 Tage 8 Stunden","19,23","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Father
-__Do you wanna bang heads with me?""_
-ausgegeben.","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+Name_21,VName_21,"public class TestMannschaft {
 
     public static void main(String[] args) {
         Fussballspieler[] deutschland = new Fussballspieler[11];
@@ -3136,9 +3041,7 @@ ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropz
     }
 
 }",//
-Bartsch,"Simon Tobias",s.bartsch@campus.tu-berlin.de,Beendet,"23. Juni 2021  14:03","27. Juni 2021  21:33","4 Tage 7 Stunden","7,73","die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen","Es wird die Methode der Sub-Klasse aufgerufen",extends,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Tell your children not to walk my way""_
-ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_0,VName_0,"public class TestMannschaft{
 
 	public static void main(String[] args){
 	// Arrays definieren     
@@ -3259,13 +3162,7 @@ ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropz
 	}
 	
   }",-
-Klingelhöfer,"Sabine Sophie",klingelhoefer@campus.tu-berlin.de,Beendet,"23. Juni 2021  16:01","27. Juni 2021  23:59","4 Tage 7 Stunden","12,50","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.",Object,super,"Es wird die Methode der Sub-Klasse aufgerufen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Father
-__Do you wanna bang heads with me?""_
-ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_37,VName_37,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -3296,11 +3193,7 @@ public class TestMannschaft{
    /* bitte implementieren */
   }
 }",//
-Eckhardt,Henry,henry.eckhardt@campus.tu-berlin.de,Beendet,"23. Juni 2021  19:39","27. Juni 2021  23:56","4 Tage 4 Stunden","7,38","die Klasse Hund erbt von der Klasse Tier",Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 5 : Methode B() hat keinen Rückgabewert","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_54,VName_54,"public class TestMannschaft{
 
 	public static void main(String[] args){
 	// Arrays definieren     
@@ -3410,9 +3303,7 @@ ausgegeben.","Beim Kompilieren erscheint die Fehlermeldung
 		}
 	}
   }",-
-Schneider,Felix,felix.schneider@campus.tu-berlin.de,Beendet,"24. Juni 2021  00:02","27. Juni 2021  23:59","3 Tage 23 Stunden","8,95","Es wird die Methode der Sub-Klasse aufgerufen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Do you wanna bang heads with me?""_
-ausgegeben.","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","die Klasse Hund erbt von der Klasse Tier",super,Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_64,VName_64,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -3509,11 +3400,7 @@ public class TestMannschaft{
 
 	}
  }",-
-Scholz,"Jonas Malte",jonas.scholz.1@campus.tu-berlin.de,Beendet,"24. Juni 2021  10:00","27. Juni 2021  23:59","3 Tage 13 Stunden","10,86",instanceof,Java,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Tell your children not to walk my way""_
-ausgegeben.","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Do you wanna bang heads with me?""_
-ausgegeben.","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+Name_23,VName_23,"public class TestMannschaft {
     public static void main(String[] args) {
 
         Fussballspieler[] m1 = {
@@ -3611,13 +3498,7 @@ ausgegeben.","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier}
         }
     }
 }",-
-Wolf,"Matilda Sophie",matilda.s.wolf@campus.tu-berlin.de,Beendet,"24. Juni 2021  10:23","27. Juni 2021  16:12","3 Tage 5 Stunden","9,44","Zeile 1 : Klasse A hat keinen Konstruktor","Es wird die Methode der Sub-Klasse aufgerufen",Object,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Father
-__Do you wanna bang heads with me?""_
-ausgegeben.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_6,VName_6,"public class TestMannschaft{
 
   public static void main(String[] args){
       
@@ -3748,10 +3629,7 @@ ausgegeben.",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:}
 		  }
   }
 }",//
-Kubale,"Felice Pia Sophie",f.kubale@campus.tu-berlin.de,Beendet,"24. Juni 2021  11:45","27. Juni 2021  23:59","3 Tage 12 Stunden","20,00",super,"Zeile 6,7 : super(); müsste vor x=0; stehen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_40,VName_40,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -3834,13 +3712,7 @@ public class TestMannschaft{
 	}
   }
 }",//
-Machleidt,"Felice Josima Lunes Noah",machleidt@campus.tu-berlin.de,Beendet,"24. Juni 2021  12:21","26. Juni 2021  12:44","2 Tage","16,00","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","die Klasse Hund erbt von der Klasse Tier","Zeile 7 : super(); müsste this(); heißen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Father
-__Do you wanna bang heads with me?""_
-ausgegeben.","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es wird die Methode der Sub-Klasse aufgerufen",-,"public class TestMannschaft{
+Name_10,VName_10,"public class TestMannschaft{
   public static void main(String[] args){
     Fussballspieler[] deutschland ={new Torwart(""Neuer"",34,0.82),
                                     new Sturmspieler(""Gnarby"",25,0.3),
@@ -3947,11 +3819,7 @@ ausgegeben.","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklass
     }
   }
 }",//
-Schuchardt,"Silas Samuel",schuchardt@tu-berlin.de,Beendet,"24. Juni 2021  12:22","27. Juni 2021  23:59","3 Tage 11 Stunden","8,05","die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Zeile 6,7 : super(); müsste vor x=0; stehen","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Es wird die Methode der Sub-Klasse aufgerufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {13. <sub>spannweite:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {12. <sub>schnabelfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {4. <sub>double} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_39,VName_39,"public class TestMannschaft{
 
 	public static void main(String[] args){
 	// Arrays definieren     
@@ -4061,21 +3929,9 @@ ausgegeben.","Es wird die Methode der Sub-Klasse aufgerufen","Dropzone 1 -> {1. 
 		}
 	}
   }",-
-Trümpler,Antonia,a.truempler@campus.tu-berlin.de,Beendet,"24. Juni 2021  13:07","27. Juni 2021  22:08","3 Tage 9 Stunden","5,36","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".",Object,"Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen",super,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Fenner,Lisa-Marie,l.fenner@campus.tu-berlin.de,Beendet,"24. Juni 2021  14:44","27. Juni 2021  20:32","3 Tage 5 Stunden","12,50","Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Do you wanna bang heads with me?""_
-ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,//
-Hecker,Henry,h.hecker@campus.tu-berlin.de,Beendet,"24. Juni 2021  14:50","27. Juni 2021  23:59","3 Tage 9 Stunden","14,77","Zeile 1 : Klasse A hat keinen Konstruktor","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Father
-__Do you wanna bang heads with me?""_
-ausgegeben.",-,-,Main,"Es wird die Methode der Sub-Klasse aufgerufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_50,VName_50,-,-
+Name_38,VName_38,-,//
+Name_3,VName_3,"public class TestMannschaft{
   public static void main(String[] args){
       
     Fussballspieler[] menschen = new Fussballspieler[11];
@@ -4165,11 +4021,7 @@ public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspiele
         System.out.println(""Unentschieden!"");}
     }
 }",//
-Escabache,"Pia Annick",escabache@campus.tu-berlin.de,Beendet,"24. Juni 2021  15:18","27. Juni 2021  22:24","3 Tage 7 Stunden","12,00","die Klasse Hund erbt von der Klasse Tier","Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 1 : Klasse A hat keinen Konstruktor","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_49,VName_49,"public class TestMannschaft{
   public static void main(String[] args){
       
      // Arrays definieren  
@@ -4240,11 +4092,7 @@ ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropz
 	
   }                                               
 }",-
-Agung,"Naufal Radhana",n.agung@campus.tu-berlin.de,Beendet,"24. Juni 2021  17:05","27. Juni 2021  23:59","3 Tage 6 Stunden","14,49",super,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Do you wanna bang heads with me?""_
-ausgegeben.","die Klasse Hund erbt von der Klasse Tier","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Tell your children not to walk my way""_
-ausgegeben.","Es wird die Methode der Sub-Klasse aufgerufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {6. <sub>gewicht:} Dropzone 3 -> {10. <sub>int} Dropzone 4 -> {2. <sub>bezeichnung:} Dropzone 5 -> {3. <sub>String} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {13. <sub>spannweite:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {12. <sub>schnabelfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {4. <sub>double} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_31,VName_31,"public class TestMannschaft{
   public static void main(String[] args){
 
      // Arrays definieren
@@ -4378,10 +4226,7 @@ switch (res) {
 }
 }
 }",//
-Krebs,"Florian Anselm",florian.krebs@campus.tu-berlin.de,Beendet,"25. Juni 2021  10:54","27. Juni 2021  23:59","2 Tage 13 Stunden","14,21","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.",Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen",extends,"die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_41,VName_41,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft {
@@ -4471,8 +4316,7 @@ public class TestMannschaft {
     
   }
 }",//
-Mirrafati,"Nima Lucius",n.mirrafati@campus.tu-berlin.de,Beendet,"25. Juni 2021  14:35","27. Juni 2021  23:59","2 Tage 9 Stunden","6,71","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier",extends,"Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_61,VName_61,"public class TestMannschaft{
   public static void main(String[] args){
     Fussballspieler[] m1 = new Fussballspieler[11];
     Fussballspieler[] m2 = new Fussballspieler[11];
@@ -4567,11 +4411,7 @@ Mirrafati,"Nima Lucius",n.mirrafati@campus.tu-berlin.de,Beendet,"25. Juni 2021  
     }
   }
 }",-
-Gorny,Leonid,l.gorny@campus.tu-berlin.de,Beendet,"25. Juni 2021  15:42","27. Juni 2021  23:59","2 Tage 8 Stunden","5,96",Object,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Do you wanna bang heads with me?""_
-ausgegeben.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Tell your children not to walk my way""_
-ausgegeben.","Zeile 6,7 : super(); müsste vor x=0; stehen",super,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {11. Vogel} Dropzone 7 -> {13. <sub>spannweite:} Dropzone 8 -> {10. <sub>int} Dropzone 9 -> {14. Papagei} Dropzone 10 -> {12. <sub>schnabelfarbe:} Dropzone 11 -> {3. <sub>String} Dropzone 12 -> {5. Saeugetier} Dropzone 13 -> {7. <sub>fellfarbe:} Dropzone 14 -> {8. Elefant} Dropzone 15 -> {15. <sub>kannSprechen:} Dropzone 16 -> {16. <sub>boolean} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {9. <sub>ruessellaenge:} Dropzone 19 -> {10. <sub>int} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_12,VName_12,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -4681,11 +4521,7 @@ public static void fussballspielen(Fussballspieler[] mannschaft1, Fussballspiele
       }
 }
 }",-
-Venn,"Arthur Raymond",venn@campus.tu-berlin.de,Beendet,"25. Juni 2021  17:34","27. Juni 2021  23:59","2 Tage 6 Stunden","10,51","Zeile 7 : super(); müsste this(); heißen","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Es wird die Methode der Super-Klasse aufgerufen","Dies ruft innerhalb einer Superklasse den Konstruktor einer Subklasse auf.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.",Java,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_52,VName_52,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -4768,9 +4604,7 @@ public class TestMannschaft{
 	}
   }
 }",//
-"Van den Wyenbergh",Timo,vandenwyenbergh@campus.tu-berlin.de,Beendet,"26. Juni 2021  13:17","27. Juni 2021  23:42","1 Tag 10 Stunden","11,50","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Tell your children not to walk my way""_
-ausgegeben.","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Super-Klasse aufgerufen",Java,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_67,VName_67,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -4944,11 +4778,8 @@ Fussballspieler[] team = new Fussballspieler[11];
 
     }
 }",-
-Heritz,Faris,f.heritz@campus.tu-berlin.de,Beendet,"26. Juni 2021  14:55","27. Juni 2021  23:59","1 Tag 9 Stunden","4,86",Object,"die Klasse Hund erbt von der Klasse Tier",instanceof,"Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Zeile 1 : Klasse A hat keinen Konstruktor","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Ruffo,Max,ruffo@campus.tu-berlin.de,Beendet,"26. Juni 2021  15:32","27. Juni 2021  23:59","1 Tag 8 Stunden","6,69","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Tell your children not to walk my way""_
-ausgegeben.",Object,"die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_65,VName_65,-,-
+Name_44,VName_44,"public class TestMannschaft{
   public static void main(String[] args){
     Fussballspieler[] deutschland = new Fussballspieler[5];
     Fussballspieler[] suedkorea = new Fussballspieler[5];
@@ -4995,10 +4826,7 @@ ausgegeben.",Object,"die Klasse Hund erbt von der Klasse Tier","Dies ruft innerh
     }  /* bitte implementieren */
   }
 }",//
-Theo,Yovan,yovan.theo@campus.tu-berlin.de,Beendet,"26. Juni 2021  17:20","27. Juni 2021  23:59","1 Tag 6 Stunden","14,75","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen",Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+Name_71,VName_71,"public class TestMannschaft {
 	
 	public static void main (String[] args) {
 		Fussballspieler[] manchester = new Fussballspieler[11];
@@ -5068,10 +4896,7 @@ ausgegeben.","die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der
 			System.out.println(""Unentschieden!"");
 	}
 }",//
-Xu,Lili,l.xu@campus.tu-berlin.de,Beendet,"26. Juni 2021  18:15","27. Juni 2021  23:01","1 Tag 4 Stunden","13,00",Object,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_35,VName_35,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 import jdk.jshell.spi.ExecutionControl;
@@ -5182,12 +5007,8 @@ public class TestMannschaft{
         return sum;
     }
 }",-
-Khatiwada,Aayush,khatiwada@campus.tu-berlin.de,Beendet,"26. Juni 2021  18:27","27. Juni 2021  23:59","1 Tag 5 Stunden","4,68","die Klasse Hund erbt von der Klasse Tier","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.",Object,extends,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {6. <sub>gewicht:} Dropzone 3 -> {4. <sub>double} Dropzone 4 -> {2. <sub>bezeichnung:} Dropzone 5 -> {3. <sub>String} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Baumann,"Felix Elmar Gerd",f.baumann@campus.tu-berlin.de,Beendet,"26. Juni 2021  20:05","27. Juni 2021  23:59","1 Tag 3 Stunden","7,43",Object,"Zeile 7 : super(); müsste this(); heißen","die Klasse Hund erbt von der Klasse Tier","Dies zeigt an, dass der folgende Codeabschnitt superwichtig ist.",super,"Es wird die Methode der Sub-Klasse aufgerufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {} Dropzone 3 -> {} Dropzone 4 -> {} Dropzone 5 -> {} Dropzone 6 -> {} Dropzone 7 -> {} Dropzone 8 -> {} Dropzone 9 -> {} Dropzone 10 -> {} Dropzone 11 -> {} Dropzone 12 -> {} Dropzone 13 -> {} Dropzone 14 -> {} Dropzone 15 -> {} Dropzone 16 -> {} Dropzone 17 -> {} Dropzone 18 -> {} Dropzone 19 -> {} Dropzone 20 -> {} Dropzone 21 -> {} Dropzone 22 -> {}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_60,VName_60,-,-
+Name_70,VName_70,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -5300,8 +5121,7 @@ public class TestMannschaft{
     }
   }
 }",-
-Volkmann,Maximilian,m.volkmann@campus.tu-berlin.de,Beendet,"26. Juni 2021  20:17","27. Juni 2021  23:59","1 Tag 3 Stunden","7,21","Zeile 6,7 : super(); müsste vor x=0; stehen",extends,"Es wird die Methode der Sub-Klasse aufgerufen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_59,VName_59,"public class TestMannschaft{
   public static void main(String[] args){
     Fussballspieler [] deu = new Fussballspieler [11];
     Fussballspieler [] eng = new Fussballspieler[11];
@@ -5406,11 +5226,7 @@ Volkmann,Maximilian,m.volkmann@campus.tu-berlin.de,Beendet,"26. Juni 2021  20:17
    /* bitte implementieren */
   }
 }",-
-Weimer,David,d.weimer@campus.tu-berlin.de,Beendet,"27. Juni 2021  12:58","27. Juni 2021  23:59","11 Stunden","6,71","die Klasse Hund erbt von der Klasse Tier","Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Do you wanna bang heads with me?""_
-ausgegeben.","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,Object,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird 
-_""__Tell your children not to walk my way""_
-ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+Name_18,VName_18,"public class TestMannschaft {
 
 	public static void main(String[] args) {
 
@@ -5448,10 +5264,7 @@ ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropz
 		};
 	}
 }",-
-Türk,Selin,selin.tuerk@campus.tu-berlin.de,Beendet,"27. Juni 2021  17:43","27. Juni 2021  23:59","6 Stunden 15 Minuten","8,00","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".",this,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:4: error: cannot find symbol_"",
-weil _System_ nicht im selben Ordner liegt.",Java,"Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können",-,"// Kommentar zur Polymorphie: in der ausgeben()-Methode wird ein Array übergeben, welcher wiederrum Unterklassen hat.
+Name_32,VName_32,"// Kommentar zur Polymorphie: in der ausgeben()-Methode wird ein Array übergeben, welcher wiederrum Unterklassen hat.
 // Da alle Objekte der Unterklassen eine toString-Methode haben ist ein cast hier überflüssig.
 // Das liegt daran, dass Java objektorientiert arbeitet. Es wird erst zur Laufzeit entschieden, welche Methode aufgerufen wird.
 // Dabei wird danach entschieden welche Methode dem Objekt am nächsten ist. In RoteKartenZaehlen() soll nur die Unterklasse Abwehrspieler
@@ -5556,11 +5369,7 @@ public class TestMannschaft {
         }
     }
 }",-
-Pürschel,"Kanta Fabian",k.puerschel@campus.tu-berlin.de,Beendet,"27. Juni 2021  20:36","27. Juni 2021  23:59","3 Stunden 22 Minuten","9,59","Es wird die Methode der Sub-Klasse aufgerufen","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen",Object,"Wenn ein ""Child""-Objekt erzeugt wird (new Child();), wird
-_""Mother
-__Tell your children not to walk my way""_
-ausgegeben.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_68,VName_68,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -5663,8 +5472,7 @@ public class TestMannschaft{
     }
   }
 }",-
-Ismailoglu,Ece,e.ismailoglu@campus.tu-berlin.de,Beendet,"27. Juni 2021  21:41","27. Juni 2021  23:59","2 Stunden 17 Minuten","12,00","die Klasse Hund erbt von der Klasse Tier","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".","Zeile 7 : super(); müsste this(); heißen","Es wird die Methode der Sub-Klasse aufgerufen",Java,super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_72,VName_72,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -5747,8 +5555,7 @@ public class TestMannschaft{
 	}
   }
 }",-
-Nasralla,"Kerolus Nasser Nagi",k.nasralla@campus.tu-berlin.de,Beendet,"27. Juni 2021  22:20","27. Juni 2021  23:59","1 Stunde 38 Minuten","11,23","Dies ruft innerhalb einer Superklasse den Konstruktor einer Subklasse auf.","Beim Kompilieren erscheint die Fehlermeldung
-""_Child.java:3: error: constructor Parent in class Parent cannot be applied to given types;_"".",super,"Es wird die Methode der Super-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier",Java,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {10. <sub>int} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_56,VName_56,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{

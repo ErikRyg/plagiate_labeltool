@@ -1,9 +1,5 @@
-﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/15,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9","Antwort 10"
-Zierbock,"Lukas Tim",zierbock@campus.tu-berlin.de,Beendet,"12. Juni 2020  18:17","18. Juni 2020  18:41","6 Tage","14,53","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","*(++str) = 'e';",Nein,"0, 1",Pointer,"1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Nachname,Vorname,Antwort 8,Antwort 9,Antwort 10
+Name_301,VName_301,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -187,11 +183,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Xie,Xuan,xuan.xie@campus.tu-berlin.de,Beendet,"12. Juni 2020  19:01","19. Juni 2020  12:22","6 Tage 17 Stunden","14,10",Pointer,"*(++str) = 'e';","0, 1",Nein,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_293,VName_293,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -363,11 +355,7 @@ int main()
 
 
 }"
-Ketzel,"Anton Florian",ketzel@campus.tu-berlin.de,Beendet,"12. Juni 2020  19:39","18. Juni 2020  14:49","5 Tage 19 Stunden","13,07","1, 0",Nein,"1, 0",Pointer,"*(++str) = 'e';","pp = &zahl;
-
-pointer = &pp;
-
-**pointer = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 6(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 7(19); Teil 37: %; Teil 38: %; Teil 39: 100; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 8(19); Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 10; Teil 48: %; Teil 49: %; Teil 50: 9(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 100; Teil 56: %; Teil 57: 10(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 11(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_292,VName_292,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -538,11 +526,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Geilert,"Kai Christopher",kai.c.geilert@campus.tu-berlin.de,Beendet,"12. Juni 2020  21:13","17. Juni 2020  18:21","4 Tage 21 Stunden","13,75","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Nein,"*(++str) = 'e';",Pointer,"0, 1","0, 1","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: undef; Teil 24: undef; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: 10; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: 100; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_291,VName_291,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -752,11 +736,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Li,Zhaonan,z.li.1@tu-berlin.de,Beendet,"13. Juni 2020  10:21","17. Juni 2020  14:32","4 Tage 4 Stunden","15,00",Pointer,"0, 1","1, 0","*(++str) = 'e';",Nein,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_294,VName_294,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -896,11 +876,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Yilmaz,Zeynep,zeynep.yilmaz@campus.tu-berlin.de,Beendet,"13. Juni 2020  12:10","20. Juni 2020  10:16","6 Tage 22 Stunden","13,95","*(++str) = 'e';",Pointer,"0, 1","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Nein,"1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: ?; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 1024; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: 1028; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: 1024; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13(19); Teil 79: -; Teil 80: -; Teil 81: -; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_131,VName_131,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -1065,11 +1041,7 @@ int main()
     printf(""Entschluesselt: "");
     printf(""%s\n"", str);
 }"
-Reuter,Lenard,lenard.reuter@tu-berlin.de,Beendet,"13. Juni 2020  12:12","19. Juni 2020  10:12","5 Tage 22 Stunden","10,92",Nein,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","*(++str) = 'e';","1, 0","0, 1",Pointer,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: -; Teil 26: %; Teil 27: %; Teil 28: -; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_297,VName_297,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -1243,11 +1215,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Marold,Johannes,j.marold@tu-berlin.de,Beendet,"13. Juni 2020  13:43","14. Juni 2020  13:38","23 Stunden 55 Minuten","14,93","0, 1","1, 0","*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Nein,Pointer,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_298,VName_298,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -1393,11 +1361,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Lindner,Charlotte,lindner.2@campus.tu-berlin.de,Beendet,"13. Juni 2020  14:19","19. Juni 2020  13:23","5 Tage 23 Stunden","13,73","*(++str) = 'e';","1, 0","1, 0",Pointer,Nein,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_264,VName_264,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -1561,11 +1525,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Szczepanski,Michal,m.szczepanski@campus.tu-berlin.de,Beendet,"13. Juni 2020  14:53","21. Juni 2020  23:25","8 Tage 8 Stunden","11,78",Pointer,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Nein,"1, 0","*(++str) = 'e';","0, 1","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 100; Teil 24: 10; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: 10; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: 100; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_318,VName_318,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -1711,11 +1671,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Reinhold,"Franz Peter Matthias",f.reinhold@campus.tu-berlin.de,Beendet,"13. Juni 2020  14:57","21. Juni 2020  22:49","8 Tage 7 Stunden","15,00","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","1, 0","*(++str) = 'e';",Nein,"0, 1",Pointer,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_306,VName_306,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -1872,11 +1828,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Zou,Yukang,yukang.zou@campus.tu-berlin.de,Beendet,"13. Juni 2020  17:17","21. Juni 2020  23:34","8 Tage 6 Stunden","10,31",Pointer,"0, 1",Nein,"1, 0","*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: (4)19; Teil 23: 100; Teil 24: 10; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: (5)19; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: (6)19; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: (7)19; Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: (8)19; Teil 51: 10; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: (9)19; Teil 58: %; Teil 59: 100; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: (10)19; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: (13)19; Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_310,VName_310,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -2013,11 +1965,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Yin,Ruizhe,ruizhe.yin@campus.tu-berlin.de,Beendet,"13. Juni 2020  21:13","20. Juni 2020  18:59","6 Tage 21 Stunden","14,24","*(++str) = 'e';","0, 1","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Nein,Pointer,"1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4（19）; Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 6（19）; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 7（19）; Teil 37: %; Teil 38: %; Teil 39: 100; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 8（19）; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 10; Teil 48: %; Teil 49: %; Teil 50: 9（19）; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 100; Teil 56: %; Teil 57: 10（19）; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 11（19）; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13（19）; Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_299,VName_299,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -2165,11 +2113,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Hua,Zijian,hua@campus.tu-berlin.de,Beendet,"13. Juni 2020  23:45","21. Juni 2020  23:15","7 Tage 23 Stunden","14,30","1, 0","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Pointer,Nein,"0, 1","*(++str) = 'e';","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 6(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 7(19); Teil 37: %; Teil 38: %; Teil 39: 100; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 8(19); Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 10; Teil 48: %; Teil 49: %; Teil 50: 9(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 100; Teil 56: %; Teil 57: 10(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 11(19); Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_357,VName_357,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -2318,11 +2262,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Kubale,"Kyra Antonia",k.kubale@campus.tu-berlin.de,Beendet,"14. Juni 2020  10:20","19. Juni 2020  22:26","5 Tage 12 Stunden","14,24",Nein,Pointer,"0, 1","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","1, 0","*(++str) = 'e';","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 3(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 5(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 6(19); Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 7(19); Teil 51: %; Teil 52: %; Teil 53: 100; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 8(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 10; Teil 62: %; Teil 63: %; Teil 64: 9(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 100; Teil 70: %; Teil 71: 10(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_40,VName_40,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -2483,11 +2423,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Breitenbach,"Johann Philipp",johann.p.breitenbach@campus.tu-berlin.de,Beendet,"14. Juni 2020  12:53","14. Juni 2020  17:33","4 Stunden 39 Minuten","9,22",Pointer,"1, 0","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","1, 0","*(++str) = 'e';",Nein,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: 1024; Teil 10: 1028; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: undef; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: -; Teil 125: -; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_321,VName_321,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -2631,11 +2567,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Zhou,Tianjing,t.zhou@tu-berlin.de,Beendet,"14. Juni 2020  16:28","19. Juni 2020  00:19","4 Tage 7 Stunden","14,93",Pointer,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","*(++str) = 'e';",Nein,"0, 1","1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_296,VName_296,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -2777,11 +2709,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Müller,"Frank Michael",mueller.30@campus.tu-berlin.de,Beendet,"14. Juni 2020  19:18","21. Juni 2020  22:23","7 Tage 3 Stunden","7,22","0, 1","pointer = &zahl;
-
-**pp = 42;
-
-pp = &pointer;","1, 0",Nein,Pointer,"*(++str) = 'e';","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 1024; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: 1028; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: 1024; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_304,VName_304,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -2897,11 +2825,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Zhang,Lujie,lujie.zhang@campus.tu-berlin.de,Beendet,"14. Juni 2020  23:31","21. Juni 2020  23:58","7 Tage","6,70","pp = &zahl;
-
-pointer = &pp;
-
-*pointer = 42;",Pointer,Nein,"*(++str) = 'e';","1, 0","0, 1","子问题 1：16; 子问题 2：-; 子问题 3：-; 子问题 4：-; 子问题 5：-; 子问题 6：-; 子问题 7：-; 子问题 8：17; 子问题 9：%; 子问题 10：%; 子问题 11：%; 子问题 12：100; 子问题 13：%; 子问题 14：%; 子问题 15：18; 子问题 16：%; 子问题 17：%; 子问题 18：%; 子问题 19：%; 子问题 20：10; 子问题 21：%; 子问题 22：4(19); 子问题 23：1024; 子问题 24：1028; 子问题 25：%; 子问题 26：%; 子问题 27：%; 子问题 28：undef; 子问题 29：6(19); 子问题 30：%; 子问题 31：%; 子问题 32：%; 子问题 33：%; 子问题 34：%; 子问题 35：%; 子问题 36：7(19); 子问题 37：%; 子问题 38：%; 子问题 39：100; 子问题 40：%; 子问题 41：%; 子问题 42：%; 子问题 43：8(19); 子问题 44：%; 子问题 45：%; 子问题 46：%; 子问题 47：10; 子问题 48：%; 子问题 49：%; 子问题 50：9(19); 子问题 51：%; 子问题 52：%; 子问题 53：%; 子问题 54：%; 子问题 55：%; 子问题 56：%; 子问题 57：10(19); 子问题 58：%; 子问题 59：%; 子问题 60：%; 子问题 61：%; 子问题 62：%; 子问题 63：%; 子问题 64：11(19); 子问题 65：%; 子问题 66：%; 子问题 67：-; 子问题 68：%; 子问题 69：100; 子问题 70：%; 子问题 71：13(19); 子问题 72：-; 子问题 73：-; 子问题 74：%; 子问题 75：%; 子问题 76：%; 子问题 77：%; 子问题 78：19; 子问题 79：%; 子问题 80：%; 子问题 81：%; 子问题 82：%; 子问题 83：%; 子问题 84：%; 子问题 85：%; 子问题 86：%; 子问题 87：%; 子问题 88：%; 子问题 89：%; 子问题 90：1; 子问题 91：%; 子问题 92：%; 子问题 93：%; 子问题 94：%; 子问题 95：%; 子问题 96：%; 子问题 97：22; 子问题 98：%; 子问题 99：%; 子问题 100：%; 子问题 101：10; 子问题 102：100; 子问题 103：%; 子问题 104：23; 子问题 105：%; 子问题 106：%; 子问题 107：%; 子问题 108：%; 子问题 109：%; 子问题 110：%; 子问题 111：24; 子问题 112：%; 子问题 113：%; 子问题 114：%; 子问题 115：%; 子问题 116：%; 子问题 117：%; 子问题 118：%; 子问题 119：%; 子问题 120：%; 子问题 121：%; 子问题 122：%; 子问题 123：%; 子问题 124：%; 子问题 125：%; 子问题 126：%; 子问题 127：-; 子问题 128：-; 子问题 129：-","#include <stdio.h>
+Name_316,VName_316,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -3050,11 +2974,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-"El Salman","Ali Heiderra",elsalman@campus.tu-berlin.de,Beendet,"15. Juni 2020  00:00","21. Juni 2020  23:21","6 Tage 23 Stunden","11,08","0, 1",Pointer,"*(++str) = 'e';","1, 0",Nein,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 19; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: undef; Teil 29: 4; Teil 30: 1024; Teil 31: 1028; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 5; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 6; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 7; Teil 51: %; Teil 52: %; Teil 53: 100; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 8; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 10; Teil 62: %; Teil 63: %; Teil 64: 9; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 100; Teil 70: %; Teil 71: 10; Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_344,VName_344,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -3199,11 +3119,7 @@ int main()
         printf(""Entschluesselt: "");
         printf(""%s\n"", str);
 }"
-Weiser,Gregor,gregor.weiser@campus.tu-berlin.de,Beendet,"15. Juni 2020  00:03","18. Juni 2020  15:35","3 Tage 15 Stunden","14,93","1, 0",Pointer,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","*(++str) = 'e';","0, 1",Nein,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_300,VName_300,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -3350,11 +3266,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Serour,"Ali Hussein Adel",a.serour@tu-berlin.de,Beendet,"15. Juni 2020  02:51","17. Juni 2020  00:18","1 Tag 21 Stunden","13,53",Nein,"1, 0","*(++str) = 'e';","0, 1","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Pointer,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %","#include <stdio.h>
+Name_295,VName_295,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -3528,11 +3440,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Everwien,"Moritz Anton Jakob",moritz.everwien@campus.tu-berlin.de,Beendet,"15. Juni 2020  10:37","21. Juni 2020  16:04","6 Tage 5 Stunden","11,93","1, 0",Pointer,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Nein,"0, 1","*(++str) = 'e';","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_302,VName_302,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -3661,11 +3569,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Wappenschmitt,"Vincent Kieran",v.wappenschmitt@campus.tu-berlin.de,Beendet,"15. Juni 2020  10:39","16. Juni 2020  13:40","1 Tag 3 Stunden","15,00","*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Pointer,Nein,"0, 1","1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_314,VName_314,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -3809,11 +3713,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Begall,"Sophie Karina",95b9dc74e7ae37c75414d377eda7bcca,Beendet,"15. Juni 2020  12:37","16. Juni 2020  13:26","1 Tag","14,33","0, 1","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Nein,"str[1] = 'e';",Pointer,"1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: -; Teil 27: -; Teil 28: undef; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: 10; Teil 83: 100; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_515,VName_515,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -3981,11 +3881,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Delzer,Ole,ole.delzer@campus.tu-berlin.de,Beendet,"15. Juni 2020  13:30","22. Juni 2020  00:06","6 Tage 10 Stunden","10,93",Pointer,"1, 0",Nein,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","0, 1","*(++str) = 'e';","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_315,VName_315,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -4142,11 +4038,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Macheleidt,"Maria Eva",maria.e.macheleidt@campus.tu-berlin.de,Beendet,"15. Juni 2020  14:57","15. Juni 2020  21:10","6 Stunden 13 Minuten","11,45","0, 1",Nein,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Pointer,"*(&str[3]-2) = 'e';","1, 0","Teil 1: 17; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 100; Teil 6: -; Teil 7: -; Teil 8: 18; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: %; Teil 13: 10; Teil 14: %; Teil 15: 4(19); Teil 16: 100; Teil 17: 10; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: 5(19); Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 6(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 7(19); Teil 37: %; Teil 38: %; Teil 39: 100; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 8(19); Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 10; Teil 48: %; Teil 49: %; Teil 50: 9(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 100; Teil 56: %; Teil 57: 10(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 11(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: 1; Teil 78: 19; Teil 79: -; Teil 80: -; Teil 81: -; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_350,VName_350,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -4300,11 +4192,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Lenz,"Leonhard Frederik",l.lenz@campus.tu-berlin.de,Beendet,"15. Juni 2020  16:45","19. Juni 2020  12:39","3 Tage 19 Stunden","9,50","pp = &zahl;
-
-pointer = &pp;
-
-*pointer = 42;",Vielleicht,Pointer,"0, 1","*(&str[3]-2) = 'e';","1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_335,VName_335,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -4458,11 +4346,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Zhu,Yao,yao.zhu@campus.tu-berlin.de,Beendet,"15. Juni 2020  23:48","21. Juni 2020  23:19","5 Tage 23 Stunden","12,78","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","0, 1","1, 0",Pointer,"*(++str) = 'e';",Nein,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 6(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 7(19); Teil 37: %; Teil 38: %; Teil 39: 100; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 8(19); Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 10; Teil 48: %; Teil 49: %; Teil 50: 9(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 100; Teil 56: %; Teil 57: 10(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 11(19); Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: 10; Teil 102: 100; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_330,VName_330,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -4609,11 +4493,7 @@ int main()
         printf(""Entschluesselt: "");
         printf(""%s\n"", str);
 }"
-Plank,"Julian Maximilian",j.plank@campus.tu-berlin.de,Beendet,"16. Juni 2020  00:43","21. Juni 2020  23:46","5 Tage 23 Stunden","7,08","*(++str) = 'e';",Nein,Pointer,"0, 1","1, 0","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 19; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: undef; Teil 29: 4; Teil 30: 1024; Teil 31: 1028; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 5; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 6; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 7; Teil 51: %; Teil 52: %; Teil 53: 100; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 8; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 10; Teil 62: %; Teil 63: %; Teil 64: 9; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 100; Teil 70: %; Teil 71: 10; Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_322,VName_322,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -4754,11 +4634,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Salomon,Astrid,salomon@tu-berlin.de,Beendet,"16. Juni 2020  02:52","21. Juni 2020  20:27","5 Tage 17 Stunden","13,50",Nein,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","1, 0","1, 0","*(++str) = 'e';",Pointer,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: &; Teil 10: &; Teil 11: &; Teil 12: 100; Teil 13: &; Teil 14: &; Teil 15: 18; Teil 16: &; Teil 17: &; Teil 18: &; Teil 19: &; Teil 20: 10; Teil 21: &; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: &; Teil 26: &; Teil 27: &; Teil 28: &; Teil 29: 5(19); Teil 30: &; Teil 31: &; Teil 32: &; Teil 33: &; Teil 34: &; Teil 35: &; Teil 36: 6(19); Teil 37: &; Teil 38: &; Teil 39: &; Teil 40: &; Teil 41: &; Teil 42: &; Teil 43: 7(19); Teil 44: &; Teil 45: &; Teil 46: 100; Teil 47: &; Teil 48: &; Teil 49: &; Teil 50: 8(19); Teil 51: &; Teil 52: &; Teil 53: &; Teil 54: 10; Teil 55: &; Teil 56: &; Teil 57: 9(19); Teil 58: &; Teil 59: &; Teil 60: &; Teil 61: &; Teil 62: 100; Teil 63: &; Teil 64: 10(19); Teil 65: &; Teil 66: &; Teil 67: &; Teil 68: &; Teil 69: &; Teil 70: &; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: &; Teil 76: &; Teil 77: &; Teil 78: 19; Teil 79: &; Teil 80: &; Teil 81: &; Teil 82: &; Teil 83: &; Teil 84: 1; Teil 85: &; Teil 86: &; Teil 87: &; Teil 88: &; Teil 89: &; Teil 90: &; Teil 91: &; Teil 92: &; Teil 93: &; Teil 94: &; Teil 95: &; Teil 96: &; Teil 97: 22; Teil 98: &; Teil 99: &; Teil 100: &; Teil 101: &; Teil 102: &; Teil 103: &; Teil 104: 23; Teil 105: &; Teil 106: &; Teil 107: &; Teil 108: &; Teil 109: &; Teil 110: &; Teil 111: 24; Teil 112: &; Teil 113: &; Teil 114: &; Teil 115: &; Teil 116: &; Teil 117: &; Teil 118: &; Teil 119: &; Teil 120: &; Teil 121: &; Teil 122: &; Teil 123: &; Teil 124: &; Teil 125: &; Teil 126: &; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_325,VName_325,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -4929,11 +4805,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Al-Sayyed,"Dia Edien Husam Mohammad",al-sayyed@campus.tu-berlin.de,Beendet,"16. Juni 2020  09:25","21. Juni 2020  22:30","5 Tage 13 Stunden","7,31","0, 1","1, 0","*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Pointer,Nein,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 100; Teil 24: 10; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: 10; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: 100; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 25; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 26; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 27; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %","#include <stdio.h>
+Name_516,VName_516,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -5065,11 +4937,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Traupe,Franka,6829f723e70eccea0f21004e7bd77aee,Beendet,"16. Juni 2020  10:07","21. Juni 2020  12:42","5 Tage 2 Stunden","15,00",Nein,"0, 1",Pointer,"1, 0","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","*(++str) = 'e';","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_319,VName_319,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -5219,11 +5087,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Städtler,"Amelia Alexandra",a.staedtler@campus.tu-berlin.de,Beendet,"16. Juni 2020  12:51","16. Juni 2020  17:16","4 Stunden 24 Minuten","14,93","*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Pointer,Nein,"0, 1","1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_342,VName_342,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -5400,11 +5264,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Chen,Jingtian,jingtian.chen@campus.tu-berlin.de,Beendet,"16. Juni 2020  18:06","17. Juni 2020  18:52","1 Tag","15,00","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","1, 0",Pointer,"*(++str) = 'e';","0, 1",Nein,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_317,VName_317,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -5590,11 +5450,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Dudasko,Dominik,d.dudasko@tu-berlin.de,Beendet,"16. Juni 2020  18:13","20. Juni 2020  17:12","3 Tage 22 Stunden","13,60","1, 0","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","*(++str) = 'e';","0, 1",Nein,Pointer,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 6(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 7(19); Teil 37: %; Teil 38: %; Teil 39: 100; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 8(19); Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 10; Teil 48: %; Teil 49: %; Teil 50: 9(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 100; Teil 56: %; Teil 57: 10(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 11(19); Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_328,VName_328,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -5753,11 +5609,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Li,Guanyang,guanyang.li@campus.tu-berlin.de,Beendet,"16. Juni 2020  19:58","17. Juni 2020  14:18","18 Stunden 19 Minuten","13,26",Nein,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","0, 1","1, 0",Pointer,"*(++str) = 'e';","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4（19）; Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5（19）; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6（19）; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7（19）; Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8（19）; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9（19）; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10（19）; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13（19）; Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_294,VName_294,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -5946,11 +5798,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Chen,Jiaqi,jiaqi.chen.2@campus.tu-berlin.de,Beendet,"16. Juni 2020  20:22","17. Juni 2020  03:31","7 Stunden 8 Minuten","15,00","1, 0","0, 1",Nein,Pointer,"*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_317,VName_317,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -6139,11 +5987,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Yu,Qi,qi.yu@campus.tu-berlin.de,Beendet,"17. Juni 2020  00:34","21. Juni 2020  22:29","4 Tage 21 Stunden","14,56","1, 0","0, 1","*(++str) = 'e';",Nein,Pointer,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10（19）; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13（19）; Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_305,VName_305,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -6324,11 +6168,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Song,Yiyang,621216c38c6d3a82c36546decaf03ecf,Beendet,"17. Juni 2020  14:33","18. Juni 2020  02:23","11 Stunden 50 Minuten","14,50","pp = &zahl;
-
-pointer = &pp;
-
-*pointer = 42;",Pointer,"*(++str) = 'e';","0, 1","1, 0",Nein,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_149,VName_149,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -6483,11 +6323,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Klawon,"Alina Paulin",klawon@campus.tu-berlin.de,Beendet,"17. Juni 2020  15:05","21. Juni 2020  19:28","4 Tage 4 Stunden","14,63",Pointer,"1, 0","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","0, 1","*(++str) = 'e';",Nein,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: 100; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_303,VName_303,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -6643,11 +6479,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Wöstheinrich,"Ida Maria",woestheinrich@campus.tu-berlin.de,Beendet,"17. Juni 2020  15:49","19. Juni 2020  12:09","1 Tag 20 Stunden","14,39","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Nein,"0, 1",Pointer,"*(++str) = 'e';","1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4[19]; Teil 23: 1024; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5[19]; Teil 30: %; Teil 31: 1028; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6[19]; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7[19]; Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8[19]; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9[19]; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10[19]; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13[19]; Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_326,VName_326,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -6816,11 +6648,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Zahir,Oussama,o.zahir@campus.tu-berlin.de,Beendet,"17. Juni 2020  17:35","21. Juni 2020  21:21","4 Tage 3 Stunden","14,98","*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","0, 1","1, 0",Nein,Pointer,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: -; Teil 125: -; Teil 126: -; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_311,VName_311,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -6990,11 +6818,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Persson,"Cecilia Mimmi",bd6cc6f9b59b8626dcb74df8423c76b4,Beendet,"17. Juni 2020  18:58","22. Juni 2020  00:06","4 Tage 5 Stunden","10,30","1, 0",Nein,"*(&str[3]-2) = 'e';",Pointer,"0, 1","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_312,VName_312,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -7130,11 +6954,7 @@ int main() {
     printf(""%s\n"", str);
 
 }"
-Wegner,"Tabea Elke Barbara",tabea.eb.wegner@campus.tu-berlin.de,Beendet,"18. Juni 2020  10:08","18. Juni 2020  15:25","5 Stunden 16 Minuten","10,93","1, 0","*(++str) = 'e';",Pointer,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Nein,"0, 1","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: undef; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_313,VName_313,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -7260,11 +7080,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Janzen,"Lynn Merle Henriette Maja",lynn.janzen@campus.tu-berlin.de,Beendet,"18. Juni 2020  11:46","21. Juni 2020  14:16","3 Tage 2 Stunden","11,41",Nein,Pointer,"pointer = &zahl;
-
-**pp = 42;
-
-pp = &pointer;","*(++str) = 'e';","1, 0","0, 1","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: 2; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: -; Teil 125: -; Teil 126: -; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_320,VName_320,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -7405,11 +7221,7 @@ int main()
         printf(""Entschluesselt: "");
         printf(""%s\n"", str);
 }"
-"De Jonge",Daniel,d.dejonge@campus.tu-berlin.de,Beendet,"18. Juni 2020  13:27","18. Juni 2020  17:51","4 Stunden 23 Minuten","14,93","0, 1",Pointer,"1, 0",Nein,"*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_329,VName_329,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -7600,11 +7412,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Zenker,Pascal,846a63afa3d6a324d0edce8eed5793b1,Beendet,"18. Juni 2020  13:57","21. Juni 2020  15:46","3 Tage 1 Stunde","14,19","1, 0","0, 1",Pointer,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Nein,"*(++str) = 'e';","Teil 1: 16; Teil 2: undef; Teil 3: undef; Teil 4: undef; Teil 5: undef; Teil 6: undef; Teil 7: undef; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: undef; Teil 73: undef; Teil 74: undef; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: undef; Teil 128: undef; Teil 129: undef","#include <stdio.h>
+Name_327,VName_327,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -7776,11 +7584,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Lenz,"Felix Michael",f.lenz.1@campus.tu-berlin.de,Beendet,"18. Juni 2020  16:52","19. Juni 2020  10:28","17 Stunden 35 Minuten","14,23",Nein,"1, 0","0, 1","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Pointer,"*(++str) = 'e';","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_335,VName_335,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -7962,11 +7766,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Thal,"Ben Niclas David",ben.nd.thal@campus.tu-berlin.de,Beendet,"18. Juni 2020  18:55","18. Juni 2020  23:16","4 Stunden 21 Minuten","14,05",Pointer,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","0, 1","0, 1","*(++str) = 'e';",Nein,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: -; Teil 66: -; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 19; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: 1; Teil 78: 20; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: -; Teil 125: -; Teil 126: -; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_343,VName_343,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -8120,11 +7920,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Kühnel,"Paul Kurt",p.kuehnel@campus.tu-berlin.de,Beendet,"18. Juni 2020  19:51","21. Juni 2020  21:11","3 Tage 1 Stunde","14,86","0, 1","1, 0",Pointer,Nein,"*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 13; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_349,VName_349,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -8289,11 +8085,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Wegener,"Philipp Dieter",philipp.d.wegener@campus.tu-berlin.de,Beendet,"18. Juni 2020  20:37","20. Juni 2020  17:07","1 Tag 20 Stunden","15,00","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Nein,"1, 0",Pointer,"*(++str) = 'e';","0, 1","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_257,VName_257,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -8467,11 +8259,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Min,Seokhong,s.min@campus.tu-berlin.de,Beendet,"19. Juni 2020  03:05","21. Juni 2020  20:59","2 Tage 17 Stunden","7,56","*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","0, 1",Nein,"1, 0",Pointer,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: undef; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: 11(19); Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13(19); Teil 79: -; Teil 80: -; Teil 81: -; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_347,VName_347,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -8585,11 +8373,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Nguyen,"Thanh Tung",nguyen.3@campus.tu-berlin.de,Beendet,"19. Juni 2020  11:55","21. Juni 2020  19:27","2 Tage 7 Stunden","8,54","*(++str) = 'e';",Nein,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","1, 0",Pointer,"0, 1","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: 100; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: 10; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 6(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 7(19); Teil 37: %; Teil 38: %; Teil 39: 100; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 8(19); Teil 44: 10; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 9(19); Teil 51: %; Teil 52: 100; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 10(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: 1; Teil 64: 11(19); Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %","#include <stdio.h>
+Name_105,VName_105,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -8743,11 +8527,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Przestacki,"Helena Lara",przestacki@campus.tu-berlin.de,Beendet,"19. Juni 2020  15:39","21. Juni 2020  23:53","2 Tage 8 Stunden","12,00","*(++str) = 'e';",Nein,"1, 0",Pointer,"0, 1","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_308,VName_308,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -8894,11 +8674,7 @@ int main()
         printf(""Entschluesselt: "");
         printf(""%s\n"", str);
 }"
-Bodenmüller,Charlotte,c.bodenmueller@tu-berlin.de,Beendet,"19. Juni 2020  15:53","19. Juni 2020  18:51","2 Stunden 57 Minuten","15,00","*(++str) = 'e';",Pointer,Nein,"1, 0","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","0, 1","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_346,VName_346,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -9067,11 +8843,7 @@ void cipher(char str[], int shift, int maxlength)
  	printf(""Entschluesselt: "");
  	printf(""%s\n"", str);
  }"
-Nedwidek,"Anna Maria",27debaee3b1a763a1dc11e59b4eaecd4,Beendet,"19. Juni 2020  16:06","21. Juni 2020  18:27","2 Tage 2 Stunden","15,00","0, 1","1, 0",Pointer,Nein,"*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_333,VName_333,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -9221,11 +8993,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Hach,"Cosima Analina Theresa",c.hach@campus.tu-berlin.de,Beendet,"19. Juni 2020  16:41","21. Juni 2020  23:54","2 Tage 7 Stunden","11,93","*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Pointer,"1, 0","0, 1",Nein,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 11(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_307,VName_307,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -9354,11 +9122,7 @@ int main()
         printf(""Entschluesselt: "");
         printf(""%s\n"", str);
 }"
-Neufeld,"Lisa Maria",l.neufeld@campus.tu-berlin.de,Beendet,"19. Juni 2020  19:41","21. Juni 2020  19:02","1 Tag 23 Stunden","14,60","*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Nein,"0, 1",Pointer,"1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_334,VName_334,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -9525,11 +9289,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Xiao,Yi,yi.xiao@campus.tu-berlin.de,Beendet,"19. Juni 2020  20:30","21. Juni 2020  23:58","2 Tage 3 Stunden","8,00","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","1, 0",Nein,Pointer,"*(++str) = 'e';","0, 1","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_309,VName_309,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -9643,11 +9403,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Stammerjohann,Pia,pia.stammerjohann@campus.tu-berlin.de,Beendet,"19. Juni 2020  22:33","21. Juni 2020  21:37","1 Tag 23 Stunden","9,94","0, 1","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Pointer,"*(++str) = 'e';","1, 0",Nein,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 3(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 5(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 6(19); Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 7(19); Teil 51: %; Teil 52: %; Teil 53: 100; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 8(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 10; Teil 62: %; Teil 63: %; Teil 64: 9(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 100; Teil 70: %; Teil 71: 10(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_323,VName_323,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -9798,11 +9554,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Knapp,"Felicia Felina",f.knapp@campus.tu-berlin.de,Beendet,"19. Juni 2020  23:48","21. Juni 2020  23:02","1 Tag 23 Stunden","14,93","0, 1","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","1, 0","*(++str) = 'e';",Nein,Pointer,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 6(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_339,VName_339,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -9971,11 +9723,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Albrecht,Jonas,jonas.albrecht.1@campus.tu-berlin.de,Beendet,"20. Juni 2020  10:57","21. Juni 2020  21:03","1 Tag 10 Stunden","14,53","*(++str) = 'e';",Pointer,"1, 0","0, 1",Nein,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_324,VName_324,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -10139,11 +9887,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Westerhof,Camille,3bdae171e077adbc3dca25941e524fc5,Beendet,"20. Juni 2020  11:27","21. Juni 2020  23:39","1 Tag 12 Stunden","7,41","0, 1",Pointer,"*(++str) = 'e';","1, 0","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Nein,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: undef; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: 11(19); Teil 72: %; Teil 73: %; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 12(19); Teil 79: -; Teil 80: -; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 2; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 25; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 26; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 27; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: -; Teil 125: -; Teil 126: -; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_340,VName_340,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -10315,11 +10059,7 @@ int main() {
     printf(""Entschluesselt: "");
     printf(""%s\n"", str);
 }"
-Haas,Lea,lea.haas@campus.tu-berlin.de,Beendet,"20. Juni 2020  12:24","20. Juni 2020  19:14","6 Stunden 49 Minuten","11,60","*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Pointer,"1, 0","0, 1",Nein,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_337,VName_337,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -10468,11 +10208,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Roth,"Leonard Augustin Orson Jonatha",leonard.roth@campus.tu-berlin.de,Beendet,"20. Juni 2020  13:07","20. Juni 2020  17:05","3 Stunden 57 Minuten","15,00","*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","1, 0","0, 1",Nein,Pointer,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_341,VName_341,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -10646,11 +10382,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Holz,"Maximilian Torsten",m.holz@campus.tu-berlin.de,Beendet,"20. Juni 2020  13:07","21. Juni 2020  23:20","1 Tag 10 Stunden","10,07","1, 0",Nein,"str[1] = 'e';",Pointer,"0, 1","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 100; Teil 24: 10; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: undef; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: 100; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_166,VName_166,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -10795,11 +10527,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Hansel,"Karsten Siegfried",hansel@campus.tu-berlin.de,Beendet,"20. Juni 2020  16:28","21. Juni 2020  14:49","22 Stunden 20 Minuten","13,57","pointer = &zahl;
-
-**pp = 42;
-
-pp = &pointer;","0, 1","1, 0",Nein,Pointer,"str[1] = 'e';","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: 1028; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: 1024; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: 10; Teil 83: 100; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %","#include <stdio.h>
+Name_99,VName_99,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -10942,11 +10670,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Bakir,Rejne,rejne.bakir@campus.tu-berlin.de,Beendet,"20. Juni 2020  17:12","21. Juni 2020  21:38","1 Tag 4 Stunden","14,86","0, 1",Pointer,Nein,"1, 0","*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 11(19); Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_332,VName_332,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -11136,11 +10860,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Mühlhoff,Luis,l.muehlhoff@campus.tu-berlin.de,Beendet,"20. Juni 2020  17:49","21. Juni 2020  14:33","20 Stunden 44 Minuten","14,50","*(&str[3]-2) = 'e';","0, 1",Pointer,Nein,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_331,VName_331,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -11306,11 +11026,7 @@ int main()
     printf(""Entschluesselt: "");
     printf(""%s\n"", str);
 }"
-Lotus,"John Action",john.lotus@campus.tu-berlin.de,Beendet,"20. Juni 2020  18:34","21. Juni 2020  23:50","1 Tag 5 Stunden","4,95",Vielleicht,Pointer,"*(++str) = 'e';","0, 1","1, 0","pp = &zahl;
-
-pointer = &pp;
-
-**pointer = 42;","Teil 1: -; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: -; Teil 13: -; Teil 14: -; Teil 15: -; Teil 16: -; Teil 17: -; Teil 18: -; Teil 19: -; Teil 20: -; Teil 21: -; Teil 22: -; Teil 23: -; Teil 24: -; Teil 25: -; Teil 26: -; Teil 27: -; Teil 28: -; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: %; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: %; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %","#include <stdio.h>
+Name_358,VName_358,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -11424,11 +11140,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Budde,"Markus Stefan",m.budde@campus.tu-berlin.de,Beendet,"20. Juni 2020  19:12","21. Juni 2020  00:27","5 Stunden 14 Minuten","14,93","*(++str) = 'e';",Pointer,Nein,"0, 1","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_336,VName_336,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -11576,11 +11288,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Shad,"Omair Anwar",o.shad@campus.tu-berlin.de,Beendet,"20. Juni 2020  23:27","21. Juni 2020  23:57","1 Tag","9,72","1, 0","0, 1","*(++str) = 'e';",Nein,Pointer,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 19; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: undef; Teil 29: 4(19); Teil 30: 1024; Teil 31: 1028; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 5(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 6(19); Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 7(19); Teil 51: %; Teil 52: %; Teil 53: 100; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 8(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 10; Teil 62: %; Teil 63: %; Teil 64: 9(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 100; Teil 70: %; Teil 71: 10(19); Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: 1; Teil 78: 11(19); Teil 79: -; Teil 80: -; Teil 81: -; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_338,VName_338,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -11765,11 +11473,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Köhler,Birgit,birgit.koehler@campus.tu-berlin.de,Beendet,"21. Juni 2020  11:35","21. Juni 2020  20:29","8 Stunden 54 Minuten","15,00",Pointer,"1, 0","0, 1","*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Nein,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_348,VName_348,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -11943,11 +11647,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Thomas,"Fabian Alexander",f.thomas@campus.tu-berlin.de,Beendet,"21. Juni 2020  12:42","21. Juni 2020  23:22","10 Stunden 39 Minuten","10,07","1, 0","0, 1","str[1] = 'e';",Pointer,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Nein,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 100; Teil 24: 10; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: undef; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: 100; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_161,VName_161,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -12093,11 +11793,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Clermont,"Vincent Mario",clermont@campus.tu-berlin.de,Beendet,"21. Juni 2020  14:50","21. Juni 2020  18:14","3 Stunden 23 Minuten","13,94",Pointer,"1, 0",Nein,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","*(++str) = 'e';","0, 1","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: (4)19; Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: (5)19; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: (6)19; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: (7)19; Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: -; Teil 80: -; Teil 81: -; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %","#include <stdio.h>
+Name_352,VName_352,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -12260,11 +11956,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Bove,Sinan,bove@campus.tu-berlin.de,Beendet,"21. Juni 2020  15:56","21. Juni 2020  19:03","3 Stunden 6 Minuten","13,09",Pointer,"1, 0","str[1] = 'e';",Nein,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","0, 1","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 1024; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: 1028; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: 1024; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: -; Teil 80: -; Teil 81: -; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %","#include <stdio.h>
+Name_355,VName_355,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -12431,11 +12123,7 @@ int main()
     printf(""%s\n"", str);
 
 }"
-Gülser,Bahar,b.guelser@campus.tu-berlin.de,Beendet,"21. Juni 2020  16:17","21. Juni 2020  19:03","2 Stunden 46 Minuten","6,02","*(++str) = 'e';",Pointer,Nein,"0, 1","1, 0","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","Teil 1: 15; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 16; Teil 9: -; Teil 10: -; Teil 11: -; Teil 12: -; Teil 13: -; Teil 14: -; Teil 15: 17; Teil 16: -; Teil 17: -; Teil 18: -; Teil 19: 100; Teil 20: -; Teil 21: -; Teil 22: 18; Teil 23: -; Teil 24: -; Teil 25: -; Teil 26: %; Teil 27: 10; Teil 28: -; Teil 29: 19; Teil 30: -; Teil 31: -; Teil 32: -; Teil 33: %; Teil 34: %; Teil 35: undef; Teil 36: 3; Teil 37: 100; Teil 38: 10; Teil 39: -; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 4; Teil 44: %; Teil 45: %; Teil 46: -; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 5; Teil 51: %; Teil 52: %; Teil 53: -; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 6; Teil 58: %; Teil 59: %; Teil 60: -; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 7; Teil 65: %; Teil 66: %; Teil 67: 100; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 8; Teil 72: %; Teil 73: 100; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 9; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 25; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %","#include <stdio.h>
+Name_441,VName_441,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -12551,11 +12239,7 @@ char verschiebeInnerhalb(char zeichen, int verschiebung,
  printf( ""Wrong program usage.\n%s [nMove] word\n"", argv[0] );
  return 0;
  }"
-Rikert,"Kai Oliver",k.rikert@campus.tu-berlin.de,Beendet,"21. Juni 2020  16:55","21. Juni 2020  23:12","6 Stunden 17 Minuten","11,99","0, 1",Nein,Pointer,"1, 0","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","*(++str) = 'e';","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: 5; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_345,VName_345,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -12667,11 +12351,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Collin,Elisa,elisa.collin@campus.tu-berlin.de,Beendet,"21. Juni 2020  17:22","21. Juni 2020  20:23","3 Stunden","13,63","0, 1","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Pointer,"1, 0",Nein,"*(++str) = 'e';","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13; Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_356,VName_356,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -12811,11 +12491,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-"Ibrahimkhil Nek",Armaan,a.ibrahimkhilnek@tu-berlin.de,Beendet,"21. Juni 2020  17:34","21. Juni 2020  23:43","6 Stunden 9 Minuten","14,86","0, 1",Nein,"*(++str) = 'e';","pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;",Pointer,"1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_351,VName_351,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -12942,11 +12618,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-"Omar Abbas",Mohammad,omarabbas@campus.tu-berlin.de,Beendet,"21. Juni 2020  18:13","21. Juni 2020  23:51","5 Stunden 37 Minuten","10,86",Nein,Pointer,"pointer = &zahl;
-
-pp = &pointer;
-
-**pp = 42;","0, 1","*(++str) = 'e';","1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_353,VName_353,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){
@@ -13145,11 +12817,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-"Li Peng",Bonnie,bonnie.lipeng@campus.tu-berlin.de,Beendet,"21. Juni 2020  21:10","21. Juni 2020  23:35","2 Stunden 25 Minuten","7,50","0, 1",Pointer,Nein,"*(++str) = 'e';","pp = &zahl;
-
-pointer = &pp;
-
-*pointer = 42;","1, 0","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
+Name_354,VName_354,"#include <stdio.h>
 
 void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
     while( *ersteZahl != *zweiteZahl ){

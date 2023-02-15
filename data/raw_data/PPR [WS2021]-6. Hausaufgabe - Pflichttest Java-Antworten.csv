@@ -1,5 +1,5 @@
-﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/15,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9","Antwort 10","Antwort 11"
-Wegert,"Johan Ole",j.wegert@campus.tu-berlin.de,Beendet,"10. Dezember 2020  12:10","17. Dezember 2020  15:41","7 Tage 3 Stunden","14,76","Sie zählt unendlich.","0 1 2 3 4 5 6 7 8 9","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","4 Mal","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Gar nicht","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 11; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: -; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: -","public class Menu {
+Nachname,Vorname,Antwort 8,Antwort 9,Antwort 10,Antwort 11
+Name_250,VName_250,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -76,13 +76,7 @@ public static void main(String[] args) {
     }
     
 }"
-Lietz,"Alexander Pascal",a.lietz@campus.tu-berlin.de,Beendet,"10. Dezember 2020  13:10","15. Dezember 2020  13:13","5 Tage","12,43","0 1 2 3 4 5 6 7 8 9","4 Mal","Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.",15,"for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }",8,"Teil 1: 3; Teil 2: undef; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: %; Teil 7: false; Teil 8: %; Teil 9: 5; Teil 10: 9; Teil 11: %; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: 2; Teil 17: 7; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 9; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: -; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_231,VName_231,"public class Menu {
 
     public static void main(String [] args) {
         System.out.print(""Bitte auswaehlen...\n"" +
@@ -174,7 +168,7 @@ Lietz,"Alexander Pascal",a.lietz@campus.tu-berlin.de,Beendet,"10. Dezember 2020 
     }
 
 }"
-"Mailhos Nogues","Lucas Fel",642dc2fc24f2168530e7533d52e691ae,Beendet,"10. Dezember 2020  22:10","11. Dezember 2020  23:07","1 Tag","12,69","Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.",4,Einmal,"0 2 4 6 8","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Anweisung 2","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: true; Teil 35: %; Teil 36: 10; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 11; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_249,VName_249,"public class Menu {
 
     public static void main(String [] args) {
         System.out.print(""Bitte auswaehlen...\n"" +
@@ -263,13 +257,7 @@ Lietz,"Alexander Pascal",a.lietz@campus.tu-berlin.de,Beendet,"10. Dezember 2020 
     }
 
 }"
-Wontorra,Lara,lara.wontorra@campus.tu-berlin.de,Beendet,"10. Dezember 2020  22:37","20. Dezember 2020  23:45","10 Tage 1 Stunde","5,48",7,"Anweisung4 kann nie ausgeführt werden.",15,"for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Anweisung 2","0 1 2 3 4 5 6 7 8 9","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: %; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: %; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 3(6); Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 4(6); Teil 22: %; Teil 23: false; Teil 24: %; Teil 25: 5(6); Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 2; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_5,VName_5,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -328,7 +316,7 @@ Wontorra,Lara,lara.wontorra@campus.tu-berlin.de,Beendet,"10. Dezember 2020  22:3
     }
     
 }"
-Tesch,Johanna,j.tesch@campus.tu-berlin.de,Beendet,"11. Dezember 2020  09:22","11. Dezember 2020  10:50","1 Stunde 27 Minuten","14,07","0 1 2 3 4 5 6 7 8 9",Einmal,"Sie zählt unendlich.",4,"4 Mal","gar nicht","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10(7); Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 11(9); Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14(12); Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {	
+Name_230,VName_230,"public class Menu {	
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
 			             ""\tPPR ist [t]oll\n"" +
@@ -413,7 +401,7 @@ Tesch,Johanna,j.tesch@campus.tu-berlin.de,Beendet,"11. Dezember 2020  09:22","11
     }
     
 }"
-Wolf,"Johannes Peter",j.wolf.1@campus.tu-berlin.de,Beendet,"11. Dezember 2020  09:51","17. Dezember 2020  09:57","6 Tage","14,77","0 1 2 3 4 5 6 7 8 9","Gar nicht","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.",8,"gar nicht","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 11; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: -","public class Menu {
+Name_6,VName_6,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -497,13 +485,7 @@ Wolf,"Johannes Peter",j.wolf.1@campus.tu-berlin.de,Beendet,"11. Dezember 2020  0
     }
  
 }"
-Vorbeck,Tim,tim.vorbeck@campus.tu-berlin.de,Beendet,"11. Dezember 2020  12:29","20. Dezember 2020  21:43","9 Tage 9 Stunden","11,43","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Innerhalb einer for-Schleife können sich weitere Schleifen befinden.","Sie zählt unendlich.","Anweisung 2","Unendlich oft","for(int i = 9;i>=0;){
-
-   System.out.println(9-i);
-
-   i=i-1;
-
- }","Teil 1: 3; Teil 2: undef; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: %; Teil 7: false; Teil 8: %; Teil 9: 5; Teil 10: 9; Teil 11: %; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: 2; Teil 17: 7; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 9; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: -; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_268,VName_268,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -587,13 +569,7 @@ Vorbeck,Tim,tim.vorbeck@campus.tu-berlin.de,Beendet,"11. Dezember 2020  12:29","
         }
     }
 }"
-Felchner,"Felix Reinhard",f.felchner@campus.tu-berlin.de,Beendet,"11. Dezember 2020  14:17","20. Dezember 2020  16:05","9 Tage 1 Stunde","14,45",4,"Sie zählt unendlich.","gar nicht","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }",15,"Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: -; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_235,VName_235,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -671,7 +647,7 @@ Felchner,"Felix Reinhard",f.felchner@campus.tu-berlin.de,Beendet,"11. Dezember 2
     }
     
 }"
-Müller-Hardy,"Finnegan Maximilian",f.mueller-hardy@campus.tu-berlin.de,Beendet,"11. Dezember 2020  16:01","14. Dezember 2020  10:52","2 Tage 18 Stunden","14,28","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","4 Mal",15,8,Einmal,"gar nicht","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 6; Teil 26: %; Teil 27: %; Teil 28: 3; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: -","public class Menu {
+Name_232,VName_232,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -760,7 +736,7 @@ Müller-Hardy,"Finnegan Maximilian",f.mueller-hardy@campus.tu-berlin.de,Beendet,
     }
     
 }"
-Gontarz,Jakob,jakob.gontarz@campus.tu-berlin.de,Beendet,"11. Dezember 2020  16:17","20. Dezember 2020  19:32","9 Tage 3 Stunden","13,45",6,"0 1 2 3 4 5 6 7 8 9","Sie zählt unendlich.","Gar nicht","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.",0,"Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 15; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 17; Teil 56: -; Teil 57: -; Teil 58: -","public class Menu {
+Name_246,VName_246,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -832,13 +808,7 @@ if (year % 100 == 0){
 		return Terminal.askInt(""Countdown:\n"");
 	}
 	}"
-Lex,Matthias,m.lex@campus.tu-berlin.de,Beendet,"11. Dezember 2020  18:48","18. Dezember 2020  12:38","6 Tage 17 Stunden","14,78","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Sie zählt unendlich.","gar nicht",8,"4 Mal","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_251,VName_251,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -915,7 +885,7 @@ Lex,Matthias,m.lex@campus.tu-berlin.de,Beendet,"11. Dezember 2020  18:48","18. D
     }
     
 }"
-Mesfun-Ghebrekidan,Yoel,yoel.mesfun-ghebrekidan@campus.tu-berlin.de,Beendet,"12. Dezember 2020  20:02","18. Dezember 2020  18:20","5 Tage 22 Stunden","14,28",8,"Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","0 1 2 3 4 5 6 7 8 9","Gar nicht",11,"Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_238,VName_238,"public class Menu {
 
 	public static void main(String [] args) {
 		
@@ -1019,7 +989,7 @@ Mesfun-Ghebrekidan,Yoel,yoel.mesfun-ghebrekidan@campus.tu-berlin.de,Beendet,"12.
 	    
 }  
 }"
-Wegener,Erik,erik.wegener@campus.tu-berlin.de,Beendet,"13. Dezember 2020  12:35","17. Dezember 2020  20:11","4 Tage 7 Stunden","0,21","fünf Ausgaben","Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.","Anweisung1 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung2 wahr sind. (Anweisung2, Anweisung3 und Anweisung4 werden nicht ausgeführt)",6,Zweimal,"0 2 4 6 8","Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: 1; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: 2; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: 3; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: 4; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: 5; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: 7; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: 8; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58:","public class Menu {
+Name_257,VName_257,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1075,7 +1045,7 @@ Wegener,Erik,erik.wegener@campus.tu-berlin.de,Beendet,"13. Dezember 2020  12:35"
     }
     
 }"
-Ramge,Max,ramge@campus.tu-berlin.de,Beendet,"13. Dezember 2020  15:13","19. Dezember 2020  19:51","6 Tage 4 Stunden","12,64","3 Mal","Sie zählt bis 3.","Anweisung 2","gar nicht",6,"Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 8; Teil 26: %; Teil 27: true; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: -","public class Menu {
+Name_252,VName_252,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1153,7 +1123,7 @@ Ramge,Max,ramge@campus.tu-berlin.de,Beendet,"13. Dezember 2020  15:13","19. Deze
         return Terminal.askInt(""Countdown:\n"");
     }
 }"
-Terziyska,Radina,r.terziyska@campus.tu-berlin.de,Beendet,"13. Dezember 2020  15:20","20. Dezember 2020  14:46","6 Tage 23 Stunden","10,99",4,"Anweisung1 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung2 wahr sind. (Anweisung2, Anweisung3 und Anweisung4 werden nicht ausgeführt)",7,15,"Anweisung 2","Unendlich oft","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: %; Teil 7: &; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 2(5); Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 3(5); Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 4(5); Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 5; Teil 26: -; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 2; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: false; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: true; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_243,VName_243,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1252,7 +1222,7 @@ public class LeapYear {
         return Terminal.askInt(""Countdown:\n"");
     }
 }"
-Jäger,"Fabia Cecilia",f.jaeger@tu-berlin.de,Beendet,"13. Dezember 2020  16:20","20. Dezember 2020  19:04","7 Tage 2 Stunden","13,67","Sie zählt unendlich.","0 1 2 3 4 5 6 7 8 9",8,"Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.",4,15,"Teil 1: 1; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 2; Teil 6: %; Teil 7: %; Teil 8: %; Teil 9: 3; Teil 10: undef; Teil 11: %; Teil 12: %; Teil 13: 4; Teil 14: %; Teil 15: false; Teil 16: %; Teil 17: 5; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 6; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: 7; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_259,VName_259,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1336,7 +1306,7 @@ Jäger,"Fabia Cecilia",f.jaeger@tu-berlin.de,Beendet,"13. Dezember 2020  16:20",
     }
     
 }"
-Witri,"Farah Shavira",witri@campus.tu-berlin.de,Beendet,"13. Dezember 2020  17:03","20. Dezember 2020  20:26","7 Tage 3 Stunden","12,13","Ersteres nennt man explizites Casten, beim Casten vom kleinerem (float) zum größerem Datentyp (double) muss das implizit geschehen.","4 Mal","gar nicht","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Gar nicht","Mit einer for-Schleife kann man jede Funktionalität erreichen, die man auch mit einer While-Schleife erreichen könnte.","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: %; Teil 57: -; Teil 58: -","public class Menu {
+Name_241,VName_241,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1411,7 +1381,7 @@ Witri,"Farah Shavira",witri@campus.tu-berlin.de,Beendet,"13. Dezember 2020  17:0
     }
     
 }"
-Korkmaz,Asena,asena.korkmaz@campus.tu-berlin.de,Beendet,"13. Dezember 2020  19:33","20. Dezember 2020  23:44","7 Tage 4 Stunden","11,52","Anweisung 2",15,"Innerhalb einer for-Schleife können sich weitere Schleifen befinden.",8,"gar nicht","4 Mal","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 5(3); Teil 6: %; Teil 7: %; Teil 8: %; Teil 9: 6(3); Teil 10: %; Teil 11: /2; Teil 12: 2; Teil 13: 7(3); Teil 14: %; Teil 15: i; Teil 16: %; Teil 17: 3; Teil 18: %; Teil 19: %; Teil 20: -; Teil 21: 4; Teil 22: %; Teil 23: false; Teil 24: %; Teil 25: 5; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: -; Teil 31: 2; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: false; Teil 58: %","public class Menu {
+Name_234,VName_234,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1513,7 +1483,7 @@ System.out.println("" Das Jahr ""+input+"" ist kein Schaltjahr."");
        
         }
     }"
-Schrenk,"Philipp Albert",p.schrenk@campus.tu-berlin.de,Beendet,"13. Dezember 2020  22:55","20. Dezember 2020  22:01","6 Tage 23 Stunden","14,23",15,4,"4 Mal","gar nicht","0 1 2 3 4 5 6 7 8 9","Sie zählt unendlich.","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16; Teil 52: -; Teil 53: -; Teil 54: %; Teil 55: 17; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_262,VName_262,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1583,13 +1553,7 @@ Schrenk,"Philipp Albert",p.schrenk@campus.tu-berlin.de,Beendet,"13. Dezember 202
     }
     
 }"
-Volodarskii,Konstantin,k.volodarskii@tu-berlin.de,Beendet,"14. Dezember 2020  00:20","20. Dezember 2020  23:59","6 Tage 23 Stunden","4,82","Anweisung 2","Gar nicht","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }",7,15,4,"Teil 1: 1; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 2; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: 3; Teil 10: -; Teil 11: -; Teil 12: -; Teil 13: 3(5); Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58:","public class Menu {
+Name_507,VName_507,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1659,7 +1623,7 @@ Volodarskii,Konstantin,k.volodarskii@tu-berlin.de,Beendet,"14. Dezember 2020  00
     }
     
 }"
-Abdalla,"Hanen K Moustafa",hanen.abdalla@campus.tu-berlin.de,Beendet,"14. Dezember 2020  02:05","20. Dezember 2020  23:28","6 Tage 21 Stunden","6,50","0 1 2 3 4 5 6 7 8 9",8,"Sie zählt unendlich.",4,"Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Ersteres nennt man explizites Casten, beim Casten vom kleinerem (float) zum größerem Datentyp (double) muss das implizit geschehen.","Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58:","public class Menu {
+Name_240,VName_240,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1752,7 +1716,7 @@ public class Loops {
 
     }
 }"
-Niewiarra,"Julian Baptiste",niewiarra@campus.tu-berlin.de,Beendet,"14. Dezember 2020  10:19","21. Dezember 2020  00:12","6 Tage 13 Stunden","14,45","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.",8,"Sie zählt unendlich.","gar nicht","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","4 Mal","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 15; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 17; Teil 56: -; Teil 57: -; Teil 58: -","public class Menu { 
+Name_236,VName_236,"public class Menu { 
 
 public static void main(String [] args) { 
 System.out.print(""Bitte auswaehlen...\n"" + 
@@ -1825,7 +1789,7 @@ return Terminal.askInt(""Countdown:\n"");
 } 
 
 }"
-Klocksin,"Malte Carl",m.klocksin@campus.tu-berlin.de,Beendet,"14. Dezember 2020  11:36","14. Dezember 2020  13:09","1 Stunde 32 Minuten","14,28",8,"gar nicht",15,"Anweisung 2","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","0 2 4 6 8","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_244,VName_244,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1903,13 +1867,7 @@ Klocksin,"Malte Carl",m.klocksin@campus.tu-berlin.de,Beendet,"14. Dezember 2020 
     }
     
 }"
-Ardisson,"Maxim Dimitri",ardisson@campus.tu-berlin.de,Beendet,"14. Dezember 2020  12:48","21. Dezember 2020  00:12","6 Tage 11 Stunden","13,55","0 1 2 3 4 5 6 7 8 9","4 Mal","Anweisung 2","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }",4,"Sie zählt unendlich.","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 15; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 17; Teil 56: -; Teil 57: -; Teil 58: -","public class Menu {
+Name_247,VName_247,"public class Menu {
 
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1974,15 +1932,7 @@ Ardisson,"Maxim Dimitri",ardisson@campus.tu-berlin.de,Beendet,"14. Dezember 2020
         return Terminal.askInt(""Countdown:\n"");
     }
 }"
-Lindner,Lucie-Marie,l.lindner@campus.tu-berlin.de,Beendet,"14. Dezember 2020  13:41","17. Dezember 2020  16:52","3 Tage 3 Stunden","11,72","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","int i=0;
-
- for(;i<10;){
-
-   System.out.println(i);
-
-    i=i+1;
-
- }","Anweisung 2","0 1 2 3 4 5 6 7 8 9","Unendlich oft",7,"Teil 1: 1; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 2; Teil 6: %; Teil 7: %; Teil 8: %; Teil 9: 3; Teil 10: undef; Teil 11: %; Teil 12: %; Teil 13: 4; Teil 14: %; Teil 15: false; Teil 16: %; Teil 17: 5; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 6; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: 7; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: &; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 11; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 15; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16; Teil 52: %; Teil 53: &; Teil 54: %; Teil 55: 17; Teil 56: -; Teil 57: -; Teil 58: -","public class Menu {
+Name_264,VName_264,"public class Menu {
     public static void main(String [] args) {
     System.out.print(""Bitte auswaehlen...\n"" +
             ""\tPPR ist [t]oll\n"" +
@@ -2060,13 +2010,7 @@ Lindner,Lucie-Marie,l.lindner@campus.tu-berlin.de,Beendet,"14. Dezember 2020  13
         return Terminal.askInt(""Countdown:\n"");
     }
 }"
-Uth,"Celine Victoria",a06a412970e89d27a5d2a53764297db5,Beendet,"14. Dezember 2020  14:55","20. Dezember 2020  14:15","5 Tage 23 Stunden","13,73",8,15,"for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Mit einer for-Schleife kann man jede Funktionalität erreichen, die man auch mit einer While-Schleife erreichen könnte.","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","0 1 2 3 4 5 6 7 8 9","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: 4.5; Teil 25: 8; Teil 26: %; Teil 27: true; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: false; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 17; Teil 56: -; Teil 57: %; Teil 58: -","public class Menu {
+Name_270,VName_270,"public class Menu {
 		
 	public static void main(String [] args) {
       System.out.print(""Bitte auswaehlen...\n"" +
@@ -2149,13 +2093,7 @@ public static void main(String[] args) {
             
         }   
 }"
-Skodlerak,Torben,skodlerak@tu-berlin.de,Beendet,"14. Dezember 2020  15:32","20. Dezember 2020  21:41","6 Tage 6 Stunden","12,62","gar nicht","for(int i = 9;i>=0;){
-
-   System.out.println(9-i);
-
-   i=i-1;
-
- }","Innerhalb einer for-Schleife können sich weitere Schleifen befinden.","Unendlich oft","4 Mal",15,"Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: 0; Teil 25: 8; Teil 26: %; Teil 27: %; Teil 28: 0; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: -; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_253,VName_253,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -2240,7 +2178,7 @@ Skodlerak,Torben,skodlerak@tu-berlin.de,Beendet,"14. Dezember 2020  15:32","20. 
         }
     }
 }"
-Kilic,Ceren,ceren.kilic@campus.tu-berlin.de,Beendet,"14. Dezember 2020  17:49","20. Dezember 2020  16:15","5 Tage 22 Stunden","11,53","0 1 2 3 4 5 6 7 8 9",5,"Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","4 Mal",6,unendlich,"Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: 4; Teil 10: -; Teil 11: false; Teil 12: -; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: -; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 14(6); Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 15(6); Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 17; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_278,VName_278,"public class Menu {
 		
 	
 		public static void main(String [] args) {
@@ -2328,7 +2266,7 @@ return a;
     }
     
 }"
-Chaudhary,Pradeep,p.chaudhary@campus.tu-berlin.de,Beendet,"14. Dezember 2020  18:51","15. Dezember 2020  04:32","9 Stunden 40 Minuten","14,10","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","gar nicht","Gar nicht",8,"Sie zählt unendlich.",4,"Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 7(6); Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 10(6); Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 11(6); Teil 26: %; Teil 27: %; Teil 28: -; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7(6); Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8(6); Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 11; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_17,VName_17,"public class Menu {
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
 			             ""\tPPR ist [t]oll\n"" +
@@ -2397,7 +2335,7 @@ Chaudhary,Pradeep,p.chaudhary@campus.tu-berlin.de,Beendet,"14. Dezember 2020  18
         return Terminal.askInt(""Countdown:\n"");
     }    
 }"
-Günther,Till,9f091c3fdba2e9ee628d741520967ce1,Beendet,"15. Dezember 2020  10:32","20. Dezember 2020  19:19","5 Tage 8 Stunden","5,74","4 Mal","Sie zählt unendlich.","0 1 2 3 4 5 6 7 8 9","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Gar nicht",7,"Teil 1: 1; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 2; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: 3; Teil 10: undef; Teil 11: -; Teil 12: -; Teil 13: 4; Teil 14: %; Teil 15: false; Teil 16: -; Teil 17: 5; Teil 18: 9; Teil 19: %; Teil 20: -; Teil 21: 6; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: 7; Teil 26: %; Teil 27: %; Teil 28: 3; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: 4; Teil 36: 6; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 7; Teil 41: %; Teil 42: %; Teil 43: 5; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_239,VName_239,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -2505,7 +2443,7 @@ Günther,Till,9f091c3fdba2e9ee628d741520967ce1,Beendet,"15. Dezember 2020  10:32
 	
 
 }"
-Lietz,"Leonie Luisa",leonie.lietz@campus.tu-berlin.de,Beendet,"15. Dezember 2020  11:57","20. Dezember 2020  07:42","4 Tage 19 Stunden","10,77","gar nicht","3 Mal",15,"0 1 2 3 4 5 6 7 8 9","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.",Einmal,"Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 8; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: false; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_231,VName_231,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -2586,7 +2524,7 @@ Lietz,"Leonie Luisa",leonie.lietz@campus.tu-berlin.de,Beendet,"15. Dezember 2020
 	}
     
 }"
-Aung,Okkar,okkar.aung@campus.tu-berlin.de,Beendet,"15. Dezember 2020  14:04","18. Dezember 2020  10:56","2 Tage 20 Stunden","13,87","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Anweisung 2","Sie zählt unendlich.","gar nicht","Ersteres nennt man explizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das implizit geschehen.",6,"Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 11; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %	%; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_255,VName_255,"public class Menu {
 	
 	public static void main(String[] args) {
 				System.out.print(""Bitte auswaehlen...\n"" +
@@ -2676,13 +2614,7 @@ Aung,Okkar,okkar.aung@campus.tu-berlin.de,Beendet,"15. Dezember 2020  14:04","18
     }
     
 }"
-Taranuschitsch,Kristina,k.taranuschitsch@campus.tu-berlin.de,Beendet,"15. Dezember 2020  19:06","20. Dezember 2020  23:14","5 Tage 4 Stunden","14,28","3 Mal","gar nicht","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Sie zählt unendlich.","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 8; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_261,VName_261,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -2785,13 +2717,7 @@ Taranuschitsch,Kristina,k.taranuschitsch@campus.tu-berlin.de,Beendet,"15. Dezemb
     }
     
 }"
-Padberg,"Ruben Bernhard",ruben.padberg@campus.tu-berlin.de,Beendet,"15. Dezember 2020  19:50","20. Dezember 2020  20:48","5 Tage","9,33","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","4 Mal","Ersteres nennt man explizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das implizit geschehen.","Sie zählt unendlich.","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","gar nicht","Teil 1: 1; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 2; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: 3; Teil 10: undef; Teil 11: -; Teil 12: -; Teil 13: 4; Teil 14: undef; Teil 15: false; Teil 16: -; Teil 17: 5; Teil 18: 9; Teil 19: false; Teil 20: -; Teil 21: 6; Teil 22: 9; Teil 23: false; Teil 24: 2; Teil 25: 7; Teil 26: 9; Teil 27: false; Teil 28: 2; Teil 29: 9; Teil 30: false; Teil 31: 3; Teil 32: 7; Teil 33: 9; Teil 34: false; Teil 35: 3; Teil 36: 8; Teil 37: 9; Teil 38: true; Teil 39: 3; Teil 40: 9; Teil 41: 9; Teil 42: true; Teil 43: 3; Teil 44: 9; Teil 45: true; Teil 46: 3; Teil 47: 13; Teil 48: 9; Teil 49: true; Teil 50: 3; Teil 51: 14; Teil 52: 9; Teil 53: true; Teil 54: 3; Teil 55: 15; Teil 56: 9; Teil 57: true; Teil 58: 3","public class Menu {
+Name_277,VName_277,"public class Menu {
 	public static void main(String[] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
 			             ""\tPPR ist [t]oll\n"" +
@@ -2862,13 +2788,7 @@ Padberg,"Ruben Bernhard",ruben.padberg@campus.tu-berlin.de,Beendet,"15. Dezember
     }
     
 }"
-Gosling,"Kian Peter",gosling@campus.tu-berlin.de,Beendet,"15. Dezember 2020  20:56","21. Dezember 2020  00:12","5 Tage 3 Stunden","10,90",4,"gar nicht","4 Mal","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","for(int i = 9;i>=0;){
-
-   System.out.println(9-i);
-
-   i=i-1;
-
- }","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Teil 1: 1; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 2; Teil 6: %; Teil 7: %; Teil 8: %; Teil 9: 3; Teil 10: undef; Teil 11: %; Teil 12: %; Teil 13: 4; Teil 14: %; Teil 15: false; Teil 16: %; Teil 17: 5; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 6; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: 7; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: -; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_256,VName_256,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -2956,13 +2876,7 @@ Gosling,"Kian Peter",gosling@campus.tu-berlin.de,Beendet,"15. Dezember 2020  20:
     }
     
 }"
-"Ramos Ruiz",Natalia,n.ramosruiz@campus.tu-berlin.de,Beendet,"15. Dezember 2020  22:05","20. Dezember 2020  22:26","5 Tage","10,24","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }",5,"Anweisung 2","gar nicht","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)",4,"Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 5(7); Teil 18: 9; Teil 19: %; Teil 20: 0; Teil 21: 5(13); Teil 22: 9; Teil 23: %; Teil 24: %; Teil 25: 5(15); Teil 26: 9; Teil 27: %; Teil 28: %; Teil 29: 9; Teil 30: %; Teil 31: 2; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: 0; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: -; Teil 43: %; Teil 44: %; Teil 45: false; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: true; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_263,VName_263,"public class Menu {
 
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3071,7 +2985,7 @@ Gosling,"Kian Peter",gosling@campus.tu-berlin.de,Beendet,"15. Dezember 2020  20:
     }
 
 }"
-Weiß,Jasmina,jasmina.weiss@campus.tu-berlin.de,Beendet,"16. Dezember 2020  09:26","19. Dezember 2020  22:36","3 Tage 13 Stunden","11,22","Sie zählt bis 3.","0 1 2 3 4 5 6 7 8 9","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Gar nicht","Unendlich oft","Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 8; Teil 26: %; Teil 27: false; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: 9; Teil 33: -; Teil 34: -; Teil 35: -; Teil 36: 10; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 11; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 9; Teil 45: %; Teil 46: 2; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: -; Teil 57: -; Teil 58: -","public class Menu {
+Name_272,VName_272,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3154,7 +3068,7 @@ Weiß,Jasmina,jasmina.weiss@campus.tu-berlin.de,Beendet,"16. Dezember 2020  09:2
 	}
 
 }"
-Mittelstädt,"Lina Sophia",l.mittelstaedt@campus.tu-berlin.de,Beendet,"16. Dezember 2020  10:39","18. Dezember 2020  10:42","2 Tage","13,88",6,"Ersteres nennt man explizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das implizit geschehen.","4 Mal","0 1 2 3 4 5 6 7 8 9","Sie zählt unendlich.","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 11; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_254,VName_254,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3233,13 +3147,7 @@ Mittelstädt,"Lina Sophia",l.mittelstaedt@campus.tu-berlin.de,Beendet,"16. Dezem
 			return Terminal.askInt (""Countdown:\n"");
 		}
 }"
-Klemt,"Dorothea Klara",d.klemt@campus.tu-berlin.de,Beendet,"16. Dezember 2020  10:50","18. Dezember 2020  10:42","1 Tag 23 Stunden","14,87","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Anweisung 2","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","4 Mal",15,"Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 11; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: -","public class Menu {
+Name_260,VName_260,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3320,7 +3228,7 @@ Klemt,"Dorothea Klara",d.klemt@campus.tu-berlin.de,Beendet,"16. Dezember 2020  1
     }
     
 }"
-Bloch,"Céline Louisa",c.bloch.1@campus.tu-berlin.de,Beendet,"16. Dezember 2020  10:51","18. Dezember 2020  10:42","1 Tag 23 Stunden","14,38","Sie zählt unendlich.","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Gar nicht","Ersteres nennt man explizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das implizit geschehen.","4 Mal","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 11; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_269,VName_269,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3393,7 +3301,7 @@ Bloch,"Céline Louisa",c.bloch.1@campus.tu-berlin.de,Beendet,"16. Dezember 2020 
     }
     
 }"
-Kramer,"John Kurt Achim",76f9603c443ba12fadf70dd5369b96a0,Beendet,"16. Dezember 2020  15:48","20. Dezember 2020  23:49","4 Tage 8 Stunden","8,50",4,"Sie zählt unendlich.",15,"Unendlich oft","4 Mal","0 1 2 3 4 5 6 7 8 9","Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: 13; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: 14; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: 15; Teil 56: ; Teil 57: ; Teil 58:","public class Menu {
+Name_475,VName_475,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3476,13 +3384,7 @@ Kramer,"John Kurt Achim",76f9603c443ba12fadf70dd5369b96a0,Beendet,"16. Dezember 
     }
     
 }"
-Kalz,Andreas,a.kalz.1@tu-berlin.de,Beendet,"16. Dezember 2020  16:10","16. Dezember 2020  16:39","28 Minuten 36 Sekunden","14,66","0 1 2 3 4 5 6 7 8 9","Anweisung 2",4,"gar nicht",15,"for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: -; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_258,VName_258,"public class Menu {
         
     public static void main(String [] args) {
         System.out.print(""Bitte auswaehlen...\n"" +
@@ -3551,13 +3453,7 @@ Kalz,Andreas,a.kalz.1@tu-berlin.de,Beendet,"16. Dezember 2020  16:10","16. Dezem
     }
     
 }"
-Hogel,Stephan,2d485c3a9c60231ba2c51ed3cb4b4cdb,Beendet,"16. Dezember 2020  18:36","20. Dezember 2020  16:20","3 Tage 21 Stunden","13,26","gar nicht","4 Mal","for(int i=0;i<10;i=i+2){
-
-   System.out.println(i);
-
-   i--;
-
- }","Anweisung 2","Ersteres nennt man implizites Casten, beim Casten vom kleinerem (float) zum größerem Datentyp (double) muss das explizit geschehen.","0 1 2 3 4 5 6 7 8 9","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_265,VName_265,"public class Menu {
 		
 	public static void main(String[] args) {
 		 
@@ -3647,13 +3543,7 @@ Hogel,Stephan,2d485c3a9c60231ba2c51ed3cb4b4cdb,Beendet,"16. Dezember 2020  18:36
     }
     
 }"
-Theo,Yovan,yovan.theo@campus.tu-berlin.de,Beendet,"16. Dezember 2020  20:40","16. Dezember 2020  22:17","1 Stunde 36 Minuten","13,05","4 Mal","gar nicht","Gar nicht","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Teil 1: 3; Teil 2: undef; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: %; Teil 7: false; Teil 8: %; Teil 9: 5; Teil 10: 9; Teil 11: %; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: 2; Teil 17: 7; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 10; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 11; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 15; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 17; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_71,VName_71,"public class Menu {
 
     public static void main(String [] args) {
         System.out.print(""Bitte auswaehlen...\n"" +
@@ -3740,13 +3630,7 @@ Theo,Yovan,yovan.theo@campus.tu-berlin.de,Beendet,"16. Dezember 2020  20:40","16
     }
 
 }"
-Ciepielowska,"Maria Aleksandra",maria.ciepielowska@campus.tu-berlin.de,Beendet,"17. Dezember 2020  14:25","17. Dezember 2020  19:55","5 Stunden 29 Minuten","11,38","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }",8,"0 1 2 3 4 5 6 7 8 9","Anweisung4 kann nie ausgeführt werden.","Sie zählt unendlich.",15,"Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: %; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: ; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: ; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: ; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 5; Teil 26: 9; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 2; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: false; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_271,VName_271,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3833,13 +3717,7 @@ if(year%400==0){
     
 	}   
 }"
-Todorovski,Adrian,adrian.todorovski@campus.tu-berlin.de,Beendet,"17. Dezember 2020  15:01","20. Dezember 2020  15:49","3 Tage","13,21","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Anweisung 2","gar nicht","Ersteres nennt man implizites Casten, beim Casten vom kleinerem (float) zum größerem Datentyp (double) muss das explizit geschehen.",4,"4 Mal","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: %; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: %; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: 2; Teil 20: 2; Teil 21: 6; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 6; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: 7; Teil 33: -; Teil 34: -; Teil 35: -; Teil 36: 8; Teil 37: -; Teil 38: -; Teil 39: -; Teil 40: 9; Teil 41: -; Teil 42: -; Teil 43: -; Teil 44: -; Teil 45: 2; Teil 46: -; Teil 47: 13; Teil 48: 9; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_233,VName_233,"public class Menu {
 	public static void main(String[] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
 			             ""\tPPR ist [t]oll\n"" +
@@ -3930,13 +3808,7 @@ public static int getCount(){
 return Terminal.askInt(""Countdown:\n"");
 }
 }"
-Latz,"Simon Leonhard",s.latz@campus.tu-berlin.de,Beendet,"17. Dezember 2020  17:29","20. Dezember 2020  14:30","2 Tage 21 Stunden","13,95","Anweisung1 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung2 wahr sind. (Anweisung2, Anweisung3 und Anweisung4 werden nicht ausgeführt)","Gar nicht",15,"Anweisung 2","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 15; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 17; Teil 56: -; Teil 57: -; Teil 58: -","public class Menu {
+Name_237,VName_237,"public class Menu {
 
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4008,7 +3880,7 @@ Latz,"Simon Leonhard",s.latz@campus.tu-berlin.de,Beendet,"17. Dezember 2020  17:
         return Terminal.askInt(""Countdown:\n"");
     }
 }"
-Ohlendorf,Lasse,b8ec4bc7fa13cac6e41f2b7afb9c79c8,Beendet,"17. Dezember 2020  18:13","20. Dezember 2020  21:59","3 Tage 3 Stunden","11,93","Sie zählt bis 3 in Zweier-Schritten.",3,"Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Gar nicht","gar nicht","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Teil 1: 3; Teil 2: undef; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: %; Teil 7: false; Teil 8: %; Teil 9: 5; Teil 10: 9; Teil 11: %; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: 2; Teil 17: 7; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 9; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: -; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_245,VName_245,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4083,7 +3955,7 @@ Ohlendorf,Lasse,b8ec4bc7fa13cac6e41f2b7afb9c79c8,Beendet,"17. Dezember 2020  18:
         }
     }
 }"
-Brockhaus,"Clara Madeleine",c.brockhaus@campus.tu-berlin.de,Beendet,"18. Dezember 2020  12:19","18. Dezember 2020  19:24","7 Stunden 4 Minuten","13,12","0 1 2 3 4 5 6 7 8 9","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","4 Mal",15,"gar nicht","Sie zählt unendlich.","Teil 1: 1; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 2; Teil 6: %; Teil 7: %; Teil 8: %; Teil 9: 3; Teil 10: undef; Teil 11: %; Teil 12: %; Teil 13: 4; Teil 14: %; Teil 15: false; Teil 16: %; Teil 17: 5; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 6; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: 7; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 15; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16; Teil 52: -; Teil 53: -; Teil 54: %; Teil 55: 17; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_275,VName_275,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4157,7 +4029,7 @@ Brockhaus,"Clara Madeleine",c.brockhaus@campus.tu-berlin.de,Beendet,"18. Dezembe
     }
     
 }"
-Bosner,Celina,c.bosner@campus.tu-berlin.de,Beendet,"18. Dezember 2020  12:22","19. Dezember 2020  10:31","22 Stunden 8 Minuten","1,04",Zweimal,"fünf Ausgaben","4 Mal","Anweisung4 kann nie ausgeführt werden.","kein Wert führt zur Ausgabe von ""!""","Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.","Teil 1: 1; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 2; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: 3; Teil 10: undef; Teil 11: -; Teil 12: -; Teil 13: 4; Teil 14: -; Teil 15: false; Teil 16: -; Teil 17: 5; Teil 18: undef; Teil 19: -; Teil 20: -; Teil 21: 7(5); Teil 22: %; Teil 23: -; Teil 24: 0; Teil 25: 8(5); Teil 26: -; Teil 27: true; Teil 28: -; Teil 29: -; Teil 30: true; Teil 31: 2; Teil 32: 9; Teil 33: -; Teil 34: -; Teil 35: -; Teil 36: 10; Teil 37: -; Teil 38: -; Teil 39: -; Teil 40: 11; Teil 41: -; Teil 42: -; Teil 43: -; Teil 44: -; Teil 45: true; Teil 46: -; Teil 47: 13; Teil 48: +; Teil 49: -; Teil 50: -; Teil 51: 14; Teil 52: -; Teil 53: -; Teil 54: -; Teil 55: 15; Teil 56: +; Teil 57: -; Teil 58: -","public class Menu {
+Name_62,VName_62,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4230,7 +4102,7 @@ Bosner,Celina,c.bosner@campus.tu-berlin.de,Beendet,"18. Dezember 2020  12:22","1
     }
     
 }"
-Neß,"Jonas Lennart",jonas.ness@campus.tu-berlin.de,Beendet,"18. Dezember 2020  13:58","18. Dezember 2020  20:17","6 Stunden 18 Minuten","12,04","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.",6,"0 1 2 3 4 5 6 7 8 9","Sie zählt unendlich.",5,"gar nicht","Teil 1: 1; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 2; Teil 6: %; Teil 7: %; Teil 8: %; Teil 9: 3; Teil 10: undef; Teil 11: %; Teil 12: %; Teil 13: 4; Teil 14: %; Teil 15: false; Teil 16: %; Teil 17: 5; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 6; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: 7; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 15; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 17; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_286,VName_286,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4313,15 +4185,7 @@ Neß,"Jonas Lennart",jonas.ness@campus.tu-berlin.de,Beendet,"18. Dezember 2020  
     }
     
 }"
-Jakir,"Luka Kristian",jakir@campus.tu-berlin.de,Beendet,"18. Dezember 2020  15:51","20. Dezember 2020  22:23","2 Tage 6 Stunden","12,54",15,"Anweisung 2","3 Mal",8,"int i=0;
-
- for(;i<10;){
-
-   System.out.println(i);
-
-    i=i+1;
-
- }","gar nicht","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 8; Teil 26: %; Teil 27: true; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 9; Teil 37: %; Teil 38: false; Teil 39: %; Teil 40: 10; Teil 41: -; Teil 42: -; Teil 43: -; Teil 44: %; Teil 45: false; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: 9; Teil 53: %; Teil 54: 3; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: -","public class Menu {
+Name_242,VName_242,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4391,13 +4255,7 @@ Jakir,"Luka Kristian",jakir@campus.tu-berlin.de,Beendet,"18. Dezember 2020  15:5
         return Terminal.askInt(""Countdown:\n"");
     }
 }"
-Kemmler,"Erich Lorenz Boy",kemmler@campus.tu-berlin.de,Beendet,"18. Dezember 2020  17:04","20. Dezember 2020  16:08","1 Tag 23 Stunden","9,92","kein Wert führt zur Ausgabe von ""!""",4,"4 Mal","Sie zählt unendlich.",Einmal,"for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 6; Teil 22: %; Teil 23: %; Teil 24: 3; Teil 25: 6; Teil 26: %; Teil 27: %; Teil 28: 4; Teil 29: %; Teil 30: %; Teil 31: 5; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_248,VName_248,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4475,13 +4333,7 @@ Kemmler,"Erich Lorenz Boy",kemmler@campus.tu-berlin.de,Beendet,"18. Dezember 202
 		return Terminal.askInt(""Countdown:\n"");
 	} 
 }"
-Dietrich,"Lukas Sebastian",lukas.dietrich@campus.tu-berlin.de,Beendet,"18. Dezember 2020  18:45","20. Dezember 2020  19:28","2 Tage","13,00","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","gar nicht","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }",4,"Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)",8,"Teil 1: 1; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 2; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: 3; Teil 10: undef; Teil 11: -; Teil 12: -; Teil 13: 4; Teil 14: %; Teil 15: false; Teil 16: -; Teil 17: 5; Teil 18: 9; Teil 19: %; Teil 20: -; Teil 21: 6; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: 7; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_267,VName_267,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4635,7 +4487,7 @@ Dietrich,"Lukas Sebastian",lukas.dietrich@campus.tu-berlin.de,Beendet,"18. Dezem
     }
     
 }"
-Korn,"Eric Rene",eric.korn@campus.tu-berlin.de,Beendet,"19. Dezember 2020  11:36","19. Dezember 2020  14:20","2 Stunden 43 Minuten","14,87",15,"4 Mal","Sie zählt unendlich.","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.",8,"Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 11; Teil 26: %; Teil 27: %; Teil 28: 3; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: &; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: -","public class Menu {
+Name_274,VName_274,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4705,7 +4557,7 @@ Korn,"Eric Rene",eric.korn@campus.tu-berlin.de,Beendet,"19. Dezember 2020  11:36
     }
     
 }"
-Morsalpoor,Mohadese,m.morsalpoor@tu-berlin.de,Beendet,"19. Dezember 2020  13:32","19. Dezember 2020  22:18","8 Stunden 46 Minuten","14,16","Sie zählt unendlich.",4,15,"Anweisung 2","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.",Einmal,"Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: -; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_273,VName_273,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4781,13 +4633,7 @@ Morsalpoor,Mohadese,m.morsalpoor@tu-berlin.de,Beendet,"19. Dezember 2020  13:32"
     }
     
 }"
-Hofmann,Timo,timo.hofmann@campus.tu-berlin.de,Beendet,"19. Dezember 2020  15:31","19. Dezember 2020  18:08","2 Stunden 37 Minuten","14,50","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }",Einmal,"Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","0 1 2 3 4 5 6 7 8 9",8,"gar nicht","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 11; Teil 26: %; Teil 27: %; Teil 28: 3; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_276,VName_276,"public class Menu {
 
     public static void main(String [] args) {
         System.out.print(""Bitte auswaehlen...\n"" +
@@ -4872,13 +4718,7 @@ Hofmann,Timo,timo.hofmann@campus.tu-berlin.de,Beendet,"19. Dezember 2020  15:31"
     }
 
 }"
-Escabache,"Pia Annick",escabache@campus.tu-berlin.de,Beendet,"19. Dezember 2020  15:36","20. Dezember 2020  20:24","1 Tag 4 Stunden","7,31","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","gar nicht","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Anweisung 2","4 Mal","Teil 1: 1; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 2; Teil 6: %; Teil 7: %; Teil 8: %; Teil 9: 3; Teil 10: undef; Teil 11: %; Teil 12: %; Teil 13: 4; Teil 14: %; Teil 15: false; Teil 16: %; Teil 17: 5; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 6; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: 6; Teil 26: %; Teil 27: %; Teil 28: 3; Teil 29: %; Teil 30: %; Teil 31: 4; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 10; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 11; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16; Teil 52: -; Teil 53: -; Teil 54: %; Teil 55: 17; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_49,VName_49,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4963,13 +4803,7 @@ Escabache,"Pia Annick",escabache@campus.tu-berlin.de,Beendet,"19. Dezember 2020 
     }
 }  
 }"
-Hake,"Anna Franziska",a.hake@campus.tu-berlin.de,Beendet,"19. Dezember 2020  16:03","20. Dezember 2020  23:51","1 Tag 7 Stunden","2,24","Innerhalb einer for-Schleife können sich weitere Schleifen befinden.",15,"for(int i=0;i<10;i=i+2){
-
-   System.out.println(i);
-
-   i--;
-
- }","Anweisung 3","Gar nicht","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: ; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: ; Teil 10: -; Teil 11: -; Teil 12: -; Teil 13: ; Teil 14: -; Teil 15: -; Teil 16: -; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: &; Teil 21: ; Teil 22: ; Teil 23: &; Teil 24: &; Teil 25: ; Teil 26: &; Teil 27: &; Teil 28: &; Teil 29: -; Teil 30: -; Teil 31: -; Teil 32: 7; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: 8; Teil 37: ; Teil 38: ; Teil 39: &; Teil 40: 9; Teil 41: &; Teil 42: &; Teil 43: &; Teil 44: -; Teil 45: -; Teil 46: ; Teil 47: 13; Teil 48: ; Teil 49: &; Teil 50: &; Teil 51: 14; Teil 52: &; Teil 53: &; Teil 54: &; Teil 55: 15; Teil 56: &; Teil 57: &; Teil 58: &","public class Menu {
+Name_46,VName_46,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -5031,7 +4865,7 @@ return true;
     }
     
 }"
-Bürgel,Benedikt,b.buergel@campus.tu-berlin.de,Beendet,"19. Dezember 2020  17:58","19. Dezember 2020  22:38","4 Stunden 40 Minuten","13,33","Sie zählt bis 3.","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)",15,"4 Mal","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.",7,"Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: -; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 6; Teil 22: %; Teil 23: %; Teil 24: 3; Teil 25: 6; Teil 26: %; Teil 27: %; Teil 28: 4; Teil 29: %; Teil 30: %; Teil 31: 5; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 10; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 11; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_266,VName_266,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -5129,13 +4963,7 @@ Bürgel,Benedikt,b.buergel@campus.tu-berlin.de,Beendet,"19. Dezember 2020  17:58
     }
     
 }"
-Seidel,Frithjof,frithjof.seidel@campus.tu-berlin.de,Beendet,"19. Dezember 2020  18:11","19. Dezember 2020  20:33","2 Stunden 21 Minuten","15,00","Gar nicht",4,"gar nicht",15,"Sie zählt unendlich.","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 11; Teil 26: %; Teil 27: %; Teil 28: 3; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_285,VName_285,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -5221,13 +5049,7 @@ Seidel,Frithjof,frithjof.seidel@campus.tu-berlin.de,Beendet,"19. Dezember 2020  
         return Terminal.askInt(""Countdown:\n"");
     }
 }"
-Mittag,"Fritz Leo Antonius",f.mittag@campus.tu-berlin.de,Beendet,"19. Dezember 2020  18:26","20. Dezember 2020  21:55","1 Tag 3 Stunden","3,60","Gar nicht","for(int i = 9;i>=0;){
-
-   System.out.println(9-i);
-
-   i=i-1;
-
- }",11,"0 1 2 3 4 5 6 7 8 9",Einmal,"Anweisung 2","Teil 1: 3; Teil 2: undef; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: %; Teil 7: false; Teil 8: -; Teil 9: 5; Teil 10: Terminal.askInt(""Welche Zahl auf Primzahl testen? ""); Teil 11: %; Teil 12: -; Teil 13: 6; Teil 14: 9; Teil 15: %; Teil 16: 2; Teil 17: 7; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: true; Teil 24: %; Teil 25: 9; Teil 26: -; Teil 27: -; Teil 28: -; Teil 29: 9; Teil 30: false; Teil 31: 2; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: -; Teil 46: -; Teil 47: 15; Teil 48: %; Teil 49: -; Teil 50: -; Teil 51: 16; Teil 52: %; Teil 53: -; Teil 54: -; Teil 55: 17; Teil 56: %; Teil 57: -; Teil 58: -","public class Menu {
+Name_476,VName_476,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -5292,7 +5114,7 @@ Mittag,"Fritz Leo Antonius",f.mittag@campus.tu-berlin.de,Beendet,"19. Dezember 2
     }
     
 }"
-Kolberg,"Niklas Moritz",niklas.m.kolberg@campus.tu-berlin.de,Beendet,"19. Dezember 2020  18:55","20. Dezember 2020  22:55","1 Tag 4 Stunden","10,30","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Anweisung 2",5,6,"Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Sie zählt unendlich.","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10(7); Teil 26: -; Teil 27: -; Teil 28: -; Teil 29: 9; Teil 30: false; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14(12); Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15(12); Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16(12); Teil 56: -; Teil 57: -; Teil 58: -","public class Menu {
+Name_281,VName_281,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -5360,13 +5182,7 @@ public static void main(String[] args){
     }
     
 }"
-Arimbawa,"Made Niro Aditya",arimbawa@campus.tu-berlin.de,Beendet,"19. Dezember 2020  22:12","20. Dezember 2020  05:07","6 Stunden 54 Minuten","12,61","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","4 Mal","Unendlich oft","Sie zählt unendlich.","gar nicht","for(int i=0;i<10;i=i+2){
-
-   System.out.println(i);
-
-   i--;
-
- }","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 7(6); Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 8(6); Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 9(6); Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: 7(6); Teil 33: %; Teil 34: %; Teil 35: 3; Teil 36: 8(6); Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9(6); Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_282,VName_282,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -5447,7 +5263,7 @@ default : Terminal.println(""Das stand gar nicht zur Auswahl."");
         return Terminal.askInt(""Countdown:\n"");
     }
     }"
-Schellong,"Sören Rafael",r.schellong@campus.tu-berlin.de,Beendet,"19. Dezember 2020  22:33","20. Dezember 2020  19:54","21 Stunden 20 Minuten","14,88","Sie zählt unendlich.","Anweisung 2","gar nicht","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.",15,"Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 11; Teil 26: %; Teil 27: %; Teil 28: 3; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: -; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: %","public class Menu {
+Name_288,VName_288,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -5521,7 +5337,7 @@ Schellong,"Sören Rafael",r.schellong@campus.tu-berlin.de,Beendet,"19. Dezember 
     }
     
 }"
-Mäding,"Toni Siegfried",t.maeding@campus.tu-berlin.de,Beendet,"20. Dezember 2020  08:15","20. Dezember 2020  22:57","14 Stunden 41 Minuten","11,70","0 1 2 3 4 5 6 7 8 9","Sie zählt unendlich.","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.",4,"Anweisung4 kann nie ausgeführt werden.","gar nicht","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 3; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 6; Teil 26: %; Teil 27: %; Teil 28: 4; Teil 29: %; Teil 30: %; Teil 31: 5; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 10; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 11; Teil 41: %; Teil 42: -; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16(12); Teil 52: %; Teil 53: %; Teil 54: -; Teil 55: 17(12); Teil 56: -; Teil 57: %; Teil 58: %","public class Menu {
+Name_53,VName_53,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -5591,7 +5407,7 @@ Mäding,"Toni Siegfried",t.maeding@campus.tu-berlin.de,Beendet,"20. Dezember 202
     }
     
 }"
-Napiwotzki,Nicklas,n.napiwotzki@campus.tu-berlin.de,Beendet,"20. Dezember 2020  09:11","20. Dezember 2020  18:52","9 Stunden 41 Minuten","14,22","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","0 1 2 3 4 5 6 7 8 9","Sie zählt unendlich.","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.",4,"Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: -; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 15; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16; Teil 52: -; Teil 53: -; Teil 54: %; Teil 55: 17; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_283,VName_283,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -5676,7 +5492,7 @@ Napiwotzki,Nicklas,n.napiwotzki@campus.tu-berlin.de,Beendet,"20. Dezember 2020  
     }
     
 }"
-Waldmann,Jean-Luc,845f9875cbbea338259b0304fe5f8184,Beendet,"20. Dezember 2020  10:56","21. Dezember 2020  00:12","13 Stunden 16 Minuten","0,00",-,-,-,-,-,-,"Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58:","public class Menu {
+Name_508,VName_508,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -5732,13 +5548,7 @@ Waldmann,Jean-Luc,845f9875cbbea338259b0304fe5f8184,Beendet,"20. Dezember 2020  1
     }
     
 }"
-Heyde,Jan-Frederik,heyde@campus.tu-berlin.de,Beendet,"20. Dezember 2020  12:37","20. Dezember 2020  18:05","5 Stunden 27 Minuten","13,55",15,"gar nicht","Gar nicht",8,"for(int i=0;i<10;i=i+2){
-
-   System.out.println(i);
-
-   i--;
-
- }","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 8; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_279,VName_279,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -5816,7 +5626,7 @@ Heyde,Jan-Frederik,heyde@campus.tu-berlin.de,Beendet,"20. Dezember 2020  12:37",
     }
     
 }"
-Heuer,"Lukas Paul Ernst",heuer.1@campus.tu-berlin.de,Beendet,"20. Dezember 2020  13:09","20. Dezember 2020  20:59","7 Stunden 50 Minuten","13,35","Gar nicht",8,"Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Sie zählt bis 3 in Zweier-Schritten.","kein Wert führt zur Ausgabe von ""!""","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 6; Teil 18: %; Teil 19: %; Teil 20: 2; Teil 21: 7; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 10; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 15; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 17; Teil 56: -; Teil 57: -; Teil 58: -","public class Menu {
+Name_287,VName_287,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -5892,7 +5702,7 @@ Heuer,"Lukas Paul Ernst",heuer.1@campus.tu-berlin.de,Beendet,"20. Dezember 2020 
     return Terminal.askInt(""Countdown:\n"");
   }
 }"
-Birke,"Matthias Benedict",benedict.birke@campus.tu-berlin.de,Beendet,"20. Dezember 2020  13:56","20. Dezember 2020  23:27","9 Stunden 31 Minuten","12,36",8,"Gar nicht","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","0 1 2 3 4 5 6 7 8 9","Sie zählt unendlich.","Teil 1: 1; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 2; Teil 6: %; Teil 7: %; Teil 8: %; Teil 9: 3; Teil 10: undef; Teil 11: %; Teil 12: %; Teil 13: 4; Teil 14: %; Teil 15: false; Teil 16: %; Teil 17: 5; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 6; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: 7; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 3; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 14; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 15; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 16; Teil 56: -; Teil 57: -; Teil 58: -","public class Menu {
+Name_284,VName_284,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -5982,13 +5792,7 @@ Birke,"Matthias Benedict",benedict.birke@campus.tu-berlin.de,Beendet,"20. Dezemb
     }
 
 }"
-Shen,Yishu,yishu.shen@campus.tu-berlin.de,Beendet,"20. Dezember 2020  15:02","20. Dezember 2020  18:30","3 Stunden 28 Minuten","10,22","gar nicht",6,"Unendlich oft","Sie zählt bis 3 in Zweier-Schritten.","Unendlich oft","for(int i = 9;i>=0;){
-
-   System.out.println(9-i);
-
-   i=i-1;
-
- }","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 3; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 4; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 5; Teil 14: 9; Teil 15: %; Teil 16: %; Teil 17: 7(6); Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: 8(6); Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: 9(6); Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: %; Teil 30: %; Teil 31: 2; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: 4; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: %; Teil 42: %; Teil 43: -; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: 5; Teil 57: %; Teil 58: %","public class Menu {
+Name_280,VName_280,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -6065,7 +5869,7 @@ Shen,Yishu,yishu.shen@campus.tu-berlin.de,Beendet,"20. Dezember 2020  15:02","20
             return Terminal.askInt(""Countdown:\n"");
     }
 }"
-Ramadani,Adisa,adisa.ramadani@campus.tu-berlin.de,Beendet,"20. Dezember 2020  15:37","20. Dezember 2020  23:56","8 Stunden 19 Minuten","4,10","gar nicht","Sie zählt bis 3.","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.",5,3,"Gar nicht","Teil 1: 12; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 13; Teil 6: %; Teil 7: true; Teil 8: -; Teil 9: 14; Teil 10: %; Teil 11: false; Teil 12: %; Teil 13: 15; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 3(15); Teil 18: %; Teil 19: -; Teil 20: -; Teil 21: 4; Teil 22: %; Teil 23: false; Teil 24: %; Teil 25: 5; Teil 26: 9; Teil 27: undef; Teil 28: undef; Teil 29: 9/2; Teil 30: %; Teil 31: 2; Teil 32: 7; Teil 33: %; Teil 34: %; Teil 35: 0; Teil 36: 8; Teil 37: %; Teil 38: true; Teil 39: %; Teil 40: 9; Teil 41: -; Teil 42: -; Teil 43: -; Teil 44: %; Teil 45: true; Teil 46: %; Teil 47: 13; Teil 48: -; Teil 49: true; Teil 50: 0; Teil 51: 14; Teil 52: -; Teil 53: -; Teil 54: -; Teil 55: 15; Teil 56: 9; Teil 57: false; Teil 58: 2","public class Menu {
+Name_509,VName_509,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -6127,13 +5931,7 @@ Ramadani,Adisa,adisa.ramadani@campus.tu-berlin.de,Beendet,"20. Dezember 2020  15
     }
     
 }"
-Fulful,"Abd Alrahman",a.fulful@campus.tu-berlin.de,Beendet,"20. Dezember 2020  18:27","20. Dezember 2020  23:13","4 Stunden 46 Minuten","1,43","Anweisung1 wird immer ausgeführt","for(int i=0;i<10;i=i+2){
-
-   System.out.println(i);
-
-   i--;
-
- }","gar nicht",5,"4 Mal","Sie zählt bis 3 in Zweier-Schritten.","Teil 1: 2; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 6(3); Teil 6: -; Teil 7: -; Teil 8: [2,i/2]; Teil 9: 7(3); Teil 10: -; Teil 11: -; Teil 12: 0; Teil 13: 8(3); Teil 14: -; Teil 15: true; Teil 16: %; Teil 17: 9(3); Teil 18: -; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58:","public class Menu {
+Name_47,VName_47,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -6190,7 +5988,7 @@ Fulful,"Abd Alrahman",a.fulful@campus.tu-berlin.de,Beendet,"20. Dezember 2020  1
     }
     
 }"
-Gäbel,Lara,lara.gaebel@campus.tu-berlin.de,Beendet,"20. Dezember 2020  22:32","20. Dezember 2020  23:39","1 Stunde 7 Minuten","0,43","fünf Ausgaben","Anweisung1 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung2 wahr sind. (Anweisung2, Anweisung3 und Anweisung4 werden nicht ausgeführt)","3 Mal",3,Zweimal,"Innerhalb einer for-Schleife können sich weitere Schleifen befinden.","Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: 3; Teil 18: undef; Teil 19: -; Teil 20: undef; Teil 21: 4; Teil 22: -; Teil 23: false; Teil 24: -; Teil 25: 5; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: -; Teil 31: 2; Teil 32: 7; Teil 33: -; Teil 34: -; Teil 35: %; Teil 36: 8; Teil 37: 0; Teil 38: true; Teil 39: 2; Teil 40: 9; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: false; Teil 46: ; Teil 47: 13; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: 14; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: 15; Teil 56: ; Teil 57: ; Teil 58:","public class Menu {
+Name_289,VName_289,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -6257,13 +6055,7 @@ Gäbel,Lara,lara.gaebel@campus.tu-berlin.de,Beendet,"20. Dezember 2020  22:32","
     }
     
 }"
-Rosskopp,Thorge,rosskopp@campus.tu-berlin.de,Beendet,"20. Dezember 2020  23:17","20. Dezember 2020  23:57","40 Minuten 12 Sekunden","0,91","3 Mal","Gar nicht","for(int i=0;i<10;i=i+2){
-
-   System.out.println(i);
-
-   i--;
-
- }","Mit einer for-Schleife kann man jede Funktionalität erreichen, die man auch mit einer While-Schleife erreichen könnte.",5,"Sie zählt bis 3.","Teil 1: 1; Teil 2: undef; Teil 3: undef; Teil 4: undef; Teil 5: 2; Teil 6: %; Teil 7: %; Teil 8: %; Teil 9: 3; Teil 10: %; Teil 11: %; Teil 12: %; Teil 13: 4; Teil 14: %; Teil 15: false; Teil 16: %; Teil 17: 5; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 6; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: 7; Teil 26: %; Teil 27: %; Teil 28: 3; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: 8; Teil 33: %; Teil 34: true; Teil 35: %; Teil 36: 9; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 11; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 13; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 14; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 15; Teil 56: %; Teil 57: %; Teil 58: %","public class Menu {
+Name_290,VName_290,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +

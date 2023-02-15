@@ -1,31 +1,5 @@
-﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/20,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9"
-Gerhardt,"Fynn Niklas",f.gerhardt@tu-berlin.de,Beendet,"18. Juni 2021  13:20","18. Juni 2021  15:32","2 Stunden 12 Minuten","19,50","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","talloc
-; PPRalloc
-; mealloc
-; cealloc","int* pointer;
-
-; int array[];","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int* arr = (int*)malloc(10*sizeof(int));
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-	free(p);
-}","#include <stdlib.h> // malloc-Familie
+Nachname,Vorname,Antwort 8,Antwort 9
+Name_85,VName_85,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -177,27 +151,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }"
-"Salas Lara","Luis Valentin",l.salaslara@tu-berlin.de,Beendet,"18. Juni 2021  14:25","25. Juni 2021  11:42","6 Tage 21 Stunden","17,15","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Der Wert von str ist undefiniert.","Die Anzahl der Bytes die gebraucht werden","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","int* pointer;","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int *arr = malloc(10 * sizeof(int));
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_77,VName_77,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -392,26 +346,7 @@ int main(){
 		}
 	
 }"
-Eckardt,"Jan Hartmut",jan.h.eckardt@campus.tu-berlin.de,Beendet,"20. Juni 2021  17:40","27. Juni 2021  23:59","7 Tage 6 Stunden","0,00",-,-,-,-,-,-,"#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int arr[10];
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_81,VName_81,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -487,28 +422,7 @@ int main(){
 
     return(0);
 }",-
-Bauszus,"Florian Alexander",bauszus@campus.tu-berlin.de,Beendet,"20. Juni 2021  19:20","27. Juni 2021  14:56","6 Tage 19 Stunden","15,85","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Die Anzahl der Bytes die gebraucht werden","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) = 32","str == -1","int* pointer;
-
-; int array[];","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	return (int*) malloc(12 * sizeof(int));
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-  free(p);
-}","#include <stdlib.h> // malloc-Familie
+Name_82,VName_82,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -721,31 +635,7 @@ int main()
     student_ausgeben(&erster_Student);
     return 0;
 }"
-Gillich,"Franziska Anna-Lena",f.gillich@campus.tu-berlin.de,Beendet,"20. Juni 2021  20:53","27. Juni 2021  18:55","6 Tage 22 Stunden","18,35","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Bytes die gebraucht werden","str == 0","mealloc
-; talloc
-; PPRalloc
-; cealloc","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","int* pointer;","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int* arr=malloc(10*sizeof(int));
-	if (!arr) return 0;
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_93,VName_93,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -917,32 +807,7 @@ void main ()
         student_ausgeben(Eingabe[i]);
     }
 }"
-Wang,"Yang Felix",yang.f.wang@campus.tu-berlin.de,Beendet,"20. Juni 2021  21:41","27. Juni 2021  23:59","7 Tage 2 Stunden","19,65","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","PPRalloc
-; talloc
-; cealloc
-; mealloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","str == 0","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","int* pointer;
-
-; int array[];","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int* arr = malloc( 10*sizeof(int) );
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_73,VName_73,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -1148,31 +1013,7 @@ int main() {
 
 	return 0;
 }"
-Aksoy,Vedia,vedia.aksoy@campus.tu-berlin.de,Beendet,"21. Juni 2021  00:01","27. Juni 2021  23:20","6 Tage 23 Stunden","19,25","cealloc
-; PPRalloc
-; talloc
-; mealloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl an Bits die gebraucht werden","int* pointer;","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int* arr;
-	arr=(int*) malloc(10*sizeof(int));
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_75,VName_75,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -1318,29 +1159,7 @@ int main(){
     
     
 }"
-Alfakir,Mohamad,alfakir.1@campus.tu-berlin.de,Beendet,"21. Juni 2021  00:03","27. Juni 2021  23:34","6 Tage 23 Stunden","9,13","Der Wert von str ist undefiniert.","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll",PPRalloc,"Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","int* pointer;
-
-; int array[];","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int arr[10];
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_74,VName_74,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -1469,27 +1288,7 @@ int main()
 
 
 }"
-Franke,Alexander,alexander.franke@campus.tu-berlin.de,Beendet,"21. Juni 2021  00:05","27. Juni 2021  23:59","6 Tage 23 Stunden","1,38","sizeof(ketchup) = 31","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen
-; Strukturen brauchen einen Rückgabewert","Die Anzahl der Bytes die gebraucht werden",PPRalloc,"int array[];","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int arr[10];
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_76,VName_76,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -1565,34 +1364,7 @@ int main(){
 
     return(0);
 }",-
-Alexe,"Jeremias Harry",jeremias.h.alexe@campus.tu-berlin.de,Beendet,"21. Juni 2021  15:33","27. Juni 2021  23:59","6 Tage 8 Stunden","18,65","Die Anzahl der Elemente im Array","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","talloc
-; mealloc
-; PPRalloc
-; cealloc","int array[];
-; int* pointer;","#include <stdio.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	
-	return (int*) malloc(10 * sizeof(int));
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_83,VName_83,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -1761,31 +1533,7 @@ int main(){
         student_ausgeben(&array[i]);
      }
 }"
-Miskovic,Matea,matea.miskovic@tu-berlin.de,Beendet,"21. Juni 2021  18:26","27. Juni 2021  18:55","6 Tage","10,65","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Die Anzahl der Bytes die gebraucht werden","talloc
-; mealloc
-; PPRalloc
-; cealloc","int* pointer;","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int* arr = (int*) malloc (10 * sizeof(int));
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_78,VName_78,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -1954,32 +1702,7 @@ int main(){
     
     
 }"
-Horneburg,"Max Richard",m.horneburg@campus.tu-berlin.de,Beendet,"22. Juni 2021  12:25","22. Juni 2021  14:34","2 Stunden 8 Minuten","18,80","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","str == 0","realloc; malloc
-; calloc","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","int* pointer;
-
-; int array[];","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int* arr = (int*) malloc(sizeof(int) * 10);
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-	return 0;
-}","#include <stdlib.h> // malloc-Familie
+Name_80,VName_80,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -2141,32 +1864,7 @@ int main() {
 	}
 	return 0;
 }"
-Sen,"Muzaffer Mert",m.sen@campus.tu-berlin.de,Beendet,"22. Juni 2021  14:07","27. Juni 2021  21:53","5 Tage 7 Stunden","10,00","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Die Anzahl der Bytes die gebraucht werden","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","int* pointer;","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray( ) {
-	int* pointer;
-	pointer = malloc (10 * sizeof(int));
-	int arr[10];
-	pointer=arr;
-	return pointer;
-	free(pointer);
-}
-
-int main(void){
-
-int*p ; 
-int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_87,VName_87,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -2301,31 +1999,7 @@ int main (){
 
 free(pointer);
 }"
-Fischer,Jonas,jonas.fischer.2@campus.tu-berlin.de,Beendet,"22. Juni 2021  17:04","27. Juni 2021  23:59","5 Tage 6 Stunden","10,50","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","cealloc
-; talloc
-; PPRalloc
-; mealloc","Die Anzahl der Bytes die gebraucht werden","str == 0","int* pointer;","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int arr[10];
-	int* point;
-	return point;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_165,VName_165,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -2456,32 +2130,7 @@ void student_ausgeben(Student* p_stud){
     printf(""Anzahl Punkte: %d \n\n"", n);
     
 }"
-Otto,Klara,klara.otto@campus.tu-berlin.de,Beendet,"23. Juni 2021  11:17","27. Juni 2021  22:23","4 Tage 11 Stunden","12,75","str == 0","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","mealloc
-; PPRalloc
-; talloc
-; cealloc","int array[];","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int* tmp = (int*) malloc(10 * sizeof(int));
-	return tmp;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	free(p);
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_89,VName_89,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -2599,32 +2248,7 @@ int main()
 
     return (0);
 }",-
-Platena,Moritz,platena@campus.tu-berlin.de,Beendet,"23. Juni 2021  14:44","27. Juni 2021  14:51","4 Tage","11,55","talloc
-; PPRalloc
-; mealloc
-; cealloc","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int array[];","#include <stdio.h>
-#include <stdlib.h>
-
-int * allocArray() {
-    int* arr = calloc( sizeof(int) * 10, 1);
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-    free(p);
-
-}","#include <stdlib.h> // malloc-Familie
+Name_88,VName_88,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -2770,31 +2394,7 @@ int main(){
 
     return(0);
 }",-
-Roßmöller-Felz,"Mattis Musashi Martin",mattis.rossmoeller@campus.tu-berlin.de,Beendet,"23. Juni 2021  15:45","23. Juni 2021  18:34","2 Stunden 49 Minuten","6,75","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","cealloc
-; talloc
-; PPRalloc
-; mealloc","str == 0","Die Anzahl der Bytes die gebraucht werden","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int* pointer;","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int* arr;
-	arr= (int*) malloc(10*sizeof(int));
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_94,VName_94,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -2901,29 +2501,7 @@ int main(){
     
 
 }"
-Schwolow,Niklas,niklas.schwolow@campus.tu-berlin.de,Beendet,"23. Juni 2021  15:48","27. Juni 2021  23:59","4 Tage 8 Stunden","3,00","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","cealloc
-; PPRalloc
-; talloc
-; mealloc","sizeof(ketchup) = 32","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","int array[];","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int arr[10];
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_91,VName_91,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -3018,29 +2596,7 @@ void student_ausgeben(Student* p_stud){
 int main(){
 
 }"
-Jacoby,"Maximilian Erich",m.jacoby@campus.tu-berlin.de,Beendet,"23. Juni 2021  16:50","27. Juni 2021  23:59","4 Tage 7 Stunden","10,50",-,"Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll",-,"calloc
-; malloc
-; realloc",-,-,"#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int* arr;
-	arr = (int*) malloc(sizeof (int) * 10);
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_79,VName_79,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -3166,26 +2722,7 @@ int main(){
 		student_ausgeben(&stud[o]);
 	}
 }"
-Hansel,"Karsten Siegfried",hansel@campus.tu-berlin.de,Beendet,"23. Juni 2021  18:47","27. Juni 2021  23:59","4 Tage 5 Stunden","7,00",-,-,-,-,-,-,"#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int arr[10];
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_99,VName_99,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -3300,34 +2837,7 @@ int main()
         student_ausgeben(&st[i]);
     return 0;
 }"
-Bredow,"Ella Friederike",e.bredow@campus.tu-berlin.de,Beendet,"24. Juni 2021  20:40","27. Juni 2021  23:32","3 Tage 2 Stunden","14,00","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 33","talloc
-; mealloc
-; cealloc
-; PPRalloc","int* pointer;
-
-; int array[];","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int* p = (int*) malloc(10 * sizeof(int)) ;
-	return p;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-	free (p);
-}","#include <stdlib.h> // malloc-Familie
+Name_529,VName_529,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -3519,31 +3029,7 @@ int main(){
 		student_ausgeben(&p_stud[i]);
 		}
 }"
-Durak,Umut,umut.durak@campus.tu-berlin.de,Beendet,"25. Juni 2021  00:43","27. Juni 2021  21:51","2 Tage 21 Stunden","12,00","malloc
-; realloc; calloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen
-; Strukturen sind das gleiche wie Arrays","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","str == 0","int array[];
-; int* pointer;","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int *arr;
-	arr = malloc(10 * sizeof(int));
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_84,VName_84,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -3659,30 +3145,7 @@ int main() {
 			student_ausgeben(&arr[j]);
 		}
 }"
-Schwarz,"Jasko Tobias",jasko.t.schwarz@campus.tu-berlin.de,Beendet,"25. Juni 2021  10:34","27. Juni 2021  22:15","2 Tage 11 Stunden","7,85","Die Anzahl an Bits die gebraucht werden","str == 0","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Eine Struktur bündelt Variablen so, dass sie verteilt im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int array[];
-; int* pointer;","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-    int* arr;
-    arr = (int*) malloc(10 * sizeof(int));
-    if (arr == 0) printf(""error"");
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_97,VName_97,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -3801,31 +3264,7 @@ void main() {
     student_ausgeben(studenten[i]);
   }
 }"
-Gföhler,"Vincent Bruce",v.gfoehler@campus.tu-berlin.de,Beendet,"25. Juni 2021  14:35","27. Juni 2021  23:59","2 Tage 9 Stunden","6,50","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) == sizeof(ketchup.pommes)","mealloc
-; cealloc
-; PPRalloc
-; talloc","Die Anzahl der Bytes die gebraucht werden","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int array[];","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-    int* arr;
-    arr = (int*) malloc(10*sizeof(int));
-    return arr;
-    free(arr);
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_90,VName_90,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -3928,27 +3367,7 @@ int main(){
 
     return(0);
 }",-
-Scharnreitner,"Philipp Aurel",p.scharnreitner@campus.tu-berlin.de,Beendet,"25. Juni 2021  15:35","27. Juni 2021  18:56","2 Tage 3 Stunden","12,75","str == 0","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","talloc
-; cealloc
-; mealloc
-; PPRalloc","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int* pointer;","int* allocArray() {
-	int* arr = (int*) malloc(10 * sizeof(int));
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_100,VName_100,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -4065,33 +3484,7 @@ int main(void){
         student_ausgeben(&st[i]);
     }
 }"
-Schulz,Leon,leon.schulz@campus.tu-berlin.de,Beendet,"25. Juni 2021  17:20","27. Juni 2021  23:28","2 Tage 6 Stunden","9,25","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","Strukturen brauchen einen Rückgabewert
-
-; Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","talloc
-; mealloc
-; cealloc
-; PPRalloc","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Bytes die gebraucht werden","int* pointer;","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int* arr = (int*)malloc(sizeof(int) * 10);
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h>  // malloc-Familie
+Name_96,VName_96,"#include <stdlib.h>  // malloc-Familie
 
 #include <stdio.h>  //printf()
 
@@ -4376,31 +3769,7 @@ arrlist_free(&einkaufsliste);
 return(0);
 
 }",-
-Outhwaite,"Jared Louis",jared.l.outhwaite@campus.tu-berlin.de,Beendet,"25. Juni 2021  18:09","27. Juni 2021  23:59","2 Tage 5 Stunden","17,55","malloc
-; calloc
-; realloc","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","str == 0","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Die Anzahl der Bytes die gebraucht werden","int* pointer;","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int* arr = malloc(10 * sizeof(int));
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-	free(p);
-}","#include <stdlib.h> // malloc-Familie
+Name_92,VName_92,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -4579,34 +3948,7 @@ int main()
 		student_ausgeben(&studenten[i]);
 	}
 }"
-Ngu,"Siaw Tieng",s.ngu@campus.tu-berlin.de,Beendet,"26. Juni 2021  05:03","27. Juni 2021  23:57","1 Tag 18 Stunden","6,50","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen
-; Strukturen sind das gleiche wie Arrays","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","talloc
-; PPRalloc
-; cealloc
-; mealloc","str == 0","int* pointer;
-
-; int array[];","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-    unsigned int length = 10;
-    int* arr = (int*)malloc(length*sizeof(int));
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i < 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i < 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_95,VName_95,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -4723,30 +4065,7 @@ int main(){
 
     return(0);
 }",-
-Weber,"Michael Andreas",michael.a.weber@campus.tu-berlin.de,Beendet,"26. Juni 2021  15:20","27. Juni 2021  23:59","1 Tag 8 Stunden","1,50","sizeof(ketchup) = 32","Für Variablen, deren Speicherbedarf zur Übersetzungszeit fest steht","PPRalloc
-; cealloc
-; talloc
-; mealloc","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","int array[];","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int arr[10];
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int a;
-	int summe = 0;
-	p = (int*) malloc(a * sizeof(int));
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_86,VName_86,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -4822,27 +4141,7 @@ int main(){
 
     return(0);
 }",-
-Ruschke,Dennis,dennis.ruschke@campus.tu-berlin.de,Beendet,"27. Juni 2021  10:00","27. Juni 2021  23:59","13 Stunden 58 Minuten","5,13","sizeof(ketchup) = 32","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Bytes die gebraucht werden",PPRalloc,"str == 0","int* pointer;","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-    int length = 10;
-	int* arr = (int*) malloc (length * sizeof(int));
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_101,VName_101,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -4918,32 +4217,7 @@ int main(){
 
     return(0);
 }",-
-"Ibrahimkhil Nek",Armaan,a.ibrahimkhilnek@tu-berlin.de,Beendet,"27. Juni 2021  13:15","27. Juni 2021  16:32","3 Stunden 17 Minuten","5,63","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","str == 0","PPRalloc
-; mealloc
-; cealloc","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Bytes die gebraucht werden","int array[];","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int* arr = malloc(10*sizeof(int));
-	if (!arr){
-		return 0;
-	}
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_351,VName_351,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -5019,30 +4293,7 @@ int main(){
 
     return(0);
 }",-
-Hendel,"Philipp Caspar",philipp.c.hendel@campus.tu-berlin.de,Beendet,"27. Juni 2021  14:05","27. Juni 2021  23:07","9 Stunden 1 Minute","9,50","sizeof(ketchup) = 32","talloc
-; cealloc
-; PPRalloc
-; mealloc","str == 0","Die Anzahl der Bytes die gebraucht werden","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int* pointer;","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	int* arr;
-    arr = (int*) malloc(10*sizeof(int));
-	return arr;
-}
-
-int main(void){
-	int* p;
-	int summe = 0;
-	p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_98,VName_98,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 
@@ -5153,29 +4404,7 @@ int main(){
 
     return(0);
 }",-
-Schmidt,"Tom Alexander",tom.a.schmidt@campus.tu-berlin.de,Beendet,"27. Juni 2021  17:39","27. Juni 2021  23:59","6 Stunden 19 Minuten","9,00","str == 0","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Die Anzahl der Bytes die gebraucht werden","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int* pointer;
-
-; int array[];","#include <stdio.h>
-#include <stdlib.h>
-
-int* allocArray() {
-	(int *)malloc(sizeof(int)*10);
-	//return arr;
-}
-
-int main(void){
-	int* p = allocArray();//= (int *)malloc(sizeof(int)*10);
-	int summe = 0;
-	//p = allocArray();
-	for(int i = 0; i != 10; ++i) {
-		p[i] = i;
-	}
-	for(int i = 0; i != 10; ++i) {
-		summe += p[i];
-	}
-	printf(""Summe = %d\n"", summe);
-}","#include <stdlib.h> // malloc-Familie
+Name_7,VName_7,"#include <stdlib.h> // malloc-Familie
 #include <stdio.h>  // printf()
 #include <string.h> // strlen() strcpy()
 

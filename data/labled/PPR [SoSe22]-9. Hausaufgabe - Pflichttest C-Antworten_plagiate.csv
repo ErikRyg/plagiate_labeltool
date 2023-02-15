@@ -1,5 +1,5 @@
-,semester,ha,task,prog_lang,surname1,lastname1,code1,code2,label
-0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+Unnamed: 0,semester,ha,task,prog_lang,surname1,lastname1,code1,code2,label
+0,SoSe22,9,Antwort 9,C,VName_460,Name_460,"{  
   for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
       dest[i]=src[i];
   {
@@ -26,7 +26,7 @@
 }
 {  
       }",1
-0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+0,SoSe22,9,Antwort 9,C,VName_460,Name_460,"{  
   for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
       dest[i]=src[i];
   {
@@ -53,7 +53,7 @@
 }
 {  
       }",1
-0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+0,SoSe22,9,Antwort 9,C,VName_460,Name_460,"{  
   for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
       dest[i]=src[i];
   {
@@ -80,7 +80,7 @@
 }
 {  
       }",1
-0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+0,SoSe22,9,Antwort 9,C,VName_460,Name_460,"{  
   for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
       dest[i]=src[i];
   {
@@ -107,7 +107,7 @@
 }
 {  
       }",1
-0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+0,SoSe22,9,Antwort 9,C,VName_460,Name_460,"{  
   for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
       dest[i]=src[i];
   {
@@ -134,7 +134,7 @@
 }
 {  
       }",1
-0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+0,SoSe22,9,Antwort 9,C,VName_460,Name_460,"{  
   for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
       dest[i]=src[i];
   {
@@ -161,7 +161,7 @@
 }
 {  
       }",1
-0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+0,SoSe22,9,Antwort 9,C,VName_460,Name_460,"{  
   for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
       dest[i]=src[i];
   {
@@ -188,7 +188,7 @@
 }
 {  
       }",1
-0,SoSe22,9,Antwort 9,C,Fabian,Große-Wöhrmann,"{  
+0,SoSe22,9,Antwort 9,C,VName_460,Name_460,"{  
   for (int i = 0; (i<zahl)&&(dest[i]!=0)&&(src[i]!=0); i++)
       dest[i]=src[i];
   {
@@ -215,7 +215,7 @@
 }
 {  
       }",1
-16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+16,SoSe22,9,Antwort 9,C,VName_442,Name_442,"    int i = 0;
     while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
         i++;
         int i = 0;
@@ -254,7 +254,7 @@
 }
 {
                   }",1
-16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+16,SoSe22,9,Antwort 9,C,VName_442,Name_442,"    int i = 0;
     while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
         i++;
         int i = 0;
@@ -293,7 +293,7 @@
 }
 {
                   }",1
-16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+16,SoSe22,9,Antwort 9,C,VName_442,Name_442,"    int i = 0;
     while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
         i++;
         int i = 0;
@@ -332,7 +332,7 @@
 }
 {
                   }",1
-16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+16,SoSe22,9,Antwort 9,C,VName_442,Name_442,"    int i = 0;
     while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
         i++;
         int i = 0;
@@ -371,7 +371,7 @@
 }
 {
                   }",1
-16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+16,SoSe22,9,Antwort 9,C,VName_442,Name_442,"    int i = 0;
     while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
         i++;
         int i = 0;
@@ -410,7 +410,7 @@
 }
 {
                   }",1
-16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+16,SoSe22,9,Antwort 9,C,VName_442,Name_442,"    int i = 0;
     while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
         i++;
         int i = 0;
@@ -449,7 +449,7 @@
 }
 {
                   }",1
-16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+16,SoSe22,9,Antwort 9,C,VName_442,Name_442,"    int i = 0;
     while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
         i++;
         int i = 0;
@@ -488,7 +488,7 @@
 }
 {
                   }",1
-16,SoSe22,9,Antwort 9,C,Moritz Sebastian,Niethammer,"    int i = 0;
+16,SoSe22,9,Antwort 9,C,VName_442,Name_442,"    int i = 0;
     while ((i < zahl) && (dest[i] != '\0') && (src[i] != '\0'))        dest[i] = src[i];
         i++;
         int i = 0;
@@ -527,7 +527,7 @@
 }
 {
                   }",1
-31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+31,SoSe22,9,Antwort 9,C,VName_436,Name_436,"void ersetzen(char* dest, int zahl, char* src){  
     for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
         dest[i] = src[i];
     void umdrehen( char* str ){
@@ -560,7 +560,7 @@ int main( int argc, char* argv[] ){
 }
 int main( int ybgal, char* argv[] ){  
       }",1
-31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+31,SoSe22,9,Antwort 9,C,VName_436,Name_436,"void ersetzen(char* dest, int zahl, char* src){  
     for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
         dest[i] = src[i];
     void umdrehen( char* str ){
@@ -593,7 +593,7 @@ int main( int argc, char* argv[] ){
 }
 int main( int nhmjp, char* argv[] ){  
       }",1
-31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+31,SoSe22,9,Antwort 9,C,VName_436,Name_436,"void ersetzen(char* dest, int zahl, char* src){  
     for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
         dest[i] = src[i];
     void umdrehen( char* str ){
@@ -626,7 +626,7 @@ int main( int argc, char* argv[] ){
 }
 int main( int shvqd, char* argv[] ){  
       }",1
-31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+31,SoSe22,9,Antwort 9,C,VName_436,Name_436,"void ersetzen(char* dest, int zahl, char* src){  
     for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
         dest[i] = src[i];
     void umdrehen( char* str ){
@@ -659,7 +659,7 @@ int main( int argc, char* argv[] ){
 }
 int main( int rfhjj, char* argv[] ){  
       }",1
-31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+31,SoSe22,9,Antwort 9,C,VName_436,Name_436,"void ersetzen(char* dest, int zahl, char* src){  
     for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
         dest[i] = src[i];
     void umdrehen( char* str ){
@@ -692,7 +692,7 @@ int main( int argc, char* argv[] ){
 }
 int main( int szjuc, char* argv[] ){  
       }",1
-31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+31,SoSe22,9,Antwort 9,C,VName_436,Name_436,"void ersetzen(char* dest, int zahl, char* src){  
     for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
         dest[i] = src[i];
     void umdrehen( char* str ){
@@ -725,7 +725,7 @@ int main( int argc, char* argv[] ){
 }
 int main( int ckoqv, char* argv[] ){  
       }",1
-31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+31,SoSe22,9,Antwort 9,C,VName_436,Name_436,"void ersetzen(char* dest, int zahl, char* src){  
     for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
         dest[i] = src[i];
     void umdrehen( char* str ){
@@ -758,7 +758,7 @@ int main( int argc, char* argv[] ){
 }
 int main( int wbyfk, char* argv[] ){  
       }",1
-31,SoSe22,9,Antwort 9,C,Paul,Dannenberg,"void ersetzen(char* dest, int zahl, char* src){  
+31,SoSe22,9,Antwort 9,C,VName_436,Name_436,"void ersetzen(char* dest, int zahl, char* src){  
     for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
         dest[i] = src[i];
     void umdrehen( char* str ){
@@ -791,7 +791,7 @@ int main( int argc, char* argv[] ){
 }
 int main( int krece, char* argv[] ){  
       }",1
-45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+45,SoSe22,9,Antwort 9,C,VName_447,Name_447,"int getStringLength(char x[])     int i = 0;
     while(x[i] != NULL)         i++;
         return i;
     for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
@@ -826,7 +826,7 @@ int main( int krece, char* argv[] ){
 }
 {
                   }",1
-45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+45,SoSe22,9,Antwort 9,C,VName_447,Name_447,"int getStringLength(char x[])     int i = 0;
     while(x[i] != NULL)         i++;
         return i;
     for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
@@ -861,7 +861,7 @@ int main( int krece, char* argv[] ){
 }
 {
                   }",1
-45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+45,SoSe22,9,Antwort 9,C,VName_447,Name_447,"int getStringLength(char x[])     int i = 0;
     while(x[i] != NULL)         i++;
         return i;
     for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
@@ -896,7 +896,7 @@ int main( int krece, char* argv[] ){
 }
 {
                   }",1
-45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+45,SoSe22,9,Antwort 9,C,VName_447,Name_447,"int getStringLength(char x[])     int i = 0;
     while(x[i] != NULL)         i++;
         return i;
     for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
@@ -931,7 +931,7 @@ int main( int krece, char* argv[] ){
 }
 {
                   }",1
-45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+45,SoSe22,9,Antwort 9,C,VName_447,Name_447,"int getStringLength(char x[])     int i = 0;
     while(x[i] != NULL)         i++;
         return i;
     for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
@@ -966,7 +966,7 @@ int main( int krece, char* argv[] ){
 }
 {
                   }",1
-45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+45,SoSe22,9,Antwort 9,C,VName_447,Name_447,"int getStringLength(char x[])     int i = 0;
     while(x[i] != NULL)         i++;
         return i;
     for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
@@ -1001,7 +1001,7 @@ int main( int krece, char* argv[] ){
 }
 {
                   }",1
-45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+45,SoSe22,9,Antwort 9,C,VName_447,Name_447,"int getStringLength(char x[])     int i = 0;
     while(x[i] != NULL)         i++;
         return i;
     for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
@@ -1036,7 +1036,7 @@ int main( int krece, char* argv[] ){
 }
 {
                   }",1
-45,SoSe22,9,Antwort 9,C,Niklas,Muß,"int getStringLength(char x[])     int i = 0;
+45,SoSe22,9,Antwort 9,C,VName_447,Name_447,"int getStringLength(char x[])     int i = 0;
     while(x[i] != NULL)         i++;
         return i;
     for (int i = 0; i < zahl && i < getStringLength(src) && i < 10; ++i) {
@@ -1071,7 +1071,7 @@ int main( int krece, char* argv[] ){
 }
 {
                   }",1
-70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+70,SoSe22,9,Antwort 9,C,VName_433,Name_433,"{  
   for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
   {
   int n=0;
@@ -1100,7 +1100,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+70,SoSe22,9,Antwort 9,C,VName_433,Name_433,"{  
   for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
   {
   int n=0;
@@ -1129,7 +1129,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+70,SoSe22,9,Antwort 9,C,VName_433,Name_433,"{  
   for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
   {
   int n=0;
@@ -1158,7 +1158,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+70,SoSe22,9,Antwort 9,C,VName_433,Name_433,"{  
   for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
   {
   int n=0;
@@ -1187,7 +1187,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+70,SoSe22,9,Antwort 9,C,VName_433,Name_433,"{  
   for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
   {
   int n=0;
@@ -1216,7 +1216,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+70,SoSe22,9,Antwort 9,C,VName_433,Name_433,"{  
   for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
   {
   int n=0;
@@ -1245,7 +1245,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+70,SoSe22,9,Antwort 9,C,VName_433,Name_433,"{  
   for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
   {
   int n=0;
@@ -1274,7 +1274,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-70,SoSe22,9,Antwort 9,C,Tom Frederik,Braune,"{  
+70,SoSe22,9,Antwort 9,C,VName_433,Name_433,"{  
   for(int i=0; i<zahl && *(dest+i) != '\0'  ; i++)  *(dest+i) = *(src +i);
   {
   int n=0;
@@ -1303,7 +1303,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+81,SoSe22,9,Antwort 9,C,VName_435,Name_435,"{  
     for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
         //printf(""%c"", dest[i]);
         dest[i] = src[i];
@@ -1350,7 +1350,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+81,SoSe22,9,Antwort 9,C,VName_435,Name_435,"{  
     for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
         //printf(""%c"", dest[i]);
         dest[i] = src[i];
@@ -1397,7 +1397,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+81,SoSe22,9,Antwort 9,C,VName_435,Name_435,"{  
     for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
         //printf(""%c"", dest[i]);
         dest[i] = src[i];
@@ -1444,7 +1444,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+81,SoSe22,9,Antwort 9,C,VName_435,Name_435,"{  
     for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
         //printf(""%c"", dest[i]);
         dest[i] = src[i];
@@ -1491,7 +1491,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+81,SoSe22,9,Antwort 9,C,VName_435,Name_435,"{  
     for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
         //printf(""%c"", dest[i]);
         dest[i] = src[i];
@@ -1538,7 +1538,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+81,SoSe22,9,Antwort 9,C,VName_435,Name_435,"{  
     for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
         //printf(""%c"", dest[i]);
         dest[i] = src[i];
@@ -1585,7 +1585,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+81,SoSe22,9,Antwort 9,C,VName_435,Name_435,"{  
     for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
         //printf(""%c"", dest[i]);
         dest[i] = src[i];
@@ -1632,7 +1632,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-81,SoSe22,9,Antwort 9,C,Jakob Pius,Bücking,"{  
+81,SoSe22,9,Antwort 9,C,VName_435,Name_435,"{  
     for (int i = 0;(i<zahl && dest[i] != '\0'  ) && src[i] != '\0' ; i++){
         //printf(""%c"", dest[i]);
         dest[i] = src[i];
@@ -1679,7 +1679,7 @@ int main( int krece, char* argv[] ){
 }
 {  
       }",1
-91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+91,SoSe22,9,Antwort 9,C,VName_450,Name_450,"//void ersetzen(char* dest, int zahl, char* src)
 void ersetzen(char* dest, int zahl, char* src){  
 	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
 		dest[i] = src[i];
@@ -1718,7 +1718,7 @@ void xqwwt( char* str ){
 
 int main( int xbhgv, char* argv[] ){  
       }",1
-91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+91,SoSe22,9,Antwort 9,C,VName_450,Name_450,"//void ersetzen(char* dest, int zahl, char* src)
 void ersetzen(char* dest, int zahl, char* src){  
 	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
 		dest[i] = src[i];
@@ -1757,7 +1757,7 @@ void yssry( char* str ){
 
 int main( int mrjvf, char* argv[] ){  
       }",1
-91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+91,SoSe22,9,Antwort 9,C,VName_450,Name_450,"//void ersetzen(char* dest, int zahl, char* src)
 void ersetzen(char* dest, int zahl, char* src){  
 	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
 		dest[i] = src[i];
@@ -1796,7 +1796,7 @@ void llxsd( char* str ){
 
 int main( int gvygt, char* argv[] ){  
       }",1
-91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+91,SoSe22,9,Antwort 9,C,VName_450,Name_450,"//void ersetzen(char* dest, int zahl, char* src)
 void ersetzen(char* dest, int zahl, char* src){  
 	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
 		dest[i] = src[i];
@@ -1835,7 +1835,7 @@ void cmzdu( char* str ){
 
 int main( int xiiar, char* argv[] ){  
       }",1
-91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+91,SoSe22,9,Antwort 9,C,VName_450,Name_450,"//void ersetzen(char* dest, int zahl, char* src)
 void ersetzen(char* dest, int zahl, char* src){  
 	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
 		dest[i] = src[i];
@@ -1874,7 +1874,7 @@ void drhmj( char* str ){
 
 int main( int nztrs, char* argv[] ){  
       }",1
-91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+91,SoSe22,9,Antwort 9,C,VName_450,Name_450,"//void ersetzen(char* dest, int zahl, char* src)
 void ersetzen(char* dest, int zahl, char* src){  
 	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
 		dest[i] = src[i];
@@ -1913,7 +1913,7 @@ void ejnil( char* str ){
 
 int main( int sgwmt, char* argv[] ){  
       }",1
-91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+91,SoSe22,9,Antwort 9,C,VName_450,Name_450,"//void ersetzen(char* dest, int zahl, char* src)
 void ersetzen(char* dest, int zahl, char* src){  
 	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
 		dest[i] = src[i];
@@ -1952,7 +1952,7 @@ void paxhc( char* str ){
 
 int main( int fdsdg, char* argv[] ){  
       }",1
-91,SoSe22,9,Antwort 9,C,Parham,Tavakoli Anaraki,"//void ersetzen(char* dest, int zahl, char* src)
+91,SoSe22,9,Antwort 9,C,VName_450,Name_450,"//void ersetzen(char* dest, int zahl, char* src)
 void ersetzen(char* dest, int zahl, char* src){  
 	for (int i = 0; i <=zahl && dest[i] != '\0'; i++){
 		dest[i] = src[i];
@@ -1991,7 +1991,7 @@ void otfap( char* str ){
 
 int main( int cblni, char* argv[] ){  
       }",1
-100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+100,SoSe22,9,Antwort 9,C,VName_443,Name_443,"{  
 	if(zahl == 0) return; 
 	int länge;
 	for(int i = 0; dest[i] != '\0'; i++) länge++;
@@ -2026,7 +2026,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+100,SoSe22,9,Antwort 9,C,VName_443,Name_443,"{  
 	if(zahl == 0) return; 
 	int länge;
 	for(int i = 0; dest[i] != '\0'; i++) länge++;
@@ -2061,7 +2061,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+100,SoSe22,9,Antwort 9,C,VName_443,Name_443,"{  
 	if(zahl == 0) return; 
 	int länge;
 	for(int i = 0; dest[i] != '\0'; i++) länge++;
@@ -2096,7 +2096,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+100,SoSe22,9,Antwort 9,C,VName_443,Name_443,"{  
 	if(zahl == 0) return; 
 	int länge;
 	for(int i = 0; dest[i] != '\0'; i++) länge++;
@@ -2131,7 +2131,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+100,SoSe22,9,Antwort 9,C,VName_443,Name_443,"{  
 	if(zahl == 0) return; 
 	int länge;
 	for(int i = 0; dest[i] != '\0'; i++) länge++;
@@ -2166,7 +2166,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+100,SoSe22,9,Antwort 9,C,VName_443,Name_443,"{  
 	if(zahl == 0) return; 
 	int länge;
 	for(int i = 0; dest[i] != '\0'; i++) länge++;
@@ -2201,7 +2201,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+100,SoSe22,9,Antwort 9,C,VName_443,Name_443,"{  
 	if(zahl == 0) return; 
 	int länge;
 	for(int i = 0; dest[i] != '\0'; i++) länge++;
@@ -2236,7 +2236,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-100,SoSe22,9,Antwort 9,C,Rosa,Hagenberg,"{  
+100,SoSe22,9,Antwort 9,C,VName_443,Name_443,"{  
 	if(zahl == 0) return; 
 	int länge;
 	for(int i = 0; dest[i] != '\0'; i++) länge++;
@@ -2271,7 +2271,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+108,SoSe22,9,Antwort 9,C,VName_437,Name_437,"{  
     for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
             dest[i] = src[i];
             {
@@ -2302,7 +2302,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+108,SoSe22,9,Antwort 9,C,VName_437,Name_437,"{  
     for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
             dest[i] = src[i];
             {
@@ -2333,7 +2333,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+108,SoSe22,9,Antwort 9,C,VName_437,Name_437,"{  
     for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
             dest[i] = src[i];
             {
@@ -2364,7 +2364,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+108,SoSe22,9,Antwort 9,C,VName_437,Name_437,"{  
     for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
             dest[i] = src[i];
             {
@@ -2395,7 +2395,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+108,SoSe22,9,Antwort 9,C,VName_437,Name_437,"{  
     for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
             dest[i] = src[i];
             {
@@ -2426,7 +2426,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+108,SoSe22,9,Antwort 9,C,VName_437,Name_437,"{  
     for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
             dest[i] = src[i];
             {
@@ -2457,7 +2457,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+108,SoSe22,9,Antwort 9,C,VName_437,Name_437,"{  
     for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
             dest[i] = src[i];
             {
@@ -2488,7 +2488,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-108,SoSe22,9,Antwort 9,C,Shaurya,Sharma,"{  
+108,SoSe22,9,Antwort 9,C,VName_437,Name_437,"{  
     for(int i= 0; dest[i] != 0; i++)        if(i < zahl && src[i] != 0){
             dest[i] = src[i];
             {
@@ -2519,127 +2519,127 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+115,SoSe22,9,Antwort 9,C,VName_448,Name_448,"{  
 {  
       }","{  
 {  
       }",1
-115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+115,SoSe22,9,Antwort 9,C,VName_448,Name_448,"{  
 {  
       }","{  
 {  
       }",1
-115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+115,SoSe22,9,Antwort 9,C,VName_448,Name_448,"{  
 {  
       }","{  
 {  
       }",1
-115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+115,SoSe22,9,Antwort 9,C,VName_448,Name_448,"{  
 {  
       }","{  
 {  
       }",1
-115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+115,SoSe22,9,Antwort 9,C,VName_448,Name_448,"{  
 {  
       }","{  
 {  
       }",1
-115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+115,SoSe22,9,Antwort 9,C,VName_448,Name_448,"{  
 {  
       }","{  
 {  
       }",1
-115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+115,SoSe22,9,Antwort 9,C,VName_448,Name_448,"{  
 {  
       }","{  
 {  
       }",1
-115,SoSe22,9,Antwort 9,C,Gregor,Lehmann,"{  
+115,SoSe22,9,Antwort 9,C,VName_448,Name_448,"{  
 {  
       }","{  
 {  
       }",1
-118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+118,SoSe22,9,Antwort 9,C,VName_444,Name_444,"{  
 {  
       }","{  
 {  
       }",1
-118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+118,SoSe22,9,Antwort 9,C,VName_444,Name_444,"{  
 {  
       }","{  
 {  
       }",1
-118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+118,SoSe22,9,Antwort 9,C,VName_444,Name_444,"{  
 {  
       }","{  
 {  
       }",1
-118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+118,SoSe22,9,Antwort 9,C,VName_444,Name_444,"{  
 {  
       }","{  
 {  
       }",1
-118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+118,SoSe22,9,Antwort 9,C,VName_444,Name_444,"{  
 {  
       }","{  
 {  
       }",1
-118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+118,SoSe22,9,Antwort 9,C,VName_444,Name_444,"{  
 {  
       }","{  
 {  
       }",1
-118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+118,SoSe22,9,Antwort 9,C,VName_444,Name_444,"{  
 {  
       }","{  
 {  
       }",1
-118,SoSe22,9,Antwort 9,C,Tobias,Hengst,"{  
+118,SoSe22,9,Antwort 9,C,VName_444,Name_444,"{  
 {  
       }","{  
 {  
       }",1
-120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+120,SoSe22,9,Antwort 9,C,VName_463,Name_463,"{  
 {  
       }","{  
 {  
       }",1
-120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+120,SoSe22,9,Antwort 9,C,VName_463,Name_463,"{  
 {  
       }","{  
 {  
       }",1
-120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+120,SoSe22,9,Antwort 9,C,VName_463,Name_463,"{  
 {  
       }","{  
 {  
       }",1
-120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+120,SoSe22,9,Antwort 9,C,VName_463,Name_463,"{  
 {  
       }","{  
 {  
       }",1
-120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+120,SoSe22,9,Antwort 9,C,VName_463,Name_463,"{  
 {  
       }","{  
 {  
       }",1
-120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+120,SoSe22,9,Antwort 9,C,VName_463,Name_463,"{  
 {  
       }","{  
 {  
       }",1
-120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+120,SoSe22,9,Antwort 9,C,VName_463,Name_463,"{  
 {  
       }","{  
 {  
       }",1
-120,SoSe22,9,Antwort 9,C,Emilie,Hilger,"{  
+120,SoSe22,9,Antwort 9,C,VName_463,Name_463,"{  
 {  
       }","{  
 {  
       }",1
-121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+121,SoSe22,9,Antwort 9,C,VName_473,Name_473,"{  
   int size_source = 0;
   for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
      int size_dest = 0;
@@ -2696,7 +2696,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+121,SoSe22,9,Antwort 9,C,VName_473,Name_473,"{  
   int size_source = 0;
   for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
      int size_dest = 0;
@@ -2753,7 +2753,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+121,SoSe22,9,Antwort 9,C,VName_473,Name_473,"{  
   int size_source = 0;
   for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
      int size_dest = 0;
@@ -2810,7 +2810,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+121,SoSe22,9,Antwort 9,C,VName_473,Name_473,"{  
   int size_source = 0;
   for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
      int size_dest = 0;
@@ -2867,7 +2867,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+121,SoSe22,9,Antwort 9,C,VName_473,Name_473,"{  
   int size_source = 0;
   for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
      int size_dest = 0;
@@ -2924,7 +2924,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+121,SoSe22,9,Antwort 9,C,VName_473,Name_473,"{  
   int size_source = 0;
   for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
      int size_dest = 0;
@@ -2981,7 +2981,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+121,SoSe22,9,Antwort 9,C,VName_473,Name_473,"{  
   int size_source = 0;
   for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
      int size_dest = 0;
@@ -3038,7 +3038,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-121,SoSe22,9,Antwort 9,C,Ibraim,Ibraimi,"{  
+121,SoSe22,9,Antwort 9,C,VName_473,Name_473,"{  
   int size_source = 0;
   for(int i = 0; src[i] != '\0'; i++)   size_source = size_source + 1;
      int size_dest = 0;
@@ -3095,7 +3095,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+124,SoSe22,9,Antwort 9,C,VName_474,Name_474,"{  
 	for(int i = 0; i < zahl; i++)
 		if(*dest != 0 && *src != 0)
 		{
@@ -3176,7 +3176,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+124,SoSe22,9,Antwort 9,C,VName_474,Name_474,"{  
 	for(int i = 0; i < zahl; i++)
 		if(*dest != 0 && *src != 0)
 		{
@@ -3257,7 +3257,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+124,SoSe22,9,Antwort 9,C,VName_474,Name_474,"{  
 	for(int i = 0; i < zahl; i++)
 		if(*dest != 0 && *src != 0)
 		{
@@ -3338,7 +3338,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+124,SoSe22,9,Antwort 9,C,VName_474,Name_474,"{  
 	for(int i = 0; i < zahl; i++)
 		if(*dest != 0 && *src != 0)
 		{
@@ -3419,7 +3419,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+124,SoSe22,9,Antwort 9,C,VName_474,Name_474,"{  
 	for(int i = 0; i < zahl; i++)
 		if(*dest != 0 && *src != 0)
 		{
@@ -3500,7 +3500,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+124,SoSe22,9,Antwort 9,C,VName_474,Name_474,"{  
 	for(int i = 0; i < zahl; i++)
 		if(*dest != 0 && *src != 0)
 		{
@@ -3581,7 +3581,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+124,SoSe22,9,Antwort 9,C,VName_474,Name_474,"{  
 	for(int i = 0; i < zahl; i++)
 		if(*dest != 0 && *src != 0)
 		{
@@ -3662,7 +3662,7 @@ int main( int cblni, char* argv[] ){
 }
 {  
       }",1
-124,SoSe22,9,Antwort 9,C,Silas Johannes,Pegler,"{  
+124,SoSe22,9,Antwort 9,C,VName_474,Name_474,"{  
 	for(int i = 0; i < zahl; i++)
 		if(*dest != 0 && *src != 0)
 		{

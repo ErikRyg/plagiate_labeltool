@@ -1,12 +1,8 @@
 # from cProfile import label
 import pandas as pd
-import sys
 import re
-import random
 from bs4 import BeautifulSoup
-import argparse
 import difflib
-import matplotlib.pyplot as plt
 
 def create_labled_table(df, semester, ha, tasks, prog_language):
     df_labled = pd.DataFrame(columns=['semester', 'ha', 'task', 'prog_lang',
@@ -47,7 +43,6 @@ def remove_given_code(code, preload_file_path):
     code = '\n'.join([s for s in code.splitlines() if s.strip() != ''])
     if answerpreload == 'Keine Vorgabedatei im Repo gefunden':
         return code
-    # print(answerpreload)
     answerpreload = answerpreload.replace('\t', '').replace('\r', '')
     answerpreload = '\n'.join([s for s in answerpreload.splitlines() if s.strip() != ''])
     for ap_tmp in answerpreload.splitlines():
@@ -57,7 +52,6 @@ def remove_given_code(code, preload_file_path):
         ap_tmp = re.sub(
             r"\\{\\{\\\s*\S+\s*\\}\\}", r"\\S*", ap_tmp)
         for code_tmp in code.splitlines():
-            # print((re.match(ap_tmp, code_tmp.replace('\t', '').replace('\r', ''))!=None, ap_tmp, code_tmp))
             if re.match(ap_tmp, code_tmp.replace('\t', '').replace('\r', '')):
                 code = code.replace(code_tmp+'\n', '', 1)
                 break
@@ -78,7 +72,6 @@ def add_valid_code_columns(df, semester, ha, tasks, prog_language):
             r"\\{\\{\\\s*\S+\s*\\}\\}", r"\\S*", answerpreload)
         result = 0
         df[f"{task} empty"] = 0
-        # TODO wie vergleicht man leicht unterschiedliche texte auf Gleichheit miteinander??? -> bisher nur direkte gleichheit
         for j, column in enumerate(df[task]):
             if type(column) == float:
                 df.loc[j, f"{task} empty"] = 1

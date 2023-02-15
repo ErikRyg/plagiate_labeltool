@@ -1,6 +1,5 @@
-﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/15,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9","Antwort 10","Antwort 11"
-Roßmöller-Felz,"Mattis Musashi Martin",mattis.rossmoeller@campus.tu-berlin.de,Beendet,"21. Mai 2021  14:09","29. Mai 2021  12:19","7 Tage 22 Stunden","12,92",Bonjour,"a = 6 und b = 6","x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
-Counter gestoppt bei 0.","x == 1 und y == 0",!3,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8(15); Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16(13); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18(16); Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+Nachname,Vorname,Antwort 8,Antwort 9,Antwort 10,Antwort 11
+Name_94,VName_94,"#include <stdio.h>
 
 void menue()
 {
@@ -54,19 +53,7 @@ printf(""Hello Loop!\n"");
 ++i;
 }
 }"
-Scharnreitner,"Philipp Aurel",p.scharnreitner@campus.tu-berlin.de,Beendet,"21. Mai 2021  14:41","29. Mai 2021  12:00","7 Tage 21 Stunden","14,50","unendlich oft","x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2",1,"!(x < y)","switch (a,b) {
-        case >=0, >=0:
-               printf(""a und b sind positiv!\n"");
-               break;
-        case <=0, <=0:
-               printf(""a und b sind negativ!\n"");
-               break;
-        case >0, <0: 
-               printf(""a ist positiv und b ist negativ!\n"");
-               break;
-        case <0, >0: 
-               printf(""a ist negativ und b ist positiv!\n"");
-}",0,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_100,VName_100,"#include <stdio.h>
 
 void menue()
 {
@@ -128,12 +115,7 @@ int main(){
         k--;
     }
 }"
-Wang,"Yang Felix",yang.f.wang@campus.tu-berlin.de,Beendet,"21. Mai 2021  16:04","28. Mai 2021  19:28","7 Tage 3 Stunden","15,00","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
-Counter gestoppt bei 0.","unendlich oft","a = 6 und b = 6",15,"INT i = 1; 
-WHILE (i){
-    printf(""%d "", i);
-    i = (i+1) % 7;
-}","x == 0 und y == 1","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_73,VName_73,"#include <stdio.h>
 
 void menue()
 {
@@ -202,19 +184,7 @@ int main() {
 	}
 	return 0;
 }"
-Miskovic,Matea,matea.miskovic@tu-berlin.de,Beendet,"22. Mai 2021  11:51","26. Mai 2021  16:38","4 Tage 4 Stunden","14,50","1 mal",15,"a = 6 und b = 6","unendlich oft","switch (a,b) {
-        case >=0, >=0:
-               printf(""a und b sind positiv!\n"");
-               break;
-        case <=0, <=0:
-               printf(""a und b sind negativ!\n"");
-               break;
-        case >0, <0: 
-               printf(""a ist positiv und b ist negativ!\n"");
-               break;
-        case <0, >0: 
-               printf(""a ist negativ und b ist positiv!\n"");
-}",!3,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_78,VName_78,"#include <stdio.h>
 
 void menue()
 {
@@ -281,12 +251,7 @@ int main(){
     printf( ""Hello Loop!\n"");
     }
 }"
-Horneburg,"Max Richard",m.horneburg@campus.tu-berlin.de,Beendet,"22. Mai 2021  15:36","22. Mai 2021  17:02","1 Stunde 25 Minuten","14,31","a = 6 und b = 6","1... 2... 3... 4... 5... 6... 7... 8... 9... 10...
-Counter gestoppt bei 100.","1 mal","!(x < y)",!3,"INT i = 1; 
-WHILE (i){
-    printf(""%d "", i);
-    i = (i+1) % 7;
-}","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+Name_80,VName_80,"#include <stdio.h>
 
 void menue()
 {
@@ -345,8 +310,7 @@ int main() {
 	}
 	return 0;
 }"
-Jacoby,"Maximilian Erich",m.jacoby@campus.tu-berlin.de,Beendet,"22. Mai 2021  18:55","29. Mai 2021  02:05","6 Tage 7 Stunden","15,00","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
-Counter gestoppt bei 0.","unendlich oft","!(x < y)","x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","x == 0 und y == 1",!3,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_79,VName_79,"#include <stdio.h>
 
 void menue()
 {
@@ -427,12 +391,7 @@ int main()
 	for_schleife();
 	while_schleife();
 }"
-Bauszus,"Florian Alexander",bauszus@campus.tu-berlin.de,Beendet,"23. Mai 2021  12:58","28. Mai 2021  20:41","5 Tage 7 Stunden","13,82",Bonjour,"10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
-Counter gestoppt bei 0.",0,"!(x < y)",!3,"INT i = 1; 
-WHILE (i){
-    printf(""%d "", i);
-    i = (i+1) % 7;
-}","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 15; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 16; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 18; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 19; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+Name_82,VName_82,"#include <stdio.h>
 
 void menue()
 {
@@ -499,8 +458,7 @@ int main(){
         i++;
     }
 }"
-Alfakir,Mohamad,alfakir.1@campus.tu-berlin.de,Beendet,"23. Mai 2021  13:55","30. Mai 2021  04:40","6 Tage 14 Stunden","12,76","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
-Counter gestoppt bei 1.",0,"1 mal","unendlich oft",0,"x == 0 und y == 1","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 16; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 17; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 18; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 19; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 20; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 14; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 15; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 16; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 17; Teil 70: ; Teil 71: ; Teil 72: %","void menue()
+Name_74,VName_74,"void menue()
 {
     printf(""Bitte auswaehlen...\n""
            ""\tPPR ist [t]oll\n""
@@ -575,8 +533,7 @@ int main(){
              i++ ;
         }
 }"
-Alexe,"Jeremias Harry",jeremias.h.alexe@campus.tu-berlin.de,Beendet,"23. Mai 2021  18:22","27. Mai 2021  08:17","3 Tage 13 Stunden","15,00",1,"unendlich oft","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
-Counter gestoppt bei 0.","a = 6 und b = 6","x == 0 und y == 1",0,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_83,VName_83,"#include <stdio.h>
 
 void menue()
 {
@@ -645,10 +602,7 @@ int p = 0;
  p++;
 }  
 }"
-Schwarz,"Jasko Tobias",jasko.t.schwarz@campus.tu-berlin.de,Beendet,"23. Mai 2021  20:00","29. Mai 2021  22:10","6 Tage 2 Stunden","14,37","!(x < y)",Bonjour,"x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","a = 6 und b = 6","INT i = 0; 
-DO {
-    printf(""%d "", i);
-} WHILE (i = (i+1) % 7);",0,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: &; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: 3; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: -","#include <stdio.h>
+Name_97,VName_97,"#include <stdio.h>
 
 void menue()
 {
@@ -708,11 +662,7 @@ int main(){
        round++;
     }
 }"
-Platena,Moritz,platena@campus.tu-berlin.de,Beendet,"24. Mai 2021  15:29","24. Mai 2021  17:49","2 Stunden 19 Minuten","14,90",15,"a = 6 und b = 6","unendlich oft","!(x < y)","INT i = 1; 
-WHILE (i){
-    printf(""%d "", i);
-    i = (i+1) % 7;
-}","x == 0 und y == 1","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_88,VName_88,"#include <stdio.h>
 
 void menue()
 {
@@ -765,11 +715,7 @@ int main(){
         j++;
     }
 }"
-Schulz,Leon,leon.schulz@campus.tu-berlin.de,Beendet,"24. Mai 2021  16:22","30. Mai 2021  10:59","5 Tage 18 Stunden","13,80","!(x < y)","unendlich oft",0,Bonjour,1,"INT i = 1; 
-WHILE (i){
-    printf(""%d "", i);
-    i = (i+1) % 7;
-}","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: NUL; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_96,VName_96,"#include <stdio.h>
 
 
 
@@ -858,12 +804,7 @@ while(j <= 10)
 	j++;
 	}
 }"
-Gillich,"Franziska Anna-Lena",f.gillich@campus.tu-berlin.de,Beendet,"24. Mai 2021  18:15","29. Mai 2021  12:00","4 Tage 17 Stunden","15,00","a = 6 und b = 6",1,"unendlich oft","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
-Counter gestoppt bei 0.",!3,"INT i = 1; 
-WHILE (i){
-    printf(""%d "", i);
-    i = (i+1) % 7;
-}","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_93,VName_93,"#include <stdio.h>
 
 void menue()
 {
@@ -915,8 +856,7 @@ int main(){
         i++;
     }
 }"
-Aksoy,Vedia,vedia.aksoy@campus.tu-berlin.de,Beendet,"25. Mai 2021  00:44","30. Mai 2021  23:31","5 Tage 22 Stunden","12,62","x <= y","unendlich oft",9,"10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
-Counter gestoppt bei 0.",!3,0,"Teil 1: 3; Teil 2: 9; Teil 3: 1; Teil 4: -; Teil 5: 4; Teil 6: %; Teil 7: %; Teil 8: 2; Teil 9: 5; Teil 10: %; Teil 11: %; Teil 12: -; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: 2; Teil 17: 7; Teil 18: %; Teil 19: %; Teil 20: -; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: 3; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 14; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 12; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 11; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 10; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 16; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 17; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+Name_75,VName_75,"#include <stdio.h>
 
 void menue()
 {
@@ -983,8 +923,7 @@ int main(){
     
     
 }"
-Schwolow,Niklas,niklas.schwolow@campus.tu-berlin.de,Beendet,"26. Mai 2021  15:12","27. Mai 2021  17:08","1 Tag 1 Stunde","13,30",0,"10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
-Counter gestoppt bei 0.","1 mal",0,!3,"x == 1 und y == 1","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 14; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_91,VName_91,"#include <stdio.h>
 
 void menue()
 {
@@ -1054,14 +993,7 @@ while( z < 10){
     z += 1;
     }
 }"
-Outhwaite,"Jared Louis",jared.l.outhwaite@campus.tu-berlin.de,Beendet,"26. Mai 2021  22:15","30. Mai 2021  23:59","4 Tage 1 Stunde","13,60","a = 6 und b = 6",0,"1 mal","unendlich oft","if (a >= 0 && b >= 0)
-        printf(""a und b sind positiv!\n"");
-if (a <= 0 && b <= 0 && a+b != 0)
-        printf(""a und b sind negativ!\n"");
-if (a > 0 && b < 0)
-        printf(""a ist positiv und b ist negativ!\n"");
-if (a < 0 && b > 0)
-        printf(""a ist negativ und b ist positiv!\n"");","(5 && 4)","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: 2; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 17; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 18; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_92,VName_92,"#include <stdio.h>
 
 void menue()
 {   
@@ -1122,7 +1054,7 @@ int main(){
    printf(""Hello Loop!\n"");
    u++;}
    }"
-"Salas Lara","Luis Valentin",l.salaslara@tu-berlin.de,Beendet,"27. Mai 2021  10:56","28. Mai 2021  12:44","1 Tag 1 Stunde","15,00","!(x < y)","unendlich oft",15,"a = 6 und b = 6","x == 0 und y == 1",0,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_77,VName_77,"#include <stdio.h>
 
 void menue()
 {
@@ -1189,12 +1121,7 @@ while(i<11){
 	i++;
 }
 }"
-Durak,Umut,umut.durak@campus.tu-berlin.de,Beendet,"27. Mai 2021  22:35","30. Mai 2021  15:38","2 Tage 17 Stunden","14,80",Bonjour,"!(x < y)",1,"10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
-Counter gestoppt bei 0.","INT i = 1; 
-WHILE (i){
-    printf(""%d "", i);
-    i = (i+1) % 7;
-}",0,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: -; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 15; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_84,VName_84,"#include <stdio.h>
 
 void menue()
 {
@@ -1265,14 +1192,7 @@ printf(""Hello Loop!\n"");
 a++;
 }
 }"
-Ngu,"Siaw Tieng",s.ngu@campus.tu-berlin.de,Beendet,"28. Mai 2021  14:10","30. Mai 2021  20:23","2 Tage 6 Stunden","14,61","unendlich oft",Bonjour,15,"a = 6 und b = 6","if (a >= 0 && b >= 0)
-        printf(""a und b sind positiv!\n"");
-if (a <= 0 && b <= 0 && a+b != 0)
-        printf(""a und b sind negativ!\n"");
-if (a > 0 && b < 0)
-        printf(""a ist positiv und b ist negativ!\n"");
-if (a < 0 && b > 0)
-        printf(""a ist negativ und b ist positiv!\n"");",!3,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 15; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+Name_95,VName_95,"#include <stdio.h>
 
 void menue()
 {
@@ -1338,11 +1258,7 @@ int main(){
         j++;
     }
 }"
-Franke,Alexander,alexander.franke@campus.tu-berlin.de,Beendet,"28. Mai 2021  15:03","30. Mai 2021  23:55","2 Tage 8 Stunden","11,60","1 mal","a = 6 und b = 6","x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","!(x < y)","(5 && 4)","INT i = 0; 
-WHILE (i){
-    i = (i+1) % 7;
-    printf(""%d "", i);
-}","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8(15); Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16(13); Teil 58: %; Teil 59: %; Teil 60: 4; Teil 61: 18(16); Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: -","#include <stdio.h>
+Name_76,VName_76,"#include <stdio.h>
 void menue()
 {
 printf(""Bitte auswaehlen...\n""
@@ -1430,7 +1346,7 @@ b+=1;
     return 0
     
 }"
-Eckardt,"Jan Hartmut",jan.h.eckardt@campus.tu-berlin.de,Beendet,"28. Mai 2021  17:40","30. Mai 2021  19:25","2 Tage 1 Stunde","12,00",-,-,-,-,-,-,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_81,VName_81,"#include <stdio.h>
 
 void menue()
 {
@@ -1481,8 +1397,7 @@ printf(""Hello Loop!\n"");}
 while(i<11){
 printf(""Hello Loop!\n"");
 i++;}}"
-Hendel,"Philipp Caspar",philipp.c.hendel@campus.tu-berlin.de,Beendet,"28. Mai 2021  21:47","28. Mai 2021  23:00","1 Stunde 12 Minuten","14,71",15,Bonjour,"x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
-Counter gestoppt bei 0.",0,!3,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 17; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 18; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 19; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_98,VName_98,"#include <stdio.h>
 
 void menue() {
     printf(""Bitte auswaehlen...\n""
@@ -1553,15 +1468,7 @@ int main(){
         i++;
     }
 }"
-Gerhardt,"Fynn Niklas",f.gerhardt@tu-berlin.de,Beendet,"29. Mai 2021  00:27","29. Mai 2021  01:26","58 Minuten 15 Sekunden","15,00","!(x < y)",15,"x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
-Counter gestoppt bei 0.",0,"if (a >= 0 && b >= 0)
-        printf(""a und b sind positiv!\n"");
-if (a <= 0 && b <= 0 && a+b != 0)
-        printf(""a und b sind negativ!\n"");
-if (a > 0 && b < 0)
-        printf(""a ist positiv und b ist negativ!\n"");
-if (a < 0 && b > 0)
-        printf(""a ist negativ und b ist positiv!\n"");","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_85,VName_85,"#include <stdio.h>
 
 void menue()
 {
@@ -1612,7 +1519,7 @@ int main(){
 		++j;
 	}
 }"
-Hansel,"Karsten Siegfried",hansel@campus.tu-berlin.de,Beendet,"29. Mai 2021  16:01","29. Mai 2021  18:47","2 Stunden 45 Minuten","13,99",65,"1 mal",15,"a = 6 und b = 6","(5 && 4)",0,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: -","#include <stdio.h>
+Name_99,VName_99,"#include <stdio.h>
 
 void menue()
 {
@@ -1667,8 +1574,7 @@ printf(""Hello Loop!\n"");
 h++;
 }  
 }"
-Gföhler,"Vincent Bruce",v.gfoehler@campus.tu-berlin.de,Beendet,"29. Mai 2021  16:29","30. Mai 2021  23:59","1 Tag 7 Stunden","11,86","x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","!(x < y)","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
-Counter gestoppt bei 1.",65,"x == 0 und y == 0","(!1 && 1) || (1)","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8(15); Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9(15); Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10(15); Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: ; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: ; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: ; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: ; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: ; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: ; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+Name_90,VName_90,"#include <stdio.h>
 
 void menue()
 {
@@ -1752,15 +1658,7 @@ int main()
     }
     return 0;
 }"
-Otto,Klara,klara.otto@campus.tu-berlin.de,Beendet,"29. Mai 2021  17:37","30. Mai 2021  22:33","1 Tag 4 Stunden","14,50","!(x < y)","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
-Counter gestoppt bei 0.",Bonjour,"unendlich oft","if (a >= 0 && b >= 0)
-        printf(""a und b sind positiv!\n"");
-if (a <= 0 && b <= 0 && a+b != 0)
-        printf(""a und b sind negativ!\n"");
-if (a > 0 && b < 0)
-        printf(""a ist positiv und b ist negativ!\n"");
-if (a < 0 && b > 0)
-        printf(""a ist negativ und b ist positiv!\n"");",0,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: %; Teil 25: %; Teil 26: %; Teil 27: 2; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 14; Teil 58: %; Teil 59: -; Teil 60: %; Teil 61: 16; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 17; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: %; Teil 72: %","#include <stdio.h>
+Name_89,VName_89,"#include <stdio.h>
 
 int menue()
 {
@@ -1821,14 +1719,7 @@ int main(){
  i++;
  }
 }"
-Sen,"Muzaffer Mert",m.sen@campus.tu-berlin.de,Beendet,"29. Mai 2021  18:46","30. Mai 2021  15:39","20 Stunden 52 Minuten","14,11","a = 6 und b = 6","x = 12 + 22 + 32 + ...+ (n-1)2 + n2 = n(n+1)(2n+1)/6","!(x < y)",15,0,"if (a >= 0 && b >= 0)
-        printf(""a und b sind positiv!\n"");
-if (a <= 0 && b <= 0 && a+b != 0)
-        printf(""a und b sind negativ!\n"");
-if (a > 0 && b < 0)
-        printf(""a ist positiv und b ist negativ!\n"");
-if (a < 0 && b > 0)
-        printf(""a ist negativ und b ist positiv!\n"");","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: -; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 15; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 16; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 17; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: %","#include <stdio.h>
+Name_87,VName_87,"#include <stdio.h>
 
 void menue ()
 {
@@ -1903,19 +1794,7 @@ printf(""Hello Loop!\n"" ) ;
 }
 
 }"
-Schmidt,"Tom Alexander",tom.a.schmidt@campus.tu-berlin.de,Beendet,"29. Mai 2021  22:46","30. Mai 2021  23:15","1 Tag","14,20","unendlich oft","x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","1 mal",15,0,"switch (a,b) {
-        case >=0, >=0:
-               printf(""a und b sind positiv!\n"");
-               break;
-        case <=0, <=0:
-               printf(""a und b sind negativ!\n"");
-               break;
-        case >0, <0: 
-               printf(""a ist positiv und b ist negativ!\n"");
-               break;
-        case <0, >0: 
-               printf(""a ist negativ und b ist positiv!\n"");
-}","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: 3; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+Name_7,VName_7,"#include <stdio.h>
 
 void menue()
 {
@@ -1971,11 +1850,7 @@ int main(){
         i++;
     }
 }"
-Weber,"Michael Andreas",michael.a.weber@campus.tu-berlin.de,Beendet,"30. Mai 2021  12:58","30. Mai 2021  23:59","11 Stunden","10,00",Hey,"unendlich oft","x = 12 + 22 + 32 + ...+ (n-1)2 + n2 = n(n+1)(2n+1)/6",15,"INT i = 0; 
-WHILE (i){
-    i = (i+1) % 7;
-    printf(""%d "", i);
-}",1,"Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72:","#include <stdio.h>
+Name_86,VName_86,"#include <stdio.h>
 void menue()
 {
     printf(""Bitte auswaehlen...\n""
@@ -2033,12 +1908,7 @@ int main(){
         ++n;
     }
 }"
-Ruschke,Dennis,dennis.ruschke@campus.tu-berlin.de,Beendet,"30. Mai 2021  15:31","30. Mai 2021  23:59","8 Stunden 27 Minuten","13,26","x <= y","10... 9... 8... 7... 6... 5... 4... 3... 2... 1...
-Counter gestoppt bei 1.","a = 6 und b = 6","x = 1 + 3 + 5 + ... + (2n-3) + (2n-1) = n2","INT i = 0; 
-WHILE (i){
-    i = (i+1) % 7;
-    printf(""%d "", i);
-}",!3,"Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: -; Teil 8: -; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: -; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: -; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: -; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: %; Teil 71: %; Teil 72: %","#include <stdio.h>
+Name_101,VName_101,"#include <stdio.h>
 
 void menue()
 {
@@ -2100,14 +1970,7 @@ int main(){
         --i;
     }
 }"
-Zakusek,"Simon Lorenz",s.zakusek@campus.tu-berlin.de,Beendet,"30. Mai 2021  19:32","30. Mai 2021  23:28","3 Stunden 56 Minuten","14,49",Bonjour,15,"x = 12 + 22 + 32 + ...+ (n-1)2 + n2 = n(n+1)(2n+1)/6","!(x < y)",0,"if (a >= 0 && b >= 0)
-        printf(""a und b sind positiv!\n"");
-if (a <= 0 && b <= 0 && a+b != 0)
-        printf(""a und b sind negativ!\n"");
-if (a > 0 && b < 0)
-        printf(""a ist positiv und b ist negativ!\n"");
-if (a < 0 && b > 0)
-        printf(""a ist negativ und b ist positiv!\n"");","Teil 1: 3; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: 4; Teil 6: undef; Teil 7: %; Teil 8: %; Teil 9: 5; Teil 10: %; Teil 11: 0; Teil 12: %; Teil 13: 6; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: 7; Teil 18: 9; Teil 19: %; Teil 20: %; Teil 21: 8; Teil 22: %; Teil 23: %; Teil 24: 2; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: 10; Teil 29: %; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 3; Teil 35: 8; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: 9; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 10; Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 11; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: 12; Teil 52: %; Teil 53: 1; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 16; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: 18; Teil 62: %; Teil 63: %; Teil 64: %; Teil 65: 19; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: 20; Teil 70: -; Teil 71: -; Teil 72: -","#include <stdio.h>
+Name_102,VName_102,"#include <stdio.h>
 
 void menue(){
   printf(""Bitte auswaehlen...\n""

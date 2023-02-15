@@ -1,9 +1,5 @@
-﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/15,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9"
-Schwolow,Niklas,niklas.schwolow@campus.tu-berlin.de,Beendet,"27. Juni 2022  12:43","3. Juli 2022  23:59","6 Tage 11 Stunden","9,50","str == 0","PPRalloc
-; talloc
-; cealloc
-; mealloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Nachname,Vorname,Antwort 8,Antwort 9
+Name_91,VName_91,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray(){
@@ -63,13 +59,7 @@ int main(){
         student_ausgeben(&studenten[i]);
     }
 }"
-Yeboah,"Andrea Kumih",a.yeboah@campus.tu-berlin.de,Beendet,"27. Juni 2022  13:23","3. Juli 2022  23:59","6 Tage 10 Stunden","7,00","Der Datentyp, für den Speicher beantragt wird","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","str == 0","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","cealloc
-; talloc
-; PPRalloc
-; mealloc","int array[];
-; int* pointer;","Teil 1: stdlib.h; Teil 2: 2 * sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_439,VName_439,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -91,14 +81,7 @@ int main(void){
 	}
 	printf(""Summe = %d\n"", summe);
 }",-
-"Tavakoli Anaraki",Parham,parham.tavakoli-anaraki@campus.tu-berlin.de,Beendet,"27. Juni 2022  13:59","3. Juli 2022  20:20","6 Tage 6 Stunden","6,75","str == 0","Die Anzahl der Bytes die gebraucht werden","mealloc
-; cealloc
-; PPRalloc
-; talloc","Strukturen sind nie größer als 4-bit groß
-
-; Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) == sizeof(ketchup.pommes)","int* pointer;
-
-; int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","int* allocArray() {
+Name_450,VName_450,"int* allocArray() {
     int *arr = calloc(10,sizeof(int));
 	return arr;
 }
@@ -117,9 +100,7 @@ int main(void){
 	}
 	printf(""Summe = %d\n"", summe);
 }",-
-Hengst,Tobias,tobias.hengst@campus.tu-berlin.de,Beendet,"27. Juni 2022  14:04","3. Juli 2022  20:19","6 Tage 6 Stunden","10,88","mealloc
-; PPRalloc
-; cealloc","Der Wert von str ist undefiniert.","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie verteilt im Speicher liegen","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: ungewiss; Teil 5: 3.00; Teil 6: 3.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_444,VName_444,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray(void) {
@@ -200,11 +181,7 @@ int main(){
         student_ausgeben(&liste[i]);
     }
 }"
-Dannenberg,Paul,paul.dannenberg@campus.tu-berlin.de,Beendet,"27. Juni 2022  14:15","3. Juli 2022  20:22","6 Tage 6 Stunden","7,25","sizeof(ketchup) == sizeof(ketchup.pommes)","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","talloc
-; cealloc
-; mealloc
-; PPRalloc","Die Anzahl der Bytes die gebraucht werden","str == 0","int array[];
-; int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_436,VName_436,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -226,13 +203,7 @@ int main(void){
 	}
 	printf(""Summe = %d\n"", summe);
 }",-
-Bücking,"Jakob Pius",j.buecking@campus.tu-berlin.de,Beendet,"27. Juni 2022  14:22","3. Juli 2022  23:14","6 Tage 8 Stunden","13,75","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","cealloc
-; talloc
-; mealloc
-; PPRalloc","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","str == 0","int array[];
-; int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: ungewiss; Teil 6: ungewiss; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+Name_435,VName_435,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -301,12 +272,7 @@ void main(){
 
 
 }"
-Eckhardt,Jonas,j.eckhardt@campus.tu-berlin.de,Beendet,"27. Juni 2022  16:36","3. Juli 2022  22:57","6 Tage 6 Stunden","11,00","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","malloc
-; calloc
-; realloc","str == 0","Die Anzahl der Elemente im Array","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 31","int array[];
-; int* pointer;","Teil 1: stdlib.h; Teil 2: 2 * sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 6.00; Teil 6: ungewiss; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_54,VName_54,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -371,11 +337,7 @@ int main() {
 	student_ausgeben(&studenten[i]);
 	return 0;
 }"
-Stolte,"Leif Erik",leif.erik.stolte@campus.tu-berlin.de,Beendet,"27. Juni 2022  16:37","3. Juli 2022  23:59","6 Tage 7 Stunden","8,75","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) = 31
-
-; sizeof(ketchup) == sizeof(ketchup.pommes)","realloc; malloc
-; calloc","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","str == 0","int array[];
-; int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 6.00; Teil 6: ungewiss; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+Name_445,VName_445,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -439,10 +401,7 @@ int main() {
 	student_ausgeben(studenten);
 	return 0;
 }"
-Voß,Hannes,hannes.voss@campus.tu-berlin.de,Beendet,"27. Juni 2022  16:46","2. Juli 2022  18:17","5 Tage 1 Stunde","7,50","talloc
-; mealloc
-; cealloc
-; PPRalloc","str == 0","Die Anzahl der Bytes die gebraucht werden","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_451,VName_451,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -462,10 +421,7 @@ int main(void){
 	}
 	printf(""Summe = %d\n"", summe);
 }",-
-Strobl,Florian,florian.strobl@campus.tu-berlin.de,Beendet,"27. Juni 2022  18:45","27. Juni 2022  19:11","25 Minuten 47 Sekunden","14,75","Die Anzahl der Bytes die gebraucht werden","cealloc
-; PPRalloc
-; mealloc
-; talloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: ungewiss; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+Name_468,VName_468,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -520,11 +476,7 @@ int main() {
         
     return 0;
 }"
-Glaschke,"Adrian Maximilian",a.glaschke@campus.tu-berlin.de,Beendet,"27. Juni 2022  18:57","3. Juli 2022  23:32","6 Tage 4 Stunden","10,25","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Strukturen brauchen einen Rückgabewert
-
-; Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","realloc; calloc
-; malloc","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","str == 0","int array[];","Teil 1: stdlib.h; Teil 2: 2 * sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_452,VName_452,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -611,9 +563,7 @@ student_ausgeben(&vierter_Student);
 student_ausgeben(&fuenfter_Student);
 
 }"
-Anastasiadou,"Pinelopi Eleni",p.anastasiadou@campus.tu-berlin.de,Beendet,"27. Juni 2022  19:06","27. Juni 2022  22:33","3 Stunden 26 Minuten","5,13","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) == sizeof(ketchup.pommes)","Die Anzahl an Bits die gebraucht werden","PPRalloc
-; cealloc
-; mealloc","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_458,VName_458,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -674,8 +624,7 @@ int main() {
    student_ausgeben( &dar );
     }
 }"
-Braune,"Tom Frederik",t.braune.1@campus.tu-berlin.de,Beendet,"27. Juni 2022  19:09","28. Juni 2022  16:06","20 Stunden 56 Minuten","13,50","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl an Bits die gebraucht werden","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 0.00; Teil 5: 3.00; Teil 6: 9.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_433,VName_433,"#include <stdio.h>
 #include <stdlib.h>
 
 int arr[10];
@@ -743,14 +692,7 @@ int main(void){
 		}
 		
  	}"
-"Tellez Pedroza",Gabriele,tellezpedroza@campus.tu-berlin.de,Beendet,"27. Juni 2022  19:57","3. Juli 2022  21:23","6 Tage 1 Stunde","9,50","Strukturen brauchen einen Rückgabewert
-
-; Strukturen sind das gleiche wie Arrays","talloc
-; cealloc
-; PPRalloc
-; mealloc","Der Wert von str ist undefiniert.","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: realloc; Teil 4: 3.00; Teil 5: 6.00; Teil 6: 9.00; Teil 7: DoublePointer; Teil 8: calloc","#include <stdio.h>
+Name_440,VName_440,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -824,12 +766,7 @@ void student_ausgeben(Student* p_stud)
 	printf(""\nStudent: %s %s"",p_stud->first_name,p_stud->last_name);
 	printf(""\nAnzahl Punkte: %i\n"", sum);
 }"
-Michael,"Lars Rudolf Heinrich",l.michael.1@campus.tu-berlin.de,Beendet,"27. Juni 2022  20:27","29. Juni 2022  23:25","2 Tage 2 Stunden","14,50","cealloc
-; mealloc
-; PPRalloc
-; talloc","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) = 32","int* pointer;
-
-; int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 3.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_455,VName_455,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray(){
@@ -911,13 +848,7 @@ int main(){
 	}
 
 }"
-Franke,Alexander,alexander.franke@campus.tu-berlin.de,Beendet,"27. Juni 2022  22:05","3. Juli 2022  21:13","5 Tage 23 Stunden","7,50","cealloc
-; mealloc
-; PPRalloc
-; talloc","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","str == 0","int* pointer;
-
-; int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+Name_76,VName_76,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -940,10 +871,7 @@ int main(void){
 	}
 	printf(""Summe = %d\n"", summe);
 }",-
-Große-Wöhrmann,Fabian,fabian.grosse-woehrmann@campus.tu-berlin.de,Beendet,"27. Juni 2022  22:56","3. Juli 2022  23:15","6 Tage","11,20","realloc; malloc
-; calloc","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32",-,-,"int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 0.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: double*; Teil 8: calloc","#include <stdlib.h>
+Name_460,VName_460,"#include <stdlib.h>
 
 int* allocArray() {
 	int *arr = calloc(10, sizeof(int));
@@ -1004,8 +932,7 @@ int main(){
         student_ausgeben(&s[i]);
     }
 }"
-Muß,Niklas,muss@campus.tu-berlin.de,Beendet,"28. Juni 2022  11:14","1. Juli 2022  12:08","3 Tage","14,15","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Die Anzahl der Bytes die gebraucht werden","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_447,VName_447,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -1070,12 +997,7 @@ int main(void){
         printf(""\n"");
     }
 }"
-Hilbrich,"Luca Marius",luca.hilbrich@campus.tu-berlin.de,Beendet,"28. Juni 2022  12:49","28. Juni 2022  23:22","10 Stunden 32 Minuten","13,80","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","str == 0","mealloc
-; talloc
-; cealloc
-; PPRalloc","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: ungewiss; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_434,VName_434,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -1148,8 +1070,7 @@ int main()
         student_ausgeben(&students[i]);
     }
 }"
-Hartmann,"Kaspar Lorenz",kaspar.l.hartmann@campus.tu-berlin.de,Beendet,"28. Juni 2022  14:30","3. Juli 2022  23:59","5 Tage 9 Stunden","7,50","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","realloc; calloc
-; malloc","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) == sizeof(ketchup.pommes)","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 6.00; Teil 5: ungewiss; Teil 6: ungewiss; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+Name_456,VName_456,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -1205,12 +1126,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }"
-Schacht,Florian,florian.schacht@campus.tu-berlin.de,Beendet,"28. Juni 2022  15:20","3. Juli 2022  23:55","5 Tage 8 Stunden","14,50","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","cealloc
-; PPRalloc
-; talloc
-; mealloc","str == 0","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","int array[];
-; int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: malloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_432,VName_432,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -1307,10 +1223,7 @@ int main(){
 	}
 	return 0;
 }"
-Reiter,Tobias,tobias.reiter@campus.tu-berlin.de,Beendet,"28. Juni 2022  15:35","3. Juli 2022  23:59","5 Tage 8 Stunden","6,50","Die Anzahl der Bytes die gebraucht werden","PPRalloc
-; talloc
-; mealloc
-; cealloc","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","int array[];","Teil 1: stdlib.h; Teil 2: 8; Teil 3: calloc; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8:","#include <stdio.h>
+Name_449,VName_449,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -1330,12 +1243,7 @@ int main(void){
 	}
 	printf(""Summe = %d\n"", summe);
 }",-
-Schönknecht,Mathias,mathias.schoenknecht@campus.tu-berlin.de,Beendet,"28. Juni 2022  17:30","3. Juli 2022  14:58","4 Tage 21 Stunden","0,88","Eine Struktur bündelt Variablen so, dass sie verteilt im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll",-,-,talloc,"char array_unbestimmt[3];
-
-; int* pointer;
-
-; char p;
-; int array[];","Teil 1: stdlib.h; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8:","#include <stdio.h>
+Name_454,VName_454,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -1355,11 +1263,7 @@ int main(void){
 	}
 	printf(""Summe = %d\n"", summe);
 }",-
-Lehmann,Gregor,gregor.lehmann@campus.tu-berlin.de,Beendet,"28. Juni 2022  19:38","3. Juli 2022  16:35","4 Tage 20 Stunden","9,25","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","PPRalloc
-; cealloc
-; talloc
-; mealloc","Die Anzahl der Bytes die gebraucht werden","str == 0","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_448,VName_448,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -1426,8 +1330,7 @@ int main()
     }
 
 }"
-Niethammer,"Moritz Sebastian",m.niethammer@campus.tu-berlin.de,Beendet,"28. Juni 2022  20:43","3. Juli 2022  22:02","5 Tage 1 Stunde","13,25","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","calloc
-; realloc; malloc","sizeof(ketchup) = 32","Die Anzahl der Bytes die gebraucht werden","int array[];","Teil 1: stdlib.h; Teil 2: 24; Teil 3: calloc; Teil 4: 0.00; Teil 5: 3.00; Teil 6: ungewiss; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+Name_442,VName_442,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -1488,9 +1391,7 @@ int main(){
     }
     return 0;
 }"
-Gülser,Bahar,b.guelser@campus.tu-berlin.de,Beendet,"28. Juni 2022  20:52","3. Juli 2022  23:19","5 Tage 2 Stunden","9,50","Der Datentyp, für den Speicher beantragt wird","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","str == 0","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int array[];
-; int* pointer;","Teil 1: malloc.h; Teil 2: sizeof(double); Teil 3: malloc; Teil 4: 0.00; Teil 5: 3.00; Teil 6: 6.00; Teil 7: float*; Teil 8: calloc","#include <stdio.h>
+Name_441,VName_441,"#include <stdio.h>
 #include <stdlib.h>
 int* allocArray() {
 int arr[10];
@@ -1552,9 +1453,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }"
-Großkopf,"Edgar Wolf",e.grosskopf@campus.tu-berlin.de,Beendet,"28. Juni 2022  21:16","3. Juli 2022  23:59","5 Tage 2 Stunden","9,25","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","malloc
-; calloc
-; realloc","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Die Anzahl der Bytes die gebraucht werden","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_438,VName_438,"#include <stdio.h>
 #include <stdlib.h>
 
 void allocArray(int* p) {
@@ -1613,12 +1512,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }"
-Groß,"Elisabeth Maria",e.gross@campus.tu-berlin.de,Beendet,"30. Juni 2022  14:10","3. Juli 2022  23:59","3 Tage 9 Stunden","14,50","cealloc
-; talloc
-; PPRalloc
-; mealloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_453,VName_453,"#include <stdio.h>
 #include <stdlib.h>
  
 int* allocArray() {
@@ -1677,9 +1571,7 @@ int main(void){
         printf(""\n"");
     }
 }"
-Warns,"Butch Michel Guntbert",b.warns@tu-berlin.de,Beendet,"1. Juli 2022  09:37","3. Juli 2022  14:50","2 Tage 5 Stunden","14,75","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","str == 0","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: ungewiss; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_464,VName_464,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -1760,7 +1652,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }"
-Hagenberg,Rosa,rosa.hagenberg@campus.tu-berlin.de,Beendet,"1. Juli 2022  10:37","3. Juli 2022  23:59","2 Tage 13 Stunden","4,50",-,-,-,-,-,-,"Teil 1: stdlib.h; Teil 2: 8; Teil 3: malloc; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: double; Teil 8: calloc","#include <stdio.h>
+Name_443,VName_443,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -1825,13 +1717,7 @@ int main(){
 	student_ausgeben(students);
 
 }"
-Kraska,Timo,t.kraska@campus.tu-berlin.de,Beendet,"1. Juli 2022  13:40","1. Juli 2022  15:04","1 Stunde 24 Minuten","14,00","str == 0","PPRalloc
-; cealloc
-; talloc
-; mealloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Die Anzahl der Bytes die gebraucht werden","int* pointer;
-
-; int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: ungewiss; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_465,VName_465,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -1897,12 +1783,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }"
-Ibraimi,Ibraim,ibraimi@campus.tu-berlin.de,Beendet,"1. Juli 2022  20:06","2. Juli 2022  00:38","4 Stunden 32 Minuten","14,75","sizeof(ketchup) = 32","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","cealloc
-; talloc
-; PPRalloc
-; mealloc","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int* pointer;
-
-; int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: ungewiss; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+Name_473,VName_473,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -1976,11 +1857,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }"
-Sharma,Shaurya,shaurya.sharma@campus.tu-berlin.de,Beendet,"2. Juli 2022  06:25","3. Juli 2022  23:48","1 Tag 17 Stunden","7,38","cealloc
-; mealloc
-; PPRalloc","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+Name_437,VName_437,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -2046,10 +1923,7 @@ int main()
 
     return 0;
 }"
-Schulze,"Dennis Benedikt",dennis.schulze.1@campus.tu-berlin.de,Beendet,"2. Juli 2022  09:43","2. Juli 2022  12:38","2 Stunden 55 Minuten","13,38","str == 0","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) = 32","cealloc
-; mealloc
-; PPRalloc","Die Anzahl der Bytes die gebraucht werden","int array[];
-; int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 3.00; Teil 6: ungewiss; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+Name_470,VName_470,"#include <stdio.h>
 #include <stdlib.h>
 
 int SIZE = 10;
@@ -2133,12 +2007,7 @@ int main() {
         printf(""\n"");
   }
 }"
-Rubner,Ben,ben.rubner@campus.tu-berlin.de,Beendet,"2. Juli 2022  10:57","3. Juli 2022  20:22","1 Tag 9 Stunden","7,25","PPRalloc
-; talloc
-; cealloc
-; mealloc","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) == sizeof(ketchup.pommes)","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","str == 0","int* pointer;
-
-; int array[];","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_446,VName_446,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -2160,14 +2029,7 @@ int main(void){
 	}
 	printf(""Summe = %d\n"", summe);
 }",-
-Tiede,"Paul Georg",tiede@campus.tu-berlin.de,Beendet,"2. Juli 2022  12:15","3. Juli 2022  20:56","1 Tag 8 Stunden","4,63","sizeof(ketchup) = 32
-; sizeof(ketchup) == sizeof(ketchup.pommes)","Strukturen brauchen einen Rückgabewert
-
-; Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","str == 0","Die Anzahl der Bytes die gebraucht werden","PPRalloc
-; mealloc
-; cealloc","int* pointer;
-
-; int array[];","Teil 1: string.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+Name_459,VName_459,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -2233,9 +2095,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }"
-Rabe,Richard,richard.rabe@campus.tu-berlin.de,Beendet,"2. Juli 2022  12:23","3. Juli 2022  23:59","1 Tag 11 Stunden","7,50","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","Die Anzahl der Bytes die gebraucht werden","str == 0","int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_462,VName_462,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -2255,10 +2115,7 @@ int main(void){
 	}
 	printf(""Summe = %d\n"", summe);
 }",-
-Hilger,Emilie,e.hilger@campus.tu-berlin.de,Beendet,"2. Juli 2022  19:05","3. Juli 2022  23:59","1 Tag 4 Stunden","5,38","Die Anzahl der Bytes die gebraucht werden","PPRalloc
-; mealloc
-; cealloc","sizeof(ketchup) = 31","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen
-; Strukturen brauchen einen Rückgabewert","str == 0","int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: malloc; Teil 4: 0.00; Teil 5: 3.00; Teil 6: 6.00; Teil 7: DoublePointer; Teil 8: malloc","#include <stdio.h>
+Name_463,VName_463,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -2300,12 +2157,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }"
-"Zamudio Bargel","Athena Sabina",zamudiobargel@campus.tu-berlin.de,Beendet,"3. Juli 2022  11:01","3. Juli 2022  23:59","12 Stunden 57 Minuten","4,38","Strukturen brauchen einen Rückgabewert
-
-; Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Die Anzahl der Bytes die gebraucht werden","cealloc
-; PPRalloc
-; mealloc","str == 0","Für Variablen, deren Speicherbedarf zur Übersetzungszeit fest steht","int array[];
-; int* pointer;","Teil 1: ; Teil 2: sizeof(DoublePointer); Teil 3: realloc; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8:","#include <stdio.h>
+Name_467,VName_467,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -2325,12 +2177,7 @@ int main(void){
 	}
 	printf(""Summe = %d\n"", summe);
 }",-
-Breuer,Larissa,laribre@zedat.fu-berlin.de,Beendet,"3. Juli 2022  13:25","3. Juli 2022  22:18","8 Stunden 52 Minuten","11,70","Der Wert von str ist undefiniert.","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","calloc
-; malloc
-; realloc","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","int array[];
-; int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 0.00; Teil 5: 3.00; Teil 6: 6.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_466,VName_466,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -2408,11 +2255,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }"
-Krause,"Heiner Hans",heiner.h.krause@campus.tu-berlin.de,Beendet,"3. Juli 2022  18:03","3. Juli 2022  23:59","5 Stunden 55 Minuten","3,88","Die Anzahl der Bytes die gebraucht werden","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 33","str == -1","cealloc
-; mealloc
-; PPRalloc","int array[];","Teil 1: malloc.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: DoublePointer; Teil 8: realloc","#include <stdio.h>
+Name_472,VName_472,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -2435,12 +2278,7 @@ int main(void){
 #include <malloc.h>
 
 typedef struct student{"
-"Saltos Erazo","Melany Shaden",m.saltoserazo@campus.tu-berlin.de,Beendet,"3. Juli 2022  18:12","3. Juli 2022  23:59","5 Stunden 46 Minuten","4,75","malloc
-; realloc; talloc
-; calloc","malloc ändert den Pointer str nicht, da kein Speicher reserviert wurde.","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","int array[];
-; char p;","Teil 1: stdlib.h; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8:","#include <stdio.h>
+Name_461,VName_461,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray()
@@ -2464,10 +2302,7 @@ int main(void)
     }
     printf(""Summe = %d\n"", summe);
 }",-
-Karabalik,Tugce,t.karabalik@campus.tu-berlin.de,Beendet,"3. Juli 2022  19:03","3. Juli 2022  23:58","4 Stunden 54 Minuten","10,75","Die Anzahl der Bytes die gebraucht werden","sizeof(ketchup) == sizeof(ketchup.pommes)
-
-; sizeof(ketchup) = 32","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","str == 0","int array[];
-; int* pointer;","Teil 1: stdlib.h; Teil 2: sizeof(DoublePointer); Teil 3: calloc; Teil 4: ungewiss; Teil 5: ungewiss; Teil 6: 9.00; Teil 7: DoublePointer; Teil 8: malloc","#include <stdio.h>
+Name_471,VName_471,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -2530,7 +2365,7 @@ int main()
     
     return 0;
 }"
-Tsai,Ming-You,m.tsai@campus.tu-berlin.de,Beendet,"3. Juli 2022  19:04","3. Juli 2022  23:59","4 Stunden 54 Minuten","0,00",-,-,-,-,-,-,"Teil 1: malloc.h; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8:","#include <stdio.h>
+Name_457,VName_457,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {
@@ -2550,12 +2385,7 @@ int main(void){
 	}
 	printf(""Summe = %d\n"", summe);
 }",-
-Pegler,"Silas Johannes",s.pegler.1@campus.tu-berlin.de,Beendet,"3. Juli 2022  21:17","3. Juli 2022  23:10","1 Stunde 53 Minuten","13,75","Die Anzahl der Bytes die gebraucht werden","Eine Struktur bündelt Variablen so, dass sie am Stück im Speicher liegen","Wenn die Größe des Arrays variabel während der Laufzeit des Pogramms bestimmbar sein soll","talloc
-; cealloc
-; PPRalloc
-; mealloc","str == 0","int* pointer;
-
-; int array[];","Teil 1: stdlib.h; Teil 2: sizeof(double); Teil 3: calloc; Teil 4: 3.00; Teil 5: 0.00; Teil 6: 0.00; Teil 7: double*; Teil 8: realloc","#include <stdio.h>
+Name_474,VName_474,"#include <stdio.h>
 #include <stdlib.h>
 
 int* allocArray() {

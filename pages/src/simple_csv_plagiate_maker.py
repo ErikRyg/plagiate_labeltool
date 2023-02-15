@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import argparse
 from obfuscator import comment_remover, rename_variables
-from csv_stuff import create_labled_table_routine, add_valid_code_columns
+from csv_stuff import add_valid_code_columns
 
 
 def create_plagiate_table(df, semester, ha, task, prog_language, number_labled_pairs, path):
@@ -28,7 +28,6 @@ def create_plagiate_table(df, semester, ha, task, prog_language, number_labled_p
 def create_plagiate_table_routine(semester, ha, task, prog_language):
     csv_path = f'../../data/raw_data/PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten.csv'
     csv_path1 = f'../../data/labled/PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten_removed_preload.csv'
-    # csv_path1 = f'../../data/labled/PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten_labled.csv'
     csv_path2 = f'../../data/labled/PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten_plagiate.csv'
     df = pd.read_csv(csv_path, delimiter=',')
     number_labled_pairs = len(pd.read_csv(csv_path1, delimiter=','))
@@ -61,7 +60,6 @@ def create_plagiate_table_from_df(df, semester, ha, task, prog_language, number_
 
 def create_plagiate_table_routine_from_df(semester, ha, task, prog_language):
     csv_path1 = f'../../data/labled/PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten_removed_preload.csv'
-    # csv_path1 = f'../../data/labled/PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten_labled.csv'
     csv_path2 = f'../../data/labled/PPR [{semester}]-{ha}. Hausaufgabe - Pflichttest {prog_language}-Antworten_plagiate.csv'
     df1 = pd.read_csv(csv_path1, delimiter=',')
     number_labled_pairs = len(df1)

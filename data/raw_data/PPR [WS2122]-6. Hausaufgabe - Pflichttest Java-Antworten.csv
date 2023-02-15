@@ -1,5 +1,5 @@
-﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/15,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9","Antwort 10","Antwort 11"
-Wolf,"Amelie Rose",amelie.r.wolf@campus.tu-berlin.de,Beendet,"26. November 2021  09:53","28. November 2021  14:32","2 Tage 4 Stunden","14,50","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","gar nicht","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","4 Mal","Gar nicht","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Nachname,Vorname,Antwort 8,Antwort 9,Antwort 10,Antwort 11
+Name_6,VName_6,"public class Menu {
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
 			             ""\tPPR ist [t]oll\n"" +
@@ -62,7 +62,7 @@ Wolf,"Amelie Rose",amelie.r.wolf@campus.tu-berlin.de,Beendet,"26. November 2021 
         return Terminal.askInt(""Countdown:\n"");
     }
 }"
-Schulz,Justin,justin.schulz@campus.tu-berlin.de,Beendet,"27. November 2021  22:29","5. Dezember 2021  23:59","8 Tage 1 Stunde","13,75",4,8,15,"Anweisung 2","0 1 2 3 4 5 6 7 8 9","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"","""","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10/11"","""","""",""""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""","""",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"","""","""",""""]]","public class Menu {
+Name_96,VName_96,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -145,13 +145,7 @@ Schulz,Justin,justin.schulz@campus.tu-berlin.de,Beendet,"27. November 2021  22:2
     }
     
 }"
-Chahrour,Rima,rima.chahrour@campus.tu-berlin.de,Beendet,"28. November 2021  15:36","5. Dezember 2021  23:58","7 Tage 8 Stunden","14,10","Anweisung1 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung2 wahr sind. (Anweisung2, Anweisung3 und Anweisung4 werden nicht ausgeführt)","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","0 1 2 3 4 5 6 7 8 9",4,"gar nicht","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""11"","""","""",""""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_519,VName_519,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -224,7 +218,7 @@ Chahrour,Rima,rima.chahrour@campus.tu-berlin.de,Beendet,"28. November 2021  15:3
     
     
 }"
-Özmen,"Fevzi Alperen",f.oezmen@campus.tu-berlin.de,Beendet,"28. November 2021  21:34","5. Dezember 2021  22:03","7 Tage","6,65","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Mit einer for-Schleife kann man jede Funktionalität erreichen, die man auch mit einer While-Schleife erreichen könnte.","0 1 2 3 4 5 6 7 8 9",6,"Anweisung 2","Gar nicht","[["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""6"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""12"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""]]","public class Menu {
+Name_111,VName_111,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -278,13 +272,7 @@ Chahrour,Rima,rima.chahrour@campus.tu-berlin.de,Beendet,"28. November 2021  15:3
     }
     
 }"
-Hobein,"Bashira Noura",b.hobein@campus.tu-berlin.de,Beendet,"29. November 2021  00:03","5. Dezember 2021  23:57","6 Tage 23 Stunden","5,00","gar nicht",Einmal,8,"Sie zählt unendlich.","for(int i=0;i<10;i=i+2){
-
-   System.out.println(i);
-
-   i--;
-
- }",4,"[[""3"",""-"",""-"",""-""],[""4"","""",""false"",""""],[""5"",""undef"","""",""""],[""6"",""/2"","""",""2""],[""7"",""-"","""",""-""],[""8"","""","""",""""],["""","""","""",""""],[""6"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""12"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""]]","public class Menu {
+Name_151,VName_151,"public class Menu {
 	
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -342,13 +330,7 @@ Hobein,"Bashira Noura",b.hobein@campus.tu-berlin.de,Beendet,"29. November 2021  
     }
     
 }"
-Bender,Emma,emma.bender@campus.tu-berlin.de,Beendet,"29. November 2021  08:53","3. Dezember 2021  10:13","4 Tage 1 Stunde","14,75","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","4 Mal","Gar nicht","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Sie zählt unendlich.","0 1 2 3 4 5 6 7 8 9","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""11"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""-""]]","public class Menu {
+Name_148,VName_148,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -431,13 +413,7 @@ Bender,Emma,emma.bender@campus.tu-berlin.de,Beendet,"29. November 2021  08:53","
     }
     
 }"
-Mengi,Berna,berna.mengi@campus.tu-berlin.de,Beendet,"29. November 2021  10:27","5. Dezember 2021  23:48","6 Tage 13 Stunden","3,75","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Anweisung 2",5,"0 1 2 3 4 5 6 7 8 9","Sie zählt bis 3.","for(int i = 9;i>=0;){
-
-   System.out.println(9-i);
-
-   i=i-1;
-
- }","[[""2"",""-"",""-"",""-""],[""3"",""undef"",""%"",""%""],[""4"",""%"",""false"",""%""],[""5"",""9"",""%"",""%""],[""6"",""%"",""%"",""2""],[""7"",""%"",""%"",""%""],[""8"",""%"",""%"",""%""],[""6"",""%"",""%"",""-""],[""7"",""%"",""%"",""-""],[""8"",""%"",""true"",""%""],[""9"",""%"",""%"",""-""],[""12"",""%"",""%"",""%""],[""13"",""%"",""%"",""%""],[""15"",""%"",""%"",""%""],[""16"",""-"",""-"",""&""]]","public class Menu {
+Name_127,VName_127,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -493,7 +469,7 @@ Mengi,Berna,berna.mengi@campus.tu-berlin.de,Beendet,"29. November 2021  10:27","
     }
     
 }"
-Erlemann,Tom-Julien,tom-julien.erlemann@campus.tu-berlin.de,Beendet,"29. November 2021  11:31","5. Dezember 2021  23:35","6 Tage 12 Stunden","12,50","4 Mal","gar nicht","Sie zählt unendlich.","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Anweisung1 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung2 wahr sind. (Anweisung2, Anweisung3 und Anweisung4 werden nicht ausgeführt)","Anweisung 2","[[""4"",""undef"",""false"",""-""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""","""",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14(12)"","""","""",""""],[""15"","""","""",""""],[""16"","""","""",""""]]","public class Menu {
+Name_156,VName_156,"public class Menu {
 
     public static void main(String [] args) {
         System.out.print(""Bitte auswaehlen...\n"" +
@@ -585,13 +561,7 @@ Erlemann,Tom-Julien,tom-julien.erlemann@campus.tu-berlin.de,Beendet,"29. Novembe
     }
 
 }"
-Wieseke,"Jan Malte",wieseke@campus.tu-berlin.de,Beendet,"29. November 2021  11:50","3. Dezember 2021  16:05","4 Tage 4 Stunden","14,00","gar nicht",15,Einmal,"4 Mal",8,"for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_180,VName_180,"public class Menu {
 
 	public static void main(String[] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -669,7 +639,7 @@ Wieseke,"Jan Malte",wieseke@campus.tu-berlin.de,Beendet,"29. November 2021  11:5
 	}
 
 }"
-Nguemning,"Jienou Tchuente",j.nguemning@campus.tu-berlin.de,Beendet,"29. November 2021  12:30","5. Dezember 2021  15:16","6 Tage 2 Stunden","14,25","0 1 2 3 4 5 6 7 8 9","Sie zählt unendlich.",15,"Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""11"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""","""",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_518,VName_518,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -742,7 +712,7 @@ Nguemning,"Jienou Tchuente",j.nguemning@campus.tu-berlin.de,Beendet,"29. Novembe
     
     
 }"
-Streese,"Lennart Soeren",l.streese@campus.tu-berlin.de,Beendet,"29. November 2021  12:33","5. Dezember 2021  21:53","6 Tage 9 Stunden","9,00","Gar nicht","gar nicht",15,"Anweisung 2","Sie zählt bis 3.",5,"[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"",""-"",""-"",""-""],[""12"","""","""",""""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","public class Menu {
+Name_152,VName_152,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -807,15 +777,7 @@ Terminal.println(ausgabe);
     }
     
 }"
-Engelbrecht,Philip,philip.engelbrecht@campus.tu-berlin.de,Beendet,"29. November 2021  12:41","5. Dezember 2021  23:59","6 Tage 11 Stunden","13,25","0 1 2 3 4 5 6 7 8 9 10","4 Mal",15,"int i=0;
-
- for(;i<10;){
-
-   System.out.println(i);
-
-    i=i+1;
-
- }","Anweisung 2","Gar nicht","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""11"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_153,VName_153,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -907,7 +869,7 @@ Engelbrecht,Philip,philip.engelbrecht@campus.tu-berlin.de,Beendet,"29. November 
     }
     
 }"
-Leonardo,"Louie Alessandre De",louie.ad.leonardo@campus.tu-berlin.de,Beendet,"29. November 2021  13:41","29. November 2021  16:08","2 Stunden 26 Minuten","13,75","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Mit einer for-Schleife kann man jede Funktionalität erreichen, die man auch mit einer While-Schleife erreichen könnte.",4,"0 1 2 3 4 5 6 7 8 9","Anweisung 2",15,"[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","public class Menu {
+Name_159,VName_159,"public class Menu {
 		
 	 public static void main(String [] args) {
             System.out.print(""Bitte auswaehlen...\n"" +
@@ -975,13 +937,7 @@ Leonardo,"Louie Alessandre De",louie.ad.leonardo@campus.tu-berlin.de,Beendet,"29
     }
 
 }"
-Balasus,Jakob,balasus@campus.tu-berlin.de,Beendet,"29. November 2021  16:22","5. Dezember 2021  19:18","6 Tage 2 Stunden","15,00","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Sie zählt unendlich.","Anweisung 2",8,15,"[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""11"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_170,VName_170,"public class Menu {
 
 	public static void main(String[] args) {
 		System.out.print(
@@ -1066,13 +1022,7 @@ Balasus,Jakob,balasus@campus.tu-berlin.de,Beendet,"29. November 2021  16:22","5.
     }
     
 }"
-Türk,Gökcenur,g.tuerk@campus.tu-berlin.de,Beendet,"29. November 2021  16:57","5. Dezember 2021  23:42","6 Tage 6 Stunden","3,75","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.",Einmal,"Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Ersteres nennt man explizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das implizit geschehen.","Anweisung 2","for(int i = 9;i>=0;){
-
-   System.out.println(9-i);
-
-   i=i-1;
-
- }","[[""2"",""-"",""-"",""-""],[""3"",""undef"",""%"",""%""],[""4"",""%"",""false"",""%""],[""5"",""9"",""%"",""%""],[""6"",""%"",""%"",""2""],[""7"",""%"",""%"",""%""],["""",""%"",""%"",""""],[""6"",""%"",""%"",""""],[""7"",""%"",""%"",""%""],[""8"",""%"",""true"",""%""],[""9"",""%"",""%"",""-""],[""12"",""%"",""%"",""%""],["""",""%"",""%"",""%""],[""15"",""%"",""%"",""%""],[""16"",""-"",""-"",""%""]]","public class Menu {
+Name_32,VName_32,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1116,7 +1066,7 @@ Türk,Gökcenur,g.tuerk@campus.tu-berlin.de,Beendet,"29. November 2021  16:57","
 }","public class LeapYear {
       
 }",-
-Rode,Eric,eric.rode@campus.tu-berlin.de,Beendet,"29. November 2021  19:27","5. Dezember 2021  18:06","5 Tage 22 Stunden","13,90",4,"0 1 2 3 4 5 6 7 8 9","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Anweisung 2","4 Mal","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","[[""2"",""-"",""-"",""-""],[""3"",""undef"",""-"",""-""],[""4"","""",""false"",""-""],[""5"",""9"","""",""-""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""11"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"","""","""",""""]]","public class Menu {
+Name_150,VName_150,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1187,13 +1137,7 @@ Rode,Eric,eric.rode@campus.tu-berlin.de,Beendet,"29. November 2021  19:27","5. D
         return Terminal.askInt(""Countdown:\n"");
     }
 }"
-Abele,Sophie,s.abele@campus.tu-berlin.de,Beendet,"30. November 2021  11:40","5. Dezember 2021  23:59","5 Tage 12 Stunden","11,75",8,"for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }",15,"Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","4 Mal","Anweisung 2","[[""1"",""-"",""-"",""-""],[""2"","""","""",""""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""8"","""",""true"",""""],[""6"","""","""",""3""],[""8"","""",""false"",""""],[""6"","""","""",""4""],[""8"","""",""true"",""""],[""12"","""","""",""""],[""13"","""",""false"",""""],[""14"","""","""",""""],[""15"",""-"",""-"",""-""]]","public class Menu {	
+Name_155,VName_155,"public class Menu {	
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
 			             ""\tPPR ist [t]oll\n"" +
@@ -1263,7 +1207,7 @@ public static int getCount() {
 	return Terminal.askInt(""Countdown:\n"");
 }
 }"
-Alder,Tim,tim.alder@campus.tu-berlin.de,Beendet,"30. November 2021  12:46","5. Dezember 2021  23:59","5 Tage 11 Stunden","13,25","4 Mal","Anweisung 2",3,15,7,"gar nicht","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""-""]]","public class Menu {
+Name_154,VName_154,"public class Menu {
         public static void main(String [] args) {
             System.out.print(""Bitte auswaehlen...\n"" +
                              ""\tPPR ist [t]oll\n"" +
@@ -1345,7 +1289,7 @@ Alder,Tim,tim.alder@campus.tu-berlin.de,Beendet,"30. November 2021  12:46","5. D
         return Terminal.askInt(""Countdown:\n"");
     }
 }"
-"Ben Hassine",Lydia,lydia.benhassine@campus.tu-berlin.de,Beendet,"30. November 2021  13:17","5. Dezember 2021  22:14","5 Tage 8 Stunden","9,00",4,"Gar nicht",15,"Innerhalb einer for-Schleife können sich weitere Schleifen befinden.","0 1 2 3 4 5 6 7 8 9","4 Mal","[[""4"","""",""false"",""""],[""5"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""6"",""undef"",""false"",""2""],[""7"",""undef"","""",""0""],[""8"","""",""true"",""""],["""","""","""",""""],[""12"",""undef"",""false"",""1""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""]]","public class Menu {
+Name_123,VName_123,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1433,7 +1377,7 @@ Alder,Tim,tim.alder@campus.tu-berlin.de,Beendet,"30. November 2021  12:46","5. D
     }
     
 }"
-Korth,Benjamin,b.korth@campus.tu-berlin.de,Beendet,"30. November 2021  14:31","1. Dezember 2021  21:48","1 Tag 7 Stunden","14,50","0 1 2 3 4 5 6 7 8 9","Sie zählt unendlich.","Anweisung 2","Gar nicht","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","4 Mal","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""6"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""11"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_168,VName_168,"public class Menu {
 	
 	public static void main (String[] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1528,7 +1472,7 @@ Korth,Benjamin,b.korth@campus.tu-berlin.de,Beendet,"30. November 2021  14:31","1
 		return Terminal.askInt(""Countdown: \n"");
 	}
 }"
-Fischer,"Niklas Alexander Tiberius",fischer.12@campus.tu-berlin.de,Beendet,"30. November 2021  15:00","30. November 2021  16:30","1 Stunde 30 Minuten","13,00","gar nicht",6,5,"0 1 2 3 4 5 6 7 8 9",15,"Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""0"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""1"",""""],[""9"","""","""",""""],[""12"","""","""",""-""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_165,VName_165,"public class Menu {
 	public static void main (String[] args){
 		System.out.print(""Bitte auswaehlen...\n"" +
 			             ""\tPPR ist [t]oll\n"" +
@@ -1606,7 +1550,7 @@ Fischer,"Niklas Alexander Tiberius",fischer.12@campus.tu-berlin.de,Beendet,"30. 
     }
     
 }"
-Panagiotidis,Sokratis,sokratis.panagiotidis@campus.tu-berlin.de,Beendet,"30. November 2021  15:30","5. Dezember 2021  11:52","4 Tage 20 Stunden","13,25","4 Mal","0 1 2 3 4 5 6 7 8 9","Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.","gar nicht",15,8,"[["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""2"",""-"",""-"",""-""],[""3"","""","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""11"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"",""\""ist keine Primzahl.\"""","""",""""],[""16"",""-"",""-"",""-""]]","public class Menu {
+Name_172,VName_172,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1679,13 +1623,7 @@ Panagiotidis,Sokratis,sokratis.panagiotidis@campus.tu-berlin.de,Beendet,"30. Nov
     }
     
 }"
-Nguyen,"Hoang Le",h.nguyen.3@campus.tu-berlin.de,Beendet,"30. November 2021  15:59","5. Dezember 2021  21:50","5 Tage 5 Stunden","13,25","0 1 2 3 4 5 6 7 8 9","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Anweisung 2","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }",2,"Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","[[""1"",""-"",""-"",""-""],[""2"","""","""",""""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""undef"","""",""""],[""6"",""9"","""",""2""],[""7"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""11"","""","""",""-""],[""12"","""","""",""""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","public class Menu {
+Name_105,VName_105,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -1769,7 +1707,7 @@ for (int i = 1; i <= height; i++){
         return Terminal.askInt(""Countdown:\n"");
     }
 }"
-Schellin,Kolja,kolja.schellin@campus.tu-berlin.de,Beendet,"30. November 2021  22:14","5. Dezember 2021  23:59","5 Tage 1 Stunde","13,75",8,15,"gar nicht","0 1 2 3 4 5 6 7 8 9","Anweisung 2","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""10"","""","""",""""],[""11"","""","""",""-""],[""12"","""","""",""""],[""13"","""","""",""""],[""16"","""","""",""""],[""17"",""-"",""-"",""""]]","public class Menu {
+Name_167,VName_167,"public class Menu {
 	
 	public static void main(String[] args) {
 		System.out.print(""Bitte auswaehlen...\n"" + ""\tPPR ist [t]oll\n"" + ""\tPPR [s]tinkt mir\n"" + ""\tPPR, Flasche [l]eer.\n\n"");
@@ -1850,13 +1788,7 @@ Schellin,Kolja,kolja.schellin@campus.tu-berlin.de,Beendet,"30. November 2021  22
 	}
 	
 }"
-Severin,"Simon Lukas",s.severin@campus.tu-berlin.de,Beendet,"1. Dezember 2021  11:39","5. Dezember 2021  17:30","4 Tage 5 Stunden","7,75","Anweisung 2","for(int i=0;i<10;i=i+2){
-
-   System.out.println(i);
-
-   i--;
-
- }","Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.",8,"Sie zählt bis 3.","0 1 2 3 4 5 6 7 8 9","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","public class Menu {
+Name_174,VName_174,"public class Menu {
 		
 	public static void main(String [] args) {
 		Terminal.askChar(""Bitte auswaehlen...\n"" +
@@ -1927,13 +1859,7 @@ Severin,"Simon Lukas",s.severin@campus.tu-berlin.de,Beendet,"1. Dezember 2021  1
     }
     
 }"
-Grochla,Patrick,p.grochla@campus.tu-berlin.de,Beendet,"1. Dezember 2021  12:23","5. Dezember 2021  23:56","4 Tage 11 Stunden","12,75","Sie zählt unendlich.","Anweisung 2","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Gar nicht",15,"[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""-""]]","public class Menu {
+Name_162,VName_162,"public class Menu {
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
 			             ""\tPPR ist [t]oll\n"" +
@@ -2005,13 +1931,7 @@ Grochla,Patrick,p.grochla@campus.tu-berlin.de,Beendet,"1. Dezember 2021  12:23",
     }
 
 }"
-Frahat,Ramy,ramy.frahat@campus.tu-berlin.de,Beendet,"1. Dezember 2021  18:07","5. Dezember 2021  23:00","4 Tage 4 Stunden","12,25","Gar nicht","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }",3,"gar nicht",15,"[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""-""]]","public class Menu {
+Name_177,VName_177,"public class Menu {
 
 public static void main(String [] args) {
 	System.out.print( ""Bitte auswaehlen...\n""+
@@ -2077,13 +1997,7 @@ public static void main(String [] args) {
         return Terminal.askInt(""Countdown:\n"");
     }
      }"
-Shehata,Shady,shady.shehata@campus.tu-berlin.de,Beendet,"2. Dezember 2021  08:45","4. Dezember 2021  19:31","2 Tage 10 Stunden","14,25","Gar nicht","0 1 2 3 4 5 6 7 8 9","4 Mal","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }",6,"[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""11"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_48,VName_48,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -2156,7 +2070,7 @@ Shehata,Shady,shady.shehata@campus.tu-berlin.de,Beendet,"2. Dezember 2021  08:45
  
     
 }"
-Dilmaghani,Ardeshir,dilmaghani@campus.tu-berlin.de,Beendet,"2. Dezember 2021  09:01","5. Dezember 2021  22:24","3 Tage 13 Stunden","4,25","Mit einer for-Schleife kann man jede Funktionalität erreichen, die man auch mit einer While-Schleife erreichen könnte.","Ersteres nennt man explizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das implizit geschehen.","Anweisung 2","3 Mal","Anweisung1 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung2 wahr sind. (Anweisung2, Anweisung3 und Anweisung4 werden nicht ausgeführt)",4,"[[""2"",""-"",""-"",""-""],[""3"","""","""",""""],[""4"","""","""",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""0""],[""8"","""","""",""""],[""6"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""12"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""]]","public class Menu {
+Name_163,VName_163,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -2208,13 +2122,7 @@ Dilmaghani,Ardeshir,dilmaghani@campus.tu-berlin.de,Beendet,"2. Dezember 2021  09
     }
     
 }"
-Fulful,"Abd Alrahman",a.fulful@campus.tu-berlin.de,Beendet,"2. Dezember 2021  10:38","5. Dezember 2021  23:59","3 Tage 13 Stunden","13,50","gar nicht",3,"Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Ersteres nennt man implizites Casten, beim Casten vom kleinerem (float) zum größerem Datentyp (double) muss das explizit geschehen.","Gar nicht","for(int i = 9;i>=0;){
-
-   System.out.println(9-i);
-
-   i=i-1;
-
- }","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""11"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_47,VName_47,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -2287,13 +2195,7 @@ Fulful,"Abd Alrahman",a.fulful@campus.tu-berlin.de,Beendet,"2. Dezember 2021  10
     
     
 }"
-Fung,"Wendy Poju",w.fung@campus.tu-berlin.de,Beendet,"2. Dezember 2021  12:22","5. Dezember 2021  23:22","3 Tage 11 Stunden","14,50","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }",15,"Anweisung 2","0 1 2 3 4 5 6 7 8 9",4,"[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""11"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"","""","""",""""]]","public class Menu {
+Name_188,VName_188,"public class Menu {
 
     public static void main(String[] args) {
 
@@ -2371,13 +2273,7 @@ Fung,"Wendy Poju",w.fung@campus.tu-berlin.de,Beendet,"2. Dezember 2021  12:22","
     }
     
 }"
-Panchanathan,Arrsana,a.panchanathan@campus.tu-berlin.de,Beendet,"2. Dezember 2021  14:51","5. Dezember 2021  23:53","3 Tage 9 Stunden","12,00","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Anweisung 2","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","0 1 2 3 4 5 6 7 8 9","[[""2"",""-"",""-"",""-""],[""5(3)"",""9"","""",""""],[""3"","""","""",""""],[""7(6)"","""","""",""""],[""8(6)"","""",""true"",""""],[""9(6)"","""","""",""""],[""10(6)"","""","""",""""],[""6"","""","""",""""],[""11"","""","""",""""],[""4(12)"","""",""false"",""""],[""13(12)"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""-""]]","public class Menu {
+Name_157,VName_157,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -2454,7 +2350,7 @@ Panchanathan,Arrsana,a.panchanathan@campus.tu-berlin.de,Beendet,"2. Dezember 202
     }
     
 }"
-Basin,Yannic,yannic.basin@campus.tu-berlin.de,Beendet,"2. Dezember 2021  15:22","5. Dezember 2021  23:59","3 Tage 8 Stunden","11,50","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.",8,"Anweisung 2","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","3 Mal",4,"[["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""6"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""12"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""]]","public class Menu {
+Name_185,VName_185,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -2519,13 +2415,7 @@ Basin,Yannic,yannic.basin@campus.tu-berlin.de,Beendet,"2. Dezember 2021  15:22",
     }
     
 }"
-Sezen,Alper,sezen@campus.tu-berlin.de,Beendet,"2. Dezember 2021  20:34","5. Dezember 2021  13:50","2 Tage 17 Stunden","13,15","Ersteres nennt man implizites Casten, beim Casten vom kleinerem (float) zum größerem Datentyp (double) muss das explizit geschehen.","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","4 Mal",8,15,"Sie zählt unendlich.","[[""2"",""-"",""-"",""-""],[""3"","""","""",""""],[""4"","""",""false"",""""],[""5"",""13"","""",""""],[""6"","""","""",""3""],[""6"","""","""",""4""],[""6"","""","""",""5""],[""6"","""","""",""6""],[""7"","""","""",""""],[""8"","""","""",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""13"",""13 ist eine Primzahl."","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","public class Menu {
+Name_183,VName_183,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -2621,13 +2511,7 @@ Sezen,Alper,sezen@campus.tu-berlin.de,Beendet,"2. Dezember 2021  20:34","5. Deze
 	
 	
 }"
-"Gutiérrez de la Vega","Anamaria de los Angeles",gutierrez-de-la-vega@campus.tu-berlin.de,Beendet,"2. Dezember 2021  23:01","4. Dezember 2021  18:10","1 Tag 19 Stunden","14,00",8,"Anweisung 2","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","4 Mal","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""13"","""","""",""""],[""16"","""","""",""""],[""17"","""","""",""""]]","public class Menu {
+Name_173,VName_173,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -2712,15 +2596,7 @@ Sezen,Alper,sezen@campus.tu-berlin.de,Beendet,"2. Dezember 2021  20:34","5. Deze
     }
     
 }"
-Khatiwada,Aayush,khatiwada@campus.tu-berlin.de,Beendet,"3. Dezember 2021  00:55","5. Dezember 2021  22:05","2 Tage 21 Stunden","13,50","Anweisung 2","Gar nicht","int i=0;
-
- for(;i<10;){
-
-   System.out.println(i);
-
-    i=i+1;
-
- }","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","4 Mal","Sie zählt unendlich.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"",""-"",""-"",""-""]]","public class Menu {
+Name_60,VName_60,"public class Menu {
 
     public static void main(String[] args) {
         System.out.print(""Bitte auswaehlen...\n"" +
@@ -2792,15 +2668,7 @@ Khatiwada,Aayush,khatiwada@campus.tu-berlin.de,Beendet,"3. Dezember 2021  00:55"
         return Terminal.askInt(""Countdown:\n"");
     }
 }"
-Heinrich,"Maximilian Valentino",maximilian.valentino.heinrich@campus.tu-berlin.de,Beendet,"3. Dezember 2021  10:54","5. Dezember 2021  23:37","2 Tage 12 Stunden","12,75",8,"Anweisung4 kann nie ausgeführt werden.",4,"int i=0;
-
- for(;i<10;){
-
-   System.out.println(i);
-
-    i=i+1;
-
- }","0 1 2 3 4 5 6 7 8 9","gar nicht","[[""1"",""-"",""-"",""-""],[""2"",""-"",""-"",""-""],[""3"",""undef"",""-"",""-""],[""4"","""",""false"",""-""],[""5"",""9"","""",""-""],[""6"","""","""",""2""],[""12(7)"","""","""",""3""],[""6"","""","""",""4""],[""12(7)"","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""12"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""]]","public class Menu {
+Name_176,VName_176,"public class Menu {
 		
 		public static void main(String [] args) {
 
@@ -2951,7 +2819,7 @@ Heinrich,"Maximilian Valentino",maximilian.valentino.heinrich@campus.tu-berlin.d
     }
 
 }"
-"Rozas Humana","Raffael Dominik Alfons",raffael.rozashumana@campus.tu-berlin.de,Beendet,"3. Dezember 2021  12:09","5. Dezember 2021  23:59","2 Tage 11 Stunden","0,00",-,-,-,-,-,-,"[["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""6"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""12"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""]]","public class Menu {
+Name_530,VName_530,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -2988,7 +2856,7 @@ Heinrich,"Maximilian Valentino",maximilian.valentino.heinrich@campus.tu-berlin.d
     }
     
 }"
-Song,Minji,minji.song@campus.tu-berlin.de,Beendet,"3. Dezember 2021  12:43","5. Dezember 2021  23:53","2 Tage 11 Stunden","6,83","4 Mal","Ersteres nennt man explizites Casten, beim Casten vom kleinerem (float) zum größerem Datentyp (double) muss das implizit geschehen.","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.",8,"Sie zählt unendlich.","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","[["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""6"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""12"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""]]","public class Menu {
+Name_149,VName_149,"public class Menu {
 	
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3057,7 +2925,7 @@ Song,Minji,minji.song@campus.tu-berlin.de,Beendet,"3. Dezember 2021  12:43","5. 
     }
     
 }"
-Hake,"Anna Franziska",a.hake@campus.tu-berlin.de,Beendet,"3. Dezember 2021  12:55","5. Dezember 2021  23:29","2 Tage 10 Stunden","8,25","gar nicht","Sie zählt bis 3.","Anweisung 2","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Unendlich oft","[[""2"",""-"",""-"",""-""],[""3 "",""undef "","""",""""],[""4 "","""",""false "",""""],[""5 "",""9 "","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""10 "","""","""",""-""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""- "",""""]]","public class Menu {
+Name_46,VName_46,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3143,13 +3011,7 @@ Hake,"Anna Franziska",a.hake@campus.tu-berlin.de,Beendet,"3. Dezember 2021  12:5
     }
     
 }"
-Fenscky,Ben-Luca,b.fenscky@campus.tu-berlin.de,Beendet,"3. Dezember 2021  13:35","4. Dezember 2021  13:17","23 Stunden 41 Minuten","13,00","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","gar nicht","Anweisung 2","4 Mal","Mit einer for-Schleife kann man jede Funktionalität erreichen, die man auch mit einer While-Schleife erreichen könnte.","Gar nicht","[[""1"",""-"",""-"",""-""],[""2"","""","""",""""],[""3"",""undef"","""",""""],[""4"","""",""undef"",""""],[""4"","""",""false"",""""],[""5"","""","""",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""0""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","public class Menu {
+Name_158,VName_158,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3241,13 +3103,7 @@ Fenscky,Ben-Luca,b.fenscky@campus.tu-berlin.de,Beendet,"3. Dezember 2021  13:35"
     }
     
 }"
-Hafez,"Laila Hazem Ahmed Hamdy",l.hafez@campus.tu-berlin.de,Beendet,"3. Dezember 2021  15:18","5. Dezember 2021  20:57","2 Tage 5 Stunden","8,00","Unendlich oft","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.",6,"Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","0 1 2 3 4 5 6 7 8 9","for(int i = 9;i>=0;){
-
-   System.out.println(9-i);
-
-   i=i-1;
-
- }","[[""1"",""-"",""-"",""-""],[""2"","""","""",""""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6(7)"","""","""",""2""],[""6(8)"","""","""",""""],[""6"","""","""",""""],[""6(12)"","""","""",""""],[""6(13)"","""","""",""""],["""","""","""",""""],[""12"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""]]","public class Menu {
+Name_169,VName_169,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3307,7 +3163,7 @@ Hafez,"Laila Hazem Ahmed Hamdy",l.hafez@campus.tu-berlin.de,Beendet,"3. Dezember
     }
     
 }"
-Hother,"Julika Anais",j.hother@campus.tu-berlin.de,Beendet,"3. Dezember 2021  15:23","5. Dezember 2021  23:59","2 Tage 8 Stunden","14,00",4,"Sie zählt unendlich.","Gar nicht","4 Mal","gar nicht","Anweisung 2","[[""2"",""-"",""-"",""-""],[""3"",""undef"",""-"",""-""],[""4"","""",""false"",""-""],[""5"",""9"","""",""-""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10(7)"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"","""","""",""""]]","public class Menu {
+Name_182,VName_182,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3387,13 +3243,7 @@ public static void countdown(int c){
     }
     
 }"
-Hock,"Katharina Maria",hock@campus.tu-berlin.de,Beendet,"3. Dezember 2021  15:54","5. Dezember 2021  23:59","2 Tage 8 Stunden","14,00","Anweisung1 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung2 wahr sind. (Anweisung2, Anweisung3 und Anweisung4 werden nicht ausgeführt)","Anweisung 2","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","0 1 2 3 4 5 6 7 8 9",8,"gar nicht","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_178,VName_178,"public class Menu {
 		
 public static void main(String [] args) {
 		
@@ -3467,7 +3317,7 @@ public static void main(String [] args) {
 	
 	
 }"
-Fortwengel,Louisa,louisa.fortwengel@campus.tu-berlin.de,Beendet,"3. Dezember 2021  16:31","5. Dezember 2021  21:08","2 Tage 4 Stunden","14,25","gar nicht","0 1 2 3 4 5 6 7 8 9","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Sie zählt unendlich.","4 Mal","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""13"","""","""",""""],[""16"",""-"",""-"",""-""],["""","""","""",""""]]","public class Menu {
+Name_179,VName_179,"public class Menu {
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
 			             ""\tPPR ist [t]oll\n"" +
@@ -3543,7 +3393,7 @@ Fortwengel,Louisa,louisa.fortwengel@campus.tu-berlin.de,Beendet,"3. Dezember 202
         return Terminal.askInt(""Countdown:\n"");
     }
 }"
-Döring,Oliver,o.doering@campus.tu-berlin.de,Beendet,"3. Dezember 2021  16:44","5. Dezember 2021  23:44","2 Tage 6 Stunden","10,00","Sie zählt unendlich.","4 Mal","gar nicht","Unendlich oft","Anweisung4 kann nie ausgeführt werden.",15,"[[""2"",""-"",""-"",""-""],[""3"",""undef\n"","""",""""],[""4"","""",""undef"",""""],[""5"","""","""",""""],[""3(5)"",""9"","""",""""],[""4(5)"","""",""false"",""""],[""5"","""","""",""""],[""6"","""","""",""2""],[""7"","""","""",""3""],[""10(7)"","""","""",""-""],[""11(7)"","""","""",""""],[""12"","""","""",""""],[""15(12)"","""","""",""""],[""16(12)"","""",""-"",""""],[""17(12)"",""-"","""",""""]]","public class Menu {
+Name_477,VName_477,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3610,13 +3460,7 @@ Döring,Oliver,o.doering@campus.tu-berlin.de,Beendet,"3. Dezember 2021  16:44","
     }
     
 }"
-Hermanns,Paul-Henri,p.hermanns@campus.tu-berlin.de,Beendet,"3. Dezember 2021  20:00","5. Dezember 2021  15:51","1 Tag 19 Stunden","12,25",5,6,"0 2 4 6 8","gar nicht","3 Mal","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""",""-"",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"","""",""""]]","public class Menu {
+Name_181,VName_181,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3711,7 +3555,7 @@ Hermanns,Paul-Henri,p.hermanns@campus.tu-berlin.de,Beendet,"3. Dezember 2021  20
     }
     
 }"
-Thomas,"Fabian Alexander",f.thomas@campus.tu-berlin.de,Beendet,"4. Dezember 2021  13:02","5. Dezember 2021  12:10","23 Stunden 8 Minuten","14,25","Gar nicht","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Anweisung 2",8,4,"Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""""],[""7"","""","""",""""],[""10"","""","""",""""],[""11"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""-""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_161,VName_161,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3786,15 +3630,7 @@ Thomas,"Fabian Alexander",f.thomas@campus.tu-berlin.de,Beendet,"4. Dezember 2021
     }
     
 }"
-Holz,"Maximilian Torsten",m.holz@campus.tu-berlin.de,Beendet,"4. Dezember 2021  13:06","5. Dezember 2021  17:12","1 Tag 4 Stunden","11,80","Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.","Sie zählt bis 3.","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)",4,"int i=0;
-
- for(;i<10;){
-
-   System.out.println(i);
-
-    i=i+1;
-
- }","0 1 2 3 4 5 6 7 8 9","[[""2"",""-"",""-"",""-""],[""3"",""undef"",""%"",""%""],[""4"",""%"",""false"",""%""],[""5"",""9"",""%"",""%""],[""6"",""%"",""%"",""2""],[""7"",""%"",""%"",""%""],["""",""%"","""",""""],[""6"",""%"",""%"",""""],[""7"",""%"",""%"",""%""],["""",""%"","""",""%""],["""","""","""",""-""],[""12"",""%"","""",""%""],[""14"",""%"",""%"",""%""],[""15"","""",""%"",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_166,VName_166,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3871,13 +3707,7 @@ public static void main(String [] args) {
     }
     
 }"
-Ibraimi,Ibraim,ibraimi@campus.tu-berlin.de,Beendet,"4. Dezember 2021  13:20","4. Dezember 2021  16:32","3 Stunden 11 Minuten","3,00","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)",Einmal,"Sie zählt unendlich.",15,"for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","[[""1"","""","""",""""],[""2"","""","""",""""],[""3"","""","""",""""],[""4"","""","""",""""],[""5"","""","""",""""],[""6"","""","""",""""],["""","""","""",""""],[""6"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""12"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""]]","public class Menu {
+Name_473,VName_473,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -3935,7 +3765,7 @@ Ibraimi,Ibraim,ibraimi@campus.tu-berlin.de,Beendet,"4. Dezember 2021  13:20","4.
     }
     
 }"
-Yildirim,Emre,e.yildirim@campus.tu-berlin.de,Beendet,"4. Dezember 2021  16:16","5. Dezember 2021  23:59","1 Tag 7 Stunden","14,50","gar nicht","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.",4,"0 1 2 3 4 5 6 7 8 9","Anweisung1 wird immer ausgeführt","4 Mal","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""11"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_63,VName_63,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4008,7 +3838,7 @@ Yildirim,Emre,e.yildirim@campus.tu-berlin.de,Beendet,"4. Dezember 2021  16:16","
     
     
 }"
-Brück,"Nicole Kristin Svenja Maria",n.brueck@campus.tu-berlin.de,Beendet,"4. Dezember 2021  17:54","5. Dezember 2021  11:37","17 Stunden 43 Minuten","13,75","Anweisung 2","0 1 2 3 4 5 6 7 8 9",4,"gar nicht",15,"Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""7(6)"","""","""",""""],[""8(6)"","""",""true"",""""],[""9(6)"","""","""",""""],[""6"","""","""",""2""],[""10"","""",""-"",""""],[""11"","""","""",""-""],[""13(12)"","""","""",""""],[""12"","""","""",""""],[""15(14)"","""","""",""""],[""14"","""","""",""""],[""16"",""-"","""",""""]]","public class Menu {
+Name_171,VName_171,"public class Menu {
 
     public static void main(String [] args) {
         System.out.print(""Bitte auswaehlen...\n"" +
@@ -4081,7 +3911,7 @@ Brück,"Nicole Kristin Svenja Maria",n.brueck@campus.tu-berlin.de,Beendet,"4. De
     }
 
 }"
-Kuka,Elda,elda.kuka@campus.tu-berlin.de,Beendet,"5. Dezember 2021  11:51","5. Dezember 2021  22:01","10 Stunden 9 Minuten","12,50","Anweisung 2","0 1 2 3 4 5 6 7 8 9",8,15,"Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.",4,"[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""11"","""","""",""3""],[""6"","""","""",""""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_164,VName_164,"public class Menu {
 		
 	public static void main(String [] args) {
 		
@@ -4160,7 +3990,7 @@ public static void main(String[] args)
     }
     
 }"
-Soliman,Dunya,dunya.soliman@campus.tu-berlin.de,Beendet,"5. Dezember 2021  12:49","5. Dezember 2021  23:58","11 Stunden 9 Minuten","7,25","Im Initialisierungsbereich der for-Schleife kann man beliebige Variablen deklarieren.","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Anweisung 2",7,3,"0 1 2 3 4 5 6 7 8 9","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""8"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""",""-"",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""."",""""]]","public class Menu {
+Name_520,VName_520,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4234,7 +4064,7 @@ Soliman,Dunya,dunya.soliman@campus.tu-berlin.de,Beendet,"5. Dezember 2021  12:49
     }
     
 }"
-Weisleder,"Lennart Hans",lennart.h.weisleder@campus.tu-berlin.de,Beendet,"5. Dezember 2021  13:13","5. Dezember 2021  20:01","6 Stunden 48 Minuten","14,25","Sie zählt unendlich.","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","gar nicht","Gar nicht",4,"4 Mal","[[""2"",""-"",""-"",""-""],[""3"",""undef "","""",""""],[""4"","""",""false "",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""-""]]","public class Menu {
+Name_478,VName_478,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4315,7 +4145,7 @@ Weisleder,"Lennart Hans",lennart.h.weisleder@campus.tu-berlin.de,Beendet,"5. Dez
     
 
 }"
-Gündüz,Seren,guenduez@campus.tu-berlin.de,Beendet,"5. Dezember 2021  15:01","5. Dezember 2021  23:11","8 Stunden 9 Minuten","3,00",5,"Sie zählt unendlich.",4,"Anweisung4 kann nie ausgeführt werden.","kein Wert führt zur Ausgabe von ""!""","Ersteres nennt man implizites Casten, beim Casten vom kleinerem (float) zum größerem Datentyp (double) muss das explizit geschehen.","[[""2"",""-"",""-"",""-""],[""3"",""undef"",""%"",""%""],[""4"",""%"",""false"",""%""],[""5"",""9"",""%"",""%""],[""6"",""%"",""%"",""2""],[""7"",""%"",""%"",""%""],[""10(7)"",""%"",""%"",""%""],[""6"",""%"",""%"",""3""],[""7"",""%"",""%"",""%""],[""8"",""%"",""true"",""%""],[""9"",""%"",""%"",""-""],[""12"",""%"",""%"",""%""],[""14(12)"",""%"",""%"",""%""],[""15"",""%"",""%"",""%""],[""16"",""-"",""-"",""%""]]","public class Menu {
+Name_521,VName_521,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4385,7 +4215,7 @@ Gündüz,Seren,guenduez@campus.tu-berlin.de,Beendet,"5. Dezember 2021  15:01","5
     }
     
 }"
-Werther,"Jasper Cornelis",j.werther@campus.tu-berlin.de,Beendet,"5. Dezember 2021  15:29","5. Dezember 2021  23:59","8 Stunden 29 Minuten","10,75",4,"gar nicht",15,8,"Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Anweisung 2","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""(6)"","""","""",""""],[""(6)"","""","""",""""],[""(6)"","""","""",""""],[""6"","""","""",""2""],["""","""","""",""3""],["""","""","""",""""],["""","""","""",""""],[""12"","""","""",""""],[""15"","""","""",""""],[""16"","""","""",""""],[""17"",""-"",""-"",""-""]]","public class Menu {
+Name_160,VName_160,"public class Menu {
 	
 
 	public static void main(String [] args) {
@@ -4464,7 +4294,7 @@ Werther,"Jasper Cornelis",j.werther@campus.tu-berlin.de,Beendet,"5. Dezember 202
 	else break
 	}
     		}"
-Diao,Yiwei,yiwei.diao@campus.tu-berlin.de,Beendet,"5. Dezember 2021  15:42","5. Dezember 2021  17:29","1 Stunde 46 Minuten","14,00",Einmal,8,"0 1 2 3 4 5 6 7 8 9","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)",15,"Sie zählt unendlich.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_187,VName_187,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4533,13 +4363,7 @@ Diao,Yiwei,yiwei.diao@campus.tu-berlin.de,Beendet,"5. Dezember 2021  15:42","5. 
         return Terminal.askInt(""Countdown:\n"");
     }
 }"
-Glowacki,"Robin Gregor",glowacki@campus.tu-berlin.de,Beendet,"5. Dezember 2021  16:48","5. Dezember 2021  23:55","7 Stunden 6 Minuten","13,25","4 Mal","Gar nicht","0 1 2 3 4 5 6 7 8 9","gar nicht","Sie zählt unendlich.","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""11"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""-""],[""13"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""]]","public class Menu {
+Name_175,VName_175,"public class Menu {
 
     public static void main(String [] args) {
         System.out.print(""Bitte auswaehlen...\n"" +
@@ -4624,7 +4448,7 @@ Glowacki,"Robin Gregor",glowacki@campus.tu-berlin.de,Beendet,"5. Dezember 2021  
         }
 
 }"
-Lohse,"Clemens Christian",clemens.lohse@campus.tu-berlin.de,Beendet,"5. Dezember 2021  18:55","5. Dezember 2021  20:23","1 Stunde 28 Minuten","14,50","gar nicht","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.",15,"Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","Sie zählt unendlich.","4 Mal","[[""2"",""-"",""-"",""-""],[""3"","""","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""11"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_66,VName_66,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4696,13 +4520,7 @@ Lohse,"Clemens Christian",clemens.lohse@campus.tu-berlin.de,Beendet,"5. Dezember
     
     
 }"
-Sturm,"Bjarne Karl-Heinz",b.sturm@campus.tu-berlin.de,Beendet,"5. Dezember 2021  20:04","5. Dezember 2021  21:14","1 Stunde 10 Minuten","5,00","gar nicht","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }","0 1 2 3 4 5 6 7 8 9","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","4 Mal","[["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""6"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""12"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""]]","public class Menu {
+Name_522,VName_522,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4771,13 +4589,7 @@ return Bitte Jahreszahl eingeben. das Jahr ""jahr"" ist ein Schaltjahr;
     }
     
 }"
-Schmid,Maximilian,maximilian.schmid@campus.tu-berlin.de,Beendet,"5. Dezember 2021  21:15","5. Dezember 2021  23:58","2 Stunden 43 Minuten","14,25","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }",15,"4 Mal","Ersteres nennt man implizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das explizit geschehen.","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""9"","""","""",""""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""-""]]","public class Menu {
+Name_186,VName_186,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4851,7 +4663,7 @@ Schmid,Maximilian,maximilian.schmid@campus.tu-berlin.de,Beendet,"5. Dezember 202
     }
     
 }"
-Klein,Johannes,j.klein.3@campus.tu-berlin.de,Beendet,"5. Dezember 2021  22:07","5. Dezember 2021  23:57","1 Stunde 49 Minuten","6,25",Einmal,5,"gar nicht","Anweisung4 wird nur dann ausgeführt, wenn Bedingung1 und Bedingung4 falsch sind. (Anweisung1, Anweisung2 und Anweisung3 werden nicht ausgeführt)","Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","Anweisung 2","[[""2"",""-"",""-"",""-""],[""3"",""undef"","""",""""],[""4"","""",""false"",""""],[""5"",""9"","""",""""],[""6"","""","""",""2""],[""7"","""","""",""""],[""10"","""","""",""""],[""6"","""","""",""3""],[""7"","""","""",""""],[""8"","""",""true"",""""],[""11"","""","""",""-""],[""12"","""","""",""""],[""14"","""","""",""""],[""15"","""","""",""""],[""16"",""-"",""-"",""""]]","public class Menu {
+Name_184,VName_184,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +
@@ -4905,13 +4717,7 @@ Klein,Johannes,j.klein.3@campus.tu-berlin.de,Beendet,"5. Dezember 2021  22:07","
     }
     
 }"
-Nergiz,"Faruk Muhammed",f.nergiz@campus.tu-berlin.de,Beendet,"5. Dezember 2021  23:02","5. Dezember 2021  23:59","56 Minuten 3 Sekunden","1,50","4 Mal","Ersteres nennt man explizites Casten, beim Casten vom größerem (double) zum kleinerem Datentyp (float) muss das implizit geschehen.","0 2 4 6 8","for( i=0;i<10;){
-
-   i++;
-
-   System.out.println(i);
-
- }",6,"Mit For-Schleifen kann man keine Endlosschleifen erzeugen.","[["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""6"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""],[""12"","""","""",""""],["""","""","""",""""],["""","""","""",""""],["""","""","""",""""]]","public class Menu {
+Name_531,VName_531,"public class Menu {
 		
 	public static void main(String [] args) {
 		System.out.print(""Bitte auswaehlen...\n"" +

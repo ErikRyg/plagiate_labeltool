@@ -8,7 +8,6 @@ Github: https://github.com/whoward3/C-Code-Obfuscator
 
 import os
 import re
-import math
 import random
 import string
 

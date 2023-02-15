@@ -1,49 +1,5 @@
-﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/15,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9"
-Jacoby,"Maximilian Erich",m.jacoby@campus.tu-berlin.de,Beendet,"5. Juni 2021  15:36","14. Juni 2021  12:50","8 Tage 21 Stunden","11,50","1, 0","pointer = &zahl;
-pp = &pointer;
-**pp = 42;",Nein,"Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet","long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344; int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 120; char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 50; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 12","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int *p1 = &ersteZahl;
-    int *p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Nachname,Vorname,Antwort 8,Antwort 9
+Name_79,VName_79,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -159,39 +115,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Wang,"Yang Felix",yang.f.wang@campus.tu-berlin.de,Beendet,"5. Juni 2021  21:56","12. Juni 2021  14:38","6 Tage 16 Stunden","14,22","pointer = &zahl;
-pp = &pointer;
-**pp = 42;","Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet
-
-; Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen","0, 1",Nein,"Man kann untypisierte Pointer weder inkrementieren noch dekrementieren.; Man kann untypisierte Pointer nicht dereferenzieren.; Es gibt untypisierte Pointer.","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: %; Teil 73: %; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13(19); Teil 79: -; Teil 80: -; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_73,VName_73,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -304,52 +228,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Alfakir,Mohamad,alfakir.1@campus.tu-berlin.de,Beendet,"6. Juni 2021  14:54","13. Juni 2021  20:42","7 Tage 5 Stunden","12,73","0, 1",Nein,"pointer = &zahl;
-pp = &pointer;
-**pp = 42;","Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen","long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344; char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 50; int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 12; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 120","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: undef; Teil 29: 6(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 7(19); Teil 37: %; Teil 38: %; Teil 39: 100; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 8(19); Teil 44: 10; Teil 45: %; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 9(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 100; Teil 56: %; Teil 57: 10(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 11(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int *p1=&ersteZahl;
-    int *p2=&zweiteZahl;
-    
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_74,VName_74,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -493,39 +372,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Alexe,"Jeremias Harry",jeremias.h.alexe@campus.tu-berlin.de,Beendet,"6. Juni 2021  15:32","14. Juni 2021  10:48","7 Tage 19 Stunden","14,10","Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen","pointer = &zahl;
-pp = &pointer;
-**pp = 42;","1, 0","0, 1","Man kann untypisierte Pointer inkrementieren, aber auch dekrementieren.; Es gibt untypisierte Pointer.; Man kann untypisierte Pointer nicht dereferenzieren.","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_83,VName_83,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -672,39 +519,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Otto,Klara,klara.otto@campus.tu-berlin.de,Beendet,"6. Juni 2021  17:51","13. Juni 2021  22:59","7 Tage 5 Stunden","14,14","0, 1","pointer = &zahl;
-pp = &pointer;
-**pp = 42;",Nein,"Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen","{3} {11} {26} {51} {208} {212} {216}","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: 1028; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: 100; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: %; Teil 73: %; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: -; Teil 125: -; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int *p1 = &ersteZahl;
-    int *p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_89,VName_89,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -839,40 +654,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Scharnreitner,"Philipp Aurel",p.scharnreitner@campus.tu-berlin.de,Beendet,"6. Juni 2021  18:04","13. Juni 2021  20:38","7 Tage 2 Stunden","13,28",Nein,"Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet","1, 0","pointer = &zahl;
-pp = &pointer;
-**pp = 42;","{3} {11} {25} {26} {54} {208} {216}","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;
-    
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_100,VName_100,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -1036,49 +818,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Schwarz,"Jasko Tobias",jasko.t.schwarz@campus.tu-berlin.de,Beendet,"6. Juni 2021  23:05","13. Juni 2021  22:56","6 Tage 23 Stunden","12,66","pointer = &zahl;
-pp = &pointer;
-**pp = 42;","1, 0",Nein,"Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen
-
-; Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet","int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 120; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 12; long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 50","Teil 1: 16; Teil 2: %; Teil 3: %; Teil 4: %; Teil 5: %; Teil 6: %; Teil 7: %; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 19(4); Teil 23: 100; Teil 24: 10; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 19(5); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 19(6); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 19(7); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 19(8); Teil 51: 10; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 19(9); Teil 58: %; Teil 59: 100; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 19(10); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 19(11); Teil 72: undef; Teil 73: undef; Teil 74: undef; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: undef; Teil 128: undef; Teil 129: undef","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_97,VName_97,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -1203,45 +943,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Gillich,"Franziska Anna-Lena",f.gillich@campus.tu-berlin.de,Beendet,"6. Juni 2021  23:10","12. Juni 2021  13:00","5 Tage 13 Stunden","15,00",Nein,"1, 0","0, 1","pointer = &zahl;
-pp = &pointer;
-**pp = 42;","int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 12; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344; int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 120; char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 50; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1= &ersteZahl;
-    int* p2= &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_93,VName_93,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -1361,53 +1063,7 @@ shiftChar (char *p_char, int shift)
     printf (""Entschluesselt: "");
     printf (""%s\n"", str);
   }"
-Aksoy,Vedia,vedia.aksoy@campus.tu-berlin.de,Beendet,"7. Juni 2021  00:22","13. Juni 2021  23:59","6 Tage 23 Stunden","8,08",Vielleicht,"1, 1","pointer = &zahl;
-pp = &pointer;
-**pp = 42;","Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet
-
-; Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen
-
-; Der '*' Operator wird bei Pointer und Variablen für das Referenzieren verwendet","int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 344; char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 200; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 12; long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344","Teil 1: 8; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: 9; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: 10; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: 11; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: 12; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: 13; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: 14; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: 15; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: 16; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: 17; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: 18; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: 19; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: ; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: 25; Teil 98: ; Teil 99: ; Teil 100: ; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: 26; Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: 27; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117: ; Teil 118: ; Teil 119: ; Teil 120: ; Teil 121: ; Teil 122: ; Teil 123: ; Teil 124: ; Teil 125: ; Teil 126: ; Teil 127: ; Teil 128: ; Teil 129:","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int *p1=&ersteZahl;
-    int *p2=&zweiteZahl;
-    
-    
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_75,VName_75,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -1521,45 +1177,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Hansel,"Karsten Siegfried",hansel@campus.tu-berlin.de,Beendet,"7. Juni 2021  09:09","13. Juni 2021  21:28","6 Tage 12 Stunden","13,95","1, 0","pointer = &zahl;
-**pp = 42;
-pp = &pointer;",Nein,"0, 1","char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 50; int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 120; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 12; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: undef; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 13(19); Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_99,VName_99,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -1679,49 +1297,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Horneburg,"Max Richard",m.horneburg@campus.tu-berlin.de,Beendet,"7. Juni 2021  10:39","7. Juni 2021  12:05","1 Stunde 26 Minuten","13,40","0, 1",Nein,"pointer = &zahl;
-**pp = 42;
-pp = &pointer;","Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet","int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 12; long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344; int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 120; char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 50; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: -; Teil 27: -; Teil 28: %; Teil 29: 5(19); Teil 30: 1024; Teil 31: 1028; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: -; Teil 80: -; Teil 81: -; Teil 82: 10; Teil 83: 100; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_80,VName_80,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -1855,51 +1431,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-"Salas Lara","Luis Valentin",l.salaslara@tu-berlin.de,Beendet,"7. Juni 2021  12:02","14. Juni 2021  11:39","6 Tage 23 Stunden","14,63","1, 0","Der '*' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet",Nein,"0, 1","long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200; char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 50; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344; int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 120; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 12","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int *p1 =&ersteZahl;
-    int *p2=&zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_77,VName_77,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -2040,45 +1572,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Franke,Alexander,alexander.franke@campus.tu-berlin.de,Beendet,"7. Juni 2021  15:06","13. Juni 2021  23:50","6 Tage 8 Stunden","7,85",Nein,"1, 0","pointer = &zahl;
-pp = &pointer;
-**pp = 42;","0, 1","char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 200; int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 344; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 50; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344; long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 50; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 1024; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: 1028; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: 1024; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_76,VName_76,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -2168,51 +1662,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Schmidt,"Tom Alexander",tom.a.schmidt@campus.tu-berlin.de,Beendet,"7. Juni 2021  17:28","13. Juni 2021  21:15","6 Tage 3 Stunden","14,49",Nein,"pointer = &zahl;
-pp = &pointer;
-**pp = 42;","0, 1","Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Mit dem '&' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Mit dem '*' Operator kann man auf Adressen von Pointern und Variablen zugreifen","long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 12; int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 120; char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 50; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: undef; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int * p1 = &ersteZahl;
-    int * p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_7,VName_7,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -2367,34 +1817,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Gföhler,"Vincent Bruce",v.gfoehler@campus.tu-berlin.de,Beendet,"7. Juni 2021  18:40","15. Juni 2021  23:59","8 Tage 5 Stunden","10,57","pointer = &zahl;
-pp = &pointer;
-**pp = 42;",Ja,"0, 1","1, 0","Man kann untypisierte Pointer weder inkrementieren noch dekrementieren.; Es gibt untypisierte Pointer.","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;   
-    
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_90,VName_90,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -2509,51 +1932,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Schwolow,Niklas,niklas.schwolow@campus.tu-berlin.de,Beendet,"8. Juni 2021  18:52","15. Juni 2021  23:59","7 Tage 5 Stunden","7,18","1, 0",Nein,"Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet","pointer = &zahl;
-pp = &pointer;
-**pp = 42;","char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 12; long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 50; int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 120","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 5(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 6(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 7(19); Teil 37: %; Teil 38: %; Teil 39: 100; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 8(19); Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 10; Teil 48: %; Teil 49: %; Teil 50: 9(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 100; Teil 56: %; Teil 57: 10(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 11(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 12(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: -; Teil 125: -; Teil 126: -; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_91,VName_91,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -2643,31 +2022,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Bauszus,"Florian Alexander",bauszus@campus.tu-berlin.de,Beendet,"9. Juni 2021  13:13","11. Juni 2021  17:23","2 Tage 4 Stunden","12,91",Nein,"0, 1","Mit dem '&' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen","1, 0","Man kann untypisierte Pointer inkrementieren, aber auch dekrementieren.","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 100; Teil 24: 10; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: undef; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: 10; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: 100; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: 11(19); Teil 72: %; Teil 73: %; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: 100; Teil 83: 10; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: -; Teil 125: -; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int p1;
-    int p2;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", &p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", &p2);
-    groesste_gemeinsame_teiler(&p1, &p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", p1);
-    return 0;
-}","#include <stdio.h>
+Name_82,VName_82,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -2794,50 +2149,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Miskovic,Matea,matea.miskovic@tu-berlin.de,Beendet,"9. Juni 2021  17:28","12. Juni 2021  12:59","2 Tage 19 Stunden","13,93","1, 0","Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen","0, 1",Nein,"int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 120; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 12; long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 200; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;  
-    
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_78,VName_78,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -2997,49 +2309,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Schulz,Leon,leon.schulz@campus.tu-berlin.de,Beendet,"9. Juni 2021  18:30","15. Juni 2021  23:59","6 Tage 5 Stunden","10,56","pointer = &zahl;
-pp = &pointer;
-**pp = 42;","Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet","1, 0","0, 1","int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 120; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344; long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 200; char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 50","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 6(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 7(19); Teil 37: %; Teil 38: %; Teil 39: 100; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 8(19); Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 10; Teil 48: %; Teil 49: %; Teil 50: 9(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 100; Teil 56: %; Teil 57: 10(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 11(19); Teil 65: %; Teil 66: %; Teil 67: -; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl; 
-    int* p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_96,VName_96,"#include <stdio.h>
 
 #include <stdlib.h>
 
@@ -3250,35 +2520,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Platena,Moritz,platena@campus.tu-berlin.de,Beendet,"10. Juni 2021  09:28","11. Juni 2021  14:50","1 Tag 5 Stunden","14,16",Nein,"Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet","pointer = &zahl;
-pp = &pointer;
-**pp = 42;","0, 1","Es gibt untypisierte Pointer.; Man kann untypisierte Pointer nicht dereferenzieren.; Man kann untypisierte Pointer weder inkrementieren noch dekrementieren.","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: 1; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_88,VName_88,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3432,39 +2674,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Zakusek,"Simon Lorenz",s.zakusek@campus.tu-berlin.de,Beendet,"10. Juni 2021  15:25","15. Juni 2021  23:59","5 Tage 8 Stunden","11,43",Nein,"pointer = &zahl;
-pp = &pointer;
-**pp = 42;","Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet
-
-; Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen","1, 0","Man kann untypisierte Pointer weder inkrementieren noch dekrementieren.; Es gibt untypisierte Pointer.; Man kann untypisierte Pointer nicht dereferenzieren.","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int *p1 = &ersteZahl;
-    int *p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_102,VName_102,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3567,40 +2777,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Durak,Umut,umut.durak@campus.tu-berlin.de,Beendet,"10. Juni 2021  16:40","15. Juni 2021  16:15","4 Tage 23 Stunden","14,13","1, 0",Nein,"pointer = &zahl;
-pp = &pointer;
-**pp = 42;","Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet","{3} {11} {26} {51} {208} {212} {216}","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: %; Teil 73: %; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: 1; Teil 78: 13(19); Teil 79: -; Teil 80: -; Teil 81: %; Teil 82: 10; Teil 83: 100; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;
-    
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_84,VName_84,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3697,33 +2874,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Eckardt,"Jan Hartmut",jan.h.eckardt@campus.tu-berlin.de,Beendet,"11. Juni 2021  08:21","14. Juni 2021  17:51","3 Tage 9 Stunden","9,99","0, 1","1, 0","Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet
-
-; Mit dem '&' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen",Ja,-,"Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: undef; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int *p1 = &ersteZahl;
-    int *p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_81,VName_81,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3827,35 +2978,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Gerhardt,"Fynn Niklas",f.gerhardt@tu-berlin.de,Beendet,"11. Juni 2021  13:01","11. Juni 2021  16:53","3 Stunden 52 Minuten","14,75","pointer = &zahl;
-pp = &pointer;
-**pp = 42;","0, 1","1, 0","Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen","{3} {11} {26} {51} {208} {212} {216}","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int *p1 = &ersteZahl;
-    int *p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_85,VName_85,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3974,51 +3097,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Ngu,"Siaw Tieng",s.ngu@campus.tu-berlin.de,Beendet,"11. Juni 2021  21:43","13. Juni 2021  21:42","1 Tag 23 Stunden","14,35","Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet","pointer = &zahl;
-pp = &pointer;
-**pp = 42;",Nein,"1, 0","int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 120; long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 12; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 50","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: 10; Teil 83: 100; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int * p1 = &ersteZahl;
-    int * p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_95,VName_95,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -4161,50 +3240,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Weber,"Michael Andreas",michael.a.weber@campus.tu-berlin.de,Beendet,"12. Juni 2021  13:06","15. Juni 2021  23:59","3 Tage 10 Stunden","8,33",Nein,"Der '*' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Mit dem '&' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen","pointer = &zahl;
-**pp = 42;
-pp = &pointer;","1, 0","int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 344; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 12; long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 120; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 200; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 50","Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: ; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: ; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: ; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: ; Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: ; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117: ; Teil 118: ; Teil 119: ; Teil 120: ; Teil 121: ; Teil 122: ; Teil 123: ; Teil 124: ; Teil 125: ; Teil 126: ; Teil 127: ; Teil 128: ; Teil 129:","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1;
-    int* p2;
-    p1 = &ersteZahl;
-    p2 = &zweiteZahl;
-    
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_86,VName_86,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -4347,51 +3383,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Roßmöller-Felz,"Mattis Musashi Martin",mattis.rossmoeller@campus.tu-berlin.de,Beendet,"12. Juni 2021  14:17","15. Juni 2021  11:30","2 Tage 21 Stunden","12,45","Der '*' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet",Vielleicht,"1, 1","pp = &zahl;
-pointer = &pp;
-**pointer = 42;","int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 120; char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 200; long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 12","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 6(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 7(19); Teil 37: %; Teil 38: %; Teil 39: 100; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 8(19); Teil 44: %; Teil 45: %; Teil 46: %; Teil 47: 10; Teil 48: %; Teil 49: %; Teil 50: 9(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: 100; Teil 56: %; Teil 57: 10(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 11(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","/******************************************************************************
+Name_94,VName_94,"/******************************************************************************
 
                             Online C Compiler.
                 Code, Compile, Run and Debug C program online.
@@ -4548,39 +3540,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Outhwaite,"Jared Louis",jared.l.outhwaite@campus.tu-berlin.de,Beendet,"12. Juni 2021  20:09","15. Juni 2021  23:59","3 Tage 3 Stunden","13,09","pointer = &zahl;
-pp = &pointer;
-**pp = 42;","1, 0",Nein,"Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet","Es gibt untypisierte Pointer.","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %2; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 25; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 26; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 27; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_92,VName_92,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -4712,51 +3672,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Sen,"Muzaffer Mert",m.sen@campus.tu-berlin.de,Beendet,"12. Juni 2021  23:28","15. Juni 2021  20:10","2 Tage 20 Stunden","12,79",Nein,"pointer = &zahl;
-pp = &pointer;
-**pp = 42;","Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen","0, 1","int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 120; long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200; char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 50; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 12; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 19(4); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 19(5); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 19(6); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 19(7); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 19(8); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 19(9); Teil 58: %; Teil 59: %; Teil 60: 10; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 19(10); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 19(13); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: -; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: %","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1= &ersteZahl;
-    int* p2= &zweiteZahl; 
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_87,VName_87,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -4869,39 +3785,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Hendel,"Philipp Caspar",philipp.c.hendel@campus.tu-berlin.de,Beendet,"13. Juni 2021  20:13","15. Juni 2021  23:58","2 Tage 3 Stunden","9,50","1, 0","Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen","0, 1","pointer = &zahl;
-pp = &pointer;
-**pp = 42;","Es gibt keine untypisierten Pointer.","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 1024; Teil 24: 1028; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 10; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 100; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 13(19); Teil 72: -; Teil 73: -; Teil 74: -; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: -; Teil 128: -; Teil 129: -","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_98,VName_98,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -5005,49 +3889,7 @@ int main()
 	printf(""Entschluesselt: "");
 	printf(""%s\n"", str);
 }"
-Ruschke,Dennis,dennis.ruschke@campus.tu-berlin.de,Beendet,"14. Juni 2021  13:42","15. Juni 2021  23:59","1 Tag 10 Stunden","7,54","1, 0","0, 1","Der '&' Operator wird bei Pointer und Variablen für das Referenzieren verwendet
-
-; Mit dem '*' Operator kann man auf den Inhalt von Adressen, die in Pointern gespeichert sind, zugreifen
-
-; Mit dem '&' Operator kann man auf Adressen von Pointern und Variablen zugreifen
-
-; Der '*' Operator wird bei Pointer und Variablen für das Dereferenzieren verwendet",Nein,"char groesse = (char) ((int*) 324 - (int*) 124);
-
- -> // groesse = 50; long groesse = (long) ((char*) 400 - (int) 200);
-
- -> // groesse = 200; int groesse = (int) ((long) 376 - (char) 32);
-
- -> // groesse = 344; int groesse = (int) ((long*) 376 - 32);
-
- -> // groesse = 120; int groesse = (int) ((char*) 100 - 4 );
-
- -> // groesse = 96; int groesse = (int) ((long*) 200 - (long*) 100);
-
- -> // groesse = 12","Teil 1: 16; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: 17; Teil 9: %; Teil 10: %; Teil 11: %; Teil 12: 100; Teil 13: %; Teil 14: %; Teil 15: 18; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: 10; Teil 21: %; Teil 22: 4(19); Teil 23: 100; Teil 24: 10; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 5(19); Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: %; Teil 35: %; Teil 36: 6(19); Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: %; Teil 41: %; Teil 42: %; Teil 43: 7(19); Teil 44: %; Teil 45: %; Teil 46: 100; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: 8(19); Teil 51: 10; Teil 52: %; Teil 53: %; Teil 54: %; Teil 55: %; Teil 56: %; Teil 57: 9(19); Teil 58: %; Teil 59: 100; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 10(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 11(19); Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: 19; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: 1; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: 22; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 23; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: 24; Teil 112: %; Teil 113: %; Teil 114: %; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: %; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %","#include <stdio.h>
-
-void groesste_gemeinsame_teiler(int* ersteZahl, int* zweiteZahl){
-    while( *ersteZahl != *zweiteZahl ){
-        if ( *ersteZahl < *zweiteZahl )
-        *zweiteZahl = *zweiteZahl - *ersteZahl;
-        else
-        *ersteZahl = *ersteZahl - *zweiteZahl;
-    }
-}
-
-int main()
-{
-    int ersteZahl = 0;
-    int zweiteZahl = 0;
-    int* p1 = &ersteZahl;
-    int* p2 = &zweiteZahl;
-    printf(""Bitte geben sie eine ganze Zahl für ihr erste Zahl ein: \n"");
-    scanf(""%i"", p1);
-    printf(""Bitte geben sie eine ganze Zahl für ihre zweite Zahl ein: \n"");
-    scanf(""%i"", p2);
-    groesste_gemeinsame_teiler(p1, p2);
-    printf (""Der größte gemeinsame Teile ist: %i\n"", *p1);
-    return 0;
-}","#include <stdio.h>
+Name_101,VName_101,"#include <stdio.h>
 #include <stdlib.h>
 
 

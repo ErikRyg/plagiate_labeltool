@@ -23,7 +23,6 @@ layout = html.Div([
                     ],
                     align="center",
                     ),
-            # href="https://www.ni.tu-berlin.de/menue/members/postgraduate_students_and_doctoral_candidates/goerttler_thomas/",
         ]
         ),
         color="primary",
@@ -98,8 +97,6 @@ layout = html.Div([
                             tooltip={"placement": "bottom", "always_visible": True}), md=12, className="graph_container"),
                     ]),
                     dbc.Row([
-                        # dbc.Col(html.Button('vorheriges Paar', id='previous',
-                        #         n_clicks=0), md=4, className="button", width={"offset": 1}),
                         dbc.Col(dbc.Button('Download [...]_labled.csv', id='download',
                                 n_clicks=0), md=4, className="button_do", width={"offset": 1}),
                         dcc.Download(id="download-text"),
@@ -114,7 +111,6 @@ layout = html.Div([
     dcc.Store(id='st_labled_pairs'),
     dcc.Store(id='st_last_id'),
     dcc.Store(id='st_last_task'),
-    # dcc.Store(id='st_last_ids_list'),
 ], className="h-100")
 
 
@@ -130,7 +126,6 @@ layout = html.Div([
     Output('st_df_labled', 'data'),
     Output('st_last_id', 'data'),
     Output('st_last_task', 'data'),
-    # Input('previous', 'n_clicks'),
     Input('done_next', 'n_clicks'),
     Input('next', 'n_clicks'),
     State('score', 'value'),
@@ -184,8 +179,6 @@ def button_pressed(done_clicks, next_clicks, label, st_df_labled_len, st_df_labl
         rt = get_new_pair_routine(
             df_labled, last_id+1, last_task, prog_language)
         return rt[0], rt[1], rt[2], rt[3], dash.no_update, rt[4], dash.no_update, dash.no_update, dash.no_update, dumps(rt[5]), dumps(rt[6])
-    # elif ctx.triggered_id == 'previous':
-    #     return get_new_pair_routine(df_labled)
     else:
         raise dash.exceptions.PreventUpdate
 
@@ -229,40 +222,5 @@ def print_retry_message(st_semester, st_ha, st_tasks, st_prog_language):
         return dash.no_update
 
 
-# checked
-# 1. erfolgreichen match hinbekommen
-# 2. empty_solution_matrix richtig setzen
-# 3. dann daraus ein paar ableiten
-# 4. dann daraus eine tabellenreihe für ...labled.csv machen
-# 5. dann eine ganze tabelle draus machen
-# 6. wo wird tabelle zwischengespeichert? --> aktuelle Session des users (dcc.store)
-# 7. funktion schreiben die die erste Routine macht mit #aller paar und #aller bereits gelableten und die 3 texte ausgibt
-# 7.1 funktion schreiben, die ein lable übergeben bekommt, in tabelle einträgt und ein neues paar zurückgibt (ggf. auch neue vorgabe)
-# gibt es ein Download fenster? --> ja, da dynos in heroku nicht global speichern können
-# 7.2 set_label zum laufen bringen
-# 8. Download button realisieren
-# 8.1 temporäre speicherung des df_labels
-# 12. beide pages gleichzeitig zum laufen bringen
-# 13. callbacks für init page schreiben
-# 14. back end für halbgelabelte csv im drag&drop realisieren!
-# 15. loading state für page lable_pairs hinzufügen
-# 16. ausklappbares Feld für die Aufgabenstellung hinzufügen hinzufügen
-# 16.1 vorgabe in ausklappbares Feld umwandeln --> code1 und 2 in 50% große felder ändern
-# 17. gespiegeltes paar gleichzeitig labeln / keine gespiegelten Paare + difflib von max(difflib(a,b), difflib(b,a))
-# 18. mithilfe von difflib oder anderem plagiates checker die paare prelabeln
-# 19. font size von code anpassen
-# 20. website scrollable machen
-# 23. code mithilfe von bibliotheken highlighten!
-
-# unchecked
-# TODO (9. neuen knopf für previous labled hinzufügen)
-# TODO (10. liste für gelabelte ids hinzufügen)
-# TODO (11. liste für nicht gelabelte ids hinzufügen)
-# TODO 21. csv_stuff in class umschreiben, damit übergabeparameter sich wegkürzen
-# TODO 22. google how to manage multiple return values + consistenc
-# TODO 24. code should work on keywords in columns not in position of the columns
-# TODO 25. dark mode button hinzufügen?
-# TODO checken weshalb nur 12/13 leere abgaben bei antwort 10 gefunden wurden
-# TODO double linked list, für die id schreiben, um prev und next button zu realisieren
 if __name__ == '__main__':
     app.run_server(debug=True)

@@ -1,7 +1,7 @@
-﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/20,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9"
-Magen,Omry,omry.magen@tu-berlin.de,Beendet,"26. Juni 2020  10:45","29. Juni 2020  10:29","2 Tage 23 Stunden","5,18","Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen",super,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {6. <sub>gewicht:} Dropzone 3 -> {10. <sub>int} Dropzone 4 -> {2. <sub>bezeichnung:} Dropzone 5 -> {3. <sub>String} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {10. <sub>int} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {10. <sub>int} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Seeburger,Niklas,niklas.seeburger@tu-berlin.de,Beendet,"26. Juni 2020  10:46","5. Juli 2020  08:38","8 Tage 21 Stunden","5,59","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen",Object,super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {10. <sub>int} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {10. <sub>int} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Hasselbach,"Tillmann Carlo Friedrich",tillmann.hasselbach@campus.tu-berlin.de,Beendet,"26. Juni 2020  13:03","2. Juli 2020  17:32","6 Tage 4 Stunden","11,45","Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,extends,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Nachname,Vorname,Antwort 8,Antwort 9
+Name_361,VName_361,-,-
+Name_360,VName_360,-,-
+Name_385,VName_385,"public class TestMannschaft{
 	public static void main(String[] args){
 		Fussballspieler[] deutschland = new Fussballspieler[11];
 		Fussballspieler[] argentinien = new Fussballspieler[11];
@@ -103,7 +103,7 @@ Hasselbach,"Tillmann Carlo Friedrich",tillmann.hasselbach@campus.tu-berlin.de,Be
 		}
 	}
 }"
-Litzel,Ida,i.litzel@campus.tu-berlin.de,Beendet,"26. Juni 2020  13:59","5. Juli 2020  20:53","9 Tage 6 Stunden","8,86",extends,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es wird die Methode der Sub-Klasse aufgerufen",Object,"Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_359,VName_359,"public class TestBus {
   
   public static void main (String [] args){
     Bus [] busArray = new Bus [3];
@@ -150,7 +150,7 @@ Litzel,Ida,i.litzel@campus.tu-berlin.de,Beendet,"26. Juni 2020  13:59","5. Juli 
 
 
   }",-
-Taubert,"Antonia Aline Elisabeth",antonia.ae.taubert@campus.tu-berlin.de,Beendet,"26. Juni 2020  15:23","4. Juli 2020  18:28","8 Tage 3 Stunden","12,00",extends,"Es wird die Methode der Sub-Klasse aufgerufen",Object,"Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","die Klasse Tier erbt von der Klasse Hund","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_374,VName_374,"public class TestMannschaft{
 	public static void main(String[] args){
 		Fussballspieler [] deutschland = new Fussballspieler [11];
 		Fussballspieler [] portugal = new Fussballspieler [11];
@@ -253,7 +253,7 @@ Taubert,"Antonia Aline Elisabeth",antonia.ae.taubert@campus.tu-berlin.de,Beendet
 	
 	}
 }"
-Kulow,"Linda Marie",l.kulow@campus.tu-berlin.de,Beendet,"26. Juni 2020  19:16","3. Juli 2020  14:10","6 Tage 18 Stunden","19,00","Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen",Object,extends,"die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_379,VName_379,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -399,7 +399,7 @@ public class TestBus {
        }
     }
 }"
-Yin,Shanshan,shanshan.yin@campus.tu-berlin.de,Beendet,"26. Juni 2020  20:57","30. Juni 2020  23:48","4 Tage 2 Stunden","4,09","die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen",super,"Es wird die Methode der Sub-Klasse aufgerufen",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {11. Vogel} Dropzone 7 -> {12. <sub>schnabelfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {14. Papagei} Dropzone 10 -> {15. <sub>kannSprechen:} Dropzone 11 -> {16. <sub>boolean} Dropzone 12 -> {5. Saeugetier} Dropzone 13 -> {13. <sub>spannweite:} Dropzone 14 -> {8. Elefant} Dropzone 15 -> {7. <sub>fellfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {4. <sub>double} Dropzone 18 -> {9. <sub>ruessellaenge:} Dropzone 19 -> {4. <sub>double} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {10. <sub>int}","public class TestBus {
+Name_299,VName_299,"public class TestBus {
     public static void main(String[] args) {
         Bus bus = new Bus(3,3);
         Reisebus rb = new Reisebus(2,3,true);
@@ -458,8 +458,8 @@ public class TestMannschaft{
    /* bitte implementieren */
   }
 }"
-Öztürk,"Saskia Gudrun Ingrid",s.oeztuerk@campus.tu-berlin.de,Beendet,"27. Juni 2020  00:03","3. Juli 2020  23:02","6 Tage 22 Stunden","5,23","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Super-Klasse aufgerufen",Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Dhamala,Alok,alok.dhamala@campus.tu-berlin.de,Beendet,"27. Juni 2020  14:36","5. Juli 2020  22:53","8 Tage 8 Stunden","12,74",Java,"die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen",super,"Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_364,VName_364,-,-
+Name_376,VName_376,"public class TestBus {
 	public static void main(String[] args) {
 		Bus b1 = new Bus(70, 5);
 		Linienbus lb1 = new Linienbus(100, 3, true, 20);
@@ -633,7 +633,7 @@ Dhamala,Alok,alok.dhamala@campus.tu-berlin.de,Beendet,"27. Juni 2020  14:36","5.
 	
 		  }
 	}"
-Fendji,"Noah John",n.fendji@campus.tu-berlin.de,Beendet,"27. Juni 2020  20:05","5. Juli 2020  22:06","8 Tage 2 Stunden","12,50",super,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 1 : Klasse A hat keinen Konstruktor",Object,"die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_368,VName_368,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -724,7 +724,7 @@ public class TestMannschaft{
 
   }
 }",-
-Bouschen,"Kira Apollonia",bouschen@campus.tu-berlin.de,Beendet,"27. Juni 2020  20:31","3. Juli 2020  21:12","6 Tage","16,36",super,"Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","class TestBus {
+Name_380,VName_380,"class TestBus {
 	public static void main(String[] args) {
 		Bus[] b= new Bus[3];
 		Linienbus b0 = new Linienbus(10,4,false, 20);
@@ -915,7 +915,7 @@ public class TestMannschaft{
     return BSS(f) + f.getToreJeSpiel()*1.3;
   }
 }"
-Li,Rui,rui.li@campus.tu-berlin.de,Beendet,"27. Juni 2020  23:20","2. Juli 2020  22:42","4 Tage 23 Stunden","5,36","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,extends,"die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen","Es wird die Methode der Sub-Klasse aufgerufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,"public class TestBus {
+Name_294,VName_294,-,"public class TestBus {
     public static void main(String[] args) {
         Bus[] buses = {new Bus(10,2),new Reisebus(20,3,true),
                         new Linienbus(5,4,true,10)};
@@ -934,7 +934,7 @@ Li,Rui,rui.li@campus.tu-berlin.de,Beendet,"27. Juni 2020  23:20","2. Juli 2020  
         }
     }
 }"
-Hristova,Mariya,m.hristova@campus.tu-berlin.de,Beendet,"28. Juni 2020  12:32","5. Juli 2020  21:12","7 Tage 8 Stunden","11,59","Zeile 6,7 : super(); müsste vor x=0; stehen",super,Object,"Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_371,VName_371,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -1063,8 +1063,8 @@ public class TestBus {
         b[3].equals(bus);
     }
 }"
-Baumeister,"Niklas Florian",6d51ead2783b861e931f19e20f70fb40,Beendet,"28. Juni 2020  15:16","4. Juli 2020  08:51","5 Tage 17 Stunden","3,41","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","Zeile 1 : Klasse A hat keinen Konstruktor",extends,"die Klasse Hund erbt von der Klasse Tier",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {6. <sub>gewicht:} Dropzone 3 -> {4. <sub>double} Dropzone 4 -> {2. <sub>bezeichnung:} Dropzone 5 -> {3. <sub>String} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {13. <sub>spannweite:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {12. <sub>schnabelfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {4. <sub>double} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Kulzk,"Tabea Leah Isabel",t.kulzk@campus.tu-berlin.de,Beendet,"28. Juni 2020  15:23","30. Juni 2020  18:01","2 Tage 2 Stunden","18,95","Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"die Klasse Hund erbt von der Klasse Tier",super,"Es wird die Methode der Sub-Klasse aufgerufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_381,VName_381,-,-
+Name_388,VName_388,"public class TestBus {
 
 	public static void main (String [] args) {
 		Bus [] bu = {
@@ -1222,9 +1222,9 @@ public class TestMannschaft{
         }
    }
 }"
-Mkama,Carolin,carolin.mkama@campus.tu-berlin.de,Beendet,"28. Juni 2020  17:25","2. Juli 2020  13:06","3 Tage 19 Stunden","5,00","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Zeile 6,7 : super(); müsste vor x=0; stehen",extends,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Hinrichs,"Daria Isabelle",hinrichs@campus.tu-berlin.de,Beendet,"28. Juni 2020  17:47","5. Juli 2020  17:55","7 Tage","5,36","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",extends,"die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen",Object,"Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Rizk,Youssef,y.rizk@campus.tu-berlin.de,Beendet,"28. Juni 2020  20:10","3. Juli 2020  17:09","4 Tage 20 Stunden","18,66","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen",Object,"Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","//Hier kommt die TestBus Klasse rein
+Name_373,VName_373,-,-
+Name_107,VName_107,-,-
+Name_391,VName_391,"//Hier kommt die TestBus Klasse rein
 public class TestBus    {
     
     public static void main(String[] args)  {
@@ -1414,7 +1414,7 @@ public class TestBus    {
         
               
 }"
-Issa,Sarkis,s.issa@campus.tu-berlin.de,Beendet,"28. Juni 2020  21:26","5. Juli 2020  22:23","7 Tage","9,18","Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier",super,"Zeile 7 : super(); müsste this(); heißen",Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,"public class TestBus {
+Name_395,VName_395,-,"public class TestBus {
     public static void main(String[] args) {
         
         
@@ -1466,7 +1466,7 @@ Issa,Sarkis,s.issa@campus.tu-berlin.de,Beendet,"28. Juni 2020  21:26","5. Juli 2
     }
     
 }"
-Baraz,Sam,sam.baraz@campus.tu-berlin.de,Beendet,"28. Juni 2020  22:04","30. Juni 2020  17:56","1 Tag 19 Stunden","19,36",super,"Es wird die Methode der Super-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier",Object,"Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_363,VName_363,"public class TestMannschaft{
     public static void main(String[] args){
         // Arrays definieren
         Fussballspieler[] mannschaft1 = {
@@ -1611,7 +1611,7 @@ Baraz,Sam,sam.baraz@campus.tu-berlin.de,Beendet,"28. Juni 2020  22:04","30. Juni
     }
 
 }"
-Klinkert,"Lisa Maria",klinkert@campus.tu-berlin.de,Beendet,"29. Juni 2020  00:05","5. Juli 2020  23:56","6 Tage 23 Stunden","10,67","Zeile 6,7 : super(); müsste vor x=0; stehen",Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","die Klasse Hund erbt von der Klasse Tier",super,"Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_399,VName_399,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft {
@@ -1849,8 +1849,8 @@ public class TestMannschaft {
  		
 	}
 }"
-Dimaridis,Themistoklis,t.dimaridis@campus.tu-berlin.de,Beendet,"29. Juni 2020  00:05","5. Juli 2020  21:52","6 Tage 21 Stunden","5,36","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","die Klasse Hund erbt von der Klasse Tier",super,"Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Adam,Florian,b49346ceb0c7713a2b24db2f1a573e9f,Beendet,"29. Juni 2020  00:15","6. Juli 2020  00:02","6 Tage 23 Stunden","5,50","die Klasse Hund erbt von der Klasse Tier",super,Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus{
+Name_393,VName_393,-,-
+Name_425,VName_425,"public class TestBus{
 	public static void main(String[] args) {
     Bus bus = new Bus(3,5);
     Reisebus rbus = new Reisebus(4,6,true);
@@ -1870,8 +1870,8 @@ Adam,Florian,b49346ceb0c7713a2b24db2f1a573e9f,Beendet,"29. Juni 2020  00:15","6.
         
     }
 }",-
-Ou,Yanwen,yanwen.ou@campus.tu-berlin.de,Beendet,"29. Juni 2020  00:49","5. Juli 2020  23:22","6 Tage 22 Stunden","4,86","Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können",Object,extends,"die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Bohlinger,"Hannes Robert",bohlinger@campus.tu-berlin.de,Beendet,"29. Juni 2020  01:12","5. Juli 2020  21:01","6 Tage 19 Stunden","17,98",Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"die Klasse Hund erbt von der Klasse Tier","Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {7. <sub>fellfarbe:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {13. <sub>spannweite:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {12. <sub>schnabelfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {4. <sub>double} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_412,VName_412,-,-
+Name_428,VName_428,"public class TestBus {
 	public static void main(String[] args) {
 		Bus[] busse = new Bus[] {
 			new Bus(10, 1),
@@ -2035,9 +2035,9 @@ public class TestMannschaft {
 		}
 	}
 }"
-Graunke,"Hannes Timothy",graunke@campus.tu-berlin.de,Beendet,"29. Juni 2020  09:56","5. Juli 2020  19:53","6 Tage 9 Stunden","5,00","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,Object,"Zeile 7 : super(); müsste this(); heißen","Es wird die Methode der Super-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Lex,Matthias,m.lex@campus.tu-berlin.de,Beendet,"29. Juni 2020  10:38","5. Juli 2020  23:59","6 Tage 13 Stunden","5,86",super,"die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Kreher,"Adrian Gerke",adrian.kreher@campus.tu-berlin.de,Beendet,"29. Juni 2020  10:50","6. Juli 2020  00:05","6 Tage 13 Stunden","17,90","die Klasse Hund erbt von der Klasse Tier",super,Object,"Es wird die Methode der Sub-Klasse aufgerufen","Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_372,VName_372,-,-
+Name_251,VName_251,-,-
+Name_403,VName_403,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -2201,7 +2201,7 @@ public class TestMannschaft{
 		}
 	}
 }"
-"Peraza Escobar","Yurena Viktoria",y.perazaescobar@campus.tu-berlin.de,Beendet,"29. Juni 2020  11:12","2. Juli 2020  19:10","3 Tage 7 Stunden","11,45","Es wird die Methode der Sub-Klasse aufgerufen","Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,extends,"die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_392,VName_392,"public class TestMannschaft{
 	public static void main(String [] args){
 
 		Fussballspieler[] team1 = {
@@ -2305,7 +2305,7 @@ public class TestMannschaft{
 		
 	}
 }",-
-Rattmann,Tobias,t.rattmann@campus.tu-berlin.de,Beendet,"29. Juni 2020  11:31","30. Juni 2020  11:16","23 Stunden 44 Minuten","17,40",extends,"Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus{
+Name_367,VName_367,"public class TestBus{
 		
 	
 	public static void main(String[] args){
@@ -2539,7 +2539,7 @@ Rattmann,Tobias,t.rattmann@campus.tu-berlin.de,Beendet,"29. Juni 2020  11:31","3
 	}
 	
 }"
-Yoo,Hwalryeok,hwalryeok.yoo@campus.tu-berlin.de,Beendet,"29. Juni 2020  11:33","5. Juli 2020  10:43","5 Tage 23 Stunden","13,06","die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen",extends,"Es wird die Methode der Sub-Klasse aufgerufen",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","//Hier kommt die TestBus Klasse rein
+Name_386,VName_386,"//Hier kommt die TestBus Klasse rein
 
 public class TestBus {
 
@@ -2752,7 +2752,7 @@ public class TestMannschaft{
    /* bitte implementieren */
   }
 }"
-Windzio,"Lara Alisia",l.windzio@campus.tu-berlin.de,Beendet,"29. Juni 2020  12:32","30. Juni 2020  17:30","1 Tag 4 Stunden","13,00","Zeile 6,7 : super(); müsste vor x=0; stehen","Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+Name_396,VName_396,"public class TestMannschaft {
 	public static void main (String [] args){
 		
 		Fussballspieler [] deutschland =new Fussballspieler [11];
@@ -2880,7 +2880,7 @@ Windzio,"Lara Alisia",l.windzio@campus.tu-berlin.de,Beendet,"29. Juni 2020  12:3
 			}
 		}
 	}",-
-Rau,Alexander,4d03a61d39c8c42d209bf5c7892e87e9,Beendet,"29. Juni 2020  18:53","5. Juli 2020  21:02","6 Tage 2 Stunden","18,60","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen",super,Object,"Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_387,VName_387,"public class TestBus {
 	public static void main(String[] args) {
 		Bus[] busse = new Bus[3];
 		busse[0] = new Linienbus(3, 2, true, 9);
@@ -3006,10 +3006,10 @@ team2[5].geburtstagFeiern();
 	}
 	
 }"
-Schmidt,"Joshua Daniel",joshua.d.schmidt@campus.tu-berlin.de,Beendet,"29. Juni 2020  19:03","5. Juli 2020  17:20","5 Tage 22 Stunden","2,32","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Zeile 6,7 : super(); müsste vor x=0; stehen",instanceof,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Java,"die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {6. <sub>gewicht:} Dropzone 3 -> {4. <sub>double} Dropzone 4 -> {13. <sub>spannweite:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {11. Vogel} Dropzone 7 -> {12. <sub>schnabelfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {14. Papagei} Dropzone 10 -> {15. <sub>kannSprechen:} Dropzone 11 -> {16. <sub>boolean} Dropzone 12 -> {5. Saeugetier} Dropzone 13 -> {2. <sub>bezeichnung:} Dropzone 14 -> {8. Elefant} Dropzone 15 -> {7. <sub>fellfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {9. <sub>ruessellaenge:} Dropzone 19 -> {10. <sub>int} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Volkmann,Maximilian,m.volkmann@campus.tu-berlin.de,Beendet,"29. Juni 2020  20:50","6. Juli 2020  00:05","6 Tage 3 Stunden","0,00",-,-,-,-,-,-,-,-,-
-Schubert,Tom,tom.schubert@campus.tu-berlin.de,Beendet,"29. Juni 2020  22:47","6. Juli 2020  00:05","6 Tage 1 Stunde","4,41","die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,super,-,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {7. <sub>fellfarbe:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {15. <sub>kannSprechen:} Dropzone 8 -> {16. <sub>boolean} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {2. <sub>bezeichnung:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {12. <sub>schnabelfarbe:} Dropzone 19 -> {3. <sub>String} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Friese,Nico,nico.friese@campus.tu-berlin.de,Beendet,"30. Juni 2020  19:14","5. Juli 2020  17:16","4 Tage 22 Stunden","17,42","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Es wird die Methode der Sub-Klasse aufgerufen","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {6. <sub>gewicht:} Dropzone 3 -> {4. <sub>double} Dropzone 4 -> {2. <sub>bezeichnung:} Dropzone 5 -> {3. <sub>String} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {13. <sub>spannweite:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {12. <sub>schnabelfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {4. <sub>double} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+Name_7,VName_7,-,-
+Name_59,VName_59,-,-
+Name_2,VName_2,-,-
+Name_377,VName_377,"public class TestMannschaft {
 
 	public static void main(String[] args) {
 		Fussballspieler[] deutschland = new Fussballspieler[11];
@@ -3149,8 +3149,8 @@ public class TestBus {
 		
 	}
 }"
-Brändl,"Johannes Andreas",johannes.braendl@campus.tu-berlin.de,Beendet,"30. Juni 2020  21:44","4. Juli 2020  22:15","4 Tage","4,36","Zeile 7 : super(); müsste this(); heißen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","die Klasse Hund erbt von der Klasse Tier",Java,"Es wird die Methode der Super-Klasse aufgerufen",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-"Tonleu Ndempowo",Syntyche,tonleundempowo@campus.tu-berlin.de,Beendet,"30. Juni 2020  23:58","5. Juli 2020  22:21","4 Tage 22 Stunden","8,33","Es wird die Methode der Sub-Klasse aufgerufen",Object,"die Klasse Hund erbt von der Klasse Tier",super,"Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_369,VName_369,-,-
+Name_375,VName_375,"public class TestBus {
 
 	public static void main(String[] args) {
 		
@@ -3285,7 +3285,7 @@ public class TestMannschaft{
   }
   
 }"
-Choukri,Shana,shana.choukri@campus.tu-berlin.de,Beendet,"1. Juli 2020  12:30","2. Juli 2020  16:50","1 Tag 4 Stunden","20,00","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es wird die Methode der Sub-Klasse aufgerufen",super,"Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_422,VName_422,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -3432,7 +3432,7 @@ public class TestBus {
     }
 
 }"
-Kottwitz,"Michael Alexander",m.kottwitz@campus.tu-berlin.de,Beendet,"1. Juli 2020  13:27","6. Juli 2020  00:05","4 Tage 10 Stunden","14,07",super,Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {13. <sub>spannweite:} Dropzone 8 -> {4. <sub>double} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {7. <sub>fellfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {12. <sub>schnabelfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_419,VName_419,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -3593,7 +3593,7 @@ public class TestMannschaft{
 
     }
 }"
-Gabis,Albert,gabis@campus.tu-berlin.de,Beendet,"1. Juli 2020  14:43","5. Juli 2020  22:03","4 Tage 7 Stunden","17,95","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Zeile 5 : Methode B() hat keinen Rückgabewert",extends,"Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {15. <sub>kannSprechen:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {12. <sub>schnabelfarbe:} Dropzone 16 -> {3. <sub>String} Dropzone 17 -> {16. <sub>boolean} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_362,VName_362,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -3800,7 +3800,7 @@ public class TestBus {
 		
 	}
 }"
-Mumdzic,David,d.mumdzic@campus.tu-berlin.de,Beendet,"1. Juli 2020  19:08","5. Juli 2020  20:13","4 Tage 1 Stunde","18,95","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"die Klasse Hund erbt von der Klasse Tier",super,"Zeile 6,7 : super(); müsste vor x=0; stehen","Es wird die Methode der Super-Klasse aufgerufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {6. <sub>gewicht:} Dropzone 3 -> {4. <sub>double} Dropzone 4 -> {2. <sub>bezeichnung:} Dropzone 5 -> {3. <sub>String} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_370,VName_370,"public class TestBus {
 
     public static void main(String[] args){
         Bus[] a = { new Bus(5,7),
@@ -3954,8 +3954,8 @@ public class TestMannschaft{
         System.out.println(""Mannschaft 2 gewinnt!"");
     }
   }"
-Hrustic,Amira,amira.hrustic@campus.tu-berlin.de,Beendet,"1. Juli 2020  20:35","5. Juli 2020  22:40","4 Tage 2 Stunden","5,73","die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen",Object,"Es wird die Methode der Sub-Klasse aufgerufen",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Schulz,Fenja,fenja.schulz@campus.tu-berlin.de,Beendet,"1. Juli 2020  20:38","3. Juli 2020  20:11","1 Tag 23 Stunden","18,60","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier",super,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Es wird die Methode der Sub-Klasse aufgerufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_411,VName_411,-,-
+Name_96,VName_96,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -4095,7 +4095,7 @@ public class TestBus {
 	}
 
 }"
-Ataey,Armin,armin.ataey@campus.tu-berlin.de,Beendet,"1. Juli 2020  22:33","5. Juli 2020  23:52","4 Tage 1 Stunde","11,10",extends,"die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Sub-Klasse aufgerufen",Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","//Hier kommt die TestBus Klasse rein
+Name_424,VName_424,"//Hier kommt die TestBus Klasse rein
 public class TestBus{
     public static void main(String [] args)
     {
@@ -4270,7 +4270,7 @@ public class TestMannschaft{
      }   
   }
 }"
-Keshishzadeh,"Noah Alexander",keshishzadeh@campus.tu-berlin.de,Beendet,"1. Juli 2020  23:23","5. Juli 2020  23:28","4 Tage","11,72","Es wird die Methode der Sub-Klasse aufgerufen",Object,extends,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_402,VName_402,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -4387,7 +4387,7 @@ public class TestMannschaft{
 	}
 }
 }",-
-Standl,"Jacob Jeremy",standl@campus.tu-berlin.de,Beendet,"1. Juli 2020  23:37","6. Juli 2020  00:05","4 Tage","8,50","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier",Java,"Es wird die Methode der Sub-Klasse aufgerufen",extends,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,"public class TestBus{
+Name_404,VName_404,-,"public class TestBus{
 	
 	public static void main(String[] args){
 		
@@ -4419,7 +4419,7 @@ Standl,"Jacob Jeremy",standl@campus.tu-berlin.de,Beendet,"1. Juli 2020  23:37","
 	
 
 }"
-"Montenegro Retana",Lydia-Salome,l.schuecker@campus.tu-berlin.de,Beendet,"2. Juli 2020  08:38","3. Juli 2020  11:31","1 Tag 2 Stunden","20,00","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier",super,"Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_400,VName_400,"public class TestMannschaft{
 	public static void main(String[] args){
    
 		Fussballspieler [] deutschland = {
@@ -4573,7 +4573,7 @@ Standl,"Jacob Jeremy",standl@campus.tu-berlin.de,Beendet,"1. Juli 2020  23:37","
 
 
 }"
-Ghebreselasie,Lena,l.ghebreselasie@campus.tu-berlin.de,Beendet,"2. Juli 2020  16:32","5. Juli 2020  23:33","3 Tage 7 Stunden","11,74","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier",Object,"Es wird die Methode der Sub-Klasse aufgerufen",super,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_418,VName_418,"public class TestBus {
 	public static void main(String[] args[]) {
 		Bus[] busse = {
 			new Bus(43, 3),
@@ -4762,8 +4762,8 @@ Ghebreselasie,Lena,l.ghebreselasie@campus.tu-berlin.de,Beendet,"2. Juli 2020  16
    /* bitte implementieren */
   }
 }"
-Türkmen,Meryem,meryem.tuerkmen@campus.tu-berlin.de,Beendet,"2. Juli 2020  18:53","2. Juli 2020  19:19","25 Minuten 13 Sekunden","5,50","die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es wird die Methode der Sub-Klasse aufgerufen","Zeile 1 : Klasse A hat keinen Konstruktor",super,Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Schedlich,"Klara Josephine",klara.schedlich@campus.tu-berlin.de,Beendet,"2. Juli 2020  19:52","5. Juli 2020  23:58","3 Tage 4 Stunden","9,38","Es wird die Methode der Super-Klasse aufgerufen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"Zeile 1 : Klasse A hat keinen Konstruktor","die Klasse Hund erbt von der Klasse Tier",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_405,VName_405,-,-
+Name_408,VName_408,"public class TestBus {
 
 	public static void main(String[] args) {
 		Bus[] busse = new Bus[3];
@@ -4789,7 +4789,7 @@ Schedlich,"Klara Josephine",klara.schedlich@campus.tu-berlin.de,Beendet,"2. Juli
 	}
 
 }",-
-Wang,Wenjia,0e3820341f6427a89be74b338557c97b,Beendet,"2. Juli 2020  22:09","5. Juli 2020  23:59","3 Tage 1 Stunde","4,09","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Superklasse den Konstruktor einer Subklasse auf.",super,Class,"Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_73,VName_73,"public class TestBus {
 	public static void main(String args[]) {
 		Bus1 b1 = new Bus1(55, 4);
 		Reisebus r = new Reisebus(55, 2, false);
@@ -4807,7 +4807,7 @@ Wang,Wenjia,0e3820341f6427a89be74b338557c97b,Beendet,"2. Juli 2020  22:09","5. J
 
 }
 //Hier kommt die TestBus Klasse rein",-
-Hilel,Arad,arad.hilel@campus.tu-berlin.de,Beendet,"2. Juli 2020  22:42","5. Juli 2020  17:43","2 Tage 19 Stunden","15,21",extends,Java,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","//Hier kommt die TestBus Klasse rein
+Name_406,VName_406,"//Hier kommt die TestBus Klasse rein
 
 class TestBus {
 
@@ -4999,7 +4999,7 @@ Torwart A = new Torwart(""John"", 33, 2.1);
   
   
 }"
-Wienröder,Robert,a7189b32bdf77e577b2d10bdb402b928,Beendet,"2. Juli 2020  23:20","5. Juli 2020  19:46","2 Tage 20 Stunden","19,30",super,"Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,"Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_398,VName_398,"public class TestMannschaft{
 	
 	public static void main(String[] args){
 		Fussballspieler[] weltauswahl = new Fussballspieler[11];
@@ -5190,7 +5190,7 @@ Wienröder,Robert,a7189b32bdf77e577b2d10bdb402b928,Beendet,"2. Juli 2020  23:20"
 	}
 
 }"
-Bialokoz,"Frederick Alexander",bialokoz@campus.tu-berlin.de,Beendet,"3. Juli 2020  16:29","6. Juli 2020  00:05","2 Tage 7 Stunden","7,66","die Klasse Hund erbt von der Klasse Tier",Object,"Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Zeile 1 : Klasse A hat keinen Konstruktor","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {6. <sub>gewicht:} Dropzone 3 -> {4. <sub>double} Dropzone 4 -> {2. <sub>bezeichnung:} Dropzone 5 -> {3. <sub>String} Dropzone 6 -> {11. Vogel} Dropzone 7 -> {13. <sub>spannweite:} Dropzone 8 -> {4. <sub>double} Dropzone 9 -> {14. Papagei} Dropzone 10 -> {12. <sub>schnabelfarbe:} Dropzone 11 -> {3. <sub>String} Dropzone 12 -> {5. Saeugetier} Dropzone 13 -> {7. <sub>fellfarbe:} Dropzone 14 -> {8. Elefant} Dropzone 15 -> {15. <sub>kannSprechen:} Dropzone 16 -> {16. <sub>boolean} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {9. <sub>ruessellaenge:} Dropzone 19 -> {4. <sub>double} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_415,VName_415,"public class TestMannschaft{
   public static void main(String[] args){
       
     // Arrays definieren
@@ -5313,7 +5313,7 @@ Bialokoz,"Frederick Alexander",bialokoz@campus.tu-berlin.de,Beendet,"3. Juli 202
 	}
 	
 }"
-Babst,"Robert Martin",babst@campus.tu-berlin.de,Beendet,"3. Juli 2020  17:05","3. Juli 2020  20:14","3 Stunden 8 Minuten","19,50","Es wird die Methode der Sub-Klasse aufgerufen","Zeile 1 : Klasse A hat keinen Konstruktor",Object,"die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","//Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_397,VName_397,"//Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 //Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -5453,7 +5453,7 @@ public static void fussballspielen(Fussballspieler[] f1, Fussballspieler[] f2){
 	}
 
 }"
-Ketterer,"Alexandra Maria",d86d1fb1fbbc20ac1b65dd874d10479c,Beendet,"3. Juli 2020  21:47","5. Juli 2020  22:35","2 Tage","13,59","die Klasse Hund erbt von der Klasse Tier",Object,super,"Zeile 6,7 : super(); müsste vor x=0; stehen","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_383,VName_383,"public class TestBus {
 	public static void main(String[] args){
     	Bus bus = new Bus(30, 2);
     	Linienbus linienbus = new Linienbus(40, 3, true, 10);
@@ -5585,9 +5585,9 @@ public class TestMannschaft {
         }
     }
 }"
-Frickenstein,Fabian,fabian.frickenstein@campus.tu-berlin.de,Beendet,"3. Juli 2020  22:33","5. Juli 2020  17:40","1 Tag 19 Stunden","5,86",Object,super,"Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Spitzer,Jonas,jonas.spitzer@campus.tu-berlin.de,Beendet,"4. Juli 2020  10:20","4. Juli 2020  10:26","5 Minuten 26 Sekunden","5,50","Zeile 6,7 : super(); müsste vor x=0; stehen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"Es wird die Methode der Super-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Lieberknecht,"Jan David",j.lieberknecht@campus.tu-berlin.de,Beendet,"4. Juli 2020  11:06","5. Juli 2020  23:56","1 Tag 12 Stunden","9,38",super,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","die Klasse Hund erbt von der Klasse Tier","Zeile 1 : Klasse A hat keinen Konstruktor","Es wird die Methode der Super-Klasse aufgerufen",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_430,VName_430,-,-
+Name_365,VName_365,-,-
+Name_384,VName_384,"public class TestBus {
 
 	public static void main(String[] args) {
 		Bus[] busse = new Bus[3];
@@ -5613,7 +5613,7 @@ Lieberknecht,"Jan David",j.lieberknecht@campus.tu-berlin.de,Beendet,"4. Juli 202
 	}
 
 }",-
-Schadach,Lennart,9a05e9adb808bc929c34a0637bc4bd04,Beendet,"4. Juli 2020  11:28","5. Juli 2020  23:54","1 Tag 12 Stunden","4,73","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","die Klasse Hund erbt von der Klasse Tier","Es wird die Methode der Super-Klasse aufgerufen","Zeile 1 : Klasse A hat keinen Konstruktor",Object,super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","package test10;
+Name_407,VName_407,"package test10;
 
 public class TestBus {
 
@@ -5641,7 +5641,7 @@ public class TestBus {
 	}
 
 }",-
-"Rodriguez Martin",Alvaro,alvaro.rodriguezmartin@campus.tu-berlin.de,Beendet,"4. Juli 2020  12:58","5. Juli 2020  22:31","1 Tag 9 Stunden","14,35","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 1 : Klasse A hat keinen Konstruktor","Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier",Java,super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft{
+Name_429,VName_429,"public class TestMannschaft{
     public static void main(String[] args){
         
         // Arrays definieren
@@ -5835,7 +5835,7 @@ public class TestBus {
     }
     
 }"
-Helmers,Ole,591d0ea52f428f351a9f706c6a7f6295,Beendet,"4. Juli 2020  13:29","5. Juli 2020  16:40","1 Tag 3 Stunden","15,13","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es wird die Methode der Sub-Klasse aufgerufen","Zeile 6,7 : super(); müsste vor x=0; stehen",extends,Object,"die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_410,VName_410,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -5999,8 +5999,8 @@ System.out.println(testArray[i].equals(testReisebus));
 
 }
 }"
-"Mailhos Nogues","Lucas Fel",642dc2fc24f2168530e7533d52e691ae,Beendet,"4. Juli 2020  15:56","6. Juli 2020  00:05","1 Tag 8 Stunden","0,00",-,-,-,-,-,-,-,-,-
-Cai,Yingchu,yingchu.cai@campus.tu-berlin.de,Beendet,"5. Juli 2020  10:40","5. Juli 2020  23:55","13 Stunden 15 Minuten","12,86",Object,"Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus{
+Name_249,VName_249,-,-
+Name_378,VName_378,"public class TestBus{
     public static void main(String[] args){
             Bus[] bus = {
                 new Bus(12,3),
@@ -6098,7 +6098,7 @@ Cai,Yingchu,yingchu.cai@campus.tu-berlin.de,Beendet,"5. Juli 2020  10:40","5. Ju
     if(sum1>sum2) System.out.println(""Mannschaft 1 gewinnt!"");
   }
 }"
-Sucuoglu,Alain,a.sucuoglu@campus.tu-berlin.de,Beendet,"5. Juli 2020  10:52","5. Juli 2020  22:55","12 Stunden 3 Minuten","11,63","Zeile 7 : super(); müsste this(); heißen","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",Object,super,"Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {  
+Name_427,VName_427,"public class TestBus {  
     public static void main(String[] args) {
         
         
@@ -6150,7 +6150,7 @@ Sucuoglu,Alain,a.sucuoglu@campus.tu-berlin.de,Beendet,"5. Juli 2020  10:52","5. 
     }
     
 }",-
-Schran,"Konrad Henning",k.schran@campus.tu-berlin.de,Beendet,"5. Juli 2020  11:39","5. Juli 2020  20:04","8 Stunden 24 Minuten","17,85",Object,"Zeile 6,7 : super(); müsste vor x=0; stehen","die Klasse Hund erbt von der Klasse Tier",super,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_401,VName_401,"public class TestBus {
 	
 	public static void main(String[] args) {
 		Bus[] busse = new Bus[3];
@@ -6283,7 +6283,7 @@ public class TestMannschaft{
    /* bitte implementieren */
   }
 }"
-Schäffner,"Maximilian Paul",m.schaeffner@campus.tu-berlin.de,Beendet,"5. Juli 2020  12:15","5. Juli 2020  23:36","11 Stunden 21 Minuten","5,50","Zeile 6,7 : super(); müsste vor x=0; stehen",Object,"Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","die Klasse Hund erbt von der Klasse Tier",super,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_421,VName_421,"public class TestBus {
 
     public static void main(String[] args){
       int[] array = new int[3];
@@ -6293,7 +6293,7 @@ Schäffner,"Maximilian Paul",m.schaeffner@campus.tu-berlin.de,Beendet,"5. Juli 2
 
 
 }",-
-Cheung,"Alison Dzi",alison.d.cheung@campus.tu-berlin.de,Beendet,"5. Juli 2020  12:42","5. Juli 2020  23:05","10 Stunden 22 Minuten","4,05","die Klasse Hund erbt von der Klasse Tier",instanceof,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 5 : Methode B() hat keinen Rückgabewert","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {15. <sub>kannSprechen:} Dropzone 5 -> {16. <sub>boolean} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {6. <sub>gewicht:} Dropzone 8 -> {4. <sub>double} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {7. <sub>fellfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {12. <sub>schnabelfarbe:} Dropzone 19 -> {3. <sub>String} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestMannschaft {
+Name_409,VName_409,"public class TestMannschaft {
 
 	public static void main(String[] args) {
 
@@ -6427,7 +6427,7 @@ Cheung,"Alison Dzi",alison.d.cheung@campus.tu-berlin.de,Beendet,"5. Juli 2020  1
 		}
 	}
 }",-
-Sakran,Shebli,shebli.sakran@campus.tu-berlin.de,Beendet,"5. Juli 2020  13:28","5. Juli 2020  22:23","8 Stunden 54 Minuten","10,94","Zeile 6,7 : super(); müsste vor x=0; stehen","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen",super,Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","die Klasse Hund erbt von der Klasse Tier","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_426,VName_426,"public class TestBus {
 	public static void main(String[] args) {
 		Bus[] b = {
 		new Bus(50, 2),
@@ -6606,8 +6606,8 @@ Sakran,Shebli,shebli.sakran@campus.tu-berlin.de,Beendet,"5. Juli 2020  13:28","5
 		}
 	}
 }"
-Rodehau,Sonja,d6035d85bae05ed2327da04224475a97,Beendet,"5. Juli 2020  14:08","5. Juli 2020  17:57","3 Stunden 48 Minuten","4,73","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",extends,"die Klasse Hund erbt von der Klasse Tier","Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","Zeile 6,7 : super(); müsste vor x=0; stehen",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Arimbawa,"Made Niro Aditya",arimbawa@campus.tu-berlin.de,Beendet,"5. Juli 2020  14:38","5. Juli 2020  23:28","8 Stunden 49 Minuten","10,15","Zeile 6,7 : super(); müsste vor x=0; stehen","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen","die Klasse Hund erbt von der Klasse Tier",Object,instanceof,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {10. <sub>int} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
+Name_417,VName_417,-,-
+Name_282,VName_282,"// Hier ist ein Teil der TestMannschaft Klasse bereits vorgegeben.Vervollständigen Sie diese der Aufgabe entsprechend
 // Denkt daran, dass ihr die anderen 5 Klassen hochladen müsst.
 
 public class TestMannschaft{
@@ -6795,9 +6795,9 @@ public class TestBus{
         
     }
 }"
-Priebe,"Jessica Eva Sophie",jessica.priebe@campus.tu-berlin.de,Beendet,"5. Juli 2020  16:09","5. Juli 2020  17:12","1 Stunde 2 Minuten","5,50",super,"die Klasse Hund erbt von der Klasse Tier","Zeile 1 : Klasse A hat keinen Konstruktor","Es wird die Methode der Sub-Klasse aufgerufen",Object,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Baumann,"Florian Stefan",florian.baumann@campus.tu-berlin.de,Beendet,"5. Juli 2020  16:19","5. Juli 2020  17:21","1 Stunde 2 Minuten","4,14","Es wird die Methode der Sub-Klasse aufgerufen","die Klasse Hund erbt von der Klasse Tier",super,Object,"Zeile 1 : Klasse A hat keinen Konstruktor","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Dropzone 1 -> {1. Tier} Dropzone 2 -> {6. <sub>gewicht:} Dropzone 3 -> {4. <sub>double} Dropzone 4 -> {2. <sub>bezeichnung:} Dropzone 5 -> {3. <sub>String} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {6. <sub>gewicht:} Dropzone 8 -> {10. <sub>int} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {13. <sub>spannweite:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {15. <sub>kannSprechen:} Dropzone 16 -> {16. <sub>boolean} Dropzone 17 -> {4. <sub>double} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Hasan,"Fareza Aditya",f.hasan@campus.tu-berlin.de,Beendet,"5. Juli 2020  16:53","5. Juli 2020  23:52","6 Stunden 59 Minuten","6,76","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",extends,"die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen",Object,"Es wird die Methode der Sub-Klasse aufgerufen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {11. Vogel} Dropzone 7 -> {12. <sub>schnabelfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {14. Papagei} Dropzone 10 -> {15. <sub>kannSprechen:} Dropzone 11 -> {16. <sub>boolean} Dropzone 12 -> {5. Saeugetier} Dropzone 13 -> {7. <sub>fellfarbe:} Dropzone 14 -> {8. Elefant} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {9. <sub>ruessellaenge:} Dropzone 19 -> {10. <sub>int} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","//Hier kommt die TestBus Klasse rein
+Name_366,VName_366,-,-
+Name_70,VName_70,-,-
+Name_423,VName_423,"//Hier kommt die TestBus Klasse rein
 
 public class TestBus{
 	public static void main(String[] args){
@@ -6852,7 +6852,7 @@ public class TestMannschaft{
    /* bitte implementieren */
   }
 }"
-Johnson,"Sidney Leroy",9d2970050515c12929e1066fa64b9062,Beendet,"5. Juli 2020  18:17","5. Juli 2020  23:58","5 Stunden 41 Minuten","4,86",Java,"die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen","Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus{
+Name_416,VName_416,"public class TestBus{
  
 Bus[] b = { new Linienbus(20, 10, true, 7),
 new Reisebus(10,5, true),
@@ -6863,8 +6863,8 @@ tuerOeffnen(1);
 b.istFahrbereit();
 b.tuerSchliessen(1);
 }",-
-Elsing,Matti,d31112f6ec4a207f1067be64a7903f10,Beendet,"5. Juli 2020  18:20","5. Juli 2020  18:28","7 Minuten 50 Sekunden","3,82",extends,"Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Es kommt ein Fehler, da man zuerst casten muss, um die überschriebene Methode der Sub-Klasse aufzurufen",Main,"die Klasse Hund erbt von der Klasse Tier","Zeile 6,7 : super(); müsste vor x=0; stehen","Dropzone 1 -> {1. Tier} Dropzone 2 -> {6. <sub>gewicht:} Dropzone 3 -> {4. <sub>double} Dropzone 4 -> {2. <sub>bezeichnung:} Dropzone 5 -> {3. <sub>String} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {10. <sub>int} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {10. <sub>int} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
-Wowtscherk,Marcel,marcel.wowtscherk@campus.tu-berlin.de,Beendet,"5. Juli 2020  19:29","5. Juli 2020  20:50","1 Stunde 20 Minuten","9,24","Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 5 : Methode B() hat keinen Rückgabewert",super,"die Klasse Hund erbt von der Klasse Tier",Object,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {5. Saeugetier} Dropzone 7 -> {7. <sub>fellfarbe:} Dropzone 8 -> {3. <sub>String} Dropzone 9 -> {8. Elefant} Dropzone 10 -> {9. <sub>ruessellaenge:} Dropzone 11 -> {4. <sub>double} Dropzone 12 -> {11. Vogel} Dropzone 13 -> {12. <sub>schnabelfarbe:} Dropzone 14 -> {14. Papagei} Dropzone 15 -> {13. <sub>spannweite:} Dropzone 16 -> {4. <sub>double} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {15. <sub>kannSprechen:} Dropzone 19 -> {16. <sub>boolean} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}","public class TestBus {
+Name_414,VName_414,-,-
+Name_382,VName_382,"public class TestBus {
 	public static void main(String[] args){
     	Bus bus = new Bus(30, 2);
     	Linienbus linienbus = new Linienbus(40, 3, true, 10);
@@ -6943,5 +6943,5 @@ public class TestMannschaft{
    /* bitte implementieren */
   }
 }"
-Zhou,Ying,zhou.1@campus.tu-berlin.de,Beendet,"5. Juli 2020  19:58","5. Juli 2020  20:59","1 Stunde 1 Minute","0,00",Java,-,-,extends,-,-,-,-,-
-Singh,Abhishek,abhishek.singh@campus.tu-berlin.de,Beendet,"5. Juli 2020  21:42","6. Juli 2020  00:05","2 Stunden 23 Minuten","2,73",Main,"die Klasse Hund erbt von der Klasse Tier","Es kommt ein Fehler, da Objektvariablen der Super-Klasse keine Objekte von Sub-Klassen aufnehmen können","Dies ruft innerhalb einer Subklasse den Konstruktor der Superklasse auf.","Zeile 5 : Methode B() hat keinen Rückgabewert",super,"Dropzone 1 -> {1. Tier} Dropzone 2 -> {2. <sub>bezeichnung:} Dropzone 3 -> {3. <sub>String} Dropzone 4 -> {6. <sub>gewicht:} Dropzone 5 -> {4. <sub>double} Dropzone 6 -> {11. Vogel} Dropzone 7 -> {15. <sub>kannSprechen:} Dropzone 8 -> {16. <sub>boolean} Dropzone 9 -> {14. Papagei} Dropzone 10 -> {12. <sub>schnabelfarbe:} Dropzone 11 -> {3. <sub>String} Dropzone 12 -> {5. Saeugetier} Dropzone 13 -> {7. <sub>fellfarbe:} Dropzone 14 -> {8. Elefant} Dropzone 15 -> {15. <sub>kannSprechen:} Dropzone 16 -> {16. <sub>boolean} Dropzone 17 -> {3. <sub>String} Dropzone 18 -> {9. <sub>ruessellaenge:} Dropzone 19 -> {10. <sub>int} Dropzone 20 -> {17. Fisch} Dropzone 21 -> {18. <sub>lebtImSalzwasser:} Dropzone 22 -> {16. <sub>boolean}",-,-
+Name_296,VName_296,-,-
+Name_413,VName_413,-,-

@@ -1,5 +1,5 @@
-,semester,ha,task,prog_lang,surname1,lastname1,surname2,lastname2,code1,code2,label,hand_labled
-0,SoSe22,10,Antwort 9,C,Bahar,Gülser,Tugce,Karabalik,"#include <stdio.h>
+Unnamed: 0,semester,ha,task,prog_lang,surname1,lastname1,surname2,lastname2,code1,code2,label,hand_labled
+0,SoSe22,10,Antwort 9,C,VName_441,Name_441,VName_471,Name_471,"#include <stdio.h>
 typedef struct student{
 char vorname[21];
 char nachname[21];
@@ -86,7 +86,7 @@ int main()
     
     return 0;
 }",1.0,1
-1,SoSe22,10,Antwort 9,C,Edgar Wolf,Großkopf,Timo,Kraska,"#include<stdio.h>
+1,SoSe22,10,Antwort 9,C,VName_438,Name_438,VName_465,Name_465,"#include<stdio.h>
 
 typedef struct student{
 char first_name[20];
@@ -172,7 +172,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",1.0,1
-2,SoSe22,10,Antwort 9,C,Niklas,Muß,Elisabeth Maria,Groß,"#include <stdio.h>
+2,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_453,Name_453,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -257,7 +257,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.853508412,0
-3,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Ibraim,Ibraimi,"#include <stdio.h>
+3,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_473,Name_473,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -361,7 +361,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.8153926157,0
-4,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Niklas,Muß,"#include <stdio.h>
+4,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_447,Name_447,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -455,7 +455,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.795545657,0
-5,SoSe22,10,Antwort 9,C,Florian,Strobl,Tugce,Karabalik,"#include <stdio.h>
+5,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_471,Name_471,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -536,7 +536,7 @@ int main()
     
     return 0;
 }",0.7954662545000001,0
-6,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Moritz Sebastian,Niethammer,"#include <stdio.h>
+6,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_442,Name_442,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -627,7 +627,7 @@ int main(){
     }
     return 0;
 }",0.7953051643,0
-7,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Florian,Strobl,"#include <stdio.h>
+7,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_468,Name_468,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -710,7 +710,7 @@ int main() {
         
     return 0;
 }",0.7883064516,0
-8,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Elisabeth Maria,Groß,"#include <stdio.h>
+8,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_453,Name_453,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -792,7 +792,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.7829457364,0
-9,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Tugce,Karabalik,"#include <stdio.h>
+9,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -884,7 +884,7 @@ int main()
     
     return 0;
 }",0.7697095436,0
-10,SoSe22,10,Antwort 9,C,Florian,Strobl,Moritz Sebastian,Niethammer,"#include <stdio.h>
+10,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_442,Name_442,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -964,7 +964,7 @@ int main(){
     }
     return 0;
 }",0.7634157723,0
-11,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Timo,Kraska,"#include <stdio.h>
+11,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_465,Name_465,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -1053,7 +1053,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.7612612613,0
-12,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Elisabeth Maria,Groß,"#include <stdio.h>
+12,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_453,Name_453,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -1143,7 +1143,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.7543538038000001,0
-13,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Florian,Strobl,"#include <stdio.h>
+13,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_468,Name_468,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -1231,7 +1231,7 @@ int main() {
         
     return 0;
 }",0.7538691962,0
-14,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Ibraim,Ibraimi,"#include <stdio.h>
+14,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_473,Name_473,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -1319,7 +1319,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.7505960897,0
-15,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Ibraim,Ibraimi,"#include <stdio.h>
+15,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_473,Name_473,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -1415,7 +1415,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.7501277466,0
-16,SoSe22,10,Antwort 9,C,Florian,Strobl,Elisabeth Maria,Groß,"#include <stdio.h>
+16,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_453,Name_453,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -1494,7 +1494,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.7334851936,0
-17,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Florian,Strobl,"#include <stdio.h>
+17,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_468,Name_468,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -1573,7 +1573,7 @@ int main() {
         
     return 0;
 }",0.7331159758,0
-18,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Lars Rudolf Heinrich,Michael,"#include <stdio.h>
+18,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_455,Name_455,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -1680,7 +1680,7 @@ int main(){
 	}
 
 }",0.7269938650000001,0
-19,SoSe22,10,Antwort 9,C,Florian,Strobl,Ibraim,Ibraimi,"#include <stdio.h>
+19,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_473,Name_473,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -1765,7 +1765,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.7258883249,0
-20,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Tugce,Karabalik,"#include <stdio.h>
+20,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -1848,7 +1848,7 @@ int main()
     
     return 0;
 }",0.7191119691000001,0
-21,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Moritz Sebastian,Niethammer,"#include <stdio.h>
+21,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_442,Name_442,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -1947,7 +1947,7 @@ int main(){
     }
     return 0;
 }",0.7175572519000001,0
-22,SoSe22,10,Antwort 9,C,Elisabeth Maria,Groß,Ibraim,Ibraimi,"#include <stdio.h>
+22,SoSe22,10,Antwort 9,C,VName_453,Name_453,VName_473,Name_473,"#include <stdio.h>
  
 typedef struct{
     char first_name[20];
@@ -2034,7 +2034,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.7119590507,0
-23,SoSe22,10,Antwort 9,C,Niklas,Muß,Tugce,Karabalik,"#include <stdio.h>
+23,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_471,Name_471,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -2121,7 +2121,7 @@ int main()
     
     return 0;
 }",0.6999541915,0
-24,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Lars Rudolf Heinrich,Michael,"#include <stdio.h>
+24,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_455,Name_455,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -2223,7 +2223,7 @@ int main(){
 	}
 
 }",0.6938564791,0
-25,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Bahar,Gülser,"#include <stdio.h>
+25,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_441,Name_441,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -2317,7 +2317,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.6901485966,0
-26,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Jakob Pius,Bücking,"#include <stdio.h>
+26,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_435,Name_435,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -2407,7 +2407,7 @@ void main(){
 
 
 }",0.6888472352,0
-27,SoSe22,10,Antwort 9,C,Florian,Strobl,Niklas,Muß,"#include <stdio.h>
+27,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_447,Name_447,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -2490,7 +2490,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.684676705,0
-28,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Elisabeth Maria,Groß,"#include <stdio.h>
+28,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_453,Name_453,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -2588,7 +2588,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.6834264432,0
-29,SoSe22,10,Antwort 9,C,Florian,Strobl,Lars Rudolf Heinrich,Michael,"#include <stdio.h>
+29,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_455,Name_455,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -2684,7 +2684,7 @@ int main(){
 	}
 
 }",0.6805485018,0
-30,SoSe22,10,Antwort 9,C,Niklas,Muß,Moritz Sebastian,Niethammer,"#include <stdio.h>
+30,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_442,Name_442,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -2770,7 +2770,7 @@ int main(){
     }
     return 0;
 }",0.6800838574,0
-31,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Kaspar Lorenz,Hartmann,"#include <stdio.h>
+31,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_456,Name_456,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -2855,7 +2855,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }",0.669,0
-32,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Bahar,Gülser,"#include <stdio.h>
+32,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_441,Name_441,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -2944,7 +2944,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.6674082314,0
-33,SoSe22,10,Antwort 9,C,Florian,Strobl,Bahar,Gülser,"#include <stdio.h>
+33,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_441,Name_441,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -3027,7 +3027,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.6622950820000001,0
-34,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Fabian,Große-Wöhrmann,"#include <stdio.h>
+34,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_460,Name_460,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -3116,7 +3116,7 @@ int main(){
         student_ausgeben(&s[i]);
     }
 }",0.6611281154,0
-35,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Moritz Sebastian,Niethammer,"#include <stdio.h>
+35,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_442,Name_442,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -3211,7 +3211,7 @@ int main(){
     }
     return 0;
 }",0.6607142857,0
-36,SoSe22,10,Antwort 9,C,Shaurya,Sharma,Tugce,Karabalik,"#include <stdio.h>
+36,SoSe22,10,Antwort 9,C,VName_437,Name_437,VName_471,Name_471,"#include <stdio.h>
 
 
 
@@ -3300,7 +3300,7 @@ int main()
     
     return 0;
 }",0.6588832487,0
-37,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Tugce,Karabalik,"#include <stdio.h>
+37,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_471,Name_471,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -3384,7 +3384,7 @@ int main()
     
     return 0;
 }",0.6537717602,0
-38,SoSe22,10,Antwort 9,C,Niklas,Muß,Ibraim,Ibraimi,"#include <stdio.h>
+38,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_473,Name_473,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -3475,7 +3475,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.6537070524,0
-39,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Tugce,Karabalik,"#include <stdio.h>
+39,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_471,Name_471,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -3560,7 +3560,7 @@ int main()
     
     return 0;
 }",0.6513671875,0
-40,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Edgar Wolf,Großkopf,"#include <stdio.h>
+40,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_438,Name_438,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -3642,7 +3642,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.6499302650000001,0
-41,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Tugce,Karabalik,"#include <stdio.h>
+41,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -3729,7 +3729,7 @@ int main()
     
     return 0;
 }",0.6432687271,0
-42,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Elisabeth Maria,Groß,"#include <stdio.h>
+42,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_453,Name_453,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -3823,7 +3823,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.6430842607,0
-43,SoSe22,10,Antwort 9,C,Larissa,Breuer,Silas Johannes,Pegler,"#include <stdio.h>
+43,SoSe22,10,Antwort 9,C,VName_466,Name_466,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -3938,7 +3938,7 @@ void main()
 	}
 	
 }",0.6388888889000001,0
-44,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Tugce,Karabalik,"#include <stdio.h>
+44,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -4016,7 +4016,7 @@ int main()
     
     return 0;
 }",0.6336429309,0
-45,SoSe22,10,Antwort 9,C,Florian,Strobl,Luca Marius,Hilbrich,"#include <stdio.h>
+45,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_434,Name_434,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -4108,7 +4108,7 @@ int main()
         student_ausgeben(&students[i]);
     }
 }",0.6332905434,0
-46,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Jonas,Eckhardt,"#include <stdio.h>
+46,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_54,Name_54,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -4193,7 +4193,7 @@ int main() {
 	student_ausgeben(&studenten[i]);
 	return 0;
 }",0.6326241135,0
-47,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Bahar,Gülser,"#include <stdio.h>
+47,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_441,Name_441,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -4278,7 +4278,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.6313105558000001,0
-48,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Bahar,Gülser,"#include <stdio.h>
+48,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_441,Name_441,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -4380,7 +4380,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.6303982053,0
-49,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Ibraim,Ibraimi,"#include <stdio.h>
+49,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_473,Name_473,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -4471,7 +4471,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.6295149639000001,0
-50,SoSe22,10,Antwort 9,C,Niklas,Muß,Bahar,Gülser,"#include <stdio.h>
+50,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_441,Name_441,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -4560,7 +4560,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.6274131274,0
-51,SoSe22,10,Antwort 9,C,Elisabeth Maria,Groß,Tugce,Karabalik,"#include <stdio.h>
+51,SoSe22,10,Antwort 9,C,VName_453,Name_453,VName_471,Name_471,"#include <stdio.h>
  
 typedef struct{
     char first_name[20];
@@ -4643,7 +4643,7 @@ int main()
     
     return 0;
 }",0.6264150943,0
-52,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Timo,Kraska,"#include <stdio.h>
+52,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_465,Name_465,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -4734,7 +4734,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.6237385872,0
-53,SoSe22,10,Antwort 9,C,Butch Michel Guntbert,Warns,Ibraim,Ibraimi,"#include <stdio.h>
+53,SoSe22,10,Antwort 9,C,VName_464,Name_464,VName_473,Name_473,"#include <stdio.h>
 #include <stdlib.h>
 
 const int ANZAHL = 5; // Should be 5
@@ -4840,7 +4840,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.623598026,0
-54,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Silas Johannes,Pegler,"#include <stdio.h>
+54,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -4948,7 +4948,7 @@ void main()
 	}
 	
 }",0.6225352113,0
-55,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Timo,Kraska,"#include <stdio.h>
+55,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_465,Name_465,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -5049,7 +5049,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.6217133164,0
-56,SoSe22,10,Antwort 9,C,Shaurya,Sharma,Paul Georg,Tiede,"#include <stdio.h>
+56,SoSe22,10,Antwort 9,C,VName_437,Name_437,VName_459,Name_459,"#include <stdio.h>
 
 
 
@@ -5140,7 +5140,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.6173541963,0
-57,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Butch Michel Guntbert,Warns,"#include <stdio.h>
+57,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_464,Name_464,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -5241,7 +5241,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.6169858451,0
-58,SoSe22,10,Antwort 9,C,Dennis Benedikt,Schulze,Tugce,Karabalik,"#include <stdio.h>
+58,SoSe22,10,Antwort 9,C,VName_470,Name_470,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -5338,7 +5338,7 @@ int main()
     
     return 0;
 }",0.6156716418,0
-59,SoSe22,10,Antwort 9,C,Timo,Kraska,Ibraim,Ibraimi,"#include <stdio.h>
+59,SoSe22,10,Antwort 9,C,VName_465,Name_465,VName_473,Name_473,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -5431,7 +5431,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.6144170295,0
-60,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Fabian,Große-Wöhrmann,"#include <stdio.h>
+60,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_460,Name_460,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -5523,7 +5523,7 @@ int main(){
         student_ausgeben(&s[i]);
     }
 }",0.6113744076000001,0
-61,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Kaspar Lorenz,Hartmann,"#include <stdio.h>
+61,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_456,Name_456,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -5601,7 +5601,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }",0.6103773585,0
-62,SoSe22,10,Antwort 9,C,Niklas,Muß,Dennis Benedikt,Schulze,"#include <stdio.h>
+62,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_470,Name_470,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -5700,7 +5700,7 @@ int main() {
         printf(""\n"");
   }
 }",0.6103210077,0
-63,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Bahar,Gülser,"#include <stdio.h>
+63,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_441,Name_441,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -5780,7 +5780,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.6086480569,0
-64,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Elisabeth Maria,Groß,"#include <stdio.h>
+64,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_453,Name_453,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -5865,7 +5865,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.6084142395000001,0
-65,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Timo,Kraska,"#include <stdio.h>
+65,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_465,Name_465,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -5958,7 +5958,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.6078173035000001,0
-66,SoSe22,10,Antwort 9,C,Niklas,Muß,Silas Johannes,Pegler,"#include <stdio.h>
+66,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_474,Name_474,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -6061,7 +6061,7 @@ void main()
 	}
 	
 }",0.6071278826000001,0
-67,SoSe22,10,Antwort 9,C,Bahar,Gülser,Shaurya,Sharma,"#include <stdio.h>
+67,SoSe22,10,Antwort 9,C,VName_441,Name_441,VName_437,Name_437,"#include <stdio.h>
 typedef struct student{
 char vorname[21];
 char nachname[21];
@@ -6152,7 +6152,7 @@ int main()
 
     return 0;
 }",0.6067778375,0
-68,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Niklas,Muß,"#include <stdio.h>
+68,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_447,Name_447,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -6239,7 +6239,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.6054968288,0
-69,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Jonas,Eckhardt,"#include <stdio.h>
+69,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_54,Name_54,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -6333,7 +6333,7 @@ int main() {
 	student_ausgeben(&studenten[i]);
 	return 0;
 }",0.6047691527,0
-70,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Moritz Sebastian,Niethammer,"#include <stdio.h>
+70,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_442,Name_442,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -6419,7 +6419,7 @@ int main(){
     }
     return 0;
 }",0.6035054477,0
-71,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Shaurya,Sharma,"#include <stdio.h>
+71,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_437,Name_437,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -6515,7 +6515,7 @@ int main()
 
     return 0;
 }",0.6023622047,0
-72,SoSe22,10,Antwort 9,C,Bahar,Gülser,Silas Johannes,Pegler,"#include <stdio.h>
+72,SoSe22,10,Antwort 9,C,VName_441,Name_441,VName_474,Name_474,"#include <stdio.h>
 typedef struct student{
 char vorname[21];
 char nachname[21];
@@ -6618,7 +6618,7 @@ void main()
 	}
 	
 }",0.6009197752000001,0
-73,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Edgar Wolf,Großkopf,"#include <stdio.h>
+73,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_438,Name_438,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -6712,7 +6712,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.5967671472,0
-74,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Tugce,Karabalik,"#include <stdio.h>
+74,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -6812,7 +6812,7 @@ int main()
     
     return 0;
 }",0.5966209081,0
-75,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Niklas,Muß,"#include <stdio.h>
+75,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_447,Name_447,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -6914,7 +6914,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.5952057892,0
-76,SoSe22,10,Antwort 9,C,Ibraim,Ibraimi,Tugce,Karabalik,"#include <stdio.h>
+76,SoSe22,10,Antwort 9,C,VName_473,Name_473,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student { 
@@ -7003,7 +7003,7 @@ int main()
     
     return 0;
 }",0.5941952507,0
-77,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Luca Marius,Hilbrich,"#include <stdio.h>
+77,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_434,Name_434,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -7114,7 +7114,7 @@ int main()
         student_ausgeben(&students[i]);
     }
 }",0.5938864629,0
-78,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Fabian,Große-Wöhrmann,"#include <stdio.h>
+78,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_460,Name_460,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -7211,7 +7211,7 @@ int main(){
         student_ausgeben(&s[i]);
     }
 }",0.59375,0
-79,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Butch Michel Guntbert,Warns,"#include <stdio.h>
+79,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_464,Name_464,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -7320,7 +7320,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.5932802829,0
-80,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Bahar,Gülser,"#include <stdio.h>
+80,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_441,Name_441,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -7407,7 +7407,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.5926690759000001,0
-81,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Edgar Wolf,Großkopf,"#include <stdio.h>
+81,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_438,Name_438,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -7504,7 +7504,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.5918878317,0
-82,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Butch Michel Guntbert,Warns,"#include <stdio.h>
+82,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_464,Name_464,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -7621,7 +7621,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.5915619390000001,0
-83,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Ibraim,Ibraimi,"#include <stdio.h>
+83,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_473,Name_473,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -7721,7 +7721,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.5883893496,0
-84,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Edgar Wolf,Großkopf,"#include <stdio.h>
+84,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_438,Name_438,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -7805,7 +7805,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.5874751491,0
-85,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Lars Rudolf Heinrich,Michael,"#include <stdio.h>
+85,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_455,Name_455,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -7903,7 +7903,7 @@ int main(){
 	}
 
 }",0.5838095238000001,0
-86,SoSe22,10,Antwort 9,C,Bahar,Gülser,Ibraim,Ibraimi,"#include <stdio.h>
+86,SoSe22,10,Antwort 9,C,VName_441,Name_441,VName_473,Name_473,"#include <stdio.h>
 typedef struct student{
 char vorname[21];
 char nachname[21];
@@ -7994,7 +7994,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.5818385650000001,0
-87,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Kaspar Lorenz,Hartmann,"#include <stdio.h>
+87,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_456,Name_456,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -8070,7 +8070,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }",0.5811567164,0
-88,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Larissa,Breuer,"#include <stdio.h>
+88,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -8171,7 +8171,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.5811096993,0
-89,SoSe22,10,Antwort 9,C,Ibraim,Ibraimi,Silas Johannes,Pegler,"#include <stdio.h>
+89,SoSe22,10,Antwort 9,C,VName_473,Name_473,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student { 
@@ -8276,7 +8276,7 @@ void main()
 	}
 	
 }",0.5798760134000001,0
-90,SoSe22,10,Antwort 9,C,Elisabeth Maria,Groß,Butch Michel Guntbert,Warns,"#include <stdio.h>
+90,SoSe22,10,Antwort 9,C,VName_453,Name_453,VName_464,Name_464,"#include <stdio.h>
  
 typedef struct{
     char first_name[20];
@@ -8376,7 +8376,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.5786471068,0
-91,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Timo,Kraska,"#include <stdio.h>
+91,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_465,Name_465,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -8464,7 +8464,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.5767857143,0
-92,SoSe22,10,Antwort 9,C,Tugce,Karabalik,Silas Johannes,Pegler,"#include <stdio.h>
+92,SoSe22,10,Antwort 9,C,VName_471,Name_471,VName_474,Name_474,"#include <stdio.h>
 
 typedef struct student{
     char vorname[21];
@@ -8565,7 +8565,7 @@ void main()
 	}
 	
 }",0.5764023211,0
-93,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Timo,Kraska,"#include <stdio.h>
+93,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_465,Name_465,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -8669,7 +8669,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.5759922556,0
-94,SoSe22,10,Antwort 9,C,Bahar,Gülser,Dennis Benedikt,Schulze,"#include <stdio.h>
+94,SoSe22,10,Antwort 9,C,VName_441,Name_441,VName_470,Name_470,"#include <stdio.h>
 typedef struct student{
 char vorname[21];
 char nachname[21];
@@ -8768,7 +8768,7 @@ int main() {
         printf(""\n"");
   }
 }",0.5735366454,0
-95,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Niklas,Muß,"#include <stdio.h>
+95,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_447,Name_447,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -8853,7 +8853,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.5684386773,0
-96,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Butch Michel Guntbert,Warns,"#include <stdio.h>
+96,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_464,Name_464,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -8967,7 +8967,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.5658730159,0
-97,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Silas Johannes,Pegler,"#include <stdio.h>
+97,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -9083,7 +9083,7 @@ void main()
 	}
 	
 }",0.5658396947000001,0
-98,SoSe22,10,Antwort 9,C,Florian,Strobl,Edgar Wolf,Großkopf,"#include <stdio.h>
+98,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_438,Name_438,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -9161,7 +9161,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.5655577299,0
-99,SoSe22,10,Antwort 9,C,Elisabeth Maria,Groß,Timo,Kraska,"#include <stdio.h>
+99,SoSe22,10,Antwort 9,C,VName_453,Name_453,VName_465,Name_465,"#include <stdio.h>
  
 typedef struct{
     char first_name[20];
@@ -9248,7 +9248,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.5628272251,0
-100,SoSe22,10,Antwort 9,C,Bahar,Gülser,Timo,Kraska,"#include <stdio.h>
+100,SoSe22,10,Antwort 9,C,VName_441,Name_441,VName_465,Name_465,"#include <stdio.h>
 typedef struct student{
 char vorname[21];
 char nachname[21];
@@ -9339,7 +9339,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.5604566684,0
-101,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Silas Johannes,Pegler,"#include <stdio.h>
+101,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -9442,7 +9442,7 @@ void main()
 	}
 	
 }",0.5589767883,0
-102,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Moritz Sebastian,Niethammer,"#include <stdio.h>
+102,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_442,Name_442,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -9524,7 +9524,7 @@ int main(){
     }
     return 0;
 }",0.5584872471,0
-103,SoSe22,10,Antwort 9,C,Florian,Strobl,Butch Michel Guntbert,Warns,"#include <stdio.h>
+103,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_464,Name_464,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -9622,7 +9622,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.5564835165,0
-104,SoSe22,10,Antwort 9,C,Paul Georg,Tiede,Tugce,Karabalik,"#include <stdio.h>
+104,SoSe22,10,Antwort 9,C,VName_459,Name_459,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -9709,7 +9709,7 @@ int main()
     
     return 0;
 }",0.5546134663,0
-105,SoSe22,10,Antwort 9,C,Florian,Strobl,Larissa,Breuer,"#include <stdio.h>
+105,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_466,Name_466,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -9804,7 +9804,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.5532804012,0
-106,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Ibraim,Ibraimi,"#include <stdio.h>
+106,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_473,Name_473,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -9886,7 +9886,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.5521098119,0
-107,SoSe22,10,Antwort 9,C,Bahar,Gülser,Paul Georg,Tiede,"#include <stdio.h>
+107,SoSe22,10,Antwort 9,C,VName_441,Name_441,VName_459,Name_459,"#include <stdio.h>
 typedef struct student{
 char vorname[21];
 char nachname[21];
@@ -9975,7 +9975,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.5512143611,0
-108,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Kaspar Lorenz,Hartmann,"#include <stdio.h>
+108,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_456,Name_456,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -10055,7 +10055,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }",0.5451792024000001,0
-109,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Bahar,Gülser,"#include <stdio.h>
+109,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_441,Name_441,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -10141,7 +10141,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.5447112928,0
-110,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Kaspar Lorenz,Hartmann,"#include <stdio.h>
+110,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_456,Name_456,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -10234,7 +10234,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }",0.5422177009,0
-111,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Dennis Benedikt,Schulze,"#include <stdio.h>
+111,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -10338,7 +10338,7 @@ int main() {
         printf(""\n"");
   }
 }",0.5412511333,0
-112,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Paul Georg,Tiede,"#include <stdio.h>
+112,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -10418,7 +10418,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.541165142,0
-113,SoSe22,10,Antwort 9,C,Timo,Kraska,Tugce,Karabalik,"#include <stdio.h>
+113,SoSe22,10,Antwort 9,C,VName_465,Name_465,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -10507,7 +10507,7 @@ int main()
     
     return 0;
 }",0.5397448479,0
-114,SoSe22,10,Antwort 9,C,Florian,Strobl,Timo,Kraska,"#include <stdio.h>
+114,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_465,Name_465,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -10592,7 +10592,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.5385707525,0
-115,SoSe22,10,Antwort 9,C,Edgar Wolf,Großkopf,Ibraim,Ibraimi,"#include<stdio.h>
+115,SoSe22,10,Antwort 9,C,VName_438,Name_438,VName_473,Name_473,"#include<stdio.h>
 
 typedef struct student{
 char first_name[20];
@@ -10678,7 +10678,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.5375375375,0
-116,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Paul Georg,Tiede,"#include <stdio.h>
+116,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_459,Name_459,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -10765,7 +10765,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.5368084134000001,0
-117,SoSe22,10,Antwort 9,C,Timo,Kraska,Larissa,Breuer,"#include <stdio.h>
+117,SoSe22,10,Antwort 9,C,VName_465,Name_465,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -10868,7 +10868,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.5357429719,0
-118,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Silas Johannes,Pegler,"#include <stdio.h>
+118,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_474,Name_474,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -10968,7 +10968,7 @@ void main()
 	}
 	
 }",0.531277533,0
-119,SoSe22,10,Antwort 9,C,Elisabeth Maria,Groß,Larissa,Breuer,"#include <stdio.h>
+119,SoSe22,10,Antwort 9,C,VName_453,Name_453,VName_466,Name_466,"#include <stdio.h>
  
 typedef struct{
     char first_name[20];
@@ -11065,7 +11065,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.5311041991000001,0
-120,SoSe22,10,Antwort 9,C,Rosa,Hagenberg,Timo,Kraska,"#include <stdio.h>
+120,SoSe22,10,Antwort 9,C,VName_443,Name_443,VName_465,Name_465,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -11155,7 +11155,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.5307621671,0
-121,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Fabian,Große-Wöhrmann,"#include <stdio.h>
+121,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_460,Name_460,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -11238,7 +11238,7 @@ int main(){
         student_ausgeben(&s[i]);
     }
 }",0.5306122449,0
-122,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Paul Georg,Tiede,"#include <stdio.h>
+122,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -11332,7 +11332,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.5283018868,0
-123,SoSe22,10,Antwort 9,C,Elisabeth Maria,Groß,Silas Johannes,Pegler,"#include <stdio.h>
+123,SoSe22,10,Antwort 9,C,VName_453,Name_453,VName_474,Name_474,"#include <stdio.h>
  
 typedef struct{
     char first_name[20];
@@ -11431,7 +11431,7 @@ void main()
 	}
 	
 }",0.5279931094,0
-124,SoSe22,10,Antwort 9,C,Florian,Strobl,Silas Johannes,Pegler,"#include <stdio.h>
+124,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_474,Name_474,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -11528,7 +11528,7 @@ void main()
 	}
 	
 }",0.5272981801000001,0
-125,SoSe22,10,Antwort 9,C,Florian,Schacht,Silas Johannes,Pegler,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+125,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_474,Name_474,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -11653,7 +11653,7 @@ void main()
 	}
 	
 }",0.5250560957,0
-126,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Dennis Benedikt,Schulze,"#include <stdio.h>
+126,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -11748,7 +11748,7 @@ int main() {
         printf(""\n"");
   }
 }",0.5242553191,0
-127,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Edgar Wolf,Großkopf,"#include <stdio.h>
+127,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_438,Name_438,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -11837,7 +11837,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.5238798621,0
-128,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Edgar Wolf,Großkopf,"#include <stdio.h>
+128,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_438,Name_438,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -11918,7 +11918,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.5223399355,0
-129,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Elisabeth Maria,Groß,"#include <stdio.h>
+129,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_453,Name_453,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -11999,7 +11999,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.5219260533,0
-130,SoSe22,10,Antwort 9,C,Edgar Wolf,Großkopf,Elisabeth Maria,Groß,"#include<stdio.h>
+130,SoSe22,10,Antwort 9,C,VName_438,Name_438,VName_453,Name_453,"#include<stdio.h>
 
 typedef struct student{
 char first_name[20];
@@ -12079,7 +12079,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.5218173639,0
-131,SoSe22,10,Antwort 9,C,Niklas,Muß,Butch Michel Guntbert,Warns,"#include <stdio.h>
+131,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_464,Name_464,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -12183,7 +12183,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.5212554629,0
-132,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Butch Michel Guntbert,Warns,"#include <stdio.h>
+132,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_464,Name_464,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -12287,7 +12287,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.5180561748,0
-133,SoSe22,10,Antwort 9,C,Niklas,Muß,Shaurya,Sharma,"#include <stdio.h>
+133,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_437,Name_437,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -12378,7 +12378,7 @@ int main()
 
     return 0;
 }",0.5177087888,0
-134,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Shaurya,Sharma,"#include <stdio.h>
+134,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_437,Name_437,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -12466,7 +12466,7 @@ int main()
 
     return 0;
 }",0.5156537753,0
-135,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Edgar Wolf,Großkopf,"#include <stdio.h>
+135,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_438,Name_438,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -12552,7 +12552,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.5153985507000001,0
-136,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Florian,Schacht,"#include <stdio.h>
+136,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_432,Name_432,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -12668,7 +12668,7 @@ int main(){
 	}
 	return 0;
 }",0.5146014207,0
-137,SoSe22,10,Antwort 9,C,Niklas,Muß,Kaspar Lorenz,Hartmann,"#include <stdio.h>
+137,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_456,Name_456,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -12748,7 +12748,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }",0.5135254989,0
-138,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Larissa,Breuer,"#include <stdio.h>
+138,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_466,Name_466,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -12846,7 +12846,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.5134920635,0
-139,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Larissa,Breuer,"#include <stdio.h>
+139,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -12960,7 +12960,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.5123614663,0
-140,SoSe22,10,Antwort 9,C,Edgar Wolf,Großkopf,Tugce,Karabalik,"#include<stdio.h>
+140,SoSe22,10,Antwort 9,C,VName_438,Name_438,VName_471,Name_471,"#include<stdio.h>
 
 typedef struct student{
 char first_name[20];
@@ -13042,7 +13042,7 @@ int main()
     
     return 0;
 }",0.5109192483,0
-141,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Niklas,Muß,"#include <stdio.h>
+141,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_447,Name_447,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -13131,7 +13131,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.5094339623,0
-142,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Florian,Schacht,"#include <stdio.h>
+142,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_432,Name_432,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -13255,7 +13255,7 @@ int main(){
 	}
 	return 0;
 }",0.5088,0
-143,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Timo,Kraska,"#include <stdio.h>
+143,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_465,Name_465,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -13351,7 +13351,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.5076190476,0
-144,SoSe22,10,Antwort 9,C,Butch Michel Guntbert,Warns,Tugce,Karabalik,"#include <stdio.h>
+144,SoSe22,10,Antwort 9,C,VName_464,Name_464,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 
 const int ANZAHL = 5; // Should be 5
@@ -13453,7 +13453,7 @@ int main()
     
     return 0;
 }",0.5054545455,0
-145,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Ibraim,Ibraimi,"#include <stdio.h>
+145,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_473,Name_473,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -13567,7 +13567,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.5023060797,0
-146,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Kaspar Lorenz,Hartmann,"#include <stdio.h>
+146,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_456,Name_456,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -13649,7 +13649,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }",0.5016077170000001,0
-147,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Timo,Kraska,"#include <stdio.h>
+147,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_465,Name_465,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -13743,7 +13743,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.5012366035,0
-148,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Ibraim,Ibraimi,"#include <stdio.h>
+148,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_473,Name_473,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -13830,7 +13830,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.5007139457,0
-149,SoSe22,10,Antwort 9,C,Ibraim,Ibraimi,Larissa,Breuer,"#include <stdio.h>
+149,SoSe22,10,Antwort 9,C,VName_473,Name_473,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student { 
@@ -13933,7 +13933,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.5002130379,0
-150,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Moritz Sebastian,Niethammer,"#include <stdio.h>
+150,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_442,Name_442,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -14010,7 +14010,7 @@ int main(){
     }
     return 0;
 }",0.4990654206,0
-151,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Bahar,Gülser,"#include <stdio.h>
+151,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_441,Name_441,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -14101,7 +14101,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.4974924774,0
-152,SoSe22,10,Antwort 9,C,Florian,Strobl,Shaurya,Sharma,"#include <stdio.h>
+152,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_437,Name_437,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -14186,7 +14186,7 @@ int main()
 
     return 0;
 }",0.4958435208,0
-153,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Gabriele,Tellez Pedroza,"#include <stdio.h>
+153,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_440,Name_440,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -14287,7 +14287,7 @@ void student_ausgeben(Student* p_stud)
 	printf(""\nStudent: %s %s"",p_stud->first_name,p_stud->last_name);
 	printf(""\nAnzahl Punkte: %i\n"", sum);
 }",0.4956701031,0
-154,SoSe22,10,Antwort 9,C,Niklas,Muß,Larissa,Breuer,"#include <stdio.h>
+154,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_466,Name_466,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -14388,7 +14388,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.4956356736,0
-155,SoSe22,10,Antwort 9,C,Florian,Schacht,Bahar,Gülser,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+155,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_441,Name_441,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -14499,7 +14499,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.4930114358,0
-156,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Tom Frederik,Braune,"#include <stdio.h>
+156,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_433,Name_433,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -14595,7 +14595,7 @@ int main(void){
 		}
 		
  	}",0.4910013844,0
-157,SoSe22,10,Antwort 9,C,Bahar,Gülser,Edgar Wolf,Großkopf,"#include <stdio.h>
+157,SoSe22,10,Antwort 9,C,VName_441,Name_441,VName_438,Name_438,"#include <stdio.h>
 typedef struct student{
 char vorname[21];
 char nachname[21];
@@ -14679,7 +14679,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.4886975242,0
-158,SoSe22,10,Antwort 9,C,Florian,Strobl,Kaspar Lorenz,Hartmann,"#include <stdio.h>
+158,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_456,Name_456,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -14753,7 +14753,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }",0.4868355688,0
-159,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Ibraim,Ibraimi,"#include <stdio.h>
+159,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_473,Name_473,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -14842,7 +14842,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.4853153587,0
-160,SoSe22,10,Antwort 9,C,Niklas,Muß,Paul Georg,Tiede,"#include <stdio.h>
+160,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_459,Name_459,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -14931,7 +14931,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.4823428079,0
-161,SoSe22,10,Antwort 9,C,Florian,Schacht,Tugce,Karabalik,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+161,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_471,Name_471,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -15040,7 +15040,7 @@ int main()
     
     return 0;
 }",0.4822006472,0
-162,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Dennis Benedikt,Schulze,"#include <stdio.h>
+162,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -15130,7 +15130,7 @@ int main() {
         printf(""\n"");
   }
 }",0.4819494585,0
-163,SoSe22,10,Antwort 9,C,Edgar Wolf,Großkopf,Silas Johannes,Pegler,"#include<stdio.h>
+163,SoSe22,10,Antwort 9,C,VName_438,Name_438,VName_474,Name_474,"#include<stdio.h>
 
 typedef struct student{
 char first_name[20];
@@ -15228,7 +15228,7 @@ void main()
 	}
 	
 }",0.4808843851,0
-164,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Dennis Benedikt,Schulze,"#include <stdio.h>
+164,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_470,Name_470,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -15325,7 +15325,7 @@ int main() {
         printf(""\n"");
   }
 }",0.4797936371,0
-165,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Fabian,Große-Wöhrmann,"#include <stdio.h>
+165,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_460,Name_460,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -15425,7 +15425,7 @@ int main(){
         student_ausgeben(&s[i]);
     }
 }",0.4778420039,0
-166,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Moritz Sebastian,Niethammer,"#include <stdio.h>
+166,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_442,Name_442,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -15534,7 +15534,7 @@ int main(){
     }
     return 0;
 }",0.4745895231,0
-167,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Shaurya,Sharma,"#include <stdio.h>
+167,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_437,Name_437,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -15616,7 +15616,7 @@ int main()
 
     return 0;
 }",0.4730656219,0
-168,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Luca Marius,Hilbrich,"#include <stdio.h>
+168,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_434,Name_434,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -15719,7 +15719,7 @@ int main()
         student_ausgeben(&students[i]);
     }
 }",0.4716006885,0
-169,SoSe22,10,Antwort 9,C,Florian,Schacht,Ibraim,Ibraimi,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+169,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_473,Name_473,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -15832,7 +15832,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.4710115954,0
-170,SoSe22,10,Antwort 9,C,Edgar Wolf,Großkopf,Larissa,Breuer,"#include<stdio.h>
+170,SoSe22,10,Antwort 9,C,VName_438,Name_438,VName_466,Name_466,"#include<stdio.h>
 
 typedef struct student{
 char first_name[20];
@@ -15928,7 +15928,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.4708798017,0
-171,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Paul Georg,Tiede,"#include <stdio.h>
+171,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -16013,7 +16013,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.4694708277,0
-172,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Shaurya,Sharma,"#include <stdio.h>
+172,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_437,Name_437,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -16102,7 +16102,7 @@ int main()
 
     return 0;
 }",0.468401487,0
-173,SoSe22,10,Antwort 9,C,Bahar,Gülser,Elisabeth Maria,Groß,"#include <stdio.h>
+173,SoSe22,10,Antwort 9,C,VName_441,Name_441,VName_453,Name_453,"#include <stdio.h>
 typedef struct student{
 char vorname[21];
 char nachname[21];
@@ -16187,7 +16187,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.4678944749,0
-174,SoSe22,10,Antwort 9,C,Butch Michel Guntbert,Warns,Timo,Kraska,"#include <stdio.h>
+174,SoSe22,10,Antwort 9,C,VName_464,Name_464,VName_465,Name_465,"#include <stdio.h>
 #include <stdlib.h>
 
 const int ANZAHL = 5; // Should be 5
@@ -16293,7 +16293,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.4671163575,0
-175,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Tugce,Karabalik,"#include <stdio.h>
+175,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -16382,7 +16382,7 @@ int main()
     
     return 0;
 }",0.464608076,0
-176,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Silas Johannes,Pegler,"#include <stdio.h>
+176,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -16476,7 +16476,7 @@ void main()
 	}
 	
 }",0.4644859813,0
-177,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Butch Michel Guntbert,Warns,"#include <stdio.h>
+177,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_464,Name_464,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -16576,7 +16576,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.4630091438,0
-178,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Elisabeth Maria,Groß,"#include <stdio.h>
+178,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_453,Name_453,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -16652,7 +16652,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.4589416058,0
-179,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Gabriele,Tellez Pedroza,"#include <stdio.h>
+179,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_440,Name_440,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -16747,7 +16747,7 @@ void student_ausgeben(Student* p_stud)
 	printf(""\nStudent: %s %s"",p_stud->first_name,p_stud->last_name);
 	printf(""\nAnzahl Punkte: %i\n"", sum);
 }",0.4575342466,0
-180,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Ibraim,Ibraimi,"#include <stdio.h>
+180,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_473,Name_473,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -16848,7 +16848,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.4568848758,0
-181,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Butch Michel Guntbert,Warns,"#include <stdio.h>
+181,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_464,Name_464,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -16948,7 +16948,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.4564428312,0
-182,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Silas Johannes,Pegler,"#include <stdio.h>
+182,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -17047,7 +17047,7 @@ void main()
 	}
 	
 }",0.4520668426,0
-183,SoSe22,10,Antwort 9,C,Elisabeth Maria,Groß,Shaurya,Sharma,"#include <stdio.h>
+183,SoSe22,10,Antwort 9,C,VName_453,Name_453,VName_437,Name_437,"#include <stdio.h>
  
 typedef struct{
     char first_name[20];
@@ -17134,7 +17134,7 @@ int main()
 
     return 0;
 }",0.4505395683,0
-184,SoSe22,10,Antwort 9,C,Timo,Kraska,Silas Johannes,Pegler,"#include <stdio.h>
+184,SoSe22,10,Antwort 9,C,VName_465,Name_465,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -17239,7 +17239,7 @@ void main()
 	}
 	
 }",0.45,0
-185,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Silas Johannes,Pegler,"#include <stdio.h>
+185,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_474,Name_474,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -17340,7 +17340,7 @@ void main()
 	}
 	
 }",0.4497777778,0
-186,SoSe22,10,Antwort 9,C,Niklas,Muß,Florian,Schacht,"#include <stdio.h>
+186,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_432,Name_432,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -17451,7 +17451,7 @@ int main(){
 	}
 	return 0;
 }",0.449623521,0
-187,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Fabian,Große-Wöhrmann,"#include <stdio.h>
+187,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_460,Name_460,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -17538,7 +17538,7 @@ int main(){
         student_ausgeben(&s[i]);
     }
 }",0.4495456719,0
-188,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Florian,Schacht,"#include <stdio.h>
+188,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_432,Name_432,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -17649,7 +17649,7 @@ int main(){
 	}
 	return 0;
 }",0.4477137177,0
-189,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Lars Rudolf Heinrich,Michael,"#include <stdio.h>
+189,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_455,Name_455,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -17753,7 +17753,7 @@ int main(){
 	}
 
 }",0.447257384,0
-190,SoSe22,10,Antwort 9,C,Florian,Schacht,Moritz Sebastian,Niethammer,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+190,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_442,Name_442,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -17861,7 +17861,7 @@ int main(){
     }
     return 0;
 }",0.4465220643,0
-191,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Timo,Kraska,"#include <stdio.h>
+191,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_465,Name_465,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -17943,7 +17943,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.444549763,0
-192,SoSe22,10,Antwort 9,C,Niklas,Muß,Edgar Wolf,Großkopf,"#include <stdio.h>
+192,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_438,Name_438,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -18027,7 +18027,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.4444444444,0
-193,SoSe22,10,Antwort 9,C,Bahar,Gülser,Butch Michel Guntbert,Warns,"#include <stdio.h>
+193,SoSe22,10,Antwort 9,C,VName_441,Name_441,VName_464,Name_464,"#include <stdio.h>
 typedef struct student{
 char vorname[21];
 char nachname[21];
@@ -18131,7 +18131,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.4384873145,0
-194,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Timo,Kraska,"#include <stdio.h>
+194,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_465,Name_465,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -18231,7 +18231,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.4379622021,0
-195,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Shaurya,Sharma,"#include <stdio.h>
+195,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_437,Name_437,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -18335,7 +18335,7 @@ int main()
 
     return 0;
 }",0.4354354354,0
-196,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Shaurya,Sharma,"#include <stdio.h>
+196,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_437,Name_437,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -18425,7 +18425,7 @@ int main()
 
     return 0;
 }",0.4352535697,0
-197,SoSe22,10,Antwort 9,C,Florian,Strobl,Paul Georg,Tiede,"#include <stdio.h>
+197,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_459,Name_459,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -18508,7 +18508,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.4307692308,0
-198,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Edgar Wolf,Großkopf,"#include <stdio.h>
+198,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_438,Name_438,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -18588,7 +18588,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.4294252874,0
-199,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Florian,Schacht,"#include <stdio.h>
+199,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_432,Name_432,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -18690,7 +18690,7 @@ int main(){
 	}
 	return 0;
 }",0.429245283,0
-200,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Niklas,Muß,"#include <stdio.h>
+200,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_447,Name_447,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -18781,7 +18781,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.4285714286,0
-201,SoSe22,10,Antwort 9,C,Shaurya,Sharma,Dennis Benedikt,Schulze,"#include <stdio.h>
+201,SoSe22,10,Antwort 9,C,VName_437,Name_437,VName_470,Name_470,"#include <stdio.h>
 
 
 
@@ -18882,7 +18882,7 @@ int main() {
         printf(""\n"");
   }
 }",0.4279359431,0
-202,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Adrian Maximilian,Glaschke,"#include <stdio.h>
+202,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_452,Name_452,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -18994,7 +18994,7 @@ student_ausgeben(&vierter_Student);
 student_ausgeben(&fuenfter_Student);
 
 }",0.4276781992,0
-203,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Moritz Sebastian,Niethammer,"#include <stdio.h>
+203,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_442,Name_442,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -19090,7 +19090,7 @@ int main(){
     }
     return 0;
 }",0.4271356784,0
-204,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Larissa,Breuer,"#include <stdio.h>
+204,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -19196,7 +19196,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.4235294118,0
-205,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Edgar Wolf,Großkopf,"#include <stdio.h>
+205,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_438,Name_438,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -19289,7 +19289,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.421987315,0
-206,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Tom Frederik,Braune,"#include <stdio.h>
+206,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_433,Name_433,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -19380,7 +19380,7 @@ int main(void){
 		}
 		
  	}",0.4208566108,0
-207,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Elisabeth Maria,Groß,"#include <stdio.h>
+207,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_453,Name_453,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -19475,7 +19475,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.4204918033,0
-208,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Pinelopi Eleni,Anastasiadou,"#include <stdio.h>
+208,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_458,Name_458,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -19560,7 +19560,7 @@ int main() {
    student_ausgeben( &dar );
     }
 }",0.4202822791,0
-209,SoSe22,10,Antwort 9,C,Larissa,Breuer,Tugce,Karabalik,"#include <stdio.h>
+209,SoSe22,10,Antwort 9,C,VName_466,Name_466,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -19659,7 +19659,7 @@ int main()
     
     return 0;
 }",0.4201898188,0
-210,SoSe22,10,Antwort 9,C,Niklas,Muß,Timo,Kraska,"#include <stdio.h>
+210,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_465,Name_465,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -19750,7 +19750,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.4195329087,0
-211,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Moritz Sebastian,Niethammer,"#include <stdio.h>
+211,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_442,Name_442,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -19838,7 +19838,7 @@ int main(){
     }
     return 0;
 }",0.4187256177,0
-212,SoSe22,10,Antwort 9,C,Bahar,Gülser,Larissa,Breuer,"#include <stdio.h>
+212,SoSe22,10,Antwort 9,C,VName_441,Name_441,VName_466,Name_466,"#include <stdio.h>
 typedef struct student{
 char vorname[21];
 char nachname[21];
@@ -19939,7 +19939,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.4186678749,0
-213,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Florian,Schacht,"#include <stdio.h>
+213,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_432,Name_432,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -20046,7 +20046,7 @@ int main(){
 	}
 	return 0;
 }",0.4174757282,0
-214,SoSe22,10,Antwort 9,C,Florian,Strobl,Florian,Schacht,"#include <stdio.h>
+214,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_432,Name_432,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -20151,7 +20151,7 @@ int main(){
 	}
 	return 0;
 }",0.4169611307,0
-215,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Ibraim,Ibraimi,"#include <stdio.h>
+215,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_473,Name_473,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -20244,7 +20244,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.4161199625,0
-216,SoSe22,10,Antwort 9,C,Florian,Strobl,Tom Frederik,Braune,"#include <stdio.h>
+216,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_433,Name_433,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -20329,7 +20329,7 @@ int main(void){
 		}
 		
  	}",0.4155963303,0
-217,SoSe22,10,Antwort 9,C,Shaurya,Sharma,Silas Johannes,Pegler,"#include <stdio.h>
+217,SoSe22,10,Antwort 9,C,VName_437,Name_437,VName_474,Name_474,"#include <stdio.h>
 
 
 
@@ -20434,7 +20434,7 @@ void main()
 	}
 	
 }",0.4152854512,0
-218,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Larissa,Breuer,"#include <stdio.h>
+218,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_466,Name_466,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -20533,7 +20533,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.4128,0
-219,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Rosa,Hagenberg,"#include <stdio.h>
+219,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_443,Name_443,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -20623,7 +20623,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.4124721604,0
-220,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Tugce,Karabalik,"#include <stdio.h>
+220,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_471,Name_471,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -20719,7 +20719,7 @@ int main()
     
     return 0;
 }",0.4120247569,0
-221,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Butch Michel Guntbert,Warns,"#include <stdio.h>
+221,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_464,Name_464,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -20814,7 +20814,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.411971831,0
-222,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Tom Frederik,Braune,"#include <stdio.h>
+222,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_433,Name_433,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -20901,7 +20901,7 @@ int main(void){
 		}
 		
  	}",0.4119428819,0
-223,SoSe22,10,Antwort 9,C,Florian,Schacht,Elisabeth Maria,Groß,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+223,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_453,Name_453,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -21008,7 +21008,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.4115920763,0
-224,SoSe22,10,Antwort 9,C,Florian,Strobl,Adrian Maximilian,Glaschke,"#include <stdio.h>
+224,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_452,Name_452,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -21114,7 +21114,7 @@ student_ausgeben(&vierter_Student);
 student_ausgeben(&fuenfter_Student);
 
 }",0.4097079391,0
-225,SoSe22,10,Antwort 9,C,Ibraim,Ibraimi,Shaurya,Sharma,"#include <stdio.h>
+225,SoSe22,10,Antwort 9,C,VName_473,Name_473,VName_437,Name_437,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student { 
@@ -21207,7 +21207,7 @@ int main()
 
     return 0;
 }",0.4082041021,0
-226,SoSe22,10,Antwort 9,C,Florian,Strobl,Gabriele,Tellez Pedroza,"#include <stdio.h>
+226,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_440,Name_440,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -21300,7 +21300,7 @@ void student_ausgeben(Student* p_stud)
 	printf(""\nStudent: %s %s"",p_stud->first_name,p_stud->last_name);
 	printf(""\nAnzahl Punkte: %i\n"", sum);
 }",0.4068996019,0
-227,SoSe22,10,Antwort 9,C,Elisabeth Maria,Groß,Paul Georg,Tiede,"#include <stdio.h>
+227,SoSe22,10,Antwort 9,C,VName_453,Name_453,VName_459,Name_459,"#include <stdio.h>
  
 typedef struct{
     char first_name[20];
@@ -21385,7 +21385,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.406374502,0
-228,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Paul Georg,Tiede,"#include <stdio.h>
+228,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -21470,7 +21470,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.406172225,0
-229,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Elisabeth Maria,Groß,"#include <stdio.h>
+229,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_453,Name_453,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -21578,7 +21578,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.4045977011,0
-230,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Timo,Kraska,"#include <stdio.h>
+230,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_465,Name_465,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -21665,7 +21665,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.4037433155,0
-231,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Paul Georg,Tiede,"#include <stdio.h>
+231,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_459,Name_459,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -21751,7 +21751,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.4023561396,0
-232,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Florian,Schacht,"#include <stdio.h>
+232,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_432,Name_432,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -21864,7 +21864,7 @@ int main(){
 	}
 	return 0;
 }",0.3983769827,0
-233,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Gregor,Lehmann,"#include <stdio.h>
+233,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_448,Name_448,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -21966,7 +21966,7 @@ int main()
     }
 
 }",0.3978243978,0
-234,SoSe22,10,Antwort 9,C,Timo,Kraska,Shaurya,Sharma,"#include <stdio.h>
+234,SoSe22,10,Antwort 9,C,VName_465,Name_465,VName_437,Name_437,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -22059,7 +22059,7 @@ int main()
 
     return 0;
 }",0.3949579832,0
-235,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Paul Georg,Tiede,"#include <stdio.h>
+235,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -22148,7 +22148,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.39453125,0
-236,SoSe22,10,Antwort 9,C,Butch Michel Guntbert,Warns,Dennis Benedikt,Schulze,"#include <stdio.h>
+236,SoSe22,10,Antwort 9,C,VName_464,Name_464,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 
 const int ANZAHL = 5; // Should be 5
@@ -22262,7 +22262,7 @@ int main() {
         printf(""\n"");
   }
 }",0.3930589185,0
-237,SoSe22,10,Antwort 9,C,Tobias,Hengst,Jakob Pius,Bücking,"//
+237,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_435,Name_435,"//
 //  main.c
 //  HA
 //
@@ -22373,7 +22373,7 @@ void main(){
 
 
 }",0.392788646,0
-238,SoSe22,10,Antwort 9,C,Butch Michel Guntbert,Warns,Larissa,Breuer,"#include <stdio.h>
+238,SoSe22,10,Antwort 9,C,VName_464,Name_464,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 
 const int ANZAHL = 5; // Should be 5
@@ -22489,7 +22489,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.3921568627,0
-239,SoSe22,10,Antwort 9,C,Florian,Schacht,Dennis Benedikt,Schulze,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+239,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_470,Name_470,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -22610,7 +22610,7 @@ int main() {
         printf(""\n"");
   }
 }",0.3905454545,0
-240,SoSe22,10,Antwort 9,C,Florian,Strobl,Gregor,Lehmann,"#include <stdio.h>
+240,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_448,Name_448,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -22696,7 +22696,7 @@ int main()
     }
 
 }",0.3898668957,0
-241,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Shaurya,Sharma,"#include <stdio.h>
+241,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_437,Name_437,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -22790,7 +22790,7 @@ int main()
 
     return 0;
 }",0.3893129771,0
-242,SoSe22,10,Antwort 9,C,Rosa,Hagenberg,Ibraim,Ibraimi,"#include <stdio.h>
+242,SoSe22,10,Antwort 9,C,VName_443,Name_443,VName_473,Name_473,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -22880,7 +22880,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.3891891892,0
-243,SoSe22,10,Antwort 9,C,Florian,Schacht,Timo,Kraska,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+243,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_465,Name_465,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -22993,7 +22993,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.3872919818,0
-244,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Butch Michel Guntbert,Warns,"#include <stdio.h>
+244,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_464,Name_464,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -23120,7 +23120,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.3866171004,0
-245,SoSe22,10,Antwort 9,C,Florian,Schacht,Larissa,Breuer,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+245,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_466,Name_466,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -23243,7 +23243,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.3850889193,0
-246,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Edgar Wolf,Großkopf,"#include <stdio.h>
+246,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_438,Name_438,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -23330,7 +23330,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.3843869325,0
-247,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Luca Marius,Hilbrich,"#include <stdio.h>
+247,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_434,Name_434,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -23428,7 +23428,7 @@ int main()
         student_ausgeben(&students[i]);
     }
 }",0.3843817787,0
-248,SoSe22,10,Antwort 9,C,Butch Michel Guntbert,Warns,Shaurya,Sharma,"#include <stdio.h>
+248,SoSe22,10,Antwort 9,C,VName_464,Name_464,VName_437,Name_437,"#include <stdio.h>
 #include <stdlib.h>
 
 const int ANZAHL = 5; // Should be 5
@@ -23534,7 +23534,7 @@ int main()
 
     return 0;
 }",0.3836805556,0
-249,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Dennis Benedikt,Schulze,"#include <stdio.h>
+249,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -23635,7 +23635,7 @@ int main() {
         printf(""\n"");
   }
 }",0.3835501469,0
-250,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Paul Georg,Tiede,"#include <stdio.h>
+250,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -23723,7 +23723,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.3823814134,0
-251,SoSe22,10,Antwort 9,C,Ibraim,Ibraimi,Paul Georg,Tiede,"#include <stdio.h>
+251,SoSe22,10,Antwort 9,C,VName_473,Name_473,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student { 
@@ -23814,7 +23814,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.3815142576,0
-252,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Gabriele,Tellez Pedroza,"#include <stdio.h>
+252,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_440,Name_440,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -23913,7 +23913,7 @@ void student_ausgeben(Student* p_stud)
 	printf(""\nStudent: %s %s"",p_stud->first_name,p_stud->last_name);
 	printf(""\nAnzahl Punkte: %i\n"", sum);
 }",0.3813369224,0
-253,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Fabian,Große-Wöhrmann,"#include <stdio.h>
+253,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_460,Name_460,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -24023,7 +24023,7 @@ int main(){
         student_ausgeben(&s[i]);
     }
 }",0.378250591,0
-254,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Florian,Schacht,"#include <stdio.h>
+254,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_432,Name_432,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -24132,7 +24132,7 @@ int main(){
 	}
 	return 0;
 }",0.3767897513,0
-255,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Moritz Sebastian,Niethammer,"#include <stdio.h>
+255,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_442,Name_442,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -24216,7 +24216,7 @@ int main(){
     }
     return 0;
 }",0.376,0
-256,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Gabriele,Tellez Pedroza,"#include <stdio.h>
+256,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_440,Name_440,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -24311,7 +24311,7 @@ void student_ausgeben(Student* p_stud)
 	printf(""\nStudent: %s %s"",p_stud->first_name,p_stud->last_name);
 	printf(""\nAnzahl Punkte: %i\n"", sum);
 }",0.3737458194,0
-257,SoSe22,10,Antwort 9,C,Edgar Wolf,Großkopf,Butch Michel Guntbert,Warns,"#include<stdio.h>
+257,SoSe22,10,Antwort 9,C,VName_438,Name_438,VName_464,Name_464,"#include<stdio.h>
 
 typedef struct student{
 char first_name[20];
@@ -24410,7 +24410,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.3734259661,0
-258,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Paul Georg,Tiede,"#include <stdio.h>
+258,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -24512,7 +24512,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.3728480079,0
-259,SoSe22,10,Antwort 9,C,Dennis Benedikt,Schulze,Paul Georg,Tiede,"#include <stdio.h>
+259,SoSe22,10,Antwort 9,C,VName_470,Name_470,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -24611,7 +24611,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.3723171266,0
-260,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Ibraim,Ibraimi,"#include <stdio.h>
+260,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_473,Name_473,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -24701,7 +24701,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.3721881391,0
-261,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Moritz Sebastian,Niethammer,"#include <stdio.h>
+261,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_442,Name_442,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -24790,7 +24790,7 @@ int main(){
     }
     return 0;
 }",0.3705211726,0
-262,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Larissa,Breuer,"#include <stdio.h>
+262,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -24887,7 +24887,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.3700475436,0
-263,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Gabriele,Tellez Pedroza,"#include <stdio.h>
+263,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_440,Name_440,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -25009,7 +25009,7 @@ void student_ausgeben(Student* p_stud)
 	printf(""\nStudent: %s %s"",p_stud->first_name,p_stud->last_name);
 	printf(""\nAnzahl Punkte: %i\n"", sum);
 }",0.3692077728,0
-264,SoSe22,10,Antwort 9,C,Tobias,Hengst,Moritz Sebastian,Niethammer,"//
+264,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_442,Name_442,"//
 //  main.c
 //  HA
 //
@@ -25112,7 +25112,7 @@ int main(){
     }
     return 0;
 }",0.36912996,0
-265,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Shaurya,Sharma,"#include <stdio.h>
+265,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_437,Name_437,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -25203,7 +25203,7 @@ int main()
 
     return 0;
 }",0.3676105315,0
-266,SoSe22,10,Antwort 9,C,Tobias,Hengst,Lars Rudolf Heinrich,Michael,"//
+266,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_455,Name_455,"//
 //  main.c
 //  HA
 //
@@ -25322,7 +25322,7 @@ int main(){
 	}
 
 }",0.3653322969,0
-267,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Moritz Sebastian,Niethammer,"#include <stdio.h>
+267,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_442,Name_442,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -25404,7 +25404,7 @@ int main(){
     }
     return 0;
 }",0.3648648649,0
-268,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Rosa,Hagenberg,"#include <stdio.h>
+268,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_443,Name_443,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -25490,7 +25490,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.3638025594,0
-269,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Elisabeth Maria,Groß,"#include <stdio.h>
+269,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_453,Name_453,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -25578,7 +25578,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.3628389155,0
-270,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Rosa,Hagenberg,"#include <stdio.h>
+270,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_443,Name_443,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -25679,7 +25679,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.3598820059,0
-271,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Dennis Benedikt,Schulze,"#include <stdio.h>
+271,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -25788,7 +25788,7 @@ int main() {
         printf(""\n"");
   }
 }",0.3595779221,0
-272,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Kaspar Lorenz,Hartmann,"#include <stdio.h>
+272,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_456,Name_456,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -25878,7 +25878,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }",0.358724535,0
-273,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Butch Michel Guntbert,Warns,"#include <stdio.h>
+273,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_464,Name_464,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -25980,7 +25980,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.3568429891,0
-274,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Elisabeth Maria,Groß,"#include <stdio.h>
+274,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_453,Name_453,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -26067,7 +26067,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.3560830861,0
-275,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Gregor,Lehmann,"#include <stdio.h>
+275,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_448,Name_448,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -26158,7 +26158,7 @@ int main()
     }
 
 }",0.3559395248,0
-276,SoSe22,10,Antwort 9,C,Florian,Strobl,Fabian,Große-Wöhrmann,"#include <stdio.h>
+276,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_460,Name_460,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -26239,7 +26239,7 @@ int main(){
         student_ausgeben(&s[i]);
     }
 }",0.3542157325,0
-277,SoSe22,10,Antwort 9,C,Florian,Schacht,Edgar Wolf,Großkopf,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+277,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_438,Name_438,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -26345,7 +26345,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.3533980583,0
-278,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Elisabeth Maria,Groß,"#include <stdio.h>
+278,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_453,Name_453,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -26428,7 +26428,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.3527367507,0
-279,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Silas Johannes,Pegler,"#include <stdio.h>
+279,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -26533,7 +26533,7 @@ void main()
 	}
 	
 }",0.3519722583,0
-280,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Tom Frederik,Braune,"#include <stdio.h>
+280,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_433,Name_433,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -26647,7 +26647,7 @@ int main(void){
 		}
 		
  	}",0.3506743738,0
-281,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Rosa,Hagenberg,"#include <stdio.h>
+281,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_443,Name_443,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -26745,7 +26745,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.3490971625,0
-282,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Ibraim,Ibraimi,"#include <stdio.h>
+282,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_473,Name_473,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -26832,7 +26832,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.3475513428,0
-283,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Shaurya,Sharma,"#include <stdio.h>
+283,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_437,Name_437,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -26925,7 +26925,7 @@ int main()
 
     return 0;
 }",0.3458578542,0
-284,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Edgar Wolf,Großkopf,"#include <stdio.h>
+284,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_438,Name_438,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -27000,7 +27000,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.341989221,0
-285,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Shaurya,Sharma,"#include <stdio.h>
+285,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_437,Name_437,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -27100,7 +27100,7 @@ int main()
 
     return 0;
 }",0.3406593407,0
-286,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Butch Michel Guntbert,Warns,"#include <stdio.h>
+286,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_464,Name_464,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -27213,7 +27213,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.3405238829,0
-287,SoSe22,10,Antwort 9,C,Tobias,Hengst,Florian,Strobl,"//
+287,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_468,Name_468,"//
 //  main.c
 //  HA
 //
@@ -27313,7 +27313,7 @@ int main() {
         
     return 0;
 }",0.3374045802,0
-288,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Lars Rudolf Heinrich,Michael,"#include <stdio.h>
+288,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_455,Name_455,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -27414,7 +27414,7 @@ int main(){
 	}
 
 }",0.33657289,0
-289,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Paul Georg,Tiede,"#include <stdio.h>
+289,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -27505,7 +27505,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.3324420677,0
-290,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Fabian,Große-Wöhrmann,"#include <stdio.h>
+290,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_460,Name_460,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -27588,7 +27588,7 @@ int main(){
         student_ausgeben(&s[i]);
     }
 }",0.3304093567,0
-291,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Gregor,Lehmann,"#include <stdio.h>
+291,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_448,Name_448,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -27685,7 +27685,7 @@ int main()
     }
 
 }",0.3298791019,0
-292,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Gregor,Lehmann,"#include <stdio.h>
+292,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_448,Name_448,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -27786,7 +27786,7 @@ int main()
     }
 
 }",0.3298113208,0
-293,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Bahar,Gülser,"#include <stdio.h>
+293,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_441,Name_441,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -27874,7 +27874,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.3292951542,0
-294,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Larissa,Breuer,"#include <stdio.h>
+294,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -27966,7 +27966,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.3280334728,0
-295,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Larissa,Breuer,"#include <stdio.h>
+295,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -28090,7 +28090,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.3276353276,0
-296,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Tugce,Karabalik,"#include <stdio.h>
+296,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -28173,7 +28173,7 @@ int main()
     
     return 0;
 }",0.3262032086,0
-297,SoSe22,10,Antwort 9,C,Florian,Strobl,Pinelopi Eleni,Anastasiadou,"#include <stdio.h>
+297,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_458,Name_458,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -28252,7 +28252,7 @@ int main() {
    student_ausgeben( &dar );
     }
 }",0.3249357326,0
-298,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Gregor,Lehmann,"#include <stdio.h>
+298,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_448,Name_448,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -28357,7 +28357,7 @@ int main()
     }
 
 }",0.32427695,0
-299,SoSe22,10,Antwort 9,C,Tobias,Hengst,Elisabeth Maria,Groß,"//
+299,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_453,Name_453,"//
 //  main.c
 //  HA
 //
@@ -28459,7 +28459,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.3236870311,0
-300,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Luca Marius,Hilbrich,"#include <stdio.h>
+300,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_434,Name_434,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -28555,7 +28555,7 @@ int main()
         student_ausgeben(&students[i]);
     }
 }",0.3232405892,0
-301,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Luca Marius,Hilbrich,"#include <stdio.h>
+301,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_434,Name_434,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -28649,7 +28649,7 @@ int main()
         student_ausgeben(&students[i]);
     }
 }",0.322528363,0
-302,SoSe22,10,Antwort 9,C,Tobias,Hengst,Jonas,Eckhardt,"//
+302,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_54,Name_54,"//
 //  main.c
 //  HA
 //
@@ -28755,7 +28755,7 @@ int main() {
 	student_ausgeben(&studenten[i]);
 	return 0;
 }",0.3191653787,0
-303,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Bahar,Gülser,"#include <stdio.h>
+303,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_441,Name_441,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -28853,7 +28853,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.3189214319,0
-304,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Butch Michel Guntbert,Warns,"#include <stdio.h>
+304,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_464,Name_464,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -28956,7 +28956,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.3184431667,0
-305,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Shaurya,Sharma,"#include <stdio.h>
+305,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_437,Name_437,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -29070,7 +29070,7 @@ int main()
 
     return 0;
 }",0.3178861789,0
-306,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Elisabeth Maria,Groß,"#include <stdio.h>
+306,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_453,Name_453,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -29151,7 +29151,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.3173258004,0
-307,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Larissa,Breuer,"#include <stdio.h>
+307,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -29255,7 +29255,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.3155949741,0
-308,SoSe22,10,Antwort 9,C,Tobias,Hengst,Tugce,Karabalik,"//
+308,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_471,Name_471,"//
 //  main.c
 //  HA
 //
@@ -29359,7 +29359,7 @@ int main()
     
     return 0;
 }",0.3135559921,0
-309,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Rosa,Hagenberg,"#include <stdio.h>
+309,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_443,Name_443,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -29447,7 +29447,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.3133235725,0
-310,SoSe22,10,Antwort 9,C,Tobias,Hengst,Luca Marius,Hilbrich,"//
+310,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_434,Name_434,"//
 //  main.c
 //  HA
 //
@@ -29562,7 +29562,7 @@ int main()
         student_ausgeben(&students[i]);
     }
 }",0.3121387283,0
-311,SoSe22,10,Antwort 9,C,Tobias,Hengst,Timo,Kraska,"//
+311,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_465,Name_465,"//
 //  main.c
 //  HA
 //
@@ -29670,7 +29670,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.3121089437,0
-312,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Larissa,Breuer,"#include <stdio.h>
+312,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -29773,7 +29773,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.3113023074,0
-313,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Florian,Schacht,"#include <stdio.h>
+313,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_432,Name_432,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -29893,7 +29893,7 @@ int main(){
 	}
 	return 0;
 }",0.3110181311,0
-314,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Rosa,Hagenberg,"#include <stdio.h>
+314,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_443,Name_443,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -29978,7 +29978,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.3106884058,0
-315,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Butch Michel Guntbert,Warns,"#include <stdio.h>
+315,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_464,Name_464,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -30084,7 +30084,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.3099630996,0
-316,SoSe22,10,Antwort 9,C,Edgar Wolf,Großkopf,Rosa,Hagenberg,"#include<stdio.h>
+316,SoSe22,10,Antwort 9,C,VName_438,Name_438,VName_443,Name_443,"#include<stdio.h>
 
 typedef struct student{
 char first_name[20];
@@ -30167,7 +30167,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.3091512565,0
-317,SoSe22,10,Antwort 9,C,Tobias,Hengst,Ibraim,Ibraimi,"//
+317,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_473,Name_473,"//
 //  main.c
 //  HA
 //
@@ -30275,7 +30275,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.3084693085,0
-318,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Tugce,Karabalik,"#include <stdio.h>
+318,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -30361,7 +30361,7 @@ int main()
     
     return 0;
 }",0.3082511676,0
-319,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Rosa,Hagenberg,"#include <stdio.h>
+319,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_443,Name_443,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -30454,7 +30454,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.3075435203,0
-320,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Tom Frederik,Braune,"#include <stdio.h>
+320,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_433,Name_433,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -30541,7 +30541,7 @@ int main(void){
 		}
 		
  	}",0.3063063063,0
-321,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Tugce,Karabalik,"#include <stdio.h>
+321,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -30631,7 +30631,7 @@ int main()
     
     return 0;
 }",0.306122449,0
-322,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Pinelopi Eleni,Anastasiadou,"#include <stdio.h>
+322,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_458,Name_458,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -30712,7 +30712,7 @@ int main() {
    student_ausgeben( &dar );
     }
 }",0.3044315992,0
-323,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Timo,Kraska,"#include <stdio.h>
+323,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_465,Name_465,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -30802,7 +30802,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.3039542639,0
-324,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Lars Rudolf Heinrich,Michael,"#include <stdio.h>
+324,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_455,Name_455,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -30900,7 +30900,7 @@ int main(){
 	}
 
 }",0.3034773446,0
-325,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Silas Johannes,Pegler,"#include <stdio.h>
+325,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_474,Name_474,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -31012,7 +31012,7 @@ void main()
 	}
 	
 }",0.3027597403,0
-326,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Timo,Kraska,"#include <stdio.h>
+326,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_465,Name_465,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -31099,7 +31099,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.2997061704,0
-327,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Silas Johannes,Pegler,"#include <stdio.h>
+327,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -31205,7 +31205,7 @@ void main()
 	}
 	
 }",0.2980456026,0
-328,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Pinelopi Eleni,Anastasiadou,"#include <stdio.h>
+328,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_458,Name_458,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -31313,7 +31313,7 @@ int main() {
    student_ausgeben( &dar );
     }
 }",0.2949152542,0
-329,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Leif Erik,Stolte,"#include <stdio.h>
+329,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_445,Name_445,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -31406,7 +31406,7 @@ int main() {
 	student_ausgeben(studenten);
 	return 0;
 }",0.291603821,0
-330,SoSe22,10,Antwort 9,C,Niklas,Muß,Luca Marius,Hilbrich,"#include <stdio.h>
+330,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_434,Name_434,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -31504,7 +31504,7 @@ int main()
         student_ausgeben(&students[i]);
     }
 }",0.291585886,0
-331,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Kaspar Lorenz,Hartmann,"#include <stdio.h>
+331,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_456,Name_456,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -31580,7 +31580,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }",0.2914521112,0
-332,SoSe22,10,Antwort 9,C,Dennis Benedikt,Schulze,Silas Johannes,Pegler,"#include <stdio.h>
+332,SoSe22,10,Antwort 9,C,VName_470,Name_470,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -31693,7 +31693,7 @@ void main()
 	}
 	
 }",0.2907075874,0
-333,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Butch Michel Guntbert,Warns,"#include <stdio.h>
+333,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_464,Name_464,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -31800,7 +31800,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.2890262751,0
-334,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Leif Erik,Stolte,"#include <stdio.h>
+334,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_445,Name_445,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -31888,7 +31888,7 @@ int main() {
 	student_ausgeben(studenten);
 	return 0;
 }",0.2883248731,0
-335,SoSe22,10,Antwort 9,C,Tobias,Hengst,Edgar Wolf,Großkopf,"//
+335,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_438,Name_438,"//
 //  main.c
 //  HA
 //
@@ -31989,7 +31989,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.2870090634,0
-336,SoSe22,10,Antwort 9,C,Tobias,Hengst,Larissa,Breuer,"//
+336,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_466,Name_466,"//
 //  main.c
 //  HA
 //
@@ -32107,7 +32107,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.2862862863,0
-337,SoSe22,10,Antwort 9,C,Tobias,Hengst,Fabian,Große-Wöhrmann,"//
+337,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_460,Name_460,"//
 //  main.c
 //  HA
 //
@@ -32211,7 +32211,7 @@ int main(){
         student_ausgeben(&s[i]);
     }
 }",0.2845617895,0
-338,SoSe22,10,Antwort 9,C,Florian,Strobl,Rosa,Hagenberg,"#include <stdio.h>
+338,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_443,Name_443,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -32293,7 +32293,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.284478616,0
-339,SoSe22,10,Antwort 9,C,Tobias,Hengst,Niklas,Muß,"//
+339,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_447,Name_447,"//
 //  main.c
 //  HA
 //
@@ -32399,7 +32399,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.284416492,0
-340,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Gregor,Lehmann,"#include <stdio.h>
+340,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_448,Name_448,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -32491,7 +32491,7 @@ int main()
     }
 
 }",0.2829777971,0
-341,SoSe22,10,Antwort 9,C,Timo,Kraska,Paul Georg,Tiede,"#include <stdio.h>
+341,SoSe22,10,Antwort 9,C,VName_465,Name_465,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -32582,7 +32582,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.2829581994,0
-342,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Lars Rudolf Heinrich,Michael,"#include <stdio.h>
+342,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_455,Name_455,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -32694,7 +32694,7 @@ int main(){
 	}
 
 }",0.2809394761,0
-343,SoSe22,10,Antwort 9,C,Tobias,Hengst,Tom Frederik,Braune,"//
+343,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_433,Name_433,"//
 //  main.c
 //  HA
 //
@@ -32802,7 +32802,7 @@ int main(void){
 		}
 		
  	}",0.2808908046,0
-344,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Gregor,Lehmann,"#include <stdio.h>
+344,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_448,Name_448,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -32890,7 +32890,7 @@ int main()
     }
 
 }",0.2798937112,0
-345,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Larissa,Breuer,"#include <stdio.h>
+345,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -33001,7 +33001,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.279757392,0
-346,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Rosa,Hagenberg,"#include <stdio.h>
+346,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_443,Name_443,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -33088,7 +33088,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.2796323174,0
-347,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Dennis Benedikt,Schulze,"#include <stdio.h>
+347,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -33183,7 +33183,7 @@ int main() {
         printf(""\n"");
   }
 }",0.2756052142,0
-348,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Shaurya,Sharma,"#include <stdio.h>
+348,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_437,Name_437,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -33270,7 +33270,7 @@ int main()
 
     return 0;
 }",0.2755825735,0
-349,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Tobias,Hengst,"#include <stdio.h>
+349,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_444,Name_444,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -33372,7 +33372,7 @@ int main(){
         student_ausgeben(&liste[i]);
     }
 }",0.2740821519,0
-350,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Ibraim,Ibraimi,"#include <stdio.h>
+350,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_473,Name_473,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -33466,7 +33466,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",0.2733245729,0
-351,SoSe22,10,Antwort 9,C,Niklas,Muß,Gregor,Lehmann,"#include <stdio.h>
+351,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_448,Name_448,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -33558,7 +33558,7 @@ int main()
     }
 
 }",0.2714896927,0
-352,SoSe22,10,Antwort 9,C,Bahar,Gülser,Rosa,Hagenberg,"#include <stdio.h>
+352,SoSe22,10,Antwort 9,C,VName_441,Name_441,VName_443,Name_443,"#include <stdio.h>
 typedef struct student{
 char vorname[21];
 char nachname[21];
@@ -33646,7 +33646,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.2712401055,0
-353,SoSe22,10,Antwort 9,C,Shaurya,Sharma,Larissa,Breuer,"#include <stdio.h>
+353,SoSe22,10,Antwort 9,C,VName_437,Name_437,VName_466,Name_466,"#include <stdio.h>
 
 
 
@@ -33749,7 +33749,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.2708505367,0
-354,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Pinelopi Eleni,Anastasiadou,"#include <stdio.h>
+354,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_458,Name_458,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -33839,7 +33839,7 @@ int main() {
    student_ausgeben( &dar );
     }
 }",0.2670807453,0
-355,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Rosa,Hagenberg,"#include <stdio.h>
+355,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_443,Name_443,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -33918,7 +33918,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.2656400385,0
-356,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Gregor,Lehmann,"#include <stdio.h>
+356,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_448,Name_448,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -34006,7 +34006,7 @@ int main()
     }
 
 }",0.2642276423,0
-357,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Luca Marius,Hilbrich,"#include <stdio.h>
+357,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_434,Name_434,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -34106,7 +34106,7 @@ int main()
         student_ausgeben(&students[i]);
     }
 }",0.2630947621,0
-358,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Gregor,Lehmann,"#include <stdio.h>
+358,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_448,Name_448,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -34200,7 +34200,7 @@ int main()
     }
 
 }",0.2615322904,0
-359,SoSe22,10,Antwort 9,C,Elisabeth Maria,Groß,Rosa,Hagenberg,"#include <stdio.h>
+359,SoSe22,10,Antwort 9,C,VName_453,Name_453,VName_443,Name_443,"#include <stdio.h>
  
 typedef struct{
     char first_name[20];
@@ -34284,7 +34284,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.2610619469,0
-360,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Gabriele,Tellez Pedroza,"#include <stdio.h>
+360,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_440,Name_440,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -34388,7 +34388,7 @@ void student_ausgeben(Student* p_stud)
 	printf(""\nStudent: %s %s"",p_stud->first_name,p_stud->last_name);
 	printf(""\nAnzahl Punkte: %i\n"", sum);
 }",0.2606761566,0
-361,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Gregor,Lehmann,"#include <stdio.h>
+361,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_448,Name_448,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -34478,7 +34478,7 @@ int main()
     }
 
 }",0.2594417077,0
-362,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Larissa,Breuer,"#include <stdio.h>
+362,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -34578,7 +34578,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.2572509458,0
-363,SoSe22,10,Antwort 9,C,Rosa,Hagenberg,Tugce,Karabalik,"#include <stdio.h>
+363,SoSe22,10,Antwort 9,C,VName_443,Name_443,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -34664,7 +34664,7 @@ int main()
     
     return 0;
 }",0.2572283151,0
-364,SoSe22,10,Antwort 9,C,Tobias,Hengst,Bahar,Gülser,"//
+364,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_441,Name_441,"//
 //  main.c
 //  HA
 //
@@ -34770,7 +34770,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.2555464256,0
-365,SoSe22,10,Antwort 9,C,Tobias,Hengst,Gregor,Lehmann,"//
+365,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_448,Name_448,"//
 //  main.c
 //  HA
 //
@@ -34879,7 +34879,7 @@ int main()
     }
 
 }",0.2543470849,0
-366,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Kaspar Lorenz,Hartmann,"#include <stdio.h>
+366,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_456,Name_456,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -34958,7 +34958,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }",0.2541270635,0
-367,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Larissa,Breuer,"#include <stdio.h>
+367,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_466,Name_466,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -35068,7 +35068,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.2535003685,0
-368,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Shaurya,Sharma,"#include <stdio.h>
+368,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_437,Name_437,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -35155,7 +35155,7 @@ int main()
 
     return 0;
 }",0.2527573529,0
-369,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Rosa,Hagenberg,"#include <stdio.h>
+369,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_443,Name_443,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -35252,7 +35252,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.2514571191,0
-370,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Bahar,Gülser,"#include <stdio.h>
+370,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_441,Name_441,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -35337,7 +35337,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.2512791359,0
-371,SoSe22,10,Antwort 9,C,Tobias,Hengst,Rosa,Hagenberg,"//
+371,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_443,Name_443,"//
 //  main.c
 //  HA
 //
@@ -35442,7 +35442,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.2495344507,0
-372,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Moritz Sebastian,Niethammer,"#include <stdio.h>
+372,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_442,Name_442,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -35527,7 +35527,7 @@ int main(){
     }
     return 0;
 }",0.2489431658,0
-373,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Edgar Wolf,Großkopf,"#include <stdio.h>
+373,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_438,Name_438,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -35607,7 +35607,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.2483527623,0
-374,SoSe22,10,Antwort 9,C,Tobias,Hengst,Silas Johannes,Pegler,"//
+374,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_474,Name_474,"//
 //  main.c
 //  HA
 //
@@ -35727,7 +35727,7 @@ void main()
 	}
 	
 }",0.2482708409,0
-375,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Paul Georg,Tiede,"#include <stdio.h>
+375,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -35819,7 +35819,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.2473882156,0
-376,SoSe22,10,Antwort 9,C,Edgar Wolf,Großkopf,Shaurya,Sharma,"#include<stdio.h>
+376,SoSe22,10,Antwort 9,C,VName_438,Name_438,VName_437,Name_437,"#include<stdio.h>
 
 typedef struct student{
 char first_name[20];
@@ -35905,7 +35905,7 @@ int main()
 
     return 0;
 }",0.2431259045,0
-377,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Larissa,Breuer,"#include <stdio.h>
+377,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -36002,7 +36002,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.2420327304,0
-378,SoSe22,10,Antwort 9,C,Tobias,Hengst,Butch Michel Guntbert,Warns,"//
+378,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_464,Name_464,"//
 //  main.c
 //  HA
 //
@@ -36123,7 +36123,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.2410559222,0
-379,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Tugce,Karabalik,"#include <stdio.h>
+379,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -36220,7 +36220,7 @@ int main()
     
     return 0;
 }",0.2397072278,0
-380,SoSe22,10,Antwort 9,C,Rosa,Hagenberg,Paul Georg,Tiede,"#include <stdio.h>
+380,SoSe22,10,Antwort 9,C,VName_443,Name_443,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -36308,7 +36308,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.2386946387,0
-381,SoSe22,10,Antwort 9,C,Niklas,Muß,Rosa,Hagenberg,"#include <stdio.h>
+381,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_443,Name_443,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -36396,7 +36396,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.238484718,0
-382,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Niklas,Muß,"#include <stdio.h>
+382,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_447,Name_447,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -36495,7 +36495,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.2349180983,0
-383,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Rosa,Hagenberg,"#include <stdio.h>
+383,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_443,Name_443,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -36586,7 +36586,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.2322472849,0
-384,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Tom Frederik,Braune,"#include <stdio.h>
+384,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_433,Name_433,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -36676,7 +36676,7 @@ int main(void){
 		}
 		
  	}",0.2317636196,0
-385,SoSe22,10,Antwort 9,C,Tobias,Hengst,Pinelopi Eleni,Anastasiadou,"//
+385,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_458,Name_458,"//
 //  main.c
 //  HA
 //
@@ -36778,7 +36778,7 @@ int main() {
    student_ausgeben( &dar );
     }
 }",0.2314633189,0
-386,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Luca Marius,Hilbrich,"#include <stdio.h>
+386,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_434,Name_434,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -36886,7 +36886,7 @@ int main()
         student_ausgeben(&students[i]);
     }
 }",0.2308288149,0
-387,SoSe22,10,Antwort 9,C,Rosa,Hagenberg,Dennis Benedikt,Schulze,"#include <stdio.h>
+387,SoSe22,10,Antwort 9,C,VName_443,Name_443,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -36984,7 +36984,7 @@ int main() {
         printf(""\n"");
   }
 }",0.2285464098,0
-388,SoSe22,10,Antwort 9,C,Tobias,Hengst,Gabriele,Tellez Pedroza,"//
+388,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_440,Name_440,"//
 //  main.c
 //  HA
 //
@@ -37100,7 +37100,7 @@ void student_ausgeben(Student* p_stud)
 	printf(""\nStudent: %s %s"",p_stud->first_name,p_stud->last_name);
 	printf(""\nAnzahl Punkte: %i\n"", sum);
 }",0.2268760908,0
-389,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Paul Georg,Tiede,"#include <stdio.h>
+389,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -37212,7 +37212,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.2268537074,0
-390,SoSe22,10,Antwort 9,C,Rosa,Hagenberg,Silas Johannes,Pegler,"#include <stdio.h>
+390,SoSe22,10,Antwort 9,C,VName_443,Name_443,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -37314,7 +37314,7 @@ void main()
 	}
 	
 }",0.2264492754,0
-391,SoSe22,10,Antwort 9,C,Rosa,Hagenberg,Larissa,Breuer,"#include <stdio.h>
+391,SoSe22,10,Antwort 9,C,VName_443,Name_443,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -37414,7 +37414,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.2229454841,0
-392,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Edgar Wolf,Großkopf,"#include <stdio.h>
+392,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_438,Name_438,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -37521,7 +37521,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.2220414803,0
-393,SoSe22,10,Antwort 9,C,Tobias,Hengst,Kaspar Lorenz,Hartmann,"//
+393,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_456,Name_456,"//
 //  main.c
 //  HA
 //
@@ -37618,7 +37618,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }",0.2193351165,0
-394,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Elisabeth Maria,Groß,"#include <stdio.h>
+394,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_453,Name_453,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -37702,7 +37702,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.2191655204,0
-395,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Niklas,Muß,"#include <stdio.h>
+395,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_447,Name_447,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -37787,7 +37787,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.2185642433,0
-396,SoSe22,10,Antwort 9,C,Tobias,Hengst,Leif Erik,Stolte,"//
+396,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_445,Name_445,"//
 //  main.c
 //  HA
 //
@@ -37892,7 +37892,7 @@ int main() {
 	student_ausgeben(studenten);
 	return 0;
 }",0.2179585572,0
-397,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Bahar,Gülser,"#include <stdio.h>
+397,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_441,Name_441,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -37991,7 +37991,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.2178313253,0
-398,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Paul Georg,Tiede,"#include <stdio.h>
+398,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -38090,7 +38090,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.2176344086,0
-399,SoSe22,10,Antwort 9,C,Tobias,Hengst,Shaurya,Sharma,"//
+399,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_437,Name_437,"//
 //  main.c
 //  HA
 //
@@ -38198,7 +38198,7 @@ int main()
 
     return 0;
 }",0.2166855417,0
-400,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Fabian,Große-Wöhrmann,"#include <stdio.h>
+400,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_460,Name_460,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -38284,7 +38284,7 @@ int main(){
         student_ausgeben(&s[i]);
     }
 }",0.2143195827,0
-401,SoSe22,10,Antwort 9,C,Ibraim,Ibraimi,Dennis Benedikt,Schulze,"#include <stdio.h>
+401,SoSe22,10,Antwort 9,C,VName_473,Name_473,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student { 
@@ -38385,7 +38385,7 @@ int main() {
         printf(""\n"");
   }
 }",0.2135296825,0
-402,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Bahar,Gülser,"#include <stdio.h>
+402,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_441,Name_441,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -38477,7 +38477,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.2090527298,0
-403,SoSe22,10,Antwort 9,C,Butch Michel Guntbert,Warns,Rosa,Hagenberg,"#include <stdio.h>
+403,SoSe22,10,Antwort 9,C,VName_464,Name_464,VName_443,Name_443,"#include <stdio.h>
 #include <stdlib.h>
 
 const int ANZAHL = 5; // Should be 5
@@ -38580,7 +38580,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.2051282051,0
-404,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Leif Erik,Stolte,"#include <stdio.h>
+404,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_445,Name_445,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -38664,7 +38664,7 @@ int main() {
 	student_ausgeben(studenten);
 	return 0;
 }",0.2044069386,0
-405,SoSe22,10,Antwort 9,C,Florian,Schacht,Shaurya,Sharma,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+405,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_437,Name_437,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -38777,7 +38777,7 @@ int main()
 
     return 0;
 }",0.2041925466,0
-406,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Kaspar Lorenz,Hartmann,"#include <stdio.h>
+406,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_456,Name_456,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -38866,7 +38866,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }",0.2022279349,0
-407,SoSe22,10,Antwort 9,C,Ibraim,Ibraimi,Emilie,Hilger,"#include <stdio.h>
+407,SoSe22,10,Antwort 9,C,VName_473,Name_473,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student { 
@@ -38935,7 +38935,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.2016487001,0
-408,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Niklas,Muß,"#include <stdio.h>
+408,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_447,Name_447,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -39023,7 +39023,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.201426025,0
-409,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Dennis Benedikt,Schulze,"#include <stdio.h>
+409,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_470,Name_470,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -39119,7 +39119,7 @@ int main() {
         printf(""\n"");
   }
 }",0.200341006,0
-410,SoSe22,10,Antwort 9,C,Paul Georg,Tiede,Larissa,Breuer,"#include <stdio.h>
+410,SoSe22,10,Antwort 9,C,VName_459,Name_459,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -39220,7 +39220,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.2002442002,0
-411,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Florian,Strobl,"#include <stdio.h>
+411,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_468,Name_468,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -39302,7 +39302,7 @@ int main() {
         
     return 0;
 }",0.1998001998,0
-412,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Gabriele,Tellez Pedroza,"#include <stdio.h>
+412,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_440,Name_440,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -39400,7 +39400,7 @@ void student_ausgeben(Student* p_stud)
 	printf(""\nStudent: %s %s"",p_stud->first_name,p_stud->last_name);
 	printf(""\nAnzahl Punkte: %i\n"", sum);
 }",0.1984868714,0
-413,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Silas Johannes,Pegler,"#include <stdio.h>
+413,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -39513,7 +39513,7 @@ void main()
 	}
 	
 }",0.1976549414,0
-414,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Rosa,Hagenberg,"#include <stdio.h>
+414,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_443,Name_443,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -39597,7 +39597,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.1970149254,0
-415,SoSe22,10,Antwort 9,C,Paul Georg,Tiede,Emilie,Hilger,"#include <stdio.h>
+415,SoSe22,10,Antwort 9,C,VName_459,Name_459,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -39664,7 +39664,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1956135151,0
-416,SoSe22,10,Antwort 9,C,Elisabeth Maria,Groß,Dennis Benedikt,Schulze,"#include <stdio.h>
+416,SoSe22,10,Antwort 9,C,VName_453,Name_453,VName_470,Name_470,"#include <stdio.h>
  
 typedef struct{
     char first_name[20];
@@ -39759,7 +39759,7 @@ int main() {
         printf(""\n"");
   }
 }",0.1926605505,0
-417,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Dennis Benedikt,Schulze,"#include <stdio.h>
+417,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -39857,7 +39857,7 @@ int main() {
         printf(""\n"");
   }
 }",0.1922902494,0
-418,SoSe22,10,Antwort 9,C,Florian,Schacht,Rosa,Hagenberg,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+418,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_443,Name_443,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -39967,7 +39967,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.1898928025,0
-419,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Luca Marius,Hilbrich,"#include <stdio.h>
+419,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_434,Name_434,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -40061,7 +40061,7 @@ int main()
         student_ausgeben(&students[i]);
     }
 }",0.1897616946,0
-420,SoSe22,10,Antwort 9,C,Rosa,Hagenberg,Shaurya,Sharma,"#include <stdio.h>
+420,SoSe22,10,Antwort 9,C,VName_443,Name_443,VName_437,Name_437,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -40151,7 +40151,7 @@ int main()
 
     return 0;
 }",0.1895734597,0
-421,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Rosa,Hagenberg,"#include <stdio.h>
+421,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_443,Name_443,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -40235,7 +40235,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.1880650995,0
-422,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Florian,Schacht,"#include <stdio.h>
+422,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_432,Name_432,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -40342,7 +40342,7 @@ int main(){
 	}
 	return 0;
 }",0.1873990307,0
-423,SoSe22,10,Antwort 9,C,Edgar Wolf,Großkopf,Paul Georg,Tiede,"#include<stdio.h>
+423,SoSe22,10,Antwort 9,C,VName_438,Name_438,VName_459,Name_459,"#include<stdio.h>
 
 typedef struct student{
 char first_name[20];
@@ -40426,7 +40426,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.1869070209,0
-424,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Paul Georg,Tiede,"#include <stdio.h>
+424,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_459,Name_459,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -40524,7 +40524,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.185755935,0
-425,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Florian,Schacht,"#include <stdio.h>
+425,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_432,Name_432,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -40634,7 +40634,7 @@ int main(){
 	}
 	return 0;
 }",0.1816028425,0
-426,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Pinelopi Eleni,Anastasiadou,"#include <stdio.h>
+426,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_458,Name_458,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -40718,7 +40718,7 @@ int main() {
    student_ausgeben( &dar );
     }
 }",0.1812532367,0
-427,SoSe22,10,Antwort 9,C,Florian,Strobl,Dennis Benedikt,Schulze,"#include <stdio.h>
+427,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_470,Name_470,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -40811,7 +40811,7 @@ int main() {
         printf(""\n"");
   }
 }",0.180261379,0
-428,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Gregor,Lehmann,"#include <stdio.h>
+428,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_448,Name_448,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -40894,7 +40894,7 @@ int main()
     }
 
 }",0.1797076526,0
-429,SoSe22,10,Antwort 9,C,Butch Michel Guntbert,Warns,Silas Johannes,Pegler,"#include <stdio.h>
+429,SoSe22,10,Antwort 9,C,VName_464,Name_464,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 
 const int ANZAHL = 5; // Should be 5
@@ -41012,7 +41012,7 @@ void main()
 	}
 	
 }",0.178184846,0
-430,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Dennis Benedikt,Schulze,"#include <stdio.h>
+430,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -41111,7 +41111,7 @@ int main() {
         printf(""\n"");
   }
 }",0.1755829904,0
-431,SoSe22,10,Antwort 9,C,Tobias,Hengst,Florian,Schacht,"//
+431,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_432,Name_432,"//
 //  main.c
 //  HA
 //
@@ -41239,7 +41239,7 @@ int main(){
 	}
 	return 0;
 }",0.1745477626,0
-432,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Gregor,Lehmann,"#include <stdio.h>
+432,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_448,Name_448,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -41354,7 +41354,7 @@ int main()
     }
 
 }",0.1741982507,0
-433,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Emilie,Hilger,"#include <stdio.h>
+433,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -41412,7 +41412,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1740740741,0
-434,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Dennis Benedikt,Schulze,"#include <stdio.h>
+434,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -41524,7 +41524,7 @@ int main() {
         printf(""\n"");
   }
 }",0.1712707182,0
-435,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Silas Johannes,Pegler,"#include <stdio.h>
+435,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -41623,7 +41623,7 @@ void main()
 	}
 	
 }",0.1698841699,0
-436,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Shaurya,Sharma,"#include <stdio.h>
+436,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_437,Name_437,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -41724,7 +41724,7 @@ int main()
 
     return 0;
 }",0.1668122271,0
-437,SoSe22,10,Antwort 9,C,Butch Michel Guntbert,Warns,Paul Georg,Tiede,"#include <stdio.h>
+437,SoSe22,10,Antwort 9,C,VName_464,Name_464,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 
 const int ANZAHL = 5; // Should be 5
@@ -41828,7 +41828,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.1650277897,0
-438,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Emilie,Hilger,"#include <stdio.h>
+438,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -41895,7 +41895,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1646763042,0
-439,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Emilie,Hilger,"#include <stdio.h>
+439,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -41964,7 +41964,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1634023503,0
-440,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Silas Johannes,Pegler,"#include <stdio.h>
+440,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -42066,7 +42066,7 @@ void main()
 	}
 	
 }",0.1625176139,0
-441,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Emilie,Hilger,"#include <stdio.h>
+441,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -42143,7 +42143,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1605995717,0
-442,SoSe22,10,Antwort 9,C,Emilie,Hilger,Heiner Hans,Krause,"#include <stdio.h>
+442,SoSe22,10,Antwort 9,C,VName_463,Name_463,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -42169,7 +42169,7 @@ int main(void){
 #include <malloc.h>
 
 typedef struct student{",0.1585903084,0
-443,SoSe22,10,Antwort 9,C,Florian,Schacht,Gregor,Lehmann,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+443,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_448,Name_448,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -42283,7 +42283,7 @@ int main()
     }
 
 }",0.158041958,0
-444,SoSe22,10,Antwort 9,C,Rosa,Hagenberg,Emilie,Hilger,"#include <stdio.h>
+444,SoSe22,10,Antwort 9,C,VName_443,Name_443,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -42349,7 +42349,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1575829384,0
-445,SoSe22,10,Antwort 9,C,Florian,Schacht,Paul Georg,Tiede,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+445,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_459,Name_459,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -42460,7 +42460,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.1547299885,0
-446,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Emilie,Hilger,"#include <stdio.h>
+446,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -42540,7 +42540,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1535532995,0
-447,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Emilie,Hilger,"#include <stdio.h>
+447,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_463,Name_463,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -42605,7 +42605,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1526011561,0
-448,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Adrian Maximilian,Glaschke,"#include <stdio.h>
+448,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_452,Name_452,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -42716,7 +42716,7 @@ student_ausgeben(&vierter_Student);
 student_ausgeben(&fuenfter_Student);
 
 }",0.1514273893,0
-449,SoSe22,10,Antwort 9,C,Edgar Wolf,Großkopf,Dennis Benedikt,Schulze,"#include<stdio.h>
+449,SoSe22,10,Antwort 9,C,VName_438,Name_438,VName_470,Name_470,"#include<stdio.h>
 
 typedef struct student{
 char first_name[20];
@@ -42810,7 +42810,7 @@ int main() {
         printf(""\n"");
   }
 }",0.1513128616,0
-450,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Lars Rudolf Heinrich,Michael,"#include <stdio.h>
+450,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_455,Name_455,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -42935,7 +42935,7 @@ int main(){
 	}
 
 }",0.1501677852,0
-451,SoSe22,10,Antwort 9,C,Tobias,Hengst,Dennis Benedikt,Schulze,"//
+451,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_470,Name_470,"//
 //  main.c
 //  HA
 //
@@ -43051,7 +43051,7 @@ int main() {
         printf(""\n"");
   }
 }",0.1480694297,0
-452,SoSe22,10,Antwort 9,C,Florian,Schacht,Butch Michel Guntbert,Warns,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+452,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_464,Name_464,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -43177,7 +43177,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",0.1468282252,0
-453,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Luca Marius,Hilbrich,"#include <stdio.h>
+453,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_434,Name_434,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -43274,7 +43274,7 @@ int main()
         student_ausgeben(&students[i]);
     }
 }",0.1437795954,0
-454,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Edgar Wolf,Großkopf,"#include <stdio.h>
+454,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_438,Name_438,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -43357,7 +43357,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",0.1408866995,0
-455,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Florian,Schacht,"#include <stdio.h>
+455,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_432,Name_432,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -43478,7 +43478,7 @@ int main(){
 	}
 	return 0;
 }",0.1396848138,0
-456,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Timo,Kraska,"#include <stdio.h>
+456,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_465,Name_465,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -43592,7 +43592,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",0.1392405063,0
-457,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Dennis Benedikt,Schulze,"#include <stdio.h>
+457,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -43714,7 +43714,7 @@ int main() {
         printf(""\n"");
   }
 }",0.1374335611,0
-458,SoSe22,10,Antwort 9,C,Tobias,Hengst,Paul Georg,Tiede,"//
+458,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_459,Name_459,"//
 //  main.c
 //  HA
 //
@@ -43820,7 +43820,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",0.1371087928,0
-459,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Emilie,Hilger,"#include <stdio.h>
+459,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -43892,7 +43892,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1366459627,0
-460,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Emilie,Hilger,"#include <stdio.h>
+460,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_463,Name_463,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -43968,7 +43968,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1358024691,0
-461,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Dennis Benedikt,Schulze,"#include <stdio.h>
+461,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -44070,7 +44070,7 @@ int main() {
         printf(""\n"");
   }
 }",0.13507109,0
-462,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Emilie,Hilger,"#include <stdio.h>
+462,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -44133,7 +44133,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1345496009,0
-463,SoSe22,10,Antwort 9,C,Dennis Benedikt,Schulze,Emilie,Hilger,"#include <stdio.h>
+463,SoSe22,10,Antwort 9,C,VName_470,Name_470,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -44210,7 +44210,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1336254107,0
-464,SoSe22,10,Antwort 9,C,Timo,Kraska,Emilie,Hilger,"#include <stdio.h>
+464,SoSe22,10,Antwort 9,C,VName_465,Name_465,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -44279,7 +44279,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1325581395,0
-465,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Kaspar Lorenz,Hartmann,"#include <stdio.h>
+465,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_456,Name_456,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -44382,7 +44382,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }",0.1317957166,0
-466,SoSe22,10,Antwort 9,C,Butch Michel Guntbert,Warns,Emilie,Hilger,"#include <stdio.h>
+466,SoSe22,10,Antwort 9,C,VName_464,Name_464,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 
 const int ANZAHL = 5; // Should be 5
@@ -44464,7 +44464,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1307120085,0
-467,SoSe22,10,Antwort 9,C,Shaurya,Sharma,Emilie,Hilger,"#include <stdio.h>
+467,SoSe22,10,Antwort 9,C,VName_437,Name_437,VName_463,Name_463,"#include <stdio.h>
 
 
 
@@ -44533,7 +44533,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1295399516,0
-468,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Dennis Benedikt,Schulze,"#include <stdio.h>
+468,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_470,Name_470,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -44641,7 +44641,7 @@ int main() {
         printf(""\n"");
   }
 }",0.1291338583,0
-469,SoSe22,10,Antwort 9,C,Timo,Kraska,Dennis Benedikt,Schulze,"#include <stdio.h>
+469,SoSe22,10,Antwort 9,C,VName_465,Name_465,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -44742,7 +44742,7 @@ int main() {
         printf(""\n"");
   }
 }",0.1286701209,0
-470,SoSe22,10,Antwort 9,C,Tobias,Hengst,Emilie,Hilger,"//
+470,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_463,Name_463,"//
 //  main.c
 //  HA
 //
@@ -44826,7 +44826,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1257296812,0
-471,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Heiner Hans,Krause,"#include <stdio.h>
+471,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -44870,7 +44870,7 @@ int main() {
 #include <malloc.h>
 
 typedef struct student{",0.1236291127,0
-472,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Adrian Maximilian,Glaschke,"#include <stdio.h>
+472,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_452,Name_452,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -44978,7 +44978,7 @@ student_ausgeben(&vierter_Student);
 student_ausgeben(&fuenfter_Student);
 
 }",0.1225604996,0
-473,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Heiner Hans,Krause,"#include <stdio.h>
+473,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -45039,7 +45039,7 @@ int main(){
 #include <malloc.h>
 
 typedef struct student{",0.1187925998,0
-474,SoSe22,10,Antwort 9,C,Ibraim,Ibraimi,Heiner Hans,Krause,"#include <stdio.h>
+474,SoSe22,10,Antwort 9,C,VName_473,Name_473,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student { 
@@ -45089,7 +45089,7 @@ int main(){
 #include <malloc.h>
 
 typedef struct student{",0.1186770428,0
-475,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Heiner Hans,Krause,"#include <stdio.h>
+475,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -45137,7 +45137,7 @@ int main() {
 #include <malloc.h>
 
 typedef struct student{",0.1170825336,0
-476,SoSe22,10,Antwort 9,C,Emilie,Hilger,Larissa,Breuer,"#include <stdio.h>
+476,SoSe22,10,Antwort 9,C,VName_463,Name_463,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -45216,7 +45216,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.117,0
-477,SoSe22,10,Antwort 9,C,Dennis Benedikt,Schulze,Larissa,Breuer,"#include <stdio.h>
+477,SoSe22,10,Antwort 9,C,VName_470,Name_470,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -45327,7 +45327,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",0.1155624037,0
-478,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Heiner Hans,Krause,"#include <stdio.h>
+478,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -45380,7 +45380,7 @@ void main(){
 #include <malloc.h>
 
 typedef struct student{",0.1149858624,0
-479,SoSe22,10,Antwort 9,C,Tobias,Hengst,Adrian Maximilian,Glaschke,"//
+479,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_452,Name_452,"//
 //  main.c
 //  HA
 //
@@ -45509,7 +45509,7 @@ student_ausgeben(&vierter_Student);
 student_ausgeben(&fuenfter_Student);
 
 }",0.1140032949,0
-480,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Heiner Hans,Krause,"#include <stdio.h>
+480,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -45548,7 +45548,7 @@ for(int k=0;k<5;k+1 ){
 #include <malloc.h>
 
 typedef struct student{",0.1139122316,0
-481,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Heiner Hans,Krause,"#include <stdio.h>
+481,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -45595,7 +45595,7 @@ int main() {
 #include <malloc.h>
 
 typedef struct student{",0.1094339623,0
-482,SoSe22,10,Antwort 9,C,Paul Georg,Tiede,Heiner Hans,Krause,"#include <stdio.h>
+482,SoSe22,10,Antwort 9,C,VName_459,Name_459,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -45643,7 +45643,7 @@ student_ausgeben(p_stud);
 #include <malloc.h>
 
 typedef struct student{",0.1089630931,0
-483,SoSe22,10,Antwort 9,C,Paul Georg,Tiede,Silas Johannes,Pegler,"#include <stdio.h>
+483,SoSe22,10,Antwort 9,C,VName_459,Name_459,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -45746,7 +45746,7 @@ void main()
 	}
 	
 }",0.1087449026,0
-484,SoSe22,10,Antwort 9,C,Rosa,Hagenberg,Heiner Hans,Krause,"#include <stdio.h>
+484,SoSe22,10,Antwort 9,C,VName_443,Name_443,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -45793,7 +45793,7 @@ int main(){
 #include <malloc.h>
 
 typedef struct student{",0.1071115013,0
-485,SoSe22,10,Antwort 9,C,Timo,Kraska,Heiner Hans,Krause,"#include <stdio.h>
+485,SoSe22,10,Antwort 9,C,VName_465,Name_465,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -45843,7 +45843,7 @@ int main(){
 #include <malloc.h>
 
 typedef struct student{",0.1058923997,0
-486,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Adrian Maximilian,Glaschke,"#include <stdio.h>
+486,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_452,Name_452,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -45960,7 +45960,7 @@ student_ausgeben(&vierter_Student);
 student_ausgeben(&fuenfter_Student);
 
 }",0.105872622,0
-487,SoSe22,10,Antwort 9,C,Florian,Strobl,Emilie,Hilger,"#include <stdio.h>
+487,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_463,Name_463,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -46021,7 +46021,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1047443007,0
-488,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Rosa,Hagenberg,"#include <stdio.h>
+488,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_443,Name_443,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -46132,7 +46132,7 @@ int main(){
 	student_ausgeben(students);
 
 }",0.1033653846,0
-489,SoSe22,10,Antwort 9,C,Elisabeth Maria,Groß,Emilie,Hilger,"#include <stdio.h>
+489,SoSe22,10,Antwort 9,C,VName_453,Name_453,VName_463,Name_463,"#include <stdio.h>
  
 typedef struct{
     char first_name[20];
@@ -46195,7 +46195,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1032186459,0
-490,SoSe22,10,Antwort 9,C,Niklas,Muß,Emilie,Hilger,"#include <stdio.h>
+490,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_463,Name_463,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -46262,7 +46262,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1029490617,0
-491,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Heiner Hans,Krause,"#include <stdio.h>
+491,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_472,Name_472,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -46308,7 +46308,7 @@ int main(){
 #include <malloc.h>
 
 typedef struct student{",0.1016088061,0
-492,SoSe22,10,Antwort 9,C,Niklas,Schwolow,Heiner Hans,Krause,"#include <stdio.h>
+492,SoSe22,10,Antwort 9,C,VName_91,Name_91,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -46352,7 +46352,7 @@ int main(){
 #include <malloc.h>
 
 typedef struct student{",0.1012448133,0
-493,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Niklas,Muß,"#include <stdio.h>
+493,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_447,Name_447,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -46464,7 +46464,7 @@ int main(void){
         printf(""\n"");
     }
 }",0.100261878,0
-494,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Emilie,Hilger,"#include <stdio.h>
+494,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -46534,7 +46534,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.1002066116,0
-495,SoSe22,10,Antwort 9,C,Florian,Schacht,Emilie,Hilger,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+495,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_463,Name_463,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -46623,7 +46623,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.0993500464,0
-496,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Heiner Hans,Krause,"#include <stdio.h>
+496,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -46673,7 +46673,7 @@ int main(void){
 #include <malloc.h>
 
 typedef struct student{",0.098546042,0
-497,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Emilie,Hilger,"#include <stdio.h>
+497,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_463,Name_463,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -46737,7 +46737,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.0982857143,0
-498,SoSe22,10,Antwort 9,C,Edgar Wolf,Großkopf,Emilie,Hilger,"#include<stdio.h>
+498,SoSe22,10,Antwort 9,C,VName_438,Name_438,VName_463,Name_463,"#include<stdio.h>
 
 typedef struct student{
 char first_name[20];
@@ -46799,7 +46799,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.0969109631,0
-499,SoSe22,10,Antwort 9,C,Emilie,Hilger,Tugce,Karabalik,"#include <stdio.h>
+499,SoSe22,10,Antwort 9,C,VName_463,Name_463,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -46864,7 +46864,7 @@ int main()
     
     return 0;
 }",0.0968992248,0
-500,SoSe22,10,Antwort 9,C,Bahar,Gülser,Heiner Hans,Krause,"#include <stdio.h>
+500,SoSe22,10,Antwort 9,C,VName_441,Name_441,VName_472,Name_472,"#include <stdio.h>
 typedef struct student{
 char vorname[21];
 char nachname[21];
@@ -46912,7 +46912,7 @@ return 0;
 #include <malloc.h>
 
 typedef struct student{",0.0968468468,0
-501,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Emilie,Hilger,"#include <stdio.h>
+501,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -46975,7 +46975,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.0966494845,0
-502,SoSe22,10,Antwort 9,C,Dennis Benedikt,Schulze,Heiner Hans,Krause,"#include <stdio.h>
+502,SoSe22,10,Antwort 9,C,VName_470,Name_470,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -47033,7 +47033,7 @@ int main() {
 #include <malloc.h>
 
 typedef struct student{",0.0955364135,0
-503,SoSe22,10,Antwort 9,C,Emilie,Hilger,Silas Johannes,Pegler,"#include <stdio.h>
+503,SoSe22,10,Antwort 9,C,VName_463,Name_463,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -47114,7 +47114,7 @@ void main()
 	}
 	
 }",0.0937142857,0
-504,SoSe22,10,Antwort 9,C,Butch Michel Guntbert,Warns,Heiner Hans,Krause,"#include <stdio.h>
+504,SoSe22,10,Antwort 9,C,VName_464,Name_464,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 
 const int ANZAHL = 5; // Should be 5
@@ -47177,7 +47177,7 @@ void student_ausgeben(Student *p_stud)
 #include <malloc.h>
 
 typedef struct student{",0.0915228807,0
-505,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Heiner Hans,Krause,"#include <stdio.h>
+505,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -47235,7 +47235,7 @@ void student_ausgeben(Student* p_stud)
 #include <malloc.h>
 
 typedef struct student{",0.0909780136,0
-506,SoSe22,10,Antwort 9,C,Heiner Hans,Krause,Tugce,Karabalik,"#include <stdio.h>
+506,SoSe22,10,Antwort 9,C,VName_472,Name_472,VName_471,Name_471,"#include <stdio.h>
 #include <malloc.h>
 
 typedef struct student{","#include <stdio.h>
@@ -47281,7 +47281,7 @@ int main()
     
     return 0;
 }",0.0900900901,0
-507,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Heiner Hans,Krause,"#include <stdio.h>
+507,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -47332,7 +47332,7 @@ int main()
 #include <malloc.h>
 
 typedef struct student{",0.0879596251,0
-508,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Emilie,Hilger,"#include <stdio.h>
+508,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -47422,7 +47422,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.0863591757,0
-509,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Heiner Hans,Krause,"#include <stdio.h>
+509,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_472,Name_472,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -47479,7 +47479,7 @@ int main()
 #include <malloc.h>
 
 typedef struct student{",0.0860215054,0
-510,SoSe22,10,Antwort 9,C,Larissa,Breuer,Heiner Hans,Krause,"#include <stdio.h>
+510,SoSe22,10,Antwort 9,C,VName_466,Name_466,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -47539,7 +47539,7 @@ int main(){
 #include <malloc.h>
 
 typedef struct student{",0.0854583046,0
-511,SoSe22,10,Antwort 9,C,Shaurya,Sharma,Heiner Hans,Krause,"#include <stdio.h>
+511,SoSe22,10,Antwort 9,C,VName_437,Name_437,VName_472,Name_472,"#include <stdio.h>
 
 
 
@@ -47589,7 +47589,7 @@ int main()
 #include <malloc.h>
 
 typedef struct student{",0.0852221215,0
-512,SoSe22,10,Antwort 9,C,Bahar,Gülser,Emilie,Hilger,"#include <stdio.h>
+512,SoSe22,10,Antwort 9,C,VName_441,Name_441,VName_463,Name_463,"#include <stdio.h>
 typedef struct student{
 char vorname[21];
 char nachname[21];
@@ -47656,7 +47656,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.0848990953,0
-513,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Luca Marius,Hilbrich,"#include <stdio.h>
+513,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_434,Name_434,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -47777,7 +47777,7 @@ int main()
         student_ausgeben(&students[i]);
     }
 }",0.0843023256,0
-514,SoSe22,10,Antwort 9,C,Florian,Strobl,Heiner Hans,Krause,"#include <stdio.h>
+514,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_472,Name_472,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -47819,7 +47819,7 @@ int main() {
 #include <malloc.h>
 
 typedef struct student{",0.0837988827,0
-515,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Florian,Schacht,"#include <stdio.h>
+515,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_432,Name_432,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -47953,7 +47953,7 @@ int main(){
 	}
 	return 0;
 }",0.0837272113,0
-516,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Heiner Hans,Krause,"#include <stdio.h>
+516,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_472,Name_472,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -48024,7 +48024,7 @@ student_ausgeben(&fuenfter_Student);
 #include <malloc.h>
 
 typedef struct student{",0.081934184,0
-517,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Emilie,Hilger,"#include <stdio.h>
+517,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -48090,7 +48090,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",0.0807955252,0
-518,SoSe22,10,Antwort 9,C,Edgar Wolf,Großkopf,Heiner Hans,Krause,"#include<stdio.h>
+518,SoSe22,10,Antwort 9,C,VName_438,Name_438,VName_472,Name_472,"#include<stdio.h>
 
 typedef struct student{
 char first_name[20];
@@ -48133,7 +48133,7 @@ int main(){
 #include <malloc.h>
 
 typedef struct student{",0.0798548094,0
-519,SoSe22,10,Antwort 9,C,Heiner Hans,Krause,Silas Johannes,Pegler,"#include <stdio.h>
+519,SoSe22,10,Antwort 9,C,VName_472,Name_472,VName_474,Name_474,"#include <stdio.h>
 #include <malloc.h>
 
 typedef struct student{","#include <stdio.h>
@@ -48195,7 +48195,7 @@ void main()
 	}
 	
 }",0.0782681099,0
-520,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Heiner Hans,Krause,"#include <stdio.h>
+520,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_472,Name_472,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -48240,7 +48240,7 @@ int main(){
 #include <malloc.h>
 
 typedef struct student{",0.074937552,0
-521,SoSe22,10,Antwort 9,C,Florian,Schacht,Heiner Hans,Krause,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
+521,SoSe22,10,Antwort 9,C,VName_432,Name_432,VName_472,Name_472,"//gcc -x c HA10_T1.c -o HA10_T1 -Wall -Wextra -pedantic
 
 #include<stdio.h>
 #include<limits.h>
@@ -48310,7 +48310,7 @@ int main(){
 #include <malloc.h>
 
 typedef struct student{",0.0747663551,0
-522,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Bahar,Gülser,"#include <stdio.h>
+522,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_441,Name_441,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -48422,7 +48422,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",0.0739420935,0
-523,SoSe22,10,Antwort 9,C,Elisabeth Maria,Groß,Heiner Hans,Krause,"#include <stdio.h>
+523,SoSe22,10,Antwort 9,C,VName_453,Name_453,VName_472,Name_472,"#include <stdio.h>
  
 typedef struct{
     char first_name[20];
@@ -48466,7 +48466,7 @@ int main(void){
 #include <malloc.h>
 
 typedef struct student{",0.0734237829,0
-524,SoSe22,10,Antwort 9,C,Tobias,Hengst,Heiner Hans,Krause,"//
+524,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_472,Name_472,"//
 //  main.c
 //  HA
 //
@@ -48531,7 +48531,7 @@ int main(){
 #include <malloc.h>
 
 typedef struct student{",0.0727056019,0
-525,SoSe22,10,Antwort 9,C,Niklas,Muß,Heiner Hans,Krause,"#include <stdio.h>
+525,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_472,Name_472,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -48579,7 +48579,7 @@ int main(void){
 #include <malloc.h>
 
 typedef struct student{",0.0683890578,0
-526,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Tugce,Karabalik,"#include <stdio.h>
+526,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_471,Name_471,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -48689,7 +48689,7 @@ int main()
     
     return 0;
 }",0.0653650255,0
-527,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Silas Johannes,Pegler,"#include <stdio.h>
+527,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_474,Name_474,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -48815,7 +48815,7 @@ void main()
 	}
 	
 }",0.054730258,0
-0,SoSe22,10,Antwort 9,C,Bahar,Gülser,Bahar,Gülser,"#include <stdio.h>
+0,SoSe22,10,Antwort 9,C,VName_441,Name_441,VName_441,Name_441,"#include <stdio.h>
 typedef struct student{
 char vorname[21];
 char nachname[21];
@@ -48904,7 +48904,7 @@ for (int i=0; i<5; i++)
 student_ausgeben(&st[i]);
 return 0;
 }",1.0,1
-1,SoSe22,10,Antwort 9,C,Edgar Wolf,Großkopf,Edgar Wolf,Großkopf,"#include<stdio.h>
+1,SoSe22,10,Antwort 9,C,VName_438,Name_438,VName_438,Name_438,"#include<stdio.h>
 
 typedef struct student{
 char first_name[20];
@@ -48983,7 +48983,7 @@ int main(){
 		student_ausgeben(&studi[i]);
 	}
 }",1.0,1
-2,SoSe22,10,Antwort 9,C,Niklas,Muß,Niklas,Muß,"#include <stdio.h>
+2,SoSe22,10,Antwort 9,C,VName_447,Name_447,VName_447,Name_447,"#include <stdio.h>
 
 typedef struct{
     char vorname[20];
@@ -49072,7 +49072,7 @@ int main(void){
         printf(""\n"");
     }
 }",1.0,1
-3,SoSe22,10,Antwort 9,C,Lars Rudolf Heinrich,Michael,Lars Rudolf Heinrich,Michael,"#include <stdio.h>
+3,SoSe22,10,Antwort 9,C,VName_455,Name_455,VName_455,Name_455,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -49187,7 +49187,7 @@ int main(){
 	}
 
 }",1.0,1
-4,SoSe22,10,Antwort 9,C,Jakob Pius,Bücking,Jakob Pius,Bücking,"#include <stdio.h>
+4,SoSe22,10,Antwort 9,C,VName_435,Name_435,VName_435,Name_435,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -49286,7 +49286,7 @@ void main(){
 
 
 }",1.0,1
-5,SoSe22,10,Antwort 9,C,Florian,Strobl,Florian,Strobl,"#include <stdio.h>
+5,SoSe22,10,Antwort 9,C,VName_468,Name_468,VName_468,Name_468,"#include <stdio.h>
 
 typedef struct student {
     char first_name[21];
@@ -49363,7 +49363,7 @@ int main() {
         
     return 0;
 }",1.0,1
-7,SoSe22,10,Antwort 9,C,Jonas,Eckhardt,Jonas,Eckhardt,"#include <stdio.h>
+7,SoSe22,10,Antwort 9,C,VName_54,Name_54,VName_54,Name_54,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -49452,7 +49452,7 @@ int main() {
 	student_ausgeben(&studenten[i]);
 	return 0;
 }",1.0,1
-8,SoSe22,10,Antwort 9,C,Moritz Sebastian,Niethammer,Moritz Sebastian,Niethammer,"#include <stdio.h>
+8,SoSe22,10,Antwort 9,C,VName_442,Name_442,VName_442,Name_442,"#include <stdio.h>
 
 typedef struct student{
     char first_name[21];
@@ -49535,7 +49535,7 @@ int main(){
     }
     return 0;
 }",1.0,1
-11,SoSe22,10,Antwort 9,C,Fabian,Große-Wöhrmann,Fabian,Große-Wöhrmann,"#include <stdio.h>
+11,SoSe22,10,Antwort 9,C,VName_460,Name_460,VName_460,Name_460,"#include <stdio.h>
 #include <string.h>
 
 typedef struct
@@ -49620,7 +49620,7 @@ int main(){
         student_ausgeben(&s[i]);
     }
 }",1.0,1
-22,SoSe22,10,Antwort 9,C,Elisabeth Maria,Groß,Elisabeth Maria,Groß,"#include <stdio.h>
+22,SoSe22,10,Antwort 9,C,VName_453,Name_453,VName_453,Name_453,"#include <stdio.h>
  
 typedef struct{
     char first_name[20];
@@ -49701,7 +49701,7 @@ int main(void){
         printf(""\n"");
     }
 }",1.0,1
-34,SoSe22,10,Antwort 9,C,Tom Frederik,Braune,Tom Frederik,Braune,"#include <stdio.h>
+34,SoSe22,10,Antwort 9,C,VName_433,Name_433,VName_433,Name_433,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -49794,7 +49794,7 @@ int main(void){
 		}
 		
  	}",1.0,1
-35,SoSe22,10,Antwort 9,C,Luca Marius,Hilbrich,Luca Marius,Hilbrich,"#include <stdio.h>
+35,SoSe22,10,Antwort 9,C,VName_434,Name_434,VName_434,Name_434,"#include <stdio.h>
 #include <string.h>
 
 typedef char Str20[21];
@@ -49901,7 +49901,7 @@ int main()
         student_ausgeben(&students[i]);
     }
 }",1.0,1
-36,SoSe22,10,Antwort 9,C,Shaurya,Sharma,Shaurya,Sharma,"#include <stdio.h>
+36,SoSe22,10,Antwort 9,C,VName_437,Name_437,VName_437,Name_437,"#include <stdio.h>
 
 
 
@@ -49994,7 +49994,7 @@ int main()
 
     return 0;
 }",1.0,1
-43,SoSe22,10,Antwort 9,C,Larissa,Breuer,Larissa,Breuer,"#include <stdio.h>
+43,SoSe22,10,Antwort 9,C,VName_466,Name_466,VName_466,Name_466,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -50107,7 +50107,7 @@ int main(){
 		student_ausgeben(Studierende[i]);
 	}
 }",1.0,1
-44,SoSe22,10,Antwort 9,C,Kaspar Lorenz,Hartmann,Kaspar Lorenz,Hartmann,"#include <stdio.h>
+44,SoSe22,10,Antwort 9,C,VName_456,Name_456,VName_456,Name_456,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student{
@@ -50178,7 +50178,7 @@ for(int k=0;k<5;k+1 ){
     student_ausgeben(studenten+k);
 }
 }",1.0,1
-53,SoSe22,10,Antwort 9,C,Butch Michel Guntbert,Warns,Butch Michel Guntbert,Warns,"#include <stdio.h>
+53,SoSe22,10,Antwort 9,C,VName_464,Name_464,VName_464,Name_464,"#include <stdio.h>
 #include <stdlib.h>
 
 const int ANZAHL = 5; // Should be 5
@@ -50297,7 +50297,7 @@ void student_ausgeben(Student *p_stud)
 
     printf(""Anzahl Punkte: %d\n"", sum);
 }",1.0,1
-55,SoSe22,10,Antwort 9,C,Gabriele,Tellez Pedroza,Gabriele,Tellez Pedroza,"#include <stdio.h>
+55,SoSe22,10,Antwort 9,C,VName_440,Name_440,VName_440,Name_440,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -50406,7 +50406,7 @@ void student_ausgeben(Student* p_stud)
 	printf(""\nStudent: %s %s"",p_stud->first_name,p_stud->last_name);
 	printf(""\nAnzahl Punkte: %i\n"", sum);
 }",1.0,1
-58,SoSe22,10,Antwort 9,C,Dennis Benedikt,Schulze,Dennis Benedikt,Schulze,"#include <stdio.h>
+58,SoSe22,10,Antwort 9,C,VName_470,Name_470,VName_470,Name_470,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -50515,7 +50515,7 @@ int main() {
         printf(""\n"");
   }
 }",1.0,1
-59,SoSe22,10,Antwort 9,C,Timo,Kraska,Timo,Kraska,"#include <stdio.h>
+59,SoSe22,10,Antwort 9,C,VName_465,Name_465,VName_465,Name_465,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -50608,7 +50608,7 @@ int main(){
 		student_ausgeben(&studenten[i]);
 	}
 }",1.0,1
-76,SoSe22,10,Antwort 9,C,Ibraim,Ibraimi,Ibraim,Ibraimi,"#include <stdio.h>
+76,SoSe22,10,Antwort 9,C,VName_473,Name_473,VName_473,Name_473,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student { 
@@ -50701,7 +50701,7 @@ int main(){
 	student_ausgeben(students + i);
 	}
 }",1.0,1
-92,SoSe22,10,Antwort 9,C,Tugce,Karabalik,Tugce,Karabalik,"#include <stdio.h>
+92,SoSe22,10,Antwort 9,C,VName_471,Name_471,VName_471,Name_471,"#include <stdio.h>
 
 typedef struct student{
     char vorname[21];
@@ -50786,7 +50786,7 @@ int main()
     
     return 0;
 }",1.0,1
-104,SoSe22,10,Antwort 9,C,Paul Georg,Tiede,Paul Georg,Tiede,"#include <stdio.h>
+104,SoSe22,10,Antwort 9,C,VName_459,Name_459,VName_459,Name_459,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -50875,7 +50875,7 @@ student_einlesen(p_stud);
 student_ausgeben(p_stud);
 
 }",1.0,1
-120,SoSe22,10,Antwort 9,C,Rosa,Hagenberg,Rosa,Hagenberg,"#include <stdio.h>
+120,SoSe22,10,Antwort 9,C,VName_443,Name_443,VName_443,Name_443,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -50962,7 +50962,7 @@ int main(){
 	student_ausgeben(students);
 
 }",1.0,1
-145,SoSe22,10,Antwort 9,C,Adrian Maximilian,Glaschke,Adrian Maximilian,Glaschke,"#include <stdio.h>
+145,SoSe22,10,Antwort 9,C,VName_452,Name_452,VName_452,Name_452,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -51097,7 +51097,7 @@ student_ausgeben(&vierter_Student);
 student_ausgeben(&fuenfter_Student);
 
 }",1.0,1
-147,SoSe22,10,Antwort 9,C,Gregor,Lehmann,Gregor,Lehmann,"#include <stdio.h>
+147,SoSe22,10,Antwort 9,C,VName_448,Name_448,VName_448,Name_448,"#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -51192,7 +51192,7 @@ int main()
     }
 
 }",1.0,1
-179,SoSe22,10,Antwort 9,C,Pinelopi Eleni,Anastasiadou,Pinelopi Eleni,Anastasiadou,"#include <stdio.h>
+179,SoSe22,10,Antwort 9,C,VName_458,Name_458,VName_458,Name_458,"#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -51273,7 +51273,7 @@ int main() {
    student_ausgeben( &dar );
     }
 }",1.0,1
-196,SoSe22,10,Antwort 9,C,Leif Erik,Stolte,Leif Erik,Stolte,"#include <stdio.h>
+196,SoSe22,10,Antwort 9,C,VName_445,Name_445,VName_445,Name_445,"#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct student {
@@ -51360,7 +51360,7 @@ int main() {
 	student_ausgeben(studenten);
 	return 0;
 }",1.0,1
-237,SoSe22,10,Antwort 9,C,Tobias,Hengst,Tobias,Hengst,"//
+237,SoSe22,10,Antwort 9,C,VName_444,Name_444,VName_444,Name_444,"//
 //  main.c
 //  HA
 //
@@ -51483,7 +51483,7 @@ int main(){
         student_ausgeben(&liste[i]);
     }
 }",1.0,1
-442,SoSe22,10,Antwort 9,C,Emilie,Hilger,Emilie,Hilger,"#include <stdio.h>
+442,SoSe22,10,Antwort 9,C,VName_463,Name_463,VName_463,Name_463,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -51528,7 +51528,7 @@ int main(void){
 	printf(""\nerster_Student: %s %s\n"", erster_Student.vorname, erster_Student.nachname);
     printf(""Punkte -> %i; %i; %i; %i; %i\n"", erster_Student.punkte[0], erster_Student.punkte[1], erster_Student.punkte[2], erster_Student.punkte[3], erster_Student.punkte[4]);
 }",1.0,1
-506,SoSe22,10,Antwort 9,C,Heiner Hans,Krause,Heiner Hans,Krause,"#include <stdio.h>
+506,SoSe22,10,Antwort 9,C,VName_472,Name_472,VName_472,Name_472,"#include <stdio.h>
 #include <malloc.h>
 
 typedef struct student{","#include <stdio.h>

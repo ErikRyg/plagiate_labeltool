@@ -1,28 +1,5 @@
-﻿Nachname,Vorname,E-Mail-Adresse,Status,"Begonnen am",Beendet,"Verbrauchte Zeit","Bewertung/15,00","Antwort 1","Antwort 2","Antwort 3","Antwort 4","Antwort 5","Antwort 6","Antwort 7","Antwort 8","Antwort 9","Antwort 10"
-"Salas Lara","Luis Valentin",l.salaslara@tu-berlin.de,Beendet,"28. Mai 2021  12:48","5. Juni 2021  15:23","8 Tage 2 Stunden","14,75","Wäsche muss in den Kleiderschrank.
-; switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}","arr[0] == 0
-arr[1] == 0
-arr[2] == 0
-arr[3] == 3","arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '\0'",if ( -eps < a-b && a-b < eps),double a = (double)(3/4);,"Die main-Funktion hat den Rückgabewert 1.
-
-; Der Zug fährt nicht.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Nachname,Vorname,Antwort 8,Antwort 9,Antwort 10
+Name_77,VName_77,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -142,28 +119,7 @@ int main() {
 	printf(""Das sind mit %d %% Rabatt genau %.2f Euro."", pro, preis);
 	return 0;
 }"
-Wang,"Yang Felix",yang.f.wang@campus.tu-berlin.de,Beendet,"28. Mai 2021  19:28","5. Juni 2021  21:56","8 Tage 2 Stunden","14,99",int abgabe_druecken[];,"arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '\0'","Wäsche muss in den Kleiderschrank.
-; switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}","z speichert die Position des größten Wertes im Array.",double a = (double)(3/4);,"Die main-Funktion hat den Rückgabewert 1.
-
-; Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: 5; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_73,VName_73,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -283,10 +239,7 @@ int main() {
 	willkommen();
 	bestellung();
 }"
-Bauszus,"Florian Alexander",bauszus@campus.tu-berlin.de,Beendet,"28. Mai 2021  21:04","6. Juni 2021  16:44","8 Tage 19 Stunden","8,63","arr[0] == 0
-arr[1] == 0
-arr[2] == 0
-arr[3] == 3",geca,a - b <= 5.0 && b - a <= 5.0,"Der Zug fährt nicht.",double a = (double)(3/4);,"z zählt, wieviele Iterationen durchgeführt wurden.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: %; Teil 13: %; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10; Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_82,VName_82,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -387,27 +340,7 @@ int main(){
     } while (i==0);
     return 0;
 }"
-Hendel,"Philipp Caspar",philipp.c.hendel@campus.tu-berlin.de,Beendet,"28. Mai 2021  23:00","6. Juni 2021  23:58","9 Tage","13,74","arr[0] == 0
-arr[1] == 0
-arr[2] == 0
-arr[3] == 3",!(a - b > 5.0 || a - b < -5.0),"Wäsche muss in den Kleiderschrank.
-; switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}","Die main-Funktion hat den Rückgabewert 1.
-
-; Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug",if ( -eps < a-b && a-b < eps),"z speichert die Position des größten Wertes im Array.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 3.6; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: -; Teil 142: -; Teil 143: -","#include <stdio.h>
+Name_98,VName_98,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -518,24 +451,7 @@ int main(){
     scanf(""%d"", &distance);
     calculate_sale(distance, price);
 }"
-Scharnreitner,"Philipp Aurel",p.scharnreitner@campus.tu-berlin.de,Beendet,"29. Mai 2021  12:01","6. Juni 2021  18:04","8 Tage 6 Stunden","14,24",int abgabe_druecken[];,"switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}
-; Wäsche muss in den Kleiderschrank.",geca,"Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug
-
-; Die main-Funktion hat den Rückgabewert 1.",if ( -eps > a-b || a-b > eps),"z speichert die Position des größten Wertes im Array.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: -; Teil 102: -; Teil 103: -; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_100,VName_100,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -689,13 +605,7 @@ int main()
     Preis = Preis *(1 - (Prozent/100));
     printf(""Das sind mit %.0f %% Rabatt genau %.2f Euro."", Prozent, Preis);
 }"
-Roßmöller-Felz,"Mattis Musashi Martin",mattis.rossmoeller@campus.tu-berlin.de,Beendet,"29. Mai 2021  12:37","6. Juni 2021  23:58","8 Tage 11 Stunden","10,76","arr[0] == 0
-arr[1] == 0
-arr[2] == 0
-arr[3] == 3",-5.0 <= a - b <= 5.0,int abgabe_druecken[];,"Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug
-
-; Die main-Funktion hat den Rückgabewert 0.",if ( -eps < a-b && a-b < eps),double a = 3/(double)4;,"Teil 1: 13; Teil 2: undef; Teil 3: undef; Teil 4: undef; Teil 5: undef; Teil 6: undef; Teil 7: undef; Teil 8: undef; Teil 9: undef; Teil 10: undef; Teil 11: 14; Teil 12: %; Teil 13: %; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 3.6; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: undef; Teil 112: undef; Teil 113: undef; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: undef; Teil 136: undef; Teil 137: undef; Teil 138: undef; Teil 139: undef; Teil 140: undef; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_94,VName_94,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -827,28 +737,7 @@ else
 gesamt = preis;
 printf(""Das sind mit %i %% Rabatt genau %.2f Euro.\n"", rabatt, gesamt);
 }"
-Schwarz,"Jasko Tobias",jasko.t.schwarz@campus.tu-berlin.de,Beendet,"29. Mai 2021  22:10","6. Juni 2021  22:49","8 Tage","10,87","switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}
-; Wäsche muss in den Kleiderschrank.",-5.0 <= a - b <= 5.0,"arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '\0'",if ( -eps < a-b && a-b < eps),"Die main-Funktion hat den Rückgabewert 1.
-
-; Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug",double a = 3/(double)4;,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: -; Teil 103: -; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_97,VName_97,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -956,26 +845,7 @@ int printRabatt(float preis, int lieferentfernung){
   preis = preis * (1 - (float)reduzierung/100);
   printf(""Das sind mit %i %% Rabatt genau %.2f Euro.\n"", reduzierung, preis);
 }"
-Alfakir,Mohamad,alfakir.1@campus.tu-berlin.de,Beendet,"30. Mai 2021  04:40","6. Juni 2021  14:38","7 Tage 9 Stunden","13,00","Wäsche muss in den Kleiderschrank.
-; switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}","arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '0'",geca,double a = (double)(3/4);,if ( -eps < a-b && a-b < eps),"Der Zug fährt nicht.
-; Es ist wieder ein Online-Semester. Ich brauche keinen Zug","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 1.5; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 3; Teil 87: 1; Teil 88: 2; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_74,VName_74,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -1085,14 +955,7 @@ if (entfernung <=2 || entfernung>=20){
 
   printf(""Das sind mit %i %% Rabatt genau %.2f Euro.\n"", rabbat,  summ);
 }"
-Jacoby,"Maximilian Erich",m.jacoby@campus.tu-berlin.de,Beendet,"30. Mai 2021  11:35","3. Juni 2021  15:22","4 Tage 3 Stunden","14,50",-5.0 <= a - b && a - b <= 5.0,geca,"arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '\0'","z speichert die Position des größten Wertes im Array.",if ( -eps < a-b && a-b < eps),"Die main-Funktion hat den Rückgabewert 1.
-
-; Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_79,VName_79,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -1267,24 +1130,7 @@ int main(){
 	printf(""Das sind mit %i %% Rabatt genau %.2f Euro.\n"", prozentsatz, genau);
 	
 }"
-Gillich,"Franziska Anna-Lena",f.gillich@campus.tu-berlin.de,Beendet,"30. Mai 2021  13:17","6. Juni 2021  18:05","7 Tage 4 Stunden","15,00",geca,"Wäsche muss in den Kleiderschrank.
-; switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}",-5.0 <= a - b <= 5.0,"z speichert die Position des größten Wertes im Array.","Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug
-
-; Die main-Funktion hat den Rückgabewert 1.",double a = (double)(3/4);,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_93,VName_93,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -1392,28 +1238,7 @@ int main()
     kosten=kosten*((100-(float)rabatt)/100);
     printf(""Das sind mit %i %% Rabatt genau %.2f Euro."",rabatt,kosten);
 }"
-Miskovic,Matea,matea.miskovic@tu-berlin.de,Beendet,"30. Mai 2021  14:55","3. Juni 2021  19:57","4 Tage 5 Stunden","14,05","arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '\0'",int abgabe_druecken[];,"switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}
-; Wäsche muss in den Kleiderschrank.","Die main-Funktion hat den Rückgabewert 1.
-
-; Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug",if ( -eps > a-b || a-b > eps),"z speichert die Position des größten Wertes im Array.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_78,VName_78,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -1563,11 +1388,7 @@ int main(){
 
      
 }"
-Schulz,Leon,leon.schulz@campus.tu-berlin.de,Beendet,"30. Mai 2021  16:08","6. Juni 2021  23:49","7 Tage 7 Stunden","8,44","arr[0] == 7
-arr[1] == 8
-arr[2] == 9
-arr[3] == 3",!(a - b > 5.0 || a - b < -5.0),int abgabe_druecken[];,double a = (double)(3/4);,"Der Zug fährt nicht.
-; Die main-Funktion hat den Rückgabewert 0.",if ( -eps < a-b && a-b < eps),"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0.0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_96,VName_96,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -1700,27 +1521,7 @@ else printf(""\nDer Rückgabewert der Funktion findIndexOfMax bei leerer Liste i
 // 
 //
 //",-
-Alexe,"Jeremias Harry",jeremias.h.alexe@campus.tu-berlin.de,Beendet,"30. Mai 2021  17:07","6. Juni 2021  15:32","6 Tage 22 Stunden","13,24","switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}
-; Wäsche muss in den Kleiderschrank.","arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '\0'",fdb,"z zählt, wieviele Iterationen durchgeführt wurden.","Die main-Funktion hat den Rückgabewert 0.
-
-; Der Zug fährt nicht.",double a = (double)(3/4);,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6,49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_83,VName_83,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -1822,7 +1623,7 @@ int main(){
  preis *=(1 - ((float) rabatt / 100.0));
  printf(""Das sind mit %i %% Rabatt genau %.2f Euro."", rabatt, preis);
  }"
-Eckardt,"Jan Hartmut",jan.h.eckardt@campus.tu-berlin.de,Beendet,"30. Mai 2021  19:26","6. Juni 2021  23:59","7 Tage 4 Stunden","7,70",-,-,-,-,double a = 3/(double)4;,"z speichert die Position des größten Wertes im Array.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 18.02; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_81,VName_81,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -1885,28 +1686,7 @@ array[Index] = -2147483648;}}
 
 
 }",-
-Aksoy,Vedia,vedia.aksoy@campus.tu-berlin.de,Beendet,"31. Mai 2021  00:08","6. Juni 2021  23:59","6 Tage 23 Stunden","8,81",int abgabe_druecken[];,"Wäsche muss in die Waschmaschine.
-
-; switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}","arr[0] == 0
-arr[1] == 0
-arr[2] == 0
-arr[3] == 3","z speichert die Position des größten Wertes im Array.",double a = (double)(3/4);,"Die main-Funktion hat den Rückgabewert 0.
-
-; Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug","Teil 1: 13; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: 14; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: 16; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: 17; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: 18; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: 19; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: 20; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: ; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: ; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: ; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: 10(19); Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: ; Teil 112: ; Teil 113: ; Teil 114: 11(19); Teil 115: ; Teil 116: ; Teil 117: ; Teil 118: ; Teil 119: ; Teil 120: ; Teil 121: ; Teil 122: ; Teil 123: ; Teil 124: 12(19); Teil 125: ; Teil 126: ; Teil 127: ; Teil 128: ; Teil 129: ; Teil 130: ; Teil 131: ; Teil 132: ; Teil 133: ; Teil 134: 13(19); Teil 135: ; Teil 136: ; Teil 137: ; Teil 138: ; Teil 139: ; Teil 140: ; Teil 141: ; Teil 142: ; Teil 143:","#include <stdio.h>
+Name_75,VName_75,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -2053,24 +1833,7 @@ if ((km>2)&&(km<20)){
 
 printf(""\nDas sind mit %d %% Rabatt genau %.2f Euro."",indirim,(counter*(100-indirim)/100));
 }"
-Franke,Alexander,alexander.franke@campus.tu-berlin.de,Beendet,"31. Mai 2021  13:52","6. Juni 2021  23:34","6 Tage 9 Stunden","7,69",int abgabe_druecken[];,"Wäsche muss in den Kleiderschrank.
-; switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}",geca,"Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug
-
-; Die main-Funktion hat den Rückgabewert 0.",if ( -eps < a-b && a-b < eps),double a = (double)(3/4);,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 3.6; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_76,VName_76,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -2099,13 +1862,8 @@ char array[8][5];
 		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
 	}
 	return 0;
-}","#include <limits.h>",-
-Zakusek,"Simon Lorenz",s.zakusek@campus.tu-berlin.de,Beendet,"31. Mai 2021  14:47","6. Juni 2021  23:59","6 Tage 9 Stunden","14,75",geca,-5.0 <= a - b <= 5.0,"arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '\0'","z speichert die Position des größten Wertes im Array.",double a = (double)(3/4);,"Der Zug fährt nicht.
-; Die main-Funktion hat den Rückgabewert 1.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+}",#include <limits.h>,-
+Name_102,VName_102,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -2216,24 +1974,7 @@ int main(){
   
   printf(""Das sind mit %hhi %% Rabatt genau %.2f Euro."", rabatt, preis);
 }"
-Schwolow,Niklas,niklas.schwolow@campus.tu-berlin.de,Beendet,"31. Mai 2021  17:02","6. Juni 2021  23:59","6 Tage 6 Stunden","9,57",int abgabe_druecken[];,-5.0 <= a - b <= 5.0,"Wäsche muss in den Kleiderschrank.
-; switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}",double a = (double)(3/4);,if ( -eps < a-b && a-b < eps),"Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug
-
-; Die main-Funktion hat den Rückgabewert 0.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 1.5; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 3; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: -; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_91,VName_91,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -2267,7 +2008,7 @@ int main() {
 		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
 	}
 	return 0;
-}","#include <limits.h>","#include <stdio.h>
+}",#include <limits.h>,"#include <stdio.h>
 
 void Ausgabe()
 {
@@ -2347,14 +2088,7 @@ int main()
             break;
     }
 }"
-Platena,Moritz,platena@campus.tu-berlin.de,Beendet,"2. Juni 2021  10:46","5. Juni 2021  13:56","3 Tage 3 Stunden","8,69","arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '\0'","arr[0] == 7
-arr[1] == 8
-arr[2] == 9
-arr[3] == 3",-5.0 <= a - b <= 5.0,double a = (double)(3/4);,if ( -eps < a-b && a-b < eps),"z speichert die Position des größten Wertes im Array.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %%; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_88,VName_88,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -2510,24 +2244,7 @@ int main(){
     }
 
 }"
-Horneburg,"Max Richard",m.horneburg@campus.tu-berlin.de,Beendet,"2. Juni 2021  11:00","3. Juni 2021  10:10","23 Stunden 9 Minuten","14,15","switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}
-; Wäsche muss in den Kleiderschrank.",int abgabe_druecken[];,"arr[0] == 0
-arr[1] == 0
-arr[2] == 0
-arr[3] == 3",if ( -eps < a-b && a-b < eps),double a = (double)(3/4);,"z speichert die Position des größten Wertes im Array.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: &; Teil 113: &; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: -; Teil 122: -; Teil 123: -; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_80,VName_80,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -2634,27 +2351,7 @@ int main() {
 	}
 	return 0;
 }"
-Otto,Klara,klara.otto@campus.tu-berlin.de,Beendet,"2. Juni 2021  13:25","6. Juni 2021  13:51","4 Tage","14,79","Wäsche muss in den Kleiderschrank.
-; switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}",geca,"arr[0] == 0
-arr[1] == 0
-arr[2] == 0
-arr[3] == 3","Die main-Funktion hat den Rückgabewert 1.
-
-; Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug","z speichert die Position des größten Wertes im Array.",if ( -eps < a-b && a-b < eps),"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: 2; Teil 63: 3; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: %; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: -; Teil 103: -; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: 18.02; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_89,VName_89,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -2793,31 +2490,7 @@ int rabat = mat(km,summe);
 float geld = Geld(rabat,summe);
 printf(""Das sind mit %i %% Rabatt genau %.2f Euro.\n"", rabat, geld);
 }"
-Gerhardt,"Fynn Niklas",f.gerhardt@tu-berlin.de,Beendet,"3. Juni 2021  14:29","3. Juni 2021  17:45","3 Stunden 15 Minuten","14,74","Wäsche muss in den Kleiderschrank.
-; switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}","arr[0] == 0
-arr[1] == 0
-arr[2] == 0
-arr[3] == 3","arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '\0'","z speichert die Position des größten Wertes im Array.",double a = (double)(3/4);,"Die main-Funktion hat den Rückgabewert 1.
-
-; Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 3.6; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_85,VName_85,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -2910,20 +2583,7 @@ int main(){
 	summe = summe*(1-discount);
 	printf(""Das sind mit %.0f %% Rabatt genau %.2f Euro.\n"", discount*100, summe);
 }"
-Outhwaite,"Jared Louis",jared.l.outhwaite@campus.tu-berlin.de,Beendet,"3. Juni 2021  17:09","6. Juni 2021  23:59","3 Tage 6 Stunden","12,13","Wäsche muss in den Kleiderschrank.
-; switch(TODO){
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-    case 2:
-        printf(""Wäsche muss auf den Wäscheständer.\n"");
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-}",int abgabe_druecken[];,"arr[0] == 0
-arr[1] == 0
-arr[2] == 0
-arr[3] == 0","z zählt, wieviele Iterationen durchgeführt wurden.",if ( -eps < a-b && a-b < eps),double a = (double)(3/4);,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_92,VName_92,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -3033,14 +2693,7 @@ int main(){
    sum = sum*b;
    printf(""Das sind mit %.0f %% Rabatt genau %.2f Euro.\n"", 100-(b*100), sum);
 }"
-Schmidt,"Tom Alexander",tom.a.schmidt@campus.tu-berlin.de,Beendet,"4. Juni 2021  08:41","6. Juni 2021  19:14","2 Tage 10 Stunden","14,74","arr[0] == 0
-arr[1] == 0
-arr[2] == 0
-arr[3] == 3",geca,"arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '\0'",double a = (double)(3/4);,if ( -eps < a-b && a-b < eps),"z speichert die Position des größten Wertes im Array.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: 4.99; Teil 46: %; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 3.6; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: -; Teil 103: -; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_7,VName_7,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -3157,11 +2810,7 @@ int main() {
     
 	return 0;
 }"
-Hansel,"Karsten Siegfried",hansel@campus.tu-berlin.de,Beendet,"4. Juni 2021  14:15","6. Juni 2021  16:23","2 Tage 2 Stunden","11,73","arr[0] == 0
-arr[1] == 0
-arr[2] == 0
-arr[3] == 3",int abgabe_druecken[];,geca,"Der Zug fährt nicht.
-; Die main-Funktion hat den Rückgabewert 0.","z speichert die Position des größten Wertes im Array.",double a = (double)(3/4);,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 5.49; Teil 87: 1; Teil 88: 2; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: -; Teil 142: -; Teil 143: -","#include <stdio.h>
+Name_99,VName_99,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -3272,13 +2921,7 @@ int main()
                 printf(""Das sind mit %i %% Rabatt genau %.2f Euro.\n"",r,summe *= i);}
                     
 }"
-Sen,"Muzaffer Mert",m.sen@campus.tu-berlin.de,Beendet,"6. Juni 2021  00:56","6. Juni 2021  22:47","21 Stunden 50 Minuten","7,67",geca,int abgabe_druecken[];,"arr[0] == 0
-arr[1] == 0
-arr[2] == 0
-arr[3] == 3","Die main-Funktion hat den Rückgabewert 0.
-
-; Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug",double a = (double)(3/4);,if ( -eps < a-b && a-b < eps),"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: 0; Teil 88: 2; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: -; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_87,VName_87,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -3307,16 +2950,8 @@ int main() {
 		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
 	}
 	return 0;
-}","#include <limits.h>",-
-Ngu,"Siaw Tieng",s.ngu@campus.tu-berlin.de,Beendet,"6. Juni 2021  03:59","6. Juni 2021  20:47","16 Stunden 48 Minuten","14,25","arr[0] == 0
-arr[1] == 0
-arr[2] == 0
-arr[3] == 3",-5.0 <= a - b <= 5.0,"arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '\0'","z speichert die Position des kleinsten Wertes im Array.",double a = (double)(3/4);,"Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: -; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+}",#include <limits.h>,-
+Name_95,VName_95,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -3472,27 +3107,7 @@ int main () {
     printf(""Das sind mit %d %% Rabatt genau %.2f Euro.\n"", new_discount, new_sum);
     
 }"
-Ruschke,Dennis,dennis.ruschke@campus.tu-berlin.de,Beendet,"6. Juni 2021  09:26","6. Juni 2021  23:59","14 Stunden 32 Minuten","8,11",fdb,"Wäsche muss in den Kleiderschrank.
-; switch(TODO){
-    case 1:
-        printf(""Wäsche muss in die Waschmaschine.\n"");
-        break;
-    case 2:
-         printf(""Wäsche muss auf den Wäscheständer.\n"");
-        break;
-    case 3:
-        printf(""Wäsche muss in den Kleiderschrank.\n"");
-        break;
-    default:
-        printf(""Nichts zu tun. Erstmal Freizeit :)\n"");
-        break;
-}","arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '\0'",double a = (double)(3/4);,"z speichert die Position des größten Wertes im Array.","Die main-Funktion hat den Rückgabewert 0.
-
-; Der Zug fährt nicht.","Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: %; Teil 13: %; Teil 14: %; Teil 15: %; Teil 16: %; Teil 17: %; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_101,VName_101,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -3521,7 +3136,7 @@ int main() {
 		printf(""\n"");	//am Ende einer Zeile soll das Programm in die nächste Zeile rutschen
 	}
 	return 0;
-}","#include <limits.h>","#include <stdio.h>
+}",#include <limits.h>,"#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -3593,14 +3208,7 @@ void printMenue() {
 
     return 0;
 }"
-Durak,Umut,umut.durak@campus.tu-berlin.de,Beendet,"6. Juni 2021  13:03","6. Juni 2021  23:59","10 Stunden 55 Minuten","11,77",int abgabe_druecken[];,"arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '0'",geca,"z zählt, wieviele Iterationen durchgeführt wurden.","Die main-Funktion hat den Rückgabewert 0.
-
-; Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug",double a = (double)(3/4);,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: 0; Teil 88: 2; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: -; Teil 113: -; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: -; Teil 136: -; Teil 137: -; Teil 138: -; Teil 139: -; Teil 140: -; Teil 141: -; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_84,VName_84,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -3710,12 +3318,7 @@ float endpreis = summe - summe*discount/100;
 
 	printf(""Das sind mit %i %% Rabatt genau %.2f Euro.\n "" , discount , endpreis );
 }"
-Gföhler,"Vincent Bruce",v.gfoehler@campus.tu-berlin.de,Beendet,"6. Juni 2021  15:32","6. Juni 2021  23:59","8 Stunden 26 Minuten","13,46",geca,double temp[jahre*365];,"arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '\0'","Der Zug fährt nicht.
-; Die main-Funktion hat den Rückgabewert 0.",if ( -eps < a-b && a-b < eps),double a = (double)(3/4);,"Teil 1: 13; Teil 2: -; Teil 3: -; Teil 4: -; Teil 5: -; Teil 6: -; Teil 7: -; Teil 8: -; Teil 9: -; Teil 10: -; Teil 11: 14; Teil 12: undef; Teil 13: undef; Teil 14: undef; Teil 15: undef; Teil 16: undef; Teil 17: undef; Teil 18: %; Teil 19: %; Teil 20: %; Teil 21: %; Teil 22: %; Teil 23: %; Teil 24: 16; Teil 25: %; Teil 26: %; Teil 27: %; Teil 28: %; Teil 29: 4.99; Teil 30: %; Teil 31: %; Teil 32: %; Teil 33: %; Teil 34: 17; Teil 35: %; Teil 36: %; Teil 37: %; Teil 38: %; Teil 39: %; Teil 40: 2.99; Teil 41: %; Teil 42: %; Teil 43: %; Teil 44: 18; Teil 45: %; Teil 46: 4.99; Teil 47: %; Teil 48: %; Teil 49: %; Teil 50: %; Teil 51: %; Teil 52: %; Teil 53: %; Teil 54: 4(19); Teil 55: %; Teil 56: %; Teil 57: %; Teil 58: %; Teil 59: %; Teil 60: %; Teil 61: %; Teil 62: %; Teil 63: %; Teil 64: 5(19); Teil 65: %; Teil 66: %; Teil 67: %; Teil 68: %; Teil 69: %; Teil 70: %; Teil 71: 0; Teil 72: %; Teil 73: %; Teil 74: %; Teil 75: %; Teil 76: %; Teil 77: %; Teil 78: %; Teil 79: %; Teil 80: %; Teil 81: %; Teil 82: %; Teil 83: %; Teil 84: %; Teil 85: %; Teil 86: 6.49; Teil 87: %; Teil 88: %; Teil 89: %; Teil 90: %; Teil 91: %; Teil 92: %; Teil 93: %; Teil 94: %; Teil 95: %; Teil 96: %; Teil 97: %; Teil 98: %; Teil 99: %; Teil 100: %; Teil 101: %; Teil 102: %; Teil 103: %; Teil 104: 10(19); Teil 105: %; Teil 106: %; Teil 107: %; Teil 108: %; Teil 109: %; Teil 110: %; Teil 111: %; Teil 112: %; Teil 113: %; Teil 114: 19; Teil 115: %; Teil 116: %; Teil 117: %; Teil 118: %; Teil 119: %; Teil 120: %; Teil 121: %; Teil 122: %; Teil 123: %; Teil 124: 20; Teil 125: %; Teil 126: %; Teil 127: %; Teil 128: %; Teil 129: %; Teil 130: %; Teil 131: %; Teil 132: %; Teil 133: %; Teil 134: 21; Teil 135: %; Teil 136: %; Teil 137: %; Teil 138: %; Teil 139: %; Teil 140: %; Teil 141: %; Teil 142: %; Teil 143: %","#include <stdio.h>
+Name_90,VName_90,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -3874,12 +3477,7 @@ int main ()
 
     return 0;
 }"
-Weber,"Michael Andreas",michael.a.weber@campus.tu-berlin.de,Beendet,"6. Juni 2021  16:52","6. Juni 2021  23:59","7 Stunden 6 Minuten","6,75",geca,-5.0 <= a - b <= 5.0,"arr[0] == 'I'
-arr[1] == 'N'
-arr[2] == 'F'
-arr[3] ==  50
-arr[4] == '\0'","z speichert die Position des größten Wertes im Array.",double a = (double)(3/4);,"Der Zug fährt nicht.
-Es ist wieder ein Online-Semester. Ich brauche keinen Zug","Teil 1: ; Teil 2: ; Teil 3: ; Teil 4: ; Teil 5: ; Teil 6: ; Teil 7: ; Teil 8: ; Teil 9: ; Teil 10: ; Teil 11: ; Teil 12: ; Teil 13: ; Teil 14: ; Teil 15: ; Teil 16: ; Teil 17: ; Teil 18: ; Teil 19: ; Teil 20: ; Teil 21: ; Teil 22: ; Teil 23: ; Teil 24: ; Teil 25: ; Teil 26: ; Teil 27: ; Teil 28: ; Teil 29: ; Teil 30: ; Teil 31: ; Teil 32: ; Teil 33: ; Teil 34: ; Teil 35: ; Teil 36: ; Teil 37: ; Teil 38: ; Teil 39: ; Teil 40: ; Teil 41: ; Teil 42: ; Teil 43: ; Teil 44: ; Teil 45: ; Teil 46: ; Teil 47: ; Teil 48: ; Teil 49: ; Teil 50: ; Teil 51: ; Teil 52: ; Teil 53: ; Teil 54: ; Teil 55: ; Teil 56: ; Teil 57: ; Teil 58: ; Teil 59: ; Teil 60: ; Teil 61: ; Teil 62: ; Teil 63: ; Teil 64: ; Teil 65: ; Teil 66: ; Teil 67: ; Teil 68: ; Teil 69: ; Teil 70: ; Teil 71: ; Teil 72: ; Teil 73: ; Teil 74: ; Teil 75: ; Teil 76: ; Teil 77: ; Teil 78: ; Teil 79: ; Teil 80: ; Teil 81: ; Teil 82: ; Teil 83: ; Teil 84: ; Teil 85: ; Teil 86: ; Teil 87: ; Teil 88: ; Teil 89: ; Teil 90: ; Teil 91: ; Teil 92: ; Teil 93: ; Teil 94: ; Teil 95: ; Teil 96: ; Teil 97: ; Teil 98: ; Teil 99: ; Teil 100: ; Teil 101: ; Teil 102: ; Teil 103: ; Teil 104: ; Teil 105: ; Teil 106: ; Teil 107: ; Teil 108: ; Teil 109: ; Teil 110: ; Teil 111: ; Teil 112: ; Teil 113: ; Teil 114: ; Teil 115: ; Teil 116: ; Teil 117: ; Teil 118: ; Teil 119: ; Teil 120: ; Teil 121: ; Teil 122: ; Teil 123: ; Teil 124: ; Teil 125: ; Teil 126: ; Teil 127: ; Teil 128: ; Teil 129: ; Teil 130: ; Teil 131: ; Teil 132: ; Teil 133: ; Teil 134: ; Teil 135: ; Teil 136: ; Teil 137: ; Teil 138: ; Teil 139: ; Teil 140: ; Teil 141: ; Teil 142: ; Teil 143:","#include <stdio.h>
+Name_86,VName_86,"#include <stdio.h>
 #include <stdlib.h>
 
 int main() {

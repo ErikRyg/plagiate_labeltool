@@ -16,7 +16,7 @@ GLOBAL_TEMPLATE = "plotly_white"
 dash.register_page(__name__, path='/', redirect_from=['/init'])
 
 list_semester = ["SoSe20", "SoSe21",
-                 "SoSe22", "WS2021", "WS2122"]  # SoSe19 & WS1920 händisch hinzufügen?
+                 "SoSe22", "WS2021", "WS2122"]
 dict_tasks = {'Aufgabe 7': 'Antwort 7',
               'Aufgabe 8': 'Antwort 8',
               'Aufgabe 9': 'Antwort 9',
@@ -36,7 +36,6 @@ navbar = dbc.Navbar(
                 ],
                 align="center",
             ),
-            # href="https://www.ni.tu-berlin.de/menue/members/postgraduate_students_and_doctoral_candidates/goerttler_thomas/",
         ),
     ],
     color="primary",
@@ -54,7 +53,6 @@ init_content = html.Div([
                 'Wähle die zu labelnden Aufgaben aus'), md=4),
             ]),
     dbc.Row([
-            # html.Br(),
             dbc.Col(dcc.Dropdown(list_semester, list_semester[2],
                     id='semester', persistence=True), md=4),
             dbc.Col(dcc.Dropdown(list_has, list_has[4],
@@ -107,7 +105,6 @@ layout = html.Div(
 )
 
 
-# TODO csv drag and drop funktioniert noch nicht + funktionalität hinzufügen
 @callback(
     Output('st_semester', 'data'),
     Output('st_ha', 'data'),
@@ -122,8 +119,6 @@ layout = html.Div(
     State('upload_data', 'contents'),
     State('upload_data', 'filename'), prevent_initial_call=True)
 def start_button_pressed(n_clicks, semester, ha, tasks, prog_language, labled_csv, filename):
-    # print(
-    #     f"Es Wurde eine Callback auf der init-seite ausgeführt: {n_clicks}")
     if n_clicks == 0:
         raise dash.exceptions.PreventUpdate
     # 'Aufgabe 7' --> 'Antwort 7'
@@ -133,19 +128,12 @@ def start_button_pressed(n_clicks, semester, ha, tasks, prog_language, labled_cs
         labled_csv = base64.b64decode(content_string)
         try:
             if 'csv' in filename:
-                # Assume that the user uploaded a CSV file
                 labled_csv = pd.read_csv(
                     io.StringIO(labled_csv.decode('utf-8')))
-                # print(type(labled_csv.head(3)))
-                # print(labled_csv.head(3))
-                # print((dumps(semester), dumps(ha), dumps(tasks),
-                #       dumps(prog_language), labled_csv.head(3)))
                 return dumps(semester), dumps(ha), dumps(tasks), dumps(prog_language), labled_csv.to_json(date_format='iso', orient='split')
         except Exception as e:
             print(e)
             return dash.exceptions.PreventUpdate
-    # print((dumps(semester), dumps(ha), dumps(tasks), dumps(
-    #     prog_language), dumps(labled_csv)))
     return dumps(semester), dumps(ha), dumps(tasks), dumps(prog_language), dumps(labled_csv)
 
 
